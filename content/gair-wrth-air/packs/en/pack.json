@@ -1,0 +1,28 @@
+{
+  "code": "en",
+  "name": "English",
+  "dir": "ltr",
+  "ui": {
+    "endonym": "English",
+    "home": "Home",
+    "main_menu": "Main menu",
+    "sources": "Sources",
+    "phrasebook": "Phrasebook"
+  },
+  "groups": {
+    "weather-forecast": "Weather forecast",
+    "everyday": "Everyday words",
+    "technology": "Technology",
+    "geography": "Geography",
+    "news": "News",
+    "sport": "Sports"
+  },
+  "sources": [
+    {
+      "id": "draft",
+      "title": "Unreviewed draft written by an AI model from memory",
+      "licence": "draft",
+      "note": "Not yet checked against a published source."
+    }
+  ]
+}

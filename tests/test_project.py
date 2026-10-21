@@ -1,0 +1,105 @@
+"""The Welsh project's own icons, tree and documents, built with the framework in framework/.
+
+Run from the repo root:  python3 -m unittest discover -s tests -v
+"""
+import json
+import pathlib
+import sys
+import tempfile
+import unittest
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "framework"))
+
+import phrasebook  # noqa: E402
+from phrasebook import content, icons  # noqa: E402
+
+PROJECT = ROOT / "content" / "gair-wrth-air"
+
+
+class PhilosophyTests(unittest.TestCase):
+    def test_the_purpose_says_so(self):
+        text = (ROOT / "docs" / "PHILOSOPHY.md").read_text(encoding="utf-8")
+        self.assertIn("Mobile first", text)
+        self.assertIn("one hand", text)
+
+
+class ProjectNavigationTests(unittest.TestCase):
+    """The English and Welsh project's own icons and tree."""
+
+    @classmethod
+    def setUpClass(cls):
+        import shutil
+        import tempfile
+        cls.tmp = pathlib.Path(tempfile.mkdtemp())
+        phrasebook.build(cls.tmp / "dist")
+        cls.doc = json.loads((cls.tmp / "dist" / "tree.json").read_text(encoding="utf-8"))
+        cls.raw = content.read(PROJECT)
+        cls._shutil = shutil
+
+    @classmethod
+    def tearDownClass(cls):
+        cls._shutil.rmtree(cls.tmp, ignore_errors=True)
+
+    def test_every_group_and_page_that_is_published_has_an_icon_that_exists(self):
+        for group in self.doc["nodes"]:
+            self.assertIn(group["icon"], self.doc["icons"], group["id"])
+            for page in group["children"]:
+                self.assertIn(page["icon"], self.doc["icons"], page["id"])
+
+    def test_the_icon_set_keeps_its_licence_with_it_and_the_policy_names_it(self):
+        licence = (PROJECT / "icons" / "LICENSE").read_text(encoding="utf-8")
+        self.assertIn("Apache License", licence)
+        assets = (ROOT / "docs" / "ASSETS.md").read_text(encoding="utf-8")
+        self.assertIn("Carbon", assets)
+        self.assertRegex(assets, r"@carbon/icons\S* ?\d+\.\d+\.\d+")
+
+    def test_every_icon_file_is_a_safe_svg_that_says_where_it_came_from_and_is_in_the_policy(self):
+        files = sorted((PROJECT / "icons").glob("*.svg"))
+        self.assertTrue(files)
+        assets = (ROOT / "docs" / "ASSETS.md").read_text(encoding="utf-8")
+        for f in files:
+            text = f.read_text(encoding="utf-8")
+            self.assertTrue("@carbon/icons" in text or "Project icon" in text, f"{f.name} does not say where it came from")
+            icons.markup(text)
+            self.assertIn(f"`{f.stem}`", assets, f"{f.name} is not recorded in docs/ASSETS.md")
+
+    def test_the_release_publishes_two_groups_and_development_adds_the_held_back_ones(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            release, development = pathlib.Path(tmp) / "r", pathlib.Path(tmp) / "d"
+            phrasebook.build(release, project_dir=PROJECT)
+            phrasebook.build(development, project_dir=PROJECT, channel="development")
+            rel = sorted(f.name for f in release.glob("group-*.html"))
+            dev = sorted(f.name for f in development.glob("group-*.html"))
+        self.assertEqual(rel, ["group-everyday.html", "group-weather-forecast.html"])
+        self.assertEqual(dev, ["group-everyday.html", "group-geography.html", "group-news.html", "group-sport.html",
+                               "group-weather-forecast.html"])
+
+    def test_the_held_back_groups_have_their_mockup_icons_and_welsh_titles_marked_for_review(self):
+        structure = json.loads((PROJECT / "structure.json").read_text(encoding="utf-8"))
+        icons_by_group = {g["id"]: g.get("icon") for g in structure["groups"]}
+        self.assertEqual({k: icons_by_group[k] for k in ("geography", "news", "sport")},
+                         {"geography": "location", "news": "blog", "sport": "trophy"})
+        cy = json.loads((PROJECT / "packs" / "cy" / "pack.json").read_text(encoding="utf-8"))["groups"]
+        self.assertEqual((cy["geography"], cy["news"], cy["sport"]), ("Daearyddiaeth", "Newyddion", "Chwaraeon"))
+        review = (ROOT / "docs" / "REVIEW.md").read_text(encoding="utf-8")
+        for word in ("Daearyddiaeth", "Newyddion", "Chwaraeon"):
+            self.assertIn(word, review)
+
+    def test_the_weather_group_has_the_scattered_rain_icon(self):
+        weather = self.doc["nodes"][0]
+        self.assertEqual(weather["icon"], "rain--scattered")
+
+    def test_the_worked_example_in_the_to_do_is_a_real_path_through_the_tree(self):
+        weather = self.doc["nodes"][0]
+        self.assertEqual(weather["id"], "1")
+        titles = [p["first"]["text"] for p in weather["children"]]
+        self.assertIn("Rain, snow and ice", titles)
+        rain_page = next(p for p in weather["children"] if p["first"]["text"] == "Rain, snow and ice")
+        rain = next(s for s in rain_page["children"] if s["href"].endswith("#rain"))
+        self.assertIn("Drizzle", [w["first"]["text"] for w in rain["children"]])
+
+
+if __name__ == "__main__":
+    unittest.main()

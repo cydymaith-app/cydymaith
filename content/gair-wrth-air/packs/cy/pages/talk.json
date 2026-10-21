@@ -1,0 +1,49 @@
+{
+  "title": "Sôn am y tywydd",
+  "source": "draft",
+  "sections": {
+    "asking": {
+      "title": "Gofyn",
+      "concepts": {
+        "whats-the-weather-like": {
+          "text": "Sut mae'r tywydd?"
+        },
+        "whats-the-forecast": {
+          "text": "Beth yw'r rhagolygon?"
+        },
+        "whats-the-temperature": {
+          "text": "Beth yw'r tymheredd?"
+        },
+        "whats-the-weather-like-in-north-wales": {
+          "text": "Sut mae'r tywydd yng ngogledd Cymru?"
+        },
+        "will-it-rain-tomorrow": {
+          "text": "A fydd hi'n bwrw glaw yfory?"
+        },
+        "will-it-be-cold-tonight": {
+          "text": "A fydd hi'n oer heno?"
+        },
+        "do-i-need-an-umbrella": {
+          "text": "Oes angen ymbarél arna i?"
+        },
+        "do-i-need-a-coat": {
+          "text": "Oes angen côt arna i?"
+        }
+      }
+    },
+    "small-talk": {
+      "title": "Sgwrs fach",
+      "concepts": {
+        "lovely-weather-isnt-it": {
+          "text": "Tywydd braf, ynte?"
+        },
+        "dreadful-weather-isnt-it": {
+          "text": "Tywydd ofnadwy, ynte?"
+        },
+        "its-been-very-wet": {
+          "text": "Mae hi wedi bod yn wlyb iawn"
+        }
+      }
+    }
+  }
+}

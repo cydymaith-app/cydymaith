@@ -1,0 +1,26 @@
+{
+  "icon": "chat",
+  "sections": [
+    {
+      "id": "asking",
+      "concepts": [
+        "whats-the-weather-like",
+        "whats-the-forecast",
+        "whats-the-temperature",
+        "whats-the-weather-like-in-north-wales",
+        "will-it-rain-tomorrow",
+        "will-it-be-cold-tonight",
+        "do-i-need-an-umbrella",
+        "do-i-need-a-coat"
+      ]
+    },
+    {
+      "id": "small-talk",
+      "concepts": [
+        "lovely-weather-isnt-it",
+        "dreadful-weather-isnt-it",
+        "its-been-very-wet"
+      ]
+    }
+  ]
+}

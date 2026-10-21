@@ -1,0 +1,117 @@
+{
+  "title": "Glaw, eira a rhew",
+  "source": "draft",
+  "sections": {
+    "rain": {
+      "title": "Glaw",
+      "concepts": {
+        "rain": {
+          "text": "Glaw"
+        },
+        "rainy": {
+          "text": "Glawog"
+        },
+        "showers": {
+          "text": "Cawodydd",
+          "note": "one shower: {{cawod}}"
+        },
+        "light-rain": {
+          "text": "Glaw ysgafn"
+        },
+        "heavy-rain": {
+          "text": "Glaw trwm"
+        },
+        "drizzle": {
+          "text": "Glaw mân"
+        },
+        "wet": {
+          "text": "Gwlyb"
+        },
+        "flooding": {
+          "text": "Llifogydd"
+        },
+        "rainbow": {
+          "text": "Enfys"
+        }
+      }
+    },
+    "thunder": {
+      "title": "Mellt a tharanau",
+      "concepts": {
+        "thunder": {
+          "text": "Taranau"
+        },
+        "lightning": {
+          "text": "Mellt"
+        },
+        "thunderstorm": {
+          "text": "Storm fellt a tharanau",
+          "note": "literally a storm of lightning and thunder"
+        }
+      }
+    },
+    "snow-ice": {
+      "title": "Eira a rhew",
+      "concepts": {
+        "snow": {
+          "text": "Eira"
+        },
+        "snowy": {
+          "text": "Eiraog"
+        },
+        "snowstorm": {
+          "text": "Storm eira"
+        },
+        "sleet": {
+          "text": "Eirlaw"
+        },
+        "hail": {
+          "text": "Cenllysg"
+        },
+        "frost": {
+          "text": "Rhew"
+        },
+        "icy": {
+          "text": "Rhewllyd"
+        },
+        "ice": {
+          "text": "Iâ"
+        }
+      }
+    },
+    "in-a-sentence": {
+      "title": "Mewn brawddeg",
+      "intro": "After {{mae hi'n}} (it is) the next word often softens: {{cymylog}} becomes {{gymylog}}, {{cynnes}} becomes {{gynnes}}, {{poeth}} becomes {{boeth}}, {{gwlyb}} becomes {{wlyb}}.",
+      "concepts": {
+        "its-raining": {
+          "text": "Mae hi'n bwrw glaw"
+        },
+        "its-snowing": {
+          "text": "Mae hi'n bwrw eira"
+        },
+        "its-wet": {
+          "text": "Mae hi'n wlyb"
+        },
+        "its-pouring": {
+          "text": "Mae hi'n bwrw hen wragedd a ffyn",
+          "note": "literally: it's raining old women and sticks"
+        },
+        "it-will-rain-tomorrow": {
+          "text": "Bydd hi'n bwrw glaw yfory"
+        },
+        "showers-on-saturday": {
+          "text": "Bydd cawodydd ddydd Sadwrn"
+        },
+        "rain-in-the-north": {
+          "text": "Bydd glaw yn y gogledd"
+        },
+        "snow-on-high-ground": {
+          "text": "Bydd eira ar dir uchel"
+        },
+        "frost-overnight": {
+          "text": "Bydd rhew dros nos"
+        }
+      }
+    }
+  }
+}

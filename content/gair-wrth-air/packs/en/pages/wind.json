@@ -1,0 +1,97 @@
+{
+  "title": "Wind",
+  "lede": "From breeze to gale, the direction a wind comes from, and how to say it in a forecast.",
+  "source": "draft",
+  "sections": {
+    "wind": {
+      "title": "Wind",
+      "concepts": {
+        "wind": {
+          "text": "Wind"
+        },
+        "windy": {
+          "text": "Windy"
+        },
+        "calm": {
+          "text": "Calm"
+        },
+        "breeze": {
+          "text": "Breeze"
+        },
+        "light-breeze": {
+          "text": "Light breeze"
+        },
+        "strong-winds": {
+          "text": "Strong winds"
+        },
+        "gusts": {
+          "text": "Gusts"
+        },
+        "storm": {
+          "text": "Storm"
+        },
+        "wind-speed": {
+          "text": "Wind speed"
+        },
+        "miles-per-hour": {
+          "text": "Miles per hour"
+        }
+      }
+    },
+    "wind-direction": {
+      "title": "Wind direction",
+      "concepts": {
+        "northerly": {
+          "text": "Northerly"
+        },
+        "southerly": {
+          "text": "Southerly"
+        },
+        "easterly": {
+          "text": "Easterly"
+        },
+        "westerly": {
+          "text": "Westerly"
+        },
+        "north-easterly": {
+          "text": "North-easterly"
+        },
+        "north-westerly": {
+          "text": "North-westerly"
+        },
+        "south-easterly": {
+          "text": "South-easterly"
+        },
+        "south-westerly": {
+          "text": "South-westerly"
+        },
+        "a-south-westerly-wind": {
+          "text": "A south-westerly wind"
+        },
+        "wind-from-the-north": {
+          "text": "Wind from the north"
+        },
+        "wind-from-the-east": {
+          "text": "Wind from the east"
+        },
+        "winds-from-the-south-east": {
+          "text": "Winds from the south-east"
+        }
+      }
+    },
+    "in-a-sentence": {
+      "title": "In a sentence",
+      "concepts": {
+        "its-windy": {
+          "text": "It's windy"
+        },
+        "strong-winds-in-the-west": {
+          "text": "Strong winds in the west"
+        },
+        "there-will-be-a-south-westerly-wind": {
+          "text": "A south-westerly wind"
+        }
+      }
+    }
+  }
+}

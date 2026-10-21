@@ -1,0 +1,36 @@
+{
+  "icon": "location",
+  "sections": [
+    {
+      "id": "overview",
+      "status": "development",
+      "concepts": [
+        "geography"
+      ]
+    },
+    {
+      "id": "places",
+      "status": "development",
+      "concepts": [
+        "cardiff",
+        "swansea",
+        "newport",
+        "wrexham",
+        "aberystwyth",
+        "bangor",
+        "holyhead"
+      ]
+    },
+    {
+      "id": "uk",
+      "status": "development",
+      "concepts": [
+        "england",
+        "scotland",
+        "ireland",
+        "northern-ireland",
+        "the-united-kingdom"
+      ]
+    }
+  ]
+}

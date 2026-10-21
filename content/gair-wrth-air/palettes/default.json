@@ -1,0 +1,32 @@
+{
+  "notes": "Generated at hellocolor.de on 2026-10-20 (preset art-deco, base #EF4444, size 8, contrast 0.56, vibrancy 0.78, brightness 0.48, accessibility AA); see docs/ASSETS.md, Colour palettes in use. Taken from the tool's tokens: background, text, text-muted and border; surface (light) and surface-elevated (dark); primary-scale 400 (#b6001a) as the light accent, because the primary (#e60024) is 4.31:1 on the light surface, under AA; ring (#ff333b) as the dark accent. Derived here, because the tool has no such token: rule-strong in both variants, the dark rule (the tool's border, #161111, is 1.09:1 on the background and cannot be seen), and the compass star, tinted from the tool's secondary green (#00967d, hue 175), which with the red accent gives the red and green of the Welsh flag. Tiles (added when the home page became a grid of tiles): the tool's success green, #009a46 in the light variant and #32bb60 in the dark, with the tool's near-black foreground #0b0b0b for the icon on it. The green is the flag's, and the icon is 5.5:1 and 8:1 against it.",
+  "level": "AA",
+  "light": {
+    "bg": "oklch(0.989 0.006 31.05)",
+    "surface": "oklch(0.965 0.006 31.05)",
+    "ink": "oklch(0.200 0.007 34.31)",
+    "muted": "oklch(0.515 0.008 28.87)",
+    "rule": "oklch(0.914 0.007 28.84)",
+    "rule-strong": "oklch(0.74 0.008 29)",
+    "accent": "oklch(0.4889 0.1984 25.396)",
+    "star": "oklch(0.93 0.04 175)",
+    "tile": "oklch(0.600 0.165 150.03)",
+    "on-tile": "oklch(0.150 0.000 89.88)",
+    "header": "oklch(0.989 0.006 31.05)",
+    "on-header": "oklch(0.200 0.007 34.31)"
+  },
+  "dark": {
+    "bg": "oklch(0.119 0.005 17.88)",
+    "surface": "oklch(0.158 0.005 17.71)",
+    "ink": "oklch(0.969 0.008 27.23)",
+    "muted": "oklch(0.655 0.007 28.85)",
+    "rule": "oklch(0.27 0.01 18)",
+    "rule-strong": "oklch(0.45 0.008 29)",
+    "accent": "oklch(0.650 0.236 25.30)",
+    "star": "oklch(0.30 0.05 175)",
+    "tile": "oklch(0.699 0.174 149.94)",
+    "on-tile": "oklch(0.150 0.000 89.88)",
+    "header": "oklch(0.119 0.005 17.88)",
+    "on-header": "oklch(0.969 0.008 27.23)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Newyddion",
+  "source": "draft",
+  "sections": {
+    "overview": {
+      "title": "Newyddion",
+      "concepts": {
+        "news": {
+          "text": "Newyddion"
+        }
+      }
+    }
+  }
+}

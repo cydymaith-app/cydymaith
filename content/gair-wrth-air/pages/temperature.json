@@ -1,0 +1,39 @@
+{
+  "icon": "temperature",
+  "sections": [
+    {
+      "id": "temperature",
+      "concepts": [
+        "temperature",
+        "degrees-celsius",
+        "highest-maximum",
+        "lowest-minimum",
+        "freezing-point",
+        "below-freezing"
+      ]
+    },
+    {
+      "id": "hot-cold",
+      "concepts": [
+        "hot",
+        "warm",
+        "mild",
+        "chilly-fresh",
+        "cold",
+        "humid",
+        "humidity"
+      ]
+    },
+    {
+      "id": "in-a-sentence",
+      "concepts": [
+        "its-cold",
+        "its-warm",
+        "its-hot",
+        "its-freezing",
+        "it-will-be-cold-tonight",
+        "temperatures-around-ten-degrees"
+      ]
+    }
+  ]
+}

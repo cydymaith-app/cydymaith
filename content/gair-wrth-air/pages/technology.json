@@ -1,0 +1,26 @@
+{
+  "icon": "mobile",
+  "sections": [
+    {
+      "id": "app-development",
+      "status": "development",
+      "concepts": [
+        "app",
+        "app-development",
+        "icon",
+        "navigation",
+        "dictionary",
+        "lookup",
+        "card",
+        "overlay",
+        "version",
+        "release",
+        "open-source",
+        "licence",
+        "offline",
+        "build",
+        "translation"
+      ]
+    }
+  ]
+}

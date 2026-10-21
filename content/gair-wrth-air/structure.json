@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "id": "weather-forecast",
+      "icon": "rain--scattered",
+      "pages": [
+        "sky",
+        "rain-snow",
+        "wind",
+        "temperature",
+        "warnings",
+        "when",
+        "where",
+        "talk"
+      ]
+    },
+    {
+      "id": "everyday",
+      "icon": "restaurant",
+      "pages": [
+        "food-drink"
+      ]
+    },
+    {
+      "id": "technology",
+      "icon": "mobile",
+      "pages": [
+        "technology"
+      ]
+    },
+    {
+      "id": "geography",
+      "icon": "location",
+      "pages": [
+        "geography"
+      ]
+    },
+    {
+      "id": "news",
+      "icon": "blog",
+      "pages": [
+        "news"
+      ]
+    },
+    {
+      "id": "sport",
+      "icon": "trophy",
+      "pages": [
+        "sport"
+      ]
+    }
+  ]
+}

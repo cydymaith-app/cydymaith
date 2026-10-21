@@ -1,0 +1,55 @@
+{
+  "title": "Rhagolygon a rhybuddion",
+  "source": "draft",
+  "sections": {
+    "forecast": {
+      "title": "Y rhagolygon",
+      "concepts": {
+        "weather": {
+          "text": "Tywydd"
+        },
+        "weather-forecast": {
+          "text": "Rhagolygon y tywydd"
+        },
+        "the-met-office": {
+          "text": "Y Swyddfa Dywydd"
+        }
+      }
+    },
+    "warnings": {
+      "title": "Rhybuddion",
+      "intro": "Weather warnings come from the Met Office in three colours.",
+      "concepts": {
+        "weather-warning": {
+          "text": "Rhybudd tywydd"
+        },
+        "yellow-warning": {
+          "text": "Rhybudd melyn"
+        },
+        "amber-warning": {
+          "text": "Rhybudd ambr"
+        },
+        "red-warning": {
+          "text": "Rhybudd coch"
+        },
+        "in-force": {
+          "text": "Mewn grym"
+        },
+        "warning-for-wind": {
+          "text": "Rhybudd am wynt",
+          "note": "{{am}} softens {{gwynt}} to {{wynt}}"
+        },
+        "warning-for-rain": {
+          "text": "Rhybudd am law",
+          "note": "{{glaw}} softens to {{law}}"
+        },
+        "warning-for-snow": {
+          "text": "Rhybudd am eira"
+        },
+        "warning-for-ice": {
+          "text": "Rhybudd am iâ"
+        }
+      }
+    }
+  }
+}

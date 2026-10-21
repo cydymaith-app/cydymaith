@@ -1,0 +1,15 @@
+{
+  "title": "Food and drink",
+  "lede": "Everyday words, including some that differ between north and south Wales.",
+  "source": "draft",
+  "sections": {
+    "drinks": {
+      "title": "Drinks",
+      "concepts": {
+        "milk": {
+          "text": "Milk"
+        }
+      }
+    }
+  }
+}

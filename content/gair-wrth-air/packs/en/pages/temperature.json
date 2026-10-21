@@ -1,0 +1,79 @@
+{
+  "title": "Temperature",
+  "lede": "How hot or cold it is, from below freezing to humid, and how to say it.",
+  "source": "draft",
+  "sections": {
+    "temperature": {
+      "title": "Temperature",
+      "concepts": {
+        "temperature": {
+          "text": "Temperature"
+        },
+        "degrees-celsius": {
+          "text": "Degrees Celsius"
+        },
+        "highest-maximum": {
+          "text": "Highest (maximum)"
+        },
+        "lowest-minimum": {
+          "text": "Lowest (minimum)"
+        },
+        "freezing-point": {
+          "text": "Freezing point"
+        },
+        "below-freezing": {
+          "text": "Below freezing"
+        }
+      }
+    },
+    "hot-cold": {
+      "title": "Hot and cold",
+      "concepts": {
+        "hot": {
+          "text": "Hot"
+        },
+        "warm": {
+          "text": "Warm"
+        },
+        "mild": {
+          "text": "Mild"
+        },
+        "chilly-fresh": {
+          "text": "Chilly, fresh"
+        },
+        "cold": {
+          "text": "Cold"
+        },
+        "humid": {
+          "text": "Humid"
+        },
+        "humidity": {
+          "text": "Humidity"
+        }
+      }
+    },
+    "in-a-sentence": {
+      "title": "In a sentence",
+      "concepts": {
+        "its-cold": {
+          "text": "It's cold"
+        },
+        "its-warm": {
+          "text": "It's warm"
+        },
+        "its-hot": {
+          "text": "It's hot"
+        },
+        "its-freezing": {
+          "text": "It's freezing"
+        },
+        "it-will-be-cold-tonight": {
+          "text": "It will be cold tonight"
+        },
+        "temperatures-around-ten-degrees": {
+          "text": "Temperatures around ten degrees"
+        }
+      }
+    }
+  }
+}

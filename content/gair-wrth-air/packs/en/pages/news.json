@@ -1,0 +1,14 @@
+{
+  "title": "News",
+  "source": "draft",
+  "sections": {
+    "overview": {
+      "title": "News",
+      "concepts": {
+        "news": {
+          "text": "News"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "icon": "windy",
+  "sections": [
+    {
+      "id": "wind",
+      "concepts": [
+        "wind",
+        "windy",
+        "calm",
+        "breeze",
+        "light-breeze",
+        "strong-winds",
+        "gusts",
+        "storm",
+        "wind-speed",
+        "miles-per-hour"
+      ]
+    },
+    {
+      "id": "wind-direction",
+      "concepts": [
+        "northerly",
+        "southerly",
+        "easterly",
+        "westerly",
+        "north-easterly",
+        "north-westerly",
+        "south-easterly",
+        "south-westerly",
+        "a-south-westerly-wind",
+        "wind-from-the-north",
+        "wind-from-the-east",
+        "winds-from-the-south-east"
+      ]
+    },
+    {
+      "id": "in-a-sentence",
+      "concepts": [
+        "its-windy",
+        "strong-winds-in-the-west",
+        "there-will-be-a-south-westerly-wind"
+      ]
+    }
+  ]
+}

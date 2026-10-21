@@ -1,0 +1,85 @@
+{
+  "title": "Pryd",
+  "source": "draft",
+  "sections": {
+    "ahead": {
+      "title": "Heddiw ac yfory",
+      "concepts": {
+        "today": {
+          "text": "Heddiw"
+        },
+        "tonight": {
+          "text": "Heno"
+        },
+        "tomorrow": {
+          "text": "Yfory"
+        },
+        "overnight": {
+          "text": "Dros nos"
+        },
+        "all-day": {
+          "text": "Drwy'r dydd"
+        },
+        "later": {
+          "text": "Yn hwyrach"
+        },
+        "this-week": {
+          "text": "Yr wythnos hon"
+        },
+        "next-week": {
+          "text": "Yr wythnos nesaf"
+        },
+        "the-weekend": {
+          "text": "Y penwythnos"
+        }
+      }
+    },
+    "times": {
+      "title": "Amserau'r dydd",
+      "concepts": {
+        "morning": {
+          "text": "Bore",
+          "note": "this morning: {{y bore 'ma}}"
+        },
+        "afternoon": {
+          "text": "Prynhawn",
+          "note": "this afternoon: {{y prynhawn 'ma}}"
+        },
+        "evening": {
+          "text": "Min nos",
+          "note": "also {{gyda'r nos}}, in the evening"
+        },
+        "night": {
+          "text": "Nos"
+        }
+      }
+    },
+    "days": {
+      "title": "Dyddiau'r wythnos",
+      "intro": "To say on Monday, {{dydd}} softens: {{ddydd Llun}}.",
+      "concepts": {
+        "monday": {
+          "text": "Dydd Llun"
+        },
+        "tuesday": {
+          "text": "Dydd Mawrth"
+        },
+        "wednesday": {
+          "text": "Dydd Mercher"
+        },
+        "thursday": {
+          "text": "Dydd Iau"
+        },
+        "friday": {
+          "text": "Dydd Gwener"
+        },
+        "saturday": {
+          "text": "Dydd Sadwrn"
+        },
+        "sunday": {
+          "text": "Dydd Sul"
+        }
+      }
+    }
+  }
+}

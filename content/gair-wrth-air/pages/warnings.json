@@ -1,0 +1,27 @@
+{
+  "icon": "warning--alt",
+  "sections": [
+    {
+      "id": "forecast",
+      "concepts": [
+        "weather",
+        "weather-forecast",
+        "the-met-office"
+      ]
+    },
+    {
+      "id": "warnings",
+      "concepts": [
+        "weather-warning",
+        "yellow-warning",
+        "amber-warning",
+        "red-warning",
+        "in-force",
+        "warning-for-wind",
+        "warning-for-rain",
+        "warning-for-snow",
+        "warning-for-ice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Talking about the weather",
+  "lede": "Asking about the weather, and the small talk that goes with it.",
+  "source": "draft",
+  "sections": {
+    "asking": {
+      "title": "Asking",
+      "concepts": {
+        "whats-the-weather-like": {
+          "text": "What's the weather like?"
+        },
+        "whats-the-forecast": {
+          "text": "What's the forecast?"
+        },
+        "whats-the-temperature": {
+          "text": "What's the temperature?"
+        },
+        "whats-the-weather-like-in-north-wales": {
+          "text": "What's the weather like in north Wales?"
+        },
+        "will-it-rain-tomorrow": {
+          "text": "Will it rain tomorrow?"
+        },
+        "will-it-be-cold-tonight": {
+          "text": "Will it be cold tonight?"
+        },
+        "do-i-need-an-umbrella": {
+          "text": "Do I need an umbrella?"
+        },
+        "do-i-need-a-coat": {
+          "text": "Do I need a coat?"
+        }
+      }
+    },
+    "small-talk": {
+      "title": "Small talk",
+      "concepts": {
+        "lovely-weather-isnt-it": {
+          "text": "Lovely weather, isn't it?"
+        },
+        "dreadful-weather-isnt-it": {
+          "text": "Dreadful weather, isn't it?"
+        },
+        "its-been-very-wet": {
+          "text": "It's been very wet"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "icon": "trophy",
+  "sections": [
+    {
+      "id": "overview",
+      "status": "development",
+      "concepts": [
+        "sport"
+      ]
+    }
+  ]
+}

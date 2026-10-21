@@ -1,0 +1,43 @@
+{
+  "icon": "partly-cloudy",
+  "sections": [
+    {
+      "id": "sun-cloud",
+      "concepts": [
+        "sun",
+        "sunny",
+        "sunny-spells",
+        "cloud",
+        "cloudy",
+        "clear",
+        "fine-pleasant",
+        "dry"
+      ]
+    },
+    {
+      "id": "fog",
+      "concepts": [
+        "fog",
+        "foggy",
+        "mist",
+        "visibility",
+        "poor-visibility"
+      ]
+    },
+    {
+      "id": "in-a-sentence",
+      "concepts": [
+        "its-sunny",
+        "its-cloudy",
+        "its-fine",
+        "its-dry",
+        "its-foggy",
+        "the-sun-is-shining",
+        "it-will-be-sunny-tomorrow",
+        "it-will-be-dry-all-day",
+        "brighter-later",
+        "fog-in-places"
+      ]
+    }
+  ]
+}

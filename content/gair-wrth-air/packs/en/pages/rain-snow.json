@@ -1,0 +1,114 @@
+{
+  "title": "Rain, snow and ice",
+  "lede": "Rain, showers, thunder, snow and ice, and how to say what is falling.",
+  "source": "draft",
+  "sections": {
+    "rain": {
+      "title": "Rain",
+      "concepts": {
+        "rain": {
+          "text": "Rain"
+        },
+        "rainy": {
+          "text": "Rainy"
+        },
+        "showers": {
+          "text": "Showers"
+        },
+        "light-rain": {
+          "text": "Light rain"
+        },
+        "heavy-rain": {
+          "text": "Heavy rain"
+        },
+        "drizzle": {
+          "text": "Drizzle"
+        },
+        "wet": {
+          "text": "Wet"
+        },
+        "flooding": {
+          "text": "Flooding"
+        },
+        "rainbow": {
+          "text": "Rainbow"
+        }
+      }
+    },
+    "thunder": {
+      "title": "Thunder and lightning",
+      "concepts": {
+        "thunder": {
+          "text": "Thunder"
+        },
+        "lightning": {
+          "text": "Lightning"
+        },
+        "thunderstorm": {
+          "text": "Thunderstorm"
+        }
+      }
+    },
+    "snow-ice": {
+      "title": "Snow and ice",
+      "concepts": {
+        "snow": {
+          "text": "Snow"
+        },
+        "snowy": {
+          "text": "Snowy"
+        },
+        "snowstorm": {
+          "text": "Snowstorm"
+        },
+        "sleet": {
+          "text": "Sleet"
+        },
+        "hail": {
+          "text": "Hail"
+        },
+        "frost": {
+          "text": "Frost"
+        },
+        "icy": {
+          "text": "Icy"
+        },
+        "ice": {
+          "text": "Ice"
+        }
+      }
+    },
+    "in-a-sentence": {
+      "title": "In a sentence",
+      "concepts": {
+        "its-raining": {
+          "text": "It's raining"
+        },
+        "its-snowing": {
+          "text": "It's snowing"
+        },
+        "its-wet": {
+          "text": "It's wet"
+        },
+        "its-pouring": {
+          "text": "It's pouring"
+        },
+        "it-will-rain-tomorrow": {
+          "text": "It will rain tomorrow"
+        },
+        "showers-on-saturday": {
+          "text": "Showers on Saturday"
+        },
+        "rain-in-the-north": {
+          "text": "Rain in the north"
+        },
+        "snow-on-high-ground": {
+          "text": "Snow on high ground"
+        },
+        "frost-overnight": {
+          "text": "Frost overnight"
+        }
+      }
+    }
+  }
+}

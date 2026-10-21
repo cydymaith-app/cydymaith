@@ -1,0 +1,28 @@
+{
+  "title": "Bwyd a diod",
+  "source": "draft",
+  "sections": {
+    "drinks": {
+      "title": "Diodydd",
+      "intro": "Welsh varies between north and south. Where a word differs, each form is labelled with the region that uses it.",
+      "concepts": {
+        "milk": {
+          "forms": [
+            {
+              "text": "Llaeth",
+              "varieties": [
+                "south"
+              ]
+            },
+            {
+              "text": "Llefrith",
+              "varieties": [
+                "north"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

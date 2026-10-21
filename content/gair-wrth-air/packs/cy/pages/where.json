@@ -1,0 +1,125 @@
+{
+  "title": "Ble",
+  "source": "draft",
+  "sections": {
+    "points": {
+      "title": "Yr wyth pwynt",
+      "box": {
+        "title": "Why the spelling changes",
+        "body": "In the combined points the second word softens. {{Dwyrain}} becomes {{ddwyrain}} and {{gorllewin}} becomes {{orllewin}}. That is why south-west is {{de-orllewin}} and not {{de-gorllewin}}."
+      },
+      "concepts": {
+        "north": {
+          "text": "Gogledd"
+        },
+        "south": {
+          "text": "De"
+        },
+        "east": {
+          "text": "Dwyrain"
+        },
+        "west": {
+          "text": "Gorllewin"
+        },
+        "north-east": {
+          "text": "Gogledd-ddwyrain"
+        },
+        "north-west": {
+          "text": "Gogledd-orllewin"
+        },
+        "south-east": {
+          "text": "De-ddwyrain"
+        },
+        "south-west": {
+          "text": "De-orllewin"
+        }
+      }
+    },
+    "directions": {
+      "title": "Y gogledd, y de, y dwyrain a'r gorllewin",
+      "concepts": {
+        "in-the-north": {
+          "text": "Yn y gogledd"
+        },
+        "in-the-south": {
+          "text": "Yn y de"
+        },
+        "in-the-east": {
+          "text": "Yn y dwyrain"
+        },
+        "in-the-west": {
+          "text": "Yn y gorllewin"
+        }
+      }
+    },
+    "regions": {
+      "title": "Rhannau o Gymru",
+      "intro": "After {{yn}} (in) the first letter changes: {{Cymru}} becomes {{Nghymru}} and {{yn}} becomes {{yng}}; {{gogledd}} becomes {{ngogledd}}; {{de}} becomes {{ne}}; {{dwyrain}} becomes {{nwyrain}}.",
+      "concepts": {
+        "wales": {
+          "text": "Cymru"
+        },
+        "in-wales": {
+          "text": "Yng Nghymru"
+        },
+        "across-wales": {
+          "text": "Ledled Cymru"
+        },
+        "north-wales": {
+          "text": "Gogledd Cymru"
+        },
+        "in-north-wales": {
+          "text": "Yng ngogledd Cymru"
+        },
+        "south-wales": {
+          "text": "De Cymru"
+        },
+        "in-south-wales": {
+          "text": "Yn ne Cymru"
+        },
+        "mid-wales": {
+          "text": "Canolbarth Cymru"
+        },
+        "in-mid-wales": {
+          "text": "Yng nghanolbarth Cymru"
+        },
+        "west-wales": {
+          "text": "Gorllewin Cymru"
+        },
+        "in-west-wales": {
+          "text": "Yng ngorllewin Cymru"
+        }
+      }
+    },
+    "landscape": {
+      "title": "Tirwedd",
+      "concepts": {
+        "on-the-coast": {
+          "text": "Ar yr arfordir"
+        },
+        "in-the-mountains": {
+          "text": "Yn y mynyddoedd"
+        },
+        "in-the-hills": {
+          "text": "Yn y bryniau"
+        },
+        "in-the-valleys": {
+          "text": "Yn y cymoedd"
+        },
+        "on-high-ground": {
+          "text": "Ar dir uchel"
+        },
+        "in-places": {
+          "text": "Mewn mannau"
+        },
+        "in-snowdonia": {
+          "text": "Yn Eryri"
+        },
+        "in-the-brecon-beacons": {
+          "text": "Ym Mannau Brycheiniog",
+          "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
+        }
+      }
+    }
+  }
+}

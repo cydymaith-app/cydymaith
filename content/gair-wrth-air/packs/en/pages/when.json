@@ -1,0 +1,82 @@
+{
+  "title": "When",
+  "lede": "Days and times of day, and the time words a forecast uses.",
+  "source": "draft",
+  "sections": {
+    "ahead": {
+      "title": "Today and tomorrow",
+      "concepts": {
+        "today": {
+          "text": "Today"
+        },
+        "tonight": {
+          "text": "Tonight"
+        },
+        "tomorrow": {
+          "text": "Tomorrow"
+        },
+        "overnight": {
+          "text": "Overnight"
+        },
+        "all-day": {
+          "text": "All day"
+        },
+        "later": {
+          "text": "Later"
+        },
+        "this-week": {
+          "text": "This week"
+        },
+        "next-week": {
+          "text": "Next week"
+        },
+        "the-weekend": {
+          "text": "The weekend"
+        }
+      }
+    },
+    "times": {
+      "title": "Times of day",
+      "concepts": {
+        "morning": {
+          "text": "Morning"
+        },
+        "afternoon": {
+          "text": "Afternoon"
+        },
+        "evening": {
+          "text": "Evening"
+        },
+        "night": {
+          "text": "Night"
+        }
+      }
+    },
+    "days": {
+      "title": "Days of the week",
+      "concepts": {
+        "monday": {
+          "text": "Monday"
+        },
+        "tuesday": {
+          "text": "Tuesday"
+        },
+        "wednesday": {
+          "text": "Wednesday"
+        },
+        "thursday": {
+          "text": "Thursday"
+        },
+        "friday": {
+          "text": "Friday"
+        },
+        "saturday": {
+          "text": "Saturday"
+        },
+        "sunday": {
+          "text": "Sunday"
+        }
+      }
+    }
+  }
+}

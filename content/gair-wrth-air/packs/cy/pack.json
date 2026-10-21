@@ -1,0 +1,40 @@
+{
+  "code": "cy",
+  "name": "Welsh",
+  "dir": "ltr",
+  "ui": {
+    "endonym": "Cymraeg",
+    "home": "Hafan",
+    "main_menu": "Prif ddewislen",
+    "sources": "Ffynonellau",
+    "phrasebook": "Llyfr ymadroddion"
+  },
+  "groups": {
+    "weather-forecast": "Rhagolygon y tywydd",
+    "everyday": "Geiriau bob dydd",
+    "technology": "Technoleg",
+    "geography": "Daearyddiaeth",
+    "news": "Newyddion",
+    "sport": "Chwaraeon"
+  },
+  "varieties": [
+    {
+      "id": "north",
+      "name": "North",
+      "short": "N"
+    },
+    {
+      "id": "south",
+      "name": "South",
+      "short": "S"
+    }
+  ],
+  "sources": [
+    {
+      "id": "draft",
+      "title": "Unreviewed draft written by an AI model from memory",
+      "licence": "draft",
+      "note": "Not yet checked against a published source."
+    }
+  ]
+}

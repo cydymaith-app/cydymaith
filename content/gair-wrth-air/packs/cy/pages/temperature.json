@@ -1,0 +1,80 @@
+{
+  "title": "Tymheredd",
+  "source": "draft",
+  "sections": {
+    "temperature": {
+      "title": "Tymheredd",
+      "concepts": {
+        "temperature": {
+          "text": "Tymheredd"
+        },
+        "degrees-celsius": {
+          "text": "Graddau Celsius",
+          "note": "after a number the noun stays singular: {{deg gradd Celsius}}, ten degrees"
+        },
+        "highest-maximum": {
+          "text": "Uchaf"
+        },
+        "lowest-minimum": {
+          "text": "Isaf"
+        },
+        "freezing-point": {
+          "text": "Rhewbwynt"
+        },
+        "below-freezing": {
+          "text": "Islaw rhewbwynt"
+        }
+      }
+    },
+    "hot-cold": {
+      "title": "Poeth ac oer",
+      "concepts": {
+        "hot": {
+          "text": "Poeth"
+        },
+        "warm": {
+          "text": "Cynnes"
+        },
+        "mild": {
+          "text": "Mwyn"
+        },
+        "chilly-fresh": {
+          "text": "Ffres"
+        },
+        "cold": {
+          "text": "Oer"
+        },
+        "humid": {
+          "text": "Llaith"
+        },
+        "humidity": {
+          "text": "Lleithder"
+        }
+      }
+    },
+    "in-a-sentence": {
+      "title": "Mewn brawddeg",
+      "intro": "After {{mae hi'n}} (it is) the next word often softens: {{cymylog}} becomes {{gymylog}}, {{cynnes}} becomes {{gynnes}}, {{poeth}} becomes {{boeth}}, {{gwlyb}} becomes {{wlyb}}.",
+      "concepts": {
+        "its-cold": {
+          "text": "Mae hi'n oer"
+        },
+        "its-warm": {
+          "text": "Mae hi'n gynnes"
+        },
+        "its-hot": {
+          "text": "Mae hi'n boeth"
+        },
+        "its-freezing": {
+          "text": "Mae hi'n rhewi"
+        },
+        "it-will-be-cold-tonight": {
+          "text": "Bydd hi'n oer heno"
+        },
+        "temperatures-around-ten-degrees": {
+          "text": "Bydd y tymheredd tua deg gradd"
+        }
+      }
+    }
+  }
+}

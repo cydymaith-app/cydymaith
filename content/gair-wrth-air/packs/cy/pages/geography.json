@@ -1,0 +1,60 @@
+{
+  "title": "Daearyddiaeth",
+  "source": "draft",
+  "sections": {
+    "overview": {
+      "title": "Daearyddiaeth",
+      "concepts": {
+        "geography": {
+          "text": "Daearyddiaeth"
+        }
+      }
+    },
+    "places": {
+      "title": "Lleoedd",
+      "concepts": {
+        "cardiff": {
+          "text": "Caerdydd"
+        },
+        "swansea": {
+          "text": "Abertawe"
+        },
+        "newport": {
+          "text": "Casnewydd"
+        },
+        "wrexham": {
+          "text": "Wrecsam"
+        },
+        "aberystwyth": {
+          "text": "Aberystwyth"
+        },
+        "bangor": {
+          "text": "Bangor"
+        },
+        "holyhead": {
+          "text": "Caergybi"
+        }
+      }
+    },
+    "uk": {
+      "title": "Y tu hwnt i Gymru",
+      "concepts": {
+        "england": {
+          "text": "Lloegr"
+        },
+        "scotland": {
+          "text": "Yr Alban"
+        },
+        "ireland": {
+          "text": "Iwerddon"
+        },
+        "northern-ireland": {
+          "text": "Gogledd Iwerddon"
+        },
+        "the-united-kingdom": {
+          "text": "Y Deyrnas Unedig"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Cydymaith am iaith",
+  "short_name": "Cydymaith",
+  "languages": [
+    "en",
+    "cy"
+  ],
+  "interface": "en",
+  "default_pair": [
+    "en",
+    "cy"
+  ],
+  "stylesheets": [
+    "project.css"
+  ],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "home": {
+    "headline": {
+      "en": "Everyday phrases, English to Welsh",
+      "cy": "Ymadroddion bob dydd, Saesneg i Gymraeg"
+    },
+    "about": {
+      "en": "Phrases follow standard written Welsh as used in forecasts. Spoken Welsh varies between north and south."
+    }
+  }
+}

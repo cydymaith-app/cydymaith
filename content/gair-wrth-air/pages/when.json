@@ -1,0 +1,40 @@
+{
+  "icon": "calendar",
+  "sections": [
+    {
+      "id": "ahead",
+      "concepts": [
+        "today",
+        "tonight",
+        "tomorrow",
+        "overnight",
+        "all-day",
+        "later",
+        "this-week",
+        "next-week",
+        "the-weekend"
+      ]
+    },
+    {
+      "id": "times",
+      "concepts": [
+        "morning",
+        "afternoon",
+        "evening",
+        "night"
+      ]
+    },
+    {
+      "id": "days",
+      "concepts": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ]
+    }
+  ]
+}

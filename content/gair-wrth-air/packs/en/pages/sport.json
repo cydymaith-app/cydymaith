@@ -1,0 +1,14 @@
+{
+  "title": "Sports",
+  "source": "draft",
+  "sections": {
+    "overview": {
+      "title": "Sports",
+      "concepts": {
+        "sport": {
+          "text": "Sports"
+        }
+      }
+    }
+  }
+}

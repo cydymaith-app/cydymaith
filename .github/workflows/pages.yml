@@ -1,0 +1,56 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          # The framework is a separate repository in the same organisation. While it is private, the default token cannot
+          # read it: add a read-only token for it as the repository secret FRAMEWORK_TOKEN. If it is public, this is not needed.
+          token: ${{ secrets.FRAMEWORK_TOKEN || github.token }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run the project's tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Run the framework's tests, at the version this project has pinned
+        run: python3 -m unittest discover -s framework/tests -v
+        env:
+          REQUIRE_NODE: "1"  # the browser script tests must run in CI, never be skipped
+      - name: Check the framework names nothing of this project
+        run: python3 -m unittest discover -s framework/tests -p "test_framework.py" -k EngineIsLanguageNeutral -v
+        env:
+          PHRASEBOOK_PROJECT: content/gair-wrth-air
+      - name: Build site
+        run: python3 build.py dist
+
+# Deploying to GitHub Pages needs the repo public (or a paid plan); this repo is private for now.
+# When that changes, restore the upload-pages-artifact step above and a deploy job like:
+#
+#   deploy:
+#     if: github.ref == 'refs/heads/main'
+#     needs: test
+#     runs-on: ubuntu-latest
+#     permissions:
+#       pages: write
+#       id-token: write
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+#     steps:
+#       - id: deployment
+#         uses: actions/deploy-pages@v4

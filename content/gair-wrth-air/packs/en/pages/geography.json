@@ -1,0 +1,60 @@
+{
+  "title": "Geography",
+  "source": "draft",
+  "sections": {
+    "overview": {
+      "title": "Geography",
+      "concepts": {
+        "geography": {
+          "text": "Geography"
+        }
+      }
+    },
+    "places": {
+      "title": "Places",
+      "concepts": {
+        "cardiff": {
+          "text": "Cardiff"
+        },
+        "swansea": {
+          "text": "Swansea"
+        },
+        "newport": {
+          "text": "Newport"
+        },
+        "wrexham": {
+          "text": "Wrexham"
+        },
+        "aberystwyth": {
+          "text": "Aberystwyth"
+        },
+        "bangor": {
+          "text": "Bangor"
+        },
+        "holyhead": {
+          "text": "Holyhead"
+        }
+      }
+    },
+    "uk": {
+      "title": "Beyond Wales",
+      "concepts": {
+        "england": {
+          "text": "England"
+        },
+        "scotland": {
+          "text": "Scotland"
+        },
+        "ireland": {
+          "text": "Ireland"
+        },
+        "northern-ireland": {
+          "text": "Northern Ireland"
+        },
+        "the-united-kingdom": {
+          "text": "The United Kingdom"
+        }
+      }
+    }
+  }
+}

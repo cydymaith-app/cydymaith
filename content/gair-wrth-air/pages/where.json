@@ -1,0 +1,57 @@
+{
+  "icon": "compass",
+  "figure": "compass-rose",
+  "sections": [
+    {
+      "id": "points",
+      "concepts": [
+        "north",
+        "south",
+        "east",
+        "west",
+        "north-east",
+        "north-west",
+        "south-east",
+        "south-west"
+      ]
+    },
+    {
+      "id": "directions",
+      "concepts": [
+        "in-the-north",
+        "in-the-south",
+        "in-the-east",
+        "in-the-west"
+      ]
+    },
+    {
+      "id": "regions",
+      "concepts": [
+        "wales",
+        "in-wales",
+        "across-wales",
+        "north-wales",
+        "in-north-wales",
+        "south-wales",
+        "in-south-wales",
+        "mid-wales",
+        "in-mid-wales",
+        "west-wales",
+        "in-west-wales"
+      ]
+    },
+    {
+      "id": "landscape",
+      "concepts": [
+        "on-the-coast",
+        "in-the-mountains",
+        "in-the-hills",
+        "in-the-valleys",
+        "on-high-ground",
+        "in-places",
+        "in-snowdonia",
+        "in-the-brecon-beacons"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "icon": "restaurant",
+  "sections": [
+    {
+      "id": "drinks",
+      "concepts": [
+        "milk"
+      ]
+    }
+  ]
+}
