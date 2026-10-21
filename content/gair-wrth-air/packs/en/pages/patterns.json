@@ -1,0 +1,238 @@
+{
+  "title": "How it's said",
+  "lede": "The sentence patterns a forecast is built from, with the weather words to slot in.",
+  "source": "draft",
+  "sections": {
+    "it-is": {
+      "title": "It is…",
+      "concepts": {
+        "its-sunny": {
+          "text": "It's sunny"
+        },
+        "its-cloudy": {
+          "text": "It's cloudy"
+        },
+        "its-fine": {
+          "text": "It's fine"
+        },
+        "its-dry": {
+          "text": "It's dry"
+        },
+        "its-foggy": {
+          "text": "It's foggy"
+        },
+        "its-wet": {
+          "text": "It's wet"
+        },
+        "its-windy": {
+          "text": "It's windy"
+        },
+        "its-cold": {
+          "text": "It's cold"
+        },
+        "its-warm": {
+          "text": "It's warm"
+        },
+        "its-hot": {
+          "text": "It's hot"
+        },
+        "its-freezing": {
+          "text": "It's freezing"
+        }
+      }
+    },
+    "doing": {
+      "title": "What the weather is doing",
+      "concepts": {
+        "its-raining": {
+          "text": "It's raining"
+        },
+        "its-snowing": {
+          "text": "It's snowing"
+        },
+        "its-pouring": {
+          "text": "It's pouring"
+        },
+        "the-sun-is-shining": {
+          "text": "The sun is shining"
+        }
+      }
+    },
+    "it-will-be": {
+      "title": "It will be…",
+      "concepts": {
+        "it-will-be-sunny-tomorrow": {
+          "text": "It will be sunny tomorrow"
+        },
+        "it-will-be-dry-all-day": {
+          "text": "It will be dry all day"
+        },
+        "brighter-later": {
+          "text": "Brighter later"
+        },
+        "it-will-rain-tomorrow": {
+          "text": "It will rain tomorrow"
+        },
+        "it-will-be-cold-tonight": {
+          "text": "It will be cold tonight"
+        }
+      }
+    },
+    "there-will-be": {
+      "title": "There will be…",
+      "concepts": {
+        "fog-in-places": {
+          "text": "Fog in places"
+        },
+        "showers-on-saturday": {
+          "text": "Showers on Saturday"
+        },
+        "rain-in-the-north": {
+          "text": "Rain in the north"
+        },
+        "snow-on-high-ground": {
+          "text": "Snow on high ground"
+        },
+        "frost-overnight": {
+          "text": "Frost overnight"
+        },
+        "strong-winds-in-the-west": {
+          "text": "Strong winds in the west"
+        },
+        "there-will-be-a-south-westerly-wind": {
+          "text": "There will be a south-westerly wind"
+        },
+        "temperatures-around-ten-degrees": {
+          "text": "Temperatures around ten degrees"
+        }
+      }
+    },
+    "wind-from": {
+      "title": "Naming the wind",
+      "concepts": {
+        "a-south-westerly-wind": {
+          "text": "A south-westerly wind"
+        },
+        "wind-from-the-north": {
+          "text": "Wind from the north"
+        },
+        "wind-from-the-east": {
+          "text": "Wind from the east"
+        },
+        "winds-from-the-south-east": {
+          "text": "Winds from the south-east"
+        }
+      }
+    },
+    "extent": {
+      "title": "How widespread",
+      "concepts": {
+        "in-places": {
+          "text": "In places"
+        }
+      }
+    },
+    "amount": {
+      "title": "How much",
+      "concepts": {
+        "the-odd-shower": {
+          "text": "The odd shower"
+        },
+        "dry-spells": {
+          "text": "Dry spells"
+        },
+        "up-to": {
+          "text": "Up to"
+        },
+        "between-and": {
+          "text": "Between … and …"
+        }
+      }
+    },
+    "linking": {
+      "title": "Linking words",
+      "concepts": {
+        "on-the-whole": {
+          "text": "On the whole"
+        },
+        "then": {
+          "text": "Then"
+        },
+        "but": {
+          "text": "But"
+        },
+        "also": {
+          "text": "Also"
+        }
+      }
+    },
+    "time-words": {
+      "title": "Time words",
+      "concepts": {
+        "during-the-day": {
+          "text": "During the day"
+        },
+        "by": {
+          "text": "By"
+        },
+        "until": {
+          "text": "Until"
+        },
+        "later-on": {
+          "text": "Later on"
+        },
+        "tomorrow-morning": {
+          "text": "Tomorrow morning"
+        },
+        "tomorrow-night": {
+          "text": "Tomorrow night"
+        }
+      }
+    },
+    "moving": {
+      "title": "Weather on the move",
+      "concepts": {
+        "to-clear": {
+          "text": "To clear"
+        },
+        "to-spread": {
+          "text": "To spread"
+        },
+        "to-move": {
+          "text": "To move"
+        },
+        "to-brighten": {
+          "text": "To brighten up"
+        },
+        "eastwards": {
+          "text": "Eastwards"
+        },
+        "across": {
+          "text": "Across"
+        }
+      }
+    },
+    "pressure": {
+      "title": "Pressure",
+      "concepts": {
+        "high-pressure": {
+          "text": "High pressure"
+        },
+        "low-pressure": {
+          "text": "Low pressure"
+        }
+      }
+    },
+    "opening-closing": {
+      "title": "Opening and closing",
+      "concepts": {
+        "good-evening": {
+          "text": "Good evening"
+        },
+        "thats-the-weather": {
+          "text": "That's the weather"
+        }
+      }
+    }
+  }
+}

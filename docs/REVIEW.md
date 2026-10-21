@@ -16,18 +16,22 @@ Entries where the author is least certain:
 |---|---|---|---|
 | sky | It's fine | `Mae hi'n braf` | Does `braf` stay unmutated after predicative `yn`? |
 | when | Evening | `Min nos` | Is this the right word for "evening" in a forecast? `gyda'r nos` appears in the note, and `yr hwyr` may be an alternative. |
-| rain-snow | Thunderstorm | `Storm fellt a tharanau` | Is there a more usual single term? |
+| rain | Thunderstorm | `Storm fellt a tharanau` | Is there a more usual single term? |
 | food-drink | Milk | `Llaeth` (south) and `Llefrith` (north) | Confirm the spelling `llefrith` and which region each form belongs to. `llaeth` is also the standard literary word, so a "standard" variety may be wanted. |
-| sky, rain-snow, wind, temperature, warnings, when, where, talk | New page titles (the weather pages were regrouped around what a forecast talks about) | `Yr awyr a gwelededd`, `Glaw, eira a rhew`, `Gwynt`, `Tymheredd`, `Rhagolygon a rhybuddion`, `Pryd`, `Ble`, `Sôn am y tywydd` | All first drafts. Check each, and whether `Pryd` and `Ble` read well as tile names. |
-| sky, rain-snow, temperature, warnings, where | New section titles | `Haul a chymylau`, `Glaw`, `Mellt a tharanau`, `Eira a rhew`, `Poeth ac oer`, `Y rhagolygon`, `Y gogledd, y de, y dwyrain a'r gorllewin` | First drafts. |
-| sky, rain-snow, wind, temperature | In a sentence | the *mae hi'n* mutation note, now repeated on each topic's sentences | Check it reads correctly on each page, since it was written for one page of sentences. |
+| sky, rain, snow-ice, wind, temperature, warnings, when, where, patterns, talk | Page titles (the weather pages were regrouped again by the content-tree review: the forecast first, rain and snow split, sentences gathered on one page, talk moved to Everyday) | `Yr awyr a gwelededd`, `Glaw a stormydd`, `Eira a rhew`, `Gwynt`, `Tymheredd`, `Y rhagolygon`, `Pryd`, `Ble`, `Patrymau`, `Sôn am y tywydd` | All first drafts. Check each, and whether `Pryd` and `Ble` read well as tile names. |
+| warnings, rain, snow-ice, wind, temperature, when, where, patterns | New section titles | `Y tywydd a'r rhagolygon`, `Lefelau rhybudd`, `Rhybuddion am`, `Mellt a tharanau`, `Rhew ac iâ`, `Cryfder y gwynt`, `Tymheredd a lleithder`, `Y dyddiau i ddod`, `Rhannau'r dydd`, `Ardaloedd`, `Mae hi'n …`, `Beth sy'n digwydd`, `Bydd hi'n …`, `Bydd …`, `Enwi'r gwynt`, `Pa mor eang` | First drafts. `Beth sy'n digwydd` and `Pa mor eang` are the least certain. |
+| patterns | Sentence patterns | the *mae hi'n* mutation note, now written once on the "It is…" section, and a new matching note on "It will be…" | The 33 sentences moved here from the sky, rain, wind and temperature pages. Check the new *bydd hi'n* note, and that each sentence sits under the right pattern. |
 | wind | A south-westerly wind | `Bydd gwynt de-orllewinol` (the forecast sentence) beside `Gwynt de-orllewinol` (the phrase) | The two now sit on one page. Confirm both. |
 | geography | Places, Beyond Wales | the town and country names (held back with Geography) | Moved from the weather pages. Check the spellings (`Caerdydd`, `Abertawe`, `Casnewydd`, `Wrecsam`, `Caergybi`). |
 | food-drink | Page, section and group titles | `Bwyd a diod`, `Diodydd`, `Geiriau bob dydd` | Check wording. |
 | geography, news, sport | Group, page and section titles | `Daearyddiaeth`, `Newyddion`, `Chwaraeon` | Held back from the release until reviewed. The titles are from the navigation mockup, so confirm them, and `Chwaraeon` for "Sports" against `Chwaraeon` for "Sport". |
+| time-and-place | Group title | `Amser a lle` | First draft. Weather links to this group for When and Where. |
+| sky, rain, wind, temperature, warnings, when, where | "Also heard as" forms | `cymylau`, `gymylog`, `cyfnodau heulog`, `law`, `cawod`, `ambell gawod`, `wlyb`, `lifogydd`, `wynt`, `wyntog`, `gynnes`, `boeth`, `dywydd`, `ddydd Llun` to `ddydd Sul`, `ngogledd`, `ne`, `ddwyrain`, `nwyrain`, `orllewin`, `ngorllewin`, `Nghymru` | The changed beginnings come from the mutation notes already on those pages; the plurals come from the old notes. Check each, and which of them a forecaster really says. `ambell gawod` is new. |
+| patterns (held back) | Linking, time, movement, pressure and greeting words | `Ar y cyfan`, `Wedyn`, `Ond`, `Hefyd`, `Yn ystod y dydd`, `Erbyn`, `Tan`, `Yn nes ymlaen`, `Bore fory`, `Nos yfory`, `Clirio`, `Lledu`, `Symud`, `Brafio`, `Tua'r dwyrain`, `Ar draws`, `Gwasgedd uchel`, `Gwasgedd isel`, `Noswaith dda`, `Dyna'r tywydd`, `Ambell gawod`, `Cyfnodau sych`, `Hyd at`, `Rhwng … a …` | Written from memory as candidates and held back from the release (`status: development`) until checked. Compare with a recent Welsh forecast. `Brafio` is colloquial; confirm it and whether `Bore fory` should be `Bore yfory`. |
+| patterns (held back) | Section titles | `Faint`, `Geiriau cyswllt`, `Geiriau amser`, `Y tywydd yn symud`, `Gwasgedd`, `Agor a chau` | First drafts. |
 | all | Regional labels | every `varieties` tag | Every N and S label needs checking entry by entry. |
 | all | Mutation notes | boxes and intros | Check every explanation of soft and nasal mutation for accuracy. |
-| interface | Site text | `content/gair-wrth-air/packs/cy/pack.json` and `.../editions/gair-wrth-air.json` | Check `Hafan`, `Prif ddewislen`, `Cymraeg`, `Llyfr ymadroddion`, `Ffynonellau`, the group title and `Ymadroddion bob dydd, Saesneg i Gymraeg`. |
+| interface | Site text | `content/gair-wrth-air/packs/cy/pack.json` and `.../editions/gair-wrth-air.json` | Check `Hafan`, `Prif ddewislen`, `Cymraeg`, `Llyfr ymadroddion`, `Ffynonellau`, the group title and `Ymadroddion bob dydd, Cymraeg i Saesneg` (the pair now runs Welsh to English). |
 
 ## Questions of register
 
@@ -38,11 +42,13 @@ Entries where the author is least certain:
 
 | Page | Reviewer | Date | Notes |
 |---|---|---|---|
+| warnings | | | |
 | sky | | | |
-| rain-snow | | | |
+| rain | | | |
+| snow-ice | | | |
 | wind | | | |
 | temperature | | | |
-| warnings | | | |
 | when | | | |
 | where | | | |
+| patterns | | | |
 | talk | | | |

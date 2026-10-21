@@ -7,8 +7,6 @@
         "today",
         "tonight",
         "tomorrow",
-        "overnight",
-        "all-day",
         "later",
         "this-week",
         "next-week",
@@ -21,7 +19,9 @@
         "morning",
         "afternoon",
         "evening",
-        "night"
+        "night",
+        "overnight",
+        "all-day"
       ]
     },
     {

@@ -33,7 +33,7 @@
       }
     },
     "directions": {
-      "title": "North, south, east and west",
+      "title": "Areas",
       "concepts": {
         "in-the-north": {
           "text": "In the north"
@@ -104,9 +104,6 @@
         },
         "on-high-ground": {
           "text": "On high ground"
-        },
-        "in-places": {
-          "text": "In places"
         },
         "in-snowdonia": {
           "text": "In Snowdonia"

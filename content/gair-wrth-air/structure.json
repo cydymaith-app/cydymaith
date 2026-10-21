@@ -4,20 +4,32 @@
       "id": "weather-forecast",
       "icon": "rain--scattered",
       "pages": [
+        "warnings",
         "sky",
-        "rain-snow",
+        "rain",
+        "snow-ice",
         "wind",
         "temperature",
-        "warnings",
+        "patterns"
+      ],
+      "links": [
         "when",
-        "where",
-        "talk"
+        "where"
+      ]
+    },
+    {
+      "id": "time-and-place",
+      "icon": "calendar",
+      "pages": [
+        "when",
+        "where"
       ]
     },
     {
       "id": "everyday",
       "icon": "restaurant",
       "pages": [
+        "talk",
         "food-drink"
       ]
     },

@@ -6,21 +6,21 @@
       "id": "points",
       "concepts": [
         "north",
-        "south",
-        "east",
-        "west",
         "north-east",
-        "north-west",
+        "east",
         "south-east",
-        "south-west"
+        "south",
+        "south-west",
+        "west",
+        "north-west"
       ]
     },
     {
       "id": "directions",
       "concepts": [
         "in-the-north",
-        "in-the-south",
         "in-the-east",
+        "in-the-south",
         "in-the-west"
       ]
     },
@@ -44,11 +44,10 @@
       "id": "landscape",
       "concepts": [
         "on-the-coast",
-        "in-the-mountains",
-        "in-the-hills",
         "in-the-valleys",
+        "in-the-hills",
+        "in-the-mountains",
         "on-high-ground",
-        "in-places",
         "in-snowdonia",
         "in-the-brecon-beacons"
       ]

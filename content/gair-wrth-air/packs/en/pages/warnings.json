@@ -1,10 +1,10 @@
 {
-  "title": "Forecasts and warnings",
+  "title": "The forecast",
   "lede": "The forecast itself, and the Met Office's yellow, amber and red warnings.",
   "source": "draft",
   "sections": {
     "forecast": {
-      "title": "The forecast",
+      "title": "Weather and the forecast",
       "concepts": {
         "weather": {
           "text": "Weather"
@@ -14,15 +14,15 @@
         },
         "the-met-office": {
           "text": "The Met Office"
+        },
+        "weather-warning": {
+          "text": "Weather warning"
         }
       }
     },
-    "warnings": {
-      "title": "Warnings",
+    "levels": {
+      "title": "Warning levels",
       "concepts": {
-        "weather-warning": {
-          "text": "Weather warning"
-        },
         "yellow-warning": {
           "text": "Yellow warning"
         },
@@ -34,7 +34,12 @@
         },
         "in-force": {
           "text": "In force"
-        },
+        }
+      }
+    },
+    "warnings": {
+      "title": "Warnings for",
+      "concepts": {
         "warning-for-wind": {
           "text": "Warning for wind"
         },
@@ -46,6 +51,9 @@
         },
         "warning-for-ice": {
           "text": "Warning for ice"
+        },
+        "flooding": {
+          "text": "Flooding"
         }
       }
     }

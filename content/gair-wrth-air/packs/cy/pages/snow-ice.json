@@ -1,0 +1,48 @@
+{
+  "title": "Eira a rhew",
+  "source": "draft",
+  "sections": {
+    "snow": {
+      "title": "Eira",
+      "concepts": {
+        "snow": {
+          "text": "Eira"
+        },
+        "snowy": {
+          "text": "Eiraog"
+        },
+        "snowstorm": {
+          "text": "Storm eira"
+        },
+        "sleet": {
+          "text": "Eirlaw"
+        },
+        "hail": {
+          "text": "Cenllysg"
+        }
+      },
+      "order": "snow, then sleet and hail"
+    },
+    "frost-ice": {
+      "title": "Rhew ac iâ",
+      "concepts": {
+        "frost": {
+          "text": "Rhew"
+        },
+        "icy": {
+          "text": "Rhewllyd"
+        },
+        "ice": {
+          "text": "Iâ"
+        },
+        "freezing-point": {
+          "text": "Rhewbwynt"
+        },
+        "below-freezing": {
+          "text": "Islaw rhewbwynt"
+        }
+      },
+      "order": "frost and ice, then the freezing point"
+    }
+  }
+}

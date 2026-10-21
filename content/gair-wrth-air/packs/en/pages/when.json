@@ -4,7 +4,7 @@
   "source": "draft",
   "sections": {
     "ahead": {
-      "title": "Today and tomorrow",
+      "title": "Days ahead",
       "concepts": {
         "today": {
           "text": "Today"
@@ -14,12 +14,6 @@
         },
         "tomorrow": {
           "text": "Tomorrow"
-        },
-        "overnight": {
-          "text": "Overnight"
-        },
-        "all-day": {
-          "text": "All day"
         },
         "later": {
           "text": "Later"
@@ -36,7 +30,7 @@
       }
     },
     "times": {
-      "title": "Times of day",
+      "title": "Parts of the day",
       "concepts": {
         "morning": {
           "text": "Morning"
@@ -49,6 +43,12 @@
         },
         "night": {
           "text": "Night"
+        },
+        "overnight": {
+          "text": "Overnight"
+        },
+        "all-day": {
+          "text": "All day"
         }
       }
     },

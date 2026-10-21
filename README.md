@@ -49,6 +49,21 @@ A concept in `content/gair-wrth-air/packs/cy/pages/weather.json` looks like this
 
 Section `intro` and `box` entries, and row notes, are commentary on that language, written in the pack's `commentary_lang` (English unless stated). Mark text in the pack's own language with `{{double braces}}`.
 
+## Listening aids
+
+The Welsh comes first in each row, because it is the language being heard (`default_pair` in the edition). Four fields help someone who has just heard a word and needs to find it:
+
+- `also`: other forms the word is heard as, such as a changed beginning. They show as chips under the row and search finds the word from any of them.
+
+  ```json
+  "rain": { "text": "Glaw", "also": ["law"] }
+  ```
+- `order` (on a section, in the pack): one line saying what order the rows run in, such as "lightest to heaviest".
+- `links` (on a group in `structure.json`): shows a tile for a page that lives in another group, so When and Where are written once and reached from Weather as well as from Time and place.
+- `"status": "development"` (on a section): holds it back from the release. The new words on the How it's said page wait there until a fluent speaker has checked them.
+
+The `listening-layout` and `content-tree` skills in `.claude/skills/` review a topic's layout and the shape of the tree.
+
 ## Regional forms
 
 Languages vary by region. Declare a pack's varieties once in its `pack.json`:

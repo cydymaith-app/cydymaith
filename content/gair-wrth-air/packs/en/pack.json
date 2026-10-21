@@ -11,6 +11,7 @@
   },
   "groups": {
     "weather-forecast": "Weather forecast",
+    "time-and-place": "Time and place",
     "everyday": "Everyday words",
     "technology": "Technology",
     "geography": "Geography",

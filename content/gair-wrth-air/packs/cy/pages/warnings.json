@@ -1,28 +1,32 @@
 {
-  "title": "Rhagolygon a rhybuddion",
+  "title": "Y rhagolygon",
   "source": "draft",
   "sections": {
     "forecast": {
-      "title": "Y rhagolygon",
+      "title": "Y tywydd a'r rhagolygon",
       "concepts": {
         "weather": {
-          "text": "Tywydd"
+          "text": "Tywydd",
+          "also": [
+            "dywydd"
+          ]
         },
         "weather-forecast": {
           "text": "Rhagolygon y tywydd"
         },
         "the-met-office": {
           "text": "Y Swyddfa Dywydd"
-        }
-      }
-    },
-    "warnings": {
-      "title": "Rhybuddion",
-      "intro": "Weather warnings come from the Met Office in three colours.",
-      "concepts": {
+        },
         "weather-warning": {
           "text": "Rhybudd tywydd"
-        },
+        }
+      },
+      "order": "the weather, then the forecast, then the Met Office"
+    },
+    "levels": {
+      "title": "Lefelau rhybudd",
+      "intro": "Weather warnings come from the Met Office in three colours.",
+      "concepts": {
         "yellow-warning": {
           "text": "Rhybudd melyn"
         },
@@ -34,7 +38,13 @@
         },
         "in-force": {
           "text": "Mewn grym"
-        },
+        }
+      },
+      "order": "mildest to most severe"
+    },
+    "warnings": {
+      "title": "Rhybuddion am",
+      "concepts": {
         "warning-for-wind": {
           "text": "Rhybudd am wynt",
           "note": "{{am}} softens {{gwynt}} to {{wynt}}"
@@ -48,8 +58,12 @@
         },
         "warning-for-ice": {
           "text": "Rhybudd am iâ"
+        },
+        "flooding": {
+          "text": "Llifogydd"
         }
-      }
+      },
+      "order": "wind, rain, snow, ice, then the flooding they bring"
     }
   }
 }

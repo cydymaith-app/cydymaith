@@ -3,7 +3,7 @@
   "source": "draft",
   "sections": {
     "temperature": {
-      "title": "Tymheredd",
+      "title": "Tymheredd a lleithder",
       "concepts": {
         "temperature": {
           "text": "Tymheredd"
@@ -18,22 +18,29 @@
         "lowest-minimum": {
           "text": "Isaf"
         },
-        "freezing-point": {
-          "text": "Rhewbwynt"
+        "humid": {
+          "text": "Llaith"
         },
-        "below-freezing": {
-          "text": "Islaw rhewbwynt"
+        "humidity": {
+          "text": "Lleithder"
         }
-      }
+      },
+      "order": "the measures, then humidity"
     },
     "hot-cold": {
       "title": "Poeth ac oer",
       "concepts": {
         "hot": {
-          "text": "Poeth"
+          "text": "Poeth",
+          "also": [
+            "boeth"
+          ]
         },
         "warm": {
-          "text": "Cynnes"
+          "text": "Cynnes",
+          "also": [
+            "gynnes"
+          ]
         },
         "mild": {
           "text": "Mwyn"
@@ -43,38 +50,9 @@
         },
         "cold": {
           "text": "Oer"
-        },
-        "humid": {
-          "text": "Llaith"
-        },
-        "humidity": {
-          "text": "Lleithder"
         }
-      }
-    },
-    "in-a-sentence": {
-      "title": "Mewn brawddeg",
-      "intro": "After {{mae hi'n}} (it is) the next word often softens: {{cymylog}} becomes {{gymylog}}, {{cynnes}} becomes {{gynnes}}, {{poeth}} becomes {{boeth}}, {{gwlyb}} becomes {{wlyb}}.",
-      "concepts": {
-        "its-cold": {
-          "text": "Mae hi'n oer"
-        },
-        "its-warm": {
-          "text": "Mae hi'n gynnes"
-        },
-        "its-hot": {
-          "text": "Mae hi'n boeth"
-        },
-        "its-freezing": {
-          "text": "Mae hi'n rhewi"
-        },
-        "it-will-be-cold-tonight": {
-          "text": "Bydd hi'n oer heno"
-        },
-        "temperatures-around-ten-degrees": {
-          "text": "Bydd y tymheredd tua deg gradd"
-        }
-      }
+      },
+      "order": "hottest to coldest"
     }
   }
 }

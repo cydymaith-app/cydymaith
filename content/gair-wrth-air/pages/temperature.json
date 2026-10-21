@@ -8,8 +8,8 @@
         "degrees-celsius",
         "highest-maximum",
         "lowest-minimum",
-        "freezing-point",
-        "below-freezing"
+        "humid",
+        "humidity"
       ]
     },
     {
@@ -19,20 +19,7 @@
         "warm",
         "mild",
         "chilly-fresh",
-        "cold",
-        "humid",
-        "humidity"
-      ]
-    },
-    {
-      "id": "in-a-sentence",
-      "concepts": [
-        "its-cold",
-        "its-warm",
-        "its-hot",
-        "its-freezing",
-        "it-will-be-cold-tonight",
-        "temperatures-around-ten-degrees"
+        "cold"
       ]
     }
   ]

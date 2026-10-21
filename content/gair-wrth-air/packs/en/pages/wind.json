@@ -1,16 +1,22 @@
 {
   "title": "Wind",
-  "lede": "From breeze to gale, the direction a wind comes from, and how to say it in a forecast.",
+  "lede": "From breeze to gale, and the direction a wind comes from.",
   "source": "draft",
   "sections": {
     "wind": {
-      "title": "Wind",
+      "title": "Wind strength",
       "concepts": {
         "wind": {
           "text": "Wind"
         },
         "windy": {
           "text": "Windy"
+        },
+        "wind-speed": {
+          "text": "Wind speed"
+        },
+        "miles-per-hour": {
+          "text": "Miles per hour"
         },
         "calm": {
           "text": "Calm"
@@ -26,15 +32,6 @@
         },
         "gusts": {
           "text": "Gusts"
-        },
-        "storm": {
-          "text": "Storm"
-        },
-        "wind-speed": {
-          "text": "Wind speed"
-        },
-        "miles-per-hour": {
-          "text": "Miles per hour"
         }
       }
     },
@@ -64,32 +61,6 @@
         },
         "south-westerly": {
           "text": "South-westerly"
-        },
-        "a-south-westerly-wind": {
-          "text": "A south-westerly wind"
-        },
-        "wind-from-the-north": {
-          "text": "Wind from the north"
-        },
-        "wind-from-the-east": {
-          "text": "Wind from the east"
-        },
-        "winds-from-the-south-east": {
-          "text": "Winds from the south-east"
-        }
-      }
-    },
-    "in-a-sentence": {
-      "title": "In a sentence",
-      "concepts": {
-        "its-windy": {
-          "text": "It's windy"
-        },
-        "strong-winds-in-the-west": {
-          "text": "Strong winds in the west"
-        },
-        "there-will-be-a-south-westerly-wind": {
-          "text": "A south-westerly wind"
         }
       }
     }

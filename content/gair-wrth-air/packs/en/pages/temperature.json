@@ -1,10 +1,10 @@
 {
   "title": "Temperature",
-  "lede": "How hot or cold it is, from below freezing to humid, and how to say it.",
+  "lede": "How hot or cold it is, and how humid.",
   "source": "draft",
   "sections": {
     "temperature": {
-      "title": "Temperature",
+      "title": "Temperature and humidity",
       "concepts": {
         "temperature": {
           "text": "Temperature"
@@ -18,11 +18,11 @@
         "lowest-minimum": {
           "text": "Lowest (minimum)"
         },
-        "freezing-point": {
-          "text": "Freezing point"
+        "humid": {
+          "text": "Humid"
         },
-        "below-freezing": {
-          "text": "Below freezing"
+        "humidity": {
+          "text": "Humidity"
         }
       }
     },
@@ -43,35 +43,6 @@
         },
         "cold": {
           "text": "Cold"
-        },
-        "humid": {
-          "text": "Humid"
-        },
-        "humidity": {
-          "text": "Humidity"
-        }
-      }
-    },
-    "in-a-sentence": {
-      "title": "In a sentence",
-      "concepts": {
-        "its-cold": {
-          "text": "It's cold"
-        },
-        "its-warm": {
-          "text": "It's warm"
-        },
-        "its-hot": {
-          "text": "It's hot"
-        },
-        "its-freezing": {
-          "text": "It's freezing"
-        },
-        "it-will-be-cold-tonight": {
-          "text": "It will be cold tonight"
-        },
-        "temperatures-around-ten-degrees": {
-          "text": "Temperatures around ten degrees"
         }
       }
     }

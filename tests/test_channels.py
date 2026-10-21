@@ -32,10 +32,11 @@ class ChannelTests(unittest.TestCase):
         cls.tmp = pathlib.Path(tempfile.mkdtemp())
         cls.data = cls.tmp / "project"
         shutil.copytree(PROJECT, cls.data)
-        # Hold back the snow and ice section of rain-snow, and the only section of food-drink (a whole page).
-        edit_json(cls.data / "pages" / "rain-snow.json", lambda d: next(
-            s for s in d["sections"] if s["id"] == "snow-ice").update(status="development"))
+        # Hold back the snow section of snow-ice, and every section of food-drink and talk (the whole Everyday group).
+        edit_json(cls.data / "pages" / "snow-ice.json", lambda d: next(
+            s for s in d["sections"] if s["id"] == "snow").update(status="development"))
         edit_json(cls.data / "pages" / "food-drink.json", lambda d: d["sections"][0].update(status="development"))
+        edit_json(cls.data / "pages" / "talk.json", lambda d: [s.update(status="development") for s in d["sections"]])
         cls.release = cls.tmp / "release"
         cls.development = cls.tmp / "development"
         phrasebook.build(cls.release, project_dir=cls.data)
@@ -74,12 +75,12 @@ class ChannelTests(unittest.TestCase):
     def test_the_offline_cache_lists_only_what_the_channel_publishes(self):
         sw = (self.release / "sw.js").read_text(encoding="utf-8")
         self.assertNotIn("food-drink.html", sw)
-        self.assertIn("rain-snow.html", sw)
+        self.assertIn("snow-ice.html", sw)
 
     def test_the_held_back_section_is_still_validated(self):
         raw = content.read(self.data)
         bad = copy.deepcopy(raw)
-        bad["pages"]["rain-snow"]["sections"][2]["status"] = "soon"
+        bad["pages"]["snow-ice"]["sections"][0]["status"] = "soon"
         with self.assertRaises(content.ContentError):
             content.validate(bad)
 

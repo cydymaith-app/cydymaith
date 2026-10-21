@@ -14,14 +14,21 @@
         },
         "sunny-spells": {
           "text": "Ysbeidiau heulog",
-          "note": "also {{cyfnodau heulog}}"
+          "also": [
+            "cyfnodau heulog"
+          ]
         },
         "cloud": {
           "text": "Cwmwl",
-          "note": "clouds: {{cymylau}}"
+          "also": [
+            "cymylau"
+          ]
         },
         "cloudy": {
-          "text": "Cymylog"
+          "text": "Cymylog",
+          "also": [
+            "gymylog"
+          ]
         },
         "clear": {
           "text": "Clir"
@@ -33,7 +40,8 @@
         "dry": {
           "text": "Sych"
         }
-      }
+      },
+      "order": "the sun, then the cloud, then clear and dry"
     },
     "fog": {
       "title": "Niwl a tharth",
@@ -53,43 +61,8 @@
         "poor-visibility": {
           "text": "Gwelededd gwael"
         }
-      }
-    },
-    "in-a-sentence": {
-      "title": "Mewn brawddeg",
-      "intro": "After {{mae hi'n}} (it is) the next word often softens: {{cymylog}} becomes {{gymylog}}, {{cynnes}} becomes {{gynnes}}, {{poeth}} becomes {{boeth}}, {{gwlyb}} becomes {{wlyb}}.",
-      "concepts": {
-        "its-sunny": {
-          "text": "Mae hi'n heulog"
-        },
-        "its-cloudy": {
-          "text": "Mae hi'n gymylog"
-        },
-        "its-fine": {
-          "text": "Mae hi'n braf"
-        },
-        "its-dry": {
-          "text": "Mae hi'n sych"
-        },
-        "its-foggy": {
-          "text": "Mae hi'n niwlog"
-        },
-        "the-sun-is-shining": {
-          "text": "Mae'r haul yn tywynnu"
-        },
-        "it-will-be-sunny-tomorrow": {
-          "text": "Bydd hi'n heulog yfory"
-        },
-        "it-will-be-dry-all-day": {
-          "text": "Bydd hi'n sych drwy'r dydd"
-        },
-        "brighter-later": {
-          "text": "Bydd hi'n fwy heulog yn hwyrach"
-        },
-        "fog-in-places": {
-          "text": "Bydd niwl mewn mannau"
-        }
-      }
+      },
+      "order": "fog and mist, then how far you can see"
     }
   }
 }

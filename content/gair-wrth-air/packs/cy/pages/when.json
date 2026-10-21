@@ -3,7 +3,7 @@
   "source": "draft",
   "sections": {
     "ahead": {
-      "title": "Heddiw ac yfory",
+      "title": "Y dyddiau i ddod",
       "concepts": {
         "today": {
           "text": "Heddiw"
@@ -13,12 +13,6 @@
         },
         "tomorrow": {
           "text": "Yfory"
-        },
-        "overnight": {
-          "text": "Dros nos"
-        },
-        "all-day": {
-          "text": "Drwy'r dydd"
         },
         "later": {
           "text": "Yn hwyrach"
@@ -32,10 +26,11 @@
         "the-weekend": {
           "text": "Y penwythnos"
         }
-      }
+      },
+      "order": "today onwards, nearest first"
     },
     "times": {
-      "title": "Amserau'r dydd",
+      "title": "Rhannau'r dydd",
       "concepts": {
         "morning": {
           "text": "Bore",
@@ -51,35 +46,64 @@
         },
         "night": {
           "text": "Nos"
+        },
+        "overnight": {
+          "text": "Dros nos"
+        },
+        "all-day": {
+          "text": "Drwy'r dydd"
         }
-      }
+      },
+      "order": "morning to night, then overnight and all day"
     },
     "days": {
       "title": "Dyddiau'r wythnos",
       "intro": "To say on Monday, {{dydd}} softens: {{ddydd Llun}}.",
       "concepts": {
         "monday": {
-          "text": "Dydd Llun"
+          "text": "Dydd Llun",
+          "also": [
+            "ddydd Llun"
+          ]
         },
         "tuesday": {
-          "text": "Dydd Mawrth"
+          "text": "Dydd Mawrth",
+          "also": [
+            "ddydd Mawrth"
+          ]
         },
         "wednesday": {
-          "text": "Dydd Mercher"
+          "text": "Dydd Mercher",
+          "also": [
+            "ddydd Mercher"
+          ]
         },
         "thursday": {
-          "text": "Dydd Iau"
+          "text": "Dydd Iau",
+          "also": [
+            "ddydd Iau"
+          ]
         },
         "friday": {
-          "text": "Dydd Gwener"
+          "text": "Dydd Gwener",
+          "also": [
+            "ddydd Gwener"
+          ]
         },
         "saturday": {
-          "text": "Dydd Sadwrn"
+          "text": "Dydd Sadwrn",
+          "also": [
+            "ddydd Sadwrn"
+          ]
         },
         "sunday": {
-          "text": "Dydd Sul"
+          "text": "Dydd Sul",
+          "also": [
+            "ddydd Sul"
+          ]
         }
-      }
+      },
+      "order": "Monday to Sunday"
     }
   }
 }

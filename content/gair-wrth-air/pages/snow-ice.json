@@ -1,0 +1,25 @@
+{
+  "icon": "snow",
+  "sections": [
+    {
+      "id": "snow",
+      "concepts": [
+        "snow",
+        "snowy",
+        "snowstorm",
+        "sleet",
+        "hail"
+      ]
+    },
+    {
+      "id": "frost-ice",
+      "concepts": [
+        "frost",
+        "icy",
+        "ice",
+        "freezing-point",
+        "below-freezing"
+      ]
+    }
+  ]
+}

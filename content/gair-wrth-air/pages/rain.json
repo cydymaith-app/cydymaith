@@ -1,0 +1,27 @@
+{
+  "icon": "rain",
+  "sections": [
+    {
+      "id": "rain",
+      "concepts": [
+        "drizzle",
+        "light-rain",
+        "rain",
+        "rainy",
+        "showers",
+        "heavy-rain",
+        "wet",
+        "rainbow"
+      ]
+    },
+    {
+      "id": "storms",
+      "concepts": [
+        "thunder",
+        "lightning",
+        "thunderstorm",
+        "storm"
+      ]
+    }
+  ]
+}

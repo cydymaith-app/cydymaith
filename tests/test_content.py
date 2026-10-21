@@ -42,7 +42,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
         return phrasebook.build(out, project_dir=data_dir, **kw)
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident.
-ENTRY_FLOOR = {"sky": 23, "rain-snow": 29, "wind": 25, "temperature": 19, "warnings": 12, "when": 20, "where": 31, "talk": 11}
+ENTRY_FLOOR = {"warnings": 13, "sky": 13, "rain": 12, "snow-ice": 10, "wind": 17, "temperature": 11, "when": 20, "where": 30, "patterns": 33, "talk": 11}
 
 
 class Page(HTMLParser):
@@ -162,15 +162,41 @@ class BuildTests(unittest.TestCase):
 
     def test_the_weather_tiles_follow_what_a_forecast_talks_about_in_the_order_it_runs(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        self.assertEqual(weather["pages"], ["sky", "rain-snow", "wind", "temperature", "warnings", "when", "where", "talk"])
+        self.assertEqual(weather["pages"], ["warnings", "sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
 
-    def test_each_topic_that_has_sentences_ends_with_its_own(self):
-        for slug in ("sky", "rain-snow", "wind", "temperature"):
-            sections = [s["id"] for s in self.site.sections(slug)]
-            self.assertEqual(sections[-1], "in-a-sentence", slug)
+    def test_when_and_where_are_one_shared_group_that_the_weather_group_also_links_to(self):
+        weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
+        shared = next(g for g in self.site.groups if g["id"] == "time-and-place")
+        self.assertEqual(shared["pages"], ["when", "where"])
+        self.assertEqual(weather["links"], ["when", "where"])
+        tiles = self.built["group-weather-forecast.html"]
+        self.assertLess(tiles.index('href="patterns.html"'), tiles.index('href="when.html"'))
+        self.assertIn('href="where.html"', tiles)
+        self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
+
+    def test_the_welsh_comes_first_because_it_is_the_language_that_is_heard(self):
+        self.assertEqual(list(self.edition["default_pair"]), ["cy", "en"])
+        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', self.built["rain.html"])
+
+    def test_every_section_states_its_order(self):
+        shown = {"warnings": 3, "sky": 2, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 3, "where": 3, "patterns": 6}
+        for slug, count in shown.items():
+            self.assertEqual(self.built[f"{slug}.html"].count('<p class="order">'), count, slug)
+
+    def test_a_word_heard_in_another_form_is_found_by_that_form(self):
+        dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
+        rain = next(e for e in dictionary["entries"] if e["concept"] == "rain")
+        self.assertIn("law", rain["also"]["cy"])
+        self.assertIn("Glaw", [t["text"] for t in rain["terms"]["cy"]])
+
+    def test_the_sentences_live_on_one_patterns_page_and_no_topic_repeats_an_in_a_sentence_section(self):
+        for slug in self.site.slugs:
+            self.assertNotIn("in-a-sentence", [s["id"] for s in self.site.sections(slug)], slug)
+        self.assertEqual([s["id"] for s in self.site.sections("patterns")],
+                         ["it-is", "doing", "it-will-be", "there-will-be", "wind-from", "extent"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        self.assertEqual(sum(self.site.count_entries(s) for s in ("sky", "rain-snow", "wind", "temperature", "warnings", "when", "where", "talk")), 170)
+        self.assertEqual(sum(self.site.count_entries(s) for s in ("warnings", "sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")), 170)
 
     def test_the_town_and_country_names_wait_in_the_held_back_geography_group(self):
         development = build.Site(self.raw, self.edition)
@@ -225,7 +251,7 @@ class BuildTests(unittest.TestCase):
 
     def test_the_compass_page_has_its_figure(self):
         self.assertIn('class="rose"', self.built["where.html"])
-        self.assertIn("Compass rose labelled in Welsh and English", self.built["where.html"])
+        self.assertIn("Compass rose labelled in English and Welsh", self.built["where.html"])
 
     def test_the_document_language_is_the_interface_language(self):
         for text in self.built.values():
@@ -403,14 +429,14 @@ class VarietyRenderingTests(unittest.TestCase):
     def test_every_form_is_rendered_and_labelled(self):
         page = self.site.render_all()["food-drink.html"]
         row = re.search(r"<tbody>(.*?)</tbody>", page, re.S).group(1)
-        self.assertIn('<span class="l2" lang="cy">Llaeth</span><abbr class="vtag" title="South">S</abbr>', row)
-        self.assertIn('<span class="l2" lang="cy">Llefrith</span><abbr class="vtag" title="North">N</abbr>', row)
+        self.assertIn('<span lang="cy">Llaeth</span><abbr class="vtag" title="South">S</abbr>', row)
+        self.assertIn('<span lang="cy">Llefrith</span><abbr class="vtag" title="North">N</abbr>', row)
         self.assertLess(row.index("Llaeth"), row.index("Llefrith"))
 
     def test_each_form_says_which_varieties_it_is_emphasised_for(self):
         page = self.site.render_all()["food-drink.html"]
-        self.assertIn('data-lang="cy" data-show="south"><span class="l2" lang="cy">Llaeth', page)
-        self.assertIn('data-lang="cy" data-show="north"><span class="l2" lang="cy">Llefrith', page)
+        self.assertIn('data-lang="cy" data-show="south"><span lang="cy">Llaeth', page)
+        self.assertIn('data-lang="cy" data-show="north"><span lang="cy">Llefrith', page)
 
     def test_untagged_forms_show_for_every_variety(self):
         forms = [{"text": "a", "varieties": [], "note": None}, {"text": "b", "varieties": ["north"], "note": None}]
@@ -428,7 +454,7 @@ class VarietyRenderingTests(unittest.TestCase):
     def test_a_plain_row_keeps_the_plain_markup(self):
         page = self.site.render_all()["sky.html"]
         self.assertNotIn('class="forms"', page)
-        self.assertIn('<td><span class="l2" lang="cy">Haul</span>', page)
+        self.assertIn('<th scope="row" class="l1" lang="cy">Haul</th>', page)
 
     def test_a_form_can_carry_its_own_note(self):
         raw = copy.deepcopy(self.raw)

@@ -1,0 +1,128 @@
+{
+  "icon": "chat",
+  "sections": [
+    {
+      "id": "it-is",
+      "concepts": [
+        "its-sunny",
+        "its-cloudy",
+        "its-fine",
+        "its-dry",
+        "its-foggy",
+        "its-wet",
+        "its-windy",
+        "its-cold",
+        "its-warm",
+        "its-hot",
+        "its-freezing"
+      ]
+    },
+    {
+      "id": "doing",
+      "concepts": [
+        "its-raining",
+        "its-snowing",
+        "its-pouring",
+        "the-sun-is-shining"
+      ]
+    },
+    {
+      "id": "it-will-be",
+      "concepts": [
+        "it-will-be-sunny-tomorrow",
+        "it-will-be-dry-all-day",
+        "brighter-later",
+        "it-will-rain-tomorrow",
+        "it-will-be-cold-tonight"
+      ]
+    },
+    {
+      "id": "there-will-be",
+      "concepts": [
+        "fog-in-places",
+        "showers-on-saturday",
+        "rain-in-the-north",
+        "snow-on-high-ground",
+        "frost-overnight",
+        "strong-winds-in-the-west",
+        "there-will-be-a-south-westerly-wind",
+        "temperatures-around-ten-degrees"
+      ]
+    },
+    {
+      "id": "wind-from",
+      "concepts": [
+        "a-south-westerly-wind",
+        "wind-from-the-north",
+        "wind-from-the-east",
+        "winds-from-the-south-east"
+      ]
+    },
+    {
+      "id": "extent",
+      "concepts": [
+        "in-places"
+      ]
+    },
+    {
+      "id": "amount",
+      "status": "development",
+      "concepts": [
+        "the-odd-shower",
+        "dry-spells",
+        "up-to",
+        "between-and"
+      ]
+    },
+    {
+      "id": "linking",
+      "status": "development",
+      "concepts": [
+        "on-the-whole",
+        "then",
+        "but",
+        "also"
+      ]
+    },
+    {
+      "id": "time-words",
+      "status": "development",
+      "concepts": [
+        "during-the-day",
+        "by",
+        "until",
+        "later-on",
+        "tomorrow-morning",
+        "tomorrow-night"
+      ]
+    },
+    {
+      "id": "moving",
+      "status": "development",
+      "concepts": [
+        "to-clear",
+        "to-spread",
+        "to-move",
+        "to-brighten",
+        "eastwards",
+        "across"
+      ]
+    },
+    {
+      "id": "pressure",
+      "status": "development",
+      "concepts": [
+        "high-pressure",
+        "low-pressure"
+      ]
+    },
+    {
+      "id": "opening-closing",
+      "status": "development",
+      "concepts": [
+        "good-evening",
+        "thats-the-weather"
+      ]
+    }
+  ]
+}

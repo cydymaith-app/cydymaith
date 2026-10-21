@@ -23,21 +23,6 @@
         "visibility",
         "poor-visibility"
       ]
-    },
-    {
-      "id": "in-a-sentence",
-      "concepts": [
-        "its-sunny",
-        "its-cloudy",
-        "its-fine",
-        "its-dry",
-        "its-foggy",
-        "the-sun-is-shining",
-        "it-will-be-sunny-tomorrow",
-        "it-will-be-dry-all-day",
-        "brighter-later",
-        "fog-in-places"
-      ]
     }
   ]
 }

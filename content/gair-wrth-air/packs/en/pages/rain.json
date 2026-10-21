@@ -1,0 +1,53 @@
+{
+  "title": "Rain and storms",
+  "lede": "Rain from drizzle to downpours, then thunder and storms.",
+  "source": "draft",
+  "sections": {
+    "rain": {
+      "title": "Rain",
+      "concepts": {
+        "drizzle": {
+          "text": "Drizzle"
+        },
+        "light-rain": {
+          "text": "Light rain"
+        },
+        "rain": {
+          "text": "Rain"
+        },
+        "rainy": {
+          "text": "Rainy"
+        },
+        "showers": {
+          "text": "Showers"
+        },
+        "heavy-rain": {
+          "text": "Heavy rain"
+        },
+        "wet": {
+          "text": "Wet"
+        },
+        "rainbow": {
+          "text": "Rainbow"
+        }
+      }
+    },
+    "storms": {
+      "title": "Thunder and storms",
+      "concepts": {
+        "thunder": {
+          "text": "Thunder"
+        },
+        "lightning": {
+          "text": "Lightning"
+        },
+        "thunderstorm": {
+          "text": "Thunderstorm"
+        },
+        "storm": {
+          "text": "Storm"
+        }
+      }
+    }
+  }
+}

@@ -7,8 +7,8 @@
   ],
   "interface": "en",
   "default_pair": [
-    "en",
-    "cy"
+    "cy",
+    "en"
   ],
   "palettes": ["default", "high-contrast", "red-green-safe", "blue-yellow-safe"],
   "stylesheets": [
@@ -21,8 +21,8 @@
   ],
   "home": {
     "headline": {
-      "en": "Everyday phrases, English to Welsh",
-      "cy": "Ymadroddion bob dydd, Saesneg i Gymraeg"
+      "en": "Everyday phrases, Welsh to English",
+      "cy": "Ymadroddion bob dydd, Cymraeg i Saesneg"
     },
     "about": {
       "en": "Phrases follow standard written Welsh as used in forecasts. Spoken Welsh varies between north and south."

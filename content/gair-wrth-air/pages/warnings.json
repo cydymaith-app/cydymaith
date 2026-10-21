@@ -6,21 +6,27 @@
       "concepts": [
         "weather",
         "weather-forecast",
-        "the-met-office"
+        "the-met-office",
+        "weather-warning"
+      ]
+    },
+    {
+      "id": "levels",
+      "concepts": [
+        "yellow-warning",
+        "amber-warning",
+        "red-warning",
+        "in-force"
       ]
     },
     {
       "id": "warnings",
       "concepts": [
-        "weather-warning",
-        "yellow-warning",
-        "amber-warning",
-        "red-warning",
-        "in-force",
         "warning-for-wind",
         "warning-for-rain",
         "warning-for-snow",
-        "warning-for-ice"
+        "warning-for-ice",
+        "flooding"
       ]
     }
   ]

@@ -10,16 +10,30 @@
       },
       "concepts": {
         "north": {
-          "text": "Gogledd"
+          "text": "Gogledd",
+          "also": [
+            "ngogledd"
+          ]
         },
         "south": {
-          "text": "De"
+          "text": "De",
+          "also": [
+            "ne"
+          ]
         },
         "east": {
-          "text": "Dwyrain"
+          "text": "Dwyrain",
+          "also": [
+            "ddwyrain",
+            "nwyrain"
+          ]
         },
         "west": {
-          "text": "Gorllewin"
+          "text": "Gorllewin",
+          "also": [
+            "orllewin",
+            "ngorllewin"
+          ]
         },
         "north-east": {
           "text": "Gogledd-ddwyrain"
@@ -33,10 +47,11 @@
         "south-west": {
           "text": "De-orllewin"
         }
-      }
+      },
+      "order": "round the compass from the north"
     },
     "directions": {
-      "title": "Y gogledd, y de, y dwyrain a'r gorllewin",
+      "title": "Ardaloedd",
       "concepts": {
         "in-the-north": {
           "text": "Yn y gogledd"
@@ -50,14 +65,18 @@
         "in-the-west": {
           "text": "Yn y gorllewin"
         }
-      }
+      },
+      "order": "round the compass from the north"
     },
     "regions": {
       "title": "Rhannau o Gymru",
       "intro": "After {{yn}} (in) the first letter changes: {{Cymru}} becomes {{Nghymru}} and {{yn}} becomes {{yng}}; {{gogledd}} becomes {{ngogledd}}; {{de}} becomes {{ne}}; {{dwyrain}} becomes {{nwyrain}}.",
       "concepts": {
         "wales": {
-          "text": "Cymru"
+          "text": "Cymru",
+          "also": [
+            "Nghymru"
+          ]
         },
         "in-wales": {
           "text": "Yng Nghymru"
@@ -89,7 +108,8 @@
         "in-west-wales": {
           "text": "Yng ngorllewin Cymru"
         }
-      }
+      },
+      "order": "Wales, then north, south, mid and west, each with its “in” form"
     },
     "landscape": {
       "title": "Tirwedd",
@@ -109,9 +129,6 @@
         "on-high-ground": {
           "text": "Ar dir uchel"
         },
-        "in-places": {
-          "text": "Mewn mannau"
-        },
         "in-snowdonia": {
           "text": "Yn Eryri"
         },
@@ -119,7 +136,8 @@
           "text": "Ym Mannau Brycheiniog",
           "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
         }
-      }
+      },
+      "order": "low to high, then named places"
     }
   }
 }

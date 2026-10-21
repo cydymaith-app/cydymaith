@@ -1,0 +1,47 @@
+{
+  "title": "Snow and ice",
+  "lede": "Snow, sleet and hail, frost and ice, and the freezing point.",
+  "source": "draft",
+  "sections": {
+    "snow": {
+      "title": "Snow",
+      "concepts": {
+        "snow": {
+          "text": "Snow"
+        },
+        "snowy": {
+          "text": "Snowy"
+        },
+        "snowstorm": {
+          "text": "Snowstorm"
+        },
+        "sleet": {
+          "text": "Sleet"
+        },
+        "hail": {
+          "text": "Hail"
+        }
+      }
+    },
+    "frost-ice": {
+      "title": "Frost and ice",
+      "concepts": {
+        "frost": {
+          "text": "Frost"
+        },
+        "icy": {
+          "text": "Icy"
+        },
+        "ice": {
+          "text": "Ice"
+        },
+        "freezing-point": {
+          "text": "Freezing point"
+        },
+        "below-freezing": {
+          "text": "Below freezing"
+        }
+      }
+    }
+  }
+}

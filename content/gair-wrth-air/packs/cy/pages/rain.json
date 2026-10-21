@@ -1,0 +1,66 @@
+{
+  "title": "Glaw a stormydd",
+  "source": "draft",
+  "sections": {
+    "rain": {
+      "title": "Glaw",
+      "concepts": {
+        "drizzle": {
+          "text": "Glaw mân"
+        },
+        "light-rain": {
+          "text": "Glaw ysgafn"
+        },
+        "rain": {
+          "text": "Glaw",
+          "also": [
+            "law"
+          ]
+        },
+        "rainy": {
+          "text": "Glawog"
+        },
+        "showers": {
+          "text": "Cawodydd",
+          "also": [
+            "cawod",
+            "ambell gawod"
+          ]
+        },
+        "heavy-rain": {
+          "text": "Glaw trwm"
+        },
+        "wet": {
+          "text": "Gwlyb",
+          "also": [
+            "wlyb"
+          ]
+        },
+        "rainbow": {
+          "text": "Enfys"
+        }
+      },
+      "order": "lightest to heaviest, then what follows"
+    },
+    "storms": {
+      "title": "Mellt a tharanau",
+      "concepts": {
+        "thunder": {
+          "text": "Taranau"
+        },
+        "lightning": {
+          "text": "Mellt"
+        },
+        "thunderstorm": {
+          "text": "Storm fellt a tharanau",
+          "note": "literally a storm of lightning and thunder"
+        },
+        "storm": {
+          "text": "Storm",
+          "note": "stormy: {{stormus}}"
+        }
+      },
+      "order": "thunder and lightning, then the storm"
+    }
+  }
+}

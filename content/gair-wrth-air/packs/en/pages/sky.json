@@ -1,6 +1,6 @@
 {
   "title": "Sky and visibility",
-  "lede": "Sun, cloud, clear skies and fog, and how to say what the sky is doing.",
+  "lede": "Sun, cloud, clear skies and fog.",
   "source": "draft",
   "sections": {
     "sun-cloud": {
@@ -49,41 +49,6 @@
         },
         "poor-visibility": {
           "text": "Poor visibility"
-        }
-      }
-    },
-    "in-a-sentence": {
-      "title": "In a sentence",
-      "concepts": {
-        "its-sunny": {
-          "text": "It's sunny"
-        },
-        "its-cloudy": {
-          "text": "It's cloudy"
-        },
-        "its-fine": {
-          "text": "It's fine"
-        },
-        "its-dry": {
-          "text": "It's dry"
-        },
-        "its-foggy": {
-          "text": "It's foggy"
-        },
-        "the-sun-is-shining": {
-          "text": "The sun is shining"
-        },
-        "it-will-be-sunny-tomorrow": {
-          "text": "It will be sunny tomorrow"
-        },
-        "it-will-be-dry-all-day": {
-          "text": "It will be dry all day"
-        },
-        "brighter-later": {
-          "text": "Brighter later"
-        },
-        "fog-in-places": {
-          "text": "Fog in places"
         }
       }
     }
