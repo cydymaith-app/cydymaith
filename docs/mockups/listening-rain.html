@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup: Glaw (listening layout)</title>
+<style>
+  :root { --bg:#f7f5f0; --card:#fff; --ink:#1d2421; --muted:#5b6661; --accent:#b3261e; --green:#1f6b4a; --line:#e2ded5; --chip:#eef4f0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#131715; --card:#1c2220; --ink:#eef1ef; --muted:#9aa6a0; --accent:#ff8a80; --green:#7fd1a8; --line:#2d3532; --chip:#243029; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.4 system-ui, sans-serif; }
+  .page { max-width:34rem; margin:0 auto; padding:1rem 16px 3rem; }
+  .draft { font-size:.8rem; color:var(--muted); border:1px dashed var(--line); padding:.4rem .6rem; border-radius:8px; }
+  h1 { margin:.8rem 0 0; font-size:1.9rem; color:var(--accent); }
+  .sub { margin:0 0 .8rem; color:var(--muted); }
+  .tools { display:flex; gap:.5rem; flex-wrap:wrap; margin:.6rem 0 1rem; }
+  .tools a { padding:.55rem .8rem; border-radius:999px; background:var(--chip); color:var(--green); text-decoration:none; font-size:.95rem; font-weight:600; min-height:44px; display:inline-flex; align-items:center; }
+  h2 { font-size:1.15rem; margin:1.6rem 0 .1rem; }
+  h2 small { display:block; font-weight:400; color:var(--muted); font-size:.85rem; }
+  .order { font-size:.82rem; color:var(--muted); margin:0 0 .5rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .row { padding:.6rem .9rem; border-top:1px solid var(--line); display:grid; grid-template-columns:1fr auto; gap:.1rem .8rem; align-items:baseline; }
+  .row > .en { text-align:end; }
+  .row > .also { grid-column:1 / -1; margin-top:0; }
+  .row:first-child { border-top:0; }
+  .cy { font-size:1.3rem; font-weight:700; }
+  .en { color:var(--muted); }
+  .also { margin-top:.3rem; font-size:.95rem; }
+  .also b { font-weight:600; color:var(--green); }
+  .also span { background:var(--chip); border-radius:6px; padding:.05rem .4rem; margin-right:.25rem; white-space:nowrap; }
+  .frame { padding:.8rem .9rem; border-top:1px solid var(--line); }
+  .frame:first-child { border-top:0; }
+  .slots { font-size:1.25rem; font-weight:700; }
+  .slots i { font-style:normal; color:var(--accent); border-bottom:2px dotted var(--accent); }
+  .lit { font-size:.88rem; color:var(--muted); font-style:italic; }
+  .ex { margin:.4rem 0 0; padding:0; list-style:none; }
+  .ex li { padding:.15rem 0; }
+  .ex li span { color:var(--muted); }
+  .decoder { margin-top:1.6rem; padding:.9rem; background:var(--chip); border-radius:14px; }
+  .decoder h3 { margin:0 0 .4rem; font-size:1rem; }
+  .decoder p { margin:.2rem 0; font-size:.95rem; }
+  .decoder .arrow { color:var(--accent); font-weight:700; }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="draft">Mockup only. Welsh is an unreviewed draft; the "also heard as" forms and "ambell cawod" are proposals.</p>
+
+  <h1 lang="cy">Glaw, eira a rhew</h1>
+  <p class="sub">Rain, snow and ice. <b>Welsh first:</b> scan what you heard.</p>
+
+  <nav class="tools" aria-label="Tools">
+    <a href="#decoder">Can't find it? Mutation decoder</a>
+    <a href="#frames">Sentence patterns</a>
+  </nav>
+
+  <h2 lang="cy">Glaw <small>Rain</small></h2>
+  <p class="order">Order: lightest to heaviest, then results</p>
+  <div class="card">
+    <div class="row">
+      <div class="cy" lang="cy">Glaw mân</div><div class="en">drizzle</div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Glaw ysgafn</div><div class="en">light rain</div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Cawod</div><div class="en">a shower</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">cawodydd</span> <span lang="cy">ambell gawod</span> <span class="en">(the odd shower)</span></div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Glaw</div><div class="en">rain</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">law</span> <span class="en">after <i lang="cy">am</i>, e.g. <i lang="cy">rhybudd am law</i></span></div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Glaw trwm</div><div class="en">heavy rain</div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Llifogydd</div><div class="en">flooding</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">lifogydd</span> <span class="en">after <i lang="cy">am</i></span></div>
+    </div>
+  </div>
+
+  <h2 id="frames">Patterns you will hear <small lang="cy">Brawddegau</small></h2>
+  <p class="order">Fill the gap from the word lists</p>
+  <div class="card">
+    <div class="frame">
+      <div class="slots" lang="cy">Bydd <i>glaw</i> yn y <i>gogledd</i></div>
+      <div class="lit">will-be rain in the north</div>
+      <ul class="ex">
+        <li lang="cy">Bydd eira ar dir uchel <span>snow on high ground</span></li>
+        <li lang="cy">Bydd cawodydd ddydd Sadwrn <span>showers on Saturday</span></li>
+      </ul>
+    </div>
+    <div class="frame">
+      <div class="slots" lang="cy">Mae hi'n bwrw <i>glaw</i></div>
+      <div class="lit">is she striking rain (it is raining)</div>
+      <ul class="ex">
+        <li lang="cy">Mae hi'n bwrw eira <span>it's snowing</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="decoder" id="decoder">
+    <h3>Heard something you can't find?</h3>
+    <p>Change the first letter back:</p>
+    <p lang="cy"><b>law</b> <span class="arrow">→</span> <b>glaw</b> &nbsp; (add <b>g</b>)</p>
+    <p lang="cy"><b>wyntog</b> <span class="arrow">→</span> <b>gwyntog</b> &nbsp; (add <b>g</b>)</p>
+    <p lang="cy"><b>ddydd</b> <span class="arrow">→</span> <b>dydd</b> &nbsp; (<b>dd</b> becomes <b>d</b>)</p>
+    <p lang="cy"><b>yng Nghymru</b> <span class="arrow">→</span> <b>Cymru</b> &nbsp; (<b>ngh</b> becomes <b>c</b>)</p>
+  </aside>
+</main>
+</body>
+</html>
