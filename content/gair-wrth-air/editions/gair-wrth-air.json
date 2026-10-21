@@ -10,6 +10,7 @@
     "en",
     "cy"
   ],
+  "palettes": ["default", "high-contrast", "red-green-safe", "blue-yellow-safe"],
   "stylesheets": [
     "project.css"
   ],
