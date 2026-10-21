@@ -852,7 +852,7 @@ class DictionaryTests(unittest.TestCase):
                 self.assertEqual(page_file, f"{page['slug']}.html", entry["concept"])
                 self.assertTrue(row.endswith("." + entry["concept"]), entry["concept"])
                 html = (self.out / page_file).read_text(encoding="utf-8")
-                self.assertIn(f'<tr id="{row}">', html, page["href"])
+                self.assertTrue(f'<tr id="{row}">' in html or f'<g id="{row}">' in html, page["href"])  # a word on the compass is a label
 
     def test_every_entry_has_terms_in_every_language_of_the_edition(self):
         for entry in self.dictionary["entries"]:
