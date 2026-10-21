@@ -18,6 +18,12 @@
         "lowest-minimum": {
           "text": "Lowest (minimum)"
         },
+        "at-its-highest": {
+          "text": "At its highest"
+        },
+        "at-its-lowest": {
+          "text": "At its lowest"
+        },
         "humid": {
           "text": "Humid"
         },

@@ -136,13 +136,16 @@
       "concepts": {
         "in-places": {
           "text": "Mewn mannau"
+        },
+        "areas": {
+          "text": "Ardaloedd"
         }
       },
-      "order": "one phrase so far; more are waiting to be checked"
+      "order": "places, then areas"
     },
     "amount": {
       "title": "Faint",
-      "order": "how often, then how much",
+      "order": "how much, how often, then which ones",
       "concepts": {
         "the-odd-shower": {
           "text": "Ambell gawod"
@@ -155,6 +158,21 @@
         },
         "between-and": {
           "text": "Rhwng … a …"
+        },
+        "a-little": {
+          "text": "Ychydig"
+        },
+        "quite": {
+          "text": "Digon"
+        },
+        "about": {
+          "text": "Rhyw"
+        },
+        "some": {
+          "text": "Rhai"
+        },
+        "other": {
+          "text": "Eraill"
         }
       }
     },
@@ -178,7 +196,7 @@
     },
     "time-words": {
       "title": "Geiriau amser",
-      "order": "through the day, then tomorrow",
+      "order": "the day, then tomorrow",
       "concepts": {
         "during-the-day": {
           "text": "Yn ystod y dydd"
@@ -197,6 +215,12 @@
         },
         "tomorrow-night": {
           "text": "Nos yfory"
+        },
+        "middle": {
+          "text": "Canol"
+        },
+        "day": {
+          "text": "Diwrnod"
         }
       }
     },
@@ -212,6 +236,12 @@
         },
         "to-move": {
           "text": "Symud"
+        },
+        "to-arrive": {
+          "text": "Cyrraedd"
+        },
+        "to-recede": {
+          "text": "Cilio"
         },
         "to-brighten": {
           "text": "Brafio"
@@ -247,6 +277,75 @@
           "text": "Dyna'r tywydd"
         }
       }
+    },
+    "introducing": {
+      "title": "Cyflwyno pwynt",
+      "concepts": {
+        "as-for": {
+          "text": "O ran"
+        },
+        "in-addition": {
+          "text": "Yn ogystal â"
+        },
+        "thats-when": {
+          "text": "Dyna pryd"
+        },
+        "to-mean": {
+          "text": "Golygu"
+        },
+        "that-one": {
+          "text": "Hwnnw"
+        }
+      },
+      "order": "pointing, then adding"
+    },
+    "verbs": {
+      "title": "Berfau",
+      "concepts": {
+        "to-cloud-over": {
+          "text": "Cymylu"
+        },
+        "to-develop": {
+          "text": "Datblygu"
+        },
+        "to-fall": {
+          "text": "Syrthio"
+        },
+        "to-strengthen": {
+          "text": "Cryfhau"
+        },
+        "to-blow": {
+          "text": "Chwythu"
+        },
+        "to-change": {
+          "text": "Newid"
+        },
+        "to-vary": {
+          "text": "Amrywio"
+        },
+        "to-affect": {
+          "text": "Effeithio"
+        },
+        "to-come-into-force": {
+          "text": "Dod i rym"
+        }
+      },
+      "order": "weather verbs first, then change and effect"
+    },
+    "comparing": {
+      "title": "Cymharu",
+      "concepts": {
+        "higher": {
+          "text": "Uwch"
+        },
+        "lighter": {
+          "text": "Ysgafnach"
+        },
+        "than": {
+          "text": "Nag"
+        }
+      },
+      "order": "more, then less, then than"
     }
   }
 }

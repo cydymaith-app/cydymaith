@@ -38,14 +38,17 @@
         "in-the-north": {
           "text": "In the north"
         },
-        "in-the-south": {
-          "text": "In the south"
-        },
         "in-the-east": {
           "text": "In the east"
         },
+        "in-the-south": {
+          "text": "In the south"
+        },
         "in-the-west": {
           "text": "In the west"
+        },
+        "the-country": {
+          "text": "Country"
         }
       }
     },

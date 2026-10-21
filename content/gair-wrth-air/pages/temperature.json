@@ -8,6 +8,8 @@
         "degrees-celsius",
         "highest-maximum",
         "lowest-minimum",
+        "at-its-highest",
+        "at-its-lowest",
         "humid",
         "humidity"
       ]

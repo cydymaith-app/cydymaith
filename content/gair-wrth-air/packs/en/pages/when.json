@@ -44,6 +44,9 @@
         "night": {
           "text": "Night"
         },
+        "midnight": {
+          "text": "Midnight"
+        },
         "overnight": {
           "text": "Overnight"
         },
@@ -75,6 +78,20 @@
         },
         "sunday": {
           "text": "Sunday"
+        }
+      }
+    },
+    "seasons": {
+      "title": "Seasons",
+      "concepts": {
+        "season": {
+          "text": "Season"
+        },
+        "half-term": {
+          "text": "Half-term"
+        },
+        "first-of-the-season": {
+          "text": "The first of the season"
         }
       }
     }

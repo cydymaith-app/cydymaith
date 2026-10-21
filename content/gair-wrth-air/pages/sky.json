@@ -5,6 +5,7 @@
       "id": "sun-cloud",
       "concepts": [
         "sun",
+        "sunshine",
         "sunny",
         "sunny-spells",
         "cloud",
@@ -22,6 +23,16 @@
         "mist",
         "visibility",
         "poor-visibility"
+      ]
+    },
+    {
+      "id": "look",
+      "concepts": [
+        "blue-sky",
+        "greyish",
+        "settled",
+        "unsettled",
+        "changeable"
       ]
     }
   ]

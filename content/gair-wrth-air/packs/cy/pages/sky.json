@@ -9,6 +9,9 @@
           "text": "Haul",
           "note": "the sun: {{yr haul}}"
         },
+        "sunshine": {
+          "text": "Heulwen"
+        },
         "sunny": {
           "text": "Heulog"
         },
@@ -41,7 +44,7 @@
           "text": "Sych"
         }
       },
-      "order": "the sun, then the cloud, then clear and dry"
+      "order": "the sun and sunshine, then the cloud, then clear and dry"
     },
     "fog": {
       "title": "Niwl a tharth",
@@ -63,6 +66,27 @@
         }
       },
       "order": "fog and mist, then how far you can see"
+    },
+    "look": {
+      "title": "Golwg yr awyr",
+      "concepts": {
+        "blue-sky": {
+          "text": "Awyr las"
+        },
+        "greyish": {
+          "text": "Llwydaidd"
+        },
+        "settled": {
+          "text": "Sefydlog"
+        },
+        "unsettled": {
+          "text": "Ansefydlog"
+        },
+        "changeable": {
+          "text": "Cyfnewidiol"
+        }
+      },
+      "order": "colour first, then how settled it is"
     }
   }
 }

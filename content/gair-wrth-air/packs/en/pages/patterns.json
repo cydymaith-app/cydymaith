@@ -129,6 +129,9 @@
       "concepts": {
         "in-places": {
           "text": "In places"
+        },
+        "areas": {
+          "text": "Areas"
         }
       }
     },
@@ -146,6 +149,21 @@
         },
         "between-and": {
           "text": "Between … and …"
+        },
+        "a-little": {
+          "text": "A little"
+        },
+        "quite": {
+          "text": "Quite, enough"
+        },
+        "about": {
+          "text": "About, roughly"
+        },
+        "some": {
+          "text": "Some"
+        },
+        "other": {
+          "text": "Others, other"
         }
       }
     },
@@ -186,6 +204,12 @@
         },
         "tomorrow-night": {
           "text": "Tomorrow night"
+        },
+        "middle": {
+          "text": "Middle"
+        },
+        "day": {
+          "text": "Day (a whole day)"
         }
       }
     },
@@ -200,6 +224,12 @@
         },
         "to-move": {
           "text": "To move"
+        },
+        "to-arrive": {
+          "text": "To arrive"
+        },
+        "to-recede": {
+          "text": "To clear away, recede"
         },
         "to-brighten": {
           "text": "To brighten up"
@@ -231,6 +261,72 @@
         },
         "thats-the-weather": {
           "text": "That's the weather"
+        }
+      }
+    },
+    "introducing": {
+      "title": "Introducing a point",
+      "concepts": {
+        "as-for": {
+          "text": "As for"
+        },
+        "in-addition": {
+          "text": "In addition to"
+        },
+        "thats-when": {
+          "text": "That's when"
+        },
+        "to-mean": {
+          "text": "To mean"
+        },
+        "that-one": {
+          "text": "That one"
+        }
+      }
+    },
+    "verbs": {
+      "title": "Verbs",
+      "concepts": {
+        "to-cloud-over": {
+          "text": "To cloud over"
+        },
+        "to-develop": {
+          "text": "To develop"
+        },
+        "to-fall": {
+          "text": "To fall"
+        },
+        "to-strengthen": {
+          "text": "To strengthen"
+        },
+        "to-blow": {
+          "text": "To blow"
+        },
+        "to-change": {
+          "text": "To change"
+        },
+        "to-vary": {
+          "text": "To vary"
+        },
+        "to-affect": {
+          "text": "To affect"
+        },
+        "to-come-into-force": {
+          "text": "To come into force"
+        }
+      }
+    },
+    "comparing": {
+      "title": "Comparing",
+      "concepts": {
+        "higher": {
+          "text": "Higher"
+        },
+        "lighter": {
+          "text": "Lighter, gentler"
+        },
+        "than": {
+          "text": "Than"
         }
       }
     }

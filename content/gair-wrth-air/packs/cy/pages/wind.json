@@ -33,12 +33,21 @@
         "light-breeze": {
           "text": "Awel ysgafn"
         },
+        "moderate": {
+          "text": "Cymedrol",
+          "also": [
+            "gymedrol"
+          ]
+        },
         "strong-winds": {
           "text": "Gwyntoedd cryfion"
         },
         "gusts": {
           "text": "Hyrddiau",
-          "note": "{{hyrddiau o wynt}}: gusts of wind"
+          "note": "{{hyrddiau o wynt}}: gusts of wind",
+          "also": [
+            "hyrddiadau"
+          ]
         }
       },
       "order": "the wind and its speed, then calm to strong"

@@ -17,6 +17,9 @@
         },
         "weather-warning": {
           "text": "Weather warning"
+        },
+        "possibility": {
+          "text": "Possibility"
         }
       }
     },

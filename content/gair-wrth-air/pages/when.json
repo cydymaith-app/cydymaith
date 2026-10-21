@@ -20,6 +20,7 @@
         "afternoon",
         "evening",
         "night",
+        "midnight",
         "overnight",
         "all-day"
       ]
@@ -34,6 +35,14 @@
         "friday",
         "saturday",
         "sunday"
+      ]
+    },
+    {
+      "id": "seasons",
+      "concepts": [
+        "season",
+        "half-term",
+        "first-of-the-season"
       ]
     }
   ]

@@ -9,6 +9,9 @@
         "sun": {
           "text": "Sun"
         },
+        "sunshine": {
+          "text": "Sunshine"
+        },
         "sunny": {
           "text": "Sunny"
         },
@@ -49,6 +52,26 @@
         },
         "poor-visibility": {
           "text": "Poor visibility"
+        }
+      }
+    },
+    "look": {
+      "title": "How the sky looks",
+      "concepts": {
+        "blue-sky": {
+          "text": "Blue sky"
+        },
+        "greyish": {
+          "text": "Greyish, dull"
+        },
+        "settled": {
+          "text": "Settled"
+        },
+        "unsettled": {
+          "text": "Unsettled"
+        },
+        "changeable": {
+          "text": "Changeable"
         }
       }
     }

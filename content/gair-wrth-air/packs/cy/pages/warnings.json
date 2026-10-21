@@ -19,9 +19,12 @@
         },
         "weather-warning": {
           "text": "Rhybudd tywydd"
+        },
+        "possibility": {
+          "text": "Posibilrwydd"
         }
       },
-      "order": "the weather, then the forecast, then the Met Office"
+      "order": "the weather, the forecast, the Met Office, a warning, then the chance of one"
     },
     "levels": {
       "title": "Lefelau rhybudd",

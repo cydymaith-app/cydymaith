@@ -42,7 +42,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
         return phrasebook.build(out, project_dir=data_dir, **kw)
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident.
-ENTRY_FLOOR = {"warnings": 13, "sky": 13, "rain": 12, "snow-ice": 10, "wind": 17, "temperature": 11, "when": 20, "where": 30, "patterns": 33, "talk": 11}
+ENTRY_FLOOR = {"warnings": 14, "sky": 19, "rain": 12, "snow-ice": 10, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11}
 
 
 class Page(HTMLParser):
@@ -179,7 +179,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', self.built["rain.html"])
 
     def test_every_section_states_its_order(self):
-        shown = {"warnings": 3, "sky": 2, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 3, "where": 3, "patterns": 6}
+        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 4, "where": 3, "patterns": 6}
         for slug, count in shown.items():
             self.assertEqual(self.built[f"{slug}.html"].count('<p class="order">'), count, slug)
 
@@ -196,7 +196,8 @@ class BuildTests(unittest.TestCase):
                          ["it-is", "doing", "it-will-be", "there-will-be", "wind-from", "extent"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        self.assertEqual(sum(self.site.count_entries(s) for s in ("warnings", "sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")), 170)
+        slugs = ("warnings", "sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")
+        self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
     def test_the_town_and_country_names_wait_in_the_held_back_geography_group(self):
         development = build.Site(self.raw, self.edition)

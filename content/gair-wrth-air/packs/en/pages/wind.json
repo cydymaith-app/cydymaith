@@ -27,6 +27,9 @@
         "light-breeze": {
           "text": "Light breeze"
         },
+        "moderate": {
+          "text": "Moderate"
+        },
         "strong-winds": {
           "text": "Strong winds"
         },

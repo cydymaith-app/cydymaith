@@ -61,7 +61,8 @@
     {
       "id": "extent",
       "concepts": [
-        "in-places"
+        "in-places",
+        "areas"
       ]
     },
     {
@@ -71,7 +72,12 @@
         "the-odd-shower",
         "dry-spells",
         "up-to",
-        "between-and"
+        "between-and",
+        "a-little",
+        "quite",
+        "about",
+        "some",
+        "other"
       ]
     },
     {
@@ -93,7 +99,9 @@
         "until",
         "later-on",
         "tomorrow-morning",
-        "tomorrow-night"
+        "tomorrow-night",
+        "middle",
+        "day"
       ]
     },
     {
@@ -103,6 +111,8 @@
         "to-clear",
         "to-spread",
         "to-move",
+        "to-arrive",
+        "to-recede",
         "to-brighten",
         "eastwards",
         "across"
@@ -122,6 +132,41 @@
       "concepts": [
         "good-evening",
         "thats-the-weather"
+      ]
+    },
+    {
+      "id": "introducing",
+      "status": "development",
+      "concepts": [
+        "as-for",
+        "in-addition",
+        "thats-when",
+        "to-mean",
+        "that-one"
+      ]
+    },
+    {
+      "id": "verbs",
+      "status": "development",
+      "concepts": [
+        "to-cloud-over",
+        "to-develop",
+        "to-fall",
+        "to-strengthen",
+        "to-blow",
+        "to-change",
+        "to-vary",
+        "to-affect",
+        "to-come-into-force"
+      ]
+    },
+    {
+      "id": "comparing",
+      "status": "development",
+      "concepts": [
+        "higher",
+        "lighter",
+        "than"
       ]
     }
   ]

@@ -47,6 +47,9 @@
         "night": {
           "text": "Nos"
         },
+        "midnight": {
+          "text": "Hanner nos"
+        },
         "overnight": {
           "text": "Dros nos"
         },
@@ -54,7 +57,7 @@
           "text": "Drwy'r dydd"
         }
       },
-      "order": "morning to night, then overnight and all day"
+      "order": "morning to night, then midnight, overnight and all day"
     },
     "days": {
       "title": "Dyddiau'r wythnos",
@@ -104,6 +107,21 @@
         }
       },
       "order": "Monday to Sunday"
+    },
+    "seasons": {
+      "title": "Tymhorau",
+      "concepts": {
+        "season": {
+          "text": "Tymor"
+        },
+        "half-term": {
+          "text": "Hanner tymor"
+        },
+        "first-of-the-season": {
+          "text": "Cynta'r tymor"
+        }
+      },
+      "order": "the season, then the half-term, then the first of the season"
     }
   }
 }

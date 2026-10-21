@@ -56,14 +56,20 @@
         "in-the-north": {
           "text": "Yn y gogledd"
         },
-        "in-the-south": {
-          "text": "Yn y de"
-        },
         "in-the-east": {
           "text": "Yn y dwyrain"
         },
+        "in-the-south": {
+          "text": "Yn y de"
+        },
         "in-the-west": {
           "text": "Yn y gorllewin"
+        },
+        "the-country": {
+          "text": "Gwlad",
+          "also": [
+            "wlad"
+          ]
         }
       },
       "order": "round the compass from the north"

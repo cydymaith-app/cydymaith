@@ -18,6 +18,12 @@
         "lowest-minimum": {
           "text": "Isaf"
         },
+        "at-its-highest": {
+          "text": "Ar ei uchaf"
+        },
+        "at-its-lowest": {
+          "text": "Ar ei isaf"
+        },
         "humid": {
           "text": "Llaith"
         },
@@ -25,7 +31,7 @@
           "text": "Lleithder"
         }
       },
-      "order": "the measures, then humidity"
+      "order": "the measures and limits, then humidity"
     },
     "hot-cold": {
       "title": "Poeth ac oer",
