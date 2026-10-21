@@ -37,20 +37,20 @@ jobs:
           PHRASEBOOK_PROJECT: content/gair-wrth-air
       - name: Build site
         run: python3 build.py dist
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-# Deploying to GitHub Pages needs the repo public (or a paid plan); this repo is private for now.
-# When that changes, restore the upload-pages-artifact step above and a deploy job like:
-#
-#   deploy:
-#     if: github.ref == 'refs/heads/main'
-#     needs: test
-#     runs-on: ubuntu-latest
-#     permissions:
-#       pages: write
-#       id-token: write
-#     environment:
-#       name: github-pages
-#       url: ${{ steps.deployment.outputs.page_url }}
-#     steps:
-#       - id: deployment
-#         uses: actions/deploy-pages@v4
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
