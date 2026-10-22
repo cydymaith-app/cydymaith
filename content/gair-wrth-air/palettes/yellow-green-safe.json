@@ -1,0 +1,41 @@
+{
+  "names": {
+    "en": "Yellow and green, safe",
+    "cy": "Melyn a gwyrdd, diogel"
+  },
+  "notes": "The yellow and green scheme made safe for colour-blind vision. Derived from yellow-green.json by changing only the two accents. With protan, deutan and tritan simulation the base scheme's accent was too close to the muted and ink text, because yellow and green collapse towards each other and the accent was almost the same lightness as the muted text. So the accents move apart in lightness: light accent 0.489 to 0.33, dark accent 0.887 to 0.80, keeping the gold hue 95.3 and as much chroma as the gamut allows. The tiles, the top bar and every other colour are unchanged. The build checks the promise (colour.py); that is arithmetic on simulated vision, not evidence from people who see colour differently.",
+  "level": "AA",
+  "light": {
+    "bg": "oklch(0.935 0.035 175)",
+    "surface": "oklch(0.975 0.012 175)",
+    "ink": "#001813",
+    "muted": "oklch(0.47 0.03 175)",
+    "rule": "oklch(0.90 0.02 175)",
+    "rule-strong": "oklch(0.72 0.03 175)",
+    "accent": "oklch(0.330 0.068 95.3)",
+    "star": "oklch(0.78 0.100 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  },
+  "dark": {
+    "bg": "#001813",
+    "surface": "oklch(0.158 0.005 95.3)",
+    "ink": "oklch(0.969 0.008 95.3)",
+    "muted": "oklch(0.655 0.007 95.3)",
+    "rule": "oklch(0.27 0.01 95.3)",
+    "rule-strong": "oklch(0.45 0.008 95.3)",
+    "accent": "oklch(0.800 0.164 95.3)",
+    "star": "oklch(0.36 0.080 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  },
+  "colour_vision": [
+    "protan",
+    "deutan",
+    "tritan"
+  ]
+}

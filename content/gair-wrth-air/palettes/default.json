@@ -1,4 +1,8 @@
 {
+  "names": {
+    "en": "Red and green",
+    "cy": "Coch a gwyrdd"
+  },
   "notes": "The red and green of the Welsh flag, the framework's red-green palette, made this project's default; its colours are derived from it unchanged. Taken from the hellocolor.de palette used by the content project's default (docs/ASSETS.md, Colour palettes in use). Not colour-blind safe: it uses the Primary red and the Success green as the two strongest colours, so red and green are meant to be told apart by colour, and the palette makes no colour-vision promise. Light is the complement of dark: a pale green tint of the Secondary green for the page, the deep green of the dark background as the text, and the same primary red at 400 for the top bar, the tiles and the accent, with near-white text on them. Dark uses a deep green tint of the Secondary green for the page, and the same red for the top bar and tiles. Light accent: the red from the primary scale at 400, darker than the Primary #ED0F29 because that is 4.3:1 on white. Dark accent: the ring red #FF333B, which is the brightest red the palette has. Tiles: the Success green #32BB60, with near-black text. Star: a pale tint of the Secondary green in light, and a deep tint in dark.",
   "level": "AA",
   "light": {

@@ -56,6 +56,9 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | Palette | Where it came from | Licence |
 |---|---|---|
 | `content/gair-wrth-air/palettes/default.json` | Generated at hellocolor.de by the author, 2026-10-20, then adjusted (below) | **To confirm.** See below |
+| `content/gair-wrth-air/palettes/yellow-green.json` | Derived from `default.json` by the author, 2026-10-22: the red (OKLCH 0.489 0.198 25.4) replaced by the gold of the St David's cross (0.887 0.18 95.3), nearly the same chroma, the greens unchanged | Own work; inherits the open question on `default.json` above |
+| `content/gair-wrth-air/palettes/yellow-green-safe.json` | Derived from `yellow-green.json` by the author, 2026-10-22: only the two accents moved apart in lightness (light 0.489 to 0.33, dark 0.887 to 0.80) so it passes the protan, deutan and tritan checks | Own work; inherits the open question on `default.json` above |
+| `content/gair-wrth-air/palettes/yellow-green-high-contrast.json` | Derived from `yellow-green.json` by the author, 2026-10-22, at level AAA (7:1 text, 3:1 borders) | Own work; inherits the open question on `default.json` above |
 
 The framework's own palettes are recorded in its `docs/ASSETS.md`.
 

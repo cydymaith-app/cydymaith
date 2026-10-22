@@ -174,6 +174,23 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="where.html"', tiles)
         self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
 
+    def test_the_settings_page_offers_the_three_accessibility_levels_each_with_its_own_schemes_in_welsh_and_english(self):
+        page = self.built["settings.html"]
+        self.assertIn('id="settings-lang-cy" value="cy" checked', page, "the Welsh shows first")
+        self.assertIn('<h1><span class="t" data-n="1" lang="cy">Gosodiadau</span><span class="t" data-n="2">Settings</span></h1>', page)
+        levels = {}
+        for tier, pid in re.findall(r'data-tier="(\w+)"><input type="radio" name="palette" value="([\w-]+)"', page):
+            levels.setdefault(tier, []).append(pid)
+        self.assertEqual(levels, {
+            "standard": ["default", "yellow-green"],
+            "high": ["high-contrast", "yellow-green-high-contrast"],
+            "safe": ["red-green-safe", "blue-yellow-safe", "yellow-green-safe"],
+        })
+        for welsh, english in (("Safonol", "Standard"), ("Lliwiau diogel", "Safe colours"), ("Cyferbyniad uchel", "High contrast")):
+            self.assertIn(f'lang="cy">{welsh}</span><span class="t" data-n="2">{english}</span>', page)
+        for name in ("Coch a gwyrdd", "Melyn a gwyrdd"):
+            self.assertIn(name, page)
+
     def test_the_about_page_states_the_aims_in_both_languages_and_links_to_the_sources(self):
         page = self.built["about.html"]
         self.assertIn('<article class="about-text" id="about-cy" lang="cy"><header><h1>Ynglŷn â Chydymaith am iaith</h1>', page)

@@ -1,0 +1,36 @@
+{
+  "names": {
+    "en": "Yellow and green",
+    "cy": "Melyn a gwyrdd"
+  },
+  "notes": "The yellow of the St David's cross, as the twin of the red and green default. The red is oklch(0.489 0.198 25.4) and the gold is oklch(0.887 0.18 95.3): almost the same chroma (about 0.18 to 0.20), 70 degrees round the hue wheel, so they sit together as a pair. Every green is unchanged. Where the default uses red, this uses the gold: the top bar and tiles are the gold with the dark green ink on them (the red used near-white text, because red is dark and gold is light). Light accent: the same lightness as the red (0.489), at the most chroma yellow allows there (0.10), so it reads as text with the same contrast the red does. Dark accent: the brightest gold, the counterpart of the default's ring red. The dark neutrals keep the default's lightness and chroma and take the gold's hue (95.3) in place of the red's (17 to 29). Not colour-blind safe: it makes no colour-vision promise.",
+  "level": "AA",
+  "light": {
+    "bg": "oklch(0.935 0.035 175)",
+    "surface": "oklch(0.975 0.012 175)",
+    "ink": "#001813",
+    "muted": "oklch(0.47 0.03 175)",
+    "rule": "oklch(0.90 0.02 175)",
+    "rule-strong": "oklch(0.72 0.03 175)",
+    "accent": "oklch(0.489 0.100 95.3)",
+    "star": "oklch(0.78 0.100 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  },
+  "dark": {
+    "bg": "#001813",
+    "surface": "oklch(0.158 0.005 95.3)",
+    "ink": "oklch(0.969 0.008 95.3)",
+    "muted": "oklch(0.655 0.007 95.3)",
+    "rule": "oklch(0.27 0.01 95.3)",
+    "rule-strong": "oklch(0.45 0.008 95.3)",
+    "accent": "oklch(0.887 0.18 95.3)",
+    "star": "oklch(0.36 0.080 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  }
+}

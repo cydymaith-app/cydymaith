@@ -1,0 +1,36 @@
+{
+  "names": {
+    "en": "Yellow and green, high contrast",
+    "cy": "Melyn a gwyrdd, cyferbyniad uchel"
+  },
+  "notes": "The yellow and green scheme at level AAA. Derived from yellow-green.json: text needs 7:1, borders 3:1 and the icon on a tile 4.5:1. Light: a lighter page and card, near-black ink, muted text at lightness 0.38, stronger borders (0.45) and a darker gold accent (0.40). Dark: a darker page, whiter ink, brighter muted text (0.84), stronger borders (0.72) and a brighter gold accent (0.92). The greens and the gold of the tiles and top bar are kept: the gold with the dark green ink is already 13:1.",
+  "level": "AAA",
+  "light": {
+    "bg": "oklch(0.970 0.020 175.0)",
+    "surface": "oklch(0.995 0.004 175.0)",
+    "ink": "#001008",
+    "muted": "oklch(0.380 0.040 175.0)",
+    "rule": "oklch(0.800 0.020 175.0)",
+    "rule-strong": "oklch(0.450 0.040 175.0)",
+    "accent": "oklch(0.400 0.085 95.3)",
+    "star": "oklch(0.78 0.100 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  },
+  "dark": {
+    "bg": "#000d09",
+    "surface": "oklch(0.200 0.010 95.3)",
+    "ink": "oklch(0.985 0.005 95.3)",
+    "muted": "oklch(0.840 0.010 95.3)",
+    "rule": "oklch(0.450 0.010 95.3)",
+    "rule-strong": "oklch(0.720 0.015 95.3)",
+    "accent": "oklch(0.920 0.170 95.3)",
+    "star": "oklch(0.36 0.080 175)",
+    "tile": "oklch(0.887 0.18 95.3)",
+    "on-tile": "#001813",
+    "header": "oklch(0.887 0.18 95.3)",
+    "on-header": "#001813"
+  }
+}
