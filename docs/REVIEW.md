@@ -37,6 +37,7 @@ Entries where the author is least certain:
 | all | Regional labels | every `varieties` tag | Every N and S label needs checking entry by entry. |
 | all | Mutation notes | boxes and intros | Check every explanation of soft and nasal mutation for accuracy. |
 | interface | Site text | `content/gair-wrth-air/packs/cy/pack.json` and `.../editions/gair-wrth-air.json` | Check `Hafan`, `Prif ddewislen`, `Cymraeg`, `Llyfr ymadroddion`, `Ffynonellau`, the group title and `Ymadroddion bob dydd, Cymraeg i Saesneg` (the pair now runs Welsh to English). |
+| interface | Edit order and tile layout | `Golygu'r drefn`, `Cadw'r drefn`, `Ailosod`, `Cynllun y teils` and the messages in `packs/cy/pack.json` (`arrange_*`, `reset_orders_*`) | First drafts. Check the labels and the spoken announcements (a screen reader reads `arrange_picked`, `arrange_moved` and `arrange_cancelled`). `Cadw'r drefn` is the Save button. |
 
 ## Questions of register
 
