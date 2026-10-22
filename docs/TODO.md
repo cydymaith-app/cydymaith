@@ -200,6 +200,9 @@ Script to generate and test each screen and score them for usability. Run each t
 Ability to customise the order of tiles on home page and sub pages. A spanner or other icon - toggle the edit order mode on. Edit order mode shows smaller buttons with just their icon. User can drag the buttons to where they want like on an app screen. Toggle edit mode off saves the new config. 
 Screen background changes colour, and the toggled edit icon background matches it. Title says drag to reorder. Needs a reset default option.
 
+- [x] **Done.** Edit order on the home page and group pages (the spanner in the rail): drag a tile, or tap it and tap where it goes, or move it with the keys. Save order keeps it on this device, and leaving without saving drops the change. Reset puts a screen back in its default, and Settings resets every screen at once. The Welsh strings are first drafts in `REVIEW.md`.
+  - [ ] Check it by hand on a phone, with TalkBack and VoiceOver, right to left, forced colours, and in each palette, light and dark.
+
 ### 3.6 Report issue screen
 
 Via a flag icon on the side bar. 
