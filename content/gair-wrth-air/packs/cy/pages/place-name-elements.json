@@ -1,0 +1,254 @@
+{
+  "title": "Elfennau enwau lleoedd",
+  "source": "draft",
+  "sections": {
+    "settlements": {
+      "title": "Aneddiadau ac adeiladau",
+      "order": "church places, then forts and courts, then homes",
+      "intro": "In a place name the elements are joined together, and the first letter of the second word often changes. Each element is shown here in its basic form, with the changed forms you meet in names listed beside it.",
+      "concepts": {
+        "church-site": {
+          "text": "llan",
+          "note": "as in {{Llanelwy}} and {{Llanelli}}; often followed by the name of a saint"
+        },
+        "church": {
+          "text": "eglwys"
+        },
+        "chapel": {
+          "text": "capel",
+          "note": "as in {{Capel Curig}}"
+        },
+        "prayer-house": {
+          "text": "betws",
+          "note": "as in {{Betws-y-coed}}"
+        },
+        "castle": {
+          "text": "castell",
+          "note": "as in {{Castell-nedd}}; shortened to {{cas}} in {{Casnewydd}}"
+        },
+        "fort": {
+          "text": "caer",
+          "note": "as in {{Caernarfon}} and {{Caerdydd}}",
+          "also": [
+            "gaer"
+          ]
+        },
+        "court-hall": {
+          "text": "llys",
+          "note": "the court or hall of a prince or lord"
+        },
+        "homestead": {
+          "text": "tre",
+          "note": "as in {{Tregaron}}; {{tref}} is the modern word for a town",
+          "also": [
+            "tref",
+            "dref"
+          ]
+        },
+        "house": {
+          "text": "tŷ"
+        },
+        "smallholding": {
+          "text": "tyddyn"
+        }
+      }
+    },
+    "water": {
+      "title": "Dŵr",
+      "order": "running water, still water, then the coast",
+      "concepts": {
+        "river-mouth": {
+          "text": "aber",
+          "note": "as in {{Aberystwyth}}, {{Abertawe}} and {{Aberteifi}}; the river's name follows"
+        },
+        "river": {
+          "text": "afon",
+          "note": "as in {{Afon Conwy}}"
+        },
+        "brook": {
+          "text": "nant",
+          "note": "as in {{Nant Ffrancon}}"
+        },
+        "spring": {
+          "text": "ffynnon",
+          "note": "as in {{Ffynnon Taf}}"
+        },
+        "lake": {
+          "text": "llyn",
+          "note": "as in {{Llyn Tegid}}"
+        },
+        "pool": {
+          "text": "pwll",
+          "note": "as in {{Pwllheli}}"
+        },
+        "island": {
+          "text": "ynys",
+          "note": "as in {{Ynys Môn}} (Anglesey)"
+        },
+        "bank-shore": {
+          "text": "glan",
+          "also": [
+            "lan"
+          ]
+        },
+        "beach": {
+          "text": "traeth"
+        }
+      }
+    },
+    "hills": {
+      "title": "Bryniau a chreigiau",
+      "order": "the mountain down to the hillside, then the head or top",
+      "concepts": {
+        "mountain": {
+          "text": "mynydd",
+          "note": "as in {{Mynydd Du}}"
+        },
+        "bare-hill": {
+          "text": "moel",
+          "note": "as in {{Moel Famau}}",
+          "also": [
+            "foel"
+          ]
+        },
+        "hill": {
+          "text": "bryn",
+          "note": "as in {{Bryn Mawr}}"
+        },
+        "crag": {
+          "text": "craig",
+          "note": "as in {{Craig-y-nos}}",
+          "also": [
+            "graig"
+          ]
+        },
+        "cairn": {
+          "text": "carn",
+          "note": "as in {{Carn Ingli}}"
+        },
+        "hillside": {
+          "text": "allt"
+        },
+        "head-top": {
+          "text": "pen",
+          "note": "as in {{Penarth}} and {{Pen-y-bont ar Ogwr}}"
+        }
+      }
+    },
+    "land": {
+      "title": "Cymoedd a chaeau",
+      "order": "the valley, then open and enclosed land, then the wood",
+      "concepts": {
+        "valley": {
+          "text": "cwm",
+          "note": "as in {{Cwmbrân}}"
+        },
+        "open-field": {
+          "text": "maes",
+          "note": "as in {{Maesteg}}"
+        },
+        "enclosed-field": {
+          "text": "cae"
+        },
+        "moorland": {
+          "text": "gwaun",
+          "note": "as in {{Gwauncaegurwen}}",
+          "also": [
+            "waun"
+          ]
+        },
+        "wood": {
+          "text": "coed",
+          "note": "as in {{Betws-y-coed}}"
+        }
+      }
+    },
+    "ways": {
+      "title": "Ffyrdd a chroesfannau",
+      "order": "roads, then crossings, then the gate",
+      "concepts": {
+        "road": {
+          "text": "ffordd",
+          "note": "the usual modern word for a road; common in street names"
+        },
+        "street": {
+          "text": "heol",
+          "note": "common in street names in south Wales"
+        },
+        "bridge": {
+          "text": "pont",
+          "note": "as in {{Pontypridd}} and {{Pontarddulais}}; softens to {{bont}} in {{Pen-y-bont}}",
+          "also": [
+            "bont"
+          ]
+        },
+        "ford": {
+          "text": "rhyd",
+          "note": "as in {{Rhydaman}}"
+        },
+        "gate-harbour": {
+          "text": "porth",
+          "note": "as in {{Porthmadog}} and {{Aberporth}}"
+        }
+      }
+    },
+    "describing": {
+      "title": "Geiriau disgrifio",
+      "order": "size, colour, age, then position",
+      "box": {
+        "title": "Why the spelling changes",
+        "body": "After a feminine noun an adjective softens: {{coch}} becomes {{goch}}, {{bach}} becomes {{fach}} and {{mawr}} becomes {{fawr}}. After {{y}} (the) a feminine noun softens too: {{pont}} becomes {{bont}} and {{craig}} becomes {{graig}}. {{ll}} and {{rh}} do not soften after {{y}}."
+      },
+      "concepts": {
+        "big": {
+          "text": "mawr",
+          "also": [
+            "fawr"
+          ]
+        },
+        "small": {
+          "text": "bach",
+          "also": [
+            "fach"
+          ]
+        },
+        "red": {
+          "text": "coch",
+          "also": [
+            "goch"
+          ]
+        },
+        "black": {
+          "text": "du",
+          "also": [
+            "ddu"
+          ]
+        },
+        "white": {
+          "text": "gwyn",
+          "also": [
+            "wyn"
+          ]
+        },
+        "blue-green": {
+          "text": "glas",
+          "also": [
+            "las"
+          ]
+        },
+        "new": {
+          "text": "newydd"
+        },
+        "old": {
+          "text": "hen"
+        },
+        "upper": {
+          "text": "uchaf"
+        },
+        "lower": {
+          "text": "isaf"
+        }
+      }
+    }
+  }
+}

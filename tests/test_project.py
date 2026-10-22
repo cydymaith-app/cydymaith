@@ -64,7 +64,7 @@ class ProjectNavigationTests(unittest.TestCase):
             icons.markup(text)
             self.assertIn(f"`{f.stem}`", assets, f"{f.name} is not recorded in docs/ASSETS.md")
 
-    def test_the_release_publishes_three_groups_and_development_adds_the_held_back_ones(self):
+    def test_the_release_publishes_four_groups_and_development_adds_the_held_back_ones(self):
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:
             release, development = pathlib.Path(tmp) / "r", pathlib.Path(tmp) / "d"
@@ -72,7 +72,7 @@ class ProjectNavigationTests(unittest.TestCase):
             phrasebook.build(development, project_dir=PROJECT, channel="development")
             rel = sorted(f.name for f in release.glob("group-*.html"))
             dev = sorted(f.name for f in development.glob("group-*.html"))
-        self.assertEqual(rel, ["group-everyday.html", "group-time-and-place.html", "group-weather-forecast.html"])
+        self.assertEqual(rel, ["group-everyday.html", "group-geography.html", "group-time-and-place.html", "group-weather-forecast.html"])
         self.assertEqual(dev, ["group-everyday.html", "group-geography.html", "group-news.html", "group-sport.html",
                                "group-time-and-place.html", "group-weather-forecast.html"])
 

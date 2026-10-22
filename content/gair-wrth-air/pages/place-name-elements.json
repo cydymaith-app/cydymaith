@@ -1,0 +1,81 @@
+{
+  "icon": "location",
+  "sections": [
+    {
+      "id": "settlements",
+      "concepts": [
+        "church-site",
+        "church",
+        "chapel",
+        "prayer-house",
+        "castle",
+        "fort",
+        "court-hall",
+        "homestead",
+        "house",
+        "smallholding"
+      ]
+    },
+    {
+      "id": "water",
+      "concepts": [
+        "river-mouth",
+        "river",
+        "brook",
+        "spring",
+        "lake",
+        "pool",
+        "island",
+        "bank-shore",
+        "beach"
+      ]
+    },
+    {
+      "id": "hills",
+      "concepts": [
+        "mountain",
+        "bare-hill",
+        "hill",
+        "crag",
+        "cairn",
+        "hillside",
+        "head-top"
+      ]
+    },
+    {
+      "id": "land",
+      "concepts": [
+        "valley",
+        "open-field",
+        "enclosed-field",
+        "moorland",
+        "wood"
+      ]
+    },
+    {
+      "id": "ways",
+      "concepts": [
+        "road",
+        "street",
+        "bridge",
+        "ford",
+        "gate-harbour"
+      ]
+    },
+    {
+      "id": "describing",
+      "concepts": [
+        "big",
+        "small",
+        "red",
+        "black",
+        "white",
+        "blue-green",
+        "new",
+        "old",
+        "upper",
+        "lower"
+      ]
+    }
+  ]
+}

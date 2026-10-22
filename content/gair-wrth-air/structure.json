@@ -44,7 +44,8 @@
       "id": "geography",
       "icon": "location",
       "pages": [
-        "geography"
+        "geography",
+        "place-name-elements"
       ]
     },
     {

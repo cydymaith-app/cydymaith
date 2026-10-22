@@ -42,7 +42,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
         return phrasebook.build(out, project_dir=data_dir, **kw)
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident.
-ENTRY_FLOOR = {"warnings": 14, "sky": 19, "rain": 12, "snow-ice": 10, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11}
+ENTRY_FLOOR = {"warnings": 14, "sky": 19, "rain": 12, "snow-ice": 10, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11, "geography": 12, "place-name-elements": 46}
 
 
 class Page(HTMLParser):
@@ -194,7 +194,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', self.built["rain.html"])
 
     def test_every_section_states_its_order(self):
-        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 4, "where": 3, "patterns": 6}
+        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(self.built[f"{slug}.html"].count('<p class="order">'), count, slug)
 
@@ -214,13 +214,20 @@ class BuildTests(unittest.TestCase):
         slugs = ("warnings", "sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
-    def test_the_town_and_country_names_wait_in_the_held_back_geography_group(self):
-        development = build.Site(self.raw, self.edition)
-        geography = development.skel["geography"]
-        self.assertEqual([s["id"] for s in geography["sections"]], ["overview", "places", "uk"])
-        self.assertEqual({s["id"]: s.get("status") for s in geography["sections"]}, {"overview": "development", "places": "development", "uk": "development"})
-        self.assertNotIn("geography", self.site.slugs)
-        self.assertEqual(development.count_entries("geography"), 13)
+    def test_the_town_and_country_names_are_released_in_the_geography_group_with_the_place_name_elements_after_them(self):
+        geography = next(g for g in self.site.groups if g["id"] == "geography")
+        self.assertEqual(geography["pages"], ["geography", "place-name-elements"])
+        skeleton = self.site.skel["geography"]
+        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "uk"])
+        self.assertTrue(all("status" not in s for s in skeleton["sections"]), "Geography is no longer held back")
+        self.assertEqual(self.site.count_entries("geography"), 12)
+
+    def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
+        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])
+        dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
+        bridge = next(e for e in dictionary["entries"] if e["concept"] == "bridge")
+        self.assertEqual([t["text"] for t in bridge["terms"]["cy"]], ["pont"])
+        self.assertIn("bont", bridge["also"]["cy"])
 
     def test_entry_counts_do_not_shrink(self):
         for slug, floor in ENTRY_FLOOR.items():

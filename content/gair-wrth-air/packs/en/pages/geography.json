@@ -2,14 +2,6 @@
   "title": "Geography",
   "source": "draft",
   "sections": {
-    "overview": {
-      "title": "Geography",
-      "concepts": {
-        "geography": {
-          "text": "Geography"
-        }
-      }
-    },
     "places": {
       "title": "Places",
       "concepts": {
