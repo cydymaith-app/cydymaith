@@ -33,7 +33,21 @@
     "regional_forms": "{language}: ffurfiau rhanbarthol",
     "variety_all": "Pob un",
     "about_app": "Ynglŷn â'r ap",
-    "how_to": "Sut i ddefnyddio'r ap"
+    "how_to": "Sut i ddefnyddio'r ap",
+    "arrange_toggle": "Golygu'r drefn",
+    "arrange_hint": "Llusgwch deilsen i'w symud, neu tapiwch un a thapio ble mae'n mynd. Mae Cadw'r drefn yn cadw'r drefn newydd.",
+    "arrange_done": "Cadw'r drefn",
+    "arrange_reset": "Ailosod",
+    "arrange_picked": "Codwyd {name}, safle {n} o {total}. Defnyddiwch y saethau, neu tapiwch ble mae'n mynd.",
+    "arrange_moved": "Mae {name} bellach yn safle {n} o {total}.",
+    "arrange_cancelled": "Mae {name} yn ôl yn ei safle, {n} o {total}.",
+    "arrange_saved": "Cadwyd y drefn.",
+    "arrange_reset_done": "Ailosodwyd y drefn i'r drefn ragosodedig.",
+    "arrange_failed": "Ni ellid cadw'r drefn ar y ddyfais hon.",
+    "reset_orders_title": "Cynllun y teils",
+    "reset_orders_lede": "Rhowch bob teilsen ar bob tudalen yn ôl yn ei threfn ragosodedig. Cedwir eich dewisiadau lliw ac ymddangosiad.",
+    "reset_orders": "Ailosod cynllun y teils",
+    "reset_orders_done": "Mae pob teilsen yn ôl yn ei threfn ragosodedig."
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",
