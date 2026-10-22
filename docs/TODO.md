@@ -15,7 +15,10 @@ Work top to bottom. Tick items off in the commit that completes them. The genera
 
 - [ ] Welsh review by a fluent speaker (see `REVIEW.md`).
 - [ ] **Add the words heard on the S4C forecast (six uploads, Y Dyddiau Nesaf and Dros Nos).** The forecaster's real vocabulary, as subtitled on air. Every word is a draft until a fluent speaker has checked it (see `REVIEW.md`). Source notes: the memory file `broadcast-words-to-collect.md`.
-  - [x] **Weather pages (new entries).** Done: 42 words added. Topic words went onto the topic pages and are released: sky (*heulwen*, a new "How the sky looks" section), wind (*cymedrol*), temperature (*ar ei uchaf*, *ar ei isaf*), warnings (*posibilrwydd*), When (a new Seasons section, *hanner nos*), Where (*gwlad*), and *ardaloedd* under How widespread. Function words, verbs and comparisons went to held-back sections of How it's said, where they wait for review. *Uchaf* was already there as "Highest". Original list:  *digon* (quite), *cyfnewidiol* (changeable), *rhai* (some), *ardaloedd* (areas), *llwydaidd* (greyish), *awyr las* (blue sky), *ychydig* (a little), *heulwen* (sunshine), *eraill* (other), *golygu* (to mean), *cilio* (to clear away), *cymylu* (to cloud over), *datblygu* (to develop), *canol* (middle), *uwch* (higher), *uchaf* (highest), *gymedrol* (moderate), *newid* (to change), *effeithio* (to affect), *posibilrwydd* (possibility), *amrywio* (to vary), *rhwng* (between), *ar ei isaf* (at its lowest), *chwythu* (to blow), *ysgafnach* (lighter), *nag* (than), *cyrraedd* (to arrive), *wlad* (country), *hwnnw* (that one), *o ran* (as for), *rhyw* (about), *ansefydlog* (unsettled), *sefydlog* (settled), *cryfhau* (to strengthen), *tymor* (season), *hanner tymor* (half-term), *cynta'r tymor* (first of the season), *dod i rym* (to come into force), *hanner nos* (midnight), *dyna pryd* (that's when), *diwrnod* (day), *yn ogystal â* (in addition to), *syrthio* (to fall, subside).
+  - [x] **Weather pages (new entries).** Done: 42 words added, all drafts listed in `REVIEW.md`.
+    - Released on their topic pages: *heulwen*, *awyr las*, *llwydaidd*, *sefydlog*, *ansefydlog*, *cyfnewidiol* (Sky); *cymedrol* (Wind); *ar ei uchaf*, *ar ei isaf* (Temperature); *posibilrwydd* (The forecast); *hanner nos* and a new Seasons section (When); *gwlad* (Where); *ardaloedd* (How widespread).
+    - Held back on How it's said until checked: quantity, time and linking words, weather verbs and comparisons.
+    - Skipped: *uchaf*, which was already there as "Highest".
   - [ ] **Forms heard on air, to check against the standard:** *sy'n*, *mae 'na*, *bydd 'na*, *pethe'n*, *fymryn*, *dechre*, *cyntaf* → *cynta'r*, *fwy* (from *mwy*), *a'r*, *hyrddiadau* (plural of *hyrddiad*), *yn y bore*, *2.00yp*. Decide per form whether it goes in `also` (heard as), or the standard form is the main text with the colloquial form as an `also` chip.
   - [ ] **Patterns (How it's said, held back):** *hwnnw*, *yn ogystal â*, *o ran*, *dod i rym*, *yn ystod y bore*, *hanner nos* and the time phrases fit the existing candidate sections. Add a warning sentence group for *Rhybudd melyn o wynt* (yellow wind warning).
   - [ ] **Places (Geography, held back):** *Caernarfon*, *Harlech*, *Y Drenewydd*, *Aberporth*, *Tyddewi*, *Y Fenni*, *Y Rhyl*, *Hwlffordd*, *Llanfair Dyffryn Clwyd*, *Aberaeron*, *Prestatyn*, *Llanrwst*, *Aberteifi*, *Aberhonddu*, *Llanelli*, *Porth*, *Cemaes*, *Capel Curig*, *Corwen*, *Clunderwen*, *Llanpumsaint*, *Llanelwy*. Check each spelling against an official source before use. The forecast uses these names, so they go with the Welsh place-name review.
@@ -41,29 +44,29 @@ Work top to bottom. Tick items off in the commit that completes them. The genera
 
 ## 2. App features
 
-  - [ ] Translate the search messages (`search_*` in `phrasebook/messages/en.json`) into Welsh and any other interface language.
-  - [x] Search lists the words found on the page being browsed first (on a group page, the group's pages), then a separator headed "Other results". `search_other` needs a Welsh translation with the other search messages.
-  - [ ] **Fill the held-back groups** (Geography, News, Sports): each has one placeholder page and its Welsh title is a draft in `docs/REVIEW.md`. Remove the `status` when a group has reviewed content. Geography already holds the town and country names (Cardiff to the United Kingdom), moved from the weather pages, so the release has 12 fewer weather entries until it is published.
-  - [x] **Weather regrouped around what a forecast talks about**: Sky and visibility, Rain snow and ice, Wind, Temperature, Forecasts and warnings, When, Where, and Talking about the weather, in the order a forecast runs. Each topic ends with its own sentences. All 182 words and phrases were kept. The new Welsh titles are first drafts in `docs/REVIEW.md`.
-  - [x] **Weather tree reorganised after the content-tree review**: the forecast first, Rain and storms and Snow and ice split, the four "In a sentence" sections gathered on one "How it's said" page (`patterns`), When and Where tidied, and Talking about the weather moved to Everyday. All 170 words and phrases kept; the tree is checked by `.claude/skills/content-tree/tree_report.py`. Page and section addresses changed (`rain-snow.html` is gone).
-    - [x] Listen-first layout: the Welsh leads each row, rows run in a stated order, and the "also heard as" forms are searchable chips (framework change, see `framework/docs/FRAMEWORK.md`). The mockups are in `docs/mockups/`.
-    - [x] Linking words, change verbs, pressure systems, greetings and quantities added to `patterns`, held back (`status: development`) until checked; listed in `REVIEW.md`.
-      - [ ] Check them against a recent Welsh forecast, then remove the `status`. Fill `extent` (one word so far) and the two-word `pressure` and `opening-closing` sections.
-    - [x] Snow and ice has its own icon (Carbon `snow`).
-    - [x] Framework: linked tiles. When and Where are now the shared Time and place group, which Weather links to.
-      - [ ] Link Time and place from News and Sports when they leave development.
-      - [ ] Add a mutation decoder page ("heard something you cannot find?") and link it from every topic, as in the mockups.
-      - [ ] Check the new layout in a browser at phone width, in every palette. The longest rows (`Gogledd-orllewinol`, `Amser ychwanegol`) should wrap, not squeeze the English.
-  - [ ] When the weather section is complete, use it as the worked example on the how-to page.
-  - [ ] Use the daffodil icon (the rose was dropped in the move to Carbon, which has no flower) on a page, and add icons for the Sources and How-to links if they are wanted.
+- [ ] Translate the search messages (`search_*` in `phrasebook/messages/en.json`) into Welsh and any other interface language.
+- [x] **Search lists the page being browsed first.** Done: words found on that page (on a group page, the group's pages) come first, then a separator headed "Other results".
+  - [ ] `search_other` needs a Welsh translation, with the other `search_*` messages above.
+- [ ] **Fill the held-back groups** (Geography, News, Sports): each has one placeholder page and its Welsh title is a draft in `docs/REVIEW.md`. Remove the `status` when a group has reviewed content. Geography already holds the town and country names (Cardiff to the United Kingdom), moved from the weather pages, so the release has 12 fewer weather entries until it is published.
+- [x] **Weather regrouped around what a forecast talks about**: Sky and visibility, Rain snow and ice, Wind, Temperature, Forecasts and warnings, When, Where, and Talking about the weather, in the order a forecast runs. Each topic ends with its own sentences. All 182 words and phrases were kept. The new Welsh titles are first drafts in `docs/REVIEW.md`.
+- [x] **Weather tree reorganised after the content-tree review**: the forecast first, Rain and storms and Snow and ice split, the four "In a sentence" sections gathered on one "How it's said" page (`patterns`), When and Where tidied, and Talking about the weather moved to Everyday. All 170 words and phrases kept; the tree is checked by `.claude/skills/content-tree/tree_report.py`. Page and section addresses changed (`rain-snow.html` is gone).
+  - [x] Listen-first layout: the Welsh leads each row, rows run in a stated order, and the "also heard as" forms are searchable chips (framework change, see `framework/docs/FRAMEWORK.md`). The mockups are in `docs/mockups/`.
+  - [x] Linking words, change verbs, pressure systems, greetings and quantities added to `patterns`, held back (`status: development`) until checked; listed in `REVIEW.md`.
+    - [ ] Check them against a recent Welsh forecast, then remove the `status`. Fill `extent` (one word so far) and the two-word `pressure` and `opening-closing` sections.
+  - [x] Snow and ice has its own icon (Carbon `snow`).
+  - [x] Framework: linked tiles. When and Where are now the shared Time and place group, which Weather links to.
+    - [ ] Link Time and place from News and Sports when they leave development.
+    - [ ] Add a mutation decoder page ("heard something you cannot find?") and link it from every topic, as in the mockups.
+    - [ ] Check the new layout in a browser at phone width, in every palette. The longest rows (`Gogledd-orllewinol`, `Amser ychwanegol`) should wrap, not squeeze the English.
+- [ ] When the weather section is complete, use it as the worked example on the how-to page.
+- [ ] Use the daffodil icon (the rose was dropped in the move to Carbon, which has no flower) on a page, and add icons for the Sources and How-to links if they are wanted.
+- [x] **Standalone About page.** Done: `about.html`, linked by the information icon above the settings gear on every page (and from Settings). It states the aims and philosophy in Welsh and English, with a language toggle at the top right (Welsh first) and a link to Sources. The copy is in the edition's `about_page`; the Welsh is an unchecked draft in `REVIEW.md`.
+  - [ ] Check the page in a browser at phone width: the toggle at the top right, the icon above the gear, keyboard focus on the toggle, all palettes, light and dark, and right to left.
+  - [ ] Link About from the home page text as well, and say in the copy that the app is open source once the licence for `content/` is decided.
 - [ ] **Technology section, with App development.** A new page `technology` (group `technology`) with the section `app-development`, marked `"status": "development"` so it stays out of the release until it is ready.
   - Concepts already named: app, app-development, icon, navigation, dictionary, lookup, card, overlay, version, release, open-source, licence, offline, build, translation.
   - Translations are added as the app is built, in English and Welsh. The Welsh group title "Technoleg" is a first draft and needs review.
   - Remove the `status` when the section is ready to publish, after the translations are reviewed.
-
-- [x] **Standalone About page.** Done: `about.html`, linked by the information icon above the settings gear on every page (and from Settings). It states the aims and philosophy in Welsh and English, with a language toggle at the top right (Welsh first) and a link to Sources. The copy is in the edition's `about_page`; the Welsh is an unchecked draft in `REVIEW.md`.
-  - [ ] Check the page in a browser at phone width: the toggle at the top right, the icon above the gear, keyboard focus on the toggle, all palettes, light and dark, and right to left.
-  - [ ] Link About from the home page text as well, and say in the copy that the app is open source once the licence for `content/` is decided.
 
 ## Done
 
