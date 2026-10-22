@@ -42,7 +42,7 @@
     },
     {
       "id": "geography",
-      "icon": "location",
+      "icon": "earth",
       "pages": [
         "geography",
         "place-name-elements"

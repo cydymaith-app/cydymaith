@@ -80,7 +80,7 @@ class ProjectNavigationTests(unittest.TestCase):
         structure = json.loads((PROJECT / "structure.json").read_text(encoding="utf-8"))
         icons_by_group = {g["id"]: g.get("icon") for g in structure["groups"]}
         self.assertEqual({k: icons_by_group[k] for k in ("geography", "news", "sport")},
-                         {"geography": "location", "news": "blog", "sport": "trophy"})
+                         {"geography": "earth", "news": "blog", "sport": "trophy"})
         cy = json.loads((PROJECT / "packs" / "cy" / "pack.json").read_text(encoding="utf-8"))["groups"]
         self.assertEqual((cy["geography"], cy["news"], cy["sport"]), ("Daearyddiaeth", "Newyddion", "Chwaraeon"))
         review = (ROOT / "docs" / "REVIEW.md").read_text(encoding="utf-8")

@@ -23,7 +23,7 @@ Both are self-hosted from `content/gair-wrth-air/static/fonts/`, taken from the 
 |---|---|---|
 | IBM Carbon, `@carbon/icons` 11.91.0 | Apache-2.0 | https://carbon-design-system.com, https://github.com/carbon-design-system/carbon |
 
-The fifteen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/gair-wrth-air/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
+The seventeen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/gair-wrth-air/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
 
 The paths are unmodified. The only change is a one-line comment added at the top of each file naming the package, version and licence. The build adds `fill="currentColor"` when inlining, because Carbon's files name no fill.
 
@@ -39,7 +39,9 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `calendar` | When, and the Time and place group |
 | `compass` | Where |
 | `chat` | Talking about the weather, and How it's said |
-| `location` | The Geography group |
+| `earth` | The Geography group |
+| `map` | Places, the Geography page of towns, cities and countries |
+| `tree` | Place-name elements (`building` would also suit) |
 | `restaurant` | Everyday words, and Food and drink |
 | `mobile` | Technology |
 | `blog` | The News group (Carbon has no newspaper) |

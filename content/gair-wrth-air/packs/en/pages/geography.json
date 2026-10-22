@@ -1,9 +1,9 @@
 {
-  "title": "Geography",
+  "title": "Places",
   "source": "draft",
   "sections": {
     "places": {
-      "title": "Places",
+      "title": "Towns and cities",
       "concepts": {
         "cardiff": {
           "text": "Cardiff"
