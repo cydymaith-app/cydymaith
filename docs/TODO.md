@@ -83,6 +83,12 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
   - [x] Settings and About pages have a Cy|En toggle rather than inline translations (from the framework notes), and both remember the language chosen.
   - [ ] **Where next** is on the page but held back (`status: development`) until each link is checked and the Ymestyn team has been asked (see the Ymestyn item above). It holds learnwelsh.cymru and the gov.wales Welsh language support page.
   - [ ] A Welsh review of the new About copy (listed in `REVIEW.md`), and decide whether to open a `welsh` label on GitHub for the correction template.
+- [ ] **Contact and issue reports by email.** Use the project's contact address, cydymaithapp@gmail.com, in the app for contact and for reporting issues.
+  - Contact: a "Contact us" link on the About page (both languages) and in Settings, opening the person's own mail app with the address. No form, no server, no request made by the site.
+  - Issue reports: the report-issue screen in section 3.6 (the flag icon) builds a message with a Markdown report section, opened in the person's mail app, as the framework item already describes. The person can type what else they want before sending.
+  - Use the address as a `mailto:` link, with a subject line such as "Cydymaith am iaith: issue" (Welsh and English). Check the address is not copied into the page as plain text where a scraper would take it.
+  - Add the Welsh and English labels to `REVIEW.md`, and say in the privacy wording that a message sent by email goes through the person's own mail provider.
+  - Decide whether the Welsh correction template (`.github/ISSUE_TEMPLATE/welsh-correction.md`) stays as the route for corrections, with the email as the general contact.
 - [ ] **Technology section, with App development.** A new page `technology` (group `technology`) with the section `app-development`, marked `"status": "development"` so it stays out of the release until it is ready.
   - Concepts already named: app, app-development, icon, navigation, dictionary, lookup, card, overlay, version, release, open-source, licence, offline, build, translation.
   - Translations are added as the app is built, in English and Welsh. The Welsh group title "Technoleg" is a first draft and needs review.
