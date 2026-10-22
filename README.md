@@ -61,6 +61,7 @@ The Welsh comes first in each row, because it is the language being heard (`defa
 - `order` (on a section, in the pack): one line saying what order the rows run in, such as "lightest to heaviest".
 - `links` (on a group in `structure.json`): shows a tile for a page that lives in another group, so When and Where are written once and reached from Weather as well as from Time and place.
 - `"status": "development"` (on a section): holds it back from the release. The new words on the How it's said page wait there until a fluent speaker has checked them.
+- `about_page` (in the edition): the standalone About page, `about.html`, in each language it is written in. A toggle at the top right switches language with no script, an information icon above the settings gear links to it from every page, and it ends with a link to Sources.
 
 The `listening-layout` and `content-tree` skills in `.claude/skills/` review a topic's layout and the shape of the tree.
 

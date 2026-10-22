@@ -19,6 +19,114 @@
     {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
     {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ],
+  "about_page": {
+    "en": {
+      "title": "About Cydymaith am iaith",
+      "lede": "A companion for language: keep it open while you watch the news, the weather or the sport, and look up the Welsh as it goes by.",
+      "sections": [
+        {
+          "title": "What it is for",
+          "body": [
+            "Cydymaith am iaith means “a companion for language”. It is for people learning Welsh who watch a programme in Welsh, pausing and rewinding to look up what was just said.",
+            "It starts with the weather forecast, because it is short, it repeats, and it is full of words worth knowing. News and sport are planned."
+          ]
+        },
+        {
+          "title": "How it works",
+          "body": [
+            {
+              "list": [
+                "Welsh comes first, because it is the language you hear, with the English beside it.",
+                "Words are grouped the way a forecast runs, so you can find what you heard in a few taps.",
+                "Forms you hear on air that differ from the dictionary form, such as a changed first letter, are listed beside the word, and search finds them.",
+                "Once installed, it works offline."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Our promises",
+          "body": [
+            {
+              "list": [
+                "No sign-up and no accounts.",
+                "No tracking, no cookies and no adverts.",
+                "No payments, and nothing locked away.",
+                "Nothing designed to bring you back: no streaks, scores or notifications.",
+                "Your choices, such as the colours, stay on your device."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Honest about the Welsh",
+          "body": [
+            "The Welsh has not yet been checked by a fluent speaker, so treat it as a draft. Where each phrase comes from, and the licence it is used under, is on the Sources page.",
+            "Corrections are welcome."
+          ]
+        },
+        {
+          "title": "What it is not",
+          "body": [
+            "It gives words and phrases, not other people's work. It does not reproduce song lyrics or poems."
+          ]
+        }
+      ]
+    },
+    "cy": {
+      "title": "Ynglŷn â Chydymaith am iaith",
+      "lede": "Cadwch ef ar agor wrth wylio'r newyddion, y tywydd neu'r chwaraeon, a chwiliwch am y Gymraeg wrth iddi fynd heibio.",
+      "sections": [
+        {
+          "title": "Beth yw ei bwrpas",
+          "body": [
+            "Cydymaith i bobl sy'n dysgu Cymraeg ac yn gwylio rhaglen yn Gymraeg, gan oedi ac ailchwarae i chwilio am yr hyn a ddywedwyd.",
+            "Rydym yn dechrau gyda'r rhagolygon tywydd, am eu bod yn fyr, yn ailadrodd ac yn llawn geiriau gwerth eu gwybod. Mae newyddion a chwaraeon ar y gweill."
+          ]
+        },
+        {
+          "title": "Sut mae'n gweithio",
+          "body": [
+            {
+              "list": [
+                "Daw'r Gymraeg yn gyntaf, am mai hi yw'r iaith a glywch, gyda'r Saesneg wrth ei hochr.",
+                "Mae'r geiriau wedi'u grwpio yn ôl trefn y rhagolygon, fel y gallwch ddod o hyd i'r hyn a glywsoch mewn ychydig o dapiau.",
+                "Dangosir wrth ymyl y gair y ffurfiau a glywch ar yr awyr sy'n wahanol i ffurf y geiriadur, megis llythyren gyntaf sydd wedi newid, ac mae'r chwilio'n eu canfod.",
+                "Ar ôl ei osod, mae'n gweithio heb gysylltiad â'r we."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ein haddewidion",
+          "body": [
+            {
+              "list": [
+                "Dim cofrestru a dim cyfrifon.",
+                "Dim tracio, dim cwcis a dim hysbysebion.",
+                "Dim taliadau, a dim byd wedi'i gloi.",
+                "Dim byd sydd wedi'i gynllunio i'ch denu'n ôl: dim ffrydiau, sgorau na hysbysiadau.",
+                "Mae eich dewisiadau, fel y lliwiau, yn aros ar eich dyfais."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bod yn onest am y Gymraeg",
+          "body": [
+            "Nid yw siaradwr rhugl wedi gwirio'r Gymraeg eto, felly triniwch hi fel drafft. Mae'r dudalen Ffynonellau yn dweud o ble mae pob ymadrodd yn dod a'r drwydded a ddefnyddir.",
+            "Croesewir cywiriadau."
+          ]
+        },
+        {
+          "title": "Yr hyn nad ydyw",
+          "body": [
+            "Geiriau ac ymadroddion sydd yma, nid gwaith pobl eraill. Ni cheir geiriau caneuon na cherddi."
+          ]
+        }
+      ]
+    }
+  },
   "home": {
     "headline": {
       "en": "Everyday phrases, Welsh to English",

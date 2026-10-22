@@ -61,10 +61,9 @@ Work top to bottom. Tick items off in the commit that completes them. The genera
   - Translations are added as the app is built, in English and Welsh. The Welsh group title "Technoleg" is a first draft and needs review.
   - Remove the `status` when the section is ready to publish, after the translations are reviewed.
 
-- [ ] **Standalone About page.** A page of its own, not a topic, that states the app's aims and philosophy (drawn from `PHILOSOPHY.md`, written for a visitor rather than a contributor) and links to the Sources page.
-  - A language toggle at the top right of the page, switching the page between Welsh and English, so the aims read in either language.
-  - Needs a framework change: a page outside the group and topic tree, and a toggle that switches the language of a page without changing the pair used elsewhere. Welsh and English copy must be checked by a fluent speaker (see `REVIEW.md`).
-  - Add its title, the toggle label and the Sources link to `REVIEW.md`, and make sure it is reachable from the home page and the rail.
+- [x] **Standalone About page.** Done: `about.html`, linked by the information icon above the settings gear on every page (and from Settings). It states the aims and philosophy in Welsh and English, with a language toggle at the top right (Welsh first) and a link to Sources. The copy is in the edition's `about_page`; the Welsh is an unchecked draft in `REVIEW.md`.
+  - [ ] Check the page in a browser at phone width: the toggle at the top right, the icon above the gear, keyboard focus on the toggle, all palettes, light and dark, and right to left.
+  - [ ] Link About from the home page text as well, and say in the copy that the app is open source once the licence for `content/` is decided.
 
 ## Done
 

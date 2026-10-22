@@ -117,8 +117,8 @@ class BuildTests(unittest.TestCase):
         shutil.rmtree(cls.tmp, ignore_errors=True)
 
     def test_every_page_is_written(self):
-        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 4)  # topics, groups, home, sources, how to use, settings
-        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "settings.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
+        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 5)  # topics, groups, home, sources, how to use, settings, about
+        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
         self.assertTrue((self.out / "style.css").is_file())
 
     def test_the_site_installs(self):
@@ -173,6 +173,21 @@ class BuildTests(unittest.TestCase):
         self.assertLess(tiles.index('href="patterns.html"'), tiles.index('href="when.html"'))
         self.assertIn('href="where.html"', tiles)
         self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
+
+    def test_the_about_page_states_the_aims_in_both_languages_and_links_to_the_sources(self):
+        page = self.built["about.html"]
+        self.assertIn('<article class="about-text" id="about-cy" lang="cy"><header><h1>Ynglŷn â Chydymaith am iaith</h1>', page)
+        self.assertIn('<article class="about-text" id="about-en"><header><h1>About Cydymaith am iaith</h1>', page)
+        self.assertIn('id="about-lang-cy" value="cy" checked', page, "the Welsh shows first")
+        self.assertEqual(page.count('<a href="sources.html">'), 2)
+        for promise in ("No sign-up and no accounts.", "No tracking, no cookies and no adverts.", "No payments, and nothing locked away."):
+            self.assertIn(promise, page)
+
+    def test_every_page_has_the_about_link_above_the_gear_and_the_trail_says_amdanom_ni(self):
+        for name, page in self.built.items():
+            rail = page[page.index('<nav class="rail"') : page.index("</nav>", page.index('<nav class="rail"'))]
+            self.assertIn('href="about.html"', rail, name)
+        self.assertIn("Amdanom ni", self.built["about.html"])
 
     def test_the_welsh_comes_first_because_it_is_the_language_that_is_heard(self):
         self.assertEqual(list(self.edition["default_pair"]), ["cy", "en"])
@@ -239,8 +254,8 @@ class BuildTests(unittest.TestCase):
 
     def test_navigation_marks_exactly_one_current_page(self):
         for name, text in self.built.items():
-            # The trail marks where you are. The settings page is marked twice, in the trail and on the gear in the rail.
-            self.assertEqual(Page(text).current, {"index.html": 0, "settings.html": 2}.get(name, 1), name)
+            # The trail marks where you are. The settings and about pages are marked twice, in the trail and on their icon in the rail.
+            self.assertEqual(Page(text).current, {"index.html": 0, "settings.html": 2, "about.html": 2}.get(name, 1), name)
 
     def test_welsh_is_marked_up_and_not_empty(self):
         for name, text in self.built.items():
@@ -684,7 +699,7 @@ class SourcesTests(unittest.TestCase):
         data = self.copy_data("reviewed", "own")
         self.assertEqual(build.build(self.tmp / "out-reviewed", data_dir=data, strict=True),
                          len(build.Site(channels.select(self.raw), self.edition).slugs)
-                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 4)
+                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 5)
 
     def test_normal_build_accepts_draft_sources(self):
         data = self.copy_data("normal", "draft")
