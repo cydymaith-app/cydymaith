@@ -2,6 +2,10 @@
 
 Cydymaith am iaith is a companion for watching along. Keep it open beside the news, the weather, the sport, or a programme on culture, music or poetry, and look up the Welsh as it goes by.
 
+## Technoleg Dda
+
+The founding principle is **Technoleg Dda**, "good technology", after Hywel Dda, whose laws were remembered for their fairness: *technology should serve the person using it, and ask nothing in return*. The promises below are its rules. The full statement, and the test every change must pass, are in [TECHNOLEG-DDA.md](TECHNOLEG-DDA.md).
+
 ## Mobile first
 
 The site is a companion held in one hand while something plays: the news, the weather, the sport. People glance at it for the meaning of what was just said, so it is designed for a phone first and widened for bigger screens after.

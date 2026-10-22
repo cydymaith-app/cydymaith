@@ -28,7 +28,36 @@
           "title": "What it is for",
           "body": [
             "Cydymaith am iaith means “a companion for language”. It is for people learning Welsh who watch a programme in Welsh, pausing and rewinding to look up what was just said.",
-            "It starts with the weather forecast, because it is short, it repeats, and it is full of words worth knowing. News and sport are planned."
+            "It starts with the weather forecast, because it is short, it repeats, and it is full of words worth knowing. News and sport are planned.",
+            "It is for improvers, not beginners. The best way to learn a language is with people, and this is a companion to that, not a substitute."
+          ]
+        },
+        {
+          "title": "Technoleg Dda",
+          "body": [
+            {
+              "quote": "Technology should serve the person using it, and ask nothing in return."
+            },
+            "We call this Technoleg Dda, “good technology”, after Hywel Dda, whose laws were remembered for their fairness. Each promise below is a rule the app keeps.",
+            {
+              "list": [
+                "Nothing to sell: no adverts, payments, upgrades or hidden fees, and nothing locked away.",
+                "Nothing taken: no sign-up, no accounts, no tracking and no cookies. Your choices stay on your device.",
+                "Nothing hidden: no AI, because the app never calls an AI service or a language model. The code is open, every phrase shows where it comes from, and anything not yet checked is marked as a draft.",
+                "No nagging: no streaks, scores, badges or notifications. It never asks you to come back.",
+                "For everyone: made for a phone, it works offline, it is readable in every colour scheme, and it can be used with a keyboard or a screen reader.",
+                "Small and open: plain files and no dependencies, so anyone can read, copy, change and host it.",
+                "People first: a companion for learning with people, not a substitute."
+              ]
+            },
+            {
+              "links": [
+                {
+                  "text": "Read the full principle",
+                  "href": "https://github.com/cydymaith-app/cydymaith/blob/main/docs/TECHNOLEG-DDA.md"
+                }
+              ]
+            }
           ]
         },
         {
@@ -45,17 +74,25 @@
           ]
         },
         {
-          "title": "Our promises",
+          "title": "Install it for offline use",
           "body": [
+            "You can keep it on your device like any app, with no app store.",
             {
               "list": [
-                "No sign-up and no accounts.",
-                "No tracking, no cookies and no adverts.",
-          "No AI: the app never calls an AI service or a language model.",
-                "No payments, and nothing locked away.",
-                "Nothing designed to bring you back: no streaks, scores or notifications.",
-                "Your choices, such as the colours, stay on your device."
+                "Android, in Chrome: open the menu, then choose Install app or Add to Home screen.",
+                "iPhone and iPad, in Safari: tap Share, then Add to Home Screen.",
+                "A computer, in Chrome or Edge: use the install icon in the address bar.",
+                "Afterwards it works with no connection, and updates arrive quietly on your next visit."
               ]
+            }
+          ]
+        },
+        {
+          "title": "Share it",
+          "body": [
+            "Know someone learning Welsh? Send them the address.",
+            {
+              "share": "https://cydymaith-app.github.io/cydymaith/"
             }
           ]
         },
@@ -63,13 +100,58 @@
           "title": "Honest about the Welsh",
           "body": [
             "The Welsh has not yet been checked by a fluent speaker, so treat it as a draft. Where each phrase comes from, and the licence it is used under, is on the Sources page.",
-            "Corrections are welcome."
+            "Corrections are welcome.",
+            {
+              "links": [
+                {
+                  "text": "Suggest a correction",
+                  "href": "https://github.com/cydymaith-app/cydymaith/issues/new?template=welsh-correction.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Open source",
+          "body": [
+            "The code of the app is open (MIT licence), and so is the framework it is built with.",
+            {
+              "links": [
+                {
+                  "text": "The app on GitHub",
+                  "href": "https://github.com/cydymaith-app/cydymaith"
+                },
+                {
+                  "text": "The framework on GitHub",
+                  "href": "https://github.com/cydymaith-app/cydymaith-framework"
+                }
+              ]
+            }
           ]
         },
         {
           "title": "What it is not",
           "body": [
             "It gives words and phrases, not other people's work. It does not reproduce song lyrics or poems."
+          ]
+        },
+        {
+          "title": "Where next",
+          "status": "development",
+          "body": [
+            "Other places to practise Welsh.",
+            {
+              "links": [
+                {
+                  "text": "Learn Welsh (learnwelsh.cymru)",
+                  "href": "https://www.learnwelsh.cymru"
+                },
+                {
+                  "text": "Welsh language support and services (gov.wales)",
+                  "href": "https://www.gov.wales/welsh-language-support-and-services"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -82,7 +164,36 @@
           "title": "Beth yw ei bwrpas",
           "body": [
             "Cydymaith i bobl sy'n dysgu Cymraeg ac yn gwylio rhaglen yn Gymraeg, gan oedi ac ailchwarae i chwilio am yr hyn a ddywedwyd.",
-            "Rydym yn dechrau gyda'r rhagolygon tywydd, am eu bod yn fyr, yn ailadrodd ac yn llawn geiriau gwerth eu gwybod. Mae newyddion a chwaraeon ar y gweill."
+            "Rydym yn dechrau gyda'r rhagolygon tywydd, am eu bod yn fyr, yn ailadrodd ac yn llawn geiriau gwerth eu gwybod. Mae newyddion a chwaraeon ar y gweill.",
+            "Mae ar gyfer gwella'ch Cymraeg, nid ar gyfer dechreuwyr. Y ffordd orau o ddysgu iaith yw gyda phobl, ac mae hwn yn gydymaith i hynny, nid yn ei le."
+          ]
+        },
+        {
+          "title": "Technoleg Dda",
+          "body": [
+            {
+              "quote": "Dylai technoleg wasanaethu'r sawl sy'n ei defnyddio, heb ofyn dim yn ôl."
+            },
+            "Technoleg Dda yw'r enw ar hyn, ar ôl Hywel Dda, a gofir am degwch ei gyfreithiau. Mae pob addewid isod yn rheol y mae'r ap yn ei chadw.",
+            {
+              "list": [
+                "Dim i'w werthu: dim hysbysebion, taliadau, uwchraddio na ffioedd cudd, a dim byd wedi'i gloi.",
+                "Dim yn cael ei gymryd: dim cofrestru, dim cyfrifon, dim tracio a dim cwcis. Mae eich dewisiadau'n aros ar eich dyfais.",
+                "Dim yn gudd: dim deallusrwydd artiffisial, am nad yw'r ap byth yn galw ar wasanaeth AI na model iaith. Mae'r cod ar agor, mae pob ymadrodd yn dangos o ble mae'n dod, ac mae popeth sydd heb ei wirio wedi'i nodi'n ddrafft.",
+                "Dim swnian: dim ffrydiau, sgorau, bathodynnau na hysbysiadau. Nid yw byth yn gofyn i chi ddod yn ôl.",
+                "I bawb: wedi'i wneud ar gyfer ffôn, mae'n gweithio all-lein, mae'n ddarllenadwy ym mhob cynllun lliw, a gellir ei ddefnyddio â bysellfwrdd neu ddarllenydd sgrin.",
+                "Bach ac agored: ffeiliau plaen a dim dibyniaethau, fel y gall unrhyw un eu darllen, eu copïo, eu newid a'u cynnal.",
+                "Pobl yn gyntaf: cydymaith i ddysgu gyda phobl, nid yn eu lle."
+              ]
+            },
+            {
+              "links": [
+                {
+                  "text": "Darllenwch yr egwyddor lawn",
+                  "href": "https://github.com/cydymaith-app/cydymaith/blob/main/docs/TECHNOLEG-DDA.md"
+                }
+              ]
+            }
           ]
         },
         {
@@ -99,17 +210,25 @@
           ]
         },
         {
-          "title": "Ein haddewidion",
+          "title": "Ei osod i'w ddefnyddio all-lein",
           "body": [
+            "Gallwch ei gadw ar eich dyfais fel unrhyw ap, heb siop apiau.",
             {
               "list": [
-                "Dim cofrestru a dim cyfrifon.",
-                "Dim tracio, dim cwcis a dim hysbysebion.",
-          "Dim deallusrwydd artiffisial: nid yw'r ap byth yn galw ar wasanaeth AI na model iaith.",
-                "Dim taliadau, a dim byd wedi'i gloi.",
-                "Dim byd sydd wedi'i gynllunio i'ch denu'n ôl: dim ffrydiau, sgorau na hysbysiadau.",
-                "Mae eich dewisiadau, fel y lliwiau, yn aros ar eich dyfais."
+                "Android, yn Chrome: agorwch y ddewislen, yna dewiswch Gosod yr ap (Install app) neu Ychwanegu at y sgrin gartref (Add to Home screen).",
+                "iPhone ac iPad, yn Safari: tapiwch Rhannu (Share), yna Ychwanegu at y Sgrin Gartref (Add to Home Screen).",
+                "Cyfrifiadur, yn Chrome neu Edge: defnyddiwch yr eicon gosod yn y bar cyfeiriad.",
+                "Wedyn mae'n gweithio heb gysylltiad, ac mae diweddariadau'n cyrraedd yn dawel y tro nesaf yr ewch yno."
               ]
+            }
+          ]
+        },
+        {
+          "title": "Ei rannu",
+          "body": [
+            "Ydych chi'n adnabod rhywun sy'n dysgu Cymraeg? Anfonwch y cyfeiriad atynt.",
+            {
+              "share": "https://cydymaith-app.github.io/cydymaith/"
             }
           ]
         },
@@ -117,13 +236,58 @@
           "title": "Bod yn onest am y Gymraeg",
           "body": [
             "Nid yw siaradwr rhugl wedi gwirio'r Gymraeg eto, felly triniwch hi fel drafft. Mae'r dudalen Ffynonellau yn dweud o ble mae pob ymadrodd yn dod a'r drwydded a ddefnyddir.",
-            "Croesewir cywiriadau."
+            "Croesewir cywiriadau.",
+            {
+              "links": [
+                {
+                  "text": "Awgrymu cywiriad",
+                  "href": "https://github.com/cydymaith-app/cydymaith/issues/new?template=welsh-correction.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ffynhonnell agored",
+          "body": [
+            "Mae cod yr ap ar agor (trwydded MIT), ac felly hefyd y fframwaith y mae wedi'i adeiladu ag ef.",
+            {
+              "links": [
+                {
+                  "text": "Yr ap ar GitHub",
+                  "href": "https://github.com/cydymaith-app/cydymaith"
+                },
+                {
+                  "text": "Y fframwaith ar GitHub",
+                  "href": "https://github.com/cydymaith-app/cydymaith-framework"
+                }
+              ]
+            }
           ]
         },
         {
           "title": "Yr hyn nad ydyw",
           "body": [
             "Geiriau ac ymadroddion sydd yma, nid gwaith pobl eraill. Ni cheir geiriau caneuon na cherddi."
+          ]
+        },
+        {
+          "title": "Ble nesaf",
+          "status": "development",
+          "body": [
+            "Mannau eraill i ymarfer Cymraeg.",
+            {
+              "links": [
+                {
+                  "text": "Learn Welsh (learnwelsh.cymru)",
+                  "href": "https://www.learnwelsh.cymru"
+                },
+                {
+                  "text": "Cymorth a gwasanaethau Cymraeg (gov.wales)",
+                  "href": "https://www.gov.wales/welsh-language-support-and-services"
+                }
+              ]
+            }
           ]
         }
       ]

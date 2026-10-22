@@ -4,7 +4,7 @@
 
 A multilingual phrasebook as a small static site: a navigation tree, one page per topic, two languages side by side. The first edition is English and Welsh, starting with watching a weather forecast. *Cydymaith am iaith* means "a companion for language".
 
-A companion to keep open while watching the news, the weather, sport or anything else. No sign-up, no accounts, no ads, no tracking, no payments, no AI calls, no addictive features. See [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md).
+A companion to keep open while watching the news, the weather, sport or anything else. No sign-up, no accounts, no ads, no tracking, no payments, no AI calls, no addictive features. See [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md), and the founding principle, [Technoleg Dda](docs/TECHNOLEG-DDA.md).
 
 > **Status: the Welsh has not been reviewed by a fluent speaker.** Treat it as a draft until [docs/REVIEW.md](docs/REVIEW.md) is complete. Corrections are welcome through the "Welsh correction" issue template.
 

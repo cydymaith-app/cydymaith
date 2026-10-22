@@ -191,14 +191,36 @@ class BuildTests(unittest.TestCase):
         for name in ("Coch a gwyrdd", "Melyn a gwyrdd"):
             self.assertIn(name, page)
 
-    def test_the_about_page_states_the_aims_in_both_languages_and_links_to_the_sources(self):
+    def test_the_about_page_states_technoleg_dda_in_both_languages_and_links_to_the_sources(self):
         page = self.built["about.html"]
         self.assertIn('<article class="about-text" id="about-cy" lang="cy"><header><h1>Ynglŷn â Chydymaith am iaith</h1>', page)
         self.assertIn('<article class="about-text" id="about-en"><header><h1>About Cydymaith am iaith</h1>', page)
         self.assertIn('id="about-lang-cy" value="cy" checked', page, "the Welsh shows first")
         self.assertEqual(page.count('<a href="sources.html">'), 2)
-        for promise in ("No sign-up and no accounts.", "No tracking, no cookies and no adverts.", "No payments, and nothing locked away.", "No AI: the app never calls an AI service or a language model."):
+        self.assertIn('<blockquote class="principle"><p>Technology should serve the person using it, and ask nothing in return.</p></blockquote>', page)
+        self.assertIn("<blockquote class=\"principle\"><p>Dylai technoleg wasanaethu'r sawl sy'n ei defnyddio, heb ofyn dim yn ôl.</p></blockquote>".replace("'", "&#x27;"), page)
+        for promise in ("Nothing to sell", "Nothing taken", "Nothing hidden", "No nagging", "For everyone", "Small and open", "People first",
+                        "Dim i&#x27;w werthu", "Dim yn cael ei gymryd", "Dim yn gudd", "Dim swnian", "I bawb", "Bach ac agored", "Pobl yn gyntaf"):
             self.assertIn(promise, page)
+        self.assertIn("no AI, because the app never calls an AI service or a language model", page)
+        self.assertIn("docs/TECHNOLEG-DDA.md", page)
+
+    def test_the_about_page_says_how_to_install_and_share_and_where_to_correct_the_welsh(self):
+        page = self.built["about.html"]
+        for words in ("Install it for offline use", "Ei osod i&#x27;w ddefnyddio all-lein", "Share it", "Ei rannu"):
+            self.assertIn(words, page)
+        self.assertEqual(page.count('class="share" data-url="https://cydymaith-app.github.io/cydymaith/"'), 2)
+        self.assertEqual(page.count("issues/new?template=welsh-correction.md"), 2)
+        self.assertTrue((ROOT / ".github" / "ISSUE_TEMPLATE" / "welsh-correction.md").is_file())
+
+    def test_where_next_waits_for_the_links_to_be_checked(self):
+        last = self.edition["about_page"]["en"]["sections"][-1]
+        self.assertEqual((last["title"], last.get("status")), ("Where next", "development"))
+        self.assertNotIn("learnwelsh.cymru", self.built["about.html"])
+        self.assertNotIn("Where next", self.built["about.html"])
+
+    def test_the_home_page_links_to_the_about_page(self):
+        self.assertIn('<a href="about.html">', self.built["index.html"])
 
     def test_every_page_has_the_about_link_above_the_gear_and_the_trail_says_amdanom_ni(self):
         for name, page in self.built.items():
@@ -812,9 +834,10 @@ class SelfHostedFontsTests(unittest.TestCase):
         for f in list(self.out.glob("*.html")) + list(self.out.glob("*.css")):
             text = f.read_text(encoding="utf-8")
             text = text.replace('xmlns="http://www.w3.org/2000/svg"', "")
-            urls = re.findall(r"""(?:href|src)=["']((?:https?:)?//[^"']+)|url\(\s*["']?((?:https?:)?//[^)"']+)""", text)
-            external = [a or b for a, b in urls if not (a or b).startswith("https://creativecommons.org")
-                        and not (a or b).startswith("https://www.nationalarchives.gov.uk")]
+            # What a page loads: stylesheets, scripts, images and url() in the css. A link a person chooses to follow (the licences,
+            # the code on GitHub) is theirs to follow and is not a request.
+            urls = re.findall(r"""(?:<link[^>]*\shref|\ssrc)=["']((?:https?:)?//[^"']+)|url\(\s*["']?((?:https?:)?//[^)"']+)""", text)
+            external = [a or b for a, b in urls]
             self.assertEqual(external, [], f"{f.name} loads from another site")
 
     def test_the_edition_lists_no_font_url(self):

@@ -71,15 +71,18 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
 - [ ] When the weather section is complete, use it as the worked example on the how-to page.
 - [ ] Use the daffodil icon (the rose was dropped in the move to Carbon, which has no flower) on a page, and add icons for the Sources and How-to links if they are wanted.
 - [x] **Standalone About page.** Done: `about.html`, linked by the information icon above the settings gear on every page (and from Settings). It states the aims and philosophy in Welsh and English, with a language toggle at the top right (Welsh first) and a link to Sources. The copy is in the edition's `about_page`; the Welsh is an unchecked draft in `REVIEW.md`.
-  - [ ] Check the page in a browser at phone width: the toggle at the top right, the icon above the gear, keyboard focus on the toggle, all palettes, light and dark, and right to left.
-  - [ ] Link About from the home page text as well, and say in the copy that the app is open source once the licence for `content/` is decided.
-  - [ ] From the framework notes: say that the app is for improvers, not beginners, and that the best experience is, of course, interacting with people.
-  - [ ] A QR code and a share link.
-  - [ ] Instructions on how to install the app for offline use.
+  - [ ] Check the page in a browser at phone width: the toggle at the top right, the icon above the gear, keyboard focus on the toggle, the quote, the Share button (shown only where the browser can share or copy), all palettes, light and dark, and right to left.
+  - [x] About is linked from the home page text, beside Sources.
+  - [ ] Say in the copy that the content is open once the licence for `content/` is decided (the page already says the code is MIT).
+  - [x] The page says the app is for improvers, not beginners, and that the best way to learn is with people.
+  - [x] A share link and Share button. **No QR code (decided).**
+  - [x] Instructions on how to install the app for offline use (Android, iPhone and iPad, computer).
   - [x] The "no AI" promise is on the About page (Welsh and English), in `PHILOSOPHY.md` and in the README: the app never calls an AI service or a language model. "Zero AI" means exactly that, not a claim about how the framework or the Welsh was written.
-  - [ ] The rest of the philosophy wording from the framework notes: free to use, available offline, zero tracking and free to extend, with links back to the GitHub project site. Say "free to use" and "free to extend" only once the licence for `content/` is decided. Keep the honesty about the Welsh separate: every translation still has to be hand-verified by a fluent speaker (see `REVIEW.md`). NOTE WHILE THE TRANSLATIONS REQUIRE the content licence to be checked. The framework should be free to copy / modify etc (MIT licence) therefore this part is safe to claim.
-  - [ ] A question left open in the notes: is there a name for this kind of development ethos? Candidates to consider: privacy by design, calm technology, humane design, the small web.
-  - [x] Settings and About pages have a Cy|En toggle rather than inline translations (from the framework notes). Done for both; the toggle does not yet remember its language.
+  - [x] The philosophy is now **Technoleg Dda**, the founding principle in `docs/TECHNOLEG-DDA.md`: the statement and seven promises are on the About page in both languages, opening `PHILOSOPHY.md` and the README. It covers zero tracking and no AI. "Free to use" and "free to extend" for the content wait for the licence decision on `content/`, and the honesty about the Welsh stays separate (every translation is still to be hand-verified).
+  - [x] The ethos has a name: **Technoleg Dda**, after Hywel Dda. It follows small technology, calm technology, privacy by design and local-first software.
+  - [x] Settings and About pages have a Cy|En toggle rather than inline translations (from the framework notes), and both remember the language chosen.
+  - [ ] **Where next** is on the page but held back (`status: development`) until each link is checked and the Ymestyn team has been asked (see the Ymestyn item above). It holds learnwelsh.cymru and the gov.wales Welsh language support page.
+  - [ ] A Welsh review of the new About copy (listed in `REVIEW.md`), and decide whether to open a `welsh` label on GitHub for the correction template.
 - [ ] **Technology section, with App development.** A new page `technology` (group `technology`) with the section `app-development`, marked `"status": "development"` so it stays out of the release until it is ready.
   - Concepts already named: app, app-development, icon, navigation, dictionary, lookup, card, overlay, version, release, open-source, licence, offline, build, translation.
   - Translations are added as the app is built, in English and Welsh. The Welsh group title "Technoleg" is a first draft and needs review.

@@ -47,7 +47,9 @@
     "reset_orders_title": "Cynllun y teils",
     "reset_orders_lede": "Rhowch bob teilsen ar bob tudalen yn ôl yn ei threfn ragosodedig. Cedwir eich dewisiadau lliw ac ymddangosiad.",
     "reset_orders": "Ailosod cynllun y teils",
-    "reset_orders_done": "Mae pob teilsen yn ôl yn ei threfn ragosodedig."
+    "reset_orders_done": "Mae pob teilsen yn ôl yn ei threfn ragosodedig.",
+    "share": "Rhannu",
+    "share_copied": "Cyswllt wedi'i gopïo"
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",
