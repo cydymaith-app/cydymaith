@@ -197,7 +197,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<article class="about-text" id="about-en"><header><h1>About Cydymaith am iaith</h1>', page)
         self.assertIn('id="about-lang-cy" value="cy" checked', page, "the Welsh shows first")
         self.assertEqual(page.count('<a href="sources.html">'), 2)
-        for promise in ("No sign-up and no accounts.", "No tracking, no cookies and no adverts.", "No payments, and nothing locked away."):
+        for promise in ("No sign-up and no accounts.", "No tracking, no cookies and no adverts.", "No payments, and nothing locked away.", "No AI: the app never calls an AI service or a language model."):
             self.assertIn(promise, page)
 
     def test_every_page_has_the_about_link_above_the_gear_and_the_trail_says_amdanom_ni(self):

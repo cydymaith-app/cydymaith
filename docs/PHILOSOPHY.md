@@ -19,6 +19,7 @@ The site is a companion held in one hand while something plays: the news, the we
 - **No tracking.** No analytics, no cookies, no fingerprinting, and no third-party requests that reveal a visit.
 - **No ads.**
 - **No payments.** Nothing is sold, gated or upsold.
+- **No AI.** The app never calls an AI service or a language model, and makes no API calls. This is about what the app does when it runs, not about how it was written. Every translation still has to be checked by hand by a fluent speaker.
 - **No addictive features.** No streaks, scores, badges, nudges or notifications. The site never asks the person to come back.
 - **Preferences stay on the device.** Theme and direction live in the browser's own storage and are never sent anywhere.
 - **Works offline and without scripts where possible.** Pages are static HTML first. Scripts only add conveniences.
