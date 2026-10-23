@@ -219,8 +219,25 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn("learnwelsh.cymru", self.built["about.html"])
         self.assertNotIn("Where next", self.built["about.html"])
 
-    def test_the_home_page_links_to_the_about_page(self):
-        self.assertIn('<a href="about.html">', self.built["index.html"])
+    def test_the_home_page_leaves_the_links_to_the_about_page_which_holds_them(self):
+        """About this app and Sources and licences are linked from the About page only; every page has its information icon."""
+        home = self.built["index.html"]
+        self.assertNotIn("About this app", home)
+        self.assertNotIn("Sources and licences", home)
+        self.assertNotIn('href="sources.html"', home)
+        self.assertEqual(home.count('href="about.html"'), 1, "only the rail's information icon")
+
+    def test_the_about_page_links_to_how_to_and_the_sources_in_each_language(self):
+        page = self.built["about.html"]
+        self.assertEqual(page.count('<p class="about-more"><a href="how-to.html">'), 2)
+        self.assertEqual(page.count('</a> · <a href="sources.html">'), 2)
+
+    def test_no_page_but_about_links_to_how_to_or_the_sources_in_the_text(self):
+        for name, page in self.built.items():
+            if name == "about.html":
+                continue
+            for target in ("how-to.html", "sources.html"):
+                self.assertNotIn(f'<a href="{target}">', page, f"{name} links to {target}")
 
     def test_every_page_has_the_about_link_above_the_gear_and_the_trail_says_amdanom_ni(self):
         for name, page in self.built.items():
@@ -781,7 +798,7 @@ class SourcesTests(unittest.TestCase):
 
     def test_sources_page_is_linked_but_outside_the_pager(self):
         built = build.Site(self.raw, self.edition).render_all()
-        self.assertIn('href="sources.html"', built["index.html"])
+        self.assertIn('href="sources.html"', built["about.html"])
         self.assertIn('aria-label="Previous and next page"', built["where.html"])
         self.assertNotIn("Previous and next page", built["sources.html"])
         self.assertEqual(Page(built["sources.html"]).current, 1)
