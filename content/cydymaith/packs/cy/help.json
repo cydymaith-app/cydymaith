@@ -305,10 +305,10 @@
     "help-icons": {
       "title": "Gofyn am nodwedd",
       "body": [
-        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail, lle mae gan y wefan gyfeiriad ar gyfer adroddiadau."
+        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail, lle mae gan y wefan gyfeiriad ar gyfer adroddiadau. Mae togl ar frig y ffenestr yn newid rhwng y ddwy iaith, ac mae'r x bach yn ei chau."
       ],
       "keys": "Tabiwch at eicon, yna pwyswch Enter. Mae Escape yn cau'r ffenestr.",
-      "touch": "Tapiwch eicon, yna Beth yw hwn?. Tapiwch Cau, neu y tu allan i'r ffenestr, i'w chau."
+      "touch": "Tapiwch eicon, yna Beth yw hwn?. Tapiwch yr x, neu y tu allan i'r ffenestr, i'w chau."
     },
     "report-a-problem": {
       "title": "Adrodd am broblem",
