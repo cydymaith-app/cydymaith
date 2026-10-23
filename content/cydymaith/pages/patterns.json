@@ -1,5 +1,6 @@
 {
   "icon": "chat",
+  "related": ["where#landscape"],
   "sections": [
     {
       "id": "it-is",

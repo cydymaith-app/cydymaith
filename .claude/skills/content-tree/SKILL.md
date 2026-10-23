@@ -77,6 +77,10 @@ Every group, page and section has a level from 1 (beginner) to 3 (advanced), so 
 
 **Keep the framework neutral.** No Welsh, and no language names, in `framework/`; the counting is by white space, which does not suit a language written without spaces (set `grading.bounds` or levels by hand there).
 
+## Related topics
+
+An end topic can link to other topics as a row of tiles (`"related": ["where#landscape", "patterns"]` in `pages/<slug>.json`; the reference is *Related topics* in `framework/docs/FRAMEWORK.md`). Use it where a reader of one topic will want another without going up the tree: the weather topics that mention places link to the Landscape section of `where`; `where` links back to `patterns`. Rules: link to a page, or a section if that is what the reader wants (the tile is then named for the section); declare it where it is wanted, one way, and do not link every sibling to one target, which would give the target a tile for each; keep a row short (one to three tiles); one tile per page; never relate a page to itself. Do not move content between pages to avoid a link. The build checks every name. Add the new links to `tests/test_project.py` (`RelatedTopicsTests`) and the Welsh heading to `docs/REVIEW.md` if it changes.
+
 ## Rules when the plan is approved
 
 - New or changed Welsh (titles included) is a draft: add a line to `docs/REVIEW.md`.

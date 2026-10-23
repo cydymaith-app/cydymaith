@@ -1,5 +1,6 @@
 {
   "icon": "rain",
+  "related": ["where#landscape"],
   "sections": [
     {
       "id": "rain",

@@ -1,5 +1,6 @@
 {
   "icon": "windy",
+  "related": ["where#points"],
   "sections": [
     {
       "id": "wind",

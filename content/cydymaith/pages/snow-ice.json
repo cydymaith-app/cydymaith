@@ -1,5 +1,6 @@
 {
   "icon": "snow",
+  "related": ["where#landscape"],
   "sections": [
     {
       "id": "snow",

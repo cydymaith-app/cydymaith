@@ -1,6 +1,7 @@
 {
   "icon": "compass",
   "figure": "compass-rose",
+  "related": ["patterns"],
   "sections": [
     {
       "id": "points",

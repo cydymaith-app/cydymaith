@@ -4,6 +4,7 @@ Run from the repo root:  python3 -m unittest discover -s tests -v
 """
 import json
 import pathlib
+import re
 import sys
 import tempfile
 import unittest
@@ -104,6 +105,47 @@ class ProjectNavigationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RelatedTopicsTests(unittest.TestCase):
+    """The weather topics link to the place phrases, and the places link back to how it is said, as a row of tiles."""
+
+    @classmethod
+    def setUpClass(cls):
+        raw = select(content.read(PROJECT))
+        _, edition = content.pick_edition(raw)
+        cls.raw = raw
+        cls.pages = phrasebook.Site(raw, edition).render_all()
+
+    def tiles(self, name):
+        page = self.pages[name]
+        return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', page)
+
+    def test_the_weather_topics_that_mention_places_open_the_landscape_section_of_where(self):
+        for name in ("rain.html", "snow-ice.html", "patterns.html"):
+            self.assertEqual(self.tiles(name), ["where.html#landscape"], name)
+
+    def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
+        row = self.pages["rain.html"]
+        row = row[row.index('<section class="related"') :]
+        self.assertIn("Pynciau cysylltiedig", row)
+        self.assertIn("Related topics", row)
+        self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
+
+    def test_wind_opens_the_compass_and_the_places_open_how_it_is_said(self):
+        self.assertEqual(self.tiles("wind.html"), ["where.html#points"])
+        self.assertEqual(self.tiles("where.html"), ["patterns.html"])
+
+    def test_every_section_a_tile_lands_on_is_on_the_page_it_opens(self):
+        for name, page in self.pages.items():
+            for href in re.findall(r'href="([a-z0-9-]+\.html)#([A-Za-z0-9._-]+)" data-related', page):
+                target = self.pages[href[0]]
+                self.assertIn(f'id="{href[1]}"', target, f"{name} -> {href}")
+
+    def test_a_topic_with_nothing_related_has_no_row_and_the_group_pages_have_none(self):
+        self.assertNotIn('class="related"', self.pages["sky.html"])
+        self.assertNotIn('class="related"', self.pages["group-weather-forecast.html"])
+        self.assertNotIn('class="related"', self.pages["index.html"])
 
 
 class GradingTests(unittest.TestCase):

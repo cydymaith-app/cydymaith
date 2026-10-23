@@ -59,6 +59,10 @@ python3 build.py --grades      # print every level and how it was worked out; bu
 
 Where the rule is plainly wrong, a skeleton file sets `"level": 1`, `2` or `3` by hand and the report stars it. One is set so far: the days of the week (*Dydd Llun*, Monday, is two written words but one beginner item), in `pages/when.json`. `tests/test_project.py` keeps the grades honest. The grades, like the Welsh, want a fluent speaker's review. How it works, and how to use it for another project, is in the framework's [README](https://github.com/cydymaith-app/cydymaith-framework#grading-your-content) and [docs/FRAMEWORK.md](framework/docs/FRAMEWORK.md#grading-how-demanding-a-tile-or-section-is). The levels put tiles and sections in order from simple to advanced, or the reverse, when a visitor asks: **Settings → Trefn / Order** offers Arferol / Default (as written, which stays the default), Y symlaf yn gyntaf / Simplest first and Y mwyaf datblygedig yn gyntaf / Most advanced first. A screen whose tiles they have arranged themselves keeps their order. The Welsh for those labels is a draft for a fluent speaker to check.
 
+## Related topics
+
+An end topic can link to related topics as a row of tiles, with `"related"` in its page file (`content/cydymaith/pages/<slug>.json`). So far the rain, snow and ice, and how-it's-said topics open the Landscape section of Where (*On the coast*, *In the hills*, *In the valleys*), the wind topic opens the eight points, and Where opens how it is said. Back returns to the topic you came from. `tests/test_project.py` checks the links. The Welsh heading, *Pynciau cysylltiedig*, is a draft for a fluent speaker to check.
+
 ## Listening aids
 
 The Welsh comes first in each row, because it is the language being heard (`default_pair` in the edition). Four fields help someone who has just heard a word and needs to find it:
