@@ -63,7 +63,9 @@
     "how_to_col_keys": "Bysellfwrdd",
     "how_to_col_touch": "Cyffwrdd a botymau",
     "back": "Yn ôl",
-    "search": "Chwilio"
+    "search": "Chwilio",
+    "help_toggle": "Cymorth",
+    "help_icon": "Cymorth: {feature}"
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",
