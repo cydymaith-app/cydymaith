@@ -305,7 +305,7 @@
     "help-icons": {
       "title": "Gofyn am nodwedd",
       "body": [
-        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail."
+        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail, lle mae gan y wefan gyfeiriad ar gyfer adroddiadau."
       ],
       "keys": "Tabiwch at eicon, yna pwyswch Enter. Mae Escape yn cau'r ffenestr.",
       "touch": "Tapiwch eicon, yna Beth yw hwn?. Tapiwch Cau, neu y tu allan i'r ffenestr, i'w chau."
@@ -313,7 +313,7 @@
     "report-a-problem": {
       "title": "Adrodd am broblem",
       "body": [
-        "Mae Adrodd am broblem yn dangos i chi'r e-bost y byddai'n ei anfon cyn i unrhyw beth adael eich dyfais: ble roeddech chi, fersiwn yr ap, a blwch ar gyfer beth sy'n anghywir. Mae Agor e-bost yn agor eich ap post eich hun gyda'r testun wedi'i lenwi, ac mae Copïo yn ei gopïo. Nid yw'r ap byth yn anfon dim ei hun."
+        "Mae Adrodd am broblem yn dangos i chi'r e-bost y byddai'n ei ysgrifennu cyn i unrhyw beth adael eich dyfais: blwch ar gyfer beth sy'n anghywir, ac ychydig linellau a ychwanegir gan yr ap (y dudalen roeddech arni, y pwnc cymorth, pryd yr adeiladwyd yr ap a'r ieithoedd), byth mwy na 256 o nodau. Mae Agor e-bost yn agor eich ap post eich hun gyda'r testun wedi'i lenwi, ac mae Copïo yn ei gopïo. Nid yw'r ap byth yn anfon dim ei hun."
       ],
       "keys": "Tabiwch at Agor e-bost neu Copïo, yna pwyswch Enter.",
       "touch": "Tapiwch Agor e-bost neu Copïo."

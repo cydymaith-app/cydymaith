@@ -117,8 +117,8 @@ class BuildTests(unittest.TestCase):
         shutil.rmtree(cls.tmp, ignore_errors=True)
 
     def test_every_page_is_written(self):
-        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 11)  # topics, groups, home, sources, how to use, six help chapters, settings, about
-        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "help-arranging-tiles.html", "help-offline-and-install.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
+        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 12)  # topics, groups, home, sources, how to use, seven help chapters, settings, about
+        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "help-arranging-tiles.html", "help-offline-and-install.html", "help-using-help.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
         self.assertTrue((self.out / "style.css").is_file())
 
     def test_the_site_installs(self):
@@ -711,7 +711,7 @@ class AddingALanguageTests(unittest.TestCase):
     def test_building_a_new_edition_renames_the_site(self):
         out = self.tmp / "out"
         n = build.build(out, data_dir=self.data, edition="test")
-        self.assertEqual(n, 12)  # home, the group, compass, sources, how to use, six help chapters, settings
+        self.assertEqual(n, 13)  # home, the group, compass, sources, how to use, seven help chapters, settings
         home = (out / "index.html").read_text(encoding="utf-8")
         self.assertIn("Test Edition", home)
         self.assertNotIn("Cydymaith am iaith", home)
@@ -789,7 +789,7 @@ class SourcesTests(unittest.TestCase):
         data = self.copy_data("reviewed", "own")
         self.assertEqual(build.build(self.tmp / "out-reviewed", data_dir=data, strict=True),
                          len(build.Site(channels.select(self.raw), self.edition).slugs)
-                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 11)
+                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 12)
 
     def test_normal_build_accepts_draft_sources(self):
         data = self.copy_data("normal", "draft")
@@ -1044,6 +1044,22 @@ class HelpBookTests(unittest.TestCase):
         self.assertEqual(page.count('class="about-bar"'), 1)
         self.assertLess(page.index('id="about-cy"'), page.index('id="about-en"'))
         self.assertIn("<h2>Mynd yn ôl</h2>", page)
+
+    def test_the_report_has_an_address_and_it_is_never_whole_in_a_page(self):
+        address = build.pick_edition(self.raw)[1]["contact"]
+        self.assertRegex(address, r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+        site = build.Site(self.raw, build.pick_edition(self.raw)[1])
+        pages = site.render_all()
+        user, host = address.split("@")
+        self.assertIn(f'data-contact-user="{user}" data-contact-host="{host}"', pages["index.html"])
+        for name, page in pages.items():
+            self.assertNotIn(address, page, name)
+
+    def test_chapter_seven_is_shown_and_offers_the_report(self):
+        site = build.Site(self.raw, build.pick_edition(self.raw)[1])
+        page = site.render_all()["help-using-help.html"]
+        for anchor in ("help-button", "help-icons", "report-a-problem"):
+            self.assertIn(f'id="{anchor}" data-feature="{anchor}"', page)
 
     def test_the_welsh_names_the_controls_as_the_welsh_interface_does(self):
         ui = self.raw["packs"]["cy"]["meta"]["ui"]

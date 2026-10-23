@@ -65,7 +65,20 @@
     "back": "Yn ôl",
     "search": "Chwilio",
     "help_toggle": "Cymorth",
-    "help_icon": "Cymorth: {feature}"
+    "help_icon": "Cymorth: {feature}",
+    "help_whats_this": "Beth yw hwn?",
+    "help_report": "Adrodd am broblem",
+    "help_close": "Cau",
+    "help_loading": "Yn llwytho…",
+    "help_failed": "Methwyd llwytho'r cymorth. Defnyddiwch y ddolen i ddarllen y bennod.",
+    "help_more": "Darllen y bennod gyfan",
+    "help_report_lede": "Dyma'r e-bost a fydd yn cael ei ysgrifennu. Nid yw'r ap yn anfon dim: rydych yn ei anfon o'ch ap post eich hun.",
+    "help_report_words": "Beth sy'n anghywir?",
+    "help_report_context": "Wedi'i ychwanegu gan yr ap",
+    "help_open_email": "Agor e-bost",
+    "help_copy": "Copïo",
+    "help_copied": "Copïwyd.",
+    "help_copy_failed": "Methwyd copïo. Dewiswch y testun a'i gopïo eich hun."
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",
