@@ -117,8 +117,8 @@ class BuildTests(unittest.TestCase):
         shutil.rmtree(cls.tmp, ignore_errors=True)
 
     def test_every_page_is_written(self):
-        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 5)  # topics, groups, home, sources, how to use, settings, about
-        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
+        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 6)  # topics, groups, home, sources, how to use, a help chapter, settings, about
+        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
         self.assertTrue((self.out / "style.css").is_file())
 
     def test_the_site_installs(self):
@@ -262,6 +262,8 @@ class BuildTests(unittest.TestCase):
             if name == "about.html":
                 continue
             for target in ("how-to.html", "sources.html"):
+                if target == "how-to.html" and name.startswith("help-"):
+                    continue  # a help chapter sits under the contents page, so its trail names it
                 self.assertNotIn(f'<a href="{target}">', page, f"{name} links to {target}")
 
     def test_every_page_has_the_about_link_above_the_gear_and_the_trail_says_amdanom_ni(self):
@@ -709,7 +711,7 @@ class AddingALanguageTests(unittest.TestCase):
     def test_building_a_new_edition_renames_the_site(self):
         out = self.tmp / "out"
         n = build.build(out, data_dir=self.data, edition="test")
-        self.assertEqual(n, 6)  # home, the group, compass, sources, how to use, settings
+        self.assertEqual(n, 7)  # home, the group, compass, sources, how to use, a help chapter, settings
         home = (out / "index.html").read_text(encoding="utf-8")
         self.assertIn("Test Edition", home)
         self.assertNotIn("Cydymaith am iaith", home)
@@ -787,7 +789,7 @@ class SourcesTests(unittest.TestCase):
         data = self.copy_data("reviewed", "own")
         self.assertEqual(build.build(self.tmp / "out-reviewed", data_dir=data, strict=True),
                          len(build.Site(channels.select(self.raw), self.edition).slugs)
-                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 5)
+                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 6)
 
     def test_normal_build_accepts_draft_sources(self):
         data = self.copy_data("normal", "draft")
