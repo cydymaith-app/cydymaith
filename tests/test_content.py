@@ -1017,5 +1017,40 @@ class DictionaryTests(unittest.TestCase):
         self.assertEqual(entry["terms"]["cy"], [{"text": "Gair prawf", "varieties": []}])
 
 
+class HelpBookTests(unittest.TestCase):
+    """The Welsh help (packs/cy/help.json) matches the English book entry for entry."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = build.read()
+        cls.book = phrasebook.help.Book.load(cls.raw["packs"])
+        cls.en = json.loads((ROOT / "framework" / "phrasebook" / "help" / "en.json").read_text(encoding="utf-8"))
+        cls.cy = cls.raw["packs"]["cy"]["help"]
+
+    def test_the_welsh_covers_every_anchor_and_chapter_and_adds_none(self):
+        self.assertEqual(set(self.cy["features"]), set(self.book.anchors()))
+        self.assertEqual(set(self.cy["chapters"]), set(self.en["chapters"]))
+
+    def test_each_welsh_entry_has_the_same_parts_as_the_english(self):
+        for anchor, entry in self.en["features"].items():
+            welsh = self.cy["features"][anchor]
+            self.assertEqual({k for k in welsh if k in ("keys", "touch")}, {k for k in entry if k in ("keys", "touch")}, anchor)
+            self.assertEqual(len(welsh["body"]), len(entry["body"]), anchor)
+            self.assertTrue(welsh["title"].strip(), anchor)
+
+    def test_the_welsh_chapter_page_is_shown_first_with_a_toggle(self):
+        site = build.Site(self.raw, build.pick_edition(self.raw)[1])
+        page = site.render_all()["help-finding-your-way.html"]
+        self.assertEqual(page.count('class="about-bar"'), 1)
+        self.assertLess(page.index('id="about-cy"'), page.index('id="about-en"'))
+        self.assertIn("<h2>Mynd yn ôl</h2>", page)
+
+    def test_the_welsh_names_the_controls_as_the_welsh_interface_does(self):
+        ui = self.raw["packs"]["cy"]["meta"]["ui"]
+        text = json.dumps(self.cy, ensure_ascii=False)
+        for key in ("settings", "about", "arrange_toggle", "how_to", "sources"):
+            self.assertIn(ui[key], text, key)
+
+
 if __name__ == "__main__":
     unittest.main()

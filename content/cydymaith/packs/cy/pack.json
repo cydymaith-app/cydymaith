@@ -59,7 +59,9 @@
     "reset_orders": "Ailosod cynllun y teils",
     "reset_orders_done": "Mae pob teilsen yn ôl yn ei threfn ragosodedig.",
     "share": "Rhannu",
-    "share_copied": "Cyswllt wedi'i gopïo"
+    "share_copied": "Cyswllt wedi'i gopïo",
+    "how_to_col_keys": "Bysellfwrdd",
+    "how_to_col_touch": "Cyffwrdd a botymau"
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",

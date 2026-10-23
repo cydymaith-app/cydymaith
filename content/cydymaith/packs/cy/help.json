@@ -1,0 +1,76 @@
+{
+  "chapters": {
+    "finding-your-way": {
+      "title": "Dod o hyd i'ch ffordd",
+      "lede": "Symud o amgylch yr ap: teils, y bar ar y brig, y bar ar yr ochr, a mynd yn ôl."
+    }
+  },
+  "features": {
+    "tiles": {
+      "title": "Teils",
+      "body": [
+        "Mae'r dudalen hafan yn dangos grwpiau o bynciau fel teils mawr. Mae grŵp yn agor tudalen o deils pynciau, ac mae pwnc yn agor ei eiriau a'i ymadroddion.",
+        "Mae pob teilsen yn ddolen wedi'i henwi yn y ddwy iaith, felly mae darllenydd sgrin yn darllen y ddwy."
+      ],
+      "keys": "Tabiwch at deilsen, yna pwyswch Enter. Mae'r saeth dde hefyd yn agor y deilsen sydd â ffocws.",
+      "touch": "Tapiwch deilsen."
+    },
+    "trail": {
+      "title": "Ble rydych chi",
+      "body": [
+        "Mae'r bar ar draws y brig yn dangos ble rydych chi, o'r dudalen hafan i lawr i'r dudalen rydych arni. Mae pob cam cyn yr olaf yn ddolen. Ar sgriniau ehangach mae'r llwybr yn dangos y ddwy iaith."
+      ],
+      "keys": "Tabiwch at gam, yna pwyswch Enter.",
+      "touch": "Tapiwch gam."
+    },
+    "side-bar": {
+      "title": "Y bar ar yr ochr",
+      "body": [
+        "Mae bar cul ar ochr pob tudalen sy'n dal y rheolyddion. Ar y brig mae Chwilio ac Yn ôl (nid oes Yn ôl ar y dudalen hafan). Ar y gwaelod mae Golygu'r drefn, Amdanom ni a Gosodiadau.",
+        "Dim ond ar ôl i sgript y dudalen lwytho y mae Chwilio a Golygu'r drefn yn ymddangos, a dim ond lle mae gan y wefan dudalen Amdanom ni y mae Amdanom ni'n ymddangos."
+      ],
+      "keys": "Tabiwch at fotwm, yna pwyswch Enter.",
+      "touch": "Tapiwch fotwm."
+    },
+    "back": {
+      "title": "Mynd yn ôl",
+      "body": [
+        "Mae Yn ôl yn mynd i fyny un lefel: o bwnc i'w grŵp, ac o grŵp i'r dudalen hafan. Mae Gosodiadau ac Amdanom ni yn mynd yn ôl i'r dudalen hafan. Mae Sut i ddefnyddio'r ap a Ffynonellau yn mynd yn ôl i Amdanom ni."
+      ],
+      "keys": "Y saeth chwith, neu Backspace.",
+      "touch": "Pwyswch y saeth Yn ôl yn y bar ar yr ochr."
+    },
+    "pager": {
+      "title": "Darllen ymlaen",
+      "body": [
+        "Ar waelod pwnc, mae dwy ddolen yn mynd i'r pwnc blaenorol a'r pwnc nesaf, fel y gallwch ddarllen ymlaen heb fynd yn ôl i fyny i'r grŵp."
+      ],
+      "keys": "Tabiwch at y ddolen, yna pwyswch Enter.",
+      "touch": "Tapiwch y ddolen."
+    },
+    "jump-links": {
+      "title": "Neidio i adran",
+      "body": [
+        "Mae pwnc â sawl adran yn eu rhestru fel dolenni o dan ei deitl. Dewiswch un i fynd yn syth i'r adran honno."
+      ],
+      "keys": "Tabiwch at enw adran, yna pwyswch Enter.",
+      "touch": "Tapiwch enw adran."
+    },
+    "keys-and-touch": {
+      "title": "Symud rhwng teils",
+      "body": [
+        "Ar dudalen o deils gallwch symud o un i'r nesaf heb lygoden. Mewn iaith sy'n mynd o'r dde i'r chwith, mae'r saethau dde a chwith yn cyfnewid."
+      ],
+      "keys": "Mae'r saeth i lawr a'r saeth i fyny yn symud rhwng teils. Mae Home ac End yn neidio i'r gyntaf a'r olaf. Mae'r saeth dde yn agor teilsen. Mae'r saeth chwith neu Backspace yn mynd yn ôl.",
+      "touch": "Cyffyrddwch â'r deilsen rydych ei heisiau."
+    },
+    "drag-back": {
+      "title": "Llusgo i fynd yn ôl",
+      "body": [
+        "Llusgwch y dudalen tua diwedd y llinell, i'r dde mewn iaith sy'n mynd o'r chwith i'r dde, ac mae'r dudalen uwch ei phen yn llithro i mewn wrth ei hochr. Gollyngwch ar ôl tua thraean o'r lled, neu fflicio'n gyflym, i fynd yn ôl. Gollyngwch yn gynt ac mae'r dudalen yn neidio'n ôl.",
+        "Mae llusgo sy'n dechrau ar ymyl eithaf y sgrin yn cael ei adael i'ch dyfais, felly mae ei hystum 'yn ôl' ei hun yn dal i weithio. Os yw eich dyfais yn gofyn am lai o symud, nid yw tudalennau'n llithro; maent yn newid yn syml."
+      ],
+      "touch": "Llusgwch y dudalen i'r dde a gollwng."
+    }
+  }
+}
