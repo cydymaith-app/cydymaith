@@ -213,6 +213,19 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(page.count("issues/new?template=welsh-correction.md"), 2)
         self.assertTrue((ROOT / ".github" / "ISSUE_TEMPLATE" / "welsh-correction.md").is_file())
 
+    def test_the_about_page_is_an_accordion_with_the_first_two_sections_open(self):
+        page = self.built["about.html"]
+        english = page[page.index('id="about-en"') :]
+        opened = re.findall(r'<details class="fold" open><summary><h2>([^<]+)</h2>', english)
+        self.assertEqual(opened, ["What it is for", "Technoleg Dda"])
+        self.assertEqual(english.count('<details class="fold"'), 8, "the held-back section is not in the release")
+
+    def test_the_settings_page_folds_its_cards_with_only_appearance_open(self):
+        page = self.built["settings.html"]
+        self.assertEqual(len(re.findall(r'<details class="fold card"[^>]* open>', page)), 1)
+        self.assertIn('<details class="fold card" aria-labelledby="h-appearance" open>', page)
+        self.assertGreaterEqual(page.count('<details class="fold card"'), 5)
+
     def test_where_next_waits_for_the_links_to_be_checked(self):
         last = self.edition["about_page"]["en"]["sections"][-1]
         self.assertEqual((last["title"], last.get("status")), ("Where next", "development"))

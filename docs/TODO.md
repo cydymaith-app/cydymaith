@@ -217,6 +217,12 @@ All oklch compatible.
 
 **As built, where it differs from the plan above.** The level is not stored as a preference: it is worked out from the saved palette, and preferences version 3 stores `picks` (the palette last picked at each level) instead of `access`. There are no AAA or colour-blind-safe badges on the cards, because the level already says it, and the swatches are 3 across on wide screens, not 4. Regional forms are a segmented control without the live example. The Settings page has the Cy|En toggle and About keeps its own; neither remembers its language, and both show the first language of the pair each time.
 
+- [x] **Accordions on Settings and About.** Both pages were getting long, so each Settings card and each About section folds. They are `details` elements, so they work with no script and the controls inside a shut card keep their state. On Settings only Appearance starts open; on About the first two sections do (set per section with `open` in `about_page`).
+  - [ ] Remember which cards and sections are open between visits.
+  - [ ] An "open all / close all" control for the About page.
+  - [ ] Show the current choice in a shut card's summary (for example "Colour schemes: Red and green").
+  - [ ] Look at them in a real browser: keyboard, VoiceOver and TalkBack, forced colours, right to left.
+
 ### 3.4 Usability
 
 Script to generate and test each screen and score them for usability. Run each time a screen is modified. Not every build.

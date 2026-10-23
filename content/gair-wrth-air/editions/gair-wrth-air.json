@@ -53,7 +53,8 @@
             "Cydymaith am iaith means “a companion for language”. It is for people learning Welsh who watch a programme in Welsh, pausing and rewinding to look up what was just said.",
             "It starts with the weather forecast, because it is short, it repeats, and it is full of words worth knowing. News and sport are planned.",
             "It is for improvers, not beginners. The best way to learn a language is with people, and this is a companion to that, not a substitute."
-          ]
+          ],
+          "open": true
         },
         {
           "title": "Technoleg Dda",
@@ -81,7 +82,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "open": true
         },
         {
           "title": "How it works",
@@ -189,7 +191,8 @@
             "Cydymaith i bobl sy'n dysgu Cymraeg ac yn gwylio rhaglen yn Gymraeg, gan oedi ac ailchwarae i chwilio am yr hyn a ddywedwyd.",
             "Rydym yn dechrau gyda'r rhagolygon tywydd, am eu bod yn fyr, yn ailadrodd ac yn llawn geiriau gwerth eu gwybod. Mae newyddion a chwaraeon ar y gweill.",
             "Mae ar gyfer gwella'ch Cymraeg, nid ar gyfer dechreuwyr. Y ffordd orau o ddysgu iaith yw gyda phobl, ac mae hwn yn gydymaith i hynny, nid yn ei le."
-          ]
+          ],
+          "open": true
         },
         {
           "title": "Technoleg Dda",
@@ -217,7 +220,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "open": true
         },
         {
           "title": "Sut mae'n gweithio",
