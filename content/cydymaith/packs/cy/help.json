@@ -7,6 +7,14 @@
     "looking-up-words": {
       "title": "Chwilio am eiriau",
       "lede": "Dod o hyd i air rydych newydd ei glywed: chwilio, pa iaith sy'n dod gyntaf, ffurfiau eraill, ac o ble y daw'r geiriau."
+    },
+    "reading-a-topic": {
+      "title": "Darllen pwnc",
+      "lede": "Sut mae tudalen pwnc wedi'i threfnu, sut mae ei rhannau wedi'u graddio, a sut i fynd o un pwnc i un cysylltiedig."
+    },
+    "your-settings": {
+      "title": "Eich gosodiadau",
+      "lede": "Newid sut mae'r ap yn edrych ac yn ymddwyn, a'r hyn y mae'n ei gadw ar eich dyfais."
     }
   },
   "features": {
@@ -126,6 +134,91 @@
       "body": [
         "Mae nodyn bach o dan ymadrodd, mewn print ysgafnach, yn egluro sut y caiff ei ddefnyddio. Mae gan rai pynciau gyflwyniad byr neu flwch hefyd am bwynt gramadeg, fel newid i lythyren gyntaf gair.",
         "Mae'r dudalen Ffynonellau, sydd wedi'i chysylltu o Amdanom ni, yn rhestru o ble y daw'r ymadroddion, y drwydded y'u defnyddir odani, a faint o gofnodion sy'n dod o bob un. Nid yw cofnod o ddrafft heb ei adolygu wedi'i wirio yn erbyn ffynhonnell eto."
+      ]
+    },
+    "sections-order": {
+      "title": "Trefn adran",
+      "body": [
+        "Mae pwnc yn cynnwys adrannau, pob un yn gerdyn o resi. O dan bennawd adran, mae llinell sy'n dechrau â Trefn yn dweud sut y trefnir y rhesi, er enghraifft o'r ysgafnaf i'r trymaf. Nid oes gan bob adran un."
+      ]
+    },
+    "levels": {
+      "title": "O'r symlaf i'r mwyaf datblygedig",
+      "body": [
+        "Mae teils ac adrannau wedi'u graddio o ddechreuwr i ddatblygedig yn ôl yr hyn a gynhwysant: mae'r rhai â chofnodion byrrach yn symlach. Ni nodir dim ar y sgrin. Defnyddir y graddau ar gyfer y dewis Trefn yn Gosodiadau yn unig, a all roi'r symlaf yn gyntaf neu'r mwyaf datblygedig yn gyntaf. Mae sgrin y gwnaethoch drefnu ei theils eich hun yn cadw eich trefn."
+      ]
+    },
+    "related-topics": {
+      "title": "Pynciau cysylltiedig",
+      "body": [
+        "Mae rhai pynciau'n gorffen â rhes o deils ar gyfer pynciau cysylltiedig, fel y gallwch fynd o un i'r llall heb fynd yn ôl i fyny. Agorwch un ac mae Yn ôl yn eich dychwelyd i'r pwnc y daethoch ohono."
+      ],
+      "keys": "Tabiwch at deilsen, yna pwyswch Enter, neu defnyddiwch y saeth dde.",
+      "touch": "Tapiwch deilsen."
+    },
+    "settings-groups": {
+      "title": "Sut mae Gosodiadau wedi'i drefnu",
+      "body": [
+        "Mae'r gosodiadau mewn grwpiau sy'n agor ac yn cau pan ddewiswch eu penawdau. Dim ond y grŵp cyntaf, Hygyrchedd a golwg, sy'n dechrau ar agor.",
+        "Mae angen i sgriptiau fod ymlaen yn eich porwr ar gyfer Gosodiadau. Hebddynt, mae'r ap yn dilyn gosodiad golau neu dywyll eich dyfais ac yn defnyddio'r lliwiau rhagosodedig."
+      ],
+      "keys": "Tabiwch at bennawd, yna pwyswch Enter neu Space.",
+      "touch": "Tapiwch bennawd."
+    },
+    "language-toggle": {
+      "title": "Dewis iaith",
+      "body": [
+        "Mae Gosodiadau, Amdanom ni a'r tudalennau cymorth yn dangos un iaith ar y tro. Mae togl ar y dde ar y brig yn newid rhwng y ddwy. Heb y sgript, mae'r iaith gyntaf yn dangos; gyda hi, cofir eich dewis diwethaf."
+      ],
+      "keys": "Tabiwch at y togl a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch enw iaith."
+    },
+    "view-mode": {
+      "title": "Golau, tywyll neu ddewis eich dyfais",
+      "body": [
+        "Mae gan Modd gweld dri dewis: Fel y ddyfais, Golau a Thywyll. Mae Fel y ddyfais yn dilyn gosodiad golau neu dywyll eich dyfais eich hun."
+      ],
+      "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch deilsen."
+    },
+    "accessibility": {
+      "title": "Cynlluniau lliw haws eu gweld",
+      "body": [
+        "Mae Hygyrchedd yn dewis pa gynlluniau lliw a gynigir oddi tano. Mae Safonol yn dangos y cynlluniau arferol. Mae Lliwiau diogel yn dangos cynlluniau sy'n hawdd eu gwahaniaethu gyda dallineb lliw. Mae Cyferbyniad uchel yn dangos cynlluniau â thestun ac ymylon cryfach.",
+        "Mae dewis lefel yn newid i'r cynllun a ddewiswyd gennych ddiwethaf yn y lefel honno, neu'r cyntaf a restrir."
+      ],
+      "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch lefel."
+    },
+    "colour-schemes": {
+      "title": "Dewis cynllun lliw",
+      "body": [
+        "Dangosir pob cynllun lliw fel llun bach ohono'i hun, wedi'i dynnu yn ei liwiau ei hun fel y byddai'n edrych yn y modd gweld presennol. Dewiswch un i'w ddefnyddio ar unwaith. Mae lefel â dim ond un cynllun yn dweud hynny."
+      ],
+      "keys": "Tabiwch at y cynlluniau a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch gynllun."
+    },
+    "order-setting": {
+      "title": "Rhoi teils mewn trefn",
+      "body": [
+        "Mae Trefn yn rhoi teils ac adrannau mewn trefn: fel y'u hysgrifennwyd (Arferol), y symlaf yn gyntaf, neu'r mwyaf datblygedig yn gyntaf. Mae'n berthnasol i'r tudalennau a agorwch nesaf. Mae sgrin y gwnaethoch drefnu ei theils eich hun yn cadw eich trefn eich hun."
+      ],
+      "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch ddewis."
+    },
+    "reset-tile-layouts": {
+      "title": "Rhoi'r teils yn ôl",
+      "body": [
+        "Mae Ailosod cynllun y teils yn rhoi pob teilsen ar bob tudalen yn ôl yn ei threfn ragosodedig. Cedwir eich dewisiadau lliw ac ymddangosiad. Dim ond ar ôl i sgript y dudalen lwytho y mae'r botwm yn ymddangos."
+      ],
+      "keys": "Tabiwch at y botwm, yna pwyswch Enter.",
+      "touch": "Tapiwch y botwm."
+    },
+    "what-is-saved": {
+      "title": "Beth mae'r ap yn ei gofio",
+      "body": [
+        "Mae eich dewisiadau'n aros ar y ddyfais hon ac ni chânt eu hanfon i unman. Mae'r ap yn cofio eich modd gweld, cynllun lliw, trefn, iaith, ffurfiau rhanbarthol ac unrhyw drefn teils a gadwch.",
+        "I'w hanghofio, clirwch ddata'r safle hwn yn eich porwr. Mae Ailosod cynllun y teils yn rhoi'r teils yn ôl yn unig."
       ]
     }
   }
