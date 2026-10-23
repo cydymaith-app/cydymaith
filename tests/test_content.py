@@ -21,7 +21,7 @@ from phrasebook import channels  # noqa: E402
 from phrasebook import channels  # noqa: E402
 from phrasebook import content as C  # noqa: E402
 
-PROJECT = ROOT / "content" / "gair-wrth-air"
+PROJECT = ROOT / "content" / "cydymaith"
 
 
 class build:  # noqa: N801  a namespace, so the tests read as they did before the framework was split out
@@ -640,7 +640,7 @@ class SourcesValidationTests(RejectsBase):
 
 
 class EditionValidationTests(RejectsBase):
-    ED = "gair-wrth-air"
+    ED = "cydymaith"
 
     def edition(self, raw):
         return raw["editions"][self.ED]
@@ -883,7 +883,7 @@ class SelfHostedFontsTests(unittest.TestCase):
             self.assertEqual(external, [], f"{f.name} loads from another site")
 
     def test_the_edition_lists_no_font_url(self):
-        edition = json.loads((PROJECT / "editions" / "gair-wrth-air.json").read_text(encoding="utf-8"))
+        edition = json.loads((PROJECT / "editions" / "cydymaith.json").read_text(encoding="utf-8"))
         self.assertEqual(edition.get("fonts", []), [])
 
     def test_every_font_file_named_in_the_css_exists_and_is_woff2(self):

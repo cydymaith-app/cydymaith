@@ -15,7 +15,7 @@ import phrasebook  # noqa: E402
 from phrasebook import content, grading, icons  # noqa: E402
 from phrasebook.channels import select  # noqa: E402
 
-PROJECT = ROOT / "content" / "gair-wrth-air"
+PROJECT = ROOT / "content" / "cydymaith"
 
 
 class PhilosophyTests(unittest.TestCase):

@@ -1,4 +1,4 @@
-/* Gair wrth Air: the fonts and the Welsh-specific typography. The framework stylesheet knows no language.
+/* Cydymaith am iaith: the fonts and the Welsh-specific typography. The framework stylesheet knows no language.
    Both fonts are SIL OFL 1.1 and are served from this site: fonts/*-OFL.txt hold the licences, and visiting
    makes no request to any other site. Only the latin and latin-ext subsets are shipped: latin-ext holds the
    Welsh letters w and y with circumflex (U+0175, U+0177). A test checks that every character in the packs

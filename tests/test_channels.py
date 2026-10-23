@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / "framework"))
 import phrasebook  # noqa: E402
 from phrasebook import channels, content  # noqa: E402
 
-PROJECT = ROOT / "content" / "gair-wrth-air"
+PROJECT = ROOT / "content" / "cydymaith"
 
 
 def edit_json(path, fn):

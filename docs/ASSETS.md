@@ -11,7 +11,7 @@ This is a working policy, not legal advice.
 | Hanken Grotesk | Interface text | SIL OFL 1.1 | https://github.com/marcologous/hanken-grotesk |
 | Literata | Text in the second language | SIL OFL 1.1 | https://github.com/googlefonts/literata |
 
-Both are self-hosted from `content/gair-wrth-air/static/fonts/`, taken from the Fontsource packages `@fontsource/hanken-grotesk` and `@fontsource/literata` 5.3.0, which carry the OFL text and copyright lines (`*-OFL.txt` beside the files). Licences read on 2026-10-17. Re-check before each release.
+Both are self-hosted from `content/cydymaith/static/fonts/`, taken from the Fontsource packages `@fontsource/hanken-grotesk` and `@fontsource/literata` 5.3.0, which carry the OFL text and copyright lines (`*-OFL.txt` beside the files). Licences read on 2026-10-17. Re-check before each release.
 
 - Neither licence names a Reserved Font Name, so the unmodified files are used as published. Check again before subsetting or renaming them yourself.
 - Only the `latin` and `latin-ext` subsets are shipped. **Welsh needs `ŵ` and `ŷ`** (U+0175, U+0177), which are in `latin-ext`, confirmed in the shipped files. A test fails if any character in the packs falls outside the shipped ranges.
@@ -23,7 +23,7 @@ Both are self-hosted from `content/gair-wrth-air/static/fonts/`, taken from the 
 |---|---|---|
 | IBM Carbon, `@carbon/icons` 11.91.0 | Apache-2.0 | https://carbon-design-system.com, https://github.com/carbon-design-system/carbon |
 
-The seventeen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/gair-wrth-air/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
+The seventeen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/cydymaith/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
 
 The paths are unmodified. The only change is a one-line comment added at the top of each file naming the package, version and licence. The build adds `fill="currentColor"` when inlining, because Carbon's files name no fill.
 
@@ -57,10 +57,10 @@ The paths are unmodified. The only change is a one-line comment added at the top
 
 | Palette | Where it came from | Licence |
 |---|---|---|
-| `content/gair-wrth-air/palettes/default.json` | Generated at hellocolor.de by the author, 2026-10-20, then adjusted (below) | **To confirm.** See below |
-| `content/gair-wrth-air/palettes/yellow-green.json` | Derived from `default.json` by the author, 2026-10-22: the red (OKLCH 0.489 0.198 25.4) replaced by the gold of the St David's cross (0.887 0.18 95.3), nearly the same chroma, the greens unchanged | Own work; inherits the open question on `default.json` above |
-| `content/gair-wrth-air/palettes/yellow-green-safe.json` | Derived from `yellow-green.json` by the author, 2026-10-22: only the two accents moved apart in lightness (light 0.489 to 0.33, dark 0.887 to 0.80) so it passes the protan, deutan and tritan checks | Own work; inherits the open question on `default.json` above |
-| `content/gair-wrth-air/palettes/yellow-green-high-contrast.json` | Derived from `yellow-green.json` by the author, 2026-10-22, at level AAA (7:1 text, 3:1 borders) | Own work; inherits the open question on `default.json` above |
+| `content/cydymaith/palettes/default.json` | Generated at hellocolor.de by the author, 2026-10-20, then adjusted (below) | **To confirm.** See below |
+| `content/cydymaith/palettes/yellow-green.json` | Derived from `default.json` by the author, 2026-10-22: the red (OKLCH 0.489 0.198 25.4) replaced by the gold of the St David's cross (0.887 0.18 95.3), nearly the same chroma, the greens unchanged | Own work; inherits the open question on `default.json` above |
+| `content/cydymaith/palettes/yellow-green-safe.json` | Derived from `yellow-green.json` by the author, 2026-10-22: only the two accents moved apart in lightness (light 0.489 to 0.33, dark 0.887 to 0.80) so it passes the protan, deutan and tritan checks | Own work; inherits the open question on `default.json` above |
+| `content/cydymaith/palettes/yellow-green-high-contrast.json` | Derived from `yellow-green.json` by the author, 2026-10-22, at level AAA (7:1 text, 3:1 borders) | Own work; inherits the open question on `default.json` above |
 
 The framework's own palettes are recorded in its `docs/ASSETS.md`.
 

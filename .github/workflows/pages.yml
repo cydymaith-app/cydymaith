@@ -34,7 +34,7 @@ jobs:
       - name: Check the framework names nothing of this project
         run: python3 -m unittest discover -s framework/tests -p "test_framework.py" -k EngineIsLanguageNeutral -v
         env:
-          PHRASEBOOK_PROJECT: content/gair-wrth-air
+          PHRASEBOOK_PROJECT: content/cydymaith
       - name: Build site
         run: python3 build.py dist
       - uses: actions/upload-pages-artifact@v3

@@ -4,7 +4,7 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
 
 ## 0. Principles (see `PHILOSOPHY.md`)
 
-- [x] **Self-host the fonts and remove the Google Fonts request.** Done: Hanken Grotesk and Literata (SIL OFL 1.1) are served from `content/gair-wrth-air/static/fonts/` with their licences, latin and latin-ext only (157 KB). Tests check that no page or stylesheet requests another site, that every packed character is in a shipped range, and that each font file is used and has its licence. `ŵ` and `ŷ` are covered, though the current text does not use them yet.
+- [x] **Self-host the fonts and remove the Google Fonts request.** Done: Hanken Grotesk and Literata (SIL OFL 1.1) are served from `content/cydymaith/static/fonts/` with their licences, latin and latin-ext only (157 KB). Tests check that no page or stylesheet requests another site, that every packed character is in a shipped range, and that each font file is used and has its licence. `ŵ` and `ŷ` are covered, though the current text does not use them yet.
   - [ ] Re-check both fonts' licences and versions before each release (Fontsource 5.3.0 at the time of writing).
 - [ ] **Decide the licence for `content/`**: CC0 or CC BY 4.0 (CC BY 4.0 is safer if any source requires attribution). Add it as a separate licence file and to the README.
 - [x] **Record the source and licence of every translation.** Done: per-pack sources, a generated Sources page, and licence validation. The two existing packs are marked `draft`.
@@ -107,7 +107,7 @@ Features of the framework and the general features it enables, driven from this 
 
 ### 3.1 Languages and theming
 
-- [x] **i18n and l10n conformance, and framework kept apart from the content.** `phrasebook/` holds no language; `content/gair-wrth-air/` holds everything of the project. Interface text is in a keyed message catalogue with fallback, placeholders, CLDR plurals and list patterns. Content must be in Unicode normal form C. Direction and language are marked relative to the surrounding text. The CSS uses logical properties and role class names. Details and gaps: `FRAMEWORK.md`.
+- [x] **i18n and l10n conformance, and framework kept apart from the content.** `phrasebook/` holds no language; `content/cydymaith/` holds everything of the project. Interface text is in a keyed message catalogue with fallback, placeholders, CLDR plurals and list patterns. Content must be in Unicode normal form C. Direction and language are marked relative to the surrounding text. The CSS uses logical properties and role class names. Details and gaps: `FRAMEWORK.md`.
   - [ ] **Look at it in a real browser**: right-to-left (switch the fixture interface to its right-to-left language), the phone layout, and the menu arrow in both directions.
   - [ ] Warn at build time when a pair language has no `ui` words for the labels shown beside it, instead of silently showing English.
   - [ ] Number formatting by locale (digit shapes, grouping) if any language needs it.

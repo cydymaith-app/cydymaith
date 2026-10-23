@@ -33,7 +33,7 @@ This repository is the **project**: the English and Welsh phrases, the regional 
 | Path | What it holds |
 |---|---|
 | `framework/` | The generator (a submodule of `cydymaith-framework`): the interface message catalogue, plural rules, and the stylesheet and scripts shared by every site. |
-| `content/gair-wrth-air/` | One translator: `structure.json`, `pages/`, `packs/<code>/`, `editions/`, and `static/` (this project's fonts and typography). |
+| `content/cydymaith/` | One translator: `structure.json`, `pages/`, `packs/<code>/`, `editions/`, and `static/` (this project's fonts and typography). |
 | `build.py` | Short entry point: puts `framework/` on the path and builds `content/`. |
 | `tests/` | `test_content.py`, `test_channels.py` and `test_project.py` check the real content. The framework's own tests are in `framework/tests/`. |
 
@@ -41,7 +41,7 @@ The framework follows i18n and l10n conventions (BCP 47 tags, `lang` and `dir`, 
 
 ## Editing Welsh
 
-A concept in `content/gair-wrth-air/packs/cy/pages/weather.json` looks like this:
+A concept in `content/cydymaith/packs/cy/pages/weather.json` looks like this:
 
 ```json
 "warning-for-wind": { "text": "Rhybudd am wynt", "note": "{{am}} softens {{gwynt}} to {{wynt}}" }
@@ -103,7 +103,7 @@ Then give a concept several `forms` in place of one `text`, tagging each with th
 
 ## Adding a page
 
-1. Create `content/gair-wrth-air/pages/<slug>.json` with its sections and concept ids.
+1. Create `content/cydymaith/pages/<slug>.json` with its sections and concept ids.
 2. List the slug under a group in `structure.json`.
 3. Add `packs/<code>/pages/<slug>.json` for each language you can fill, setting its `source`.
 4. Run the tests. The build refuses unlisted pages, unknown or repeated ids, texts that match no concept, and sources without an accepted licence.
