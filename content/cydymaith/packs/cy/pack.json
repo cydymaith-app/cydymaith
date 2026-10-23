@@ -61,7 +61,9 @@
     "share": "Rhannu",
     "share_copied": "Cyswllt wedi'i gopïo",
     "how_to_col_keys": "Bysellfwrdd",
-    "how_to_col_touch": "Cyffwrdd a botymau"
+    "how_to_col_touch": "Cyffwrdd a botymau",
+    "back": "Yn ôl",
+    "search": "Chwilio"
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",

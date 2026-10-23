@@ -3,6 +3,10 @@
     "finding-your-way": {
       "title": "Dod o hyd i'ch ffordd",
       "lede": "Symud o amgylch yr ap: teils, y bar ar y brig, y bar ar yr ochr, a mynd yn ôl."
+    },
+    "looking-up-words": {
+      "title": "Chwilio am eiriau",
+      "lede": "Dod o hyd i air rydych newydd ei glywed: chwilio, pa iaith sy'n dod gyntaf, ffurfiau eraill, ac o ble y daw'r geiriau."
     }
   },
   "features": {
@@ -71,6 +75,58 @@
         "Mae llusgo sy'n dechrau ar ymyl eithaf y sgrin yn cael ei adael i'ch dyfais, felly mae ei hystum 'yn ôl' ei hun yn dal i weithio. Os yw eich dyfais yn gofyn am lai o symud, nid yw tudalennau'n llithro; maent yn newid yn syml."
       ],
       "touch": "Llusgwch y dudalen i'r dde a gollwng."
+    },
+    "search": {
+      "title": "Chwilio am air",
+      "body": [
+        "Mae chwilio yn dod o hyd i air neu ymadrodd yn y naill iaith neu'r llall. Teipiwch ran ohono, yn yr iaith a glywsoch neu yn yr iaith arall. Nid yw llythrennau mawr nac acenion o bwys: mae teipio hebddynt yn dod o hyd i'r gair o hyd, er bod cyfatebiaeth sy'n eu cadw yn dod gyntaf.",
+        "Mae pob canlyniad yn dangos y gair a'i gyfieithiad, gyda'r ffurfiau rhanbarthol ochr yn ochr, a dolen i'w res ar y dudalen. O dano mae dolenni i bob pwnc y mae'n ymddangos ynddo. Mae pynciau y mae eu teitl yn cyfateb i'r hyn a deipiwyd yn cael eu rhestru o dan y geiriau.",
+        "Dim ond ar ôl i sgript y dudalen lwytho y mae'r botwm Chwilio yn ymddangos."
+      ],
+      "keys": "Pwyswch / i agor y chwilio, neu tabiwch at y botwm Chwilio a phwyso Enter.",
+      "touch": "Tapiwch y chwyddwydr yn y bar ar yr ochr."
+    },
+    "search-keys": {
+      "title": "Symud drwy'r canlyniadau a chau",
+      "body": [
+        "Mae'r chwilio yn aros ar agor wrth i chi deipio. Dewiswch ganlyniad i fynd ato; mae'r cerdyn yn cau wrth i'r dudalen newid."
+      ],
+      "keys": "Mae'r saeth i lawr a'r saeth i fyny yn symud drwy'r canlyniadau. Mae Enter yn dilyn y canlyniad cyntaf pan fo'r cyrchwr yn y maes. Mae Escape yn cau'r chwilio.",
+      "touch": "Tapiwch ganlyniad i fynd ato. Tapiwch Cau, neu unrhyw le y tu allan i'r cerdyn, i gau'r chwilio."
+    },
+    "search-this-page-first": {
+      "title": "Canlyniadau o'r dudalen rydych arni",
+      "body": [
+        "Pan agorwch y chwilio ar bwnc, daw'r geiriau a geir ar y dudalen honno gyntaf. Mae llinell â'r pennawd Canlyniadau eraill yn eu gwahanu oddi wrth y gweddill. Ar dudalen grŵp, daw'r geiriau ar holl dudalennau'r grŵp hwnnw gyntaf. Ar y dudalen hafan a thudalennau eraill, nid oes llinell o'r fath."
+      ]
+    },
+    "listen-first-rows": {
+      "title": "Pa iaith sy'n dod gyntaf",
+      "body": [
+        "Ym mhob rhes mae iaith gyntaf y pâr ar ddechrau'r rhes mewn print mawr a chryf, a'r ail iaith ar ddiwedd yr un rhes, mewn lliw ysgafnach. Yr iaith gyntaf yw'r un rydych yn ei chlywed, felly gallwch ei sganio'n gyflym. Mae'r wefan yn dewis y pâr."
+      ]
+    },
+    "also-heard": {
+      "title": "Ffurfiau eraill y gallech eu clywed",
+      "body": [
+        "O dan rai geiriau mae llinell ag eicon clustffonau yn rhestru ffurfiau eraill y clywir y gair ynddynt, fel dechrau wedi newid neu luosog. Mae chwilio yn dod o hyd i'r gair o unrhyw un ohonynt."
+      ]
+    },
+    "regional-forms": {
+      "title": "Ffurfiau rhanbarthol",
+      "body": [
+        "Mae gan rai geiriau ffurfiau gwahanol mewn mannau gwahanol. Mae tag bach ar ôl ffurf, fel N neu S, yn dangos i ba ranbarth y mae'n perthyn; ar gyfrifiadur, mae pwyntio ato yn dangos yr enw llawn.",
+        "Yn Gosodiadau, mae Ffurfiau rhanbarthol yn gadael i chi ddewis rhanbarth ar gyfer iaith. Dangosir ffurfiau nad ydynt yn perthyn iddo yn llai ac yn fwy gwan, ac ni chuddir dim. Cedwir y dewis ar y ddyfais hon."
+      ],
+      "keys": "Yn Gosodiadau, tabiwch at y dewis a defnyddio'r bysellau saeth.",
+      "touch": "Yn Gosodiadau, tapiwch ranbarth."
+    },
+    "sources-notes": {
+      "title": "Nodiadau a ffynonellau",
+      "body": [
+        "Mae nodyn bach o dan ymadrodd, mewn print ysgafnach, yn egluro sut y caiff ei ddefnyddio. Mae gan rai pynciau gyflwyniad byr neu flwch hefyd am bwynt gramadeg, fel newid i lythyren gyntaf gair.",
+        "Mae'r dudalen Ffynonellau, sydd wedi'i chysylltu o Amdanom ni, yn rhestru o ble y daw'r ymadroddion, y drwydded y'u defnyddir odani, a faint o gofnodion sy'n dod o bob un. Nid yw cofnod o ddrafft heb ei adolygu wedi'i wirio yn erbyn ffynhonnell eto."
+      ]
     }
   }
 }
