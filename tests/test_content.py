@@ -117,8 +117,8 @@ class BuildTests(unittest.TestCase):
         shutil.rmtree(cls.tmp, ignore_errors=True)
 
     def test_every_page_is_written(self):
-        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 9)  # topics, groups, home, sources, how to use, four help chapters, settings, about
-        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
+        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 11)  # topics, groups, home, sources, how to use, six help chapters, settings, about
+        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "help-arranging-tiles.html", "help-offline-and-install.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
         self.assertTrue((self.out / "style.css").is_file())
 
     def test_the_site_installs(self):
@@ -711,7 +711,7 @@ class AddingALanguageTests(unittest.TestCase):
     def test_building_a_new_edition_renames_the_site(self):
         out = self.tmp / "out"
         n = build.build(out, data_dir=self.data, edition="test")
-        self.assertEqual(n, 10)  # home, the group, compass, sources, how to use, four help chapters, settings
+        self.assertEqual(n, 12)  # home, the group, compass, sources, how to use, six help chapters, settings
         home = (out / "index.html").read_text(encoding="utf-8")
         self.assertIn("Test Edition", home)
         self.assertNotIn("Cydymaith am iaith", home)
@@ -789,7 +789,7 @@ class SourcesTests(unittest.TestCase):
         data = self.copy_data("reviewed", "own")
         self.assertEqual(build.build(self.tmp / "out-reviewed", data_dir=data, strict=True),
                          len(build.Site(channels.select(self.raw), self.edition).slugs)
-                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 9)
+                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 11)
 
     def test_normal_build_accepts_draft_sources(self):
         data = self.copy_data("normal", "draft")

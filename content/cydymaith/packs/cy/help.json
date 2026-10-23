@@ -15,6 +15,18 @@
     "your-settings": {
       "title": "Eich gosodiadau",
       "lede": "Newid sut mae'r ap yn edrych ac yn ymddwyn, a'r hyn y mae'n ei gadw ar eich dyfais."
+    },
+    "arranging-tiles": {
+      "title": "Trefnu teils",
+      "lede": "Rhoi'r teils ar y dudalen hafan ac ar dudalennau grŵp yn eich trefn eich hun."
+    },
+    "offline-and-install": {
+      "title": "All-lein ac ar eich dyfais",
+      "lede": "Defnyddio'r ap heb gysylltiad, ei gadw ar eich dyfais, a beth sy'n dal i weithio pan fo sgriptiau wedi'u diffodd."
+    },
+    "using-help": {
+      "title": "Defnyddio cymorth",
+      "lede": "Cael eglurhad am reolydd, ac adrodd am broblem, o'r sgrin ei hun."
     }
   },
   "features": {
@@ -220,6 +232,91 @@
         "Mae eich dewisiadau'n aros ar y ddyfais hon ac ni chânt eu hanfon i unman. Mae'r ap yn cofio eich modd gweld, cynllun lliw, trefn, iaith, ffurfiau rhanbarthol ac unrhyw drefn teils a gadwch.",
         "I'w hanghofio, clirwch ddata'r safle hwn yn eich porwr. Mae Ailosod cynllun y teils yn rhoi'r teils yn ôl yn unig."
       ]
+    },
+    "edit-order": {
+      "title": "Aildrefnu'r teils",
+      "body": [
+        "Ar y dudalen hafan ac ar dudalen grŵp gallwch roi'r teils yn eich trefn eich hun. Trowch Golygu'r drefn ymlaen gyda'r sbaner yn y bar ar yr ochr. Mae'r teils yn dangos eu heiconau yn unig ar gefndir o liw gwahanol, ac mae bar yn dweud wrthych beth i'w wneud.",
+        "Dim ond ar ôl i sgript y dudalen lwytho y mae'r sbaner yn ymddangos, a dim ond ar dudalennau o deils."
+      ],
+      "keys": "Tabiwch at y sbaner yn y bar ar yr ochr, yna pwyswch Enter.",
+      "touch": "Tapiwch y sbaner yn y bar ar yr ochr."
+    },
+    "moving-tiles": {
+      "title": "Symud teilsen",
+      "body": [
+        "Llusgwch deilsen dros un arall i'w symud, neu tapiwch deilsen i'w chodi a thapio ble y dylai fynd."
+      ],
+      "keys": "Defnyddiwch y bysellau saeth i symud rhwng teils a gwasgwch Enter i godi un. Wedyn mae'r bysellau saeth yn ei symud ymlaen, ac mae Enter yn ei gollwng. Mae Escape yn ei rhoi yn ôl lle roedd hi.",
+      "touch": "Llusgwch deilsen, neu tapiwch hi a thapio ble mae'n mynd."
+    },
+    "saving-order": {
+      "title": "Cadw neu ddadwneud y drefn",
+      "body": [
+        "Mae Cadw'r drefn yn cadw'r drefn newydd ar y ddyfais hon, felly hefyd diffodd y sbaner. Os gadewch y dudalen heb gadw, collir y newidiadau. Mae Ailosod yn rhoi'r sgrin hon yn ôl yn ei threfn ragosodedig. Mae Ailosod cynllun y teils yn Gosodiadau yn gwneud yr un peth ar gyfer pob sgrin ar unwaith.",
+        "Mae teilsen a ychwanegir mewn fersiwn ddiweddarach yn mynd ar y diwedd. Os na ellir cadw'r drefn, mae'r bar yn dweud hynny."
+      ],
+      "keys": "Tabiwch at Cadw'r drefn neu Ailosod, yna pwyswch Enter.",
+      "touch": "Tapiwch Cadw'r drefn neu Ailosod."
+    },
+    "offline": {
+      "title": "Defnyddio'r ap heb gysylltiad",
+      "body": [
+        "Unwaith y bydd yr ap wedi llwytho gyda chysylltiad, cedwir ei dudalennau ar eich dyfais ac maent yn agor hebddo. Mae chwilio, y gosodiadau a phob pwnc yn dal i weithio.",
+        "Pan fyddwch ar-lein eto, mae'r ap yn gwirio'n dawel am fersiwn newydd ac yn ei defnyddio y tro nesaf i chi ei agor."
+      ]
+    },
+    "install": {
+      "title": "Ei gadw ar eich dyfais",
+      "body": [
+        "Gallwch ychwanegu'r ap at eich dyfais fel unrhyw ap arall, heb siop apiau.",
+        {
+          "list": [
+            "Android, yn Chrome: agorwch y ddewislen, yna dewiswch Gosod yr ap (Install app) neu Ychwanegu at y sgrin gartref (Add to Home screen).",
+            "iPhone ac iPad, yn Safari: tapiwch Rhannu (Share), yna Ychwanegu at y Sgrin Gartref (Add to Home Screen).",
+            "Cyfrifiadur, yn Chrome neu Edge: defnyddiwch yr eicon gosod yn y bar cyfeiriad."
+          ]
+        }
+      ]
+    },
+    "no-script": {
+      "title": "Os yw sgriptiau wedi'u diffodd",
+      "body": [
+        "Mae'r tudalennau'n dal i agor a darllen. Mae chwilio, y gosodiadau, golygu'r drefn a'r botwm Rhannu angen sgriptiau, felly nid ydynt yn ymddangos nac yn gweithio.",
+        "Mae'r togl iaith yn dal i newid, ond ni chofir eich dewis, ac mae'r ap yn dilyn gosodiad golau neu dywyll eich dyfais."
+      ]
+    },
+    "share": {
+      "title": "Rhannu'r cyfeiriad",
+      "body": [
+        "Mae gan y dudalen Amdanom ni gyfeiriad yr ap gyda botwm Rhannu, sy'n ymddangos dim ond lle gall eich porwr rannu neu gopïo. Nid yw'n gwneud cais: mae'n trosglwyddo'r cyfeiriad i opsiynau rhannu eich dyfais, neu'n ei gopïo."
+      ],
+      "keys": "Tabiwch at Rhannu, yna pwyswch Enter.",
+      "touch": "Tapiwch Rhannu ar y dudalen Amdanom ni."
+    },
+    "help-button": {
+      "title": "Y botwm cymorth",
+      "body": [
+        "Mae botwm marc cwestiwn yn y bar ar yr ochr yn troi cymorth ymlaen ac i ffwrdd. Pan fydd ymlaen, mae eiconau marc cwestiwn bach yn ymddangos wrth ymyl y nodweddion a'r teils ar y dudalen. Pan fydd i ffwrdd, mae'r dudalen yn blaen."
+      ],
+      "keys": "Tabiwch at y botwm marc cwestiwn, yna pwyswch Enter.",
+      "touch": "Tapiwch y botwm marc cwestiwn yn y bar ar yr ochr."
+    },
+    "help-icons": {
+      "title": "Gofyn am nodwedd",
+      "body": [
+        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail."
+      ],
+      "keys": "Tabiwch at eicon, yna pwyswch Enter. Mae Escape yn cau'r ffenestr.",
+      "touch": "Tapiwch eicon, yna Beth yw hwn?. Tapiwch Cau, neu y tu allan i'r ffenestr, i'w chau."
+    },
+    "report-a-problem": {
+      "title": "Adrodd am broblem",
+      "body": [
+        "Mae Adrodd am broblem yn dangos i chi'r e-bost y byddai'n ei anfon cyn i unrhyw beth adael eich dyfais: ble roeddech chi, fersiwn yr ap, a blwch ar gyfer beth sy'n anghywir. Mae Agor e-bost yn agor eich ap post eich hun gyda'r testun wedi'i lenwi, ac mae Copïo yn ei gopïo. Nid yw'r ap byth yn anfon dim ei hun."
+      ],
+      "keys": "Tabiwch at Agor e-bost neu Copïo, yna pwyswch Enter.",
+      "touch": "Tapiwch Agor e-bost neu Copïo."
     }
   }
 }
