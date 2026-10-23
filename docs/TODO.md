@@ -179,7 +179,7 @@ Features of the framework and the general features it enables, driven from this 
   - [x] **First pairs.** Rain, Snow and ice, and How it's said open Where at Landscape; Wind opens Where at the eight points (a link to its Areas section read oddly); Where opens How it's said. Checked in a browser.
   - [ ] A fluent speaker checks the Welsh heading, *Pynciau cysylltiedig* (a line is in `docs/REVIEW.md`).
   - [ ] Decide whether more topics should link (Sky, Temperature, Warnings), and whether Where should link to more than How it's said.
-  - [ ] Put related topics in the how-to page, in both languages (it needs Welsh wording).
+  - [x] Put related topics in the how-to page, in both languages. Done 2026-10-23 as the *Linked topics* entry of the help book (`help-reading-a-topic.html#related-topics`); the Welsh is a draft in `REVIEW.md`.
   - [ ] Later, if wanted: links from single phrases (for example "Snow on high ground" to "On high ground"). More precise, but it means editing individual phrases.
 - [x] **Grade tiles and sections from beginner to advanced, with a setting for the order.** Done 2026-10-23, apart from the review items below. Each group, page and section has a level (1 beginner to 3 advanced) worked out from what it holds; the build writes it on every tile and topic section (`data-level`); **Settings** offers *Default* (as written, the listen-first order, and what everyone gets until they choose), *Simplest first* and *Most advanced first* (shown only where the levels differ); and `assets/order.js` puts tiles, sections and the "On this page" list in order before the page is painted, and in the copy of a page that `nav.js` slides in, so nothing is seen moving. Written up in the framework README, `framework/docs/FRAMEWORK.md` (*Grading*, *Putting tiles and sections in order*), the content-tree skill and the project memory.
   - [x] **What is graded: tiles and sections** (decided 2026-10-23). Not single words or phrases yet; that could come later.
@@ -190,7 +190,7 @@ Features of the framework and the general features it enables, driven from this 
   - [x] **A bug found and fixed on the way.** The earlier before-paint tile order made Reset restore the *saved* order, not the default, because `arrange.js` took its default from the page after it had been reordered. It now reads `data-written` and `data-default`.
   - [ ] A fluent speaker reviews the grades and the Welsh for the new setting (`Trefn`, `Arferol`, `Y symlaf yn gyntaf`, `Y mwyaf datblygedig yn gyntaf` and the hint); lines are in `docs/REVIEW.md`.
   - [ ] A measure for languages written without spaces between words (the count is by white space).
-  - [ ] Put the setting in the how-to page, in both languages (it needs Welsh wording).
+  - [x] Put the setting in the how-to page, in both languages. Done 2026-10-23 (`help-your-settings.html#order-setting`, `help-reading-a-topic.html#levels`); the Welsh is a draft in `REVIEW.md`.
   - [ ] Maybe later: grade single words and phrases, and let the Search results or a topic's rows use the levels.
 
 ### 3.3 Settings screen
@@ -255,7 +255,7 @@ Help is a book under About, with in-context help reached from the screens themse
 
 1. A question-mark button in the rail, 4th slot from the bottom (above edit order, About and Settings), turns on a mode. A bar says what to do and has *This page* and *Done*. Small question-mark icons appear on features and tiles.
 2. Touching an icon opens a small sheet with **What's this?** first, then **Report a problem**.
-3. *What's this?* opens an overlay that loads the text of `help/<section>#feature`. *Report a problem* shows a preview of the email, with a box for what is wrong.
+3. *What's this?* opens an overlay that loads the text of `help-<chapter>.html#feature`. *Report a problem* shows a preview of the email, with a box for what is wrong.
 4. *Open email* opens the person's own mail app with the context filled in. *Copy* puts the same text on the clipboard.
 
 **Decisions and why.**
@@ -269,15 +269,15 @@ Help is a book under About, with in-context help reached from the screens themse
 
 **To do.**
 
-- [ ] **The book.** *Phases 1 and 2 done 2026-10-23: the skeleton, the first chapter (Finding your way) in English, and the tests; Phase 3 part 1: all seven chapters are written in English with a Welsh draft. Chapter 7 (Using help) waits, unpublished, for the help button.* Still to do: a fluent speaker checks the Welsh, and someone reads the chapters in a browser. Plan in `framework/docs/app-help-plan.md` (phase 0 decided: flat `help-<section>.html#feature` addresses, a structured help file in framework and pack, `how-to.html` kept as the contents page). Pages under About at `help/<section>#feature`: one page per section, one stable anchor per feature. About links to it, and Back and the trail go to About. Replaces the single `how-to.html`.
-- [ ] **In-context icons.** App features and tiles carry a small help icon, hidden by default. Each names its anchor (`data-help="<section>#<feature>"`). Without the script it is an ordinary link to the book.
+- [x] **The book.** Done 2026-10-23 (plan: `framework/docs/app-help-plan.md`, phases 0 to 3): `how-to.html` is the contents, six chapters are published as `help-<chapter>.html#<feature>` in English with a Welsh draft, and a seventh (Using help) is written but not shown until the help button exists. Audit and what is left: `framework/docs/app-help-todo.md`. Still to do: a fluent speaker checks the Welsh, and the chapters are read in a browser.
+- [ ] **In-context icons.** App features and tiles carry a small help icon, hidden by default. Each names its anchor (`data-help="<chapter>#<feature>"`). Without the script it is an ordinary link to the book.
 - [ ] **Rail help button**, in the 4th slot from the bottom (above edit order, About and Settings). Pressing it turns on the mode and reveals the in-context icons (the report flag in 3.6 is merged into this button).
 - [ ] **Sheet.** Touching an icon opens *What's this?* (first) and *Report a problem*. Dismiss by Escape, a close button or a tap outside; focus returns to the icon.
 - [ ] **Report: build the context** (at most 256 characters, in the order above), show it in a preview with a box for the person's words, and offer *Open email* (`mailto:` to the project's contact address, section 2) and *Copy*. Test the length cap, and the link on Android Chrome, iOS Safari and a desktop with and without a mail app. Without the script, a fixed `mailto:` asks the person to say where they were.
-- [ ] **Overlay.** Pressing an icon opens a dismissable overlay tile that loads the text of `help/<section>#feature`, the book's own text and not a copy. Escape, a close button and a tap outside dismiss it, and focus returns to the icon.
-- [ ] **Write the help, in both languages.** First gap: the Welsh body of the how-to page is missing (23 `how_to_*` keys fall back to English). Welsh is a draft until a fluent speaker checks it (`REVIEW.md`).
-- [ ] **Fold in the older items:** related topics and the Order setting on the how-to page (3.2), and the weather worked example.
-- [ ] Update `FRAMEWORK.md`, which says the how-to page "explains all of this" and describes the rail without About or Edit order.
+- [ ] **Overlay.** Pressing an icon opens a dismissable overlay tile that loads the text of `help-<chapter>.html#feature`, the book's own text and not a copy. Escape, a close button and a tap outside dismiss it, and focus returns to the icon.
+- [x] **Write the help, in both languages.** Done 2026-10-23: seven chapters in English and a Welsh draft; the old `how_to_*` messages are gone. Welsh is a draft until a fluent speaker checks it (`REVIEW.md`).
+- [ ] **Fold in the older items:** related topics and the Order setting are done; the weather worked example is still to do.
+- [x] Update `FRAMEWORK.md`, which said the how-to page "explains all of this" and described the rail without About or Edit order. Done 2026-10-23.
 
 ## Done
 
