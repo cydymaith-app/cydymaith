@@ -241,8 +241,43 @@ Screen background changes colour, and the toggled edit icon background matches i
 
 ### 3.6 Report issue screen
 
-Via a flag icon on the side bar. 
-Opens a mode like edit mode, says select the element that is wrong, or skip - button to skip. Next step, an email is created with a report section in markdown filled out. User can type what else they want and the email is sent. Can it send in the background? Can I set up a separate email for it? Save this for a future feature.
+Merged into 3.7 (2026-10-23): reporting shares its first step with help, so it is one feature, "Ask about this". The original idea is kept below.
+
+> Via a flag icon on the side bar. Opens a mode like edit mode, says select the element that is wrong, or skip - button to skip. Next step, an email is created with a report section in markdown filled out. User can type what else they want and the email is sent. Can it send in the background? Can I set up a separate email for it?
+
+Answer to the last question: no background sending. The person's own mail app sends it (see 3.7).
+
+### 3.7 App help and report an issue ("Ask about this")
+
+Help is a book under About, with in-context help reached from the screens themselves. Reporting an issue shares the same first step, so the two are one feature. The audit and the detailed list are in `framework/docs/app-help-todo.md`; the `app-help` skill (`.claude/skills/app-help/SKILL.md`) re-runs the audit.
+
+**The flow (first draft, 2026-10-23).**
+
+1. A question-mark button in the rail, 4th slot from the bottom (above edit order, About and Settings), turns on a mode. A bar says what to do and has *This page* and *Done*. Small question-mark icons appear on features and tiles.
+2. Touching an icon opens a small sheet with **What's this?** first, then **Report a problem**.
+3. *What's this?* opens an overlay that loads the text of `help/<section>#feature`. *Report a problem* shows a preview of the email, with a box for what is wrong.
+4. *Open email* opens the person's own mail app with the context filled in. *Copy* puts the same text on the clipboard.
+
+**Decisions and why.**
+
+- **`mailto:` and no background sending.** The app has no server and makes no request except for its own pages. A `mailto:` needs no backend, and the person sees exactly what is sent and presses Send. This keeps the promise that nothing leaves the device unseen. Cost: it needs a mail app, so the preview offers *Copy* and shows the address as plain text.
+- **The context the app adds is at most 256 characters** (decided 2026-10-23). The person's own words are extra. Reasons: long `mailto:` links are truncated or refused by some mail apps and browsers; a longer block means more to build, test and explain on every device; a report only needs to say *where*. Anything over 256 means the feature is getting too complex, so the answer is to cut the context, not to raise the limit.
+- **What goes in the 256, in order of what is cut last:** page and section (`rain.html#landscape`), the help anchor or element id, the app version (commit short hash), the language pair and the direction. Cut first, and left out by default: saved settings, screen size and user agent. Never page text beyond a short word.
+- **Same anchor, two uses.** The `data-help` anchor on an icon is also the report's context, so the book and the reports cannot drift apart.
+- **Reports are not only about features.** *This page* in the bar reports the page. A row-level icon is not proposed, because it would clutter phrase tables.
+- **The icon is a question mark** (it means "ask"), and the sheet names both actions in words, because a question mark alone does not say "report".
+
+**To do.**
+
+- [ ] **The book.** Pages under About at `help/<section>#feature`: one page per section, one stable anchor per feature. About links to it, and Back and the trail go to About. Replaces the single `how-to.html`.
+- [ ] **In-context icons.** App features and tiles carry a small help icon, hidden by default. Each names its anchor (`data-help="<section>#<feature>"`). Without the script it is an ordinary link to the book.
+- [ ] **Rail help button**, in the 4th slot from the bottom (above edit order, About and Settings). Pressing it turns on the mode and reveals the in-context icons (the report flag in 3.6 is merged into this button).
+- [ ] **Sheet.** Touching an icon opens *What's this?* (first) and *Report a problem*. Dismiss by Escape, a close button or a tap outside; focus returns to the icon.
+- [ ] **Report: build the context** (at most 256 characters, in the order above), show it in a preview with a box for the person's words, and offer *Open email* (`mailto:` to the project's contact address, section 2) and *Copy*. Test the length cap, and the link on Android Chrome, iOS Safari and a desktop with and without a mail app. Without the script, a fixed `mailto:` asks the person to say where they were.
+- [ ] **Overlay.** Pressing an icon opens a dismissable overlay tile that loads the text of `help/<section>#feature`, the book's own text and not a copy. Escape, a close button and a tap outside dismiss it, and focus returns to the icon.
+- [ ] **Write the help, in both languages.** First gap: the Welsh body of the how-to page is missing (23 `how_to_*` keys fall back to English). Welsh is a draft until a fluent speaker checks it (`REVIEW.md`).
+- [ ] **Fold in the older items:** related topics and the Order setting on the how-to page (3.2), and the weather worked example.
+- [ ] Update `FRAMEWORK.md`, which says the how-to page "explains all of this" and describes the rail without About or Edit order.
 
 ## Done
 

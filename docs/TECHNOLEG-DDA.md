@@ -29,6 +29,7 @@ Each promise is a rule the app keeps, not an aim it works towards.
 4. **No nagging.** *Dim swnian.*
    - No streaks, scores, badges or notifications.
    - The app never asks you to come back. It helps while you are here, then lets you go.
+   - The interface is unobtrusive. It follows from promises 1 to 5: with nothing to sell, nothing taken and a phone in one hand, there is nothing to interrupt you with, and extras stay out of sight until you ask for them.
 5. **For everyone.** *I bawb.*
    - Made for a phone held in one hand, and it works offline.
    - It is readable in every palette, including high-contrast and colour-blind-safe ones, and usable with a keyboard or a screen reader.
@@ -38,6 +39,7 @@ Each promise is a rule the app keeps, not an aim it works towards.
 7. **People first.** *Pobl yn gyntaf.*
    - The app is a companion, not a substitute.
    - A language lives between people, and the best way to learn it is with them.
+   - Help is there where you need it: beside the feature, a few seconds away, asked for and never pushed.
 
 ## The test for every change
 
@@ -49,7 +51,9 @@ A feature fails the test in any of these cases:
 - it needs an account, a server or a third party;
 - it collects anything about the person;
 - it works by bringing them back;
-- it makes the app harder to use on a phone.
+- it makes the app harder to use on a phone;
+- it interrupts the person (a pop-up, a prompt, a banner) or crowds the screen with controls;
+- it adds something to learn without its help, close to where it will be met.
 
 A feature that fails is redesigned until it passes, or left out.
 

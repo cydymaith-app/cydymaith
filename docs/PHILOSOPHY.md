@@ -17,6 +17,26 @@ The site is a companion held in one hand while something plays: the news, the we
 - **Phone first in the code.** The base styles are for a phone, and wider screens add to them (`min-width`), so a large screen never hides a small one's needs.
 - Keyboards, screen readers and wide screens are supported too, but they are never allowed to make the phone harder to use.
 
+## Help where you need it
+
+Part of promise 7 (*People first*) in [TECHNOLEG-DDA.md](TECHNOLEG-DDA.md). A person who meets a control they do not understand should be able to find out right there, in a few seconds, without leaving what they were doing or hunting through a manual.
+
+- **Help sits beside the thing.** Every feature has a short explanation, reached from the feature itself (a question-mark icon that opens it in a small overlay). The same text is also in the help book under About, so there is one source and no copies.
+- **Help is asked for, never pushed.** No tours, pop-ups, tips or "did you know". The icons stay hidden until the person turns them on.
+- **Short and plain.** What it does, where it is, how to use it by touch and by keyboard, and what it saves on the device. In both languages of the pair.
+- **Problems can be reported from the same place.** The same icon that explains a feature can start a report about it, in the person's own mail app. The app sends nothing itself.
+- **Every new feature brings its help.** A feature is not finished until its help text exists. The `app-help` skill checks this.
+
+## An unobtrusive interface
+
+Not a promise of its own: it follows from promises 1 to 5 and is stated under promise 4 (*No nagging*) in [TECHNOLEG-DDA.md](TECHNOLEG-DDA.md). The app is something to glance at while something else holds the attention, so it keeps out of the way.
+
+- **The content comes first.** Words and phrases are the page. Controls are small, quiet and in the same place on every screen (the narrow bar at the side).
+- **Nothing moves, flashes or interrupts.** No banners, badges, pop-ups, autoplay or prompts to install, rate, share or sign up. Motion is limited to the slide between pages, and goes away when the device asks for reduced motion.
+- **Extras stay hidden until wanted.** Edit order, help and reports are switched on by the person and switched off again. The default screen is the plain one.
+- **Few things on screen.** A new control has to earn its place. If a feature can live in Settings or behind a button, it does not go on the page.
+- **Quiet defaults, loud choices.** The app follows the device's light or dark setting and its reduced-motion setting, without being asked, and keeps the choices a person makes.
+
 ## Promises
 
 - **No sign-up and no accounts.** Nobody is ever asked who they are.
