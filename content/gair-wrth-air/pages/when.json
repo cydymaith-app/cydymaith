@@ -27,6 +27,7 @@
     },
     {
       "id": "days",
+      "level": 1,
       "concepts": [
         "monday",
         "tuesday",

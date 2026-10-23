@@ -49,6 +49,16 @@ A concept in `content/gair-wrth-air/packs/cy/pages/weather.json` looks like this
 
 Section `intro` and `box` entries, and row notes, are commentary on that language, written in the pack's `commentary_lang` (English unless stated). Mark text in the pack's own language with `{{double braces}}`.
 
+## Grading
+
+Every group, page and section has a level from 1 (beginner) to 3 (advanced), worked out from what it holds: the median number of Welsh words in an entry. One word for a thing (*gogledd*, north) is level 1; a phrase built round it (*yn y gogledd*, in the north) comes after; a whole sentence (*bydd hi'n heulog yfory*, it will be sunny tomorrow) is level 3. The point is to let tiles and sections be ordered from simple to advanced, or the other way round for more advanced users.
+
+```sh
+python3 build.py --grades      # print every level and how it was worked out; builds nothing
+```
+
+Where the rule is plainly wrong, a skeleton file sets `"level": 1`, `2` or `3` by hand and the report stars it. One is set so far: the days of the week (*Dydd Llun*, Monday, is two written words but one beginner item), in `pages/when.json`. `tests/test_project.py` keeps the grades honest. The grades, like the Welsh, want a fluent speaker's review. How it works, and how to use it for another project, is in the framework's [README](https://github.com/cydymaith-app/cydymaith-framework#grading-your-content) and [docs/FRAMEWORK.md](framework/docs/FRAMEWORK.md#grading-how-demanding-a-tile-or-section-is). Putting tiles in order by level in the app is not done yet; see [docs/TODO.md](docs/TODO.md).
+
 ## Listening aids
 
 The Welsh comes first in each row, because it is the language being heard (`default_pair` in the edition). Four fields help someone who has just heard a word and needs to find it:

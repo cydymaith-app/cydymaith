@@ -1,6 +1,6 @@
 ---
 name: content-tree
-description: Critique and reorganise the knowledge tree of a phrasebook project: groups (trunk branches), pages (tiles), sections (twiglets) and concepts (leaves). Use when asked to review how a group's content is organised, where a word or topic belongs, whether pages or sections should be split, merged, moved or renamed, or how a new group (news, sport, geography) should be shaped.
+description: Critique and reorganise the knowledge tree of a phrasebook project: groups (trunk branches), pages (tiles), sections (twiglets) and concepts (leaves). Use when asked to review how a group's content is organised, where a word or topic belongs, whether pages or sections should be split, merged, moved or renamed, or how a new group (news, sport, geography) should be shaped. Also use it to grade tiles and sections from beginner to advanced, check the grades (`python build.py --grades`), or decide whether a level should be set by hand.
 ---
 
 # Content tree
@@ -59,10 +59,29 @@ Check every proposal against these, and split the plan into content changes and 
 - **Both packs move together.** Every concept id in `pages/` has an entry in `en` and `cy`, and every new title has both languages.
 - **The framework stays language-neutral.** No Welsh and no language names in `framework/`.
 
+## Grading: beginner to advanced
+
+Every group, page and section has a level from 1 (beginner) to 3 (advanced), so tiles and sections can be ordered simple first or advanced first. The level is **worked out from the content, not decided by feel**; the rule is `framework/phrasebook/grading.py` and the reference is *Grading* in `framework/docs/FRAMEWORK.md`. Use it when new content is added, when content is moved between sections or pages, and when asked to grade or review the grades.
+
+**What the rule does.** The level follows the median number of words per entry in the language being heard (Welsh here). Under 1.5 words is level 1 (words: *gogledd*, north), under 2.5 is level 2 (short phrases: *Yng Nghymru*, in Wales), and more is level 3 (*Yn y gogledd*, in the north; sentences such as *Bydd hi'n heulog yfory*). A group is graded from every entry on the pages it lists, a page from every entry on it, a section from its own, so a page's level is not the average of its sections.
+
+**How to grade the current content.**
+
+1. Run `python build.py --grades` from the repository root. It prints every group, page and section with its level, median and entry count, builds nothing, and covers what the release publishes (add `--channel development` for held-back sections).
+2. Read it as a learner would: single words should come before the phrases built on them, and sentence patterns last. The user's own example: *north = gogledd* is simple; *from the north-east* is more complex and follows for a beginner.
+3. Only where the rule is **plainly wrong** set `"level": 1`, `2` or `3` on that group (`structure.json`), page or section (`pages/<slug>.json`). The usual cause is a closed set of beginner vocabulary written as several words, such as the days (*Dydd Llun* is one item to learn, set to 1 in `pages/when.json`). A long single word, a colloquial form or a note about mutation is not by itself a reason to override. If many sections need correcting, the bounds are wrong: change `grading.bounds` in the edition instead.
+4. Say why in `tests/test_project.py` (`GradingTests`), which also keeps the number of hand-set levels small (five at most) and checks the user's examples: points below directions and landscape, sentence patterns level 3, single-word pages level 1.
+5. The grades are a judgement about difficulty: add a line to `docs/REVIEW.md` so a fluent speaker reviews them with the Welsh.
+
+**What it does not do yet.** The pages do not carry the levels and there is no setting to order by them (see `docs/TODO.md`, "Grade tiles and sections"). When that is built: the default stays *As written* (the listen-first order); a person's own saved tile order wins over the setting; words for things stay above phrases within a page; equal levels keep the written order. Do not reorder `structure.json` or the pages to show a grade: the written order is the listen-first order.
+
+**Keep the framework neutral.** No Welsh, and no language names, in `framework/`; the counting is by white space, which does not suit a language written without spaces (set `grading.bounds` or levels by hand there).
+
 ## Rules when the plan is approved
 
 - New or changed Welsh (titles included) is a draft: add a line to `docs/REVIEW.md`.
 - Keep every leaf. A reorganisation moves, merges or splits; it never silently drops a word. Count leaves before and after.
 - Check the build: `python build.py dist`, then `python -m unittest discover -s tests -v`, then rerun `tree_report.py` and confirm the warnings it raised are gone.
+- If content moved or was added, run `python build.py --grades` and check the levels of what changed (see *Grading*).
 - Tick `docs/TODO.md` in the commit that completes an item.
 - British spelling.

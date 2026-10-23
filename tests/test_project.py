@@ -12,7 +12,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "framework"))
 
 import phrasebook  # noqa: E402
-from phrasebook import content, icons  # noqa: E402
+from phrasebook import content, grading, icons  # noqa: E402
+from phrasebook.channels import select  # noqa: E402
 
 PROJECT = ROOT / "content" / "gair-wrth-air"
 
@@ -103,3 +104,52 @@ class ProjectNavigationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GradingTests(unittest.TestCase):
+    """How demanding each tile and section is, from beginner to advanced, worked out from the size of a typical Welsh entry.
+
+    The rule is in framework/phrasebook/grading.py; `python3 build.py --grades` prints the grades. A level set by hand
+    (`"level"` in a skeleton file) is for the few places where the rule is plainly wrong, and each is explained below.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        raw = select(content.read(PROJECT))
+        _, edition = content.pick_edition(raw)
+        graded = grading.grade(raw, edition)
+        cls.groups = {g["id"]: g for g in graded["groups"]}
+        cls.pages = {p["id"]: p for g in graded["groups"] for p in g["pages"]}
+        cls.sections = {(p["id"], s["id"]): s for p in cls.pages.values() for s in p["sections"]}
+
+    def test_the_words_counted_are_the_welsh_the_viewer_hears(self):
+        raw = select(content.read(PROJECT))
+        _, edition = content.pick_edition(raw)
+        self.assertEqual(grading.settings(edition)[0], "cy")
+
+    def test_everything_published_has_a_level_from_one_to_three(self):
+        for node in [*self.groups.values(), *self.pages.values(), *self.sections.values()]:
+            self.assertIn(node["level"], (1, 2, 3), node["id"])
+
+    def test_one_word_for_a_thing_is_simpler_than_the_same_thing_in_a_phrase(self):
+        """north = gogledd comes first; in the north, on the coast, in the valleys follow."""
+        points = self.sections[("where", "points")]["level"]
+        self.assertEqual(points, 1)
+        self.assertGreater(self.sections[("where", "directions")]["level"], points)
+        self.assertGreater(self.sections[("where", "landscape")]["level"], points)
+
+    def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
+        self.assertEqual(self.pages["patterns"]["level"], 3)
+        self.assertEqual(self.pages["sky"]["level"], 1)
+        self.assertEqual(self.pages["place-name-elements"]["level"], 1)
+        self.assertEqual(self.sections[("patterns", "it-will-be")]["level"], 3)
+        self.assertLess(self.pages["sky"]["level"], self.pages["patterns"]["level"])
+
+    def test_the_days_are_set_by_hand_because_two_written_words_are_one_beginner_item(self):
+        days = self.sections[("when", "days")]
+        self.assertEqual((days["level"], days["computed"], days["by_hand"]), (1, 2, True))
+
+    def test_the_rule_does_the_work_and_hand_set_levels_stay_few(self):
+        by_hand = [k for k, s in self.sections.items() if s["by_hand"]] + [k for k, p in self.pages.items() if p["by_hand"]]
+        by_hand += [k for k, g in self.groups.items() if g["by_hand"]]
+        self.assertLessEqual(len(by_hand), 5, f"each one needs a reason: {by_hand}")
