@@ -220,11 +220,23 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(opened, ["What it is for", "Technoleg Dda"])
         self.assertEqual(english.count('<details class="fold"'), 8, "the held-back section is not in the release")
 
-    def test_the_settings_page_folds_its_cards_with_only_appearance_open(self):
+    def test_the_settings_page_groups_its_choices_in_folds_with_only_accessibility_and_appearance_open(self):
         page = self.built["settings.html"]
         self.assertEqual(len(re.findall(r'<details class="fold card"[^>]* open>', page)), 1)
-        self.assertIn('<details class="fold card" aria-labelledby="h-appearance" open>', page)
-        self.assertGreaterEqual(page.count('<details class="fold card"'), 5)
+        self.assertIn('<details class="fold card" aria-labelledby="h-look" open>', page)
+        self.assertEqual(
+            re.findall(r'<details class="fold card"[^>]*aria-labelledby="(h-[a-z-]+)"', page),
+            ["h-look", "h-order-group", "h-var-cy"],
+            "accessibility and appearance; order and tile layout; the Welsh regional forms",
+        )
+
+    def test_the_settings_groups_are_named_in_welsh_and_english(self):
+        page = self.built["settings.html"]
+        for words in (
+            "Hygyrchedd a golwg", "Accessibility and appearance", "Modd gweld", "View mode",
+            "Trefn a chynllun y teils", "Order and tile layout", "Cynllun y teils", "Tile layout",
+        ):
+            self.assertIn(words, page)
 
     def test_where_next_waits_for_the_links_to_be_checked(self):
         last = self.edition["about_page"]["en"]["sections"][-1]
