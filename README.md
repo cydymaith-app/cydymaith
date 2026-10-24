@@ -1,14 +1,16 @@
 # Cydymaith am iaith
 
-**Live site: <https://cydymaith-app.github.io/cydymaith/>**
+A multilingual phrasebook as a small static site: a navigation tree, one page per topic, two languages side by side. The first edition is English and Welsh. *Cydymaith am iaith* means "a companion for language".
 
-A multilingual phrasebook as a small static site: a navigation tree, one page per topic, two languages side by side. The first edition is English and Welsh, starting with watching a weather forecast. *Cydymaith am iaith* means "a companion for language".
+A companion to keep open while watching the news, the weather, sport or anything else.
 
-A companion to keep open while watching the news, the weather, sport or anything else. No sign-up, no accounts, no ads, no tracking, no payments, no AI calls, no addictive features. See [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md), and the founding principle, [Technoleg Dda](docs/TECHNOLEG-DDA.md).
+No sign-up, no accounts, no ads, no tracking, no payments, no subscription, no nagging, no pressure sales, no AI, no addictive features. See [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md), and the founding principle, [Technoleg Dda](docs/TECHNOLEG-DDA.md).
 
-> **Status: the Welsh has not been reviewed by a fluent speaker.** Treat it as a draft until [docs/REVIEW.md](docs/REVIEW.md) is complete. Corrections are welcome through the "Welsh correction" issue template.
+> **Status: in early development, most features have not been added yet, and not all the translations have been verified.** Treat it as a draft until [docs/REVIEW.md](docs/REVIEW.md) is complete. Corrections are welcome through the "Welsh correction" issue template.
 
-## Quick start
+Users can find the **live site here: <https://cydymaith-app.github.io/cydymaith/>**
+
+## Quick start (for developers)
 
 Requires Python 3.12 or later (CI uses 3.12) and git. There are no dependencies. Node 20 or later is optional and only runs the tests for the small browser script. The generator is the [framework](https://github.com/cydymaith-app/cydymaith-framework), kept here as a git submodule, so clone with it:
 
