@@ -3,8 +3,45 @@
   "lede": "How hot or cold it is, and how humid.",
   "source": "draft",
   "sections": {
-    "temperature": {
-      "title": "Temperature and humidity",
+    "hot-cold": {
+      "title": "Hot and cold",
+      "concepts": {
+        "hot": {
+          "text": "Hot"
+        },
+        "warm": {
+          "text": "Warm"
+        },
+        "mild": {
+          "text": "Mild"
+        },
+        "chilly-fresh": {
+          "text": "Chilly, fresh"
+        },
+        "cold": {
+          "text": "Cold"
+        }
+      }
+    },
+    "humidity": {
+      "title": "How humid",
+      "concepts": {
+        "dry": {
+          "text": "Dry"
+        },
+        "humid": {
+          "text": "Humid, damp"
+        },
+        "muggy": {
+          "text": "Muggy, close"
+        },
+        "humidity": {
+          "text": "Humidity"
+        }
+      }
+    },
+    "limits": {
+      "title": "Degrees and limits",
       "concepts": {
         "temperature": {
           "text": "Temperature"
@@ -23,32 +60,6 @@
         },
         "at-its-lowest": {
           "text": "At its lowest"
-        },
-        "humid": {
-          "text": "Humid"
-        },
-        "humidity": {
-          "text": "Humidity"
-        }
-      }
-    },
-    "hot-cold": {
-      "title": "Hot and cold",
-      "concepts": {
-        "hot": {
-          "text": "Hot"
-        },
-        "warm": {
-          "text": "Warm"
-        },
-        "mild": {
-          "text": "Mild"
-        },
-        "chilly-fresh": {
-          "text": "Chilly, fresh"
-        },
-        "cold": {
-          "text": "Cold"
         }
       }
     }

@@ -2,37 +2,6 @@
   "title": "Tymheredd",
   "source": "draft",
   "sections": {
-    "temperature": {
-      "title": "Tymheredd a lleithder",
-      "concepts": {
-        "temperature": {
-          "text": "Tymheredd"
-        },
-        "degrees-celsius": {
-          "text": "Graddau Celsius",
-          "note": "after a number the noun stays singular: {{deg gradd Celsius}}, ten degrees"
-        },
-        "highest-maximum": {
-          "text": "Uchaf"
-        },
-        "lowest-minimum": {
-          "text": "Isaf"
-        },
-        "at-its-highest": {
-          "text": "Ar ei uchaf"
-        },
-        "at-its-lowest": {
-          "text": "Ar ei isaf"
-        },
-        "humid": {
-          "text": "Llaith"
-        },
-        "humidity": {
-          "text": "Lleithder"
-        }
-      },
-      "order": "the measures and limits, then humidity"
-    },
     "hot-cold": {
       "title": "Poeth ac oer",
       "concepts": {
@@ -49,7 +18,10 @@
           ]
         },
         "mild": {
-          "text": "Mwyn"
+          "text": "Mwyn",
+          "also": [
+            "fwyn"
+          ]
         },
         "chilly-fresh": {
           "text": "Ffres"
@@ -59,6 +31,55 @@
         }
       },
       "order": "hottest to coldest"
+    },
+    "humidity": {
+      "title": "Pa mor llaith",
+      "concepts": {
+        "dry": {
+          "text": "Sych"
+        },
+        "humid": {
+          "text": "Llaith",
+          "also": [
+            "laith"
+          ],
+          "note": "damp or humid; {{mwll}} is muggy, close"
+        },
+        "muggy": {
+          "text": "Mwll"
+        },
+        "humidity": {
+          "text": "Lleithder"
+        }
+      },
+      "order": "dry to muggy, then the noun"
+    },
+    "limits": {
+      "title": "Graddau a therfynau",
+      "concepts": {
+        "temperature": {
+          "text": "Tymheredd"
+        },
+        "degrees-celsius": {
+          "text": "Graddau Celsius",
+          "note": "after a number the noun stays singular: {{deg gradd Celsius}}, ten degrees"
+        },
+        "highest-maximum": {
+          "text": "Uchaf",
+          "note": "{{uchaf}} and {{isaf}} also mean upper and lower in place names"
+        },
+        "lowest-minimum": {
+          "text": "Isaf"
+        },
+        "at-its-highest": {
+          "text": "Ar ei uchaf",
+          "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
+        },
+        "at-its-lowest": {
+          "text": "Ar ei isaf"
+        }
+      },
+      "order": "the measure, then the limits, highest before lowest"
     }
   }
 }
