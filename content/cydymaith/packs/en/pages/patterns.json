@@ -132,6 +132,18 @@
         },
         "areas": {
           "text": "Areas"
+        },
+        "on-the-whole": {
+          "text": "On the whole"
+        },
+        "most-of": {
+          "text": "Most of"
+        },
+        "mainly": {
+          "text": "Mainly"
+        },
+        "localities": {
+          "text": "Places"
         }
       }
     },
@@ -144,11 +156,8 @@
         "dry-spells": {
           "text": "Dry spells"
         },
-        "up-to": {
-          "text": "Up to"
-        },
-        "between-and": {
-          "text": "Between … and …"
+        "fine-spells": {
+          "text": "Fine spells"
         },
         "a-little": {
           "text": "A little"
@@ -156,8 +165,14 @@
         "quite": {
           "text": "Quite, enough"
         },
-        "about": {
-          "text": "About, roughly"
+        "only": {
+          "text": "Only"
+        },
+        "a-lot-of": {
+          "text": "A lot of"
+        },
+        "more": {
+          "text": "More"
         },
         "some": {
           "text": "Some"
@@ -170,9 +185,6 @@
     "linking": {
       "title": "Linking words",
       "concepts": {
-        "on-the-whole": {
-          "text": "On the whole"
-        },
         "then": {
           "text": "Then"
         },
@@ -181,75 +193,38 @@
         },
         "also": {
           "text": "Also"
+        },
+        "in-addition": {
+          "text": "In addition to"
+        },
+        "including": {
+          "text": "Including"
+        },
+        "namely": {
+          "text": "Namely"
+        },
+        "so": {
+          "text": "So, therefore"
+        },
+        "like-as": {
+          "text": "Like, as"
+        },
+        "once-again": {
+          "text": "Once again"
+        },
+        "with": {
+          "text": "With"
         }
       }
     },
     "time-words": {
       "title": "Time words",
       "concepts": {
-        "during-the-day": {
-          "text": "During the day"
-        },
-        "by": {
-          "text": "By"
-        },
-        "until": {
-          "text": "Until"
-        },
         "later-on": {
           "text": "Later on"
         },
-        "tomorrow-morning": {
-          "text": "Tomorrow morning"
-        },
-        "tomorrow-night": {
-          "text": "Tomorrow night"
-        },
         "middle": {
           "text": "Middle"
-        },
-        "day": {
-          "text": "Day (a whole day)"
-        }
-      }
-    },
-    "moving": {
-      "title": "Weather on the move",
-      "concepts": {
-        "to-clear": {
-          "text": "To clear"
-        },
-        "to-spread": {
-          "text": "To spread"
-        },
-        "to-move": {
-          "text": "To move"
-        },
-        "to-arrive": {
-          "text": "To arrive"
-        },
-        "to-recede": {
-          "text": "To clear away, recede"
-        },
-        "to-brighten": {
-          "text": "To brighten up"
-        },
-        "eastwards": {
-          "text": "Eastwards"
-        },
-        "across": {
-          "text": "Across"
-        }
-      }
-    },
-    "pressure": {
-      "title": "Pressure",
-      "concepts": {
-        "high-pressure": {
-          "text": "High pressure"
-        },
-        "low-pressure": {
-          "text": "Low pressure"
         }
       }
     },
@@ -270,9 +245,6 @@
         "as-for": {
           "text": "As for"
         },
-        "in-addition": {
-          "text": "In addition to"
-        },
         "thats-when": {
           "text": "That's when"
         },
@@ -281,38 +253,6 @@
         },
         "that-one": {
           "text": "That one"
-        }
-      }
-    },
-    "verbs": {
-      "title": "Verbs",
-      "concepts": {
-        "to-cloud-over": {
-          "text": "To cloud over"
-        },
-        "to-develop": {
-          "text": "To develop"
-        },
-        "to-fall": {
-          "text": "To fall"
-        },
-        "to-strengthen": {
-          "text": "To strengthen"
-        },
-        "to-blow": {
-          "text": "To blow"
-        },
-        "to-change": {
-          "text": "To change"
-        },
-        "to-vary": {
-          "text": "To vary"
-        },
-        "to-affect": {
-          "text": "To affect"
-        },
-        "to-come-into-force": {
-          "text": "To come into force"
         }
       }
     },
@@ -327,6 +267,20 @@
         },
         "than": {
           "text": "Than"
+        }
+      }
+    },
+    "around-figure": {
+      "title": "Around a figure",
+      "concepts": {
+        "about": {
+          "text": "About, roughly"
+        },
+        "up-to": {
+          "text": "Up to"
+        },
+        "between-and": {
+          "text": "Between … and …"
         }
       }
     }

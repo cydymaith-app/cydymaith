@@ -1,20 +1,24 @@
 {
   "icon": "windy",
-  "related": ["where#points"],
+  "related": [
+    "where#points"
+  ],
   "sections": [
     {
       "id": "wind",
       "concepts": [
         "wind",
         "windy",
-        "wind-speed",
-        "miles-per-hour",
+        "to-blow",
         "calm",
         "breeze",
         "light-breeze",
         "moderate",
         "strong-winds",
-        "gusts"
+        "at-its-strongest",
+        "gusts",
+        "wind-speed",
+        "miles-per-hour"
       ]
     },
     {

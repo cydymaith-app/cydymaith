@@ -17,12 +17,8 @@
             "wyntog"
           ]
         },
-        "wind-speed": {
-          "text": "Cyflymder y gwynt"
-        },
-        "miles-per-hour": {
-          "text": "Milltir yr awr",
-          "note": "abbreviated {{mya}}"
+        "to-blow": {
+          "text": "Chwythu"
         },
         "calm": {
           "text": "Tawel"
@@ -40,17 +36,35 @@
           ]
         },
         "strong-winds": {
-          "text": "Gwyntoedd cryfion"
+          "text": "Gwyntoedd cryfion",
+          "also": [
+            "gwynt cryf"
+          ]
+        },
+        "at-its-strongest": {
+          "text": "Ar ei gryfaf",
+          "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}",
+          "also": [
+            "gryfa'"
+          ]
         },
         "gusts": {
           "text": "Hyrddiau",
           "note": "{{hyrddiau o wynt}}: gusts of wind",
           "also": [
-            "hyrddiadau"
+            "hyrddiadau",
+            "hyrddio"
           ]
+        },
+        "wind-speed": {
+          "text": "Cyflymder y gwynt"
+        },
+        "miles-per-hour": {
+          "text": "Milltir yr awr",
+          "note": "abbreviated {{mya}}"
         }
       },
-      "order": "the wind and its speed, then calm to strong"
+      "order": "the wind and blowing, then calm to strongest, then gusts and speed"
     },
     "wind-direction": {
       "title": "Cyfeiriad y gwynt",

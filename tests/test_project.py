@@ -136,6 +136,12 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertEqual(self.tiles("wind.html"), ["where.html#points"])
         self.assertEqual(self.tiles("where.html"), ["patterns.html"])
 
+    def test_the_forecast_opens_time_and_date_as_a_related_page(self):
+        self.assertEqual(self.tiles("warnings.html"), ["when.html"])
+        row = self.pages["warnings.html"]
+        row = row[row.index('<section class="related"') :]
+        self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', row)
+
     def test_every_section_a_tile_lands_on_is_on_the_page_it_opens(self):
         for name, page in self.pages.items():
             for href in re.findall(r'href="([a-z0-9-]+\.html)#([A-Za-z0-9._-]+)" data-related', page):

@@ -1,0 +1,63 @@
+{
+  "icon": "map",
+  "sections": [
+    {
+      "id": "moving",
+      "status": "development",
+      "concepts": [
+        "to-hit",
+        "to-arrive",
+        "to-spread",
+        "to-extend",
+        "to-move",
+        "to-clear",
+        "to-recede",
+        "to-leave"
+      ]
+    },
+    {
+      "id": "which-way",
+      "status": "development",
+      "concepts": [
+        "eastwards",
+        "towards-the",
+        "from-the-direction-of",
+        "across",
+        "over-towards",
+        "on-the-way"
+      ]
+    },
+    {
+      "id": "changing",
+      "status": "development",
+      "concepts": [
+        "to-change",
+        "to-turn",
+        "to-develop",
+        "to-cloud-over",
+        "to-strengthen",
+        "to-ease",
+        "to-calm",
+        "to-fall",
+        "to-brighten",
+        "to-settle"
+      ]
+    },
+    {
+      "id": "other-verbs",
+      "status": "development",
+      "concepts": [
+        "to-expect",
+        "to-continue",
+        "to-happen",
+        "to-vary",
+        "to-coincide",
+        "to-see",
+        "to-hear",
+        "to-look",
+        "to-dominate",
+        "to-affect"
+      ]
+    }
+  ]
+}

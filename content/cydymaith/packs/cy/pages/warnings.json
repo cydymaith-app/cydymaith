@@ -22,9 +22,25 @@
         },
         "possibility": {
           "text": "Posibilrwydd"
+        },
+        "rough-weather": {
+          "text": "Tywydd garw"
+        },
+        "to-warn": {
+          "text": "Rhybuddio"
+        },
+        "possibly": {
+          "text": "O bosib",
+          "also": [
+            "o bosibl",
+            "yn bosib"
+          ]
+        },
+        "likely": {
+          "text": "Yn debygol"
         }
       },
-      "order": "the weather, the forecast, the Met Office, a warning, then the chance of one"
+      "order": "the weather, the forecast, the Met Office, a warning, then how likely and how rough"
     },
     "levels": {
       "title": "Lefelau rhybudd",
@@ -41,16 +57,26 @@
         },
         "in-force": {
           "text": "Mewn grym"
+        },
+        "to-issue": {
+          "text": "Cyhoeddi"
+        },
+        "to-come-into-force": {
+          "text": "Dod i rym"
         }
       },
-      "order": "mildest to most severe"
+      "order": "mildest to most severe, then issuing and coming into force"
     },
     "warnings": {
       "title": "Rhybuddion am",
       "concepts": {
         "warning-for-wind": {
           "text": "Rhybudd am wynt",
-          "note": "{{am}} softens {{gwynt}} to {{wynt}}"
+          "note": "{{am}} softens {{gwynt}} to {{wynt}}",
+          "also": [
+            "rhybudd melyn am wynt",
+            "rhybudd melyn o wynt"
+          ]
         },
         "warning-for-rain": {
           "text": "Rhybudd am law",
@@ -67,6 +93,35 @@
         }
       },
       "order": "wind, rain, snow, ice, then the flooding they bring"
+    },
+    "pressure": {
+      "title": "Gwasgedd",
+      "concepts": {
+        "pressure": {
+          "text": "Gwasgedd",
+          "also": [
+            "wasgedd"
+          ]
+        },
+        "high-pressure": {
+          "text": "Gwasgedd uchel"
+        },
+        "ridge-of-high-pressure": {
+          "text": "Cefnlen o wasgedd uchel",
+          "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
+        },
+        "low-pressure": {
+          "text": "Gwasgedd isel"
+        },
+        "area-of-low-pressure": {
+          "text": "Ardal o wasgedd isel",
+          "note": "{{dwys}} means intense, deep",
+          "also": [
+            "ardal o wasgedd isel dwys"
+          ]
+        }
+      },
+      "order": "the word, then high, then low"
     }
   }
 }

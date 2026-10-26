@@ -1,11 +1,14 @@
 {
-  "title": "When",
-  "lede": "Days and times of day, and the time words a forecast uses.",
+  "title": "Time and date",
+  "lede": "Days, times of day and the time words a forecast uses.",
   "source": "draft",
   "sections": {
     "ahead": {
       "title": "Days ahead",
       "concepts": {
+        "next-few-hours": {
+          "text": "The next few hours"
+        },
         "today": {
           "text": "Today"
         },
@@ -15,17 +18,29 @@
         "tomorrow": {
           "text": "Tomorrow"
         },
+        "tomorrow-morning": {
+          "text": "Tomorrow morning"
+        },
+        "tomorrow-night": {
+          "text": "Tomorrow night"
+        },
         "later": {
           "text": "Later"
+        },
+        "next-few-days": {
+          "text": "The next few days"
         },
         "this-week": {
           "text": "This week"
         },
-        "next-week": {
-          "text": "Next week"
+        "rest-of-the-week": {
+          "text": "The rest of the week"
         },
         "the-weekend": {
           "text": "The weekend"
+        },
+        "next-week": {
+          "text": "Next week"
         }
       }
     },
@@ -47,11 +62,17 @@
         "midnight": {
           "text": "Midnight"
         },
+        "small-hours": {
+          "text": "The small hours"
+        },
         "overnight": {
           "text": "Overnight"
         },
         "all-day": {
           "text": "All day"
+        },
+        "day": {
+          "text": "Day (a whole day)"
         }
       }
     },
@@ -92,6 +113,38 @@
         },
         "first-of-the-season": {
           "text": "The first of the season"
+        }
+      }
+    },
+    "before-after": {
+      "title": "Before and after",
+      "concepts": {
+        "during": {
+          "text": "During"
+        },
+        "over": {
+          "text": "Over"
+        },
+        "for-a-while": {
+          "text": "For a while"
+        },
+        "before": {
+          "text": "Before"
+        },
+        "at-towards": {
+          "text": "Towards, by"
+        },
+        "by": {
+          "text": "By"
+        },
+        "until": {
+          "text": "Until"
+        },
+        "after": {
+          "text": "After"
+        },
+        "onwards": {
+          "text": "From … onwards"
         }
       }
     }

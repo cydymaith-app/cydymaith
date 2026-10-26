@@ -1,5 +1,8 @@
 {
   "icon": "warning--alt",
+  "related": [
+    "when"
+  ],
   "sections": [
     {
       "id": "forecast",
@@ -8,7 +11,22 @@
         "weather-forecast",
         "the-met-office",
         "weather-warning",
-        "possibility"
+        "possibility",
+        "rough-weather",
+        "to-warn",
+        "possibly",
+        "likely"
+      ]
+    },
+    {
+      "id": "pressure",
+      "status": "development",
+      "concepts": [
+        "pressure",
+        "high-pressure",
+        "ridge-of-high-pressure",
+        "low-pressure",
+        "area-of-low-pressure"
       ]
     },
     {
@@ -17,6 +35,8 @@
         "yellow-warning",
         "amber-warning",
         "red-warning",
+        "to-issue",
+        "to-come-into-force",
         "in-force"
       ]
     },

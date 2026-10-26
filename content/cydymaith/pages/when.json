@@ -4,13 +4,18 @@
     {
       "id": "ahead",
       "concepts": [
+        "next-few-hours",
         "today",
         "tonight",
         "tomorrow",
+        "tomorrow-morning",
+        "tomorrow-night",
         "later",
+        "next-few-days",
         "this-week",
-        "next-week",
-        "the-weekend"
+        "rest-of-the-week",
+        "the-weekend",
+        "next-week"
       ]
     },
     {
@@ -21,8 +26,25 @@
         "evening",
         "night",
         "midnight",
+        "small-hours",
         "overnight",
-        "all-day"
+        "all-day",
+        "day"
+      ]
+    },
+    {
+      "id": "before-after",
+      "status": "development",
+      "concepts": [
+        "during",
+        "over",
+        "for-a-while",
+        "before",
+        "at-towards",
+        "by",
+        "until",
+        "after",
+        "onwards"
       ]
     },
     {

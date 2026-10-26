@@ -1,0 +1,159 @@
+{
+  "title": "Newid a symud",
+  "source": "draft",
+  "sections": {
+    "moving": {
+      "title": "Y tywydd yn symud",
+      "concepts": {
+        "to-hit": {
+          "text": "Taro",
+          "also": [
+            "yn taro"
+          ]
+        },
+        "to-arrive": {
+          "text": "Cyrraedd"
+        },
+        "to-spread": {
+          "text": "Lledu",
+          "also": [
+            "ymledu"
+          ]
+        },
+        "to-extend": {
+          "text": "Ymestyn"
+        },
+        "to-move": {
+          "text": "Symud"
+        },
+        "to-clear": {
+          "text": "Clirio"
+        },
+        "to-recede": {
+          "text": "Cilio"
+        },
+        "to-leave": {
+          "text": "Gadael",
+          "also": [
+            "i adael"
+          ]
+        }
+      },
+      "order": "arriving, spreading, then leaving"
+    },
+    "which-way": {
+      "title": "I ba gyfeiriad",
+      "concepts": {
+        "eastwards": {
+          "text": "Tua'r dwyrain"
+        },
+        "towards-the": {
+          "text": "I gyfeiriad y …"
+        },
+        "from-the-direction-of": {
+          "text": "O gyfeiriad y …"
+        },
+        "across": {
+          "text": "Ar draws"
+        },
+        "over-towards": {
+          "text": "Draw tuag at"
+        },
+        "on-the-way": {
+          "text": "Ar y ffordd",
+          "note": "could also be on the road; to be confirmed"
+        }
+      },
+      "order": "towards, from, across, then over to"
+    },
+    "changing": {
+      "title": "Y tywydd yn newid",
+      "concepts": {
+        "to-change": {
+          "text": "Newid"
+        },
+        "to-turn": {
+          "text": "Troi",
+          "also": [
+            "troi'n"
+          ]
+        },
+        "to-develop": {
+          "text": "Datblygu"
+        },
+        "to-cloud-over": {
+          "text": "Cymylu"
+        },
+        "to-strengthen": {
+          "text": "Cryfhau"
+        },
+        "to-ease": {
+          "text": "Gostegu"
+        },
+        "to-calm": {
+          "text": "Tawelu"
+        },
+        "to-fall": {
+          "text": "Syrthio",
+          "also": [
+            "cwympo"
+          ]
+        },
+        "to-brighten": {
+          "text": "Brafio"
+        },
+        "to-settle": {
+          "text": "Sefydlogi"
+        }
+      },
+      "order": "changing, stronger, weaker, then the sky"
+    },
+    "other-verbs": {
+      "title": "Berfau eraill",
+      "concepts": {
+        "to-expect": {
+          "text": "Disgwyl"
+        },
+        "to-continue": {
+          "text": "Parhau"
+        },
+        "to-happen": {
+          "text": "Digwydd"
+        },
+        "to-vary": {
+          "text": "Amrywio"
+        },
+        "to-coincide": {
+          "text": "Cyd-fynd",
+          "also": [
+            "cyd-fynd hefo"
+          ]
+        },
+        "to-see": {
+          "text": "Gweld",
+          "also": [
+            "weld",
+            "welon"
+          ]
+        },
+        "to-hear": {
+          "text": "Clywed"
+        },
+        "to-look": {
+          "text": "Edrych"
+        },
+        "to-dominate": {
+          "text": "Rheoli",
+          "note": "said of high pressure"
+        },
+        "to-affect": {
+          "text": "Effeithio",
+          "also": [
+            "yn cael ei effeithio"
+          ]
+        }
+      },
+      "order": "expecting and happening, then seeing and affecting"
+    }
+  }
+}

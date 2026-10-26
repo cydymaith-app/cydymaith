@@ -1,6 +1,8 @@
 {
   "icon": "chat",
-  "related": ["where#landscape"],
+  "related": [
+    "where#landscape"
+  ],
   "sections": [
     {
       "id": "it-is",
@@ -62,8 +64,12 @@
     {
       "id": "extent",
       "concepts": [
+        "on-the-whole",
+        "most-of",
+        "mainly",
         "in-places",
-        "areas"
+        "areas",
+        "localities"
       ]
     },
     {
@@ -72,59 +78,47 @@
       "concepts": [
         "the-odd-shower",
         "dry-spells",
-        "up-to",
-        "between-and",
+        "fine-spells",
         "a-little",
         "quite",
-        "about",
+        "only",
+        "a-lot-of",
+        "more",
         "some",
         "other"
+      ]
+    },
+    {
+      "id": "around-figure",
+      "status": "development",
+      "concepts": [
+        "about",
+        "up-to",
+        "between-and"
       ]
     },
     {
       "id": "linking",
       "status": "development",
       "concepts": [
-        "on-the-whole",
         "then",
         "but",
-        "also"
+        "also",
+        "in-addition",
+        "including",
+        "namely",
+        "so",
+        "like-as",
+        "once-again",
+        "with"
       ]
     },
     {
       "id": "time-words",
       "status": "development",
       "concepts": [
-        "during-the-day",
-        "by",
-        "until",
         "later-on",
-        "tomorrow-morning",
-        "tomorrow-night",
-        "middle",
-        "day"
-      ]
-    },
-    {
-      "id": "moving",
-      "status": "development",
-      "concepts": [
-        "to-clear",
-        "to-spread",
-        "to-move",
-        "to-arrive",
-        "to-recede",
-        "to-brighten",
-        "eastwards",
-        "across"
-      ]
-    },
-    {
-      "id": "pressure",
-      "status": "development",
-      "concepts": [
-        "high-pressure",
-        "low-pressure"
+        "middle"
       ]
     },
     {
@@ -140,25 +134,9 @@
       "status": "development",
       "concepts": [
         "as-for",
-        "in-addition",
         "thats-when",
         "to-mean",
         "that-one"
-      ]
-    },
-    {
-      "id": "verbs",
-      "status": "development",
-      "concepts": [
-        "to-cloud-over",
-        "to-develop",
-        "to-fall",
-        "to-strengthen",
-        "to-blow",
-        "to-change",
-        "to-vary",
-        "to-affect",
-        "to-come-into-force"
       ]
     },
     {

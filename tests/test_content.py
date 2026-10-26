@@ -164,15 +164,38 @@ class BuildTests(unittest.TestCase):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         self.assertEqual(weather["pages"], ["warnings", "sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
 
-    def test_when_and_where_are_one_shared_group_that_the_weather_group_also_links_to(self):
+    def test_where_is_one_shared_group_that_the_weather_group_also_links_to_and_time_and_date_is_a_related_page_of_the_forecast(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         shared = next(g for g in self.site.groups if g["id"] == "time-and-place")
         self.assertEqual(shared["pages"], ["when", "where"])
-        self.assertEqual(weather["links"], ["when", "where"])
+        self.assertEqual(weather["links"], ["where"])
         tiles = self.built["group-weather-forecast.html"]
-        self.assertLess(tiles.index('href="patterns.html"'), tiles.index('href="when.html"'))
+        self.assertNotIn('href="when.html"', tiles, "Time and date is reached from the forecast as a related page, not a group tile")
         self.assertIn('href="where.html"', tiles)
         self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
+        self.assertIn('href="when.html"', self.built["group-time-and-place.html"])
+        self.assertIn("Amser a dyddiad", self.built["when.html"])
+        self.assertIn("Time and date", self.built["when.html"])
+
+    def test_dry_is_written_the_same_on_the_sky_and_the_temperature_pages(self):
+        for lang in ("cy", "en"):
+            texts = []
+            for slug, section in (("sky", "sun-cloud"), ("temperature", "humidity")):
+                pack = json.loads((PROJECT / "packs" / lang / "pages" / f"{slug}.json").read_text(encoding="utf-8"))
+                texts.append(pack["sections"][section]["concepts"]["dry"])
+            self.assertEqual(texts[0], texts[1], lang)
+
+    def test_pressure_is_the_second_section_of_the_forecast_and_change_and_movement_is_a_held_page(self):
+        raw = json.loads((PROJECT / "pages" / "warnings.json").read_text(encoding="utf-8"))
+        self.assertEqual([s["id"] for s in raw["sections"]], ["forecast", "pressure", "levels", "warnings"])
+        self.assertEqual(raw["related"], ["when"])
+        self.assertEqual(next(s for s in raw["sections"] if s["id"] == "pressure").get("status"), "development")
+        change = json.loads((PROJECT / "pages" / "change.json").read_text(encoding="utf-8"))
+        self.assertTrue(all(s.get("status") == "development" for s in change["sections"]), "the page stays held until reviewed")
+        self.assertNotIn("change.html", self.built)
+        patterns = json.loads((PROJECT / "pages" / "patterns.json").read_text(encoding="utf-8"))
+        ids = [s["id"] for s in patterns["sections"]]
+        self.assertFalse({"moving", "verbs", "pressure"} & set(ids), "these moved off How it's said")
 
     def test_the_settings_page_offers_the_three_accessibility_levels_each_with_its_own_schemes_in_welsh_and_english(self):
         page = self.built["settings.html"]

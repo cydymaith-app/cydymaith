@@ -1,0 +1,131 @@
+{
+  "title": "Change and movement",
+  "lede": "Weather that arrives, spreads, clears and changes, and the verbs a forecaster uses for it.",
+  "source": "draft",
+  "sections": {
+    "moving": {
+      "title": "Weather on the move",
+      "concepts": {
+        "to-hit": {
+          "text": "To hit, to strike"
+        },
+        "to-arrive": {
+          "text": "To arrive"
+        },
+        "to-spread": {
+          "text": "To spread"
+        },
+        "to-extend": {
+          "text": "To extend"
+        },
+        "to-move": {
+          "text": "To move"
+        },
+        "to-clear": {
+          "text": "To clear"
+        },
+        "to-recede": {
+          "text": "To clear away, recede"
+        },
+        "to-leave": {
+          "text": "To leave"
+        }
+      }
+    },
+    "which-way": {
+      "title": "Which way",
+      "concepts": {
+        "eastwards": {
+          "text": "Eastwards"
+        },
+        "towards-the": {
+          "text": "Towards the …"
+        },
+        "from-the-direction-of": {
+          "text": "From the direction of the …"
+        },
+        "across": {
+          "text": "Across"
+        },
+        "over-towards": {
+          "text": "Over towards"
+        },
+        "on-the-way": {
+          "text": "On the way",
+          "note": "could also be on the road; to be confirmed"
+        }
+      }
+    },
+    "changing": {
+      "title": "Weather changing",
+      "concepts": {
+        "to-change": {
+          "text": "To change"
+        },
+        "to-turn": {
+          "text": "To turn"
+        },
+        "to-develop": {
+          "text": "To develop"
+        },
+        "to-cloud-over": {
+          "text": "To cloud over"
+        },
+        "to-strengthen": {
+          "text": "To strengthen"
+        },
+        "to-ease": {
+          "text": "To ease, to subside"
+        },
+        "to-calm": {
+          "text": "To calm down"
+        },
+        "to-fall": {
+          "text": "To fall"
+        },
+        "to-brighten": {
+          "text": "To brighten up"
+        },
+        "to-settle": {
+          "text": "To settle"
+        }
+      }
+    },
+    "other-verbs": {
+      "title": "Other verbs",
+      "concepts": {
+        "to-expect": {
+          "text": "To expect"
+        },
+        "to-continue": {
+          "text": "To continue"
+        },
+        "to-happen": {
+          "text": "To happen"
+        },
+        "to-vary": {
+          "text": "To vary"
+        },
+        "to-coincide": {
+          "text": "To coincide"
+        },
+        "to-see": {
+          "text": "To see"
+        },
+        "to-hear": {
+          "text": "To hear"
+        },
+        "to-look": {
+          "text": "To look"
+        },
+        "to-dominate": {
+          "text": "To dominate",
+          "note": "said of high pressure"
+        },
+        "to-affect": {
+          "text": "To affect"
+        }
+      }
+    }
+  }
+}

@@ -10,10 +10,10 @@
         "snow-ice",
         "wind",
         "temperature",
+        "change",
         "patterns"
       ],
       "links": [
-        "when",
         "where"
       ]
     },

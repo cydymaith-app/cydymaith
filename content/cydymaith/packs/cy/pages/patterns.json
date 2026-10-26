@@ -139,9 +139,27 @@
         },
         "areas": {
           "text": "Ardaloedd"
+        },
+        "on-the-whole": {
+          "text": "Ar y cyfan"
+        },
+        "most-of": {
+          "text": "Y rhan fwyaf o",
+          "also": [
+            "ran fwya'"
+          ]
+        },
+        "mainly": {
+          "text": "Yn bennaf"
+        },
+        "localities": {
+          "text": "Lleoedd",
+          "also": [
+            "llefydd"
+          ]
         }
       },
-      "order": "places, then areas"
+      "order": "the whole, most of it, then places and areas"
     },
     "amount": {
       "title": "Faint",
@@ -153,23 +171,33 @@
         "dry-spells": {
           "text": "Cyfnodau sych"
         },
-        "up-to": {
-          "text": "Hyd at"
-        },
-        "between-and": {
-          "text": "Rhwng … a …"
+        "fine-spells": {
+          "text": "Cyfnodau braf"
         },
         "a-little": {
-          "text": "Ychydig"
+          "text": "Ychydig",
+          "also": [
+            "ryw fymryn",
+            "fymryn"
+          ]
         },
         "quite": {
           "text": "Digon"
         },
-        "about": {
-          "text": "Rhyw"
+        "only": {
+          "text": "Dim ond"
+        },
+        "a-lot-of": {
+          "text": "Llawer o"
+        },
+        "more": {
+          "text": "Rhagor"
         },
         "some": {
-          "text": "Rhai"
+          "text": "Rhai",
+          "also": [
+            "rhai o'r"
+          ]
         },
         "other": {
           "text": "Eraill"
@@ -180,9 +208,6 @@
       "title": "Geiriau cyswllt",
       "order": "most used first",
       "concepts": {
-        "on-the-whole": {
-          "text": "Ar y cyfan"
-        },
         "then": {
           "text": "Wedyn"
         },
@@ -190,7 +215,35 @@
           "text": "Ond"
         },
         "also": {
-          "text": "Hefyd"
+          "text": "Hefyd",
+          "also": [
+            "a hefyd"
+          ]
+        },
+        "in-addition": {
+          "text": "Yn ogystal â"
+        },
+        "including": {
+          "text": "Gan gynnwys"
+        },
+        "namely": {
+          "text": "Sef"
+        },
+        "so": {
+          "text": "Felly"
+        },
+        "like-as": {
+          "text": "Fel"
+        },
+        "once-again": {
+          "text": "Unwaith yn rhagor"
+        },
+        "with": {
+          "text": "Gyda",
+          "also": [
+            "hefo",
+            "efo"
+          ]
         }
       }
     },
@@ -198,71 +251,11 @@
       "title": "Geiriau amser",
       "order": "the day, then tomorrow",
       "concepts": {
-        "during-the-day": {
-          "text": "Yn ystod y dydd"
-        },
-        "by": {
-          "text": "Erbyn"
-        },
-        "until": {
-          "text": "Tan"
-        },
         "later-on": {
           "text": "Yn nes ymlaen"
         },
-        "tomorrow-morning": {
-          "text": "Bore fory"
-        },
-        "tomorrow-night": {
-          "text": "Nos yfory"
-        },
         "middle": {
           "text": "Canol"
-        },
-        "day": {
-          "text": "Diwrnod"
-        }
-      }
-    },
-    "moving": {
-      "title": "Y tywydd yn symud",
-      "order": "what changes, then where it goes",
-      "concepts": {
-        "to-clear": {
-          "text": "Clirio"
-        },
-        "to-spread": {
-          "text": "Lledu"
-        },
-        "to-move": {
-          "text": "Symud"
-        },
-        "to-arrive": {
-          "text": "Cyrraedd"
-        },
-        "to-recede": {
-          "text": "Cilio"
-        },
-        "to-brighten": {
-          "text": "Brafio"
-        },
-        "eastwards": {
-          "text": "Tua'r dwyrain"
-        },
-        "across": {
-          "text": "Ar draws"
-        }
-      }
-    },
-    "pressure": {
-      "title": "Gwasgedd",
-      "order": "high, then low",
-      "concepts": {
-        "high-pressure": {
-          "text": "Gwasgedd uchel"
-        },
-        "low-pressure": {
-          "text": "Gwasgedd isel"
         }
       }
     },
@@ -284,9 +277,6 @@
         "as-for": {
           "text": "O ran"
         },
-        "in-addition": {
-          "text": "Yn ogystal â"
-        },
         "thats-when": {
           "text": "Dyna pryd"
         },
@@ -298,39 +288,6 @@
         }
       },
       "order": "pointing, then adding"
-    },
-    "verbs": {
-      "title": "Berfau",
-      "concepts": {
-        "to-cloud-over": {
-          "text": "Cymylu"
-        },
-        "to-develop": {
-          "text": "Datblygu"
-        },
-        "to-fall": {
-          "text": "Syrthio"
-        },
-        "to-strengthen": {
-          "text": "Cryfhau"
-        },
-        "to-blow": {
-          "text": "Chwythu"
-        },
-        "to-change": {
-          "text": "Newid"
-        },
-        "to-vary": {
-          "text": "Amrywio"
-        },
-        "to-affect": {
-          "text": "Effeithio"
-        },
-        "to-come-into-force": {
-          "text": "Dod i rym"
-        }
-      },
-      "order": "weather verbs first, then change and effect"
     },
     "comparing": {
       "title": "Cymharu",
@@ -346,6 +303,21 @@
         }
       },
       "order": "more, then less, then than"
+    },
+    "around-figure": {
+      "title": "O gwmpas rhif",
+      "concepts": {
+        "about": {
+          "text": "Rhyw"
+        },
+        "up-to": {
+          "text": "Hyd at"
+        },
+        "between-and": {
+          "text": "Rhwng … a …"
+        }
+      },
+      "order": "about, up to, between"
     }
   }
 }

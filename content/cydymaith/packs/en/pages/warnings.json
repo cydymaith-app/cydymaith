@@ -20,6 +20,18 @@
         },
         "possibility": {
           "text": "Possibility"
+        },
+        "rough-weather": {
+          "text": "Rough weather"
+        },
+        "to-warn": {
+          "text": "To warn"
+        },
+        "possibly": {
+          "text": "Possibly"
+        },
+        "likely": {
+          "text": "Likely"
         }
       }
     },
@@ -37,6 +49,12 @@
         },
         "in-force": {
           "text": "In force"
+        },
+        "to-issue": {
+          "text": "To issue (a warning)"
+        },
+        "to-come-into-force": {
+          "text": "To come into force"
         }
       }
     },
@@ -57,6 +75,28 @@
         },
         "flooding": {
           "text": "Flooding"
+        }
+      }
+    },
+    "pressure": {
+      "title": "Pressure",
+      "concepts": {
+        "pressure": {
+          "text": "Pressure"
+        },
+        "high-pressure": {
+          "text": "High pressure"
+        },
+        "ridge-of-high-pressure": {
+          "text": "A ridge of high pressure",
+          "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
+        },
+        "low-pressure": {
+          "text": "Low pressure"
+        },
+        "area-of-low-pressure": {
+          "text": "An area of low pressure",
+          "note": "{{dwys}} means intense, deep"
         }
       }
     }

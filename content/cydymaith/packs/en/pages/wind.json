@@ -12,11 +12,8 @@
         "windy": {
           "text": "Windy"
         },
-        "wind-speed": {
-          "text": "Wind speed"
-        },
-        "miles-per-hour": {
-          "text": "Miles per hour"
+        "to-blow": {
+          "text": "To blow"
         },
         "calm": {
           "text": "Calm"
@@ -33,8 +30,18 @@
         "strong-winds": {
           "text": "Strong winds"
         },
+        "at-its-strongest": {
+          "text": "At its strongest",
+          "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}"
+        },
         "gusts": {
           "text": "Gusts"
+        },
+        "wind-speed": {
+          "text": "Wind speed"
+        },
+        "miles-per-hour": {
+          "text": "Miles per hour"
         }
       }
     },
