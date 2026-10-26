@@ -277,7 +277,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', self.built["rain.html"])
 
     def test_every_section_states_its_order(self):
-        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 2, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
+        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 3, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(self.built[f"{slug}.html"].count('<p class="order">'), count, slug)
 

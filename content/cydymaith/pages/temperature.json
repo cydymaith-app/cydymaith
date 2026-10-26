@@ -2,19 +2,6 @@
   "icon": "temperature",
   "sections": [
     {
-      "id": "temperature",
-      "concepts": [
-        "temperature",
-        "degrees-celsius",
-        "highest-maximum",
-        "lowest-minimum",
-        "at-its-highest",
-        "at-its-lowest",
-        "humid",
-        "humidity"
-      ]
-    },
-    {
       "id": "hot-cold",
       "concepts": [
         "hot",
@@ -22,6 +9,26 @@
         "mild",
         "chilly-fresh",
         "cold"
+      ]
+    },
+    {
+      "id": "humidity",
+      "concepts": [
+        "dry",
+        "humid",
+        "muggy",
+        "humidity"
+      ]
+    },
+    {
+      "id": "limits",
+      "concepts": [
+        "temperature",
+        "degrees-celsius",
+        "highest-maximum",
+        "lowest-minimum",
+        "at-its-highest",
+        "at-its-lowest"
       ]
     }
   ]
