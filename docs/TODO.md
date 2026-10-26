@@ -231,6 +231,9 @@ All oklch compatible.
 
 Script to generate and test each screen and score them for usability. Run each time a screen is modified. Not every build.
 
+- [x] **Search card actions are symbols** (2026-10-26): an x to close and a delete symbol to clear the field, in place of the word Close and the browser's own clear button. The rule is in `FRAMEWORK.md`; the `symbolic-actions` skill audits the rest.
+- [ ] **Make the remaining form actions symbolic** where a symbol says it (see the skill's audit): Save order and Reset in the edit-order bar, and the help sheet's What's this?, Report a problem, Copy and Back. Keep the words for Reset tile layouts. Each needs an icon (`ui-icons/`, with its `ASSETS.md` entry), a name for a screen reader, a test, and the help text updated.
+
 ### 3.5 Screen tile reordering
 
 Ability to customise the order of tiles on home page and sub pages. A spanner or other icon - toggle the edit order mode on. Edit order mode shows smaller buttons with just their icon. User can drag the buttons to where they want like on an app screen. Toggle edit mode off saves the new config. 
