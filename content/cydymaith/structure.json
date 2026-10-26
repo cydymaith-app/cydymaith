@@ -2,6 +2,7 @@
   "groups": [
     {
       "id": "weather-forecast",
+      "layout": "one-page",
       "icon": "rain--scattered",
       "pages": [
         "warnings",

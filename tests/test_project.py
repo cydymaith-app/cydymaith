@@ -115,30 +115,39 @@ class RelatedTopicsTests(unittest.TestCase):
         raw = select(content.read(PROJECT))
         _, edition = content.pick_edition(raw)
         cls.raw = raw
-        cls.pages = phrasebook.Site(raw, edition).render_all()
+        cls.site = phrasebook.Site(raw, edition)
+        cls.pages = cls.site.render_all()
 
-    def tiles(self, name):
-        page = self.pages[name]
-        return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', page)
+    def topic(self, slug):
+        """A topic's own part: its page, or on the weather forecast's one page its accordion."""
+        page = self.pages[self.site.href(slug).split("#")[0]]
+        if slug not in self.site.homes:
+            return page
+        start = page.index(f'<details class="fold topic" aria-labelledby="h-topic-{slug}"')
+        end = page.find('<details class="fold topic"', start + 1)
+        return page[start : end if end != -1 else page.index("<script>", start)]
+
+    def tiles(self, slug):
+        return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', self.topic(slug))
 
     def test_the_weather_topics_that_mention_places_open_the_landscape_section_of_where(self):
-        for name in ("rain.html", "snow-ice.html", "patterns.html"):
-            self.assertEqual(self.tiles(name), ["where.html#landscape"], name)
+        for slug in ("rain", "snow-ice", "patterns"):
+            self.assertEqual(self.tiles(slug), ["where.html#landscape"], slug)
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
-        row = self.pages["rain.html"]
+        row = self.topic("rain")
         row = row[row.index('<section class="related"') :]
         self.assertIn("Pynciau cysylltiedig", row)
         self.assertIn("Related topics", row)
         self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
 
     def test_wind_opens_the_compass_and_the_places_open_how_it_is_said(self):
-        self.assertEqual(self.tiles("wind.html"), ["where.html#points"])
-        self.assertEqual(self.tiles("where.html"), ["patterns.html"])
+        self.assertEqual(self.tiles("wind"), ["where.html#points"])
+        self.assertEqual(self.tiles("where"), ["group-weather-forecast.html#topic-patterns"])
 
     def test_the_forecast_opens_time_and_date_as_a_related_page(self):
-        self.assertEqual(self.tiles("warnings.html"), ["when.html"])
-        row = self.pages["warnings.html"]
+        self.assertEqual(self.tiles("warnings"), ["when.html"])
+        row = self.topic("warnings")
         row = row[row.index('<section class="related"') :]
         self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', row)
 
@@ -149,8 +158,8 @@ class RelatedTopicsTests(unittest.TestCase):
                 self.assertIn(f'id="{href[1]}"', target, f"{name} -> {href}")
 
     def test_a_topic_with_nothing_related_has_no_row_and_the_group_pages_have_none(self):
-        self.assertNotIn('class="related"', self.pages["sky.html"])
-        self.assertNotIn('class="related"', self.pages["group-weather-forecast.html"])
+        self.assertNotIn('class="related"', self.topic("sky"))
+        self.assertNotIn('class="related"', self.pages["group-time-and-place.html"])
         self.assertNotIn('class="related"', self.pages["index.html"])
 
 
@@ -201,3 +210,30 @@ class GradingTests(unittest.TestCase):
         by_hand = [k for k, s in self.sections.items() if s["by_hand"]] + [k for k, p in self.pages.items() if p["by_hand"]]
         by_hand += [k for k, g in self.groups.items() if g["by_hand"]]
         self.assertLessEqual(len(by_hand), 5, f"each one needs a reason: {by_hand}")
+
+
+class OnePageWeatherTests(unittest.TestCase):
+    """The weather forecast is one page: each of its topics is an accordion, shut until opened, in the written order, and the
+    topics have no pages of their own (the owner's design pivot of 2026-10-26: too many separate pages under weather)."""
+
+    @classmethod
+    def setUpClass(cls):
+        raw = select(content.read(PROJECT))
+        _, edition = content.pick_edition(raw)
+        cls.site = phrasebook.Site(raw, edition)
+        cls.pages = cls.site.render_all()
+        cls.page = cls.pages["group-weather-forecast.html"]
+        cls.weather = next(g for g in cls.site.groups if g["id"] == "weather-forecast")
+
+    def test_every_weather_topic_is_a_shut_accordion_in_the_written_order(self):
+        found = re.findall(r'<details class="fold topic" aria-labelledby="h-topic-([a-z0-9-]+)" id="topic-\1" data-level="[123]">', self.page)
+        self.assertEqual(found, self.weather["pages"])
+        self.assertNotRegex(self.page, r'<details class="fold topic"[^>]* open', "all shut until opened")
+
+    def test_the_weather_topics_have_no_pages_of_their_own(self):
+        for slug in self.weather["pages"]:
+            self.assertNotIn(f"{slug}.html", self.pages, slug)
+
+    def test_the_other_groups_keep_their_tiles(self):
+        for gid in ("time-and-place", "everyday", "geography"):
+            self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)

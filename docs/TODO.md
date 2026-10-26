@@ -249,6 +249,10 @@ All oklch compatible.
 
 ### 3.4 Usability
 
+- [x] **The weather forecast is one page** (design pivot, 2026-10-26): there were too many separate pages under weather. The group has `"layout": "one-page"`, so each weather topic is an accordion on the group's page, shut by default, with the topic's tile (icon and both names) as its summary. Settings' order (simplest or most advanced first) now orders the accordions on the page, not the sections inside them. The weather topics have no pages of their own: search, related tiles and the group's link to Where point into the one page.
+- [ ] Check the one weather page in a real browser: opening a search result or a related tile inside a shut accordion (it should open and scroll to the word), on a phone, in light and dark, with forced colours and a screen reader.
+- [ ] Decide whether other groups (Time and place, Everyday, Geography) should be one page too: it is one line in `structure.json` per group.
+
 Script to generate and test each screen and score them for usability. Run each time a screen is modified. Not every build.
 
 - [x] **Search card actions are symbols** (2026-10-26): an x to close and a delete symbol to clear the field, in place of the word Close and the browser's own clear button. The rule is in `FRAMEWORK.md`; the `symbolic-actions` skill audits the rest.

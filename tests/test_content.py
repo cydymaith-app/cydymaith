@@ -75,6 +75,22 @@ class Page(HTMLParser):
             self._cy_open["text"] += data
 
 
+def topic_html(site, pages, slug):
+    """A topic as the reader gets it: its own page, or on a one-page group (the weather forecast) its accordion on the group's page."""
+    page = pages[site.href(slug).split("#")[0]]
+    if slug not in site.homes:
+        return page
+    start = page.index(f'<details class="fold topic" aria-labelledby="h-topic-{slug}"')
+    end = page.find('<details class="fold topic"', start + 1)
+    return page[start : end if end != -1 else page.index("<script>", start)]
+
+
+def pages_written(site):
+    """Every page file: each topic with a page of its own, each group, and twelve more (home, sources, how to use, seven help
+    chapters, settings, about)."""
+    return len([s for s in site.slugs if s not in site.homes]) + len(site.groups) + 12
+
+
 def add_pack(data_dir, code, name, direction="ltr", pages=None, edition=None):
     """Write a minimal extra language pack into a copy of the data, and optionally an edition using it.
 
@@ -117,8 +133,8 @@ class BuildTests(unittest.TestCase):
         shutil.rmtree(cls.tmp, ignore_errors=True)
 
     def test_every_page_is_written(self):
-        self.assertEqual(self.count, len(self.site.slugs) + len(self.site.groups) + 12)  # topics, groups, home, sources, how to use, seven help chapters, settings, about
-        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "help-arranging-tiles.html", "help-offline-and-install.html", "help-using-help.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs} | {f"group-{g['id']}.html" for g in self.site.groups})
+        self.assertEqual(self.count, pages_written(self.site))
+        self.assertEqual(set(self.built), {"index.html", "sources.html", "how-to.html", "help-finding-your-way.html", "help-looking-up-words.html", "help-reading-a-topic.html", "help-your-settings.html", "help-arranging-tiles.html", "help-offline-and-install.html", "help-using-help.html", "settings.html", "about.html"} | {f"{s}.html" for s in self.site.slugs if s not in self.site.homes} | {f"group-{g['id']}.html" for g in self.site.groups})
         self.assertTrue((self.out / "style.css").is_file())
 
     def test_the_site_installs(self):
@@ -169,11 +185,13 @@ class BuildTests(unittest.TestCase):
         shared = next(g for g in self.site.groups if g["id"] == "time-and-place")
         self.assertEqual(shared["pages"], ["when", "where"])
         self.assertEqual(weather["links"], ["where"])
-        tiles = self.built["group-weather-forecast.html"]
+        page = self.built["group-weather-forecast.html"]
+        tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
         self.assertNotIn('href="when.html"', tiles, "Time and date is reached from the forecast as a related page, not a group tile")
         self.assertIn('href="where.html"', tiles)
         self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
         self.assertIn('href="when.html"', self.built["group-time-and-place.html"])
+        self.assertIn('href="when.html" data-related', topic_html(self.site, self.built, "warnings"))
         self.assertIn("Amser a dyddiad", self.built["when.html"])
         self.assertIn("Time and date", self.built["when.html"])
 
@@ -297,12 +315,12 @@ class BuildTests(unittest.TestCase):
 
     def test_the_welsh_comes_first_because_it_is_the_language_that_is_heard(self):
         self.assertEqual(list(self.edition["default_pair"]), ["cy", "en"])
-        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', self.built["rain.html"])
+        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
         shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 3, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
         for slug, count in shown.items():
-            self.assertEqual(self.built[f"{slug}.html"].count('<p class="order">'), count, slug)
+            self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
     def test_a_word_heard_in_another_form_is_found_by_that_form(self):
         dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
@@ -343,8 +361,8 @@ class BuildTests(unittest.TestCase):
         for group in self.site.groups:
             self.assertIn(f'href="group-{group["id"]}.html"', self.built["index.html"])
             page = self.built[f"group-{group['id']}.html"]
-            for slug in group["pages"]:
-                self.assertIn(f'href="{slug}.html"', page)
+            for slug in group["pages"]:  # a tile, or on a one-page group an accordion
+                self.assertIn(f'id="topic-{slug}"' if slug in self.site.homes else f'href="{slug}.html"', page)
             self.assertNotIn("entries", page)
             self.assertNotIn("entry", page)
 
@@ -581,7 +599,7 @@ class VarietyRenderingTests(unittest.TestCase):
         self.assertEqual(self.site.show_sets("cy", forms), [["north"], ["north", "south"]])
 
     def test_a_plain_row_keeps_the_plain_markup(self):
-        page = self.site.render_all()["sky.html"]
+        page = topic_html(self.site, self.site.render_all(), "sky")
         self.assertNotIn('class="forms"', page)
         self.assertIn('<th scope="row" class="l1" lang="cy">Haul</th>', page)
 
@@ -761,7 +779,7 @@ class AddingALanguageTests(unittest.TestCase):
         ed["home"] = {"headline": {"en": "E", "cy": "C", "gd": "G", "ar": "A"}}
         site = build.Site(raw, ed)
         self.assertEqual(site.slugs, ["sky"])
-        page = site.render_all()["sky.html"]
+        page = topic_html(site, site.render_all(), "sky")
         self.assertIn('lang="ar" dir="rtl"', page)
         self.assertIn("ar:sun", page)
 
@@ -811,8 +829,7 @@ class SourcesTests(unittest.TestCase):
     def test_strict_build_accepts_reviewed_sources(self):
         data = self.copy_data("reviewed", "own")
         self.assertEqual(build.build(self.tmp / "out-reviewed", data_dir=data, strict=True),
-                         len(build.Site(channels.select(self.raw), self.edition).slugs)
-                         + len(build.Site(channels.select(self.raw), self.edition).groups) + 12)
+                         pages_written(build.Site(channels.select(self.raw), self.edition)))
 
     def test_normal_build_accepts_draft_sources(self):
         data = self.copy_data("normal", "draft")
@@ -1005,7 +1022,7 @@ class DictionaryTests(unittest.TestCase):
         for entry in self.dictionary["entries"]:
             for page in entry["pages"]:
                 page_file, row = page["href"].split("#")
-                self.assertEqual(page_file, f"{page['slug']}.html", entry["concept"])
+                self.assertEqual(page_file, C.address(self.raw["structure"], page["slug"]).split("#")[0], entry["concept"])
                 self.assertTrue(row.endswith("." + entry["concept"]), entry["concept"])
                 html = (self.out / page_file).read_text(encoding="utf-8")
                 self.assertTrue(f'<tr id="{row}">' in html or f'<g id="{row}">' in html, page["href"])  # a word on the compass is a label
