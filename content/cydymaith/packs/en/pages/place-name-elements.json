@@ -188,6 +188,9 @@
         },
         "lower": {
           "text": "Lower"
+        },
+        "below": {
+          "text": "Below, under"
         }
       }
     }
