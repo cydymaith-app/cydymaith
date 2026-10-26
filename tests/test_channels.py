@@ -75,7 +75,7 @@ class ChannelTests(unittest.TestCase):
     def test_the_offline_cache_lists_only_what_the_channel_publishes(self):
         sw = (self.release / "sw.js").read_text(encoding="utf-8")
         self.assertNotIn("food-drink.html", sw)
-        self.assertIn("snow-ice.html", sw)
+        self.assertIn("when.html", sw)
 
     def test_the_held_back_section_is_still_validated(self):
         raw = content.read(self.data)
