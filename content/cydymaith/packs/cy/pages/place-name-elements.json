@@ -4,7 +4,7 @@
   "sections": {
     "settlements": {
       "title": "Aneddiadau ac adeiladau",
-      "order": "church places, then forts and courts, then homes",
+      "order": "church places, then forts and courts, then mansions, then homes",
       "intro": "In a place name the elements are joined together, and the first letter of the second word often changes. Each element is shown here in its basic form, with the changed forms you meet in names listed beside it.",
       "concepts": {
         "church-site": {
@@ -36,6 +36,10 @@
         "court-hall": {
           "text": "llys",
           "note": "the court or hall of a prince or lord"
+        },
+        "mansion": {
+          "text": "plas",
+          "note": "as in {{Plas Newydd}}"
         },
         "homestead": {
           "text": "tre",
@@ -98,7 +102,7 @@
     },
     "hills": {
       "title": "Bryniau a chreigiau",
-      "order": "the mountain down to the hillside, then the head or top",
+      "order": "the mountain down to the hillside, then the pass, then the head or top",
       "concepts": {
         "mountain": {
           "text": "mynydd",
@@ -129,6 +133,10 @@
         "hillside": {
           "text": "allt"
         },
+        "pass": {
+          "text": "bwlch",
+          "note": "as in {{Bwlch y Groes}}"
+        },
         "head-top": {
           "text": "pen",
           "note": "as in {{Penarth}} and {{Pen-y-bont ar Ogwr}}"
@@ -156,6 +164,10 @@
           "also": [
             "waun"
           ]
+        },
+        "moor": {
+          "text": "rhos",
+          "note": "as in {{Rhosneigr}}"
         },
         "wood": {
           "text": "coed",
