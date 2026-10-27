@@ -7,42 +7,85 @@
       "concepts": {
         "on-the-coast": {
           "text": "Ar yr arfordir",
+          "keys": [
+            "arfordir"
+          ],
           "also": [
             "arfordirol"
           ]
         },
         "in-coastal-areas": {
           "text": "Mewn ardaloedd arfordirol",
+          "keys": [
+            "arfordirol",
+            null,
+            "ardaloedd"
+          ],
           "also": [
             "rhannau arfordirol"
           ]
         },
         "along-the-shores": {
-          "text": "Ar hyd y glannau"
+          "text": "Ar hyd y glannau",
+          "keys": [
+            "glannau",
+            "Ar hyd"
+          ]
         },
         "inland": {
           "text": "Yn y mewndiroedd",
+          "keys": [
+            "mewndiroedd"
+          ],
           "also": [
             "mewndiroedd"
           ]
         },
         "in-the-valleys": {
-          "text": "Yn y cymoedd"
+          "text": "Yn y cymoedd",
+          "keys": [
+            null,
+            "cymoedd"
+          ]
         },
         "over-the-hills": {
-          "text": "Dros y bryniau"
+          "text": "Dros y bryniau",
+          "keys": [
+            "bryniau",
+            null,
+            "Dros"
+          ]
         },
         "on-high-ground": {
-          "text": "Ar dir uchel"
+          "text": "Ar dir uchel",
+          "keys": [
+            null,
+            null,
+            "dir uchel"
+          ]
         },
         "over-the-mountains": {
-          "text": "Dros y mynyddoedd"
+          "text": "Dros y mynyddoedd",
+          "keys": [
+            null,
+            "mynyddoedd",
+            "Dros"
+          ]
         },
         "over-snowdonia": {
-          "text": "Dros Eryri"
+          "text": "Dros Eryri",
+          "keys": [
+            "Eryri",
+            null,
+            "Dros"
+          ]
         },
         "in-the-brecon-beacons": {
           "text": "Ym Mannau Brycheiniog",
+          "keys": [
+            null,
+            "Mannau Brycheiniog"
+          ],
           "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
         }
       },

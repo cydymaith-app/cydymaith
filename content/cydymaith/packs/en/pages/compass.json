@@ -36,28 +36,68 @@
       "title": "From which way",
       "concepts": {
         "from-the-north": {
-          "text": "From the north; northerly"
+          "text": "From the north; northerly",
+          "keys": [
+            null,
+            "north",
+            "From"
+          ]
         },
         "from-the-north-east": {
-          "text": "From the north-east; north-easterly"
+          "text": "From the north-east; north-easterly",
+          "keys": [
+            "north-east",
+            null,
+            "From"
+          ]
         },
         "from-the-east": {
-          "text": "From the east; easterly"
+          "text": "From the east; easterly",
+          "keys": [
+            "east",
+            null,
+            "From"
+          ]
         },
         "from-the-south-east": {
-          "text": "From the south-east; south-easterly"
+          "text": "From the south-east; south-easterly",
+          "keys": [
+            null,
+            "south-east",
+            "From"
+          ]
         },
         "from-the-south": {
-          "text": "From the south; southerly"
+          "text": "From the south; southerly",
+          "keys": [
+            null,
+            "south",
+            "From"
+          ]
         },
         "from-the-south-west": {
-          "text": "From the south-west; south-westerly"
+          "text": "From the south-west; south-westerly",
+          "keys": [
+            null,
+            "south-west",
+            "From"
+          ]
         },
         "from-the-west": {
-          "text": "From the west; westerly"
+          "text": "From the west; westerly",
+          "keys": [
+            null,
+            "west",
+            "From"
+          ]
         },
         "from-the-north-west": {
-          "text": "From the north-west; north-westerly"
+          "text": "From the north-west; north-westerly",
+          "keys": [
+            "north-west",
+            null,
+            "From"
+          ]
         }
       }
     },
@@ -65,22 +105,47 @@
       "title": "Areas",
       "concepts": {
         "in-the-north": {
-          "text": "In the north"
+          "text": "In the north",
+          "keys": [
+            null,
+            "north"
+          ]
         },
         "in-the-east": {
-          "text": "In the east"
+          "text": "In the east",
+          "keys": [
+            "east"
+          ]
         },
         "in-the-south": {
-          "text": "In the south"
+          "text": "In the south",
+          "keys": [
+            null,
+            "south"
+          ]
         },
         "in-the-west": {
-          "text": "In the west"
+          "text": "In the west",
+          "keys": [
+            null,
+            "west"
+          ]
         },
         "further-south": {
-          "text": "Further south"
+          "text": "Further south",
+          "keys": [
+            null,
+            "south",
+            "Further"
+          ]
         },
         "across-the-whole-country": {
-          "text": "Across the whole country"
+          "text": "Across the whole country",
+          "keys": [
+            "whole",
+            "Across",
+            "country"
+          ]
         }
       }
     }

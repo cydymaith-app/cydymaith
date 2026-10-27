@@ -55,48 +55,88 @@
       "concepts": {
         "from-the-north": {
           "text": "O'r gogledd",
+          "keys": [
+            null,
+            "gogledd",
+            "O'r"
+          ],
           "also": [
             "gogleddol"
           ]
         },
         "from-the-north-east": {
           "text": "O'r gogledd-ddwyrain",
+          "keys": [
+            "gogledd-ddwyrain",
+            null,
+            "O'r"
+          ],
           "also": [
             "gogledd-ddwyreiniol"
           ]
         },
         "from-the-east": {
           "text": "O'r dwyrain",
+          "keys": [
+            "dwyrain",
+            null,
+            "O'r"
+          ],
           "also": [
             "dwyreiniol"
           ]
         },
         "from-the-south-east": {
           "text": "O'r de-ddwyrain",
+          "keys": [
+            null,
+            "de-ddwyrain",
+            "O'r"
+          ],
           "also": [
             "de-ddwyreiniol"
           ]
         },
         "from-the-south": {
           "text": "O'r de",
+          "keys": [
+            null,
+            "de",
+            "O'r"
+          ],
           "also": [
             "deheuol"
           ]
         },
         "from-the-south-west": {
           "text": "O'r de-orllewin",
+          "keys": [
+            null,
+            "de-orllewin",
+            "O'r"
+          ],
           "also": [
             "de-orllewinol"
           ]
         },
         "from-the-west": {
           "text": "O'r gorllewin",
+          "keys": [
+            null,
+            "gorllewin",
+            "O'r"
+          ],
           "also": [
             "gorllewinol"
           ]
         },
         "from-the-north-west": {
           "text": "O'r gogledd-orllewin",
+          "keys": [
+            "gogledd-orllewin",
+            null,
+            "O'r"
+          ],
           "also": [
             "gogledd-orllewinol"
           ]
@@ -108,22 +148,47 @@
       "title": "Ardaloedd",
       "concepts": {
         "in-the-north": {
-          "text": "Yn y gogledd"
+          "text": "Yn y gogledd",
+          "keys": [
+            null,
+            "gogledd"
+          ]
         },
         "in-the-east": {
-          "text": "Yn y dwyrain"
+          "text": "Yn y dwyrain",
+          "keys": [
+            "dwyrain"
+          ]
         },
         "in-the-south": {
-          "text": "Yn y de"
+          "text": "Yn y de",
+          "keys": [
+            null,
+            "de"
+          ]
         },
         "in-the-west": {
-          "text": "Yn y gorllewin"
+          "text": "Yn y gorllewin",
+          "keys": [
+            null,
+            "gorllewin"
+          ]
         },
         "further-south": {
-          "text": "Ymhellach i'r de"
+          "text": "Ymhellach i'r de",
+          "keys": [
+            null,
+            "de",
+            "Ymhellach"
+          ]
         },
         "across-the-whole-country": {
-          "text": "Dros y wlad i gyd"
+          "text": "Dros y wlad i gyd",
+          "keys": [
+            "i gyd",
+            "Dros",
+            "wlad"
+          ]
         }
       },
       "order": "round the compass from the north, then the whole country"

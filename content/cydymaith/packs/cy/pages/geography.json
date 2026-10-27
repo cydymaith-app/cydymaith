@@ -13,34 +13,75 @@
           ]
         },
         "in-wales": {
-          "text": "Yng Nghymru"
+          "text": "Yng Nghymru",
+          "keys": [
+            "Nghymru"
+          ]
         },
         "across-wales": {
-          "text": "Ledled Cymru"
+          "text": "Ledled Cymru",
+          "keys": [
+            "Cymru",
+            "Ledled"
+          ]
         },
         "north-wales": {
-          "text": "Gogledd Cymru"
+          "text": "Gogledd Cymru",
+          "keys": [
+            "Cymru",
+            "Gogledd"
+          ]
         },
         "in-north-wales": {
-          "text": "Yng ngogledd Cymru"
+          "text": "Yng ngogledd Cymru",
+          "keys": [
+            "Cymru",
+            "ngogledd"
+          ]
         },
         "south-wales": {
-          "text": "De Cymru"
+          "text": "De Cymru",
+          "keys": [
+            "Cymru",
+            "De"
+          ]
         },
         "in-south-wales": {
-          "text": "Yn ne Cymru"
+          "text": "Yn ne Cymru",
+          "keys": [
+            "Cymru",
+            "ne"
+          ]
         },
         "mid-wales": {
-          "text": "Canolbarth Cymru"
+          "text": "Canolbarth Cymru",
+          "keys": [
+            "Cymru",
+            null,
+            "Canolbarth"
+          ]
         },
         "in-mid-wales": {
-          "text": "Yng nghanolbarth Cymru"
+          "text": "Yng nghanolbarth Cymru",
+          "keys": [
+            "Cymru",
+            null,
+            "nghanolbarth"
+          ]
         },
         "west-wales": {
-          "text": "Gorllewin Cymru"
+          "text": "Gorllewin Cymru",
+          "keys": [
+            "Cymru",
+            "Gorllewin"
+          ]
         },
         "in-west-wales": {
-          "text": "Yng ngorllewin Cymru"
+          "text": "Yng ngorllewin Cymru",
+          "keys": [
+            "Cymru",
+            "ngorllewin"
+          ]
         }
       },
       "order": "Wales, then north, south, mid and west, each with its “in” form"
@@ -84,7 +125,11 @@
           "text": "Iwerddon"
         },
         "northern-ireland": {
-          "text": "Gogledd Iwerddon"
+          "text": "Gogledd Iwerddon",
+          "keys": [
+            "Iwerddon",
+            "Gogledd"
+          ]
         },
         "the-united-kingdom": {
           "text": "Y Deyrnas Unedig"

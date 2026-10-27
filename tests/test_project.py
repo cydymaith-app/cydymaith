@@ -265,6 +265,34 @@ class KeyWordTests(unittest.TestCase):
         plain = {cid for slug in self.WEATHER for cid, c in self.concepts("cy", slug) if "keys" not in c}
         self.assertFalse({"its-sunny", "rain-in-the-north", "a-cold-northerly"} & plain)
 
+    GEOGRAPHY = ("compass", "geography", "place-name-elements")
+    MARKED = {
+        "compass": {"from", "directions"},
+        "geography": {"regions", "uk"},
+        "place-name-elements": {"landscape"},
+    }
+
+    def test_the_geography_phrases_mark_key_words_in_both_languages_and_the_single_word_sections_stay_plain(self):
+        for slug in self.GEOGRAPHY:
+            for sid, sec in self.raw["packs"]["cy"]["pages"][slug]["sections"].items():
+                welsh = {cid: len(c.get("keys", [])) for cid, c in sec["concepts"].items()}
+                english = {cid: len(c.get("keys", [])) for cid, c in self.raw["packs"]["en"]["pages"][slug]["sections"][sid]["concepts"].items()}
+                self.assertEqual(welsh, english, (slug, sid))
+                if sid in self.MARKED[slug]:
+                    self.assertTrue(any(welsh.values()), (slug, sid))
+                else:
+                    self.assertFalse(any(welsh.values()), f"{slug}/{sid} is single words and stays plain")
+
+    def test_a_word_has_one_colour_throughout_the_geography_page(self):
+        colour = {}
+        for slug in self.GEOGRAPHY:
+            for sec in self.raw["packs"]["en"]["pages"][slug]["sections"].values():
+                for cid, c in sec["concepts"].items():
+                    for n, key in enumerate(c.get("keys", [])):
+                        if key is not None:
+                            colour.setdefault(key.casefold(), set()).add(n)
+        self.assertEqual({k: v for k, v in colour.items() if len(v) > 1}, {})
+
     def test_the_key_colour_settings_are_in_welsh(self):
         ui = self.raw["packs"]["cy"]["meta"]["ui"]
         for key in ("keys_title", "keys_hint", "keys_colour", "keys_line", "keys_off"):
