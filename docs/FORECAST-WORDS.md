@@ -504,7 +504,7 @@ One future page, *Effeithiau / Impacts*: the sea, damage and travel. It could be
 | Lefelau'r afonydd | river levels | Rain, with a flooding section |
 | Afonydd | rivers (plural of *afon*) | with *lefelau* |
 | Rhybudd llifogydd | flood warning | The forecast, next to *Rhybudd melyn* (*llifogydd* is already a form, softening to *lifogydd*) |
-| Cyfoeth Naturiol Cymru | Natural Resources Wales | The forecast, next to *Y Swyddfa Dywydd*; check as one name |
+| Cyfoeth Naturiol Cymru | Natural Resources Wales: where to check flooding data and warnings (confirmed by the user; <https://cyfoethnaturiol.cymru/?lang=en>) | The forecast, next to *Y Swyddfa Dywydd*; one name, with a note on what it is for |
 | Ffrynt | front | Pressure |
 | Isobariau | isobars | Pressure |
 | Agosau | to approach | Change and movement |
@@ -566,4 +566,3 @@ The presenters' names and the photo credits (*Llun: …*).
 
 1. *Y gorllewin fydd ym gweld* (16): is *ym* a typo for *yn*?
 2. *Werth cadw golwg* (9): is it *Mae'n werth cadw golwg*, with the start dropped on screen?
-3. *Cyfoeth Naturiol Cymru*: is the organisation's name worth a row, or left as a name?
