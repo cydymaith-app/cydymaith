@@ -5,62 +5,60 @@
     "rain": {
       "title": "Glaw",
       "concepts": {
-        "drizzle": {
-          "text": "Glaw mân"
+        "drizzle-here-and-there": {
+          "text": "Glaw mân yma ac acw"
         },
-        "light-rain": {
-          "text": "Glaw ysgafn"
+        "only-a-few-showers": {
+          "text": "Dim ond rhai cawodydd"
         },
-        "rain": {
-          "text": "Glaw",
+        "heavy-showers-in-the-afternoon": {
+          "text": "Cawodydd trwm yn y prynhawn"
+        },
+        "spells-of-heavy-rain-as-well": {
+          "text": "Cyfnodau o law trwm hefyd",
+          "note": "{{glaw}} softens to {{law}} after {{o}}",
           "also": [
-            "law"
+            "chyfnodau o law trwm"
           ]
         },
-        "rainy": {
-          "text": "Glawog"
-        },
-        "showers": {
-          "text": "Cawodydd",
+        "possibly-heavy-at-times": {
+          "text": "O bosib yn drwm ar adegau",
           "also": [
-            "cawod",
-            "ambell gawod"
+            "o bosibl"
           ]
         },
-        "heavy-rain": {
-          "text": "Glaw trwm"
+        "heavy-rain-and-strong-wind": {
+          "text": "Glaw trwm a gwynt cryf"
         },
-        "wet": {
-          "text": "Gwlyb",
-          "also": [
-            "wlyb"
-          ]
+        "a-yellow-warning-for-rain": {
+          "text": "Rhybudd melyn am law",
+          "note": "{{am}} softens {{glaw}} to {{law}}"
         },
-        "rainbow": {
-          "text": "Enfys"
+        "a-risk-of-flooding": {
+          "text": "Perygl o lifogydd",
+          "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
         }
       },
-      "order": "lightest to heaviest, then what follows"
+      "order": "lightest to heaviest, then the warning and the flooding"
     },
     "storms": {
       "title": "Mellt a tharanau",
       "concepts": {
-        "thunder": {
-          "text": "Taranau"
+        "a-chance-of-thunder-and-lightning": {
+          "text": "Posibilrwydd o fellt a tharanau"
         },
-        "lightning": {
-          "text": "Mellt"
+        "the-odd-thunderstorm": {
+          "text": "Ambell storm o fellt a tharanau"
         },
-        "thunderstorm": {
-          "text": "Storm fellt a tharanau",
-          "note": "literally a storm of lightning and thunder"
+        "more-rough-weather-over-the-next-few-hours": {
+          "text": "Rhagor o dywydd garw dros yr oriau nesaf"
         },
-        "storm": {
-          "text": "Storm",
-          "note": "stormy: {{stormus}}"
+        "two-storms-in-one-weekend": {
+          "text": "Dwy storm mewn un penwythnos",
+          "note": "{{dwy}} is two before a feminine noun"
         }
       },
-      "order": "thunder and lightning, then the storm"
+      "order": "thunder and lightning, then storms and rough weather"
     }
   }
 }

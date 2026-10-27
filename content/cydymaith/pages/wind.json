@@ -7,31 +7,35 @@
     {
       "id": "wind",
       "concepts": [
-        "wind",
-        "windy",
-        "to-blow",
-        "calm",
-        "breeze",
-        "light-breeze",
-        "moderate",
-        "strong-winds",
-        "at-its-strongest",
-        "gusts",
-        "wind-speed",
-        "miles-per-hour"
+        "mostly-light-winds",
+        "a-moderate-breeze-from-the-south-west",
+        "the-wind-strengthening",
+        "drier-and-windy",
+        "strong-winds-on-the-coast",
+        "the-wind-at-its-strongest-overnight",
+        "gusts-of-up-to-70-mph",
+        "about-60-mph-on-the-coast"
       ]
     },
     {
       "id": "wind-direction",
       "concepts": [
-        "northerly",
-        "north-easterly",
-        "easterly",
-        "south-easterly",
-        "southerly",
-        "south-westerly",
-        "westerly",
-        "north-westerly"
+        "a-cold-northerly",
+        "blowing-from-the-north-east",
+        "a-biting-easterly",
+        "mild-southerly-winds",
+        "a-fresh-westerly",
+        "turning-north-westerly"
+      ]
+    },
+    {
+      "id": "warnings",
+      "concepts": [
+        "the-met-office-has-issued-a-yellow-wind-warning",
+        "the-warning-comes-into-force-at-six-this-evening",
+        "in-force-until-three-in-the-morning",
+        "an-amber-wind-warning",
+        "the-met-office-is-warning-of-rough-weather"
       ]
     }
   ]

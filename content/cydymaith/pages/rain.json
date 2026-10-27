@@ -1,27 +1,29 @@
 {
   "icon": "rain",
-  "related": ["where#landscape"],
+  "related": [
+    "where#landscape"
+  ],
   "sections": [
     {
       "id": "rain",
       "concepts": [
-        "drizzle",
-        "light-rain",
-        "rain",
-        "rainy",
-        "showers",
-        "heavy-rain",
-        "wet",
-        "rainbow"
+        "drizzle-here-and-there",
+        "only-a-few-showers",
+        "heavy-showers-in-the-afternoon",
+        "spells-of-heavy-rain-as-well",
+        "possibly-heavy-at-times",
+        "heavy-rain-and-strong-wind",
+        "a-yellow-warning-for-rain",
+        "a-risk-of-flooding"
       ]
     },
     {
       "id": "storms",
       "concepts": [
-        "thunder",
-        "lightning",
-        "thunderstorm",
-        "storm"
+        "a-chance-of-thunder-and-lightning",
+        "the-odd-thunderstorm",
+        "more-rough-weather-over-the-next-few-hours",
+        "two-storms-in-one-weekend"
       ]
     }
   ]

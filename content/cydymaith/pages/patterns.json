@@ -1,7 +1,8 @@
 {
   "icon": "chat",
   "related": [
-    "where#landscape"
+    "where#landscape",
+    "when"
   ],
   "sections": [
     {

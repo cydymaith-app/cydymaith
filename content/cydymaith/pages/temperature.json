@@ -4,31 +4,31 @@
     {
       "id": "hot-cold",
       "concepts": [
-        "hot",
-        "warm",
-        "mild",
-        "chilly-fresh",
-        "cold"
+        "warm-for-the-time-of-year",
+        "mild-on-the-whole",
+        "feeling-fresh-in-the-wind",
+        "colder-than-yesterday",
+        "another-cold-night"
       ]
     },
     {
       "id": "humidity",
       "concepts": [
-        "dry",
-        "humid",
-        "muggy",
-        "humidity"
+        "it-should-turn-drier",
+        "damp-and-grey",
+        "close-humid-weather",
+        "high-humidity-in-the-afternoon"
       ]
     },
     {
       "id": "limits",
       "concepts": [
-        "temperature",
-        "degrees-celsius",
-        "highest-maximum",
-        "lowest-minimum",
-        "at-its-highest",
-        "at-its-lowest"
+        "temperatures-at-their-highest-in-the-afternoon",
+        "a-high-of-16-degrees",
+        "as-high-as-13-degrees-in-the-south",
+        "at-its-lowest-between-6-and-9-degrees",
+        "the-temperature-falling-fast-in-the-evening",
+        "a-few-degrees-below-freezing"
       ]
     }
   ]

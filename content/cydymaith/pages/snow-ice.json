@@ -1,25 +1,26 @@
 {
   "icon": "snow",
-  "related": ["where#landscape"],
+  "related": [
+    "where#landscape"
+  ],
   "sections": [
     {
       "id": "snow",
       "concepts": [
-        "snow",
-        "snowy",
-        "snowstorm",
-        "sleet",
-        "hail"
+        "snow-showers-on-the-mountains",
+        "sleet-on-lower-ground",
+        "the-odd-hail-shower",
+        "snow-settling-overnight",
+        "a-yellow-warning-for-snow"
       ]
     },
     {
       "id": "frost-ice",
       "concepts": [
-        "frost",
-        "icy",
-        "ice",
-        "freezing-point",
-        "below-freezing"
+        "a-hard-frost-in-places",
+        "hoar-frost-on-the-fields",
+        "icy-roads-in-the-morning",
+        "a-yellow-warning-for-ice"
       ]
     }
   ]

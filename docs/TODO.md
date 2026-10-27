@@ -25,6 +25,11 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
     - When retitled *Amser a dyddiad / Time and date*, with a related tile from The forecast in place of the group link, new rows in Days ahead and Parts of the day, and a held Before and after section;
     - a new held page, *Newid a symud / Change and movement*, taken off How it's said;
     - new rows in How it's said: Extent (released), Linking, Faint, and a held Around a figure.
+  - [x] **The weather cards hold forecast phrases, not single words** (2026-10-27; the app is not aimed at beginners). Done, all drafts listed in `REVIEW.md`:
+    - The forecast card (`warnings`) dropped. Its warnings went to the cards as phrases (*Rhybudd melyn am law* on Rain, a *Rhybuddion* section on Wind), its pressure to Change and movement (held), and its related tile to Time and date to How it's said.
+    - Sky, Rain, Snow and ice, Wind, Temperature and the held Change and movement: every single-word row replaced by a phrase or part-sentence, heard on S4C where one was heard. How it's said is unchanged for now.
+    - Grades: the rule is unchanged, so every weather card is now level 3 and the Order setting leaves the weather page in its written order.
+  - [ ] **Snow and ice is all authored**: no winter forecast has been heard yet. Check it against one, and replace what is not said.
   - [ ] **Shelved for now (may come back; the words are kept in `FORECAST-WORDS.md` section 9):**
     - **Impacts and Travel:** one future page, *Effeithiau / Impacts* (the sea, damage, travel). Travel could become a related page for the weather, and other groups would want it too.
     - The new sentence patterns on How it's said, Short forms (*Ffurfiau byr*), On screen (*Ar y sgrin*), and additions to Agor a chau and Cyflwyno pwynt.

@@ -100,7 +100,7 @@ class ProjectNavigationTests(unittest.TestCase):
         self.assertIn("Rain and storms", titles)
         rain_page = next(p for p in weather["children"] if p["second"]["text"] == "Rain and storms")
         rain = next(s for s in rain_page["children"] if s["href"].endswith("#rain"))
-        self.assertIn("Drizzle", [w["second"]["text"] for w in rain["children"]])
+        self.assertIn("Drizzle here and there", [w["second"]["text"] for w in rain["children"]])
 
 
 if __name__ == "__main__":
@@ -131,8 +131,9 @@ class RelatedTopicsTests(unittest.TestCase):
         return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', self.topic(slug))
 
     def test_the_weather_topics_that_mention_places_open_the_landscape_section_of_where(self):
-        for slug in ("rain", "snow-ice", "patterns"):
+        for slug in ("rain", "snow-ice"):
             self.assertEqual(self.tiles(slug), ["where.html#landscape"], slug)
+        self.assertEqual(self.tiles("patterns"), ["where.html#landscape", "when.html"])
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
         row = self.topic("rain")
@@ -145,9 +146,10 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertEqual(self.tiles("wind"), ["where.html#points"])
         self.assertEqual(self.tiles("where"), ["group-weather-forecast.html#topic-patterns"])
 
-    def test_the_forecast_opens_time_and_date_as_a_related_page(self):
-        self.assertEqual(self.tiles("warnings"), ["when.html"])
-        row = self.topic("warnings")
+    def test_how_its_said_opens_time_and_date_as_a_related_page(self):
+        """The tile was on The forecast until that card was dropped on 2026-10-27."""
+        self.assertIn("when.html", self.tiles("patterns"))
+        row = self.topic("patterns")
         row = row[row.index('<section class="related"') :]
         self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', row)
 
@@ -197,10 +199,10 @@ class GradingTests(unittest.TestCase):
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
         self.assertEqual(self.pages["patterns"]["level"], 3)
-        self.assertEqual(self.pages["sky"]["level"], 1)
+        self.assertEqual(self.pages["sky"]["level"], 3, "the weather cards hold forecast phrases, not single words (2026-10-27)")
         self.assertEqual(self.pages["place-name-elements"]["level"], 1)
         self.assertEqual(self.sections[("patterns", "it-will-be")]["level"], 3)
-        self.assertLess(self.pages["sky"]["level"], self.pages["patterns"]["level"])
+        self.assertLess(self.pages["place-name-elements"]["level"], self.pages["patterns"]["level"])
 
     def test_the_days_are_set_by_hand_because_two_written_words_are_one_beginner_item(self):
         days = self.sections[("when", "days")]

@@ -23,7 +23,7 @@ Both are self-hosted from `content/cydymaith/static/fonts/`, taken from the Font
 |---|---|---|
 | IBM Carbon, `@carbon/icons` 11.91.0 | Apache-2.0 | https://carbon-design-system.com, https://github.com/carbon-design-system/carbon |
 
-The seventeen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/cydymaith/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
+The sixteen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/cydymaith/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
 
 The paths are unmodified. The only change is a one-line comment added at the top of each file naming the package, version and licence. The build adds `fill="currentColor"` when inlining, because Carbon's files name no fill.
 
@@ -35,7 +35,6 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `snow` | Snow and ice |
 | `windy` | Wind |
 | `temperature` | Temperature |
-| `warning--alt` | The forecast |
 | `calendar` | When, and the Time and place group |
 | `compass` | Where |
 | `chat` | Talking about the weather, and How it's said |

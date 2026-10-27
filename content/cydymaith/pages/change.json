@@ -2,61 +2,67 @@
   "icon": "map",
   "sections": [
     {
+      "id": "pressure",
+      "status": "development",
+      "concepts": [
+        "high-pressure-in-charge",
+        "a-ridge-of-high-pressure-moving-in",
+        "an-area-of-intense-low-pressure",
+        "low-pressure-bringing-rain"
+      ]
+    },
+    {
       "id": "moving",
       "status": "development",
       "concepts": [
-        "to-hit",
-        "to-arrive",
-        "to-spread",
-        "to-extend",
-        "to-move",
-        "to-clear",
-        "to-recede",
-        "to-leave"
+        "hitting-the-west-first",
+        "arriving-by-the-morning",
+        "spreading-eastwards",
+        "extending-over-towards-anglesey",
+        "moving-in-from-the-west",
+        "the-rain-clearing-away",
+        "leaving-us-overnight"
       ]
     },
     {
       "id": "which-way",
       "status": "development",
       "concepts": [
-        "eastwards",
-        "towards-the",
-        "from-the-direction-of",
-        "across",
-        "over-towards",
-        "on-the-way"
+        "towards-the-east",
+        "from-the-direction-of-ireland",
+        "across-the-country",
+        "over-towards-the-north-east",
+        "more-rain-on-the-way",
+        "in-the-west-of-the-country"
       ]
     },
     {
       "id": "changing",
       "status": "development",
       "concepts": [
-        "to-change",
-        "to-turn",
-        "to-develop",
-        "to-cloud-over",
-        "to-strengthen",
-        "to-ease",
-        "to-calm",
-        "to-fall",
-        "to-brighten",
-        "to-settle"
+        "changing-by-the-weekend",
+        "turning-more-unsettled",
+        "showers-developing-in-the-afternoon",
+        "showers-getting-heavier",
+        "the-wind-easing-by-dawn",
+        "calming-down-overnight",
+        "clouding-over-from-the-west",
+        "brightening-up-by-the-afternoon",
+        "if-it-were-to-settle-a-little"
       ]
     },
     {
       "id": "other-verbs",
       "status": "development",
       "concepts": [
-        "to-expect",
-        "to-continue",
-        "to-happen",
-        "to-vary",
-        "to-coincide",
-        "to-see",
-        "to-hear",
-        "to-look",
-        "to-dominate",
-        "to-affect"
+        "strong-winds-are-expected",
+        "the-rain-will-continue-all-day",
+        "varying-from-place-to-place",
+        "coinciding-with-high-tide",
+        "we-could-see",
+        "we-saw-gusts-of-84-mph",
+        "the-rest-of-the-week-looks-dry",
+        "affecting-the-roads"
       ]
     }
   ]

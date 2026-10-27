@@ -1,129 +1,138 @@
 {
   "title": "Change and movement",
-  "lede": "Weather that arrives, spreads, clears and changes, and the verbs a forecaster uses for it.",
+  "lede": "Pressure, and weather that arrives, spreads, clears and changes, as a forecaster says it.",
   "source": "draft",
   "sections": {
+    "pressure": {
+      "title": "Pressure",
+      "concepts": {
+        "high-pressure-in-charge": {
+          "text": "High pressure in charge",
+          "note": "{{rheoli}}: to control, to dominate"
+        },
+        "a-ridge-of-high-pressure-moving-in": {
+          "text": "A ridge of high pressure moving in",
+          "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
+        },
+        "an-area-of-intense-low-pressure": {
+          "text": "An area of intense low pressure",
+          "note": "{{dwys}} means intense, deep"
+        },
+        "low-pressure-bringing-rain": {
+          "text": "Low pressure bringing rain"
+        }
+      }
+    },
     "moving": {
       "title": "Weather on the move",
       "concepts": {
-        "to-hit": {
-          "text": "To hit, to strike"
+        "hitting-the-west-first": {
+          "text": "Hitting the west first"
         },
-        "to-arrive": {
-          "text": "To arrive"
+        "arriving-by-the-morning": {
+          "text": "Arriving by the morning"
         },
-        "to-spread": {
-          "text": "To spread"
+        "spreading-eastwards": {
+          "text": "Spreading eastwards"
         },
-        "to-extend": {
-          "text": "To extend"
+        "extending-over-towards-anglesey": {
+          "text": "Extending over towards Anglesey"
         },
-        "to-move": {
-          "text": "To move"
+        "moving-in-from-the-west": {
+          "text": "Moving in from the west"
         },
-        "to-clear": {
-          "text": "To clear"
+        "the-rain-clearing-away": {
+          "text": "The rain clearing away"
         },
-        "to-recede": {
-          "text": "To clear away, recede"
-        },
-        "to-leave": {
-          "text": "To leave"
+        "leaving-us-overnight": {
+          "text": "Leaving us overnight"
         }
       }
     },
     "which-way": {
       "title": "Which way",
       "concepts": {
-        "eastwards": {
-          "text": "Eastwards"
+        "towards-the-east": {
+          "text": "Towards the east"
         },
-        "towards-the": {
-          "text": "Towards the …"
+        "from-the-direction-of-ireland": {
+          "text": "From the direction of Ireland"
         },
-        "from-the-direction-of": {
-          "text": "From the direction of the …"
+        "across-the-country": {
+          "text": "Across the country"
         },
-        "across": {
-          "text": "Across"
+        "over-towards-the-north-east": {
+          "text": "Over towards the north-east"
         },
-        "over-towards": {
-          "text": "Over towards"
+        "more-rain-on-the-way": {
+          "text": "More rain on the way",
+          "note": "{{ar y ffordd}} could also be on the road; to be confirmed"
         },
-        "on-the-way": {
-          "text": "On the way",
-          "note": "could also be on the road; to be confirmed"
+        "in-the-west-of-the-country": {
+          "text": "In the west of the country",
+          "note": "after {{yn}} (in) {{gorllewin}} becomes {{ngorllewin}}"
         }
       }
     },
     "changing": {
       "title": "Weather changing",
       "concepts": {
-        "to-change": {
-          "text": "To change"
+        "changing-by-the-weekend": {
+          "text": "Changing by the weekend"
         },
-        "to-turn": {
-          "text": "To turn"
+        "turning-more-unsettled": {
+          "text": "Turning more unsettled"
         },
-        "to-develop": {
-          "text": "To develop"
+        "showers-developing-in-the-afternoon": {
+          "text": "Showers developing in the afternoon"
         },
-        "to-cloud-over": {
-          "text": "To cloud over"
+        "showers-getting-heavier": {
+          "text": "Showers getting heavier"
         },
-        "to-strengthen": {
-          "text": "To strengthen"
+        "the-wind-easing-by-dawn": {
+          "text": "The wind easing by dawn",
+          "note": "{{gostegu}}: to ease; {{gwawrio}}: to dawn"
         },
-        "to-ease": {
-          "text": "To ease, to subside"
+        "calming-down-overnight": {
+          "text": "Calming down overnight"
         },
-        "to-calm": {
-          "text": "To calm down"
+        "clouding-over-from-the-west": {
+          "text": "Clouding over from the west"
         },
-        "to-fall": {
-          "text": "To fall"
+        "brightening-up-by-the-afternoon": {
+          "text": "Brightening up by the afternoon"
         },
-        "to-brighten": {
-          "text": "To brighten up"
-        },
-        "to-settle": {
-          "text": "To settle"
+        "if-it-were-to-settle-a-little": {
+          "text": "If it were to settle a little"
         }
       }
     },
     "other-verbs": {
       "title": "Other verbs",
       "concepts": {
-        "to-expect": {
-          "text": "To expect"
+        "strong-winds-are-expected": {
+          "text": "Strong winds are expected"
         },
-        "to-continue": {
-          "text": "To continue"
+        "the-rain-will-continue-all-day": {
+          "text": "The rain will continue all day"
         },
-        "to-happen": {
-          "text": "To happen"
+        "varying-from-place-to-place": {
+          "text": "Varying from place to place"
         },
-        "to-vary": {
-          "text": "To vary"
+        "coinciding-with-high-tide": {
+          "text": "Coinciding with high tide"
         },
-        "to-coincide": {
-          "text": "To coincide"
+        "we-could-see": {
+          "text": "We could see …"
         },
-        "to-see": {
-          "text": "To see"
+        "we-saw-gusts-of-84-mph": {
+          "text": "We saw gusts of 84 miles per hour"
         },
-        "to-hear": {
-          "text": "To hear"
+        "the-rest-of-the-week-looks-dry": {
+          "text": "The rest of the week looks dry"
         },
-        "to-look": {
-          "text": "To look"
-        },
-        "to-dominate": {
-          "text": "To dominate",
-          "note": "said of high pressure"
-        },
-        "to-affect": {
-          "text": "To affect"
+        "affecting-the-roads": {
+          "text": "Affecting the roads"
         }
       }
     }

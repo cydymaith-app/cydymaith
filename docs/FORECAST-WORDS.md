@@ -2,6 +2,8 @@
 
 The words collected from S4C broadcasts (uploads 1 to 11, October 2026: *Y Dyddiau Nesaf*, *Dros Nos* and one *Newyddion* storm report), checked against the content as it stands after the Temperature regroup (commit `ed15e9f`), with duplicates removed and each word given one home.
 
+**Update, 27 October 2026:** the weather cards now hold forecast phrases in place of these single words, and The forecast card (`warnings`) is gone: its warnings are phrases on the cards, its pressure is on Change and movement. The tables below record where each word was placed on 26 October; the words live on inside the phrases (see `REVIEW.md`).
+
 **Status: carried out on 26 October 2026, except what is shelved (section 9).** Where the content differs from the tables below: *Fine spells* is its own row (not a form on *dry spells*), and Faint is split so that *Rhyw*, *Hyd at* and *Rhwng … a …* sit in a held section, *O gwmpas rhif / Around a figure*, until the units page is written. Pressure sits second on The forecast page, and *Rheoli* is on Other verbs. Nothing here is in the app yet. Every Welsh word and gloss is a draft until a fluent speaker has checked it (see `REVIEW.md`). The raw lists per upload are in the memory file `broadcast-words-to-collect.md`.
 
 ## How to read the tables

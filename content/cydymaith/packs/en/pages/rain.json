@@ -1,51 +1,55 @@
 {
   "title": "Rain and storms",
-  "lede": "Rain from drizzle to downpours, then thunder and storms.",
+  "lede": "Rain as a forecast says it, from drizzle to downpours and the warnings, then thunder and rough weather.",
   "source": "draft",
   "sections": {
     "rain": {
       "title": "Rain",
       "concepts": {
-        "drizzle": {
-          "text": "Drizzle"
+        "drizzle-here-and-there": {
+          "text": "Drizzle here and there"
         },
-        "light-rain": {
-          "text": "Light rain"
+        "only-a-few-showers": {
+          "text": "Only a few showers"
         },
-        "rain": {
-          "text": "Rain"
+        "heavy-showers-in-the-afternoon": {
+          "text": "Heavy showers in the afternoon"
         },
-        "rainy": {
-          "text": "Rainy"
+        "spells-of-heavy-rain-as-well": {
+          "text": "Spells of heavy rain as well",
+          "note": "{{glaw}} softens to {{law}} after {{o}}"
         },
-        "showers": {
-          "text": "Showers"
+        "possibly-heavy-at-times": {
+          "text": "Possibly heavy at times"
         },
-        "heavy-rain": {
-          "text": "Heavy rain"
+        "heavy-rain-and-strong-wind": {
+          "text": "Heavy rain and strong wind"
         },
-        "wet": {
-          "text": "Wet"
+        "a-yellow-warning-for-rain": {
+          "text": "A yellow warning for rain",
+          "note": "{{am}} softens {{glaw}} to {{law}}"
         },
-        "rainbow": {
-          "text": "Rainbow"
+        "a-risk-of-flooding": {
+          "text": "A risk of flooding",
+          "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
         }
       }
     },
     "storms": {
       "title": "Thunder and storms",
       "concepts": {
-        "thunder": {
-          "text": "Thunder"
+        "a-chance-of-thunder-and-lightning": {
+          "text": "A chance of thunder and lightning"
         },
-        "lightning": {
-          "text": "Lightning"
+        "the-odd-thunderstorm": {
+          "text": "The odd thunderstorm"
         },
-        "thunderstorm": {
-          "text": "Thunderstorm"
+        "more-rough-weather-over-the-next-few-hours": {
+          "text": "More rough weather over the next few hours"
         },
-        "storm": {
-          "text": "Storm"
+        "two-storms-in-one-weekend": {
+          "text": "Two storms in one weekend",
+          "note": "{{dwy}} is two before a feminine noun"
         }
       }
     }

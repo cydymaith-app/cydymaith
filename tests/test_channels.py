@@ -52,9 +52,9 @@ class ChannelTests(unittest.TestCase):
         return {e["concept"] for e in dictionary["entries"]}
 
     def test_the_release_build_leaves_out_a_held_back_section(self):
-        self.assertNotIn("snow", self.concept_ids(self.rel_dict))
-        self.assertIn("snow", self.concept_ids(self.dev_dict))
-        self.assertIn("rain", self.concept_ids(self.rel_dict))
+        self.assertNotIn("snow-showers-on-the-mountains", self.concept_ids(self.rel_dict))
+        self.assertIn("snow-showers-on-the-mountains", self.concept_ids(self.dev_dict))
+        self.assertIn("drizzle-here-and-there", self.concept_ids(self.rel_dict))
 
     def test_the_release_build_is_the_default(self):
         out = self.tmp / "default"

@@ -5,7 +5,6 @@
       "layout": "one-page",
       "icon": "rain--scattered",
       "pages": [
-        "warnings",
         "sky",
         "rain",
         "snow-ice",

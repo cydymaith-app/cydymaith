@@ -5,88 +5,79 @@
     "sun-cloud": {
       "title": "Haul a chymylau",
       "concepts": {
-        "sun": {
-          "text": "Haul",
-          "note": "the sun: {{yr haul}}"
+        "plenty-of-sunshine": {
+          "text": "Digon o heulwen"
         },
-        "sunshine": {
-          "text": "Heulwen"
+        "a-little-sunshine-in-some-areas": {
+          "text": "Ychydig o heulwen mewn rhai ardaloedd"
         },
-        "sunny": {
-          "text": "Heulog"
-        },
-        "sunny-spells": {
-          "text": "Ysbeidiau heulog",
+        "sunny-spells-in-the-afternoon": {
+          "text": "Ysbeidiau heulog yn y prynhawn",
           "also": [
             "cyfnodau heulog"
           ]
         },
-        "cloud": {
-          "text": "Cwmwl",
+        "dry-and-fine": {
+          "text": "Sych a braf"
+        },
+        "dry-on-the-whole": {
+          "text": "Sych ar y cyfan"
+        },
+        "clear-skies-overnight": {
+          "text": "Awyr glir dros nos"
+        },
+        "sunny-at-first-before-clouding-over": {
+          "text": "Heulog i ddechrau, cyn cymylu",
+          "note": "{{cymylu}}: to cloud over"
+        },
+        "cloudy-at-first": {
+          "text": "Cymylog i ddechrau",
           "also": [
-            "cymylau"
+            "gymylog i ddechrau"
           ]
-        },
-        "cloudy": {
-          "text": "Cymylog",
-          "also": [
-            "gymylog"
-          ]
-        },
-        "clear": {
-          "text": "Clir"
-        },
-        "fine-pleasant": {
-          "text": "Braf",
-          "note": "{{tywydd braf}}: fine weather"
-        },
-        "dry": {
-          "text": "Sych"
         }
       },
-      "order": "the sun and sunshine, then the cloud, then clear and dry"
+      "order": "sunniest to cloudiest"
     },
     "fog": {
       "title": "Niwl a tharth",
       "concepts": {
-        "fog": {
-          "text": "Niwl"
+        "thick-fog-on-the-hills": {
+          "text": "Niwl trwchus ar y bryniau"
         },
-        "foggy": {
-          "text": "Niwlog"
+        "mist-in-the-valleys": {
+          "text": "Tarth yn y cymoedd",
+          "note": "{{tarth}} is mist; {{niwl}} is fog"
         },
-        "mist": {
-          "text": "Tarth"
+        "poor-visibility-on-some-roads": {
+          "text": "Gwelededd gwael ar rai ffyrdd"
         },
-        "visibility": {
-          "text": "Gwelededd"
-        },
-        "poor-visibility": {
-          "text": "Gwelededd gwael"
+        "the-fog-clearing-by-mid-morning": {
+          "text": "Y niwl yn clirio erbyn canol y bore"
         }
       },
-      "order": "fog and mist, then how far you can see"
+      "order": "thickest to clearing"
     },
     "look": {
       "title": "Golwg yr awyr",
       "concepts": {
-        "blue-sky": {
-          "text": "Awyr las"
+        "plenty-of-blue-sky": {
+          "text": "Digon o awyr las"
         },
-        "greyish": {
-          "text": "Llwydaidd"
+        "a-dull-grey-day": {
+          "text": "Diwrnod llwydaidd"
         },
-        "settled": {
-          "text": "Sefydlog"
+        "settled-for-a-while": {
+          "text": "Tywydd sefydlog am gyfnod"
         },
-        "unsettled": {
-          "text": "Ansefydlog"
+        "changeable-over-the-weekend": {
+          "text": "Tywydd cyfnewidiol dros y penwythnos"
         },
-        "changeable": {
-          "text": "Cyfnewidiol"
+        "unsettled-from-mid-week-onwards": {
+          "text": "Ansefydlog o ganol yr wythnos ymlaen"
         }
       },
-      "order": "colour first, then how settled it is"
+      "order": "settled to unsettled"
     }
   }
 }

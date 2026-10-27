@@ -1,77 +1,73 @@
 {
   "title": "Sky and visibility",
-  "lede": "Sun, cloud, clear skies and fog.",
+  "lede": "How the sky looks in a forecast: sunshine and cloud, fog and mist, and settled or unsettled weather.",
   "source": "draft",
   "sections": {
     "sun-cloud": {
       "title": "Sun and cloud",
       "concepts": {
-        "sun": {
-          "text": "Sun"
+        "plenty-of-sunshine": {
+          "text": "Plenty of sunshine"
         },
-        "sunshine": {
-          "text": "Sunshine"
+        "a-little-sunshine-in-some-areas": {
+          "text": "A little sunshine in some areas"
         },
-        "sunny": {
-          "text": "Sunny"
+        "sunny-spells-in-the-afternoon": {
+          "text": "Sunny spells in the afternoon"
         },
-        "sunny-spells": {
-          "text": "Sunny spells"
+        "dry-and-fine": {
+          "text": "Dry and fine"
         },
-        "cloud": {
-          "text": "Cloud"
+        "dry-on-the-whole": {
+          "text": "Dry on the whole"
         },
-        "cloudy": {
-          "text": "Cloudy"
+        "clear-skies-overnight": {
+          "text": "Clear skies overnight"
         },
-        "clear": {
-          "text": "Clear"
+        "sunny-at-first-before-clouding-over": {
+          "text": "Sunny at first, before clouding over",
+          "note": "{{cymylu}}: to cloud over"
         },
-        "fine-pleasant": {
-          "text": "Fine, pleasant"
-        },
-        "dry": {
-          "text": "Dry"
+        "cloudy-at-first": {
+          "text": "Cloudy at first"
         }
       }
     },
     "fog": {
       "title": "Fog and mist",
       "concepts": {
-        "fog": {
-          "text": "Fog"
+        "thick-fog-on-the-hills": {
+          "text": "Thick fog on the hills"
         },
-        "foggy": {
-          "text": "Foggy"
+        "mist-in-the-valleys": {
+          "text": "Mist in the valleys",
+          "note": "{{tarth}} is mist; {{niwl}} is fog"
         },
-        "mist": {
-          "text": "Mist"
+        "poor-visibility-on-some-roads": {
+          "text": "Poor visibility on some roads"
         },
-        "visibility": {
-          "text": "Visibility"
-        },
-        "poor-visibility": {
-          "text": "Poor visibility"
+        "the-fog-clearing-by-mid-morning": {
+          "text": "The fog clearing by mid-morning"
         }
       }
     },
     "look": {
       "title": "How the sky looks",
       "concepts": {
-        "blue-sky": {
-          "text": "Blue sky"
+        "plenty-of-blue-sky": {
+          "text": "Plenty of blue sky"
         },
-        "greyish": {
-          "text": "Greyish, dull"
+        "a-dull-grey-day": {
+          "text": "A dull, grey day"
         },
-        "settled": {
-          "text": "Settled"
+        "settled-for-a-while": {
+          "text": "Settled weather for a while"
         },
-        "unsettled": {
-          "text": "Unsettled"
+        "changeable-over-the-weekend": {
+          "text": "Changeable weather over the weekend"
         },
-        "changeable": {
-          "text": "Changeable"
+        "unsettled-from-mid-week-onwards": {
+          "text": "Unsettled from mid-week onwards"
         }
       }
     }

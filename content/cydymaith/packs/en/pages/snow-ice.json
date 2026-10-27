@@ -1,45 +1,45 @@
 {
   "title": "Snow and ice",
-  "lede": "Snow, sleet and hail, frost and ice, and the freezing point.",
+  "lede": "Snow, sleet and hail, frost and ice, as a forecast puts them.",
   "source": "draft",
   "sections": {
     "snow": {
       "title": "Snow",
       "concepts": {
-        "snow": {
-          "text": "Snow"
+        "snow-showers-on-the-mountains": {
+          "text": "Snow showers on the mountains"
         },
-        "snowy": {
-          "text": "Snowy"
+        "sleet-on-lower-ground": {
+          "text": "Sleet on lower ground"
         },
-        "snowstorm": {
-          "text": "Snowstorm"
+        "the-odd-hail-shower": {
+          "text": "The odd hail shower",
+          "note": "{{cenllysg}} is hail; it softens to {{genllysg}} after {{o}}"
         },
-        "sleet": {
-          "text": "Sleet"
+        "snow-settling-overnight": {
+          "text": "Snow settling overnight",
+          "note": "{{setlo}}: to settle, to lie; to be confirmed"
         },
-        "hail": {
-          "text": "Hail"
+        "a-yellow-warning-for-snow": {
+          "text": "A yellow warning for snow"
         }
       }
     },
     "frost-ice": {
       "title": "Frost and ice",
       "concepts": {
-        "frost": {
-          "text": "Frost"
+        "a-hard-frost-in-places": {
+          "text": "A hard frost in places"
         },
-        "icy": {
-          "text": "Icy"
+        "hoar-frost-on-the-fields": {
+          "text": "Hoar frost on the fields",
+          "note": "{{barrug}}: hoar frost, rime; to be confirmed"
         },
-        "ice": {
-          "text": "Ice"
+        "icy-roads-in-the-morning": {
+          "text": "Icy roads in the morning"
         },
-        "freezing-point": {
-          "text": "Freezing point"
-        },
-        "below-freezing": {
-          "text": "Below freezing"
+        "a-yellow-warning-for-ice": {
+          "text": "A yellow warning for ice"
         }
       }
     }

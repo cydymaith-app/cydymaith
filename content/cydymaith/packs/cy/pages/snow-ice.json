@@ -5,44 +5,44 @@
     "snow": {
       "title": "Eira",
       "concepts": {
-        "snow": {
-          "text": "Eira"
+        "snow-showers-on-the-mountains": {
+          "text": "Cawodydd eira ar y mynyddoedd"
         },
-        "snowy": {
-          "text": "Eiraog"
+        "sleet-on-lower-ground": {
+          "text": "Eirlaw ar dir is"
         },
-        "snowstorm": {
-          "text": "Storm eira"
+        "the-odd-hail-shower": {
+          "text": "Ambell gawod o genllysg",
+          "note": "{{cenllysg}} is hail; it softens to {{genllysg}} after {{o}}"
         },
-        "sleet": {
-          "text": "Eirlaw"
+        "snow-settling-overnight": {
+          "text": "Eira yn setlo dros nos",
+          "note": "{{setlo}}: to settle, to lie; to be confirmed"
         },
-        "hail": {
-          "text": "Cenllysg"
+        "a-yellow-warning-for-snow": {
+          "text": "Rhybudd melyn am eira"
         }
       },
-      "order": "snow, then sleet and hail"
+      "order": "snow, then sleet and hail, then the warning"
     },
     "frost-ice": {
       "title": "Rhew ac iâ",
       "concepts": {
-        "frost": {
-          "text": "Rhew"
+        "a-hard-frost-in-places": {
+          "text": "Rhew caled mewn mannau"
         },
-        "icy": {
-          "text": "Rhewllyd"
+        "hoar-frost-on-the-fields": {
+          "text": "Barrug ar y caeau",
+          "note": "{{barrug}}: hoar frost, rime; to be confirmed"
         },
-        "ice": {
-          "text": "Iâ"
+        "icy-roads-in-the-morning": {
+          "text": "Ffyrdd rhewllyd yn y bore"
         },
-        "freezing-point": {
-          "text": "Rhewbwynt"
-        },
-        "below-freezing": {
-          "text": "Islaw rhewbwynt"
+        "a-yellow-warning-for-ice": {
+          "text": "Rhybudd melyn am iâ"
         }
       },
-      "order": "frost and ice, then the freezing point"
+      "order": "frost, then ice, then the warning"
     }
   }
 }

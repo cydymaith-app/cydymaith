@@ -1,76 +1,83 @@
 {
   "title": "Wind",
-  "lede": "From breeze to gale, and the direction a wind comes from.",
+  "lede": "How strong the wind is, the direction it comes from, and the warnings for it.",
   "source": "draft",
   "sections": {
     "wind": {
       "title": "Wind strength",
       "concepts": {
-        "wind": {
-          "text": "Wind"
+        "mostly-light-winds": {
+          "text": "Mostly light winds"
         },
-        "windy": {
-          "text": "Windy"
+        "a-moderate-breeze-from-the-south-west": {
+          "text": "A moderate breeze from the south-west"
         },
-        "to-blow": {
-          "text": "To blow"
+        "the-wind-strengthening": {
+          "text": "The wind strengthening"
         },
-        "calm": {
-          "text": "Calm"
+        "drier-and-windy": {
+          "text": "Drier and windy"
         },
-        "breeze": {
-          "text": "Breeze"
+        "strong-winds-on-the-coast": {
+          "text": "Strong winds on the coast"
         },
-        "light-breeze": {
-          "text": "Light breeze"
-        },
-        "moderate": {
-          "text": "Moderate"
-        },
-        "strong-winds": {
-          "text": "Strong winds"
-        },
-        "at-its-strongest": {
-          "text": "At its strongest",
+        "the-wind-at-its-strongest-overnight": {
+          "text": "The wind at its strongest overnight",
           "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}"
         },
-        "gusts": {
-          "text": "Gusts"
+        "gusts-of-up-to-70-mph": {
+          "text": "Gusts of up to 70 miles per hour",
+          "note": "on screen {{milltir yr awr}} is {{mya}}: {{70mya}}"
         },
-        "wind-speed": {
-          "text": "Wind speed"
-        },
-        "miles-per-hour": {
-          "text": "Miles per hour"
+        "about-60-mph-on-the-coast": {
+          "text": "About 60 miles per hour on the coast"
         }
       }
     },
     "wind-direction": {
       "title": "Wind direction",
       "concepts": {
-        "northerly": {
-          "text": "Northerly"
+        "a-cold-northerly": {
+          "text": "A cold northerly wind"
         },
-        "southerly": {
-          "text": "Southerly"
+        "blowing-from-the-north-east": {
+          "text": "Blowing from the north-east"
         },
-        "easterly": {
-          "text": "Easterly"
+        "a-biting-easterly": {
+          "text": "A biting easterly wind",
+          "note": "{{main}} means thin; of a wind, keen or biting"
         },
-        "westerly": {
-          "text": "Westerly"
+        "mild-southerly-winds": {
+          "text": "Mild southerly winds"
         },
-        "north-easterly": {
-          "text": "North-easterly"
+        "a-fresh-westerly": {
+          "text": "A fresh westerly wind"
         },
-        "north-westerly": {
-          "text": "North-westerly"
+        "turning-north-westerly": {
+          "text": "Turning north-westerly",
+          "note": "after {{troi'n}} (turning) {{gogledd}} softens to {{ogledd}}"
+        }
+      }
+    },
+    "warnings": {
+      "title": "Warnings",
+      "concepts": {
+        "the-met-office-has-issued-a-yellow-wind-warning": {
+          "text": "The Met Office has issued a yellow warning for wind",
+          "note": "{{am}} softens {{gwynt}} to {{wynt}}"
         },
-        "south-easterly": {
-          "text": "South-easterly"
+        "the-warning-comes-into-force-at-six-this-evening": {
+          "text": "The warning comes into force at six this evening"
         },
-        "south-westerly": {
-          "text": "South-westerly"
+        "in-force-until-three-in-the-morning": {
+          "text": "In force until three in the morning",
+          "note": "{{tan}} softens {{tri}} to {{dri}}"
+        },
+        "an-amber-wind-warning": {
+          "text": "An amber warning for wind"
+        },
+        "the-met-office-is-warning-of-rough-weather": {
+          "text": "The Met Office is warning of rough weather"
         }
       }
     }

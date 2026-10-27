@@ -4,35 +4,33 @@
     {
       "id": "sun-cloud",
       "concepts": [
-        "sun",
-        "sunshine",
-        "sunny",
-        "sunny-spells",
-        "cloud",
-        "cloudy",
-        "clear",
-        "fine-pleasant",
-        "dry"
+        "plenty-of-sunshine",
+        "a-little-sunshine-in-some-areas",
+        "sunny-spells-in-the-afternoon",
+        "dry-and-fine",
+        "dry-on-the-whole",
+        "clear-skies-overnight",
+        "sunny-at-first-before-clouding-over",
+        "cloudy-at-first"
       ]
     },
     {
       "id": "fog",
       "concepts": [
-        "fog",
-        "foggy",
-        "mist",
-        "visibility",
-        "poor-visibility"
+        "thick-fog-on-the-hills",
+        "mist-in-the-valleys",
+        "poor-visibility-on-some-roads",
+        "the-fog-clearing-by-mid-morning"
       ]
     },
     {
       "id": "look",
       "concepts": [
-        "blue-sky",
-        "greyish",
-        "settled",
-        "unsettled",
-        "changeable"
+        "plenty-of-blue-sky",
+        "a-dull-grey-day",
+        "settled-for-a-while",
+        "changeable-over-the-weekend",
+        "unsettled-from-mid-week-onwards"
       ]
     }
   ]

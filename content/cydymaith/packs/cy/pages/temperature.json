@@ -5,81 +5,71 @@
     "hot-cold": {
       "title": "Poeth ac oer",
       "concepts": {
-        "hot": {
-          "text": "Poeth",
-          "also": [
-            "boeth"
-          ]
+        "warm-for-the-time-of-year": {
+          "text": "Cynnes am yr adeg o'r flwyddyn"
         },
-        "warm": {
-          "text": "Cynnes",
-          "also": [
-            "gynnes"
-          ]
+        "mild-on-the-whole": {
+          "text": "Mwyn ar y cyfan"
         },
-        "mild": {
-          "text": "Mwyn",
-          "also": [
-            "fwyn"
-          ]
+        "feeling-fresh-in-the-wind": {
+          "text": "Teimlo'n ffres yn y gwynt"
         },
-        "chilly-fresh": {
-          "text": "Ffres"
+        "colder-than-yesterday": {
+          "text": "Oerach na ddoe"
         },
-        "cold": {
-          "text": "Oer"
+        "another-cold-night": {
+          "text": "Noson oer arall"
         }
       },
-      "order": "hottest to coldest"
+      "order": "warmest to coldest"
     },
     "humidity": {
       "title": "Pa mor llaith",
       "concepts": {
-        "dry": {
-          "text": "Sych"
-        },
-        "humid": {
-          "text": "Llaith",
+        "it-should-turn-drier": {
+          "text": "Dylai hi droi'n sychach",
           "also": [
-            "laith"
-          ],
-          "note": "damp or humid; {{mwll}} is muggy, close"
+            "ddylai hi droi'n sychach"
+          ]
         },
-        "muggy": {
-          "text": "Mwll"
+        "damp-and-grey": {
+          "text": "Llaith a llwydaidd"
         },
-        "humidity": {
-          "text": "Lleithder"
+        "close-humid-weather": {
+          "text": "Tywydd mwll a llaith"
+        },
+        "high-humidity-in-the-afternoon": {
+          "text": "Lleithder uchel yn y prynhawn"
         }
       },
-      "order": "dry to muggy, then the noun"
+      "order": "dry to muggy"
     },
     "limits": {
       "title": "Graddau a therfynau",
       "concepts": {
-        "temperature": {
-          "text": "Tymheredd"
-        },
-        "degrees-celsius": {
-          "text": "Graddau Celsius",
-          "note": "after a number the noun stays singular: {{deg gradd Celsius}}, ten degrees"
-        },
-        "highest-maximum": {
-          "text": "Uchaf",
-          "note": "{{uchaf}} and {{isaf}} also mean upper and lower in place names"
-        },
-        "lowest-minimum": {
-          "text": "Isaf"
-        },
-        "at-its-highest": {
-          "text": "Ar ei uchaf",
+        "temperatures-at-their-highest-in-the-afternoon": {
+          "text": "Y tymheredd ar ei uchaf yn y prynhawn",
           "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
         },
-        "at-its-lowest": {
-          "text": "Ar ei isaf"
+        "a-high-of-16-degrees": {
+          "text": "Uchafbwynt o 16 gradd",
+          "note": "after a number the noun stays singular: {{gradd}}"
+        },
+        "as-high-as-13-degrees-in-the-south": {
+          "text": "Mor uchel â 13 gradd yn y de"
+        },
+        "at-its-lowest-between-6-and-9-degrees": {
+          "text": "Ar ei isaf rhwng 6 a 9 gradd"
+        },
+        "the-temperature-falling-fast-in-the-evening": {
+          "text": "Y tymheredd yn syrthio'n gyflym gyda'r nos"
+        },
+        "a-few-degrees-below-freezing": {
+          "text": "Ychydig raddau islaw'r rhewbwynt",
+          "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
         }
       },
-      "order": "the measure, then the limits, highest before lowest"
+      "order": "highs, then lows"
     }
   }
 }

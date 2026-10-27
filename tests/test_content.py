@@ -41,8 +41,9 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
     def build(out, data_dir=PROJECT, **kw):
         return phrasebook.build(out, project_dir=data_dir, **kw)
 
-# Entry counts when the site was first restructured. Content may grow, never shrink by accident.
-ENTRY_FLOOR = {"warnings": 14, "sky": 19, "rain": 12, "snow-ice": 10, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11, "geography": 12, "place-name-elements": 46}
+# Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
+# the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone.
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11, "geography": 12, "place-name-elements": 46}
 
 
 class Page(HTMLParser):
@@ -178,9 +179,9 @@ class BuildTests(unittest.TestCase):
 
     def test_the_weather_tiles_follow_what_a_forecast_talks_about_in_the_order_it_runs(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        self.assertEqual(weather["pages"], ["warnings", "sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
+        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
 
-    def test_where_is_one_shared_group_that_the_weather_group_also_links_to_and_time_and_date_is_a_related_page_of_the_forecast(self):
+    def test_where_is_one_shared_group_that_the_weather_group_also_links_to_and_time_and_date_is_a_related_page_of_how_its_said(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         shared = next(g for g in self.site.groups if g["id"] == "time-and-place")
         self.assertEqual(shared["pages"], ["when", "where"])
@@ -191,24 +192,15 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="where.html"', tiles)
         self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
         self.assertIn('href="when.html"', self.built["group-time-and-place.html"])
-        self.assertIn('href="when.html" data-related', topic_html(self.site, self.built, "warnings"))
+        self.assertIn('href="when.html" data-related', topic_html(self.site, self.built, "patterns"))  # moved here when The forecast went
         self.assertIn("Amser a dyddiad", self.built["when.html"])
         self.assertIn("Time and date", self.built["when.html"])
 
-    def test_dry_is_written_the_same_on_the_sky_and_the_temperature_pages(self):
-        for lang in ("cy", "en"):
-            texts = []
-            for slug, section in (("sky", "sun-cloud"), ("temperature", "humidity")):
-                pack = json.loads((PROJECT / "packs" / lang / "pages" / f"{slug}.json").read_text(encoding="utf-8"))
-                texts.append(pack["sections"][section]["concepts"]["dry"])
-            self.assertEqual(texts[0], texts[1], lang)
-
-    def test_pressure_is_the_second_section_of_the_forecast_and_change_and_movement_is_a_held_page(self):
-        raw = json.loads((PROJECT / "pages" / "warnings.json").read_text(encoding="utf-8"))
-        self.assertEqual([s["id"] for s in raw["sections"]], ["forecast", "pressure", "levels", "warnings"])
-        self.assertEqual(raw["related"], ["when"])
-        self.assertEqual(next(s for s in raw["sections"] if s["id"] == "pressure").get("status"), "development")
+    def test_pressure_opens_change_and_movement_which_is_a_held_page_and_the_forecast_card_is_gone(self):
+        """The forecast card was dropped on 2026-10-27; its pressure went to Change and movement, its warnings to the cards."""
+        self.assertFalse((PROJECT / "pages" / "warnings.json").exists())
         change = json.loads((PROJECT / "pages" / "change.json").read_text(encoding="utf-8"))
+        self.assertEqual([s["id"] for s in change["sections"]], ["pressure", "moving", "which-way", "changing", "other-verbs"])
         self.assertTrue(all(s.get("status") == "development" for s in change["sections"]), "the page stays held until reviewed")
         self.assertNotIn("change.html", self.built)
         patterns = json.loads((PROJECT / "pages" / "patterns.json").read_text(encoding="utf-8"))
@@ -315,18 +307,18 @@ class BuildTests(unittest.TestCase):
 
     def test_the_welsh_comes_first_because_it_is_the_language_that_is_heard(self):
         self.assertEqual(list(self.edition["default_pair"]), ["cy", "en"])
-        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw</th>', topic_html(self.site, self.built, "rain"))
+        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw mân yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"warnings": 3, "sky": 3, "rain": 2, "snow-ice": 2, "wind": 2, "temperature": 3, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
     def test_a_word_heard_in_another_form_is_found_by_that_form(self):
         dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
-        rain = next(e for e in dictionary["entries"] if e["concept"] == "rain")
-        self.assertIn("law", rain["also"]["cy"])
-        self.assertIn("Glaw", [t["text"] for t in rain["terms"]["cy"]])
+        rain = next(e for e in dictionary["entries"] if e["concept"] == "spells-of-heavy-rain-as-well")
+        self.assertIn("chyfnodau o law trwm", rain["also"]["cy"])
+        self.assertIn("Cyfnodau o law trwm hefyd", [t["text"] for t in rain["terms"]["cy"]])
 
     def test_the_sentences_live_on_one_patterns_page_and_no_topic_repeats_an_in_a_sentence_section(self):
         for slug in self.site.slugs:
@@ -335,7 +327,7 @@ class BuildTests(unittest.TestCase):
                          ["it-is", "doing", "it-will-be", "there-will-be", "wind-from", "extent"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        slugs = ("warnings", "sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")
+        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
     def test_the_town_and_country_names_are_released_in_the_geography_group_with_the_place_name_elements_after_them(self):
@@ -601,7 +593,7 @@ class VarietyRenderingTests(unittest.TestCase):
     def test_a_plain_row_keeps_the_plain_markup(self):
         page = topic_html(self.site, self.site.render_all(), "sky")
         self.assertNotIn('class="forms"', page)
-        self.assertIn('<th scope="row" class="l1" lang="cy">Haul</th>', page)
+        self.assertIn('<th scope="row" class="l1" lang="cy">Digon o heulwen</th>', page)
 
     def test_a_form_can_carry_its_own_note(self):
         raw = copy.deepcopy(self.raw)
@@ -728,7 +720,7 @@ class AddingALanguageTests(unittest.TestCase):
         shutil.copytree(PROJECT, cls.data)
         # gd translates two concepts of one page; ar (right to left) translates one concept of another.
         add_pack(cls.data, "gd", "Gaelic", pages={"where": {"points": ["north", "south"]}}, edition="Test Edition")
-        add_pack(cls.data, "ar", "Arabic", direction="rtl", pages={"sky": {"sun-cloud": ["sun"]}})
+        add_pack(cls.data, "ar", "Arabic", direction="rtl", pages={"sky": {"sun-cloud": ["plenty-of-sunshine"]}})
 
     @classmethod
     def tearDownClass(cls):
@@ -781,7 +773,7 @@ class AddingALanguageTests(unittest.TestCase):
         self.assertEqual(site.slugs, ["sky"])
         page = topic_html(site, site.render_all(), "sky")
         self.assertIn('lang="ar" dir="rtl"', page)
-        self.assertIn("ar:sun", page)
+        self.assertIn("ar:plenty-of-sunshine", page)
 
     def test_coverage_counts_translated_concepts(self):
         raw = self.raw()

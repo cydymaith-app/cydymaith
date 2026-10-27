@@ -2,38 +2,56 @@
   "title": "Newid a symud",
   "source": "draft",
   "sections": {
+    "pressure": {
+      "title": "Gwasgedd",
+      "concepts": {
+        "high-pressure-in-charge": {
+          "text": "Gwasgedd uchel yn rheoli",
+          "note": "{{rheoli}}: to control, to dominate"
+        },
+        "a-ridge-of-high-pressure-moving-in": {
+          "text": "Cefnlen o wasgedd uchel yn symud i mewn",
+          "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
+        },
+        "an-area-of-intense-low-pressure": {
+          "text": "Ardal o wasgedd isel dwys",
+          "note": "{{dwys}} means intense, deep",
+          "also": [
+            "ardal o wasgedd isel"
+          ]
+        },
+        "low-pressure-bringing-rain": {
+          "text": "Gwasgedd isel yn dod â glaw"
+        }
+      },
+      "order": "high, then low"
+    },
     "moving": {
       "title": "Y tywydd yn symud",
       "concepts": {
-        "to-hit": {
-          "text": "Taro",
-          "also": [
-            "yn taro"
-          ]
+        "hitting-the-west-first": {
+          "text": "Yn taro'r gorllewin yn gyntaf"
         },
-        "to-arrive": {
-          "text": "Cyrraedd"
+        "arriving-by-the-morning": {
+          "text": "Yn cyrraedd erbyn y bore"
         },
-        "to-spread": {
-          "text": "Lledu",
+        "spreading-eastwards": {
+          "text": "Yn lledu tua'r dwyrain",
           "also": [
             "ymledu"
           ]
         },
-        "to-extend": {
-          "text": "Ymestyn"
+        "extending-over-towards-anglesey": {
+          "text": "Yn ymestyn draw tuag at Ynys Môn"
         },
-        "to-move": {
-          "text": "Symud"
+        "moving-in-from-the-west": {
+          "text": "Yn symud o gyfeiriad y gorllewin"
         },
-        "to-clear": {
-          "text": "Clirio"
+        "the-rain-clearing-away": {
+          "text": "Y glaw yn cilio"
         },
-        "to-recede": {
-          "text": "Cilio"
-        },
-        "to-leave": {
-          "text": "Gadael",
+        "leaving-us-overnight": {
+          "text": "Yn ein gadael ni dros nos",
           "also": [
             "i adael"
           ]
@@ -44,66 +62,59 @@
     "which-way": {
       "title": "I ba gyfeiriad",
       "concepts": {
-        "eastwards": {
-          "text": "Tua'r dwyrain"
+        "towards-the-east": {
+          "text": "I gyfeiriad y dwyrain"
         },
-        "towards-the": {
-          "text": "I gyfeiriad y …"
+        "from-the-direction-of-ireland": {
+          "text": "O gyfeiriad Iwerddon"
         },
-        "from-the-direction-of": {
-          "text": "O gyfeiriad y …"
+        "across-the-country": {
+          "text": "Ar draws y wlad"
         },
-        "across": {
-          "text": "Ar draws"
+        "over-towards-the-north-east": {
+          "text": "Draw tuag at y gogledd-ddwyrain"
         },
-        "over-towards": {
-          "text": "Draw tuag at"
+        "more-rain-on-the-way": {
+          "text": "Rhagor o law ar y ffordd",
+          "note": "{{ar y ffordd}} could also be on the road; to be confirmed"
         },
-        "on-the-way": {
-          "text": "Ar y ffordd",
-          "note": "could also be on the road; to be confirmed"
+        "in-the-west-of-the-country": {
+          "text": "Yng ngorllewin y wlad",
+          "note": "after {{yn}} (in) {{gorllewin}} becomes {{ngorllewin}}"
         }
       },
-      "order": "towards, from, across, then over to"
+      "order": "towards, from, across, then where"
     },
     "changing": {
       "title": "Y tywydd yn newid",
       "concepts": {
-        "to-change": {
-          "text": "Newid"
+        "changing-by-the-weekend": {
+          "text": "Yn newid erbyn y penwythnos"
         },
-        "to-turn": {
-          "text": "Troi",
-          "also": [
-            "troi'n"
-          ]
+        "turning-more-unsettled": {
+          "text": "Yn troi'n fwy ansefydlog"
         },
-        "to-develop": {
-          "text": "Datblygu"
+        "showers-developing-in-the-afternoon": {
+          "text": "Cawodydd yn datblygu yn y prynhawn"
         },
-        "to-cloud-over": {
-          "text": "Cymylu"
+        "showers-getting-heavier": {
+          "text": "Cawodydd yn mynd yn drymach"
         },
-        "to-strengthen": {
-          "text": "Cryfhau"
+        "the-wind-easing-by-dawn": {
+          "text": "Y gwynt yn gostegu erbyn iddi wawrio",
+          "note": "{{gostegu}}: to ease; {{gwawrio}}: to dawn"
         },
-        "to-ease": {
-          "text": "Gostegu"
+        "calming-down-overnight": {
+          "text": "Yn tawelu dros nos"
         },
-        "to-calm": {
-          "text": "Tawelu"
+        "clouding-over-from-the-west": {
+          "text": "Yn cymylu o'r gorllewin"
         },
-        "to-fall": {
-          "text": "Syrthio",
-          "also": [
-            "cwympo"
-          ]
+        "brightening-up-by-the-afternoon": {
+          "text": "Yn brafio erbyn y prynhawn"
         },
-        "to-brighten": {
-          "text": "Brafio"
-        },
-        "to-settle": {
-          "text": "Sefydlogi"
+        "if-it-were-to-settle-a-little": {
+          "text": "Pe bai hi'n sefydlogi ryw fymryn"
         }
       },
       "order": "changing, stronger, weaker, then the sky"
@@ -111,49 +122,41 @@
     "other-verbs": {
       "title": "Berfau eraill",
       "concepts": {
-        "to-expect": {
-          "text": "Disgwyl"
+        "strong-winds-are-expected": {
+          "text": "Mae disgwyl gwyntoedd cryfion",
+          "also": [
+            "'dan ni'n disgwyl"
+          ]
         },
-        "to-continue": {
-          "text": "Parhau"
+        "the-rain-will-continue-all-day": {
+          "text": "Bydd y glaw yn parhau drwy'r dydd"
         },
-        "to-happen": {
-          "text": "Digwydd"
+        "varying-from-place-to-place": {
+          "text": "Yn amrywio o le i le"
         },
-        "to-vary": {
-          "text": "Amrywio"
-        },
-        "to-coincide": {
-          "text": "Cyd-fynd",
+        "coinciding-with-high-tide": {
+          "text": "Yn cyd-fynd â'r llanw uchel",
           "also": [
             "cyd-fynd hefo"
           ]
         },
-        "to-see": {
-          "text": "Gweld",
+        "we-could-see": {
+          "text": "Gallen ni weld …",
           "also": [
-            "weld",
-            "welon"
+            "gallwn ni weld"
           ]
         },
-        "to-hear": {
-          "text": "Clywed"
+        "we-saw-gusts-of-84-mph": {
+          "text": "Mi welon ni hyrddiadau o 84 milltir yr awr"
         },
-        "to-look": {
-          "text": "Edrych"
+        "the-rest-of-the-week-looks-dry": {
+          "text": "Mae gweddill yr wythnos yn edrych yn sych"
         },
-        "to-dominate": {
-          "text": "Rheoli",
-          "note": "said of high pressure"
-        },
-        "to-affect": {
-          "text": "Effeithio",
-          "also": [
-            "yn cael ei effeithio"
-          ]
+        "affecting-the-roads": {
+          "text": "Yn effeithio ar y ffyrdd"
         }
       },
-      "order": "expecting and happening, then seeing and affecting"
+      "order": "expecting and continuing, then seeing and affecting"
     }
   }
 }
