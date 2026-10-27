@@ -1,0 +1,46 @@
+{
+  "icon": "compass",
+  "figure": "compass-rose",
+  "related": [
+    "patterns"
+  ],
+  "sections": [
+    {
+      "id": "points",
+      "concepts": [
+        "north",
+        "north-east",
+        "east",
+        "south-east",
+        "south",
+        "south-west",
+        "west",
+        "north-west"
+      ]
+    },
+    {
+      "id": "from",
+      "concepts": [
+        "from-the-north",
+        "from-the-north-east",
+        "from-the-east",
+        "from-the-south-east",
+        "from-the-south",
+        "from-the-south-west",
+        "from-the-west",
+        "from-the-north-west"
+      ]
+    },
+    {
+      "id": "directions",
+      "concepts": [
+        "in-the-north",
+        "in-the-east",
+        "in-the-south",
+        "in-the-west",
+        "further-south",
+        "across-the-whole-country"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,45 @@
 {
-  "title": "Places",
+  "title": "Place names",
   "source": "draft",
   "sections": {
+    "regions": {
+      "title": "Regions of Wales",
+      "concepts": {
+        "wales": {
+          "text": "Wales"
+        },
+        "in-wales": {
+          "text": "In Wales"
+        },
+        "across-wales": {
+          "text": "Across Wales"
+        },
+        "north-wales": {
+          "text": "North Wales"
+        },
+        "in-north-wales": {
+          "text": "In north Wales"
+        },
+        "south-wales": {
+          "text": "South Wales"
+        },
+        "in-south-wales": {
+          "text": "In south Wales"
+        },
+        "mid-wales": {
+          "text": "Mid Wales"
+        },
+        "in-mid-wales": {
+          "text": "In mid Wales"
+        },
+        "west-wales": {
+          "text": "West Wales"
+        },
+        "in-west-wales": {
+          "text": "In west Wales"
+        }
+      }
+    },
     "places": {
       "title": "Towns and cities",
       "concepts": {
@@ -48,5 +86,6 @@
         }
       }
     }
-  }
+  },
+  "lede": "The regions of Wales, its towns and cities, and the countries beyond, as a forecast names them."
 }

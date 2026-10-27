@@ -1,0 +1,132 @@
+{
+  "title": "Cwmpawd",
+  "source": "draft",
+  "sections": {
+    "points": {
+      "title": "Yr wyth pwynt",
+      "box": {
+        "title": "Why the spelling changes",
+        "body": "In the combined points the second word softens. {{Dwyrain}} becomes {{ddwyrain}} and {{gorllewin}} becomes {{orllewin}}. That is why south-west is {{de-orllewin}} and not {{de-gorllewin}}."
+      },
+      "concepts": {
+        "north": {
+          "text": "Gogledd",
+          "also": [
+            "ngogledd"
+          ]
+        },
+        "south": {
+          "text": "De",
+          "also": [
+            "ne"
+          ]
+        },
+        "east": {
+          "text": "Dwyrain",
+          "also": [
+            "ddwyrain",
+            "nwyrain"
+          ]
+        },
+        "west": {
+          "text": "Gorllewin",
+          "also": [
+            "orllewin",
+            "ngorllewin"
+          ]
+        },
+        "north-east": {
+          "text": "Gogledd-ddwyrain"
+        },
+        "north-west": {
+          "text": "Gogledd-orllewin"
+        },
+        "south-east": {
+          "text": "De-ddwyrain"
+        },
+        "south-west": {
+          "text": "De-orllewin"
+        }
+      },
+      "order": "round the compass from the north"
+    },
+    "from": {
+      "title": "O ba gyfeiriad",
+      "concepts": {
+        "from-the-north": {
+          "text": "O'r gogledd",
+          "also": [
+            "gogleddol"
+          ]
+        },
+        "from-the-north-east": {
+          "text": "O'r gogledd-ddwyrain",
+          "also": [
+            "gogledd-ddwyreiniol"
+          ]
+        },
+        "from-the-east": {
+          "text": "O'r dwyrain",
+          "also": [
+            "dwyreiniol"
+          ]
+        },
+        "from-the-south-east": {
+          "text": "O'r de-ddwyrain",
+          "also": [
+            "de-ddwyreiniol"
+          ]
+        },
+        "from-the-south": {
+          "text": "O'r de",
+          "also": [
+            "deheuol"
+          ]
+        },
+        "from-the-south-west": {
+          "text": "O'r de-orllewin",
+          "also": [
+            "de-orllewinol"
+          ]
+        },
+        "from-the-west": {
+          "text": "O'r gorllewin",
+          "also": [
+            "gorllewinol"
+          ]
+        },
+        "from-the-north-west": {
+          "text": "O'r gogledd-orllewin",
+          "also": [
+            "gogledd-orllewinol"
+          ]
+        }
+      },
+      "order": "round the compass from the north"
+    },
+    "directions": {
+      "title": "Ardaloedd",
+      "concepts": {
+        "in-the-north": {
+          "text": "Yn y gogledd"
+        },
+        "in-the-east": {
+          "text": "Yn y dwyrain"
+        },
+        "in-the-south": {
+          "text": "Yn y de"
+        },
+        "in-the-west": {
+          "text": "Yn y gorllewin"
+        },
+        "further-south": {
+          "text": "Ymhellach i'r de"
+        },
+        "across-the-whole-country": {
+          "text": "Dros y wlad i gyd"
+        }
+      },
+      "order": "round the compass from the north, then the whole country"
+    }
+  }
+}

@@ -1,7 +1,8 @@
 {
   "icon": "chat",
   "related": [
-    "where#landscape",
+    "place-name-elements#landscape",
+    "geography#regions",
     "when"
   ],
   "sections": [

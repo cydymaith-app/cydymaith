@@ -29,6 +29,7 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
     - The forecast card (`warnings`) dropped. Its warnings went to the cards as phrases (*Rhybudd melyn am law* on Rain, a *Rhybuddion* section on Wind), its pressure to Change and movement (held), and its related tile to Time and date to How it's said.
     - Sky, Rain, Snow and ice, Wind, Temperature and the held Change and movement: every single-word row replaced by a phrase or part-sentence, heard on S4C where one was heard. How it's said is unchanged for now.
     - Grades: the rule is unchanged, so every weather card is now level 3 and the Order setting leaves the weather page in its written order.
+  - [x] **Geography is one page; Time and place is split up** (2026-10-27). Compass (`compass`, was Where's points and areas, plus a new From which way section), Place names (`geography`, Regions of Wales moved in first) and Landscape and place-name elements (`place-name-elements`, Landscape moved in first) are accordions on `group-geography.html`. Time and date (`when`) moved to Everyday. The weather page links to the Compass, and How it's said opens Regions of Wales. Landscape and areas are phrases; the eight points and the place-name elements stay as words. Framework: a figure section keeps its address inside an accordion.
   - [ ] **Snow and ice is all authored**: no winter forecast has been heard yet. Check it against one, and replace what is not said.
   - [ ] **Shelved for now (may come back; the words are kept in `FORECAST-WORDS.md` section 9):**
     - **Impacts and Travel:** one future page, *Effeithiau / Impacts* (the sea, damage, travel). Travel could become a related page for the weather, and other groups would want it too.
@@ -90,7 +91,7 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
     - [ ] Check them against a recent Welsh forecast, then remove the `status`. Fill `extent` (one word so far) and the two-word `pressure` and `opening-closing` sections.
   - [x] Snow and ice has its own icon (Carbon `snow`).
   - [x] Framework: linked tiles. When and Where are now the shared Time and place group, which Weather links to.
-    - [ ] Link Time and place from News and Sports when they leave development.
+    - [ ] Link Time and date (now in Everyday) from News and Sports when they leave development.
     - [ ] Add a mutation decoder page ("heard something you cannot find?") and link it from every topic, as in the mockups.
     - [ ] Check the new layout in a browser at phone width, in every palette. The longest rows (`Gogledd-orllewinol`, `Amser ychwanegol`) should wrap, not squeeze the English.
 - [ ] When the weather section is complete, use it as the worked example on the how-to page.
@@ -256,7 +257,7 @@ All oklch compatible.
 
 - [x] **The weather forecast is one page** (design pivot, 2026-10-26): there were too many separate pages under weather. The group has `"layout": "one-page"`, so each weather topic is an accordion on the group's page, shut by default, with the topic's tile (icon and both names) as its summary. Settings' order (simplest or most advanced first) now orders the accordions on the page, not the sections inside them. The weather topics have no pages of their own: search, related tiles and the group's link to Where point into the one page.
 - [ ] Check the one weather page in a real browser: opening a search result or a related tile inside a shut accordion (it should open and scroll to the word), on a phone, in light and dark, with forced colours and a screen reader.
-- [ ] Decide whether other groups (Time and place, Everyday, Geography) should be one page too: it is one line in `structure.json` per group.
+- [ ] Decide whether other groups (Everyday) should be one page too: it is one line in `structure.json` per group. Geography is one page since 2026-10-27.
 
 Script to generate and test each screen and score them for usability. Run each time a screen is modified. Not every build.
 

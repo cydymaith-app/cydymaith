@@ -37,6 +37,7 @@ class ChannelTests(unittest.TestCase):
             s for s in d["sections"] if s["id"] == "snow").update(status="development"))
         edit_json(cls.data / "pages" / "food-drink.json", lambda d: d["sections"][0].update(status="development"))
         edit_json(cls.data / "pages" / "talk.json", lambda d: [s.update(status="development") for s in d["sections"]])
+        edit_json(cls.data / "pages" / "when.json", lambda d: [s.update(status="development") for s in d["sections"]])  # Time and date joined Everyday on 2026-10-27
         cls.release = cls.tmp / "release"
         cls.development = cls.tmp / "development"
         phrasebook.build(cls.release, project_dir=cls.data)
@@ -75,7 +76,7 @@ class ChannelTests(unittest.TestCase):
     def test_the_offline_cache_lists_only_what_the_channel_publishes(self):
         sw = (self.release / "sw.js").read_text(encoding="utf-8")
         self.assertNotIn("food-drink.html", sw)
-        self.assertIn("when.html", sw)
+        self.assertIn("sources.html", sw)  # a page that still has a file (Time and date is held back in this fixture)
 
     def test_the_held_back_section_is_still_validated(self):
         raw = content.read(self.data)
@@ -97,7 +98,7 @@ class ChannelTests(unittest.TestCase):
     def test_a_figure_cannot_lose_its_concepts_to_a_held_back_section(self):
         data = self.tmp / "figure-project"
         shutil.copytree(PROJECT, data)
-        edit_json(data / "pages" / "where.json", lambda d: d["sections"][0].update(status="development"))
+        edit_json(data / "pages" / "compass.json", lambda d: d["sections"][0].update(status="development"))
         with self.assertRaises(content.ContentError):
             phrasebook.build(self.tmp / "figure-out", project_dir=data)
 

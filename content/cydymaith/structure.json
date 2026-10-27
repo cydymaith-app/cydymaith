@@ -14,22 +14,25 @@
         "patterns"
       ],
       "links": [
-        "where"
+        "compass"
       ]
     },
     {
-      "id": "time-and-place",
-      "icon": "calendar",
+      "id": "geography",
+      "icon": "earth",
       "pages": [
-        "when",
-        "where"
-      ]
+        "compass",
+        "geography",
+        "place-name-elements"
+      ],
+      "layout": "one-page"
     },
     {
       "id": "everyday",
       "icon": "restaurant",
       "pages": [
         "talk",
+        "when",
         "food-drink"
       ]
     },
@@ -38,14 +41,6 @@
       "icon": "mobile",
       "pages": [
         "technology"
-      ]
-    },
-    {
-      "id": "geography",
-      "icon": "earth",
-      "pages": [
-        "geography",
-        "place-name-elements"
       ]
     },
     {

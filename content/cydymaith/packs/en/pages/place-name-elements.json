@@ -1,6 +1,6 @@
 {
-  "title": "Place-name elements",
-  "lede": "The parts that Welsh place names are built from, and what they mean, so a road sign or a place on a forecast can be read.",
+  "title": "Landscape and place-name elements",
+  "lede": "Landscape as a forecast says it, then the parts that Welsh place names are built from, so a road sign or a place on a forecast can be read.",
   "source": "draft",
   "more": [
     "This is a selection of the elements met most often, not a full list. If you cannot find the one you are looking for, the Royal Commission's Historic Place Names glossary covers almost every element.",
@@ -14,6 +14,41 @@
     }
   ],
   "sections": {
+    "landscape": {
+      "title": "Landscape",
+      "concepts": {
+        "on-the-coast": {
+          "text": "On the coast"
+        },
+        "in-coastal-areas": {
+          "text": "In coastal areas"
+        },
+        "along-the-shores": {
+          "text": "Along the shores"
+        },
+        "inland": {
+          "text": "Inland"
+        },
+        "in-the-valleys": {
+          "text": "In the valleys"
+        },
+        "over-the-hills": {
+          "text": "Over the hills"
+        },
+        "on-high-ground": {
+          "text": "On high ground"
+        },
+        "over-the-mountains": {
+          "text": "Over the mountains"
+        },
+        "over-snowdonia": {
+          "text": "Over Snowdonia"
+        },
+        "in-the-brecon-beacons": {
+          "text": "In the Brecon Beacons"
+        }
+      }
+    },
     "settlements": {
       "title": "Settlements and buildings",
       "concepts": {

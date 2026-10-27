@@ -1,7 +1,7 @@
 {
   "icon": "windy",
   "related": [
-    "where#points"
+    "compass#points"
   ],
   "sections": [
     {

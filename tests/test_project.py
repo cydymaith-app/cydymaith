@@ -74,9 +74,9 @@ class ProjectNavigationTests(unittest.TestCase):
             phrasebook.build(development, project_dir=PROJECT, channel="development")
             rel = sorted(f.name for f in release.glob("group-*.html"))
             dev = sorted(f.name for f in development.glob("group-*.html"))
-        self.assertEqual(rel, ["group-everyday.html", "group-geography.html", "group-time-and-place.html", "group-weather-forecast.html"])
+        self.assertEqual(rel, ["group-everyday.html", "group-geography.html", "group-weather-forecast.html"])
         self.assertEqual(dev, ["group-everyday.html", "group-geography.html", "group-news.html", "group-sport.html",
-                               "group-time-and-place.html", "group-weather-forecast.html"])
+                               "group-weather-forecast.html"])
 
     def test_the_held_back_groups_have_their_mockup_icons_and_welsh_titles_marked_for_review(self):
         structure = json.loads((PROJECT / "structure.json").read_text(encoding="utf-8"))
@@ -132,8 +132,8 @@ class RelatedTopicsTests(unittest.TestCase):
 
     def test_the_weather_topics_that_mention_places_open_the_landscape_section_of_where(self):
         for slug in ("rain", "snow-ice"):
-            self.assertEqual(self.tiles(slug), ["where.html#landscape"], slug)
-        self.assertEqual(self.tiles("patterns"), ["where.html#landscape", "when.html"])
+            self.assertEqual(self.tiles(slug), ["group-geography.html#landscape"], slug)
+        self.assertEqual(self.tiles("patterns"), ["group-geography.html#landscape", "group-geography.html#regions", "when.html"])
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
         row = self.topic("rain")
@@ -143,8 +143,8 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
 
     def test_wind_opens_the_compass_and_the_places_open_how_it_is_said(self):
-        self.assertEqual(self.tiles("wind"), ["where.html#points"])
-        self.assertEqual(self.tiles("where"), ["group-weather-forecast.html#topic-patterns"])
+        self.assertEqual(self.tiles("wind"), ["group-geography.html#points"])
+        self.assertEqual(self.tiles("compass"), ["group-weather-forecast.html#topic-patterns"])
 
     def test_how_its_said_opens_time_and_date_as_a_related_page(self):
         """The tile was on The forecast until that card was dropped on 2026-10-27."""
@@ -161,7 +161,7 @@ class RelatedTopicsTests(unittest.TestCase):
 
     def test_a_topic_with_nothing_related_has_no_row_and_the_group_pages_have_none(self):
         self.assertNotIn('class="related"', self.topic("sky"))
-        self.assertNotIn('class="related"', self.pages["group-time-and-place.html"])
+        self.assertNotIn('class="related"', self.pages["group-everyday.html"])
         self.assertNotIn('class="related"', self.pages["index.html"])
 
 
@@ -192,10 +192,10 @@ class GradingTests(unittest.TestCase):
 
     def test_one_word_for_a_thing_is_simpler_than_the_same_thing_in_a_phrase(self):
         """north = gogledd comes first; in the north, on the coast, in the valleys follow."""
-        points = self.sections[("where", "points")]["level"]
+        points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
-        self.assertGreater(self.sections[("where", "directions")]["level"], points)
-        self.assertGreater(self.sections[("where", "landscape")]["level"], points)
+        self.assertGreater(self.sections[("compass", "directions")]["level"], points)
+        self.assertGreater(self.sections[("place-name-elements", "landscape")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
         self.assertEqual(self.pages["patterns"]["level"], 3)
@@ -237,5 +237,5 @@ class OnePageWeatherTests(unittest.TestCase):
             self.assertNotIn(f"{slug}.html", self.pages, slug)
 
     def test_the_other_groups_keep_their_tiles(self):
-        for gid in ("time-and-place", "everyday", "geography"):
+        for gid in ("everyday",):
             self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)

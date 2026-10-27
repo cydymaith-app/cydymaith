@@ -35,8 +35,8 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `snow` | Snow and ice |
 | `windy` | Wind |
 | `temperature` | Temperature |
-| `calendar` | When, and the Time and place group |
-| `compass` | Where |
+| `calendar` | Time and date |
+| `compass` | Compass |
 | `chat` | Talking about the weather, and How it's said |
 | `earth` | The Geography group |
 | `map` | Places, the Geography page of towns, cities and countries |

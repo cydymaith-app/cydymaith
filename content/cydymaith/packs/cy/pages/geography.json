@@ -1,7 +1,50 @@
 {
-  "title": "Lleoedd",
+  "title": "Enwau lleoedd",
   "source": "draft",
   "sections": {
+    "regions": {
+      "title": "Rhannau o Gymru",
+      "intro": "After {{yn}} (in) the first letter changes: {{Cymru}} becomes {{Nghymru}} and {{yn}} becomes {{yng}}; {{gogledd}} becomes {{ngogledd}}; {{de}} becomes {{ne}}; {{dwyrain}} becomes {{nwyrain}}.",
+      "concepts": {
+        "wales": {
+          "text": "Cymru",
+          "also": [
+            "Nghymru"
+          ]
+        },
+        "in-wales": {
+          "text": "Yng Nghymru"
+        },
+        "across-wales": {
+          "text": "Ledled Cymru"
+        },
+        "north-wales": {
+          "text": "Gogledd Cymru"
+        },
+        "in-north-wales": {
+          "text": "Yng ngogledd Cymru"
+        },
+        "south-wales": {
+          "text": "De Cymru"
+        },
+        "in-south-wales": {
+          "text": "Yn ne Cymru"
+        },
+        "mid-wales": {
+          "text": "Canolbarth Cymru"
+        },
+        "in-mid-wales": {
+          "text": "Yng nghanolbarth Cymru"
+        },
+        "west-wales": {
+          "text": "Gorllewin Cymru"
+        },
+        "in-west-wales": {
+          "text": "Yng ngorllewin Cymru"
+        }
+      },
+      "order": "Wales, then north, south, mid and west, each with its “in” form"
+    },
     "places": {
       "title": "Trefi a dinasoedd",
       "concepts": {

@@ -2,6 +2,22 @@
   "icon": "map",
   "sections": [
     {
+      "id": "regions",
+      "concepts": [
+        "wales",
+        "in-wales",
+        "across-wales",
+        "north-wales",
+        "in-north-wales",
+        "south-wales",
+        "in-south-wales",
+        "mid-wales",
+        "in-mid-wales",
+        "west-wales",
+        "in-west-wales"
+      ]
+    },
+    {
       "id": "places",
       "concepts": [
         "cardiff",

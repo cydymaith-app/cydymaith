@@ -1,7 +1,53 @@
 {
-  "title": "Elfennau enwau lleoedd",
+  "title": "Tirwedd ac elfennau enwau",
   "source": "draft",
   "sections": {
+    "landscape": {
+      "title": "Tirwedd",
+      "concepts": {
+        "on-the-coast": {
+          "text": "Ar yr arfordir",
+          "also": [
+            "arfordirol"
+          ]
+        },
+        "in-coastal-areas": {
+          "text": "Mewn ardaloedd arfordirol",
+          "also": [
+            "rhannau arfordirol"
+          ]
+        },
+        "along-the-shores": {
+          "text": "Ar hyd y glannau"
+        },
+        "inland": {
+          "text": "Yn y mewndiroedd",
+          "also": [
+            "mewndiroedd"
+          ]
+        },
+        "in-the-valleys": {
+          "text": "Yn y cymoedd"
+        },
+        "over-the-hills": {
+          "text": "Dros y bryniau"
+        },
+        "on-high-ground": {
+          "text": "Ar dir uchel"
+        },
+        "over-the-mountains": {
+          "text": "Dros y mynyddoedd"
+        },
+        "over-snowdonia": {
+          "text": "Dros Eryri"
+        },
+        "in-the-brecon-beacons": {
+          "text": "Ym Mannau Brycheiniog",
+          "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
+        }
+      },
+      "order": "coast, inland, low to high, then named places"
+    },
     "settlements": {
       "title": "Aneddiadau ac adeiladau",
       "order": "church places, then forts and courts, then mansions, then homes",

@@ -43,7 +43,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone.
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "where": 31, "patterns": 34, "talk": 11, "geography": 12, "place-name-elements": 46}
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "compass": 22, "patterns": 34, "talk": 11, "geography": 23, "place-name-elements": 56}
 
 
 class Page(HTMLParser):
@@ -181,17 +181,18 @@ class BuildTests(unittest.TestCase):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
 
-    def test_where_is_one_shared_group_that_the_weather_group_also_links_to_and_time_and_date_is_a_related_page_of_how_its_said(self):
+    def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_everyday_and_a_related_page_of_how_its_said(self):
+        """Time and place was split on 2026-10-27: the compass went to Geography (one page), Time and date to Everyday."""
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        shared = next(g for g in self.site.groups if g["id"] == "time-and-place")
-        self.assertEqual(shared["pages"], ["when", "where"])
-        self.assertEqual(weather["links"], ["where"])
+        everyday = next(g for g in self.site.groups if g["id"] == "everyday")
+        self.assertNotIn("time-and-place", [g["id"] for g in self.site.groups])
+        self.assertEqual(everyday["pages"], ["talk", "when", "food-drink"])
+        self.assertEqual(weather["links"], ["compass"])
         page = self.built["group-weather-forecast.html"]
         tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
-        self.assertNotIn('href="when.html"', tiles, "Time and date is reached from the forecast as a related page, not a group tile")
-        self.assertIn('href="where.html"', tiles)
-        self.assertIn('href="where.html"', self.built["group-time-and-place.html"])
-        self.assertIn('href="when.html"', self.built["group-time-and-place.html"])
+        self.assertNotIn('href="when.html"', tiles, "Time and date is reached from How it's said as a related page, not a group tile")
+        self.assertIn('href="group-geography.html#topic-compass"', tiles)
+        self.assertIn('href="when.html"', self.built["group-everyday.html"])
         self.assertIn('href="when.html" data-related', topic_html(self.site, self.built, "patterns"))  # moved here when The forecast went
         self.assertIn("Amser a dyddiad", self.built["when.html"])
         self.assertIn("Time and date", self.built["when.html"])
@@ -310,7 +311,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy">Glaw mân yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "where": 3, "patterns": 6, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 2, "geography": 1, "patterns": 6, "place-name-elements": 7}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -327,19 +328,22 @@ class BuildTests(unittest.TestCase):
                          ["it-is", "doing", "it-will-be", "there-will-be", "wind-from", "extent"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "where", "patterns", "talk")
+        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "compass", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
-    def test_the_town_and_country_names_are_released_in_the_geography_group_with_the_place_name_elements_after_them(self):
+    def test_geography_is_one_page_of_compass_place_names_and_landscape_with_the_place_name_elements(self):
+        """Merged on 2026-10-27: Regions of Wales joined the place names; the landscape joined the place-name elements."""
         geography = next(g for g in self.site.groups if g["id"] == "geography")
-        self.assertEqual(geography["pages"], ["geography", "place-name-elements"])
+        self.assertEqual(geography["layout"], "one-page")
+        self.assertEqual(geography["pages"], ["compass", "geography", "place-name-elements"])
         skeleton = self.site.skel["geography"]
-        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "uk"])
+        self.assertEqual([s["id"] for s in skeleton["sections"]], ["regions", "places", "uk"])
         self.assertTrue(all("status" not in s for s in skeleton["sections"]), "Geography is no longer held back")
-        self.assertEqual(self.site.count_entries("geography"), 12)
+        self.assertEqual(self.site.count_entries("geography"), 23)
+        self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from", "directions"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
-        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])
+        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["landscape", "settlements", "water", "hills", "land", "ways", "describing"])
         dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
         bridge = next(e for e in dictionary["entries"] if e["concept"] == "bridge")
         self.assertEqual([t["text"] for t in bridge["terms"]["cy"]], ["pont"])
@@ -389,8 +393,8 @@ class BuildTests(unittest.TestCase):
                 self.assertTrue(span["text"].strip(), f"{name}: empty Welsh span")
 
     def test_the_compass_page_has_its_figure(self):
-        self.assertIn('class="rose"', self.built["where.html"])
-        self.assertIn("Compass rose labelled in English and Welsh", self.built["where.html"])
+        self.assertIn('class="rose"', self.built["group-geography.html"])
+        self.assertIn("Compass rose labelled in English and Welsh", self.built["group-geography.html"])
 
     def test_the_document_language_is_the_interface_language(self):
         for text in self.built.values():
@@ -413,17 +417,17 @@ class RejectsBase(unittest.TestCase):
 
 class StructureValidationTests(RejectsBase):
     def test_unlisted_page(self):
-        self.check_rejects(lambda r: r["pages"].update(orphan=r["pages"]["where"]), "not listed")
+        self.check_rejects(lambda r: r["pages"].update(orphan=r["pages"]["compass"]), "not listed")
 
     def test_missing_page_file(self):
         self.check_rejects(lambda r: r["structure"]["groups"][0]["pages"].append("ghost"), "does not exist")
 
     def test_repeated_page(self):
-        self.check_rejects(lambda r: r["structure"]["groups"][0]["pages"].append("where"), "more than once")
+        self.check_rejects(lambda r: r["structure"]["groups"][0]["pages"].append("compass"), "more than once")
 
     def test_reserved_slug(self):
         def mutate(r):
-            r["pages"]["index"] = r["pages"]["where"]
+            r["pages"]["index"] = r["pages"]["compass"]
             r["structure"]["groups"][0]["pages"].append("index")
         self.check_rejects(mutate, "reserved")
 
@@ -434,22 +438,22 @@ class StructureValidationTests(RejectsBase):
 
     def test_duplicate_section_id(self):
         def mutate(r):
-            secs = r["pages"]["where"]["sections"]
+            secs = r["pages"]["when"]["sections"]  # a tiles group: one-page groups have their own message
             secs[1]["id"] = secs[0]["id"]
         self.check_rejects(mutate, "repeated")
 
     def test_repeated_concept_on_a_page(self):
         def mutate(r):
-            secs = r["pages"]["where"]["sections"]
+            secs = r["pages"]["compass"]["sections"]
             secs[1]["concepts"].append(secs[0]["concepts"][0])
         self.check_rejects(mutate, "concept id repeated")
 
     def test_unknown_figure(self):
-        self.check_rejects(lambda r: r["pages"]["where"].update(figure="unicorn"), "unknown figure")
+        self.check_rejects(lambda r: r["pages"]["compass"].update(figure="unicorn"), "unknown figure")
 
     def test_figure_needs_its_concepts(self):
         def mutate(r):
-            r["pages"]["where"]["sections"][0]["concepts"].remove("north")
+            r["pages"]["compass"]["sections"][0]["concepts"].remove("north")
         self.check_rejects(mutate, "needs concepts north")
 
 
@@ -468,28 +472,28 @@ class PackValidationTests(RejectsBase):
 
     def test_pack_page_without_skeleton(self):
         def mutate(r):
-            r["packs"]["cy"]["pages"]["ghost"] = copy.deepcopy(r["packs"]["cy"]["pages"]["where"])
+            r["packs"]["cy"]["pages"]["ghost"] = copy.deepcopy(r["packs"]["cy"]["pages"]["compass"])
         self.check_rejects(mutate, "no matching")
 
     def test_pack_page_needs_a_title(self):
-        self.check_rejects(lambda r: r["packs"]["cy"]["pages"]["where"].update(title=""), "missing 'title'")
+        self.check_rejects(lambda r: r["packs"]["cy"]["pages"]["compass"].update(title=""), "missing 'title'")
 
     def test_pack_page_source_must_exist(self):
-        self.check_rejects(lambda r: r["packs"]["cy"]["pages"]["where"].update(source="nope"), "'source' must be")
+        self.check_rejects(lambda r: r["packs"]["cy"]["pages"]["compass"].update(source="nope"), "'source' must be")
 
     def test_unknown_section_in_pack(self):
         def mutate(r):
-            r["packs"]["cy"]["pages"]["where"]["sections"]["nope"] = {"title": "x", "concepts": {}}
+            r["packs"]["cy"]["pages"]["compass"]["sections"]["nope"] = {"title": "x", "concepts": {}}
         self.check_rejects(mutate, "unknown section")
 
     def test_unknown_concept_in_pack(self):
         def mutate(r):
-            r["packs"]["cy"]["pages"]["where"]["sections"]["points"]["concepts"]["nope"] = {"text": "x"}
+            r["packs"]["cy"]["pages"]["compass"]["sections"]["points"]["concepts"]["nope"] = {"text": "x"}
         self.check_rejects(mutate, "unknown concept")
 
     def test_concept_without_text(self):
         def mutate(r):
-            r["packs"]["cy"]["pages"]["where"]["sections"]["points"]["concepts"]["north"]["text"] = ""
+            r["packs"]["cy"]["pages"]["compass"]["sections"]["points"]["concepts"]["north"]["text"] = ""
         self.check_rejects(mutate, "exactly one of 'text' or 'forms'")
 
     def test_language_codes_are_lower_case(self):
@@ -500,7 +504,7 @@ class PackValidationTests(RejectsBase):
 
     def test_concept_naming_an_unknown_source(self):
         def mutate(r):
-            r["packs"]["cy"]["pages"]["where"]["sections"]["points"]["concepts"]["north"]["source"] = "nope"
+            r["packs"]["cy"]["pages"]["compass"]["sections"]["points"]["concepts"]["north"]["source"] = "nope"
         self.check_rejects(mutate, "unknown source")
 
 
@@ -719,7 +723,7 @@ class AddingALanguageTests(unittest.TestCase):
         cls.data = cls.tmp / "data"
         shutil.copytree(PROJECT, cls.data)
         # gd translates two concepts of one page; ar (right to left) translates one concept of another.
-        add_pack(cls.data, "gd", "Gaelic", pages={"where": {"points": ["north", "south"]}}, edition="Test Edition")
+        add_pack(cls.data, "gd", "Gaelic", pages={"compass": {"points": ["north", "south"]}}, edition="Test Edition")
         add_pack(cls.data, "ar", "Arabic", direction="rtl", pages={"sky": {"sun-cloud": ["plenty-of-sunshine"]}})
 
     @classmethod
@@ -737,18 +741,18 @@ class AddingALanguageTests(unittest.TestCase):
     def test_a_partial_language_shows_only_what_it_has(self):
         raw = self.raw()
         site = build.Site(raw, raw["editions"]["test"])  # default pair en -> gd
-        self.assertEqual(site.slugs, ["where"])  # every other page has no gd rows
-        self.assertEqual(site.count_entries("where"), 2)
-        self.assertEqual([s["id"] for s in site.sections("where")], ["points"])
+        self.assertEqual(site.slugs, ["compass"])  # every other page has no gd rows
+        self.assertEqual(site.count_entries("compass"), 2)
+        self.assertEqual([s["id"] for s in site.sections("compass")], ["points"])
 
     def test_building_a_new_edition_renames_the_site(self):
         out = self.tmp / "out"
         n = build.build(out, data_dir=self.data, edition="test")
-        self.assertEqual(n, 13)  # home, the group, compass, sources, how to use, seven help chapters, settings
+        self.assertEqual(n, 12)  # home, the group (one page: the compass), sources, how to use, seven help chapters, settings
         home = (out / "index.html").read_text(encoding="utf-8")
         self.assertIn("Test Edition", home)
         self.assertNotIn("Cydymaith am iaith", home)
-        compass = (out / "where.html").read_text(encoding="utf-8")
+        compass = (out / "group-geography.html").read_text(encoding="utf-8")
         self.assertIn('lang="gd"', compass)
         self.assertIn("gd:north", compass)
         self.assertNotIn("sky.html", compass)
@@ -756,12 +760,12 @@ class AddingALanguageTests(unittest.TestCase):
     def test_the_figure_is_skipped_when_the_pair_lacks_its_concepts(self):
         out = self.tmp / "out2"
         build.build(out, data_dir=self.data, edition="test")
-        self.assertNotIn('class="rose"', (out / "where.html").read_text(encoding="utf-8"))
+        self.assertNotIn('class="rose"', (out / "group-geography.html").read_text(encoding="utf-8"))
 
     def test_the_pair_can_be_swapped_without_touching_data(self):
         raw = self.raw()
         site = build.Site(raw, raw["editions"]["test"], pair=("gd", "en"))
-        page = site.render_all()["where.html"]
+        page = site.render_all()["group-geography.html"]
         first_row = re.search(r'<tr id="[^"]+"><th scope="row" class="l1" lang="gd">([^<]*)</th><td><span class="l2">([^<]*)</span>', page)
         self.assertEqual(first_row.groups(), ("gd:north", "North"))
 
@@ -847,7 +851,7 @@ class SourcesTests(unittest.TestCase):
         cy = raw["packs"]["cy"]
         cy["meta"]["sources"].append({"id": "gov", "title": "A glossary", "licence": "OGL-3.0",
                                       "url": "https://example.gov.wales/glossary"})
-        concepts = cy["pages"]["where"]["sections"]["points"]["concepts"]
+        concepts = cy["pages"]["compass"]["sections"]["points"]["concepts"]
         concepts["north"]["source"] = "gov"
         concepts["south"]["source"] = "gov"
         build.validate(raw)
@@ -858,7 +862,7 @@ class SourcesTests(unittest.TestCase):
     def test_sources_page_is_linked_but_outside_the_pager(self):
         built = build.Site(self.raw, self.edition).render_all()
         self.assertIn('href="sources.html"', built["about.html"])
-        self.assertIn('aria-label="Previous and next page"', built["where.html"])
+        self.assertIn('aria-label="Previous and next page"', built["group-geography.html"])
         self.assertNotIn("Previous and next page", built["sources.html"])
         self.assertEqual(Page(built["sources.html"]).current, 1)
 

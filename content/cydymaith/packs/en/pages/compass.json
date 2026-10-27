@@ -1,0 +1,88 @@
+{
+  "title": "Compass",
+  "lede": "The compass points, and the directions a forecast gives.",
+  "source": "draft",
+  "sections": {
+    "points": {
+      "title": "The eight points",
+      "concepts": {
+        "north": {
+          "text": "North"
+        },
+        "south": {
+          "text": "South"
+        },
+        "east": {
+          "text": "East"
+        },
+        "west": {
+          "text": "West"
+        },
+        "north-east": {
+          "text": "North-east"
+        },
+        "north-west": {
+          "text": "North-west"
+        },
+        "south-east": {
+          "text": "South-east"
+        },
+        "south-west": {
+          "text": "South-west"
+        }
+      }
+    },
+    "from": {
+      "title": "From which way",
+      "concepts": {
+        "from-the-north": {
+          "text": "From the north; northerly"
+        },
+        "from-the-north-east": {
+          "text": "From the north-east; north-easterly"
+        },
+        "from-the-east": {
+          "text": "From the east; easterly"
+        },
+        "from-the-south-east": {
+          "text": "From the south-east; south-easterly"
+        },
+        "from-the-south": {
+          "text": "From the south; southerly"
+        },
+        "from-the-south-west": {
+          "text": "From the south-west; south-westerly"
+        },
+        "from-the-west": {
+          "text": "From the west; westerly"
+        },
+        "from-the-north-west": {
+          "text": "From the north-west; north-westerly"
+        }
+      }
+    },
+    "directions": {
+      "title": "Areas",
+      "concepts": {
+        "in-the-north": {
+          "text": "In the north"
+        },
+        "in-the-east": {
+          "text": "In the east"
+        },
+        "in-the-south": {
+          "text": "In the south"
+        },
+        "in-the-west": {
+          "text": "In the west"
+        },
+        "further-south": {
+          "text": "Further south"
+        },
+        "across-the-whole-country": {
+          "text": "Across the whole country"
+        }
+      }
+    }
+  }
+}
