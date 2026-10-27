@@ -352,3 +352,20 @@ class ThemingTests(unittest.TestCase):
             text = json.dumps(self.raw["palettes"][pid]).lower()
             for country in ("france", "french", "ireland", "irish", "spain", "spanish", "germany", "german", "italy", "italian"):
                 self.assertNotIn(country, text, (pid, country))
+
+
+class ContrastStartTests(unittest.TestCase):
+    """A first-time visitor whose device asks for more contrast starts on a palette they can read."""
+
+    def test_every_page_names_the_welsh_high_contrast_scheme_as_the_start(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            phrasebook.build(pathlib.Path(tmp) / "dist")
+            for page in (pathlib.Path(tmp) / "dist").glob("*.html"):
+                self.assertIn('data-contrast-palette="yellow-green-high-contrast"', page.read_text(encoding="utf-8"), page.name)
+
+    def test_the_help_for_it_is_in_both_languages(self):
+        raw = content.read(PROJECT)
+        help_en = json.loads((ROOT / "framework" / "phrasebook" / "help" / "en.json").read_text(encoding="utf-8"))
+        self.assertIn("more contrast", " ".join(help_en["features"]["colour-schemes"]["body"]))
+        self.assertIn("cyferbyniad", " ".join(raw["packs"]["cy"]["help"]["features"]["colour-schemes"]["body"]))
