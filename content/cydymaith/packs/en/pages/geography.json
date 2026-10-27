@@ -5,78 +5,68 @@
     "regions": {
       "title": "Regions of Wales",
       "concepts": {
-        "wales": {
-          "text": "Wales"
-        },
-        "in-wales": {
-          "text": "In Wales",
+        "in-north-wales": {
+          "text": "In north Wales",
           "keys": [
+            "north",
+            null,
+            "Wales"
+          ]
+        },
+        "in-north-east-wales": {
+          "text": "In north-east Wales",
+          "keys": [
+            "north-east",
+            null,
+            "Wales"
+          ]
+        },
+        "in-north-west-wales": {
+          "text": "In north-west Wales",
+          "keys": [
+            null,
+            "north-west",
+            "Wales"
+          ]
+        },
+        "in-mid-wales": {
+          "text": "In mid Wales",
+          "keys": [
+            null,
+            "mid",
+            "Wales"
+          ]
+        },
+        "in-south-wales": {
+          "text": "In south Wales",
+          "keys": [
+            "south",
+            null,
+            "Wales"
+          ]
+        },
+        "in-south-east-wales": {
+          "text": "In south-east Wales",
+          "keys": [
+            "south-east",
+            null,
+            "Wales"
+          ]
+        },
+        "in-west-wales": {
+          "text": "In west Wales",
+          "keys": [
+            null,
+            "west",
             "Wales"
           ]
         },
         "across-wales": {
           "text": "Across Wales",
           "keys": [
-            "Wales",
-            "Across"
-          ]
-        },
-        "north-wales": {
-          "text": "North Wales",
-          "keys": [
-            "Wales",
-            "North"
-          ]
-        },
-        "in-north-wales": {
-          "text": "In north Wales",
-          "keys": [
-            "Wales",
-            "north"
-          ]
-        },
-        "south-wales": {
-          "text": "South Wales",
-          "keys": [
-            "Wales",
-            "South"
-          ]
-        },
-        "in-south-wales": {
-          "text": "In south Wales",
-          "keys": [
-            "Wales",
-            "south"
-          ]
-        },
-        "mid-wales": {
-          "text": "Mid Wales",
-          "keys": [
-            "Wales",
             null,
-            "Mid"
-          ]
-        },
-        "in-mid-wales": {
-          "text": "In mid Wales",
-          "keys": [
-            "Wales",
             null,
-            "mid"
-          ]
-        },
-        "west-wales": {
-          "text": "West Wales",
-          "keys": [
-            "Wales",
-            "West"
-          ]
-        },
-        "in-west-wales": {
-          "text": "In west Wales",
-          "keys": [
-            "Wales",
-            "west"
+            "Wales"
           ]
         }
       }
@@ -84,17 +74,8 @@
     "places": {
       "title": "Towns and cities",
       "concepts": {
-        "cardiff": {
-          "text": "Cardiff"
-        },
         "swansea": {
           "text": "Swansea"
-        },
-        "newport": {
-          "text": "Newport"
-        },
-        "wrexham": {
-          "text": "Wrexham"
         },
         "aberystwyth": {
           "text": "Aberystwyth"
@@ -102,32 +83,41 @@
         "bangor": {
           "text": "Bangor"
         },
+        "cardiff": {
+          "text": "Cardiff"
+        },
         "holyhead": {
           "text": "Holyhead"
+        },
+        "newport": {
+          "text": "Newport"
+        },
+        "wrexham": {
+          "text": "Wrexham"
         }
       }
     },
     "uk": {
       "title": "Beyond Wales",
       "concepts": {
+        "the-united-kingdom": {
+          "text": "The United Kingdom"
+        },
         "england": {
           "text": "England"
         },
         "scotland": {
           "text": "Scotland"
         },
-        "ireland": {
-          "text": "Ireland"
-        },
         "northern-ireland": {
           "text": "Northern Ireland",
           "keys": [
-            "Ireland",
-            "Northern"
+            "Northern",
+            "Ireland"
           ]
         },
-        "the-united-kingdom": {
-          "text": "The United Kingdom"
+        "ireland": {
+          "text": "Ireland"
         }
       }
     }

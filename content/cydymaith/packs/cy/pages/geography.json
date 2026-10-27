@@ -4,137 +4,176 @@
   "sections": {
     "regions": {
       "title": "Rhannau o Gymru",
-      "intro": "After {{yn}} (in) the first letter changes: {{Cymru}} becomes {{Nghymru}} and {{yn}} becomes {{yng}}; {{gogledd}} becomes {{ngogledd}}; {{de}} becomes {{ne}}; {{dwyrain}} becomes {{nwyrain}}.",
+      "intro": "After {{yn}} (in) the first letter changes: {{gogledd}} becomes {{ngogledd}}, {{canolbarth}} becomes {{nghanolbarth}}, {{gorllewin}} becomes {{ngorllewin}} and {{de}} becomes {{ne}}. {{yn}} itself becomes {{yng}} before those sounds. The plain name of each region is listed as another way it is heard.",
       "concepts": {
-        "wales": {
-          "text": "Cymru",
-          "also": [
-            "Nghymru"
-          ]
-        },
-        "in-wales": {
-          "text": "Yng Nghymru",
-          "keys": [
-            "Nghymru"
-          ]
-        },
-        "across-wales": {
-          "text": "Ledled Cymru",
-          "keys": [
-            "Cymru",
-            "Ledled"
-          ]
-        },
-        "north-wales": {
-          "text": "Gogledd Cymru",
-          "keys": [
-            "Cymru",
-            "Gogledd"
-          ]
-        },
         "in-north-wales": {
           "text": "Yng ngogledd Cymru",
           "keys": [
-            "Cymru",
-            "ngogledd"
-          ]
-        },
-        "south-wales": {
-          "text": "De Cymru",
-          "keys": [
-            "Cymru",
-            "De"
-          ]
-        },
-        "in-south-wales": {
-          "text": "Yn ne Cymru",
-          "keys": [
-            "Cymru",
-            "ne"
-          ]
-        },
-        "mid-wales": {
-          "text": "Canolbarth Cymru",
-          "keys": [
-            "Cymru",
+            "ngogledd",
             null,
-            "Canolbarth"
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd Cymru"
+          ]
+        },
+        "in-north-east-wales": {
+          "text": "Yng ngogledd-ddwyrain Cymru",
+          "keys": [
+            "ngogledd-ddwyrain",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd-ddwyrain Cymru"
+          ]
+        },
+        "in-north-west-wales": {
+          "text": "Yng ngogledd-orllewin Cymru",
+          "keys": [
+            null,
+            "ngogledd-orllewin",
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd-orllewin Cymru"
           ]
         },
         "in-mid-wales": {
           "text": "Yng nghanolbarth Cymru",
           "keys": [
-            "Cymru",
             null,
-            "nghanolbarth"
+            "nghanolbarth",
+            "Cymru"
+          ],
+          "also": [
+            "Canolbarth Cymru"
           ]
         },
-        "west-wales": {
-          "text": "Gorllewin Cymru",
+        "in-south-wales": {
+          "text": "Yn ne Cymru",
           "keys": [
-            "Cymru",
-            "Gorllewin"
+            "ne",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "De Cymru"
+          ]
+        },
+        "in-south-east-wales": {
+          "text": "Yn ne-ddwyrain Cymru",
+          "keys": [
+            "ne-ddwyrain",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "De-ddwyrain Cymru"
           ]
         },
         "in-west-wales": {
           "text": "Yng ngorllewin Cymru",
           "keys": [
-            "Cymru",
-            "ngorllewin"
+            null,
+            "ngorllewin",
+            "Cymru"
+          ],
+          "also": [
+            "Gorllewin Cymru"
+          ]
+        },
+        "across-wales": {
+          "text": "Ledled Cymru",
+          "keys": [
+            null,
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Yng Nghymru",
+            "Nghymru"
           ]
         }
       },
-      "order": "Wales, then north, south, mid and west, each with its “in” form"
+      "order": "the north, then mid, south and west, then all of Wales"
     },
     "places": {
       "title": "Trefi a dinasoedd",
       "concepts": {
-        "cardiff": {
-          "text": "Caerdydd"
-        },
         "swansea": {
           "text": "Abertawe"
-        },
-        "newport": {
-          "text": "Casnewydd"
-        },
-        "wrexham": {
-          "text": "Wrecsam"
         },
         "aberystwyth": {
           "text": "Aberystwyth"
         },
         "bangor": {
-          "text": "Bangor"
+          "text": "Bangor",
+          "also": [
+            "Mangor",
+            "Fangor"
+          ]
+        },
+        "cardiff": {
+          "text": "Caerdydd",
+          "also": [
+            "Nghaerdydd",
+            "Gaerdydd"
+          ]
         },
         "holyhead": {
-          "text": "Caergybi"
+          "text": "Caergybi",
+          "also": [
+            "Nghaergybi",
+            "Gaergybi"
+          ]
+        },
+        "newport": {
+          "text": "Casnewydd",
+          "also": [
+            "Nghasnewydd",
+            "Gasnewydd"
+          ]
+        },
+        "wrexham": {
+          "text": "Wrecsam"
         }
-      }
+      },
+      "order": "alphabetical in Welsh"
     },
     "uk": {
       "title": "Y tu hwnt i Gymru",
       "concepts": {
+        "the-united-kingdom": {
+          "text": "Y Deyrnas Unedig"
+        },
         "england": {
-          "text": "Lloegr"
+          "text": "Lloegr",
+          "also": [
+            "Loegr"
+          ]
         },
         "scotland": {
-          "text": "Yr Alban"
-        },
-        "ireland": {
-          "text": "Iwerddon"
+          "text": "Yr Alban",
+          "also": [
+            "Alban"
+          ]
         },
         "northern-ireland": {
           "text": "Gogledd Iwerddon",
           "keys": [
-            "Iwerddon",
-            "Gogledd"
+            "Gogledd",
+            "Iwerddon"
+          ],
+          "also": [
+            "Ngogledd Iwerddon"
           ]
         },
-        "the-united-kingdom": {
-          "text": "Y Deyrnas Unedig"
+        "ireland": {
+          "text": "Iwerddon"
         }
-      }
+      },
+      "order": "the United Kingdom, then its other nations, then Ireland"
     }
   }
 }

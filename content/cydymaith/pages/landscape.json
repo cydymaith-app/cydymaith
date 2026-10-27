@@ -1,0 +1,38 @@
+{
+  "icon": "earth",
+  "related": [
+    "rain",
+    "snow-ice"
+  ],
+  "sections": [
+    {
+      "id": "coast",
+      "concepts": [
+        "on-the-coast",
+        "in-coastal-areas",
+        "along-the-shores",
+        "in-cardigan-bay",
+        "over-the-irish-sea"
+      ]
+    },
+    {
+      "id": "inland",
+      "concepts": [
+        "inland",
+        "in-the-valleys",
+        "over-the-hills",
+        "on-high-ground",
+        "over-the-mountains"
+      ]
+    },
+    {
+      "id": "named",
+      "concepts": [
+        "over-snowdonia",
+        "in-the-brecon-beacons",
+        "on-anglesey",
+        "on-the-llyn-peninsula"
+      ]
+    }
+  ]
+}

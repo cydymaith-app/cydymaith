@@ -63,7 +63,7 @@ Where the rule is plainly wrong, a skeleton file sets `"level": 1`, `2` or `3` b
 
 ## Related topics
 
-An end topic can link to related topics as a row of tiles, with `"related"` in its page file (`content/cydymaith/pages/<slug>.json`). So far the rain, snow and ice, and how-it's-said topics open the Landscape section of Where (*On the coast*, *In the hills*, *In the valleys*), the wind topic opens the eight points, and Where opens how it is said. Back returns to the topic you came from. `tests/test_project.py` checks the links. The Welsh heading, *Pynciau cysylltiedig*, is a draft for a fluent speaker to check.
+An end topic can link to related topics as a row of tiles, with `"related"` in its page file (`content/cydymaith/pages/<slug>.json`). So far the rain, snow and ice, and how-it's-said topics open the Landscape page of Geography (*On the coast*, *In the hills*, *In the valleys*), the wind topic opens the eight points, and Where opens how it is said. Back returns to the topic you came from. `tests/test_project.py` checks the links. The Welsh heading, *Pynciau cysylltiedig*, is a draft for a fluent speaker to check.
 
 ## Listening aids
 

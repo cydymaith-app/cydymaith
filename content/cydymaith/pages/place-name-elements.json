@@ -2,21 +2,6 @@
   "icon": "tree",
   "sections": [
     {
-      "id": "landscape",
-      "concepts": [
-        "on-the-coast",
-        "in-coastal-areas",
-        "along-the-shores",
-        "inland",
-        "in-the-valleys",
-        "over-the-hills",
-        "on-high-ground",
-        "over-the-mountains",
-        "over-snowdonia",
-        "in-the-brecon-beacons"
-      ]
-    },
-    {
       "id": "settlements",
       "concepts": [
         "church-site",

@@ -130,10 +130,15 @@ class RelatedTopicsTests(unittest.TestCase):
     def tiles(self, slug):
         return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', self.topic(slug))
 
-    def test_the_weather_topics_that_mention_places_open_the_landscape_section_of_where(self):
+    def test_the_weather_topics_that_mention_places_open_the_landscape_page(self):
         for slug in ("rain", "snow-ice"):
-            self.assertEqual(self.tiles(slug), ["group-geography.html#landscape"], slug)
-        self.assertEqual(self.tiles("patterns"), ["group-geography.html#landscape", "group-geography.html#regions", "when.html"])
+            self.assertEqual(self.tiles(slug), ["group-geography.html#topic-landscape"], slug)
+        self.assertEqual(self.tiles("patterns"), ["group-geography.html#topic-landscape", "group-geography.html#regions", "when.html"])
+
+    def test_landscape_and_the_regions_link_back_to_the_weather(self):
+        """Pages of the one Geography page are an accordion apart, so only the links out to the weather make tiles."""
+        self.assertEqual(self.tiles("landscape"), ["group-weather-forecast.html#topic-rain", "group-weather-forecast.html#topic-snow-ice"])
+        self.assertEqual(self.tiles("geography"), ["group-weather-forecast.html#there-will-be"])
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
         row = self.topic("rain")
@@ -195,7 +200,7 @@ class GradingTests(unittest.TestCase):
         points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
         self.assertGreater(self.sections[("compass", "directions")]["level"], points)
-        self.assertGreater(self.sections[("place-name-elements", "landscape")]["level"], points)
+        self.assertGreater(self.sections[("landscape", "inland")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
         self.assertEqual(self.pages["patterns"]["level"], 3)
@@ -241,6 +246,71 @@ class OnePageWeatherTests(unittest.TestCase):
             self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)
 
 
+class GeographyStandardTests(unittest.TestCase):
+    """The Geography pages are held to the standard of the weather pages (2026-10-27): every section states its order, the names a
+    listener hears after a preposition are findable, and the page of forecast phrases is apart from the one for reading names."""
+
+    WELSH = ["a", "b", "c", "ch", "d", "dd", "e", "f", "ff", "g", "ng", "h", "i", "l", "ll", "m", "n", "o", "p", "ph", "r", "rh", "s", "t", "th", "u", "w", "y"]
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def welsh_order(self, word):
+        """Sort key in the Welsh alphabet, where ch, dd, ff, ng, ll, ph, rh and th are letters of their own."""
+        word, key, n = word.casefold(), [], 0
+        while n < len(word):
+            pair = word[n : n + 2]
+            letter = pair if pair in self.WELSH else word[n]
+            key.append(self.WELSH.index(letter) if letter in self.WELSH else len(self.WELSH))
+            n += len(letter)
+        return key
+
+    def section(self, slug, sid):
+        return self.raw["packs"]["cy"]["pages"][slug]["sections"][sid]
+
+    def skeleton(self, slug, sid):
+        return next(s["concepts"] for s in self.raw["pages"][slug]["sections"] if s["id"] == sid)
+
+    def test_every_geography_section_states_its_order(self):
+        for slug in ("compass", "geography", "landscape", "place-name-elements"):
+            for sid, section in self.raw["packs"]["cy"]["pages"][slug]["sections"].items():
+                self.assertTrue(section.get("order"), f"{slug}/{sid} has no order")
+
+    def test_the_towns_are_in_alphabetical_order_in_welsh(self):
+        towns = [self.section("geography", "places")["concepts"][cid]["text"] for cid in self.skeleton("geography", "places")]
+        self.assertEqual(towns, sorted(towns, key=self.welsh_order))
+        self.assertEqual(self.section("geography", "places")["order"], "alphabetical in Welsh")
+
+    def test_a_town_heard_after_in_or_to_is_found_by_the_form_it_takes(self):
+        places = self.section("geography", "places")["concepts"]
+        self.assertIn("Nghaerdydd", places["cardiff"]["also"])
+        self.assertIn("Fangor", places["bangor"]["also"])
+        self.assertIn("Nghasnewydd", places["newport"]["also"])
+
+    def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
+        regions = self.section("geography", "regions")["concepts"]
+        self.assertEqual(len(regions), 8)
+        self.assertEqual(regions["in-north-wales"]["text"], "Yng ngogledd Cymru")
+        self.assertIn("Gogledd Cymru", regions["in-north-wales"]["also"])
+        self.assertIn("Yng Nghymru", regions["across-wales"]["also"])
+
+    def test_landscape_is_its_own_page_and_the_place_name_elements_hold_only_names_to_read(self):
+        self.assertEqual(self.raw["packs"]["en"]["pages"]["landscape"]["title"], "Landscape")
+        self.assertNotIn("landscape", self.raw["packs"]["cy"]["pages"]["place-name-elements"]["sections"])
+        for slug in ("rain", "snow-ice", "patterns"):
+            self.assertIn("landscape", self.raw["pages"][slug]["related"], slug)
+
+    def test_no_geography_key_word_is_a_function_word(self):
+        function_words = {"o'r", "dros", "ar hyd", "ledled", "from", "over", "along", "across"}
+        for slug in ("compass", "geography", "landscape"):
+            for code in ("cy", "en"):
+                for section in self.raw["packs"][code]["pages"][slug]["sections"].values():
+                    for cid, concept in section["concepts"].items():
+                        for key in concept.get("keys", []):
+                            self.assertNotIn((key or "").casefold(), function_words, f"{code} {slug}/{cid}")
+
+
 class KeyWordTests(unittest.TestCase):
     """The weather pages mark the words that match across Welsh and English, so the eye can pair them."""
 
@@ -265,11 +335,12 @@ class KeyWordTests(unittest.TestCase):
         plain = {cid for slug in self.WEATHER for cid, c in self.concepts("cy", slug) if "keys" not in c}
         self.assertFalse({"its-sunny", "rain-in-the-north", "a-cold-northerly"} & plain)
 
-    GEOGRAPHY = ("compass", "geography", "place-name-elements")
+    GEOGRAPHY = ("compass", "geography", "landscape", "place-name-elements")
     MARKED = {
         "compass": {"from", "directions"},
         "geography": {"regions", "uk"},
-        "place-name-elements": {"landscape"},
+        "landscape": {"coast", "inland", "named"},
+        "place-name-elements": set(),
     }
 
     def test_the_geography_phrases_mark_key_words_in_both_languages_and_the_single_word_sections_stay_plain(self):

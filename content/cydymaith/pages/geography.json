@@ -1,42 +1,42 @@
 {
   "icon": "map",
+  "related": [
+    "patterns#there-will-be"
+  ],
   "sections": [
     {
       "id": "regions",
       "concepts": [
-        "wales",
-        "in-wales",
-        "across-wales",
-        "north-wales",
         "in-north-wales",
-        "south-wales",
-        "in-south-wales",
-        "mid-wales",
+        "in-north-east-wales",
+        "in-north-west-wales",
         "in-mid-wales",
-        "west-wales",
-        "in-west-wales"
+        "in-south-wales",
+        "in-south-east-wales",
+        "in-west-wales",
+        "across-wales"
       ]
     },
     {
       "id": "places",
       "concepts": [
-        "cardiff",
         "swansea",
-        "newport",
-        "wrexham",
         "aberystwyth",
         "bangor",
-        "holyhead"
+        "cardiff",
+        "holyhead",
+        "newport",
+        "wrexham"
       ]
     },
     {
       "id": "uk",
       "concepts": [
+        "the-united-kingdom",
         "england",
         "scotland",
-        "ireland",
         "northern-ireland",
-        "the-united-kingdom"
+        "ireland"
       ]
     }
   ]

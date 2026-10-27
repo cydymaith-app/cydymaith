@@ -56,9 +56,7 @@
         "from-the-north": {
           "text": "O'r gogledd",
           "keys": [
-            null,
-            "gogledd",
-            "O'r"
+            "gogledd"
           ],
           "also": [
             "gogleddol"
@@ -67,9 +65,7 @@
         "from-the-north-east": {
           "text": "O'r gogledd-ddwyrain",
           "keys": [
-            "gogledd-ddwyrain",
-            null,
-            "O'r"
+            "gogledd-ddwyrain"
           ],
           "also": [
             "gogledd-ddwyreiniol"
@@ -78,9 +74,7 @@
         "from-the-east": {
           "text": "O'r dwyrain",
           "keys": [
-            "dwyrain",
-            null,
-            "O'r"
+            "dwyrain"
           ],
           "also": [
             "dwyreiniol"
@@ -89,9 +83,7 @@
         "from-the-south-east": {
           "text": "O'r de-ddwyrain",
           "keys": [
-            null,
-            "de-ddwyrain",
-            "O'r"
+            "de-ddwyrain"
           ],
           "also": [
             "de-ddwyreiniol"
@@ -100,9 +92,7 @@
         "from-the-south": {
           "text": "O'r de",
           "keys": [
-            null,
-            "de",
-            "O'r"
+            "de"
           ],
           "also": [
             "deheuol"
@@ -111,9 +101,7 @@
         "from-the-south-west": {
           "text": "O'r de-orllewin",
           "keys": [
-            null,
-            "de-orllewin",
-            "O'r"
+            "de-orllewin"
           ],
           "also": [
             "de-orllewinol"
@@ -123,8 +111,7 @@
           "text": "O'r gorllewin",
           "keys": [
             null,
-            "gorllewin",
-            "O'r"
+            "gorllewin"
           ],
           "also": [
             "gorllewinol"
@@ -133,9 +120,8 @@
         "from-the-north-west": {
           "text": "O'r gogledd-orllewin",
           "keys": [
-            "gogledd-orllewin",
             null,
-            "O'r"
+            "gogledd-orllewin"
           ],
           "also": [
             "gogledd-orllewinol"
@@ -150,7 +136,6 @@
         "in-the-north": {
           "text": "Yn y gogledd",
           "keys": [
-            null,
             "gogledd"
           ]
         },
@@ -163,7 +148,6 @@
         "in-the-south": {
           "text": "Yn y de",
           "keys": [
-            null,
             "de"
           ]
         },
@@ -177,16 +161,16 @@
         "further-south": {
           "text": "Ymhellach i'r de",
           "keys": [
-            null,
             "de",
+            null,
             "Ymhellach"
           ]
         },
         "across-the-whole-country": {
           "text": "Dros y wlad i gyd",
           "keys": [
+            null,
             "i gyd",
-            "Dros",
             "wlad"
           ]
         }

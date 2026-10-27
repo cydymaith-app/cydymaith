@@ -43,7 +43,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone.
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "compass": 22, "patterns": 34, "talk": 11, "geography": 23, "place-name-elements": 56}
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "compass": 22, "patterns": 34, "talk": 11, "geography": 20, "landscape": 14, "place-name-elements": 50}
 
 
 class Page(HTMLParser):
@@ -314,7 +314,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 2, "geography": 1, "patterns": 6, "place-name-elements": 7}
+        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 2, "geography": 3, "landscape": 3, "patterns": 6, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -334,19 +334,22 @@ class BuildTests(unittest.TestCase):
         slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "compass", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
-    def test_geography_is_one_page_of_compass_place_names_and_landscape_with_the_place_name_elements(self):
-        """Merged on 2026-10-27: Regions of Wales joined the place names; the landscape joined the place-name elements."""
+    def test_geography_is_one_page_of_compass_place_names_landscape_and_the_place_name_elements(self):
+        """Merged on 2026-10-27: Regions of Wales joined the place names. Later that day Landscape, a page of forecast phrases,
+        was split from the place-name elements, which are for reading names and signs."""
         geography = next(g for g in self.site.groups if g["id"] == "geography")
         self.assertEqual(geography["layout"], "one-page")
-        self.assertEqual(geography["pages"], ["compass", "geography", "place-name-elements"])
+        self.assertEqual(geography["pages"], ["compass", "geography", "landscape", "place-name-elements"])
         skeleton = self.site.skel["geography"]
         self.assertEqual([s["id"] for s in skeleton["sections"]], ["regions", "places", "uk"])
         self.assertTrue(all("status" not in s for s in skeleton["sections"]), "Geography is no longer held back")
-        self.assertEqual(self.site.count_entries("geography"), 23)
+        # one row per region as it is heard (the plain names are "also heard as"), so 11 region rows became 8
+        self.assertEqual(self.site.count_entries("geography"), 20)
+        self.assertEqual([s["id"] for s in self.site.skel["landscape"]["sections"]], ["coast", "inland", "named"])
         self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from", "directions"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
-        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["landscape", "settlements", "water", "hills", "land", "ways", "describing"])
+        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])
         dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
         bridge = next(e for e in dictionary["entries"] if e["concept"] == "bridge")
         self.assertEqual([t["text"] for t in bridge["terms"]["cy"]], ["pont"])

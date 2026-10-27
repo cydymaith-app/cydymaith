@@ -36,67 +36,77 @@
       "title": "From which way",
       "concepts": {
         "from-the-north": {
-          "text": "From the north; northerly",
+          "text": "From the north",
           "keys": [
-            null,
-            "north",
-            "From"
+            "north"
+          ],
+          "also": [
+            "northerly"
           ]
         },
         "from-the-north-east": {
-          "text": "From the north-east; north-easterly",
+          "text": "From the north-east",
           "keys": [
-            "north-east",
-            null,
-            "From"
+            "north-east"
+          ],
+          "also": [
+            "north-easterly"
           ]
         },
         "from-the-east": {
-          "text": "From the east; easterly",
+          "text": "From the east",
           "keys": [
-            "east",
-            null,
-            "From"
+            "east"
+          ],
+          "also": [
+            "easterly"
           ]
         },
         "from-the-south-east": {
-          "text": "From the south-east; south-easterly",
+          "text": "From the south-east",
           "keys": [
-            null,
-            "south-east",
-            "From"
+            "south-east"
+          ],
+          "also": [
+            "south-easterly"
           ]
         },
         "from-the-south": {
-          "text": "From the south; southerly",
+          "text": "From the south",
           "keys": [
-            null,
-            "south",
-            "From"
+            "south"
+          ],
+          "also": [
+            "southerly"
           ]
         },
         "from-the-south-west": {
-          "text": "From the south-west; south-westerly",
+          "text": "From the south-west",
           "keys": [
-            null,
-            "south-west",
-            "From"
+            "south-west"
+          ],
+          "also": [
+            "south-westerly"
           ]
         },
         "from-the-west": {
-          "text": "From the west; westerly",
+          "text": "From the west",
           "keys": [
             null,
-            "west",
-            "From"
+            "west"
+          ],
+          "also": [
+            "westerly"
           ]
         },
         "from-the-north-west": {
-          "text": "From the north-west; north-westerly",
+          "text": "From the north-west",
           "keys": [
-            "north-west",
             null,
-            "From"
+            "north-west"
+          ],
+          "also": [
+            "north-westerly"
           ]
         }
       }
@@ -107,7 +117,6 @@
         "in-the-north": {
           "text": "In the north",
           "keys": [
-            null,
             "north"
           ]
         },
@@ -120,7 +129,6 @@
         "in-the-south": {
           "text": "In the south",
           "keys": [
-            null,
             "south"
           ]
         },
@@ -134,16 +142,16 @@
         "further-south": {
           "text": "Further south",
           "keys": [
-            null,
             "south",
+            null,
             "Further"
           ]
         },
         "across-the-whole-country": {
           "text": "Across the whole country",
           "keys": [
+            null,
             "whole",
-            "Across",
             "country"
           ]
         }

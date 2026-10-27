@@ -1,6 +1,6 @@
 {
-  "title": "Landscape and place-name elements",
-  "lede": "Landscape as a forecast says it, then the parts that Welsh place names are built from, so a road sign or a place on a forecast can be read.",
+  "title": "Place-name elements",
+  "lede": "The parts that Welsh place names are built from, so a road sign or a place on a forecast can be read.",
   "source": "draft",
   "more": [
     "This is a selection of the elements met most often, not a full list. If you cannot find the one you are looking for, the Royal Commission's Historic Place Names glossary covers almost every element.",
@@ -14,84 +14,6 @@
     }
   ],
   "sections": {
-    "landscape": {
-      "title": "Landscape",
-      "concepts": {
-        "on-the-coast": {
-          "text": "On the coast",
-          "keys": [
-            "coast"
-          ]
-        },
-        "in-coastal-areas": {
-          "text": "In coastal areas",
-          "keys": [
-            "coastal",
-            null,
-            "areas"
-          ]
-        },
-        "along-the-shores": {
-          "text": "Along the shores",
-          "keys": [
-            "shores",
-            "Along"
-          ]
-        },
-        "inland": {
-          "text": "Inland",
-          "keys": [
-            "Inland"
-          ]
-        },
-        "in-the-valleys": {
-          "text": "In the valleys",
-          "keys": [
-            null,
-            "valleys"
-          ]
-        },
-        "over-the-hills": {
-          "text": "Over the hills",
-          "keys": [
-            "hills",
-            null,
-            "Over"
-          ]
-        },
-        "on-high-ground": {
-          "text": "On high ground",
-          "keys": [
-            null,
-            null,
-            "high ground"
-          ]
-        },
-        "over-the-mountains": {
-          "text": "Over the mountains",
-          "keys": [
-            null,
-            "mountains",
-            "Over"
-          ]
-        },
-        "over-snowdonia": {
-          "text": "Over Snowdonia",
-          "keys": [
-            "Snowdonia",
-            null,
-            "Over"
-          ]
-        },
-        "in-the-brecon-beacons": {
-          "text": "In the Brecon Beacons",
-          "keys": [
-            null,
-            "Brecon Beacons"
-          ]
-        }
-      }
-    },
     "settlements": {
       "title": "Settlements and buildings",
       "concepts": {
