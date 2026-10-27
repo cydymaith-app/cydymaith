@@ -67,12 +67,17 @@ An end topic can link to related topics as a row of tiles, with `"related"` in i
 
 ## Listening aids
 
-The Welsh comes first in each row, because it is the language being heard (`default_pair` in the edition). Four fields help someone who has just heard a word and needs to find it:
+The Welsh comes first in each row (above the English), because it is the language being heard (`default_pair` in the edition). Five fields help someone who has just heard a word and needs to find it:
 
 - `also`: other forms the word is heard as, such as a changed beginning. They show as chips under the row and search finds the word from any of them.
 
   ```json
   "rain": { "text": "Glaw", "also": ["law"] }
+  ```
+- `keys`: up to three words of the text, with the matching words in the other language in the same order. They are drawn in the same colour, or the same underline, in both, to match what is heard to what is read. The position in the list is the colour, and `null` skips one, so a word keeps its colour from row to row. **Settings → Geiriau allweddol / Key words** chooses colour, underline or neither; colour is not offered with safe colours or high contrast.
+
+  ```json
+  "heavy-rain-and-strong-wind": { "text": "Glaw trwm a gwynt cryf", "keys": ["gwynt", "Glaw"] }
   ```
 - `order` (on a section, in the pack): one line saying what order the rows run in, such as "lightest to heaviest".
 - `links` (on a group in `structure.json`): shows a tile for a page that lives in another group, so When and Where are written once and reached from Weather as well as from Time and place.

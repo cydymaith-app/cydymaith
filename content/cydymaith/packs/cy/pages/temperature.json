@@ -6,19 +6,43 @@
       "title": "Poeth ac oer",
       "concepts": {
         "warm-for-the-time-of-year": {
-          "text": "Cynnes am yr adeg o'r flwyddyn"
+          "text": "Cynnes am yr adeg o'r flwyddyn",
+          "keys": [
+            "adeg o'r flwyddyn",
+            "Cynnes"
+          ]
         },
         "mild-on-the-whole": {
-          "text": "Mwyn ar y cyfan"
+          "text": "Mwyn ar y cyfan",
+          "keys": [
+            null,
+            "Mwyn",
+            "ar y cyfan"
+          ]
         },
         "feeling-fresh-in-the-wind": {
-          "text": "Teimlo'n ffres yn y gwynt"
+          "text": "Teimlo'n ffres yn y gwynt",
+          "keys": [
+            "gwynt",
+            "ffres",
+            "Teimlo"
+          ]
         },
         "colder-than-yesterday": {
-          "text": "Oerach na ddoe"
+          "text": "Oerach na ddoe",
+          "keys": [
+            null,
+            "ddoe",
+            "Oerach"
+          ]
         },
         "another-cold-night": {
-          "text": "Noson oer arall"
+          "text": "Noson oer arall",
+          "keys": [
+            "oer",
+            "arall",
+            "Noson"
+          ]
         }
       },
       "order": "warmest to coldest"
@@ -28,18 +52,38 @@
       "concepts": {
         "it-should-turn-drier": {
           "text": "Dylai hi droi'n sychach",
+          "keys": [
+            "droi",
+            null,
+            "sychach"
+          ],
           "also": [
             "ddylai hi droi'n sychach"
           ]
         },
         "damp-and-grey": {
-          "text": "Llaith a llwydaidd"
+          "text": "Llaith a llwydaidd",
+          "keys": [
+            "Llaith",
+            null,
+            "llwydaidd"
+          ]
         },
         "close-humid-weather": {
-          "text": "Tywydd mwll a llaith"
+          "text": "Tywydd mwll a llaith",
+          "keys": [
+            "llaith",
+            null,
+            "mwll"
+          ]
         },
         "high-humidity-in-the-afternoon": {
-          "text": "Lleithder uchel yn y prynhawn"
+          "text": "Lleithder uchel yn y prynhawn",
+          "keys": [
+            "Lleithder uchel",
+            null,
+            "prynhawn"
+          ]
         }
       },
       "order": "dry to muggy"
@@ -49,23 +93,53 @@
       "concepts": {
         "temperatures-at-their-highest-in-the-afternoon": {
           "text": "Y tymheredd ar ei uchaf yn y prynhawn",
+          "keys": [
+            "uchaf",
+            "tymheredd",
+            "prynhawn"
+          ],
           "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
         },
         "a-high-of-16-degrees": {
           "text": "Uchafbwynt o 16 gradd",
+          "keys": [
+            "16 gradd",
+            null,
+            "Uchafbwynt"
+          ],
           "note": "after a number the noun stays singular: {{gradd}}"
         },
         "as-high-as-13-degrees-in-the-south": {
-          "text": "Mor uchel â 13 gradd yn y de"
+          "text": "Mor uchel â 13 gradd yn y de",
+          "keys": [
+            "de",
+            "13 gradd",
+            "uchel"
+          ]
         },
         "at-its-lowest-between-6-and-9-degrees": {
-          "text": "Ar ei isaf rhwng 6 a 9 gradd"
+          "text": "Ar ei isaf rhwng 6 a 9 gradd",
+          "keys": [
+            null,
+            "6 a 9 gradd",
+            "isaf"
+          ]
         },
         "the-temperature-falling-fast-in-the-evening": {
-          "text": "Y tymheredd yn syrthio'n gyflym gyda'r nos"
+          "text": "Y tymheredd yn syrthio'n gyflym gyda'r nos",
+          "keys": [
+            "gyflym",
+            "tymheredd",
+            "syrthio"
+          ]
         },
         "a-few-degrees-below-freezing": {
           "text": "Ychydig raddau islaw'r rhewbwynt",
+          "keys": [
+            "Ychydig raddau",
+            null,
+            "islaw'r rhewbwynt"
+          ],
           "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
         }
       },

@@ -6,21 +6,46 @@
       "title": "Eira",
       "concepts": {
         "snow-showers-on-the-mountains": {
-          "text": "Cawodydd eira ar y mynyddoedd"
+          "text": "Cawodydd eira ar y mynyddoedd",
+          "keys": [
+            "mynyddoedd",
+            null,
+            "Cawodydd eira"
+          ]
         },
         "sleet-on-lower-ground": {
-          "text": "Eirlaw ar dir is"
+          "text": "Eirlaw ar dir is",
+          "keys": [
+            "Eirlaw",
+            null,
+            "dir is"
+          ]
         },
         "the-odd-hail-shower": {
           "text": "Ambell gawod o genllysg",
+          "keys": [
+            null,
+            "gawod",
+            "genllysg"
+          ],
           "note": "{{cenllysg}} is hail; it softens to {{genllysg}} after {{o}}"
         },
         "snow-settling-overnight": {
           "text": "Eira yn setlo dros nos",
+          "keys": [
+            "setlo",
+            "Eira",
+            "dros nos"
+          ],
           "note": "{{setlo}}: to settle, to lie; to be confirmed"
         },
         "a-yellow-warning-for-snow": {
-          "text": "Rhybudd melyn am eira"
+          "text": "Rhybudd melyn am eira",
+          "keys": [
+            "melyn",
+            "eira",
+            "Rhybudd"
+          ]
         }
       },
       "order": "snow, then sleet and hail, then the warning"
@@ -29,17 +54,37 @@
       "title": "Rhew ac iâ",
       "concepts": {
         "a-hard-frost-in-places": {
-          "text": "Rhew caled mewn mannau"
+          "text": "Rhew caled mewn mannau",
+          "keys": [
+            "Rhew caled",
+            null,
+            "mannau"
+          ]
         },
         "hoar-frost-on-the-fields": {
           "text": "Barrug ar y caeau",
+          "keys": [
+            null,
+            "Barrug",
+            "caeau"
+          ],
           "note": "{{barrug}}: hoar frost, rime; to be confirmed"
         },
         "icy-roads-in-the-morning": {
-          "text": "Ffyrdd rhewllyd yn y bore"
+          "text": "Ffyrdd rhewllyd yn y bore",
+          "keys": [
+            "rhewllyd",
+            "Ffyrdd",
+            "bore"
+          ]
         },
         "a-yellow-warning-for-ice": {
-          "text": "Rhybudd melyn am iâ"
+          "text": "Rhybudd melyn am iâ",
+          "keys": [
+            "melyn",
+            "iâ",
+            "Rhybudd"
+          ]
         }
       },
       "order": "frost, then ice, then the warning"

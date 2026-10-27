@@ -7,37 +7,78 @@
       "title": "It is…",
       "concepts": {
         "its-sunny": {
-          "text": "It's sunny"
+          "text": "It's sunny",
+          "keys": [
+            "sunny"
+          ]
         },
         "its-cloudy": {
-          "text": "It's cloudy"
+          "text": "It's cloudy",
+          "keys": [
+            "cloudy"
+          ]
         },
         "its-fine": {
-          "text": "It's fine"
+          "text": "It's fine",
+          "keys": [
+            "fine"
+          ]
         },
         "its-dry": {
-          "text": "It's dry"
+          "text": "It's dry",
+          "keys": [
+            null,
+            "dry"
+          ]
         },
         "its-foggy": {
-          "text": "It's foggy"
+          "text": "It's foggy",
+          "keys": [
+            "foggy"
+          ]
         },
         "its-wet": {
-          "text": "It's wet"
+          "text": "It's wet",
+          "keys": [
+            null,
+            "wet"
+          ]
         },
         "its-windy": {
-          "text": "It's windy"
+          "text": "It's windy",
+          "keys": [
+            null,
+            "windy"
+          ]
         },
         "its-cold": {
-          "text": "It's cold"
+          "text": "It's cold",
+          "keys": [
+            "cold"
+          ]
         },
         "its-warm": {
-          "text": "It's warm"
+          "text": "It's warm",
+          "keys": [
+            null,
+            "warm"
+          ]
         },
         "its-hot": {
-          "text": "It's hot"
+          "text": "It's hot",
+          "keys": [
+            null,
+            null,
+            "hot"
+          ]
         },
         "its-freezing": {
-          "text": "It's freezing"
+          "text": "It's freezing",
+          "keys": [
+            null,
+            null,
+            "freezing"
+          ]
         }
       }
     },
@@ -45,16 +86,34 @@
       "title": "What the weather is doing",
       "concepts": {
         "its-raining": {
-          "text": "It's raining"
+          "text": "It's raining",
+          "keys": [
+            null,
+            "raining"
+          ]
         },
         "its-snowing": {
-          "text": "It's snowing"
+          "text": "It's snowing",
+          "keys": [
+            null,
+            null,
+            "snowing"
+          ]
         },
         "its-pouring": {
-          "text": "It's pouring"
+          "text": "It's pouring",
+          "keys": [
+            null,
+            "pouring"
+          ]
         },
         "the-sun-is-shining": {
-          "text": "The sun is shining"
+          "text": "The sun is shining",
+          "keys": [
+            null,
+            "sun",
+            "shining"
+          ]
         }
       }
     },
@@ -62,19 +121,41 @@
       "title": "It will be…",
       "concepts": {
         "it-will-be-sunny-tomorrow": {
-          "text": "It will be sunny tomorrow"
+          "text": "It will be sunny tomorrow",
+          "keys": [
+            "sunny",
+            null,
+            "tomorrow"
+          ]
         },
         "it-will-be-dry-all-day": {
-          "text": "It will be dry all day"
+          "text": "It will be dry all day",
+          "keys": [
+            "all day",
+            "dry"
+          ]
         },
         "brighter-later": {
-          "text": "Brighter later"
+          "text": "Brighter later",
+          "keys": [
+            "Brighter",
+            "later"
+          ]
         },
         "it-will-rain-tomorrow": {
-          "text": "It will rain tomorrow"
+          "text": "It will rain tomorrow",
+          "keys": [
+            null,
+            "rain",
+            "tomorrow"
+          ]
         },
         "it-will-be-cold-tonight": {
-          "text": "It will be cold tonight"
+          "text": "It will be cold tonight",
+          "keys": [
+            "cold",
+            "tonight"
+          ]
         }
       }
     },
@@ -82,28 +163,66 @@
       "title": "There will be…",
       "concepts": {
         "fog-in-places": {
-          "text": "Fog in places"
+          "text": "Fog in places",
+          "keys": [
+            null,
+            "Fog",
+            "places"
+          ]
         },
         "showers-on-saturday": {
-          "text": "Showers on Saturday"
+          "text": "Showers on Saturday",
+          "keys": [
+            "Saturday",
+            "Showers"
+          ]
         },
         "rain-in-the-north": {
-          "text": "Rain in the north"
+          "text": "Rain in the north",
+          "keys": [
+            null,
+            "Rain",
+            "north"
+          ]
         },
         "snow-on-high-ground": {
-          "text": "Snow on high ground"
+          "text": "Snow on high ground",
+          "keys": [
+            "high ground",
+            "Snow"
+          ]
         },
         "frost-overnight": {
-          "text": "Frost overnight"
+          "text": "Frost overnight",
+          "keys": [
+            "Frost",
+            null,
+            "overnight"
+          ]
         },
         "strong-winds-in-the-west": {
-          "text": "Strong winds in the west"
+          "text": "Strong winds in the west",
+          "keys": [
+            "west",
+            null,
+            "Strong winds"
+          ]
         },
         "there-will-be-a-south-westerly-wind": {
-          "text": "There will be a south-westerly wind"
+          "text": "There will be a south-westerly wind",
+          "keys": [
+            "wind",
+            null,
+            "south-westerly"
+          ]
         },
         "temperatures-around-ten-degrees": {
-          "text": "Temperatures around ten degrees"
+          "text": "Temperatures around ten degrees",
+          "keys": [
+            null,
+            "Temperatures",
+            "ten degrees"
+          ]
         }
       }
     },
@@ -111,16 +230,35 @@
       "title": "Naming the wind",
       "concepts": {
         "a-south-westerly-wind": {
-          "text": "A south-westerly wind"
+          "text": "A south-westerly wind",
+          "keys": [
+            "wind",
+            null,
+            "south-westerly"
+          ]
         },
         "wind-from-the-north": {
-          "text": "Wind from the north"
+          "text": "Wind from the north",
+          "keys": [
+            "Wind",
+            null,
+            "north"
+          ]
         },
         "wind-from-the-east": {
-          "text": "Wind from the east"
+          "text": "Wind from the east",
+          "keys": [
+            "Wind",
+            null,
+            "east"
+          ]
         },
         "winds-from-the-south-east": {
-          "text": "Winds from the south-east"
+          "text": "Winds from the south-east",
+          "keys": [
+            "Winds",
+            "south-east"
+          ]
         }
       }
     },

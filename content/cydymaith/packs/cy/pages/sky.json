@@ -6,32 +6,68 @@
       "title": "Haul a chymylau",
       "concepts": {
         "plenty-of-sunshine": {
-          "text": "Digon o heulwen"
+          "text": "Digon o heulwen",
+          "keys": [
+            null,
+            null,
+            "heulwen"
+          ]
         },
         "a-little-sunshine-in-some-areas": {
-          "text": "Ychydig o heulwen mewn rhai ardaloedd"
+          "text": "Ychydig o heulwen mewn rhai ardaloedd",
+          "keys": [
+            null,
+            "ardaloedd",
+            "heulwen"
+          ]
         },
         "sunny-spells-in-the-afternoon": {
           "text": "Ysbeidiau heulog yn y prynhawn",
+          "keys": [
+            "heulog",
+            null,
+            "prynhawn"
+          ],
           "also": [
             "cyfnodau heulog"
           ]
         },
         "dry-and-fine": {
-          "text": "Sych a braf"
+          "text": "Sych a braf",
+          "keys": [
+            "braf",
+            "Sych"
+          ]
         },
         "dry-on-the-whole": {
-          "text": "Sych ar y cyfan"
+          "text": "Sych ar y cyfan",
+          "keys": [
+            null,
+            "Sych"
+          ]
         },
         "clear-skies-overnight": {
-          "text": "Awyr glir dros nos"
+          "text": "Awyr glir dros nos",
+          "keys": [
+            "Awyr glir",
+            null,
+            "dros nos"
+          ]
         },
         "sunny-at-first-before-clouding-over": {
           "text": "Heulog i ddechrau, cyn cymylu",
+          "keys": [
+            "Heulog",
+            null,
+            "cymylu"
+          ],
           "note": "{{cymylu}}: to cloud over"
         },
         "cloudy-at-first": {
           "text": "Cymylog i ddechrau",
+          "keys": [
+            "Cymylog"
+          ],
           "also": [
             "gymylog i ddechrau"
           ]
@@ -43,17 +79,36 @@
       "title": "Niwl a tharth",
       "concepts": {
         "thick-fog-on-the-hills": {
-          "text": "Niwl trwchus ar y bryniau"
+          "text": "Niwl trwchus ar y bryniau",
+          "keys": [
+            "trwchus",
+            "Niwl",
+            "bryniau"
+          ]
         },
         "mist-in-the-valleys": {
           "text": "Tarth yn y cymoedd",
+          "keys": [
+            "cymoedd",
+            "Tarth"
+          ],
           "note": "{{tarth}} is mist; {{niwl}} is fog"
         },
         "poor-visibility-on-some-roads": {
-          "text": "Gwelededd gwael ar rai ffyrdd"
+          "text": "Gwelededd gwael ar rai ffyrdd",
+          "keys": [
+            null,
+            "ffyrdd",
+            "Gwelededd"
+          ]
         },
         "the-fog-clearing-by-mid-morning": {
-          "text": "Y niwl yn clirio erbyn canol y bore"
+          "text": "Y niwl yn clirio erbyn canol y bore",
+          "keys": [
+            "clirio",
+            "niwl",
+            "canol y bore"
+          ]
         }
       },
       "order": "thickest to clearing"
@@ -62,19 +117,38 @@
       "title": "Golwg yr awyr",
       "concepts": {
         "plenty-of-blue-sky": {
-          "text": "Digon o awyr las"
+          "text": "Digon o awyr las",
+          "keys": [
+            "awyr las"
+          ]
         },
         "a-dull-grey-day": {
-          "text": "Diwrnod llwydaidd"
+          "text": "Diwrnod llwydaidd",
+          "keys": [
+            null,
+            null,
+            "llwydaidd"
+          ]
         },
         "settled-for-a-while": {
-          "text": "Tywydd sefydlog am gyfnod"
+          "text": "Tywydd sefydlog am gyfnod",
+          "keys": [
+            "sefydlog"
+          ]
         },
         "changeable-over-the-weekend": {
-          "text": "Tywydd cyfnewidiol dros y penwythnos"
+          "text": "Tywydd cyfnewidiol dros y penwythnos",
+          "keys": [
+            "cyfnewidiol",
+            "penwythnos"
+          ]
         },
         "unsettled-from-mid-week-onwards": {
-          "text": "Ansefydlog o ganol yr wythnos ymlaen"
+          "text": "Ansefydlog o ganol yr wythnos ymlaen",
+          "keys": [
+            "ganol yr wythnos",
+            "Ansefydlog"
+          ]
         }
       },
       "order": "settled to unsettled"

@@ -7,30 +7,64 @@
       "title": "Rain",
       "concepts": {
         "drizzle-here-and-there": {
-          "text": "Drizzle here and there"
+          "text": "Drizzle here and there",
+          "keys": [
+            null,
+            "Drizzle"
+          ]
         },
         "only-a-few-showers": {
-          "text": "Only a few showers"
+          "text": "Only a few showers",
+          "keys": [
+            null,
+            "showers"
+          ]
         },
         "heavy-showers-in-the-afternoon": {
-          "text": "Heavy showers in the afternoon"
+          "text": "Heavy showers in the afternoon",
+          "keys": [
+            "Heavy",
+            "showers",
+            "afternoon"
+          ]
         },
         "spells-of-heavy-rain-as-well": {
           "text": "Spells of heavy rain as well",
+          "keys": [
+            "heavy",
+            "rain"
+          ],
           "note": "{{glaw}} softens to {{law}} after {{o}}"
         },
         "possibly-heavy-at-times": {
-          "text": "Possibly heavy at times"
+          "text": "Possibly heavy at times",
+          "keys": [
+            "heavy"
+          ]
         },
         "heavy-rain-and-strong-wind": {
-          "text": "Heavy rain and strong wind"
+          "text": "Heavy rain and strong wind",
+          "keys": [
+            "wind",
+            "rain"
+          ]
         },
         "a-yellow-warning-for-rain": {
           "text": "A yellow warning for rain",
+          "keys": [
+            "yellow",
+            "rain",
+            "warning"
+          ],
           "note": "{{am}} softens {{glaw}} to {{law}}"
         },
         "a-risk-of-flooding": {
           "text": "A risk of flooding",
+          "keys": [
+            "flooding",
+            null,
+            "risk"
+          ],
           "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
         }
       }
@@ -39,16 +73,35 @@
       "title": "Thunder and storms",
       "concepts": {
         "a-chance-of-thunder-and-lightning": {
-          "text": "A chance of thunder and lightning"
+          "text": "A chance of thunder and lightning",
+          "keys": [
+            "lightning",
+            "thunder"
+          ]
         },
         "the-odd-thunderstorm": {
-          "text": "The odd thunderstorm"
+          "text": "The odd thunderstorm",
+          "keys": [
+            "odd",
+            null,
+            "thunderstorm"
+          ]
         },
         "more-rough-weather-over-the-next-few-hours": {
-          "text": "More rough weather over the next few hours"
+          "text": "More rough weather over the next few hours",
+          "keys": [
+            "rough weather",
+            "hours",
+            "More"
+          ]
         },
         "two-storms-in-one-weekend": {
           "text": "Two storms in one weekend",
+          "keys": [
+            "Two",
+            "weekend",
+            "storms"
+          ],
           "note": "{{dwy}} is two before a feminine noun"
         }
       }

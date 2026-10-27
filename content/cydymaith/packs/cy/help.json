@@ -123,7 +123,7 @@
     "listen-first-rows": {
       "title": "Pa iaith sy'n dod gyntaf",
       "body": [
-        "Ym mhob rhes mae iaith gyntaf y pâr ar ddechrau'r rhes mewn print mawr a chryf, a'r ail iaith ar ddiwedd yr un rhes, mewn lliw ysgafnach. Yr iaith gyntaf yw'r un rydych yn ei chlywed, felly gallwch ei sganio'n gyflym. Mae'r wefan yn dewis y pâr."
+        "Ym mhob rhes mae iaith gyntaf y pâr ar y brig mewn print mawr a chryf, a'r ail iaith yn union oddi tani, mewn lliw ysgafnach. Yr iaith gyntaf yw'r un rydych yn ei chlywed, felly gallwch ei sganio'n gyflym i lawr y dudalen. Mae'r wefan yn dewis y pâr."
       ]
     },
     "also-heard": {
@@ -214,6 +214,14 @@
       "title": "Rhoi teils mewn trefn",
       "body": [
         "Mae Trefn yn rhoi teils ac adrannau mewn trefn: fel y'u hysgrifennwyd (Arferol), y symlaf yn gyntaf, neu'r mwyaf datblygedig yn gyntaf. Mae'n berthnasol i'r tudalennau a agorwch nesaf. Mae sgrin y gwnaethoch drefnu ei theils eich hun yn cadw eich trefn eich hun."
+      ],
+      "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
+      "touch": "Tapiwch ddewis."
+    },
+    "key-words": {
+      "title": "Lliwio'r geiriau allweddol",
+      "body": [
+        "Mae Geiriau allweddol yn nodi prif eiriau rhes, a'r gair cyfatebol yn yr iaith arall, mewn un o ddwy ffordd. Mae Lliw yn rhoi'r un lliw i bâr, ac yn dilyn y cynllun lliw a ddewiswyd gennych. Mae Tanlinell yn rhoi'r un llinell i bâr: solet, dotiog neu donnog, fel y gallwch gyfateb geiriau heb ddibynnu ar liw. Gyda Lliwiau diogel neu Gyferbyniad uchel dim ond Tanlinell a gynigir, a defnyddir y llinell pryd bynnag y bydd eich dyfais yn diystyru lliwiau. Diffoddwch ef os nad oes ei angen mwyach."
       ],
       "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
       "touch": "Tapiwch ddewis."

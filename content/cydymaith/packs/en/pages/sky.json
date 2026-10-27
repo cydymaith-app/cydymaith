@@ -7,29 +7,65 @@
       "title": "Sun and cloud",
       "concepts": {
         "plenty-of-sunshine": {
-          "text": "Plenty of sunshine"
+          "text": "Plenty of sunshine",
+          "keys": [
+            null,
+            null,
+            "sunshine"
+          ]
         },
         "a-little-sunshine-in-some-areas": {
-          "text": "A little sunshine in some areas"
+          "text": "A little sunshine in some areas",
+          "keys": [
+            null,
+            "areas",
+            "sunshine"
+          ]
         },
         "sunny-spells-in-the-afternoon": {
-          "text": "Sunny spells in the afternoon"
+          "text": "Sunny spells in the afternoon",
+          "keys": [
+            "Sunny",
+            null,
+            "afternoon"
+          ]
         },
         "dry-and-fine": {
-          "text": "Dry and fine"
+          "text": "Dry and fine",
+          "keys": [
+            "fine",
+            "Dry"
+          ]
         },
         "dry-on-the-whole": {
-          "text": "Dry on the whole"
+          "text": "Dry on the whole",
+          "keys": [
+            null,
+            "Dry"
+          ]
         },
         "clear-skies-overnight": {
-          "text": "Clear skies overnight"
+          "text": "Clear skies overnight",
+          "keys": [
+            "Clear skies",
+            null,
+            "overnight"
+          ]
         },
         "sunny-at-first-before-clouding-over": {
           "text": "Sunny at first, before clouding over",
+          "keys": [
+            "Sunny",
+            null,
+            "clouding"
+          ],
           "note": "{{cymylu}}: to cloud over"
         },
         "cloudy-at-first": {
-          "text": "Cloudy at first"
+          "text": "Cloudy at first",
+          "keys": [
+            "Cloudy"
+          ]
         }
       }
     },
@@ -37,17 +73,36 @@
       "title": "Fog and mist",
       "concepts": {
         "thick-fog-on-the-hills": {
-          "text": "Thick fog on the hills"
+          "text": "Thick fog on the hills",
+          "keys": [
+            "Thick",
+            "fog",
+            "hills"
+          ]
         },
         "mist-in-the-valleys": {
           "text": "Mist in the valleys",
+          "keys": [
+            "valleys",
+            "Mist"
+          ],
           "note": "{{tarth}} is mist; {{niwl}} is fog"
         },
         "poor-visibility-on-some-roads": {
-          "text": "Poor visibility on some roads"
+          "text": "Poor visibility on some roads",
+          "keys": [
+            null,
+            "roads",
+            "visibility"
+          ]
         },
         "the-fog-clearing-by-mid-morning": {
-          "text": "The fog clearing by mid-morning"
+          "text": "The fog clearing by mid-morning",
+          "keys": [
+            "clearing",
+            "fog",
+            "mid-morning"
+          ]
         }
       }
     },
@@ -55,19 +110,38 @@
       "title": "How the sky looks",
       "concepts": {
         "plenty-of-blue-sky": {
-          "text": "Plenty of blue sky"
+          "text": "Plenty of blue sky",
+          "keys": [
+            "blue sky"
+          ]
         },
         "a-dull-grey-day": {
-          "text": "A dull, grey day"
+          "text": "A dull, grey day",
+          "keys": [
+            null,
+            null,
+            "grey"
+          ]
         },
         "settled-for-a-while": {
-          "text": "Settled weather for a while"
+          "text": "Settled weather for a while",
+          "keys": [
+            "Settled"
+          ]
         },
         "changeable-over-the-weekend": {
-          "text": "Changeable weather over the weekend"
+          "text": "Changeable weather over the weekend",
+          "keys": [
+            "Changeable",
+            "weekend"
+          ]
         },
         "unsettled-from-mid-week-onwards": {
-          "text": "Unsettled from mid-week onwards"
+          "text": "Unsettled from mid-week onwards",
+          "keys": [
+            "mid-week",
+            "Unsettled"
+          ]
         }
       }
     }

@@ -6,25 +6,53 @@
       "title": "Cryfder y gwynt",
       "concepts": {
         "mostly-light-winds": {
-          "text": "Gwynt ysgafn ar y cyfan"
+          "text": "Gwynt ysgafn ar y cyfan",
+          "keys": [
+            "ar y cyfan",
+            "Gwynt ysgafn"
+          ]
         },
         "a-moderate-breeze-from-the-south-west": {
-          "text": "Awel gymedrol o'r de-orllewin"
+          "text": "Awel gymedrol o'r de-orllewin",
+          "keys": [
+            "de-orllewin",
+            "gymedrol",
+            "Awel"
+          ]
         },
         "the-wind-strengthening": {
-          "text": "Y gwynt yn cryfhau"
+          "text": "Y gwynt yn cryfhau",
+          "keys": [
+            "gwynt",
+            "cryfhau"
+          ]
         },
         "drier-and-windy": {
-          "text": "Sychach ac yn wyntog"
+          "text": "Sychach ac yn wyntog",
+          "keys": [
+            null,
+            "wyntog",
+            "Sychach"
+          ]
         },
         "strong-winds-on-the-coast": {
           "text": "Gwyntoedd cryfion ar yr arfordir",
+          "keys": [
+            null,
+            "arfordir",
+            "Gwyntoedd cryfion"
+          ],
           "also": [
             "gwynt cryf"
           ]
         },
         "the-wind-at-its-strongest-overnight": {
           "text": "Y gwynt ar ei gryfaf dros nos",
+          "keys": [
+            "gwynt",
+            "gryfaf",
+            "dros nos"
+          ],
           "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}",
           "also": [
             "ar ei gryfa'"
@@ -32,6 +60,11 @@
         },
         "gusts-of-up-to-70-mph": {
           "text": "Hyrddiadau hyd at 70 milltir yr awr",
+          "keys": [
+            null,
+            "70 milltir yr awr",
+            "Hyrddiadau"
+          ],
           "note": "on screen {{milltir yr awr}} is {{mya}}: {{70mya}}",
           "also": [
             "hyrddio hyd at 60mya",
@@ -39,7 +72,11 @@
           ]
         },
         "about-60-mph-on-the-coast": {
-          "text": "Rhyw 60 milltir yr awr ar yr arfordir"
+          "text": "Rhyw 60 milltir yr awr ar yr arfordir",
+          "keys": [
+            "60 milltir yr awr",
+            "arfordir"
+          ]
         }
       },
       "order": "lightest to strongest, then gusts and speeds"
@@ -49,23 +86,51 @@
       "intro": "Forecasters name a wind by the direction it blows from. A south-westerly comes from the south-west.",
       "concepts": {
         "a-cold-northerly": {
-          "text": "Gwynt gogleddol oer"
+          "text": "Gwynt gogleddol oer",
+          "keys": [
+            "oer",
+            null,
+            "Gwynt gogleddol"
+          ]
         },
         "blowing-from-the-north-east": {
-          "text": "Yn chwythu o'r gogledd-ddwyrain"
+          "text": "Yn chwythu o'r gogledd-ddwyrain",
+          "keys": [
+            "gogledd-ddwyrain",
+            "chwythu"
+          ]
         },
         "a-biting-easterly": {
           "text": "Gwynt dwyreiniol main",
+          "keys": [
+            null,
+            "Gwynt dwyreiniol",
+            "main"
+          ],
           "note": "{{main}} means thin; of a wind, keen or biting"
         },
         "mild-southerly-winds": {
-          "text": "Gwyntoedd deheuol mwyn"
+          "text": "Gwyntoedd deheuol mwyn",
+          "keys": [
+            "Gwyntoedd deheuol",
+            "mwyn"
+          ]
         },
         "a-fresh-westerly": {
-          "text": "Gwynt gorllewinol ffres"
+          "text": "Gwynt gorllewinol ffres",
+          "keys": [
+            null,
+            "ffres",
+            "Gwynt gorllewinol"
+          ]
         },
         "turning-north-westerly": {
           "text": "Yn troi'n ogledd-orllewinol",
+          "keys": [
+            null,
+            "troi",
+            "ogledd-orllewinol"
+          ],
           "note": "after {{troi'n}} (turning) {{gogledd}} softens to {{ogledd}}"
         }
       },
@@ -76,23 +141,47 @@
       "concepts": {
         "the-met-office-has-issued-a-yellow-wind-warning": {
           "text": "Mae'r Swyddfa Dywydd wedi cyhoeddi rhybudd melyn am wynt",
+          "keys": [
+            "melyn",
+            "Swyddfa Dywydd",
+            "rhybudd"
+          ],
           "note": "{{am}} softens {{gwynt}} to {{wynt}}",
           "also": [
             "rhybudd melyn o wynt"
           ]
         },
         "the-warning-comes-into-force-at-six-this-evening": {
-          "text": "Bydd y rhybudd yn dod i rym am chwech o'r gloch heno"
+          "text": "Bydd y rhybudd yn dod i rym am chwech o'r gloch heno",
+          "keys": [
+            "dod i rym",
+            "heno",
+            "rhybudd"
+          ]
         },
         "in-force-until-three-in-the-morning": {
           "text": "Mewn grym tan dri o'r gloch y bore",
+          "keys": [
+            "Mewn grym",
+            "dri o'r gloch y bore"
+          ],
           "note": "{{tan}} softens {{tri}} to {{dri}}"
         },
         "an-amber-wind-warning": {
-          "text": "Rhybudd ambr am wynt"
+          "text": "Rhybudd ambr am wynt",
+          "keys": [
+            "wynt",
+            "ambr",
+            "Rhybudd"
+          ]
         },
         "the-met-office-is-warning-of-rough-weather": {
-          "text": "Mae'r Swyddfa Dywydd yn rhybuddio am dywydd garw"
+          "text": "Mae'r Swyddfa Dywydd yn rhybuddio am dywydd garw",
+          "keys": [
+            "dywydd garw",
+            "Swyddfa Dywydd",
+            "rhybuddio"
+          ]
         }
       },
       "order": "issued, coming into force and in force, then the levels and the warning itself"

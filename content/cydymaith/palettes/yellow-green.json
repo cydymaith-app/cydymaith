@@ -3,7 +3,7 @@
     "en": "Yellow and green",
     "cy": "Melyn a gwyrdd"
   },
-  "notes": "The yellow of the St David's cross, as the twin of the red and green default. The red is oklch(0.489 0.198 25.4) and the gold is oklch(0.887 0.18 95.3): almost the same chroma (about 0.18 to 0.20), 70 degrees round the hue wheel, so they sit together as a pair. Every green is unchanged. Where the default uses red, this uses the gold: the top bar and tiles are the gold with the dark green ink on them (the red used near-white text, because red is dark and gold is light). Light accent: the same lightness as the red (0.489), at the most chroma yellow allows there (0.10), so it reads as text with the same contrast the red does. Dark accent: the brightest gold, the counterpart of the default's ring red. The dark neutrals keep the default's lightness and chroma and take the gold's hue (95.3) in place of the red's (17 to 29). Not colour-blind safe: it makes no colour-vision promise.",
+  "notes": "The yellow of the St David's cross, as the twin of the red and green default. The red is oklch(0.489 0.198 25.4) and the gold is oklch(0.887 0.18 95.3): almost the same chroma (about 0.18 to 0.20), 70 degrees round the hue wheel, so they sit together as a pair. Every green is unchanged. Where the default uses red, this uses the gold: the top bar and tiles are the gold with the dark green ink on them (the red used near-white text, because red is dark and gold is light). Light accent: the same lightness as the red (0.489), at the most chroma yellow allows there (0.10), so it reads as text with the same contrast the red does. Dark accent: the brightest gold, the counterpart of the default's ring red. The dark neutrals keep the default's lightness and chroma and take the gold's hue (95.3) in place of the red's (17 to 29). Not colour-blind safe: it makes no colour-vision promise. Key-word colours (key-1 to key-3): a blue, an orange or gold and a purple, found by a search for the colourful end of what keeps the level's text contrast on the page and the card and stays at least 0.12 apart, and from the ink, in OKLab as seen with normal, protan, deutan and tritan vision.",
   "level": "AA",
   "light": {
     "bg": "oklch(0.935 0.035 175)",
@@ -17,7 +17,10 @@
     "tile": "oklch(0.887 0.18 95.3)",
     "on-tile": "#001813",
     "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813"
+    "on-header": "#001813",
+    "key-1": "oklch(0.500 0.14 265)",
+    "key-2": "oklch(0.500 0.14 95)",
+    "key-3": "oklch(0.390 0.14 345)"
   },
   "dark": {
     "bg": "#001813",
@@ -31,6 +34,9 @@
     "tile": "oklch(0.887 0.18 95.3)",
     "on-tile": "#001813",
     "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813"
+    "on-header": "#001813",
+    "key-1": "oklch(0.740 0.14 250)",
+    "key-2": "oklch(0.770 0.14 70)",
+    "key-3": "oklch(0.650 0.14 340)"
   }
 }

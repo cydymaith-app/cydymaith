@@ -7,37 +7,78 @@
       "intro": "After {{mae hi'n}} (it is) the next word often softens: {{cymylog}} becomes {{gymylog}}, {{cynnes}} becomes {{gynnes}}, {{poeth}} becomes {{boeth}}, {{gwlyb}} becomes {{wlyb}}.",
       "concepts": {
         "its-sunny": {
-          "text": "Mae hi'n heulog"
+          "text": "Mae hi'n heulog",
+          "keys": [
+            "heulog"
+          ]
         },
         "its-cloudy": {
-          "text": "Mae hi'n gymylog"
+          "text": "Mae hi'n gymylog",
+          "keys": [
+            "gymylog"
+          ]
         },
         "its-fine": {
-          "text": "Mae hi'n braf"
+          "text": "Mae hi'n braf",
+          "keys": [
+            "braf"
+          ]
         },
         "its-dry": {
-          "text": "Mae hi'n sych"
+          "text": "Mae hi'n sych",
+          "keys": [
+            null,
+            "sych"
+          ]
         },
         "its-foggy": {
-          "text": "Mae hi'n niwlog"
+          "text": "Mae hi'n niwlog",
+          "keys": [
+            "niwlog"
+          ]
         },
         "its-wet": {
-          "text": "Mae hi'n wlyb"
+          "text": "Mae hi'n wlyb",
+          "keys": [
+            null,
+            "wlyb"
+          ]
         },
         "its-windy": {
-          "text": "Mae hi'n wyntog"
+          "text": "Mae hi'n wyntog",
+          "keys": [
+            null,
+            "wyntog"
+          ]
         },
         "its-cold": {
-          "text": "Mae hi'n oer"
+          "text": "Mae hi'n oer",
+          "keys": [
+            "oer"
+          ]
         },
         "its-warm": {
-          "text": "Mae hi'n gynnes"
+          "text": "Mae hi'n gynnes",
+          "keys": [
+            null,
+            "gynnes"
+          ]
         },
         "its-hot": {
-          "text": "Mae hi'n boeth"
+          "text": "Mae hi'n boeth",
+          "keys": [
+            null,
+            null,
+            "boeth"
+          ]
         },
         "its-freezing": {
-          "text": "Mae hi'n rhewi"
+          "text": "Mae hi'n rhewi",
+          "keys": [
+            null,
+            null,
+            "rhewi"
+          ]
         }
       },
       "order": "sky, rain, wind, then temperature"
@@ -46,17 +87,35 @@
       "title": "Beth sy'n digwydd",
       "concepts": {
         "its-raining": {
-          "text": "Mae hi'n bwrw glaw"
+          "text": "Mae hi'n bwrw glaw",
+          "keys": [
+            null,
+            "bwrw glaw"
+          ]
         },
         "its-snowing": {
-          "text": "Mae hi'n bwrw eira"
+          "text": "Mae hi'n bwrw eira",
+          "keys": [
+            null,
+            null,
+            "bwrw eira"
+          ]
         },
         "its-pouring": {
           "text": "Mae hi'n bwrw hen wragedd a ffyn",
+          "keys": [
+            null,
+            "bwrw hen wragedd a ffyn"
+          ],
           "note": "literally: it's raining old women and sticks"
         },
         "the-sun-is-shining": {
-          "text": "Mae'r haul yn tywynnu"
+          "text": "Mae'r haul yn tywynnu",
+          "keys": [
+            null,
+            "haul",
+            "tywynnu"
+          ]
         }
       },
       "order": "falling weather, then the sun"
@@ -66,19 +125,41 @@
       "intro": "After {{bydd hi'n}} (it will be) the next word softens in the same way as after {{mae hi'n}}.",
       "concepts": {
         "it-will-be-sunny-tomorrow": {
-          "text": "Bydd hi'n heulog yfory"
+          "text": "Bydd hi'n heulog yfory",
+          "keys": [
+            "heulog",
+            null,
+            "yfory"
+          ]
         },
         "it-will-be-dry-all-day": {
-          "text": "Bydd hi'n sych drwy'r dydd"
+          "text": "Bydd hi'n sych drwy'r dydd",
+          "keys": [
+            "drwy'r dydd",
+            "sych"
+          ]
         },
         "brighter-later": {
-          "text": "Bydd hi'n fwy heulog yn hwyrach"
+          "text": "Bydd hi'n fwy heulog yn hwyrach",
+          "keys": [
+            "fwy heulog",
+            "hwyrach"
+          ]
         },
         "it-will-rain-tomorrow": {
-          "text": "Bydd hi'n bwrw glaw yfory"
+          "text": "Bydd hi'n bwrw glaw yfory",
+          "keys": [
+            null,
+            "bwrw glaw",
+            "yfory"
+          ]
         },
         "it-will-be-cold-tonight": {
-          "text": "Bydd hi'n oer heno"
+          "text": "Bydd hi'n oer heno",
+          "keys": [
+            "oer",
+            "heno"
+          ]
         }
       },
       "order": "sky, then rain, then temperature"
@@ -87,28 +168,66 @@
       "title": "Bydd …",
       "concepts": {
         "fog-in-places": {
-          "text": "Bydd niwl mewn mannau"
+          "text": "Bydd niwl mewn mannau",
+          "keys": [
+            null,
+            "niwl",
+            "mannau"
+          ]
         },
         "showers-on-saturday": {
-          "text": "Bydd cawodydd ddydd Sadwrn"
+          "text": "Bydd cawodydd ddydd Sadwrn",
+          "keys": [
+            "ddydd Sadwrn",
+            "cawodydd"
+          ]
         },
         "rain-in-the-north": {
-          "text": "Bydd glaw yn y gogledd"
+          "text": "Bydd glaw yn y gogledd",
+          "keys": [
+            null,
+            "glaw",
+            "gogledd"
+          ]
         },
         "snow-on-high-ground": {
-          "text": "Bydd eira ar dir uchel"
+          "text": "Bydd eira ar dir uchel",
+          "keys": [
+            "dir uchel",
+            "eira"
+          ]
         },
         "frost-overnight": {
-          "text": "Bydd rhew dros nos"
+          "text": "Bydd rhew dros nos",
+          "keys": [
+            "rhew",
+            null,
+            "dros nos"
+          ]
         },
         "strong-winds-in-the-west": {
-          "text": "Bydd gwyntoedd cryfion yn y gorllewin"
+          "text": "Bydd gwyntoedd cryfion yn y gorllewin",
+          "keys": [
+            "gorllewin",
+            null,
+            "gwyntoedd cryfion"
+          ]
         },
         "there-will-be-a-south-westerly-wind": {
-          "text": "Bydd gwynt de-orllewinol"
+          "text": "Bydd gwynt de-orllewinol",
+          "keys": [
+            "gwynt",
+            null,
+            "de-orllewinol"
+          ]
         },
         "temperatures-around-ten-degrees": {
-          "text": "Bydd y tymheredd tua deg gradd"
+          "text": "Bydd y tymheredd tua deg gradd",
+          "keys": [
+            null,
+            "tymheredd",
+            "deg gradd"
+          ]
         }
       },
       "order": "sky, rain, snow, frost, wind, then temperature"
@@ -117,16 +236,35 @@
       "title": "Enwi'r gwynt",
       "concepts": {
         "a-south-westerly-wind": {
-          "text": "Gwynt de-orllewinol"
+          "text": "Gwynt de-orllewinol",
+          "keys": [
+            "Gwynt",
+            null,
+            "de-orllewinol"
+          ]
         },
         "wind-from-the-north": {
-          "text": "Gwynt o'r gogledd"
+          "text": "Gwynt o'r gogledd",
+          "keys": [
+            "Gwynt",
+            null,
+            "gogledd"
+          ]
         },
         "wind-from-the-east": {
-          "text": "Gwynt o'r dwyrain"
+          "text": "Gwynt o'r dwyrain",
+          "keys": [
+            "Gwynt",
+            null,
+            "dwyrain"
+          ]
         },
         "winds-from-the-south-east": {
-          "text": "Gwyntoedd o'r de-ddwyrain"
+          "text": "Gwyntoedd o'r de-ddwyrain",
+          "keys": [
+            "Gwyntoedd",
+            "de-ddwyrain"
+          ]
         }
       },
       "order": "the direction as one phrase, then the compass points"

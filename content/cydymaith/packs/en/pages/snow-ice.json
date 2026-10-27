@@ -7,21 +7,46 @@
       "title": "Snow",
       "concepts": {
         "snow-showers-on-the-mountains": {
-          "text": "Snow showers on the mountains"
+          "text": "Snow showers on the mountains",
+          "keys": [
+            "mountains",
+            null,
+            "Snow showers"
+          ]
         },
         "sleet-on-lower-ground": {
-          "text": "Sleet on lower ground"
+          "text": "Sleet on lower ground",
+          "keys": [
+            "Sleet",
+            null,
+            "lower ground"
+          ]
         },
         "the-odd-hail-shower": {
           "text": "The odd hail shower",
+          "keys": [
+            null,
+            "shower",
+            "hail"
+          ],
           "note": "{{cenllysg}} is hail; it softens to {{genllysg}} after {{o}}"
         },
         "snow-settling-overnight": {
           "text": "Snow settling overnight",
+          "keys": [
+            "settling",
+            "Snow",
+            "overnight"
+          ],
           "note": "{{setlo}}: to settle, to lie; to be confirmed"
         },
         "a-yellow-warning-for-snow": {
-          "text": "A yellow warning for snow"
+          "text": "A yellow warning for snow",
+          "keys": [
+            "yellow",
+            "snow",
+            "warning"
+          ]
         }
       }
     },
@@ -29,17 +54,37 @@
       "title": "Frost and ice",
       "concepts": {
         "a-hard-frost-in-places": {
-          "text": "A hard frost in places"
+          "text": "A hard frost in places",
+          "keys": [
+            "hard frost",
+            null,
+            "places"
+          ]
         },
         "hoar-frost-on-the-fields": {
           "text": "Hoar frost on the fields",
+          "keys": [
+            null,
+            "Hoar frost",
+            "fields"
+          ],
           "note": "{{barrug}}: hoar frost, rime; to be confirmed"
         },
         "icy-roads-in-the-morning": {
-          "text": "Icy roads in the morning"
+          "text": "Icy roads in the morning",
+          "keys": [
+            "Icy",
+            "roads",
+            "morning"
+          ]
         },
         "a-yellow-warning-for-ice": {
-          "text": "A yellow warning for ice"
+          "text": "A yellow warning for ice",
+          "keys": [
+            "yellow",
+            "ice",
+            "warning"
+          ]
         }
       }
     }

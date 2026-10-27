@@ -3,8 +3,13 @@
     "en": "Yellow and green, safe",
     "cy": "Melyn a gwyrdd, diogel"
   },
-  "notes": "The yellow and green scheme made safe for colour-blind vision. Derived from yellow-green.json by changing only the two accents. With protan, deutan and tritan simulation the base scheme's accent was too close to the muted and ink text, because yellow and green collapse towards each other and the accent was almost the same lightness as the muted text. So the accents move apart in lightness: light accent 0.489 to 0.33, dark accent 0.887 to 0.80, keeping the gold hue 95.3 and as much chroma as the gamut allows. The tiles, the top bar and every other colour are unchanged. The build checks the promise (colour.py); that is arithmetic on simulated vision, not evidence from people who see colour differently.",
+  "notes": "The yellow and green scheme made safe for colour-blind vision. Derived from yellow-green.json by changing only the two accents. With protan, deutan and tritan simulation the base scheme's accent was too close to the muted and ink text, because yellow and green collapse towards each other and the accent was almost the same lightness as the muted text. So the accents move apart in lightness: light accent 0.489 to 0.33, dark accent 0.887 to 0.80, keeping the gold hue 95.3 and as much chroma as the gamut allows. The tiles, the top bar and every other colour are unchanged. The build checks the promise (colour.py); that is arithmetic on simulated vision, not evidence from people who see colour differently. Key-word colours (key-1 to key-3): a blue, an orange or gold and a purple, found by a search for the colourful end of what keeps the level's text contrast on the page and the card and stays at least 0.12 apart, and from the ink, in OKLab as seen with normal, protan, deutan and tritan vision.",
   "level": "AA",
+  "colour_vision": [
+    "protan",
+    "deutan",
+    "tritan"
+  ],
   "light": {
     "bg": "oklch(0.935 0.035 175)",
     "surface": "oklch(0.975 0.012 175)",
@@ -17,7 +22,10 @@
     "tile": "oklch(0.887 0.18 95.3)",
     "on-tile": "#001813",
     "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813"
+    "on-header": "#001813",
+    "key-1": "oklch(0.500 0.14 265)",
+    "key-2": "oklch(0.500 0.14 95)",
+    "key-3": "oklch(0.390 0.14 345)"
   },
   "dark": {
     "bg": "#001813",
@@ -31,11 +39,9 @@
     "tile": "oklch(0.887 0.18 95.3)",
     "on-tile": "#001813",
     "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813"
-  },
-  "colour_vision": [
-    "protan",
-    "deutan",
-    "tritan"
-  ]
+    "on-header": "#001813",
+    "key-1": "oklch(0.740 0.14 250)",
+    "key-2": "oklch(0.770 0.14 70)",
+    "key-3": "oklch(0.650 0.14 340)"
+  }
 }

@@ -6,16 +6,33 @@
       "title": "Glaw",
       "concepts": {
         "drizzle-here-and-there": {
-          "text": "Glaw mân yma ac acw"
+          "text": "Glaw mân yma ac acw",
+          "keys": [
+            null,
+            "Glaw mân"
+          ]
         },
         "only-a-few-showers": {
-          "text": "Dim ond rhai cawodydd"
+          "text": "Dim ond rhai cawodydd",
+          "keys": [
+            null,
+            "cawodydd"
+          ]
         },
         "heavy-showers-in-the-afternoon": {
-          "text": "Cawodydd trwm yn y prynhawn"
+          "text": "Cawodydd trwm yn y prynhawn",
+          "keys": [
+            "trwm",
+            "Cawodydd",
+            "prynhawn"
+          ]
         },
         "spells-of-heavy-rain-as-well": {
           "text": "Cyfnodau o law trwm hefyd",
+          "keys": [
+            "trwm",
+            "law"
+          ],
           "note": "{{glaw}} softens to {{law}} after {{o}}",
           "also": [
             "chyfnodau o law trwm"
@@ -23,19 +40,36 @@
         },
         "possibly-heavy-at-times": {
           "text": "O bosib yn drwm ar adegau",
+          "keys": [
+            "drwm"
+          ],
           "also": [
             "o bosibl"
           ]
         },
         "heavy-rain-and-strong-wind": {
-          "text": "Glaw trwm a gwynt cryf"
+          "text": "Glaw trwm a gwynt cryf",
+          "keys": [
+            "gwynt",
+            "Glaw"
+          ]
         },
         "a-yellow-warning-for-rain": {
           "text": "Rhybudd melyn am law",
+          "keys": [
+            "melyn",
+            "law",
+            "Rhybudd"
+          ],
           "note": "{{am}} softens {{glaw}} to {{law}}"
         },
         "a-risk-of-flooding": {
           "text": "Perygl o lifogydd",
+          "keys": [
+            "lifogydd",
+            null,
+            "Perygl"
+          ],
           "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
         }
       },
@@ -45,16 +79,35 @@
       "title": "Mellt a tharanau",
       "concepts": {
         "a-chance-of-thunder-and-lightning": {
-          "text": "Posibilrwydd o fellt a tharanau"
+          "text": "Posibilrwydd o fellt a tharanau",
+          "keys": [
+            "fellt",
+            "tharanau"
+          ]
         },
         "the-odd-thunderstorm": {
-          "text": "Ambell storm o fellt a tharanau"
+          "text": "Ambell storm o fellt a tharanau",
+          "keys": [
+            "Ambell",
+            null,
+            "storm o fellt a tharanau"
+          ]
         },
         "more-rough-weather-over-the-next-few-hours": {
-          "text": "Rhagor o dywydd garw dros yr oriau nesaf"
+          "text": "Rhagor o dywydd garw dros yr oriau nesaf",
+          "keys": [
+            "dywydd garw",
+            "oriau",
+            "Rhagor"
+          ]
         },
         "two-storms-in-one-weekend": {
           "text": "Dwy storm mewn un penwythnos",
+          "keys": [
+            "Dwy",
+            "penwythnos",
+            "storm"
+          ],
           "note": "{{dwy}} is two before a feminine noun"
         }
       },

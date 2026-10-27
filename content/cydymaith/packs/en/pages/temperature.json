@@ -7,19 +7,43 @@
       "title": "Hot and cold",
       "concepts": {
         "warm-for-the-time-of-year": {
-          "text": "Warm for the time of year"
+          "text": "Warm for the time of year",
+          "keys": [
+            "time of year",
+            "Warm"
+          ]
         },
         "mild-on-the-whole": {
-          "text": "Mild on the whole"
+          "text": "Mild on the whole",
+          "keys": [
+            null,
+            "Mild",
+            "on the whole"
+          ]
         },
         "feeling-fresh-in-the-wind": {
-          "text": "Feeling fresh in the wind"
+          "text": "Feeling fresh in the wind",
+          "keys": [
+            "wind",
+            "fresh",
+            "Feeling"
+          ]
         },
         "colder-than-yesterday": {
-          "text": "Colder than yesterday"
+          "text": "Colder than yesterday",
+          "keys": [
+            null,
+            "yesterday",
+            "Colder"
+          ]
         },
         "another-cold-night": {
-          "text": "Another cold night"
+          "text": "Another cold night",
+          "keys": [
+            "cold",
+            "Another",
+            "night"
+          ]
         }
       }
     },
@@ -27,16 +51,36 @@
       "title": "How humid",
       "concepts": {
         "it-should-turn-drier": {
-          "text": "It should turn drier"
+          "text": "It should turn drier",
+          "keys": [
+            "turn",
+            null,
+            "drier"
+          ]
         },
         "damp-and-grey": {
-          "text": "Damp and grey"
+          "text": "Damp and grey",
+          "keys": [
+            "Damp",
+            null,
+            "grey"
+          ]
         },
         "close-humid-weather": {
-          "text": "Close, humid weather"
+          "text": "Close, humid weather",
+          "keys": [
+            "humid",
+            null,
+            "Close"
+          ]
         },
         "high-humidity-in-the-afternoon": {
-          "text": "High humidity in the afternoon"
+          "text": "High humidity in the afternoon",
+          "keys": [
+            "High humidity",
+            null,
+            "afternoon"
+          ]
         }
       }
     },
@@ -45,23 +89,53 @@
       "concepts": {
         "temperatures-at-their-highest-in-the-afternoon": {
           "text": "Temperatures at their highest in the afternoon",
+          "keys": [
+            "highest",
+            "Temperatures",
+            "afternoon"
+          ],
           "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
         },
         "a-high-of-16-degrees": {
           "text": "A high of 16 degrees",
+          "keys": [
+            "16 degrees",
+            null,
+            "high"
+          ],
           "note": "after a number the noun stays singular: {{gradd}}"
         },
         "as-high-as-13-degrees-in-the-south": {
-          "text": "As high as 13 degrees in the south"
+          "text": "As high as 13 degrees in the south",
+          "keys": [
+            "south",
+            "13 degrees",
+            "high"
+          ]
         },
         "at-its-lowest-between-6-and-9-degrees": {
-          "text": "At its lowest between 6 and 9 degrees"
+          "text": "At its lowest between 6 and 9 degrees",
+          "keys": [
+            null,
+            "6 and 9 degrees",
+            "lowest"
+          ]
         },
         "the-temperature-falling-fast-in-the-evening": {
-          "text": "The temperature falling fast in the evening"
+          "text": "The temperature falling fast in the evening",
+          "keys": [
+            "fast",
+            "temperature",
+            "falling"
+          ]
         },
         "a-few-degrees-below-freezing": {
           "text": "A few degrees below freezing",
+          "keys": [
+            "few degrees",
+            null,
+            "below freezing"
+          ],
           "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
         }
       }

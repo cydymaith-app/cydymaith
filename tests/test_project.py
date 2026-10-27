@@ -239,3 +239,33 @@ class OnePageWeatherTests(unittest.TestCase):
     def test_the_other_groups_keep_their_tiles(self):
         for gid in ("everyday",):
             self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)
+
+
+class KeyWordTests(unittest.TestCase):
+    """The weather pages mark the words that match across Welsh and English, so the eye can pair them."""
+
+    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns")
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def concepts(self, code, slug):
+        for section in self.raw["packs"][code]["pages"][slug]["sections"].values():
+            yield from section["concepts"].items()
+
+    def test_every_weather_page_marks_key_words_and_both_languages_mark_the_same_rows(self):
+        for slug in self.WEATHER:
+            welsh = {cid: len(c.get("keys", [])) for cid, c in self.concepts("cy", slug)}
+            english = {cid: len(c.get("keys", [])) for cid, c in self.concepts("en", slug)}
+            self.assertEqual(welsh, english, slug)
+            self.assertTrue(any(welsh.values()), slug)
+
+    def test_the_only_rows_left_plain_are_function_words_not_weather(self):
+        plain = {cid for slug in self.WEATHER for cid, c in self.concepts("cy", slug) if "keys" not in c}
+        self.assertFalse({"its-sunny", "rain-in-the-north", "a-cold-northerly"} & plain)
+
+    def test_the_key_colour_settings_are_in_welsh(self):
+        ui = self.raw["packs"]["cy"]["meta"]["ui"]
+        for key in ("keys_title", "keys_hint", "keys_colour", "keys_line", "keys_off"):
+            self.assertTrue(ui.get(key), key)

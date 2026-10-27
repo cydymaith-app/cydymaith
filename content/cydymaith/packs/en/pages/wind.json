@@ -7,30 +7,67 @@
       "title": "Wind strength",
       "concepts": {
         "mostly-light-winds": {
-          "text": "Mostly light winds"
+          "text": "Mostly light winds",
+          "keys": [
+            "Mostly",
+            "light winds"
+          ]
         },
         "a-moderate-breeze-from-the-south-west": {
-          "text": "A moderate breeze from the south-west"
+          "text": "A moderate breeze from the south-west",
+          "keys": [
+            "south-west",
+            "moderate",
+            "breeze"
+          ]
         },
         "the-wind-strengthening": {
-          "text": "The wind strengthening"
+          "text": "The wind strengthening",
+          "keys": [
+            "wind",
+            "strengthening"
+          ]
         },
         "drier-and-windy": {
-          "text": "Drier and windy"
+          "text": "Drier and windy",
+          "keys": [
+            null,
+            "windy",
+            "Drier"
+          ]
         },
         "strong-winds-on-the-coast": {
-          "text": "Strong winds on the coast"
+          "text": "Strong winds on the coast",
+          "keys": [
+            null,
+            "coast",
+            "Strong winds"
+          ]
         },
         "the-wind-at-its-strongest-overnight": {
           "text": "The wind at its strongest overnight",
+          "keys": [
+            "wind",
+            "strongest",
+            "overnight"
+          ],
           "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}"
         },
         "gusts-of-up-to-70-mph": {
           "text": "Gusts of up to 70 miles per hour",
+          "keys": [
+            null,
+            "70 miles per hour",
+            "Gusts"
+          ],
           "note": "on screen {{milltir yr awr}} is {{mya}}: {{70mya}}"
         },
         "about-60-mph-on-the-coast": {
-          "text": "About 60 miles per hour on the coast"
+          "text": "About 60 miles per hour on the coast",
+          "keys": [
+            "60 miles per hour",
+            "coast"
+          ]
         }
       }
     },
@@ -38,23 +75,51 @@
       "title": "Wind direction",
       "concepts": {
         "a-cold-northerly": {
-          "text": "A cold northerly wind"
+          "text": "A cold northerly wind",
+          "keys": [
+            "cold",
+            null,
+            "northerly wind"
+          ]
         },
         "blowing-from-the-north-east": {
-          "text": "Blowing from the north-east"
+          "text": "Blowing from the north-east",
+          "keys": [
+            "north-east",
+            "Blowing"
+          ]
         },
         "a-biting-easterly": {
           "text": "A biting easterly wind",
+          "keys": [
+            null,
+            "easterly wind",
+            "biting"
+          ],
           "note": "{{main}} means thin; of a wind, keen or biting"
         },
         "mild-southerly-winds": {
-          "text": "Mild southerly winds"
+          "text": "Mild southerly winds",
+          "keys": [
+            "southerly winds",
+            "Mild"
+          ]
         },
         "a-fresh-westerly": {
-          "text": "A fresh westerly wind"
+          "text": "A fresh westerly wind",
+          "keys": [
+            null,
+            "fresh",
+            "westerly wind"
+          ]
         },
         "turning-north-westerly": {
           "text": "Turning north-westerly",
+          "keys": [
+            null,
+            "Turning",
+            "north-westerly"
+          ],
           "note": "after {{troi'n}} (turning) {{gogledd}} softens to {{ogledd}}"
         }
       }
@@ -64,20 +129,44 @@
       "concepts": {
         "the-met-office-has-issued-a-yellow-wind-warning": {
           "text": "The Met Office has issued a yellow warning for wind",
+          "keys": [
+            "yellow",
+            "Met Office",
+            "warning"
+          ],
           "note": "{{am}} softens {{gwynt}} to {{wynt}}"
         },
         "the-warning-comes-into-force-at-six-this-evening": {
-          "text": "The warning comes into force at six this evening"
+          "text": "The warning comes into force at six this evening",
+          "keys": [
+            "comes into force",
+            "this evening",
+            "warning"
+          ]
         },
         "in-force-until-three-in-the-morning": {
           "text": "In force until three in the morning",
+          "keys": [
+            "In force",
+            "three in the morning"
+          ],
           "note": "{{tan}} softens {{tri}} to {{dri}}"
         },
         "an-amber-wind-warning": {
-          "text": "An amber warning for wind"
+          "text": "An amber warning for wind",
+          "keys": [
+            "wind",
+            "amber",
+            "warning"
+          ]
         },
         "the-met-office-is-warning-of-rough-weather": {
-          "text": "The Met Office is warning of rough weather"
+          "text": "The Met Office is warning of rough weather",
+          "keys": [
+            "rough weather",
+            "Met Office",
+            "warning"
+          ]
         }
       }
     }

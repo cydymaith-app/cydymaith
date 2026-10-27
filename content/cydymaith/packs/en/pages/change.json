@@ -8,18 +8,36 @@
       "concepts": {
         "high-pressure-in-charge": {
           "text": "High pressure in charge",
+          "keys": [
+            "High pressure",
+            "in charge"
+          ],
           "note": "{{rheoli}}: to control, to dominate"
         },
         "a-ridge-of-high-pressure-moving-in": {
           "text": "A ridge of high pressure moving in",
+          "keys": [
+            "high pressure",
+            "moving in",
+            "ridge"
+          ],
           "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
         },
         "an-area-of-intense-low-pressure": {
           "text": "An area of intense low pressure",
+          "keys": [
+            "low pressure",
+            "area",
+            "intense"
+          ],
           "note": "{{dwys}} means intense, deep"
         },
         "low-pressure-bringing-rain": {
-          "text": "Low pressure bringing rain"
+          "text": "Low pressure bringing rain",
+          "keys": [
+            "Low pressure",
+            "rain"
+          ]
         }
       }
     },
@@ -27,25 +45,59 @@
       "title": "Weather on the move",
       "concepts": {
         "hitting-the-west-first": {
-          "text": "Hitting the west first"
+          "text": "Hitting the west first",
+          "keys": [
+            "west",
+            "first",
+            "Hitting"
+          ]
         },
         "arriving-by-the-morning": {
-          "text": "Arriving by the morning"
+          "text": "Arriving by the morning",
+          "keys": [
+            "Arriving",
+            null,
+            "morning"
+          ]
         },
         "spreading-eastwards": {
-          "text": "Spreading eastwards"
+          "text": "Spreading eastwards",
+          "keys": [
+            "eastwards",
+            null,
+            "Spreading"
+          ]
         },
         "extending-over-towards-anglesey": {
-          "text": "Extending over towards Anglesey"
+          "text": "Extending over towards Anglesey",
+          "keys": [
+            "Anglesey",
+            null,
+            "Extending"
+          ]
         },
         "moving-in-from-the-west": {
-          "text": "Moving in from the west"
+          "text": "Moving in from the west",
+          "keys": [
+            "west",
+            "Moving in"
+          ]
         },
         "the-rain-clearing-away": {
-          "text": "The rain clearing away"
+          "text": "The rain clearing away",
+          "keys": [
+            null,
+            "rain",
+            "clearing away"
+          ]
         },
         "leaving-us-overnight": {
-          "text": "Leaving us overnight"
+          "text": "Leaving us overnight",
+          "keys": [
+            null,
+            "Leaving",
+            "overnight"
+          ]
         }
       }
     },
@@ -53,23 +105,51 @@
       "title": "Which way",
       "concepts": {
         "towards-the-east": {
-          "text": "Towards the east"
+          "text": "Towards the east",
+          "keys": [
+            null,
+            "Towards",
+            "east"
+          ]
         },
         "from-the-direction-of-ireland": {
-          "text": "From the direction of Ireland"
+          "text": "From the direction of Ireland",
+          "keys": [
+            null,
+            "Ireland",
+            "direction"
+          ]
         },
         "across-the-country": {
-          "text": "Across the country"
+          "text": "Across the country",
+          "keys": [
+            null,
+            "country",
+            "Across"
+          ]
         },
         "over-towards-the-north-east": {
-          "text": "Over towards the north-east"
+          "text": "Over towards the north-east",
+          "keys": [
+            "north-east",
+            "Over towards"
+          ]
         },
         "more-rain-on-the-way": {
           "text": "More rain on the way",
+          "keys": [
+            "way",
+            "rain",
+            "More"
+          ],
           "note": "{{ar y ffordd}} could also be on the road; to be confirmed"
         },
         "in-the-west-of-the-country": {
           "text": "In the west of the country",
+          "keys": [
+            "west",
+            "country"
+          ],
           "note": "after {{yn}} (in) {{gorllewin}} becomes {{ngorllewin}}"
         }
       }
@@ -78,32 +158,75 @@
       "title": "Weather changing",
       "concepts": {
         "changing-by-the-weekend": {
-          "text": "Changing by the weekend"
+          "text": "Changing by the weekend",
+          "keys": [
+            null,
+            "weekend",
+            "Changing"
+          ]
         },
         "turning-more-unsettled": {
-          "text": "Turning more unsettled"
+          "text": "Turning more unsettled",
+          "keys": [
+            "more unsettled",
+            "Turning"
+          ]
         },
         "showers-developing-in-the-afternoon": {
-          "text": "Showers developing in the afternoon"
+          "text": "Showers developing in the afternoon",
+          "keys": [
+            "developing",
+            "Showers",
+            "afternoon"
+          ]
         },
         "showers-getting-heavier": {
-          "text": "Showers getting heavier"
+          "text": "Showers getting heavier",
+          "keys": [
+            null,
+            "Showers",
+            "heavier"
+          ]
         },
         "the-wind-easing-by-dawn": {
           "text": "The wind easing by dawn",
+          "keys": [
+            "wind",
+            "easing",
+            "dawn"
+          ],
           "note": "{{gostegu}}: to ease; {{gwawrio}}: to dawn"
         },
         "calming-down-overnight": {
-          "text": "Calming down overnight"
+          "text": "Calming down overnight",
+          "keys": [
+            "Calming down",
+            null,
+            "overnight"
+          ]
         },
         "clouding-over-from-the-west": {
-          "text": "Clouding over from the west"
+          "text": "Clouding over from the west",
+          "keys": [
+            "west",
+            null,
+            "Clouding over"
+          ]
         },
         "brightening-up-by-the-afternoon": {
-          "text": "Brightening up by the afternoon"
+          "text": "Brightening up by the afternoon",
+          "keys": [
+            null,
+            "Brightening up",
+            "afternoon"
+          ]
         },
         "if-it-were-to-settle-a-little": {
-          "text": "If it were to settle a little"
+          "text": "If it were to settle a little",
+          "keys": [
+            "settle",
+            "little"
+          ]
         }
       }
     },
@@ -111,28 +234,65 @@
       "title": "Other verbs",
       "concepts": {
         "strong-winds-are-expected": {
-          "text": "Strong winds are expected"
+          "text": "Strong winds are expected",
+          "keys": [
+            "expected",
+            null,
+            "Strong winds"
+          ]
         },
         "the-rain-will-continue-all-day": {
-          "text": "The rain will continue all day"
+          "text": "The rain will continue all day",
+          "keys": [
+            "all day",
+            "rain",
+            "continue"
+          ]
         },
         "varying-from-place-to-place": {
-          "text": "Varying from place to place"
+          "text": "Varying from place to place",
+          "keys": [
+            null,
+            "place to place",
+            "Varying"
+          ]
         },
         "coinciding-with-high-tide": {
-          "text": "Coinciding with high tide"
+          "text": "Coinciding with high tide",
+          "keys": [
+            "coinciding",
+            null,
+            "high tide"
+          ]
         },
         "we-could-see": {
-          "text": "We could see …"
+          "text": "We could see …",
+          "keys": [
+            "see"
+          ]
         },
         "we-saw-gusts-of-84-mph": {
-          "text": "We saw gusts of 84 miles per hour"
+          "text": "We saw gusts of 84 miles per hour",
+          "keys": [
+            "84 miles per hour",
+            "saw",
+            "gusts"
+          ]
         },
         "the-rest-of-the-week-looks-dry": {
-          "text": "The rest of the week looks dry"
+          "text": "The rest of the week looks dry",
+          "keys": [
+            null,
+            "dry",
+            "rest of the week"
+          ]
         },
         "affecting-the-roads": {
-          "text": "Affecting the roads"
+          "text": "Affecting the roads",
+          "keys": [
+            "Affecting",
+            "roads"
+          ]
         }
       }
     }

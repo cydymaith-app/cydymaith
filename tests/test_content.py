@@ -308,7 +308,7 @@ class BuildTests(unittest.TestCase):
 
     def test_the_welsh_comes_first_because_it_is_the_language_that_is_heard(self):
         self.assertEqual(list(self.edition["default_pair"]), ["cy", "en"])
-        self.assertIn('<th scope="row" class="l1" lang="cy">Glaw mân yma ac acw</th>', topic_html(self.site, self.built, "rain"))
+        self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
         shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 2, "geography": 1, "patterns": 6, "place-name-elements": 7}
@@ -597,7 +597,7 @@ class VarietyRenderingTests(unittest.TestCase):
     def test_a_plain_row_keeps_the_plain_markup(self):
         page = topic_html(self.site, self.site.render_all(), "sky")
         self.assertNotIn('class="forms"', page)
-        self.assertIn('<th scope="row" class="l1" lang="cy">Digon o heulwen</th>', page)
+        self.assertIn('<th scope="row" class="l1" lang="cy">Digon o <span class="key" data-k="3">heulwen</span></th>', page)
 
     def test_a_form_can_carry_its_own_note(self):
         raw = copy.deepcopy(self.raw)
