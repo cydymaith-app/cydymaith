@@ -51,6 +51,7 @@
         },
         {
           "title": "Technoleg Dda",
+          "status": "development",
           "body": [
             {
               "quote": "Technology should serve the person using it, and ask nothing in return."
@@ -189,6 +190,7 @@
         },
         {
           "title": "Technoleg Dda",
+          "status": "development",
           "body": [
             {
               "quote": "Dylai technoleg wasanaethu'r sawl sy'n ei defnyddio, heb ofyn dim yn ôl."

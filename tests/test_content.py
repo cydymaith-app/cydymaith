@@ -228,12 +228,18 @@ class BuildTests(unittest.TestCase):
         for name in ("Coch a gwyrdd", "Melyn a gwyrdd"):
             self.assertIn(name, page)
 
-    def test_the_about_page_states_technoleg_dda_in_both_languages_and_links_to_the_sources(self):
+    def test_the_about_page_is_in_both_languages_and_links_to_the_sources(self):
         page = self.built["about.html"]
         self.assertIn('<article class="about-text" id="about-cy" lang="cy"><header><h1>Ynglŷn â Chydymaith am iaith</h1>', page)
         self.assertIn('<article class="about-text" id="about-en"><header><h1>About Cydymaith am iaith</h1>', page)
         self.assertIn('id="about-lang-cy" value="cy" checked', page, "the Welsh shows first")
         self.assertEqual(page.count('<a href="sources.html">'), 2)
+
+    def test_technoleg_dda_is_held_back_from_the_release_until_its_text_is_reviewed(self):
+        """Held back on 2026-10-27: the statement and the Hywel Dda text are not ready for the live site."""
+        for words in ("Technoleg Dda", "Hywel", "docs/TECHNOLEG-DDA.md", "Nothing to sell"):
+            self.assertNotIn(words, self.built["about.html"])
+        page = build.Site(self.raw, self.edition).render_all()["about.html"]  # the development channel keeps it
         self.assertIn('<blockquote class="principle"><p>Technology should serve the person using it, and ask nothing in return.</p></blockquote>', page)
         self.assertIn("<blockquote class=\"principle\"><p>Dylai technoleg wasanaethu'r sawl sy'n ei defnyddio, heb ofyn dim yn ôl.</p></blockquote>".replace("'", "&#x27;"), page)
         for promise in ("Nothing to sell", "Nothing taken", "Nothing hidden", "No nagging", "For everyone", "Small and open", "People first",
@@ -254,8 +260,8 @@ class BuildTests(unittest.TestCase):
         page = self.built["about.html"]
         english = page[page.index('id="about-en"') :]
         opened = re.findall(r'<details class="fold" open><summary><h2>([^<]+)</h2>', english)
-        self.assertEqual(opened, ["What it is for", "Technoleg Dda"])
-        self.assertEqual(english.count('<details class="fold"'), 8, "the held-back section is not in the release")
+        self.assertEqual(opened, ["What it is for"])
+        self.assertEqual(english.count('<details class="fold"'), 7, "the held-back sections are not in the release")
 
     def test_the_settings_page_groups_its_choices_in_folds_with_only_accessibility_and_appearance_open(self):
         page = self.built["settings.html"]
