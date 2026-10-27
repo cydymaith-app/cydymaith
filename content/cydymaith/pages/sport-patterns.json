@@ -1,0 +1,35 @@
+{
+  "icon": "chat",
+  "related": [
+    "when"
+  ],
+  "sections": [
+    {
+      "id": "who-scored",
+      "status": "development",
+      "concepts": [
+        "wales-have-scored",
+        "the-home-team-has-scored",
+        "the-captain-scored"
+      ]
+    },
+    {
+      "id": "how-it-stands",
+      "status": "development",
+      "concepts": [
+        "wales-are-ahead",
+        "the-game-is-level",
+        "england-are-behind",
+        "wales-have-won"
+      ]
+    },
+    {
+      "id": "sport-opening-closing",
+      "status": "development",
+      "concepts": [
+        "welcome-to-the-match",
+        "thats-all-from-the-stadium"
+      ]
+    }
+  ]
+}

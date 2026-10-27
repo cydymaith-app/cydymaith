@@ -1,0 +1,109 @@
+{
+  "title": "Rugby union",
+  "lede": "Rugby union as a commentator says it: the match, scoring, the set pieces and infringements, then the positions.",
+  "source": "draft",
+  "sections": {
+    "rugby-match": {
+      "title": "The match",
+      "concepts": {
+        "the-game-has-started": {
+          "text": "The game has started"
+        },
+        "at-the-break": {
+          "text": "At the break"
+        },
+        "the-referee-blows-the-final-whistle": {
+          "text": "The referee has blown the final whistle"
+        }
+      }
+    },
+    "scoring": {
+      "title": "Scoring",
+      "concepts": {
+        "a-try-for-wales": {
+          "text": "A try for Wales"
+        },
+        "a-successful-conversion": {
+          "text": "A successful conversion"
+        },
+        "a-penalty-kick-at-goal": {
+          "text": "A penalty kick at goal"
+        },
+        "a-drop-goal": {
+          "text": "A drop goal"
+        }
+      }
+    },
+    "set-pieces": {
+      "title": "Set pieces",
+      "concepts": {
+        "a-scrum-to-wales": {
+          "text": "A scrum to Wales"
+        },
+        "a-lineout-to-ireland": {
+          "text": "A lineout to Ireland"
+        },
+        "winning-the-ball-at-the-ruck": {
+          "text": "Winning the ball at the ruck"
+        },
+        "a-rolling-maul": {
+          "text": "A rolling maul"
+        }
+      }
+    },
+    "rugby-fouls": {
+      "title": "Infringements",
+      "concepts": {
+        "a-knock-on": {
+          "text": "A knock-on"
+        },
+        "offside-at-the-ruck": {
+          "text": "Offside at the ruck"
+        },
+        "ten-minutes-in-the-sin-bin": {
+          "text": "Ten minutes in the sin bin"
+        }
+      }
+    },
+    "forwards": {
+      "title": "The forwards",
+      "concepts": {
+        "prop": {
+          "text": "Prop"
+        },
+        "hooker": {
+          "text": "Hooker"
+        },
+        "lock": {
+          "text": "Lock"
+        },
+        "flanker": {
+          "text": "Flanker"
+        },
+        "number-eight": {
+          "text": "Number eight"
+        }
+      }
+    },
+    "backs": {
+      "title": "The backs",
+      "concepts": {
+        "scrum-half": {
+          "text": "Scrum-half"
+        },
+        "fly-half": {
+          "text": "Fly-half"
+        },
+        "centre": {
+          "text": "Centre"
+        },
+        "wing": {
+          "text": "Wing"
+        },
+        "full-back": {
+          "text": "Full-back"
+        }
+      }
+    }
+  }
+}

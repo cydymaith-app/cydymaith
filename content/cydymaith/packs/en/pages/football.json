@@ -1,0 +1,99 @@
+{
+  "title": "Football",
+  "lede": "Football (soccer) as a commentator says it: the match, chances and goals, fouls and cards, then the players.",
+  "source": "draft",
+  "sections": {
+    "football-match": {
+      "title": "The match",
+      "concepts": {
+        "kick-off": {
+          "text": "Kick-off"
+        },
+        "in-the-first-half": {
+          "text": "In the first half"
+        },
+        "at-half-time": {
+          "text": "At half time"
+        },
+        "in-the-second-half": {
+          "text": "In the second half"
+        },
+        "stoppage-time": {
+          "text": "Stoppage time"
+        },
+        "the-final-whistle": {
+          "text": "The final whistle"
+        }
+      }
+    },
+    "chances": {
+      "title": "Chances and goals",
+      "concepts": {
+        "a-great-chance": {
+          "text": "A great chance"
+        },
+        "a-shot-over-the-bar": {
+          "text": "A shot over the bar"
+        },
+        "a-great-save": {
+          "text": "A great save by the keeper"
+        },
+        "a-header-into-the-net": {
+          "text": "A header into the net"
+        },
+        "a-goal-for-wales": {
+          "text": "A goal for Wales"
+        }
+      }
+    },
+    "football-fouls": {
+      "title": "Fouls and cards",
+      "concepts": {
+        "a-foul-by-the-defender": {
+          "text": "A foul by the defender"
+        },
+        "a-free-kick-to-cardiff": {
+          "text": "A free kick to Cardiff"
+        },
+        "a-penalty": {
+          "text": "A penalty"
+        },
+        "he-was-offside": {
+          "text": "He was offside"
+        },
+        "a-yellow-card-for-the-captain": {
+          "text": "A yellow card for the captain"
+        },
+        "a-red-card-for-the-defender": {
+          "text": "A red card for the defender"
+        }
+      }
+    },
+    "players": {
+      "title": "The players",
+      "concepts": {
+        "goalkeeper": {
+          "text": "Goalkeeper"
+        },
+        "defender": {
+          "text": "Defender"
+        },
+        "midfielder": {
+          "text": "Midfielder"
+        },
+        "striker": {
+          "text": "Striker"
+        },
+        "substitute": {
+          "text": "Substitute"
+        },
+        "referee": {
+          "text": "Referee"
+        },
+        "manager": {
+          "text": "Manager"
+        }
+      }
+    }
+  }
+}

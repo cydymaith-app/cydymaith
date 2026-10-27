@@ -1,0 +1,63 @@
+{
+  "title": "Canlyniadau",
+  "source": "draft",
+  "sections": {
+    "scores": {
+      "title": "Sgoriau",
+      "order": "win, draw, then loss",
+      "concepts": {
+        "won-two-nil": {
+          "text": "Ennill o ddwy gôl i ddim"
+        },
+        "won-by-ten-points": {
+          "text": "Ennill o ddeg pwynt"
+        },
+        "a-draw-one-each": {
+          "text": "Gêm gyfartal, un yr un",
+          "also": [
+            "gyfartal"
+          ]
+        },
+        "lost-narrowly": {
+          "text": "Colli o drwch blewyn"
+        }
+      }
+    },
+    "standing": {
+      "title": "Y tabl",
+      "order": "top to bottom",
+      "concepts": {
+        "top-of-the-table": {
+          "text": "Ar frig y tabl"
+        },
+        "winning-promotion": {
+          "text": "Ennill dyrchafiad"
+        },
+        "bottom-of-the-league": {
+          "text": "Ar waelod y gynghrair"
+        },
+        "in-danger-of-relegation": {
+          "text": "Mewn perygl o ddisgyn"
+        }
+      }
+    },
+    "fixtures": {
+      "title": "Gemau i ddod",
+      "order": "who, then where",
+      "concepts": {
+        "wales-against-england": {
+          "text": "Cymru yn erbyn Lloegr"
+        },
+        "at-home-in-cardiff": {
+          "text": "Gartref yng Nghaerdydd",
+          "also": [
+            "Nghaerdydd"
+          ]
+        },
+        "away-from-home": {
+          "text": "Oddi cartref"
+        }
+      }
+    }
+  }
+}

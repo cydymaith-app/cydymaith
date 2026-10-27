@@ -1,0 +1,136 @@
+{
+  "title": "Pêl-droed",
+  "source": "draft",
+  "sections": {
+    "football-match": {
+      "title": "Y gêm",
+      "order": "kick-off to the final whistle",
+      "concepts": {
+        "kick-off": {
+          "text": "Y gic gyntaf",
+          "also": [
+            "Cic gyntaf"
+          ]
+        },
+        "in-the-first-half": {
+          "text": "Yn yr hanner cyntaf"
+        },
+        "at-half-time": {
+          "text": "Ar hanner amser",
+          "also": [
+            "Hanner amser"
+          ]
+        },
+        "in-the-second-half": {
+          "text": "Yn yr ail hanner"
+        },
+        "stoppage-time": {
+          "text": "Amser am anafiadau"
+        },
+        "the-final-whistle": {
+          "text": "Y chwiban olaf"
+        }
+      }
+    },
+    "chances": {
+      "title": "Cyfleoedd a goliau",
+      "order": "chance, shot, save, then goal",
+      "concepts": {
+        "a-great-chance": {
+          "text": "Cyfle gwych",
+          "also": [
+            "gyfle"
+          ]
+        },
+        "a-shot-over-the-bar": {
+          "text": "Ergyd dros y trawst"
+        },
+        "a-great-save": {
+          "text": "Arbediad gwych gan y golwr"
+        },
+        "a-header-into-the-net": {
+          "text": "Peniad i'r rhwyd"
+        },
+        "a-goal-for-wales": {
+          "text": "Gôl i Gymru",
+          "also": [
+            "goliau"
+          ]
+        }
+      }
+    },
+    "football-fouls": {
+      "title": "Troseddau a chardiau",
+      "order": "foul, set piece, then the cards",
+      "concepts": {
+        "a-foul-by-the-defender": {
+          "text": "Trosedd gan yr amddiffynnwr"
+        },
+        "a-free-kick-to-cardiff": {
+          "text": "Cic rydd i Gaerdydd",
+          "also": [
+            "gic rydd"
+          ]
+        },
+        "a-penalty": {
+          "text": "Cic o'r smotyn",
+          "also": [
+            "gic o'r smotyn",
+            "penalti"
+          ]
+        },
+        "he-was-offside": {
+          "text": "Roedd e'n camsefyll",
+          "also": [
+            "camsefyll"
+          ]
+        },
+        "a-yellow-card-for-the-captain": {
+          "text": "Cerdyn melyn i'r capten",
+          "also": [
+            "gerdyn melyn"
+          ]
+        },
+        "a-red-card-for-the-defender": {
+          "text": "Cerdyn coch i'r amddiffynnwr",
+          "also": [
+            "gerdyn coch"
+          ]
+        }
+      }
+    },
+    "players": {
+      "title": "Y chwaraewyr",
+      "order": "from the goal outwards, then the bench and the officials",
+      "concepts": {
+        "goalkeeper": {
+          "text": "Golwr",
+          "also": [
+            "gôl-geidwad"
+          ]
+        },
+        "defender": {
+          "text": "Amddiffynnwr"
+        },
+        "midfielder": {
+          "text": "Chwaraewr canol cae"
+        },
+        "striker": {
+          "text": "Ymosodwr"
+        },
+        "substitute": {
+          "text": "Eilydd"
+        },
+        "referee": {
+          "text": "Dyfarnwr",
+          "also": [
+            "ddyfarnwr"
+          ]
+        },
+        "manager": {
+          "text": "Rheolwr"
+        }
+      }
+    }
+  }
+}

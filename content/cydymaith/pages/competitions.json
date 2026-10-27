@@ -1,0 +1,31 @@
+{
+  "icon": "trophy",
+  "related": [
+    "geography#places"
+  ],
+  "sections": [
+    {
+      "id": "teams",
+      "status": "development",
+      "concepts": [
+        "the-wales-team",
+        "the-ospreys",
+        "the-scarlets",
+        "the-dragons",
+        "cardiff-rugby"
+      ]
+    },
+    {
+      "id": "competitions-list",
+      "status": "development",
+      "concepts": [
+        "the-world-cup",
+        "the-premier-league",
+        "the-six-nations",
+        "the-grand-slam",
+        "the-triple-crown",
+        "the-wooden-spoon"
+      ]
+    }
+  ]
+}

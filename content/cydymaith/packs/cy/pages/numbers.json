@@ -1,0 +1,101 @@
+{
+  "title": "Rhifau",
+  "source": "draft",
+  "sections": {
+    "one-to-ten": {
+      "title": "Un i ddeg",
+      "order": "counting up",
+      "concepts": {
+        "one": {
+          "text": "Un"
+        },
+        "two": {
+          "text": "Dau",
+          "also": [
+            "dwy",
+            "ddau",
+            "ddwy"
+          ]
+        },
+        "three": {
+          "text": "Tri",
+          "also": [
+            "tair",
+            "dri"
+          ]
+        },
+        "four": {
+          "text": "Pedwar",
+          "also": [
+            "pedair",
+            "bedwar"
+          ]
+        },
+        "five": {
+          "text": "Pump",
+          "also": [
+            "pum",
+            "bum"
+          ]
+        },
+        "six": {
+          "text": "Chwech",
+          "also": [
+            "chwe"
+          ]
+        },
+        "seven": {
+          "text": "Saith"
+        },
+        "eight": {
+          "text": "Wyth"
+        },
+        "nine": {
+          "text": "Naw"
+        },
+        "ten": {
+          "text": "Deg",
+          "also": [
+            "ddeg"
+          ]
+        }
+      }
+    },
+    "tens": {
+      "title": "Degau",
+      "order": "counting up",
+      "concepts": {
+        "eleven": {
+          "text": "Un deg un"
+        },
+        "twenty": {
+          "text": "Dau ddeg",
+          "also": [
+            "ugain"
+          ]
+        },
+        "thirty": {
+          "text": "Tri deg"
+        },
+        "forty": {
+          "text": "Pedwar deg"
+        },
+        "fifty": {
+          "text": "Hanner cant",
+          "also": [
+            "pum deg"
+          ]
+        },
+        "seventy-four": {
+          "text": "Saith deg pedwar"
+        },
+        "hundred": {
+          "text": "Cant",
+          "also": [
+            "can"
+          ]
+        }
+      }
+    }
+  }
+}

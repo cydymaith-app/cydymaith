@@ -1,0 +1,64 @@
+{
+  "title": "Patrymau",
+  "source": "draft",
+  "sections": {
+    "who-scored": {
+      "title": "Pwy sgoriodd",
+      "order": "the team, then the player",
+      "concepts": {
+        "wales-have-scored": {
+          "text": "Mae Cymru wedi sgorio",
+          "also": [
+            "sgoriodd"
+          ]
+        },
+        "the-home-team-has-scored": {
+          "text": "Mae'r tîm cartref wedi sgorio"
+        },
+        "the-captain-scored": {
+          "text": "Sgoriodd y capten"
+        }
+      },
+      "box": {
+        "title": "Heard a word you cannot find?",
+        "body": "Change the first letter back. After {{i}} (to, for) a word softens: {{Gymru}} is {{Cymru}} and {{Gaerdydd}} is {{Caerdydd}}. After {{a}} (and) it takes an h: {{chais}} is {{cais}}. After {{yn}} (in) it changes more: {{yng Nghaerdydd}} is in {{Caerdydd}}."
+      }
+    },
+    "how-it-stands": {
+      "title": "Sut mae hi",
+      "order": "ahead, level, behind, then the result",
+      "concepts": {
+        "wales-are-ahead": {
+          "text": "Mae Cymru ar y blaen"
+        },
+        "the-game-is-level": {
+          "text": "Mae'r gêm yn gyfartal",
+          "also": [
+            "gyfartal"
+          ]
+        },
+        "england-are-behind": {
+          "text": "Mae Lloegr ar ei hôl hi"
+        },
+        "wales-have-won": {
+          "text": "Mae Cymru wedi ennill",
+          "also": [
+            "enillodd"
+          ]
+        }
+      }
+    },
+    "sport-opening-closing": {
+      "title": "Agor a chau",
+      "order": "opening, then closing",
+      "concepts": {
+        "welcome-to-the-match": {
+          "text": "Croeso i'r gêm"
+        },
+        "thats-all-from-the-stadium": {
+          "text": "Dyna'r cyfan o'r stadiwm"
+        }
+      }
+    }
+  }
+}

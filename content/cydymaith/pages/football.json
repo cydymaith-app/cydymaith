@@ -1,0 +1,53 @@
+{
+  "icon": "soccer",
+  "sections": [
+    {
+      "id": "football-match",
+      "status": "development",
+      "concepts": [
+        "kick-off",
+        "in-the-first-half",
+        "at-half-time",
+        "in-the-second-half",
+        "stoppage-time",
+        "the-final-whistle"
+      ]
+    },
+    {
+      "id": "chances",
+      "status": "development",
+      "concepts": [
+        "a-great-chance",
+        "a-shot-over-the-bar",
+        "a-great-save",
+        "a-header-into-the-net",
+        "a-goal-for-wales"
+      ]
+    },
+    {
+      "id": "football-fouls",
+      "status": "development",
+      "concepts": [
+        "a-foul-by-the-defender",
+        "a-free-kick-to-cardiff",
+        "a-penalty",
+        "he-was-offside",
+        "a-yellow-card-for-the-captain",
+        "a-red-card-for-the-defender"
+      ]
+    },
+    {
+      "id": "players",
+      "status": "development",
+      "concepts": [
+        "goalkeeper",
+        "defender",
+        "midfielder",
+        "striker",
+        "substitute",
+        "referee",
+        "manager"
+      ]
+    }
+  ]
+}

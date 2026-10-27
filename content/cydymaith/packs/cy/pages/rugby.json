@@ -1,0 +1,129 @@
+{
+  "title": "Rygbi",
+  "source": "draft",
+  "sections": {
+    "rugby-match": {
+      "title": "Y gêm",
+      "order": "kick-off to the final whistle",
+      "concepts": {
+        "the-game-has-started": {
+          "text": "Mae'r gêm wedi dechrau"
+        },
+        "at-the-break": {
+          "text": "Ar yr egwyl",
+          "also": [
+            "egwyl"
+          ]
+        },
+        "the-referee-blows-the-final-whistle": {
+          "text": "Mae'r dyfarnwr wedi chwythu'r chwiban olaf"
+        }
+      }
+    },
+    "scoring": {
+      "title": "Sgorio",
+      "order": "try, conversion, penalty, then drop goal",
+      "concepts": {
+        "a-try-for-wales": {
+          "text": "Cais i Gymru",
+          "also": [
+            "gais"
+          ]
+        },
+        "a-successful-conversion": {
+          "text": "Trosiad llwyddiannus",
+          "also": [
+            "trosi"
+          ]
+        },
+        "a-penalty-kick-at-goal": {
+          "text": "Cic gosb at y pyst",
+          "also": [
+            "gic gosb"
+          ]
+        },
+        "a-drop-goal": {
+          "text": "Gôl adlam"
+        }
+      }
+    },
+    "set-pieces": {
+      "title": "Set-ddarnau",
+      "order": "scrum, lineout, ruck, then maul",
+      "concepts": {
+        "a-scrum-to-wales": {
+          "text": "Sgrym i Gymru"
+        },
+        "a-lineout-to-ireland": {
+          "text": "Lein i Iwerddon"
+        },
+        "winning-the-ball-at-the-ruck": {
+          "text": "Ennill y bêl yn y ryc",
+          "also": [
+            "bêl"
+          ]
+        },
+        "a-rolling-maul": {
+          "text": "Sgarmes symudol"
+        }
+      }
+    },
+    "rugby-fouls": {
+      "title": "Troseddau",
+      "order": "infringement, then the sin bin",
+      "concepts": {
+        "a-knock-on": {
+          "text": "Taro ymlaen"
+        },
+        "offside-at-the-ruck": {
+          "text": "Camsefyll yn y ryc"
+        },
+        "ten-minutes-in-the-sin-bin": {
+          "text": "Deg munud yn y gell gosb"
+        }
+      }
+    },
+    "forwards": {
+      "title": "Y blaenwyr",
+      "order": "by shirt number, 1 to 8",
+      "concepts": {
+        "prop": {
+          "text": "Prop"
+        },
+        "hooker": {
+          "text": "Bachwr"
+        },
+        "lock": {
+          "text": "Clo"
+        },
+        "flanker": {
+          "text": "Blaenasgellwr"
+        },
+        "number-eight": {
+          "text": "Wythwr"
+        }
+      }
+    },
+    "backs": {
+      "title": "Yr olwyr",
+      "order": "by shirt number, 9 to 15",
+      "concepts": {
+        "scrum-half": {
+          "text": "Mewnwr"
+        },
+        "fly-half": {
+          "text": "Maswr"
+        },
+        "centre": {
+          "text": "Canolwr"
+        },
+        "wing": {
+          "text": "Asgellwr"
+        },
+        "full-back": {
+          "text": "Cefnwr"
+        }
+      }
+    }
+  }
+}

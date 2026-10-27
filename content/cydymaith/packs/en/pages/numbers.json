@@ -1,0 +1,68 @@
+{
+  "title": "Numbers",
+  "lede": "Numbers as they are said in scores, temperatures and wind speeds.",
+  "source": "draft",
+  "sections": {
+    "one-to-ten": {
+      "title": "One to ten",
+      "concepts": {
+        "one": {
+          "text": "One"
+        },
+        "two": {
+          "text": "Two"
+        },
+        "three": {
+          "text": "Three"
+        },
+        "four": {
+          "text": "Four"
+        },
+        "five": {
+          "text": "Five"
+        },
+        "six": {
+          "text": "Six"
+        },
+        "seven": {
+          "text": "Seven"
+        },
+        "eight": {
+          "text": "Eight"
+        },
+        "nine": {
+          "text": "Nine"
+        },
+        "ten": {
+          "text": "Ten"
+        }
+      }
+    },
+    "tens": {
+      "title": "Tens",
+      "concepts": {
+        "eleven": {
+          "text": "Eleven"
+        },
+        "twenty": {
+          "text": "Twenty"
+        },
+        "thirty": {
+          "text": "Thirty"
+        },
+        "forty": {
+          "text": "Forty"
+        },
+        "fifty": {
+          "text": "Fifty"
+        },
+        "seventy-four": {
+          "text": "Seventy-four"
+        },
+        "hundred": {
+          "text": "A hundred"
+        }
+      }
+    }
+  }
+}

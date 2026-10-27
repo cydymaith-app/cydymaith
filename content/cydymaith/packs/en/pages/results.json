@@ -1,0 +1,55 @@
+{
+  "title": "Results and tables",
+  "lede": "Scores, league tables and fixtures, for any sport.",
+  "source": "draft",
+  "sections": {
+    "scores": {
+      "title": "Scores",
+      "concepts": {
+        "won-two-nil": {
+          "text": "Won two-nil"
+        },
+        "won-by-ten-points": {
+          "text": "Won by ten points"
+        },
+        "a-draw-one-each": {
+          "text": "A draw, one each"
+        },
+        "lost-narrowly": {
+          "text": "Lost narrowly"
+        }
+      }
+    },
+    "standing": {
+      "title": "The table",
+      "concepts": {
+        "top-of-the-table": {
+          "text": "At the top of the table"
+        },
+        "winning-promotion": {
+          "text": "Winning promotion"
+        },
+        "bottom-of-the-league": {
+          "text": "At the bottom of the league"
+        },
+        "in-danger-of-relegation": {
+          "text": "In danger of relegation"
+        }
+      }
+    },
+    "fixtures": {
+      "title": "Fixtures",
+      "concepts": {
+        "wales-against-england": {
+          "text": "Wales against England"
+        },
+        "at-home-in-cardiff": {
+          "text": "At home in Cardiff"
+        },
+        "away-from-home": {
+          "text": "Away from home"
+        }
+      }
+    }
+  }
+}

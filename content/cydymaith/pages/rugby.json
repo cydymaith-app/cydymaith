@@ -1,0 +1,65 @@
+{
+  "icon": "rugby",
+  "sections": [
+    {
+      "id": "rugby-match",
+      "status": "development",
+      "concepts": [
+        "the-game-has-started",
+        "at-the-break",
+        "the-referee-blows-the-final-whistle"
+      ]
+    },
+    {
+      "id": "scoring",
+      "status": "development",
+      "concepts": [
+        "a-try-for-wales",
+        "a-successful-conversion",
+        "a-penalty-kick-at-goal",
+        "a-drop-goal"
+      ]
+    },
+    {
+      "id": "set-pieces",
+      "status": "development",
+      "concepts": [
+        "a-scrum-to-wales",
+        "a-lineout-to-ireland",
+        "winning-the-ball-at-the-ruck",
+        "a-rolling-maul"
+      ]
+    },
+    {
+      "id": "rugby-fouls",
+      "status": "development",
+      "concepts": [
+        "a-knock-on",
+        "offside-at-the-ruck",
+        "ten-minutes-in-the-sin-bin"
+      ]
+    },
+    {
+      "id": "forwards",
+      "status": "development",
+      "concepts": [
+        "prop",
+        "hooker",
+        "lock",
+        "flanker",
+        "number-eight"
+      ]
+    },
+    {
+      "id": "backs",
+      "status": "development",
+      "concepts": [
+        "scrum-half",
+        "fly-half",
+        "centre",
+        "wing",
+        "full-back"
+      ]
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Both are self-hosted from `content/cydymaith/static/fonts/`, taken from the Font
 |---|---|---|
 | IBM Carbon, `@carbon/icons` 11.91.0 | Apache-2.0 | https://carbon-design-system.com, https://github.com/carbon-design-system/carbon |
 
-The sixteen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/cydymaith/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
+The nineteen Carbon icons below are copied from the npm package `@carbon/icons@11.91.0` (the `svg/32` set) into `content/cydymaith/icons/`, with the package's Apache-2.0 `LICENSE` beside them. Licence read on 2026-10-21 in the package and in the repository root. Re-check the licence and version before each release.
 
 The paths are unmodified. The only change is a one-line comment added at the top of each file naming the package, version and licence. The build adds `fill="currentColor"` when inlining, because Carbon's files name no fill.
 
@@ -44,9 +44,13 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `restaurant` | Everyday words, and Food and drink |
 | `mobile` | Technology |
 | `blog` | The News group (Carbon has no newspaper) |
-| `trophy` | The Sports group |
+| `trophy` | The Sport group, and Teams and competitions |
+| `soccer` | Football (added 2026-10-27) |
+| `list--numbered` | Results and tables (added 2026-10-27) |
+| `character--whole-number` | Numbers (added 2026-10-27) |
 
 - **Drawn for this site:** `daffodil`, as a 24px-grid, 2px round-stroke outline, so it is a different style from the filled Carbon icons and may need redrawing to match. It is the project's own work, released under the same MIT licence as the code, and carries a comment saying so. No open icon set has a daffodil: Iconify, which indexes most of them, finds none. The public-domain daffodil and narcissus ornaments on Wikimedia Commons (from 1909 and 1915 books) are engravings of 28 to 138 KB, too heavy and too detailed to inline, and the CC BY-SA ones are not accepted above. Not used by a page yet.
+- **Drawn for this site:** `rugby`, a rugby ball on Carbon's 32px grid as a filled shape, so it sits with the Carbon icons. Carbon 11.91.0 has `soccer`, `basketball` and `tennis-ball` but no rugby ball. It is the project's own work, released under the same MIT licence as the code, and carries a comment saying so. Used by Rugby.
 - Apache-2.0 needs the licence text kept with copies, and changes stated. The `LICENSE` file is in each icons folder, and a test fails if it goes missing. The licence does not cover IBM's names or trademarks.
 - A project's own icons go in its `icons/` folder and are named with `icon` on a group or a page. The framework checks each file as a safe SVG subset at build time, then inlines it. The framework's own three interface icons are recorded in its `docs/ASSETS.md`.
 - Icons are decorative beside their labels, so they are hidden from screen readers.

@@ -246,6 +246,54 @@ class OnePageWeatherTests(unittest.TestCase):
             self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)
 
 
+class SportScaffoldTests(unittest.TestCase):
+    """The Sport group is shaped like the weather (2026-10-27): one page of topics, every section with a stated order, and all of it
+    held back until the words heard on air replace the seed rows (docs/SPORT-WORDS.md)."""
+
+    PAGES = ["football", "rugby", "results", "competitions", "sport-patterns"]
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+        cls.groups = {g["id"]: g for g in cls.raw["structure"]["groups"]}
+
+    def test_sport_is_one_page_of_football_rugby_and_the_shared_topics(self):
+        sport = self.groups["sport"]
+        self.assertEqual(sport["layout"], "one-page")
+        self.assertEqual(sport["pages"], self.PAGES)
+        self.assertNotIn("sport", self.raw["pages"], "the placeholder page is gone")
+
+    def test_numbers_is_an_everyday_page_for_the_scores_and_the_forecast(self):
+        self.assertEqual(self.groups["everyday"]["pages"], ["talk", "when", "numbers", "food-drink"])
+        self.assertIn("numbers", self.raw["pages"]["results"]["related"])
+
+    def test_every_section_is_held_back_and_states_its_order(self):
+        for slug in [*self.PAGES, "numbers"]:
+            for section in self.raw["pages"][slug]["sections"]:
+                self.assertEqual(section.get("status"), "development", f"{slug}/{section['id']}")
+                cy = self.raw["packs"]["cy"]["pages"][slug]["sections"][section["id"]]
+                self.assertTrue(cy.get("order"), f"{slug}/{section['id']} has no order")
+
+    def test_section_and_concept_ids_are_unique_on_the_one_page(self):
+        sections = [s["id"] for slug in self.PAGES for s in self.raw["pages"][slug]["sections"]]
+        concepts = [c for slug in self.PAGES for s in self.raw["pages"][slug]["sections"] for c in s["concepts"]]
+        self.assertEqual(len(sections), len(set(sections)))
+        self.assertEqual(len(concepts), len(set(concepts)))
+
+    def test_every_row_is_in_both_languages_and_marked_as_a_draft(self):
+        for slug in [*self.PAGES, "numbers"]:
+            for code in ("cy", "en"):
+                pack = self.raw["packs"][code]["pages"][slug]
+                self.assertEqual(pack["source"], "draft", f"{code} {slug}")
+                for section in self.raw["pages"][slug]["sections"]:
+                    self.assertEqual(list(pack["sections"][section["id"]]["concepts"]), section["concepts"], f"{code} {slug}")
+
+    def test_the_release_has_no_sport_and_no_numbers(self):
+        released = select(self.raw)
+        self.assertNotIn("sport", {g["id"] for g in released["structure"]["groups"]})
+        self.assertNotIn("numbers", released["pages"])
+
+
 class GeographyStandardTests(unittest.TestCase):
     """The Geography pages are held to the standard of the weather pages (2026-10-27): every section states its order, the names a
     listener hears after a preposition are findable, and the page of forecast phrases is apart from the one for reading names."""

@@ -1,0 +1,50 @@
+{
+  "title": "Teams and competitions",
+  "lede": "The teams and the competitions a commentary names.",
+  "source": "draft",
+  "sections": {
+    "teams": {
+      "title": "Teams",
+      "concepts": {
+        "the-wales-team": {
+          "text": "The Wales team"
+        },
+        "the-ospreys": {
+          "text": "The Ospreys"
+        },
+        "the-scarlets": {
+          "text": "The Scarlets"
+        },
+        "the-dragons": {
+          "text": "The Dragons"
+        },
+        "cardiff-rugby": {
+          "text": "Cardiff Rugby"
+        }
+      }
+    },
+    "competitions-list": {
+      "title": "Competitions",
+      "concepts": {
+        "the-world-cup": {
+          "text": "The World Cup"
+        },
+        "the-premier-league": {
+          "text": "The Premier League"
+        },
+        "the-six-nations": {
+          "text": "The Six Nations Championship"
+        },
+        "the-grand-slam": {
+          "text": "The Grand Slam"
+        },
+        "the-triple-crown": {
+          "text": "The Triple Crown"
+        },
+        "the-wooden-spoon": {
+          "text": "The Wooden Spoon"
+        }
+      }
+    }
+  }
+}

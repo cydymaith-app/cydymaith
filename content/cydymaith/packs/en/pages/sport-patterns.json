@@ -1,0 +1,49 @@
+{
+  "title": "How it's said",
+  "lede": "The sentence patterns a commentary is built from, with the words to slot in.",
+  "source": "draft",
+  "sections": {
+    "who-scored": {
+      "title": "Who scored",
+      "concepts": {
+        "wales-have-scored": {
+          "text": "Wales have scored"
+        },
+        "the-home-team-has-scored": {
+          "text": "The home team has scored"
+        },
+        "the-captain-scored": {
+          "text": "The captain scored"
+        }
+      }
+    },
+    "how-it-stands": {
+      "title": "How it stands",
+      "concepts": {
+        "wales-are-ahead": {
+          "text": "Wales are ahead"
+        },
+        "the-game-is-level": {
+          "text": "The game is level"
+        },
+        "england-are-behind": {
+          "text": "England are behind"
+        },
+        "wales-have-won": {
+          "text": "Wales have won"
+        }
+      }
+    },
+    "sport-opening-closing": {
+      "title": "Opening and closing",
+      "concepts": {
+        "welcome-to-the-match": {
+          "text": "Welcome to the match"
+        },
+        "thats-all-from-the-stadium": {
+          "text": "That's all from the stadium"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+<!-- Project icon, drawn for this site on Carbon's 32px grid as a filled shape, to sit with the Carbon icons. Licence: MIT, as the code. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g transform="rotate(-45 16 16)"><path fill-rule="evenodd" d="M2,16C2,11.6,8.3,8,16,8s14,3.6,14,8-6.3,8-14,8S2,20.4,2,16Zm2,0c0,3,5.4,6,12,6s12-3,12-6-5.4-6-12-6S4,13,4,16Z"/><rect x="9" y="15" width="14" height="2"/><rect x="11" y="13" width="2" height="6"/><rect x="15" y="13" width="2" height="6"/><rect x="19" y="13" width="2" height="6"/></g></svg>

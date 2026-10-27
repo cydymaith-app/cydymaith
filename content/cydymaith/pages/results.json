@@ -1,0 +1,38 @@
+{
+  "icon": "list--numbered",
+  "related": [
+    "numbers",
+    "when"
+  ],
+  "sections": [
+    {
+      "id": "scores",
+      "status": "development",
+      "concepts": [
+        "won-two-nil",
+        "won-by-ten-points",
+        "a-draw-one-each",
+        "lost-narrowly"
+      ]
+    },
+    {
+      "id": "standing",
+      "status": "development",
+      "concepts": [
+        "top-of-the-table",
+        "winning-promotion",
+        "bottom-of-the-league",
+        "in-danger-of-relegation"
+      ]
+    },
+    {
+      "id": "fixtures",
+      "status": "development",
+      "concepts": [
+        "wales-against-england",
+        "at-home-in-cardiff",
+        "away-from-home"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Timau a chystadlaethau",
+  "source": "draft",
+  "sections": {
+    "teams": {
+      "title": "Timau",
+      "order": "Wales, then the regions and clubs",
+      "concepts": {
+        "the-wales-team": {
+          "text": "Tîm Cymru"
+        },
+        "the-ospreys": {
+          "text": "Y Gweilch"
+        },
+        "the-scarlets": {
+          "text": "Y Scarlets"
+        },
+        "the-dragons": {
+          "text": "Y Dreigiau"
+        },
+        "cardiff-rugby": {
+          "text": "Rygbi Caerdydd"
+        }
+      }
+    },
+    "competitions-list": {
+      "title": "Cystadlaethau",
+      "order": "football, then rugby",
+      "concepts": {
+        "the-world-cup": {
+          "text": "Cwpan y Byd"
+        },
+        "the-premier-league": {
+          "text": "Yr Uwch Gynghrair"
+        },
+        "the-six-nations": {
+          "text": "Pencampwriaeth y Chwe Gwlad",
+          "also": [
+            "Chwe Gwlad"
+          ]
+        },
+        "the-grand-slam": {
+          "text": "Y Gamp Lawn",
+          "also": [
+            "Camp Lawn"
+          ]
+        },
+        "the-triple-crown": {
+          "text": "Y Goron Driphlyg"
+        },
+        "the-wooden-spoon": {
+          "text": "Y Llwy Bren"
+        }
+      }
+    }
+  }
+}
