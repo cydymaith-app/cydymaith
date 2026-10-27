@@ -531,7 +531,7 @@ One future page, *Effeithiau / Impacts*: the sea, damage and travel. It could be
 | Tymhereddau | temperatures | *Tymheredd* |
 | Mi fydd hi | it will be (colloquial *mi*) | next to *Bydd* |
 | Yn gyson | steadily, constantly | *Newid*; heard *yn gallu newid yn gyson* |
-| Fa'ma | here, colloquial | *Yma* (5) |
+| Fa'ma | here; standard shorthand for *y fan yma* (confirmed by the user) | *Yma* (5), with *y fan yma* |
 | Hyrddiad (o 65mya) | a gust | *Hyrddiadau* |
 | Gymylog | cloudy, softened | *Cymylog* (already has the note) |
 
@@ -566,5 +566,4 @@ The presenters' names and the photo credits (*Llun: …*).
 
 1. *Y gorllewin fydd ym gweld* (16): is *ym* a typo for *yn*?
 2. *Werth cadw golwg* (9): is it *Mae'n werth cadw golwg*, with the start dropped on screen?
-3. *Fa'ma* (7): which area is it heard in?
-4. *Cyfoeth Naturiol Cymru*: is the organisation's name worth a row, or left as a name?
+3. *Cyfoeth Naturiol Cymru*: is the organisation's name worth a row, or left as a name?
