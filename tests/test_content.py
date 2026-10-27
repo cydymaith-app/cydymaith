@@ -157,7 +157,7 @@ class BuildTests(unittest.TestCase):
             self.assertIn('navigator.serviceWorker.register("sw.js")', page)
 
     def test_the_project_palette_records_where_its_colours_came_from(self):
-        palette = json.loads((PROJECT / "palettes" / "default.json").read_text(encoding="utf-8"))
+        palette = json.loads((PROJECT / "palettes" / "red-green.json").read_text(encoding="utf-8"))
         self.assertIn("hellocolor.de", palette["notes"])
         self.assertIn("derived", palette["notes"].lower())
         assets = (ROOT / "docs" / "ASSETS.md").read_text(encoding="utf-8")
@@ -165,7 +165,8 @@ class BuildTests(unittest.TestCase):
 
     def test_the_installed_app_wears_the_default_palette(self):
         manifest = json.loads((self.out / "manifest.json").read_text(encoding="utf-8"))
-        palette = C.palettes.resolve(self.raw["palettes"]["default"])["light"]
+        self.assertEqual(self.site.default_palette, "red-green")
+        palette = C.palettes.resolve(self.raw["palettes"]["red-green"])["light"]
         self.assertEqual(manifest["theme_color"], C.palettes.colour.rgb_to_hex(palette["accent"]))
         self.assertEqual(manifest["background_color"], C.palettes.colour.rgb_to_hex(palette["bg"]))
 
@@ -216,9 +217,11 @@ class BuildTests(unittest.TestCase):
         for tier, pid in re.findall(r'data-tier="(\w+)"><input type="radio" name="palette" value="([\w-]+)"', page):
             levels.setdefault(tier, []).append(pid)
         self.assertEqual(levels, {
-            "standard": ["default", "yellow-green"],
-            "high": ["high-contrast", "yellow-green-high-contrast"],
-            "safe": ["red-green-safe", "blue-yellow-safe", "yellow-green-safe"],
+            # the app's own schemes first, then the framework's in its own order
+            "standard": ["red-green", "yellow-green", "default", "blue-white-red", "green-white-red", "green-white-orange",
+                         "red-yellow", "black-red-gold"],
+            "high": ["yellow-green-high-contrast", "high-contrast"],
+            "safe": ["yellow-green-safe", "red-green-safe", "blue-yellow-safe"],
         })
         for welsh, english in (("Safonol", "Standard"), ("Lliwiau diogel", "Safe colours"), ("Cyferbyniad uchel", "High contrast")):
             self.assertIn(f'lang="cy">{welsh}</span><span class="t" data-n="2">{english}</span>', page)

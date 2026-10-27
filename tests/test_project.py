@@ -269,3 +269,58 @@ class KeyWordTests(unittest.TestCase):
         ui = self.raw["packs"]["cy"]["meta"]["ui"]
         for key in ("keys_title", "keys_hint", "keys_colour", "keys_line", "keys_off"):
             self.assertTrue(ui.get(key), key)
+
+
+class ThemingTests(unittest.TestCase):
+    """The app owns the Welsh colours and inherits the framework's schemes."""
+
+    WELSH = ("red-green", "yellow-green", "yellow-green-safe", "yellow-green-high-contrast")
+
+    @classmethod
+    def setUpClass(cls):
+        import tempfile
+        cls.tmp = pathlib.Path(tempfile.mkdtemp())
+        phrasebook.build(cls.tmp / "dist")
+        cls.raw = content.read(PROJECT)
+        cls.page = (cls.tmp / "dist" / "settings.html").read_text(encoding="utf-8")
+
+    @classmethod
+    def tearDownClass(cls):
+        import shutil
+        shutil.rmtree(cls.tmp, ignore_errors=True)
+
+    def offered(self):
+        return re.findall(r'name="palette" value="([a-z-]+)"', self.page)
+
+    def test_the_red_and_green_of_the_welsh_flag_is_the_default(self):
+        edition = json.loads((PROJECT / "editions" / "cydymaith.json").read_text(encoding="utf-8"))
+        self.assertEqual(edition["default_palette"], "red-green")
+        self.assertNotIn("palettes", edition, "the app inherits every framework scheme, so it keeps no list")
+        self.assertIn('name="palette" value="red-green" data-pref="palette" checked', self.page)
+
+    def test_the_welsh_schemes_are_the_apps_own_and_come_first(self):
+        self.assertEqual(sorted(p.stem for p in (PROJECT / "palettes").glob("*.json")), sorted(self.WELSH))
+        self.assertEqual(self.offered()[: len(self.WELSH)].count("red-green"), 1)
+        self.assertEqual(set(self.offered()[: len(self.WELSH)]), set(self.WELSH))
+
+    def test_the_framework_schemes_are_inherited_after_them(self):
+        from phrasebook import palettes
+        self.assertEqual(self.offered()[len(self.WELSH) :], list(palettes.ENGINE_ORDER))
+
+    def test_the_safe_and_high_contrast_yellow_and_green_start_from_yellow_and_green(self):
+        for name in ("yellow-green-safe", "yellow-green-high-contrast"):
+            data = json.loads((PROJECT / "palettes" / f"{name}.json").read_text(encoding="utf-8"))
+            self.assertEqual(data["extends"], "yellow-green", name)
+            self.assertLess(len(data["light"]), 15, name)
+
+    def test_every_scheme_the_app_offers_is_named_in_welsh(self):
+        ui = self.raw["packs"]["cy"]["meta"]["ui"]
+        for pid in self.raw["palettes"]:
+            named = "cy" in self.raw["palettes"][pid].get("names", {}) or ui.get("palette_" + pid.replace("-", "_"))
+            self.assertTrue(named, pid)
+
+    def test_the_colour_schemes_are_named_by_their_colours_not_their_countries(self):
+        for pid in ("blue-white-red", "green-white-red", "green-white-orange", "red-yellow", "black-red-gold"):
+            text = json.dumps(self.raw["palettes"][pid]).lower()
+            for country in ("france", "french", "ireland", "irish", "spain", "spanish", "germany", "german", "italy", "italian"):
+                self.assertNotIn(country, text, (pid, country))

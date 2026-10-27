@@ -165,6 +165,9 @@ Features of the framework and the general features it enables, driven from this 
   - [ ] Choose the palette automatically from `prefers-contrast: more` when the visitor has not chosen, without taking the choice away from them.
   - [ ] Check Windows forced-colours mode by hand, and screen-reader announcement of the radio groups.
   - [ ] Meet the 3:1 contrast for the boundaries of controls (jump links, pager, menu button) in the default palette, or give them text-only identification. `rule-strong` is below 3:1 there; the `high-contrast` palette meets it.
+  - [x] **App theming (issue 3) and more themes (issue 4).** Done 2026-10-27. The framework owns the neutral, safe and high-contrast schemes and a library of five colour schemes named by their colours (`blue-white-red`, `green-white-red`, `green-white-orange`, `red-yellow`, `black-red-gold`). A palette can `extends` another and list only what differs. An edition sets `default_palette`. The app owns `red-green` (its default), `yellow-green` and its safe and high-contrast versions, and inherits the rest in the framework's order. The Welsh names of the new schemes are drafts in `docs/REVIEW.md`.
+  - [ ] Visitors who saved a colour scheme before 2026-10-27 have `default` saved, which is now the neutral scheme, not red and green. Decide whether that needs a migration before release; nobody has used the app yet, so it may not.
+  - [ ] Look at the five new colour schemes in a real browser, light and dark (`python build.py dist --screenshots`), and have the Welsh names checked.
   - [ ] Consider more palettes (monochrome for achromatopsia, a low-glare dark, a sepia) and text-size and line-spacing preferences. Each is a data file or a small control.
 - [x] **Tests for the controls and the preferences logic.** Node tests cover reading, validating, applying and saving the preferences; build tests cover the controls, the pre-paint script and the generated palettes.
 

@@ -11,15 +11,7 @@
     "en"
   ],
   "contact": "cydymaithapp@gmail.com",
-  "palettes": [
-    "default",
-    "yellow-green",
-    "high-contrast",
-    "yellow-green-high-contrast",
-    "red-green-safe",
-    "blue-yellow-safe",
-    "yellow-green-safe"
-  ],
+  "default_palette": "red-green",
   "stylesheets": [
     "project.css"
   ],

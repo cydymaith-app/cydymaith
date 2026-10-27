@@ -4,6 +4,7 @@
     "cy": "Melyn a gwyrdd, cyferbyniad uchel"
   },
   "notes": "The yellow and green scheme at level AAA. Derived from yellow-green.json: text needs 7:1, borders 3:1 and the icon on a tile 4.5:1. Light: a lighter page and card, near-black ink, muted text at lightness 0.38, stronger borders (0.45) and a darker gold accent (0.40). Dark: a darker page, whiter ink, brighter muted text (0.84), stronger borders (0.72) and a brighter gold accent (0.92). The greens and the gold of the tiles and top bar are kept: the gold with the dark green ink is already 13:1. Key-word colours (key-1 to key-3): a blue, an orange or gold and a purple, found by a search for the colourful end of what keeps the level's text contrast on the page and the card and stays at least 0.12 apart, and from the ink, in OKLab as seen with normal, protan, deutan and tritan vision.",
+  "extends": "yellow-green",
   "level": "AAA",
   "light": {
     "bg": "oklch(0.970 0.020 175.0)",
@@ -13,11 +14,6 @@
     "rule": "oklch(0.800 0.020 175.0)",
     "rule-strong": "oklch(0.450 0.040 175.0)",
     "accent": "oklch(0.400 0.085 95.3)",
-    "star": "oklch(0.78 0.100 175)",
-    "tile": "oklch(0.887 0.18 95.3)",
-    "on-tile": "#001813",
-    "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813",
     "key-1": "oklch(0.420 0.14 265)",
     "key-2": "oklch(0.430 0.14 85)",
     "key-3": "oklch(0.310 0.14 335)"
@@ -30,11 +26,6 @@
     "rule": "oklch(0.450 0.010 95.3)",
     "rule-strong": "oklch(0.720 0.015 95.3)",
     "accent": "oklch(0.920 0.170 95.3)",
-    "star": "oklch(0.36 0.080 175)",
-    "tile": "oklch(0.887 0.18 95.3)",
-    "on-tile": "#001813",
-    "header": "oklch(0.887 0.18 95.3)",
-    "on-header": "#001813",
     "key-1": "oklch(0.860 0.14 265)",
     "key-2": "oklch(0.770 0.14 50)",
     "key-3": "oklch(0.740 0.14 305)"
