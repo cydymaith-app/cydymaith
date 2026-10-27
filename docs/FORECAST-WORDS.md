@@ -1,6 +1,6 @@
 # Forecast words: synthesis and placement plan
 
-The words collected from S4C broadcasts (uploads 1 to 11, October 2026: *Y Dyddiau Nesaf*, *Dros Nos* and one *Newyddion* storm report), checked against the content as it stands after the Temperature regroup (commit `ed15e9f`), with duplicates removed and each word given one home.
+The words collected from S4C broadcasts (uploads 1 to 12, October 2026; upload 12 is in section 10: *Y Dyddiau Nesaf*, *Dros Nos* and one *Newyddion* storm report), checked against the content as it stands after the Temperature regroup (commit `ed15e9f`), with duplicates removed and each word given one home.
 
 **Update, 27 October 2026:** the weather cards now hold forecast phrases in place of these single words, and The forecast card (`warnings`) is gone: its warnings are phrases on the cards, its pressure is on Change and movement. The tables below record where each word was placed on 26 October; the words live on inside the phrases (see `REVIEW.md`).
 
@@ -492,3 +492,79 @@ One future page, *Effeithiau / Impacts*: the sea, damage and travel. It could be
 | Dechrau *also* dechre, ddechre'r | the start | New (5) |
 | Canol | the middle | Move from held Geiriau amser (4, 7) |
 | Diwedd | the end | New (8) |
+
+## 10. Upload 12 (S4C, 27 October 2026; 30 photos in two batches)
+
+*Y Dyddiau Nesaf* and *Dros Nos*, with a river-flooding report (Rhuddlan, Dinas Powys, Afon Tywi) and a yellow wind warning until 03:00 on Tuesday. Subtitles and on-screen text. Nothing here is in the content yet. Placement is a suggestion.
+
+### New
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Lefelau'r afonydd | river levels | Rain, with a flooding section |
+| Afonydd | rivers (plural of *afon*) | with *lefelau* |
+| Rhybudd llifogydd | flood warning | The forecast, next to *Rhybudd melyn* (*llifogydd* is already a form, softening to *lifogydd*) |
+| Cyfoeth Naturiol Cymru | Natural Resources Wales | The forecast, next to *Y Swyddfa Dywydd*; check as one name |
+| Ffrynt | front | Pressure |
+| Isobariau | isobars | Pressure |
+| Agosau | to approach | Change and movement |
+| Cludo (mwy o law) | to carry (more rain) | Change and movement |
+| Band o law | a band of rain | Rain |
+| Y gwaetha (o'r gwynt) | the worst (of the wind) | Wind, with *y gwaethaf* as the dictionary form |
+| Prif (*y prif beth*) | main | How it's said |
+| Risg o law | a risk of rain | Rain |
+| Yn is (*yn is yfory na heddiw*) | lower | Temperature, pairs with *uwch* |
+| Brafiach | finer | Sky, pairs with *sychach* |
+| Erbyn hyn | by now | Time and date |
+| Yn barod | already | Time and date, next to *eisoes* |
+| Gwefan | website | On screen (shelved) |
+| Manylion | details | On screen (shelved) |
+| Cadw golwg ar | to keep an eye on | On screen (shelved) |
+| Yn werth (heard *werth*) | worth | On screen (shelved) |
+| Holl (*yr holl law 'na*) | all (the) | How it's said |
+| Syndod (*does dim syndod*) | surprise (*it is no surprise*) | How it's said, patterns (shelved) |
+
+### Form
+
+| Welsh | English | On the row |
+|---|---|---|
+| Tymhereddau | temperatures | *Tymheredd* |
+| Mi fydd hi | it will be (colloquial *mi*) | next to *Bydd* |
+| Yn gyson | steadily, constantly | *Newid*; heard *yn gallu newid yn gyson* |
+| Fa'ma | here, colloquial | *Yma* (5) |
+| Hyrddiad (o 65mya) | a gust | *Hyrddiadau* |
+| Gymylog | cloudy, softened | *Cymylog* (already has the note) |
+
+### Already in the content (Have)
+
+*Heulwen*, *cymylog*, *niwlog*, *sych*, *sychach*, *cawodydd*, *ambell gawod*, *glaw trwm*, *cyfnodau braf*, *hyrddio*, *hyd at*, *o gwmpas*, *am gyfnod*, *erbyn*, *parhau*, *clirio*, *stormydd*, *ar y cyfan*, *dros nos*, *hanner nos*, *nos yfory*, *yfory*, *heno*, *i ddod*, *gwyntoedd*, *gwasgedd uchel*, *rheoli*, *sefydlog* (*yn fwy sefydlog*), *troi'n*, *mewn grym*, *rhybudd melyn*, *tua'r dwyrain*, *symud*, *ar ôl*, *hwyrach*, *gogledd*, *gorllewin*, *tymheredd*, *ar ei uchaf*. The map labels *Isel* and *Uchel* are the pressure words already held.
+
+Heard again, already collected: *cymerwch ofal*, *teithio*, *'dach chi'n* (8, 10).
+
+### Patterns (shelved with the sentence patterns)
+
+- *Y gogledd welodd orau'r heulwen*, *dros nos fydd yn gweld y gwaetha*: the place or time put first, then *fydd yn gweld* (it will see). Welsh puts the emphasis first.
+- *Does dim syndod felly fod rhai wedi gweld …*: it is no surprise that some have seen …
+- *Er bod y stormydd wedi clirio'r wlad erbyn hyn*: although the storms have cleared the country by now.
+- *… yn bosib, ond yn eang hyd at 50mya*: possible, but widely up to 50 mph.
+- *Tymhereddau bach yn is yfory na heddiw*: a little lower tomorrow than today (*na* is *nag* before a vowel, noted in 3).
+
+### Places (for the Geography review)
+
+New: *Rhuddlan*, *Dinas Powys*, *Caerfyrddin*, *Cydweli*, *Sychdyn*, *Y Bala*, *Llangurig*, *Llannerch-y-medd*. Noted before: *Aberhonddu* (6), *Hwlffordd* (5), *Caerdydd*. The map also names *Afon Tywi* and *Ardal Cydweli*.
+
+### Units and numbers (for the units page)
+
+- *mya* with ranges and gusts: *40mya*, *45-50mya*, *50-65mya*, *65mya*, *50mya*; *16C ar ei uchaf*. Temperatures on the map are numbers in squares, wind speeds in circles with an arrow.
+- *Tan ddydd Mawrth 03:00*: until Tuesday 03:00, a 24-hour time on the caption. *Tan dri o'r gloch bore fory* is how it is said.
+
+### Left out
+
+The presenters' names and the photo credits (*Llun: …*).
+
+### Questions for a fluent speaker
+
+1. *Y gorllewin fydd ym gweld* (16): is *ym* a typo for *yn*?
+2. *Werth cadw golwg* (9): is it *Mae'n werth cadw golwg*, with the start dropped on screen?
+3. *Fa'ma* (7): which area is it heard in?
+4. *Cyfoeth Naturiol Cymru*: is the organisation's name worth a row, or left as a name?
