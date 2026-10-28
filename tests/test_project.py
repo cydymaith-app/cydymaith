@@ -108,7 +108,10 @@ if __name__ == "__main__":
 
 
 class RelatedTopicsTests(unittest.TestCase):
-    """The weather topics link to the place phrases, and the places link back to how it is said, as a row of tiles."""
+    """The weather topics link to the place phrases, and the places link back to how it is said. On a one-page group the related
+    pages of every topic are one row of tiles at the bottom of the whole page, each once."""
+
+    WEATHER, GEOGRAPHY = "group-weather-forecast.html", "group-geography.html"
 
     @classmethod
     def setUpClass(cls):
@@ -118,45 +121,57 @@ class RelatedTopicsTests(unittest.TestCase):
         cls.site = phrasebook.Site(raw, edition)
         cls.pages = cls.site.render_all()
 
-    def topic(self, slug):
-        """A topic's own part: its page, or on the weather forecast's one page its accordion."""
-        page = self.pages[self.site.href(slug).split("#")[0]]
-        if slug not in self.site.homes:
-            return page
-        start = page.index(f'<details class="fold topic" aria-labelledby="h-topic-{slug}"')
-        end = page.find('<details class="fold topic"', start + 1)
-        return page[start : end if end != -1 else page.index("<script>", start)]
+    def row(self, name):
+        page = self.pages[name]
+        return page[page.index('<section class="related"') :]
 
-    def tiles(self, slug):
-        return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', self.topic(slug))
+    def tiles(self, name):
+        return re.findall(r'<a class="tile-link" href="([^"]+)" data-related>', self.row(name))
 
-    def test_the_weather_topics_that_mention_places_open_the_landscape_page(self):
-        for slug in ("rain", "snow-ice"):
-            self.assertEqual(self.tiles(slug), ["group-geography.html#topic-landscape"], slug)
-        self.assertEqual(self.tiles("patterns"), ["group-geography.html#topic-landscape", "group-geography.html#topic-compass", "when.html"])
+    def test_the_weather_page_ends_with_one_row_of_related_pages_each_once(self):
+        tiles = self.tiles(self.WEATHER)
+        self.assertEqual(len(tiles), len(set(tiles)))
+        self.assertEqual(
+            set(tiles),
+            {
+                "group-geography.html#topic-landscape",  # from Rain, Snow and ice and How it's said
+                "group-geography.html#points",  # from Wind
+                "group-geography.html#topic-compass",  # the group's own link, and from How it's said
+                "when.html",  # from How it's said, as a related page
+            },
+        )
+        self.assertEqual(self.pages[self.WEATHER].count('<section class="related"'), 1)
 
-    def test_landscape_and_the_regions_link_back_to_the_weather(self):
+    def test_the_row_is_after_every_topic_and_none_is_inside_one(self):
+        page = self.pages[self.WEATHER]
+        self.assertLess(page.rindex("</details>"), page.index('<section class="related"'))
+        topics = page[page.index('<div class="topics">') : page.index('<section class="related"')]
+        self.assertNotIn('class="related"', topics)
+
+    def test_geography_links_back_to_the_weather_and_not_to_its_own_topics(self):
         """Pages of the one Geography page are an accordion apart, so only the links out to the weather make tiles."""
-        self.assertEqual(self.tiles("landscape"), ["group-weather-forecast.html#topic-rain", "group-weather-forecast.html#topic-snow-ice"])
-        self.assertEqual(self.tiles("geography"), ["group-weather-forecast.html#there-will-be"])
+        tiles = self.tiles(self.GEOGRAPHY)
+        self.assertEqual(len(tiles), len(set(tiles)))
+        self.assertEqual(
+            set(tiles),
+            {
+                "group-weather-forecast.html#topic-rain",
+                "group-weather-forecast.html#topic-snow-ice",
+                "group-weather-forecast.html#there-will-be",
+                "group-weather-forecast.html#topic-patterns",
+            },
+        )
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
-        row = self.topic("rain")
-        row = row[row.index('<section class="related"') :]
+        row = self.row(self.WEATHER)
         self.assertIn("Pynciau cysylltiedig", row)
         self.assertIn("Related topics", row)
         self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
 
-    def test_wind_opens_the_compass_and_the_places_open_how_it_is_said(self):
-        self.assertEqual(self.tiles("wind"), ["group-geography.html#points"])
-        self.assertEqual(self.tiles("compass"), ["group-weather-forecast.html#topic-patterns"])
-
     def test_how_its_said_opens_time_and_date_as_a_related_page(self):
         """The tile was on The forecast until that card was dropped on 2026-10-27."""
-        self.assertIn("when.html", self.tiles("patterns"))
-        row = self.topic("patterns")
-        row = row[row.index('<section class="related"') :]
-        self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', row)
+        self.assertIn("when.html", self.tiles(self.WEATHER))
+        self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', self.row(self.WEATHER))
 
     def test_every_section_a_tile_lands_on_is_on_the_page_it_opens(self):
         for name, page in self.pages.items():
@@ -164,8 +179,7 @@ class RelatedTopicsTests(unittest.TestCase):
                 target = self.pages[href[0]]
                 self.assertIn(f'id="{href[1]}"', target, f"{name} -> {href}")
 
-    def test_a_topic_with_nothing_related_has_no_row_and_the_group_pages_have_none(self):
-        self.assertNotIn('class="related"', self.topic("sky"))
+    def test_pages_with_nothing_related_have_no_row(self):
         self.assertNotIn('class="related"', self.pages["group-everyday.html"])
         self.assertNotIn('class="related"', self.pages["index.html"])
 

@@ -191,10 +191,10 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(weather["links"], ["compass"])
         page = self.built["group-weather-forecast.html"]
         tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
-        self.assertNotIn('href="when.html"', tiles, "Time and date is reached from How it's said as a related page, not a group tile")
+        self.assertIn('href="when.html" data-related', tiles, "Time and date is reached from How it's said, as a related page in the row at the bottom")
         self.assertIn('href="group-geography.html#topic-compass"', tiles)
         self.assertIn('href="when.html"', self.built["group-everyday.html"])
-        self.assertIn('href="when.html" data-related', topic_html(self.site, self.built, "patterns"))  # moved here when The forecast went
+        self.assertNotIn("data-related", topic_html(self.site, self.built, "patterns"), "the related row is one, at the bottom of the page")
         self.assertIn("Amser a dyddiad", self.built["when.html"])
         self.assertIn("Time and date", self.built["when.html"])
 
