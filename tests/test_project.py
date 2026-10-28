@@ -3,6 +3,7 @@
 Run from the repo root:  python3 -m unittest discover -s tests -v
 """
 import json
+import math
 import pathlib
 import re
 import sys
@@ -13,7 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "framework"))
 
 import phrasebook  # noqa: E402
-from phrasebook import content, grading, icons  # noqa: E402
+from phrasebook import colour, content, grading, icons, palettes  # noqa: E402
 from phrasebook.channels import select  # noqa: E402
 
 PROJECT = ROOT / "content" / "cydymaith"
@@ -258,6 +259,48 @@ class OnePageWeatherTests(unittest.TestCase):
     def test_the_other_groups_keep_their_tiles(self):
         for gid in ("everyday",):
             self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)
+
+
+class YellowGreenPaletteTests(unittest.TestCase):
+    """The yellow and green schemes are consistent in OKLCH (2026-10-28): every colour is written in OKLCH, the green tint is one hue
+    in light and dark, each key colour keeps its hue in both, and no key is mistaken for the accent."""
+
+    IDS = ("yellow-green", "yellow-green-safe", "yellow-green-high-contrast")
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = palettes.load(PROJECT / "palettes")
+        cls.files = {pid: json.loads((PROJECT / "palettes" / f"{pid}.json").read_text(encoding="utf-8")) for pid in cls.IDS}
+
+    def test_every_colour_is_written_in_oklch(self):
+        for pid, palette in self.files.items():
+            for variant in ("light", "dark"):
+                for role, text in palette.get(variant, {}).items():
+                    if text.startswith("#"):
+                        self.assertEqual(text, "", f"{pid} {variant} {role} is hex")
+
+    def test_the_green_tint_of_the_neutrals_is_the_same_hue_in_light_and_dark(self):
+        for pid in ("yellow-green", "yellow-green-high-contrast"):
+            resolved = palettes.resolve(self.raw[pid])
+            for variant in ("light", "dark"):
+                for role in ("bg", "ink", "surface"):
+                    self.assertAlmostEqual(self.hue_of(resolved[variant][role]), 175, delta=6, msg=(pid, variant, role))
+
+    def hue_of(self, rgb):
+        a, b = colour.rgb_to_oklab(rgb)[1:]
+        return math.degrees(math.atan2(b, a)) % 360
+
+    def test_each_key_colour_keeps_its_hue_between_light_and_dark(self):
+        for pid in ("yellow-green", "yellow-green-high-contrast"):
+            for key in palettes.KEYS_OF_WORDS:
+                light, dark = (self.hue_of(palettes.resolve(self.raw[pid])[v][key]) for v in ("light", "dark"))
+                self.assertAlmostEqual(light, dark, delta=6, msg=(pid, key))
+
+    def test_no_key_colour_is_mistaken_for_the_accent(self):
+        for pid in self.IDS:
+            for variant, colours in palettes.resolve(self.raw[pid]).items():
+                for key in palettes.KEYS_OF_WORDS:
+                    self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
 
 
 class SportScaffoldTests(unittest.TestCase):

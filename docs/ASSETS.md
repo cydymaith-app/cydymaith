@@ -65,6 +65,8 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `content/cydymaith/palettes/yellow-green-safe.json` | Derived from `yellow-green.json` by the author, 2026-10-22: only the two accents moved apart in lightness (light 0.489 to 0.33, dark 0.887 to 0.80) so it passes the protan, deutan and tritan checks | Own work; inherits the open question on `red-green.json` above |
 | `content/cydymaith/palettes/yellow-green-high-contrast.json` | Derived from `yellow-green.json` by the author, 2026-10-22, at level AAA (7:1 text, 3:1 borders) | Own work; inherits the open question on `red-green.json` above |
 
+- **Revised 2026-10-28 for consistency in OKLCH (the three yellow and green schemes):** every colour is written in OKLCH (the hex dark background and ink are `oklch(0.187 0.034 175)`); the green tint of the neutrals is hue 175 in light and dark; each key-word colour keeps one hue in both (blue 260, red-orange 25, violet 315) and changes only in lightness; and the keys are at least 0.13 from the accent, which the build does not check (the old orange key was 0.011 from the olive-gold accent, so it looked like a link). `red-green.json` keeps its original keys, since its accent is red.
+
 The framework's own palettes are recorded in its `docs/ASSETS.md`.
 
 The tool's settings, so the palette can be regenerated: <https://www.hellocolor.de/?base=%23EF4444&preset=art-deco&size=8&contrast=0.56&vibrancy=0.78&brightness=0.48&a11y=AA> (preset Art Deco, base `#EF4444`, scale size 8, contrast 0.56, vibrancy 0.78, brightness 0.48, accessibility AA). The tool builds its colours in the browser, so the link records the inputs, not the output. The output is kept in the palette file.
