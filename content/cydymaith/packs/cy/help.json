@@ -196,7 +196,7 @@
     "accessibility": {
       "title": "Cynlluniau lliw haws eu gweld",
       "body": [
-        "Mae Hygyrchedd yn dewis pa gynlluniau lliw a gynigir oddi tano. Mae Safonol yn dangos y cynlluniau arferol. Mae Lliwiau diogel yn dangos cynlluniau sy'n hawdd eu gwahaniaethu gyda dallineb lliw. Mae Cyferbyniad uchel yn dangos cynlluniau â thestun ac ymylon cryfach.",
+        "Mae Hygyrchedd yn dewis pa gynlluniau lliw a gynigir oddi tano. Mae Safonol yn dangos y cynlluniau arferol. Mae Lliwiau diogel yn dangos cynlluniau sy'n hawdd eu gwahaniaethu gyda dallineb lliw, ac Unlliw, mewn llwydion yn unig, i'r rhai nad ydynt yn gweld lliw o gwbl. Mae Cyferbyniad uchel yn dangos cynlluniau â thestun ac ymylon cryfach.",
         "Mae dewis lefel yn newid i'r cynllun a ddewiswyd gennych ddiwethaf yn y lefel honno, neu'r cyntaf a restrir."
       ],
       "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
@@ -222,7 +222,7 @@
     "key-words": {
       "title": "Lliwio'r geiriau allweddol",
       "body": [
-        "Mae Geiriau allweddol yn nodi prif eiriau rhes, a'r gair cyfatebol yn yr iaith arall, mewn un o ddwy ffordd. Mae Lliw yn rhoi'r un lliw i bâr, ac yn dilyn y cynllun lliw a ddewiswyd gennych. Mae Tanlinell yn rhoi'r un llinell i bâr: solet, dotiog neu donnog, fel y gallwch gyfateb geiriau heb ddibynnu ar liw. Mae Lliwiau diogel yn cadw'r ddau, gyda lliwiau a ddewiswyd i aros ar wahân i'r rhai sy'n ddall i liw. Gyda Chyferbyniad uchel dim ond Tanlinell a gynigir, a defnyddir y llinell pryd bynnag y bydd eich dyfais yn diystyru lliwiau. Diffoddwch ef os nad oes ei angen mwyach."
+        "Mae Geiriau allweddol yn nodi prif eiriau rhes, a'r gair cyfatebol yn yr iaith arall, mewn un o ddwy ffordd. Mae Lliw yn rhoi'r un lliw i bâr, ac yn dilyn y cynllun lliw a ddewiswyd gennych. Mae Tanlinell yn rhoi'r un llinell i bâr: solet, dotiog neu donnog, fel y gallwch gyfateb geiriau heb ddibynnu ar liw. Mae Lliwiau diogel yn cadw'r ddau, gyda lliwiau a ddewiswyd i aros ar wahân i'r rhai sy'n ddall i liw. Gyda Chyferbyniad uchel neu Unlliw dim ond Tanlinell a gynigir, a defnyddir y llinell pryd bynnag y bydd eich dyfais yn diystyru lliwiau. Diffoddwch ef os nad oes ei angen mwyach."
       ],
       "keys": "Tabiwch at y dewisiadau a defnyddio'r bysellau saeth.",
       "touch": "Tapiwch ddewis."

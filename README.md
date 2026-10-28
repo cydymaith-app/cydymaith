@@ -74,7 +74,7 @@ The Welsh comes first in each row (above the English), because it is the languag
   ```json
   "rain": { "text": "Glaw", "also": ["law"] }
   ```
-- `keys`: up to three words of the text, with the matching words in the other language in the same order. They are drawn in the same colour, or the same underline, in both, to match what is heard to what is read. The position in the list is the colour, and `null` skips one, so a word keeps its colour from row to row. **Settings → Geiriau allweddol / Key words** chooses colour, underline or neither; colour is not offered with high contrast.
+- `keys`: up to three words of the text, with the matching words in the other language in the same order. They are drawn in the same colour, or the same underline, in both, to match what is heard to what is read. The position in the list is the colour, and `null` skips one, so a word keeps its colour from row to row. **Settings → Geiriau allweddol / Key words** chooses colour, underline or neither; colour is not offered with high contrast or monochrome.
 
   ```json
   "heavy-rain-and-strong-wind": { "text": "Glaw trwm a gwynt cryf", "keys": ["gwynt", "Glaw"] }

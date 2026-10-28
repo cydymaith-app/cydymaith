@@ -176,7 +176,9 @@ Features of the framework and the general features it enables, driven from this 
   - [ ] Visitors who saved a colour scheme before 2026-10-27 have `default` saved, which is now the neutral scheme, not red and green. Decide whether that needs a migration before release; nobody has used the app yet, so it may not.
   - [ ] Look at the five new colour schemes in a real browser, light and dark (`python build.py dist --screenshots`), and have the Welsh names checked.
   - [x] **Sections collapse.** Each headed section of a topic is an accordion, shut to begin with unless it is the page's only section (2026-10-28). Still to do: remember which are shut, a shut-all and open-all control, a help entry (run the `app-help` skill), and look at it on a phone with a screen reader.
-  - [ ] Consider more palettes (monochrome for achromatopsia, a low-glare dark, a sepia) and text-size and line-spacing preferences. Each is a data file or a small control.
+  - [x] **More palettes** (2026-10-28): `sepia`, warm and low in glare (paper in light, dimmed cream text in dark; standard level), and `monochrome`, greys only for achromatopsia (safe level). The build simulates no colour vision (`achromat`) as well as the three colour blindnesses. Key words are underlined with Monochrome, as with High contrast: its key greys pass the check but the darkest is hard to tell from the text. A low-glare dark is part of Sepia rather than a palette of its own.
+  - [ ] Text-size and line-spacing preferences: each a small control in Accessibility and appearance. Check first that pages reflow at 200% (WCAG 1.4.4) and survive text-spacing overrides (WCAG 1.4.12).
+  - [ ] `python build.py dist --screenshots` fails: it shoots `compass.html`, which no longer exists now that Geography is one page.
 - [x] **Tests for the controls and the preferences logic.** Node tests cover reading, validating, applying and saving the preferences; build tests cover the controls, the pre-paint script and the generated palettes.
 
 ### 3.2 App features of the framework
