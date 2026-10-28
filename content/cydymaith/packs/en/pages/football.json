@@ -32,8 +32,17 @@
         "a-great-chance": {
           "text": "A great chance"
         },
+        "a-corner-kick": {
+          "text": "A corner kick"
+        },
+        "the-far-post": {
+          "text": "The far post"
+        },
         "a-shot-over-the-bar": {
           "text": "A shot over the bar"
+        },
+        "the-crossbar": {
+          "text": "The crossbar"
         },
         "a-great-save": {
           "text": "A great save by the keeper"

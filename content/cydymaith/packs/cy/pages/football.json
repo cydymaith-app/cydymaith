@@ -34,7 +34,7 @@
     },
     "chances": {
       "title": "Cyfleoedd a goliau",
-      "order": "chance, shot, save, then goal",
+      "order": "chance, corner, far post, shot, crossbar, save, then goal",
       "concepts": {
         "a-great-chance": {
           "text": "Cyfle gwych",
@@ -42,8 +42,23 @@
             "gyfle"
           ]
         },
+        "a-corner-kick": {
+          "text": "Cic gornel",
+          "also": [
+            "gic gornel"
+          ]
+        },
+        "the-far-post": {
+          "text": "Postyn pellach",
+          "also": [
+            "bostyn pellach"
+          ]
+        },
         "a-shot-over-the-bar": {
           "text": "Ergyd dros y trawst"
+        },
+        "the-crossbar": {
+          "text": "Postyn croes"
         },
         "a-great-save": {
           "text": "Arbediad gwych gan y golwr"
