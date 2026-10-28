@@ -25,6 +25,52 @@
         },
         "wrexham": {
           "text": "Wrexham"
+        },
+        "carmarthen": {
+          "text": "Carmarthen"
+        },
+        "kidwelly": {
+          "text": "Kidwelly"
+        },
+        "dinas-powys": {
+          "text": "Dinas Powys"
+        },
+        "rhuddlan": {
+          "text": "Rhuddlan"
+        }
+      }
+    },
+    "forecast-map": {
+      "title": "On the forecast map",
+      "concepts": {
+        "llannerch-y-medd": {
+          "text": "Llannerch-y-medd"
+        },
+        "sychdyn": {
+          "text": "Soughton"
+        },
+        "bala": {
+          "text": "Bala"
+        },
+        "llangurig": {
+          "text": "Llangurig"
+        },
+        "brecon": {
+          "text": "Brecon"
+        },
+        "haverfordwest": {
+          "text": "Haverfordwest"
+        }
+      }
+    },
+    "rivers": {
+      "title": "Rivers",
+      "concepts": {
+        "river-clwyd": {
+          "text": "River Clwyd"
+        },
+        "river-tywi": {
+          "text": "River Tywi (Towy)"
         }
       }
     },

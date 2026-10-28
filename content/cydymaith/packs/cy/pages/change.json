@@ -11,7 +11,10 @@
             "Gwasgedd uchel",
             "rheoli"
           ],
-          "note": "{{rheoli}}: to control, to dominate"
+          "note": "{{rheoli}}: to control, to dominate",
+          "also": [
+            "gwasgedd uchel yn dechrau rheoli"
+          ]
         },
         "a-ridge-of-high-pressure-moving-in": {
           "text": "Cefnlen o wasgedd uchel yn symud i mewn",
@@ -39,6 +42,25 @@
           "keys": [
             "Gwasgedd isel",
             "glaw"
+          ]
+        },
+        "a-front-bringing-more-rain": {
+          "text": "Ffrynt yn cludo mwy o law",
+          "keys": [
+            "Ffrynt",
+            "law"
+          ],
+          "note": "{{glaw}} softens to {{law}} after {{o}}"
+        },
+        "the-isobars-closing-up": {
+          "text": "Yr isobariau ar y map yn agosáu",
+          "keys": [
+            "isobariau",
+            "agosáu"
+          ],
+          "note": "isobars close together mean strong wind",
+          "also": [
+            "agosau"
           ]
         }
       },
@@ -106,6 +128,17 @@
           ],
           "also": [
             "i adael"
+          ]
+        },
+        "a-band-of-heavy-rain-moving-east": {
+          "text": "Band o law trwm yn symud tua'r dwyrain",
+          "keys": [
+            "law trwm",
+            "dwyrain"
+          ],
+          "note": "{{band}} softens to {{fand}} after {{mae 'na}}",
+          "also": [
+            "mae 'na fand o law trwm"
           ]
         }
       },
@@ -237,6 +270,20 @@
           "keys": [
             "sefydlogi",
             "fymryn"
+          ]
+        },
+        "clearing-on-the-whole-after-midnight": {
+          "text": "Yn clirio ar y cyfan ar ôl hanner nos",
+          "keys": [
+            "clirio",
+            "hanner nos"
+          ]
+        },
+        "turning-drier-and-finer-during-the-day": {
+          "text": "Troi'n sychach ac yn brafiach yn ystod y dydd",
+          "keys": [
+            "sychach",
+            "brafiach"
           ]
         }
       },

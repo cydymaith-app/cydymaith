@@ -226,6 +226,41 @@
         }
       }
     },
+    "place-first": {
+      "title": "Putting the place first",
+      "concepts": {
+        "the-west-will-see-the-worst": {
+          "text": "It's the west that will see the worst",
+          "keys": [
+            "west",
+            "worst"
+          ]
+        },
+        "overnight-will-see-the-worst-of-the-wind": {
+          "text": "Overnight is when the wind will be at its worst",
+          "keys": [
+            "Overnight",
+            "worst",
+            "wind"
+          ]
+        },
+        "the-north-had-the-best-of-the-sunshine": {
+          "text": "It was the north that had the best of the sunshine today",
+          "keys": [
+            "north",
+            "best",
+            "sunshine"
+          ]
+        },
+        "high-pressure-starting-to-take-over": {
+          "text": "It's high pressure that's starting to take over",
+          "keys": [
+            "high pressure",
+            "take over"
+          ]
+        }
+      }
+    },
     "wind-from": {
       "title": "Naming the wind",
       "concepts": {
@@ -282,6 +317,9 @@
         },
         "localities": {
           "text": "Places"
+        },
+        "widely": {
+          "text": "Widely"
         }
       }
     },
@@ -317,6 +355,9 @@
         },
         "other": {
           "text": "Others, other"
+        },
+        "all-the": {
+          "text": "All (the)"
         }
       }
     },
@@ -352,6 +393,12 @@
         },
         "with": {
           "text": "With"
+        },
+        "although": {
+          "text": "Although"
+        },
+        "because": {
+          "text": "Because"
         }
       }
     },
@@ -363,6 +410,15 @@
         },
         "middle": {
           "text": "Middle"
+        },
+        "by-now": {
+          "text": "By now"
+        },
+        "already": {
+          "text": "Already"
+        },
+        "to-come": {
+          "text": "To come"
         }
       }
     },
@@ -405,6 +461,15 @@
         },
         "than": {
           "text": "Than"
+        },
+        "lower": {
+          "text": "Lower"
+        },
+        "finer": {
+          "text": "Finer"
+        },
+        "more-so": {
+          "text": "More"
         }
       }
     },

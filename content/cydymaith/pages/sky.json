@@ -11,7 +11,12 @@
         "dry-on-the-whole",
         "clear-skies-overnight",
         "sunny-at-first-before-clouding-over",
-        "cloudy-at-first"
+        "cloudy-at-first",
+        "a-cloudy-day-on-the-whole",
+        "sunshine-and-showers",
+        "sunshine-and-the-odd-shower",
+        "some-fine-spells-later-in-the-day",
+        "dry-for-a-while-overnight"
       ]
     },
     {
@@ -20,7 +25,8 @@
         "thick-fog-on-the-hills",
         "mist-in-the-valleys",
         "poor-visibility-on-some-roads",
-        "the-fog-clearing-by-mid-morning"
+        "the-fog-clearing-by-mid-morning",
+        "foggy-in-the-morning"
       ]
     },
     {
@@ -30,7 +36,8 @@
         "a-dull-grey-day",
         "settled-for-a-while",
         "changeable-over-the-weekend",
-        "unsettled-from-mid-week-onwards"
+        "unsettled-from-mid-week-onwards",
+        "more-settled-by-wednesday"
       ]
     }
   ]

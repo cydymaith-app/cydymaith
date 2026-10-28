@@ -58,6 +58,25 @@
           ],
           "note": "{{am}} softens {{glaw}} to {{law}}"
         },
+        "a-risk-of-rain": {
+          "text": "There is a risk of rain",
+          "keys": [
+            "risk",
+            "rain"
+          ]
+        },
+        "the-odd-shower-may-linger": {
+          "text": "The odd shower may linger",
+          "keys": [
+            "shower",
+            "linger"
+          ]
+        }
+      }
+    },
+    "flooding": {
+      "title": "Flooding",
+      "concepts": {
         "a-risk-of-flooding": {
           "text": "A risk of flooding",
           "keys": [
@@ -66,6 +85,50 @@
             "risk"
           ],
           "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
+        },
+        "a-flood-warning": {
+          "text": "A flood warning",
+          "keys": [
+            "warning",
+            "flood"
+          ]
+        },
+        "river-levels-are-high": {
+          "text": "River levels are high",
+          "keys": [
+            "levels",
+            "River",
+            "high"
+          ]
+        },
+        "after-all-that-rain": {
+          "text": "After all that rain",
+          "keys": [
+            "all",
+            "rain"
+          ]
+        },
+        "some-have-already-seen-flooding": {
+          "text": "Some have already seen flooding",
+          "keys": [
+            "seen",
+            "flooding",
+            "already"
+          ]
+        },
+        "the-warnings-can-change-all-the-time": {
+          "text": "The warnings can change all the time",
+          "keys": [
+            "warnings",
+            "change"
+          ]
+        },
+        "keep-an-eye-on-the-natural-resources-wales-website": {
+          "text": "Keep an eye on the Natural Resources Wales website",
+          "keys": [
+            "Keep an eye",
+            "website"
+          ]
         }
       }
     },
@@ -103,6 +166,21 @@
             "storms"
           ],
           "note": "{{dwy}} is two before a feminine noun"
+        },
+        "more-rough-weather-to-come": {
+          "text": "More rough weather to come",
+          "keys": [
+            "rough weather",
+            "to come"
+          ]
+        },
+        "the-storms-have-cleared-the-country-by-now": {
+          "text": "The storms have cleared the country by now",
+          "keys": [
+            "storms",
+            "cleared",
+            "by now"
+          ]
         }
       }
     }

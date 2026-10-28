@@ -11,9 +11,31 @@
         "aberystwyth",
         "bangor",
         "cardiff",
+        "carmarthen",
         "holyhead",
         "newport",
+        "kidwelly",
+        "dinas-powys",
+        "rhuddlan",
         "wrexham"
+      ]
+    },
+    {
+      "id": "forecast-map",
+      "concepts": [
+        "llannerch-y-medd",
+        "sychdyn",
+        "bala",
+        "llangurig",
+        "brecon",
+        "haverfordwest"
+      ]
+    },
+    {
+      "id": "rivers",
+      "concepts": [
+        "river-clwyd",
+        "river-tywi"
       ]
     },
     {

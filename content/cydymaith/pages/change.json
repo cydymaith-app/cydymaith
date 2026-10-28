@@ -3,17 +3,17 @@
   "sections": [
     {
       "id": "pressure",
-      "status": "development",
       "concepts": [
         "high-pressure-in-charge",
         "a-ridge-of-high-pressure-moving-in",
         "an-area-of-intense-low-pressure",
-        "low-pressure-bringing-rain"
+        "low-pressure-bringing-rain",
+        "a-front-bringing-more-rain",
+        "the-isobars-closing-up"
       ]
     },
     {
       "id": "moving",
-      "status": "development",
       "concepts": [
         "hitting-the-west-first",
         "arriving-by-the-morning",
@@ -21,12 +21,12 @@
         "extending-over-towards-anglesey",
         "moving-in-from-the-west",
         "the-rain-clearing-away",
-        "leaving-us-overnight"
+        "leaving-us-overnight",
+        "a-band-of-heavy-rain-moving-east"
       ]
     },
     {
       "id": "which-way",
-      "status": "development",
       "concepts": [
         "towards-the-east",
         "from-the-direction-of-ireland",
@@ -38,7 +38,6 @@
     },
     {
       "id": "changing",
-      "status": "development",
       "concepts": [
         "changing-by-the-weekend",
         "turning-more-unsettled",
@@ -48,12 +47,13 @@
         "calming-down-overnight",
         "clouding-over-from-the-west",
         "brightening-up-by-the-afternoon",
-        "if-it-were-to-settle-a-little"
+        "if-it-were-to-settle-a-little",
+        "clearing-on-the-whole-after-midnight",
+        "turning-drier-and-finer-during-the-day"
       ]
     },
     {
       "id": "other-verbs",
-      "status": "development",
       "concepts": [
         "strong-winds-are-expected",
         "the-rain-will-continue-all-day",

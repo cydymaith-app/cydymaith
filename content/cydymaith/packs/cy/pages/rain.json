@@ -63,6 +63,27 @@
           ],
           "note": "{{am}} softens {{glaw}} to {{law}}"
         },
+        "a-risk-of-rain": {
+          "text": "Mae yna risg o law",
+          "keys": [
+            "risg",
+            "law"
+          ],
+          "note": "{{glaw}} softens to {{law}} after {{o}}"
+        },
+        "the-odd-shower-may-linger": {
+          "text": "Ambell gawod yn gallu parhau",
+          "keys": [
+            "gawod",
+            "parhau"
+          ]
+        }
+      },
+      "order": "lightest to heaviest, then the warning and the flooding"
+    },
+    "flooding": {
+      "title": "Llifogydd",
+      "concepts": {
         "a-risk-of-flooding": {
           "text": "Perygl o lifogydd",
           "keys": [
@@ -71,9 +92,58 @@
             "Perygl"
           ],
           "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
+        },
+        "a-flood-warning": {
+          "text": "Rhybudd llifogydd",
+          "keys": [
+            "Rhybudd",
+            "llifogydd"
+          ]
+        },
+        "river-levels-are-high": {
+          "text": "Lefelau'r afonydd yn uchel",
+          "keys": [
+            "Lefelau",
+            "afonydd",
+            "uchel"
+          ]
+        },
+        "after-all-that-rain": {
+          "text": "Ar ôl yr holl law 'na",
+          "keys": [
+            "holl",
+            "law"
+          ],
+          "note": "{{glaw}} softens to {{law}} after {{holl}}; {{'na}} is short for {{yna}} (that)"
+        },
+        "some-have-already-seen-flooding": {
+          "text": "Rhai wedi gweld llifogydd yn barod",
+          "keys": [
+            "gweld",
+            "llifogydd",
+            "yn barod"
+          ]
+        },
+        "the-warnings-can-change-all-the-time": {
+          "text": "Mae'r rhybuddion yn gallu newid yn gyson",
+          "keys": [
+            "rhybuddion",
+            "newid"
+          ]
+        },
+        "keep-an-eye-on-the-natural-resources-wales-website": {
+          "text": "Cadw golwg ar wefan Cyfoeth Naturiol Cymru",
+          "keys": [
+            "Cadw golwg",
+            "wefan"
+          ],
+          "note": "{{Cyfoeth Naturiol Cymru}} (Natural Resources Wales) is where to check flood warnings and river levels; {{gwefan}} softens to {{wefan}} after {{ar}}",
+          "also": [
+            "werth cadw golwg"
+          ]
         }
       },
-      "order": "lightest to heaviest, then the warning and the flooding"
+      "order": "the warning, then the rivers, then what has happened, then where to look"
     },
     "storms": {
       "title": "Mellt a tharanau",
@@ -109,6 +179,23 @@
             "storm"
           ],
           "note": "{{dwy}} is two before a feminine noun"
+        },
+        "more-rough-weather-to-come": {
+          "text": "Mwy o dywydd garw i ddod",
+          "keys": [
+            "dywydd garw",
+            "i ddod"
+          ],
+          "note": "{{tywydd}} softens to {{dywydd}} after {{o}}"
+        },
+        "the-storms-have-cleared-the-country-by-now": {
+          "text": "Y stormydd wedi clirio'r wlad erbyn hyn",
+          "keys": [
+            "stormydd",
+            "clirio",
+            "erbyn hyn"
+          ],
+          "note": "{{gwlad}} softens to {{wlad}} after {{y}}, as {{'r}} here"
         }
       },
       "order": "thunder and lightning, then storms and rough weather"
