@@ -50,10 +50,8 @@
       },
       "order": "round the compass from the north"
     },
-    "north-and-east": {
-      "title": "Y gogledd a'r dwyrain",
-      "order": "round the compass from the north: from, in, then in that part of Wales",
-      "intro": "After {{yn}} (in) the first letter changes: {{gogledd}} becomes {{ngogledd}}, {{canolbarth}} becomes {{nghanolbarth}}, {{gorllewin}} becomes {{ngorllewin}} and {{de}} becomes {{ne}}. {{yn}} itself becomes {{yng}} before those sounds. The plain name of each part of Wales is listed as another way it is heard.",
+    "from-which-way": {
+      "title": "O ba gyfeiriad",
       "concepts": {
         "from-the-north": {
           "text": "O'r gogledd",
@@ -62,23 +60,6 @@
           ],
           "also": [
             "gogleddol"
-          ]
-        },
-        "in-the-north": {
-          "text": "Yn y gogledd",
-          "keys": [
-            "gogledd"
-          ]
-        },
-        "in-north-wales": {
-          "text": "Yng ngogledd Cymru",
-          "keys": [
-            "ngogledd",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "Gogledd Cymru"
           ]
         },
         "from-the-north-east": {
@@ -90,17 +71,6 @@
             "gogledd-ddwyreiniol"
           ]
         },
-        "in-north-east-wales": {
-          "text": "Yng ngogledd-ddwyrain Cymru",
-          "keys": [
-            "ngogledd-ddwyrain",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "Gogledd-ddwyrain Cymru"
-          ]
-        },
         "from-the-east": {
           "text": "O'r dwyrain",
           "keys": [
@@ -108,12 +78,6 @@
           ],
           "also": [
             "dwyreiniol"
-          ]
-        },
-        "in-the-east": {
-          "text": "Yn y dwyrain",
-          "keys": [
-            "dwyrain"
           ]
         },
         "from-the-south-east": {
@@ -125,23 +89,6 @@
             "de-ddwyreiniol"
           ]
         },
-        "in-south-east-wales": {
-          "text": "Yn ne-ddwyrain Cymru",
-          "keys": [
-            "ne-ddwyrain",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "De-ddwyrain Cymru"
-          ]
-        }
-      }
-    },
-    "south-and-west": {
-      "title": "Y de a'r gorllewin",
-      "order": "round the compass from the south: from, in, then in that part of Wales",
-      "concepts": {
         "from-the-south": {
           "text": "O'r de",
           "keys": [
@@ -149,31 +96,6 @@
           ],
           "also": [
             "deheuol"
-          ]
-        },
-        "in-the-south": {
-          "text": "Yn y de",
-          "keys": [
-            "de"
-          ]
-        },
-        "further-south": {
-          "text": "Ymhellach i'r de",
-          "keys": [
-            "de",
-            null,
-            "Ymhellach"
-          ]
-        },
-        "in-south-wales": {
-          "text": "Yn ne Cymru",
-          "keys": [
-            "ne",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "De Cymru"
           ]
         },
         "from-the-south-west": {
@@ -188,67 +110,151 @@
         "from-the-west": {
           "text": "O'r gorllewin",
           "keys": [
-            null,
             "gorllewin"
           ],
           "also": [
             "gorllewinol"
           ]
         },
+        "from-the-north-west": {
+          "text": "O'r gogledd-orllewin",
+          "keys": [
+            "gogledd-orllewin"
+          ],
+          "also": [
+            "gogledd-orllewinol"
+          ]
+        }
+      },
+      "order": "round the compass from the north"
+    },
+    "which-part": {
+      "title": "Ym mha ran",
+      "concepts": {
+        "in-the-north": {
+          "text": "Yn y gogledd",
+          "keys": [
+            "gogledd"
+          ]
+        },
+        "in-the-east": {
+          "text": "Yn y dwyrain",
+          "keys": [
+            "dwyrain"
+          ]
+        },
+        "in-the-south": {
+          "text": "Yn y de",
+          "keys": [
+            "de"
+          ]
+        },
         "in-the-west": {
           "text": "Yn y gorllewin",
           "keys": [
-            null,
             "gorllewin"
+          ]
+        },
+        "further-south": {
+          "text": "Ymhellach i'r de",
+          "keys": [
+            "de",
+            null,
+            "Ymhellach"
+          ]
+        }
+      },
+      "order": "the four directions, then further south"
+    },
+    "parts-of-wales": {
+      "title": "Rhannau o Gymru",
+      "concepts": {
+        "in-north-wales": {
+          "text": "Yng ngogledd Cymru",
+          "keys": [
+            "ngogledd",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd Cymru"
+          ]
+        },
+        "in-north-east-wales": {
+          "text": "Yng ngogledd-ddwyrain Cymru",
+          "keys": [
+            "ngogledd-ddwyrain",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd-ddwyrain Cymru"
+          ]
+        },
+        "in-north-west-wales": {
+          "text": "Yng ngogledd-orllewin Cymru",
+          "keys": [
+            "ngogledd-orllewin",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Gogledd-orllewin Cymru"
+          ]
+        },
+        "in-mid-wales": {
+          "text": "Yng nghanolbarth Cymru",
+          "keys": [
+            "nghanolbarth",
+            null,
+            "Cymru"
+          ],
+          "also": [
+            "Canolbarth Cymru"
           ]
         },
         "in-west-wales": {
           "text": "Yng ngorllewin Cymru",
           "keys": [
-            null,
             "ngorllewin",
+            null,
             "Cymru"
           ],
           "also": [
             "Gorllewin Cymru"
           ]
         },
-        "from-the-north-west": {
-          "text": "O'r gogledd-orllewin",
+        "in-south-east-wales": {
+          "text": "Yn ne-ddwyrain Cymru",
           "keys": [
+            "ne-ddwyrain",
             null,
-            "gogledd-orllewin"
+            "Cymru"
           ],
           "also": [
-            "gogledd-orllewinol"
+            "De-ddwyrain Cymru"
           ]
         },
-        "in-north-west-wales": {
-          "text": "Yng ngogledd-orllewin Cymru",
+        "in-south-west-wales": {
+          "text": "Yn ne-orllewin Cymru",
           "keys": [
+            "ne-orllewin",
             null,
-            "ngogledd-orllewin",
             "Cymru"
           ],
           "also": [
-            "Gogledd-orllewin Cymru"
+            "De-orllewin Cymru"
           ]
-        }
-      }
-    },
-    "all-of-wales": {
-      "title": "Y canol a'r cyfan",
-      "order": "the middle, then all of Wales, then the whole country",
-      "concepts": {
-        "in-mid-wales": {
-          "text": "Yng nghanolbarth Cymru",
+        },
+        "in-south-wales": {
+          "text": "Yn ne Cymru",
           "keys": [
+            "ne",
             null,
-            "nghanolbarth",
             "Cymru"
           ],
           "also": [
-            "Canolbarth Cymru"
+            "De Cymru"
           ]
         },
         "across-wales": {
@@ -271,7 +277,9 @@
             "wlad"
           ]
         }
-      }
+      },
+      "order": "north to south, then all of Wales",
+      "intro": "After {{yn}} (in) the first letter changes: {{gogledd}} becomes {{ngogledd}}, {{canolbarth}} becomes {{nghanolbarth}}, {{gorllewin}} becomes {{ngorllewin}} and {{de}} becomes {{ne}}. {{yn}} itself becomes {{yng}} before those sounds. The plain name of each part of Wales is listed as another way it is heard."
     }
   }
 }

@@ -215,7 +215,7 @@ class GradingTests(unittest.TestCase):
         """north = gogledd comes first; in the north, on the coast, in the valleys follow."""
         points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
-        self.assertGreater(self.sections[("compass", "north-and-east")]["level"], points)
+        self.assertGreater(self.sections[("compass", "which-part")]["level"], points)
         self.assertGreater(self.sections[("landscape", "inland")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
@@ -397,11 +397,11 @@ class GeographyStandardTests(unittest.TestCase):
     def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
         regions = {
             cid: c
-            for sid in ("north-and-east", "south-and-west", "all-of-wales")
+            for sid in ("from-which-way", "which-part", "parts-of-wales")
             for cid, c in self.section("compass", sid)["concepts"].items()
             if cid.endswith("-wales")
         }
-        self.assertEqual(len(regions), 8)
+        self.assertEqual(len(regions), 9)  # south-west Wales was added on 2026-10-28, a draft not heard on air
         self.assertEqual(regions["in-north-wales"]["text"], "Yng ngogledd Cymru")
         self.assertIn("Gogledd Cymru", regions["in-north-wales"]["also"])
         self.assertIn("Yng Nghymru", regions["across-wales"]["also"])
@@ -412,13 +412,25 @@ class GeographyStandardTests(unittest.TestCase):
         for slug in ("rain", "snow-ice", "patterns"):
             self.assertIn("landscape", self.raw["pages"][slug]["related"], slug)
 
-    def test_the_compass_gives_each_point_as_a_family_from_in_and_in_wales_round_from_the_north(self):
-        """2026-10-28: From which way, Areas and Regions of Wales became one family per point, so the forms sit together."""
-        north = list(self.section("compass", "north-and-east")["concepts"])
-        self.assertEqual(north[:3], ["from-the-north", "in-the-north", "in-north-wales"])
-        south = list(self.section("compass", "south-and-west")["concepts"])
-        self.assertEqual(south[:4], ["from-the-south", "in-the-south", "further-south", "in-south-wales"])
+    def test_the_compass_has_one_card_for_each_way_a_forecast_uses_a_direction(self):
+        """2026-10-28: the cards were by kind, not by point: which way it comes from, which part, and which part of Wales."""
+        from_ = list(self.section("compass", "from-which-way")["concepts"])
+        self.assertEqual(from_, [f"from-the-{d}" for d in ("north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west")])
+        self.assertEqual(list(self.section("compass", "which-part")["concepts"])[:4],
+                         ["in-the-north", "in-the-east", "in-the-south", "in-the-west"])
+        wales = list(self.section("compass", "parts-of-wales")["concepts"])
+        self.assertEqual(wales[:2], ["in-north-wales", "in-north-east-wales"])
+        self.assertEqual(wales[-2:], ["across-wales", "across-the-whole-country"])
+        self.assertIn("in-south-west-wales", wales)
         self.assertNotIn("regions", self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
+
+    def test_every_compass_direction_is_the_first_key_word_so_it_keeps_its_colour(self):
+        for code in ("cy", "en"):
+            for sid in ("from-which-way", "which-part", "parts-of-wales"):
+                for cid, c in self.raw["packs"][code]["pages"]["compass"]["sections"][sid]["concepts"].items():
+                    if cid.startswith(("across", "further")):
+                        continue
+                    self.assertIsNotNone(c["keys"][0], (code, cid))
 
     def test_the_named_places_are_landmarks_on_place_names(self):
         landmarks = self.section("geography", "named")
@@ -462,7 +474,7 @@ class KeyWordTests(unittest.TestCase):
 
     GEOGRAPHY = ("compass", "geography", "landscape", "place-name-elements")
     MARKED = {
-        "compass": {"north-and-east", "south-and-west", "all-of-wales"},
+        "compass": {"from-which-way", "which-part", "parts-of-wales"},
         "geography": {"named", "uk"},
         "landscape": {"coast", "inland"},
         "place-name-elements": set(),

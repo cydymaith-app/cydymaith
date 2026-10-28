@@ -354,7 +354,7 @@ class BuildTests(unittest.TestCase):
         # and upload 12 added four towns, the six other towns on the forecast map and two rivers
         self.assertEqual(self.site.count_entries("geography"), 28)
         self.assertEqual([s["id"] for s in self.site.skel["landscape"]["sections"]], ["coast", "inland"])
-        self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "north-and-east", "south-and-west", "all-of-wales"])
+        self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "which-part", "parts-of-wales"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
         self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])

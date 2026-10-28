@@ -19,38 +19,39 @@
       ]
     },
     {
-      "id": "north-and-east",
+      "id": "from-which-way",
       "concepts": [
         "from-the-north",
-        "in-the-north",
-        "in-north-wales",
         "from-the-north-east",
-        "in-north-east-wales",
         "from-the-east",
-        "in-the-east",
         "from-the-south-east",
-        "in-south-east-wales"
-      ]
-    },
-    {
-      "id": "south-and-west",
-      "concepts": [
         "from-the-south",
-        "in-the-south",
-        "further-south",
-        "in-south-wales",
         "from-the-south-west",
         "from-the-west",
-        "in-the-west",
-        "in-west-wales",
-        "from-the-north-west",
-        "in-north-west-wales"
+        "from-the-north-west"
       ]
     },
     {
-      "id": "all-of-wales",
+      "id": "which-part",
       "concepts": [
+        "in-the-north",
+        "in-the-east",
+        "in-the-south",
+        "in-the-west",
+        "further-south"
+      ]
+    },
+    {
+      "id": "parts-of-wales",
+      "concepts": [
+        "in-north-wales",
+        "in-north-east-wales",
+        "in-north-west-wales",
         "in-mid-wales",
+        "in-west-wales",
+        "in-south-east-wales",
+        "in-south-west-wales",
+        "in-south-wales",
         "across-wales",
         "across-the-whole-country"
       ]
