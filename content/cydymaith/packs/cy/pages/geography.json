@@ -101,21 +101,6 @@
       "intro": "The towns the S4C forecast map labels every night. The seventh, {{Caerdydd}}, is under Towns and cities.",
       "order": "north to south, as on the map"
     },
-    "rivers": {
-      "title": "Afonydd",
-      "concepts": {
-        "river-clwyd": {
-          "text": "Afon Clwyd",
-          "also": [
-            "y Clwyd"
-          ]
-        },
-        "river-tywi": {
-          "text": "Afon Tywi"
-        }
-      },
-      "order": "alphabetical in Welsh"
-    },
     "named": {
       "title": "Tirnodau",
       "concepts": {

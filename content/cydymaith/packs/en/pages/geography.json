@@ -63,17 +63,6 @@
         }
       }
     },
-    "rivers": {
-      "title": "Rivers",
-      "concepts": {
-        "river-clwyd": {
-          "text": "River Clwyd"
-        },
-        "river-tywi": {
-          "text": "River Tywi (Towy)"
-        }
-      }
-    },
     "named": {
       "title": "Landmarks",
       "concepts": {

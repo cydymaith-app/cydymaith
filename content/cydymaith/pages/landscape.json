@@ -11,6 +11,7 @@
         "on-the-coast",
         "in-coastal-areas",
         "along-the-shores",
+        "along-the-severn-estuary",
         "in-cardigan-bay",
         "over-the-irish-sea"
       ]
@@ -20,6 +21,8 @@
       "concepts": [
         "inland",
         "in-the-valleys",
+        "in-the-conwy-valley",
+        "in-the-vale-of-clwyd",
         "over-the-hills",
         "on-high-ground",
         "over-the-mountains"

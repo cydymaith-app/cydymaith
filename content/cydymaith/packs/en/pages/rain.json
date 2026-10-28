@@ -129,6 +129,20 @@
             "Keep an eye",
             "website"
           ]
+        },
+        "a-flood-warning-on-the-river-tywi": {
+          "text": "A flood warning on the River Tywi",
+          "keys": [
+            "flood",
+            "River Tywi"
+          ]
+        },
+        "the-river-clwyd-high-at-rhuddlan": {
+          "text": "The River Clwyd high at Rhuddlan",
+          "keys": [
+            "River Clwyd",
+            "high"
+          ]
         }
       }
     },

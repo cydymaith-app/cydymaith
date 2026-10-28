@@ -321,7 +321,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 3, "geography": 5, "landscape": 2, "patterns": 7, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 3, "geography": 4, "landscape": 2, "patterns": 7, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -348,11 +348,11 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(geography["layout"], "one-page")
         self.assertEqual(geography["pages"], ["compass", "geography", "landscape", "place-name-elements"])
         skeleton = self.site.skel["geography"]
-        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "forecast-map", "rivers", "named", "uk"])
+        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "forecast-map", "named", "uk"])
         self.assertTrue(all("status" not in s for s in skeleton["sections"]), "Geography is no longer held back")
         # 2026-10-28: the regions went to the Compass, and the named places came from Landscape as Landmarks
-        # and upload 12 added four towns, the six other towns on the forecast map and two rivers
-        self.assertEqual(self.site.count_entries("geography"), 28)
+        # and upload 12 added four towns and the six other towns on the forecast map (rivers are named in phrases, not listed)
+        self.assertEqual(self.site.count_entries("geography"), 26)
         self.assertEqual([s["id"] for s in self.site.skel["landscape"]["sections"]], ["coast", "inland"])
         self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "which-part", "parts-of-wales"])
 

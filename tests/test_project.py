@@ -138,7 +138,6 @@ class RelatedTopicsTests(unittest.TestCase):
                 "group-geography.html#topic-landscape",  # from Rain, Snow and ice and How it's said
                 "group-geography.html#points",  # from Wind
                 "group-geography.html#topic-compass",  # the group's own link
-                "group-geography.html#rivers",  # from Rain, for the flooding, and from How it's said
                 "when.html",  # from How it's said, as a related page
             },
         )
@@ -580,7 +579,7 @@ class ContrastStartTests(unittest.TestCase):
 
 
 class UploadTwelveTests(unittest.TestCase):
-    """The phrases of upload 12 (27 October 2026): flooding, the place-first pattern, the forecast map and rivers."""
+    """The phrases of upload 12 (27 October 2026): flooding, the place-first pattern, the forecast map, and rivers named in phrases."""
 
     @classmethod
     def setUpClass(cls):
@@ -596,7 +595,6 @@ class UploadTwelveTests(unittest.TestCase):
         self.assertEqual(self.ids("rain"), ["rain", "flooding", "storms"])
         self.assertEqual(self.concepts("rain", "flooding")[0], "a-risk-of-flooding")
         self.assertNotIn("a-risk-of-flooding", self.concepts("rain", "rain"))
-        self.assertIn("geography#rivers", self.raw["pages"]["rain"]["related"])
 
     def test_how_its_said_puts_the_place_first_after_there_will_be(self):
         ids = self.ids("patterns")
@@ -609,9 +607,21 @@ class UploadTwelveTests(unittest.TestCase):
         self.assertEqual(names, ["Llannerch-y-medd", "Sychdyn", "Y Bala", "Llangurig", "Aberhonddu", "Hwlffordd"])
         self.assertIn("cardiff", self.concepts("geography", "places"))
 
-    def test_the_rivers_are_the_ones_heard(self):
-        welsh = self.raw["packs"]["cy"]["pages"]["geography"]["sections"]["rivers"]["concepts"]
-        self.assertEqual(sorted(c["text"] for c in welsh.values()), ["Afon Clwyd", "Afon Tywi"])
+    def test_a_river_is_named_in_a_phrase_and_never_listed_on_its_own(self):
+        """There are too many rivers in Wales to list, so one is only ever part of a phrase (2026-10-28)."""
+        self.assertNotIn("rivers", self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
+        welsh = {
+            c.get("text", "")
+            for slug in ("rain", "landscape")
+            for s in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
+            for c in s["concepts"].values()
+        }
+        for phrase in ("Rhybudd llifogydd ar Afon Tywi", "Afon Clwyd yn uchel yn Rhuddlan", "Yn Nyffryn Conwy", "Ar hyd Aber Hafren"):
+            self.assertIn(phrase, welsh)
+        for slug, page in self.raw["packs"]["cy"]["pages"].items():
+            for s in page["sections"].values():
+                for cid, c in s["concepts"].items():
+                    self.assertNotRegex(c.get("text", ""), r"^Afon \w+$", f"{slug}/{cid}: a river on its own")
 
     def test_every_new_weather_row_marks_its_key_words_in_both_languages(self):
         new = {

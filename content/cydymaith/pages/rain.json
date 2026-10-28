@@ -1,8 +1,7 @@
 {
   "icon": "rain",
   "related": [
-    "landscape",
-    "geography#rivers"
+    "landscape"
   ],
   "sections": [
     {
@@ -24,7 +23,9 @@
       "concepts": [
         "a-risk-of-flooding",
         "a-flood-warning",
+        "a-flood-warning-on-the-river-tywi",
         "river-levels-are-high",
+        "the-river-clwyd-high-at-rhuddlan",
         "after-all-that-rain",
         "some-have-already-seen-flooding",
         "the-warnings-can-change-all-the-time",

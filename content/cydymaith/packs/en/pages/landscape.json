@@ -41,6 +41,13 @@
             "Sea",
             "Irish"
           ]
+        },
+        "along-the-severn-estuary": {
+          "text": "Along the Severn estuary",
+          "keys": [
+            null,
+            "Severn estuary"
+          ]
         }
       }
     },
@@ -76,6 +83,20 @@
           "text": "Over the mountains",
           "keys": [
             "mountains"
+          ]
+        },
+        "in-the-conwy-valley": {
+          "text": "In the Conwy valley",
+          "keys": [
+            "valley",
+            "Conwy"
+          ]
+        },
+        "in-the-vale-of-clwyd": {
+          "text": "In the Vale of Clwyd",
+          "keys": [
+            "Vale",
+            "Clwyd"
           ]
         }
       }

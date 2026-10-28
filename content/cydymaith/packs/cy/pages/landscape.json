@@ -49,6 +49,14 @@
           "also": [
             "Môr Iwerddon"
           ]
+        },
+        "along-the-severn-estuary": {
+          "text": "Ar hyd Aber Hafren",
+          "keys": [
+            null,
+            "Aber Hafren"
+          ],
+          "note": "{{aber}} is an estuary or river mouth; {{Hafren}} is the Severn"
         }
       },
       "order": "the coast, then the shore, then the sea"
@@ -88,6 +96,27 @@
           "text": "Dros y mynyddoedd",
           "keys": [
             "mynyddoedd"
+          ]
+        },
+        "in-the-conwy-valley": {
+          "text": "Yn Nyffryn Conwy",
+          "keys": [
+            "Nyffryn",
+            "Conwy"
+          ],
+          "also": [
+            "Dyffryn Conwy"
+          ],
+          "note": "{{dyffryn}} (valley) becomes {{nyffryn}} after {{yn}}"
+        },
+        "in-the-vale-of-clwyd": {
+          "text": "Yn Nyffryn Clwyd",
+          "keys": [
+            "Nyffryn",
+            "Clwyd"
+          ],
+          "also": [
+            "Dyffryn Clwyd"
           ]
         }
       },
