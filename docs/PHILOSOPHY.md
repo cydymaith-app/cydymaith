@@ -56,6 +56,10 @@ Not a promise of its own: it follows from promises 1 to 5 and is stated under pr
 4. Vocabulary and phrases, not other people's work. Topics such as music and poetry cover the words people need to follow along, not song lyrics or poems, which are protected by copyright.
 5. Keep it small. Plain files, no dependencies, easy for anyone to read, fork and host.
 6. Open assets only. Fonts, icons, code and translations must carry a permissive licence or be in the public domain. See [ASSETS.md](ASSETS.md).
+7. Phrases and patterns, not gazetteers. The app teaches how Welsh is said, not what places exist. There are no lists of place names: no towns, rivers, mountains, counties or countries kept as rows of names, because a list would have to hold everything to be honest, and that is a gazetteer, not a companion.
+   - A place is named inside the phrase it was heard in, where it teaches something: a mutation (*Yng Nghaerfyrddin*, *Yn Nyffryn Conwy*), a pattern (*Ar hyd Môr Hafren*), or forecast use (*Afon Clwyd yn uchel yn Rhuddlan*).
+   - The place-name elements (*aber*, *llan*, *glan*, *pen*) are the exception and are needed: they teach how names are built, so a learner can read almost any name on a sign or a forecast map. Their examples name places only to show an element at work.
+   - A name seen on a broadcast is a reason to add the phrase around it, never the name on its own.
 
 ## Where this bites today
 

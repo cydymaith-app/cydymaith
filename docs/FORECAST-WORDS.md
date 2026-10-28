@@ -312,6 +312,8 @@ These wait for the units page in `TODO.md`. They are not written yet.
 
 ## 5. Places (for the Geography review)
 
+**Decided 28 October 2026: no lists of place names** (rule 7 in `PHILOSOPHY.md`). The names below are kept only as a record of what was heard. One goes into the content only inside a heard phrase that teaches something, such as a mutation (*yng Nghaerfyrddin*), never as a row of its own. The place-name elements are the exception.
+
 Geography already has *Caerdydd*, *Abertawe*, *Casnewydd*, *Wrecsam*, *Aberystwyth* and *Iwerddon* (7).
 
 To check against an official source before use:

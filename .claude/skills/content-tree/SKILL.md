@@ -36,7 +36,8 @@ Rate each item **ok / weak / broken**, with file links.
 7. **Balance.** Twiglets of about 4 to 10 leaves. Pages of 2 to 4 twiglets. Fewer than 4 leaves: merge. More than 10: split, or order it so it can be scanned.
 8. **Depth earns its taps.** A group with one page, or a page with one section, adds a layer that carries no choice: flatten it. **Exception: deliberate placeholders.** Held-back groups (`status: development`) and the Everyday > Food and drink page (one word, `milk`, kept to show where sections will go and to demonstrate the `llefrith`/`llaeth` regional split) are scaffolding. Mention them at most as "placeholder, not yet filled" and never propose flattening them.
 9. **Sibling order.** Each level has one stated order: the running order of the broadcast, a scale, time or compass. The most-used and orienting branches come first.
-10. **Ids are stable and honest.** Concept ids match their glosses. Section ids name the topic, not the content kind. Slugs match page titles closely enough to recognise.
+10. **No gazetteers.** A section whose rows are bare names (towns, rivers, mountains, counties, countries) is **broken**, however useful it looks: the app teaches phrases, not what places exist (rule 7 in `docs/PHILOSOPHY.md`). Propose the heard phrase around each name instead (*Yn Nyffryn Conwy*, *Ar hyd Môr Hafren*), or drop it. Place-name elements (*aber*, *llan*, *glan*) are not a gazetteer and stay.
+11. **Ids are stable and honest.** Concept ids match their glosses. Section ids name the topic, not the content kind. Slugs match page titles closely enough to recognise.
 
 ## Step 3: Propose a revised tree
 
