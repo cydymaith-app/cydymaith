@@ -29,14 +29,8 @@
   .also b { font-weight:600; color:var(--green); }
   .also span { background:var(--chip); border-radius:6px; padding:.05rem .4rem; margin-right:.25rem; white-space:nowrap; }
   .also .note { background:none; padding:0; color:var(--muted); white-space:normal; }
-  .frame { padding:.8rem .9rem; border-top:1px solid var(--line); }
-  .frame:first-child { border-top:0; }
-  .slots { font-size:1.25rem; font-weight:700; }
-  .slots i { font-style:normal; color:var(--accent); border-bottom:2px dotted var(--accent); }
-  .lit { font-size:.88rem; color:var(--muted); font-style:italic; }
-  .ex { margin:.4rem 0 0; padding:0; list-style:none; }
-  .ex li { padding:.15rem 0; display:flex; justify-content:space-between; gap:.8rem; }
-  .ex li span { color:var(--muted); text-align:end; }
+  .related { margin-top:1.6rem; }
+  .related h3 { margin:0 0 .4rem; font-size:.85rem; font-weight:600; color:var(--muted); }
   .decoder { margin-top:1.6rem; padding:.9rem; background:var(--chip); border-radius:14px; }
   .decoder h3 { margin:0 0 .4rem; font-size:1rem; }
   .decoder p { margin:.2rem 0; font-size:.95rem; }
@@ -45,129 +39,106 @@
 </head>
 <body>
 <main class="page">
-  <p class="draft">Mockup only. Welsh is an unreviewed draft; every "also heard" form is a proposal.</p>
+  <p class="draft">Mockup only. Welsh is an unreviewed draft; every "also heard" form is a proposal. Mirrors <code>pages/football.json</code> and its packs: phrases as a commentator says them, four sections, each with its stated order.</p>
 
   <h1 lang="cy">Pêl-droed</h1>
-  <p class="sub">Football (soccer). Welsh first, English on the right.</p>
+  <p class="sub">Football (soccer) as a commentator says it. Welsh first, English on the right.</p>
 
   <nav class="tools" aria-label="Tools">
     <a href="#decoder">Can't find it? Mutation decoder</a>
-    <a href="#frames">Sentence patterns</a>
   </nav>
 
   <h2><span lang="cy">Y gêm</span> <small>The match</small></h2>
-  <p class="order">Order: as a match runs, kick-off to final whistle</p>
+  <p class="order">Order: kick-off to the final whistle</p>
   <div class="card">
-    <div class="row"><div class="cy" lang="cy">Cic gyntaf</div><div class="en">kick-off</div></div>
-    <div class="row"><div class="cy" lang="cy">Hanner cyntaf</div><div class="en">first half</div></div>
-    <div class="row"><div class="cy" lang="cy">Hanner amser</div><div class="en">half time</div></div>
-    <div class="row"><div class="cy" lang="cy">Ail hanner</div><div class="en">second half</div></div>
-    <div class="row"><div class="cy" lang="cy">Amser ychwanegol</div><div class="en">extra time</div></div>
-    <div class="row"><div class="cy" lang="cy">Llawn amser</div><div class="en">full time</div></div>
+    <div class="row">
+      <div class="cy" lang="cy">Y gic gyntaf</div><div class="en">Kick-off</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">Cic gyntaf</span></div>
+    </div>
+    <div class="row"><div class="cy" lang="cy">Yn yr hanner cyntaf</div><div class="en">In the first half</div></div>
+    <div class="row">
+      <div class="cy" lang="cy">Ar hanner amser</div><div class="en">At half time</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">Hanner amser</span></div>
+    </div>
+    <div class="row"><div class="cy" lang="cy">Yn yr ail hanner</div><div class="en">In the second half</div></div>
+    <div class="row"><div class="cy" lang="cy">Amser am anafiadau</div><div class="en">Stoppage time</div></div>
+    <div class="row"><div class="cy" lang="cy">Y chwiban olaf</div><div class="en">The final whistle</div></div>
   </div>
 
-  <h2><span lang="cy">Sgorio</span> <small>Scoring</small></h2>
-  <p class="order">Order: chance, goal, result</p>
+  <h2><span lang="cy">Cyfleoedd a goliau</span> <small>Chances and goals</small></h2>
+  <p class="order">Order: chance, shot, save, then goal</p>
   <div class="card">
     <div class="row">
-      <div class="cy" lang="cy">Cyfle</div><div class="en">chance</div>
+      <div class="cy" lang="cy">Cyfle gwych</div><div class="en">A great chance</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">gyfle</span> <span class="note">soft mutation</span></div>
     </div>
+    <div class="row"><div class="cy" lang="cy">Ergyd dros y trawst</div><div class="en">A shot over the bar</div></div>
+    <div class="row"><div class="cy" lang="cy">Arbediad gwych gan y golwr</div><div class="en">A great save by the keeper</div></div>
+    <div class="row"><div class="cy" lang="cy">Peniad i'r rhwyd</div><div class="en">A header into the net</div></div>
     <div class="row">
-      <div class="cy" lang="cy">Gôl</div><div class="en">goal</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">goliau</span> <span lang="cy">ôl</span> <span class="note">after <i lang="cy">y</i> or <i lang="cy">dwy</i></span></div>
+      <div class="cy" lang="cy">Gôl i Gymru</div><div class="en">A goal for Wales</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">goliau</span> <span class="note">goals</span></div>
     </div>
+  </div>
+
+  <h2><span lang="cy">Troseddau a chardiau</span> <small>Fouls and cards</small></h2>
+  <p class="order">Order: foul, set piece, then the cards</p>
+  <div class="card">
+    <div class="row"><div class="cy" lang="cy">Trosedd gan yr amddiffynnwr</div><div class="en">A foul by the defender</div></div>
     <div class="row">
-      <div class="cy" lang="cy">Sgorio</div><div class="en">to score</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">sgoriodd</span> <span class="note">scored</span> <span lang="cy">wedi sgorio</span> <span class="note">has scored</span></div>
-    </div>
-    <div class="row">
-      <div class="cy" lang="cy">Cic o'r smotyn</div><div class="en">penalty</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">cosb</span> <span lang="cy">penalti</span></div>
-    </div>
-    <div class="row">
-      <div class="cy" lang="cy">Cic rydd</div><div class="en">free kick</div>
+      <div class="cy" lang="cy">Cic rydd i Gaerdydd</div><div class="en">A free kick to Cardiff</div>
       <div class="also"><b>Also heard:</b> <span lang="cy">gic rydd</span> <span class="note">after <i lang="cy">y</i></span></div>
     </div>
     <div class="row">
-      <div class="cy" lang="cy">Ennill</div><div class="en">to win</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">buddugoliaeth</span> <span class="note">a win</span></div>
+      <div class="cy" lang="cy">Cic o'r smotyn</div><div class="en">A penalty</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">gic o'r smotyn</span> <span lang="cy">penalti</span></div>
     </div>
     <div class="row">
-      <div class="cy" lang="cy">Colli</div><div class="en">to lose</div>
+      <div class="cy" lang="cy">Roedd e'n camsefyll</div><div class="en">He was offside</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">camsefyll</span></div>
     </div>
     <div class="row">
-      <div class="cy" lang="cy">Gêm gyfartal</div><div class="en">a draw</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">cyfartal</span> <span class="note">level</span></div>
+      <div class="cy" lang="cy">Cerdyn melyn i'r capten</div><div class="en">A yellow card for the captain</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">gerdyn melyn</span> <span class="note">after <i lang="cy">y</i></span></div>
+    </div>
+    <div class="row">
+      <div class="cy" lang="cy">Cerdyn coch i'r amddiffynnwr</div><div class="en">A red card for the defender</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">gerdyn coch</span> <span class="note">after <i lang="cy">y</i></span></div>
     </div>
   </div>
 
-  <h2><span lang="cy">Pobl y gêm</span> <small>People</small></h2>
-  <p class="order">Order: goal to attack, then officials</p>
+  <h2><span lang="cy">Y chwaraewyr</span> <small>The players</small></h2>
+  <p class="order">Order: from the goal outwards, then the bench and the officials</p>
   <div class="card">
     <div class="row">
-      <div class="cy" lang="cy">Golwr</div><div class="en">goalkeeper</div>
+      <div class="cy" lang="cy">Golwr</div><div class="en">Goalkeeper</div>
+      <div class="also"><b>Also heard:</b> <span lang="cy">gôl-geidwad</span></div>
     </div>
+    <div class="row"><div class="cy" lang="cy">Amddiffynnwr</div><div class="en">Defender</div></div>
+    <div class="row"><div class="cy" lang="cy">Chwaraewr canol cae</div><div class="en">Midfielder</div></div>
+    <div class="row"><div class="cy" lang="cy">Ymosodwr</div><div class="en">Striker</div></div>
+    <div class="row"><div class="cy" lang="cy">Eilydd</div><div class="en">Substitute</div></div>
     <div class="row">
-      <div class="cy" lang="cy">Amddiffynnwr</div><div class="en">defender</div>
-    </div>
-    <div class="row">
-      <div class="cy" lang="cy">Chwaraewr canol cae</div><div class="en">midfielder</div>
-    </div>
-    <div class="row">
-      <div class="cy" lang="cy">Ymosodwr</div><div class="en">striker</div>
-    </div>
-    <div class="row">
-      <div class="cy" lang="cy">Dyfarnwr</div><div class="en">referee</div>
+      <div class="cy" lang="cy">Dyfarnwr</div><div class="en">Referee</div>
       <div class="also"><b>Also heard:</b> <span lang="cy">ddyfarnwr</span> <span class="note">after <i lang="cy">gan</i>, “by”</span></div>
     </div>
-    <div class="row">
-      <div class="cy" lang="cy">Rheolwr</div><div class="en">manager</div>
-    </div>
+    <div class="row"><div class="cy" lang="cy">Rheolwr</div><div class="en">Manager</div></div>
   </div>
 
-  <h2><span lang="cy">Cardiau</span> <small>Cards</small></h2>
-  <p class="order">Order: warning, then sending off</p>
-  <div class="card">
-    <div class="row"><div class="cy" lang="cy">Cerdyn melyn</div><div class="en">yellow card</div></div>
-    <div class="row">
-      <div class="cy" lang="cy">Cerdyn coch</div><div class="en">red card</div>
-      <div class="also"><b>Also heard:</b> <span lang="cy">gerdyn coch</span> <span class="note">after <i lang="cy">i</i>, “to”</span></div>
+  <nav class="related" aria-label="Related topics">
+    <h3>Related</h3>
+    <div class="tools">
+      <a href="#" lang="cy">Sut mae dweud</a>
+      <a href="#" lang="cy">Canlyniadau a thablau</a>
     </div>
-  </div>
-
-  <h2 id="frames"><span lang="cy">Patrymau</span> <small>Patterns you will hear</small></h2>
-  <p class="order">Fill the gap from the word lists</p>
-  <div class="card">
-    <div class="frame">
-      <div class="slots" lang="cy">Gôl i <i>Gymru</i></div>
-      <div class="lit">goal to Wales (a Wales goal)</div>
-      <ul class="ex">
-        <li lang="cy">Cerdyn melyn i'r capten <span>yellow card for the captain</span></li>
-      </ul>
-    </div>
-    <div class="frame">
-      <div class="slots" lang="cy"><i>Cymru</i> yn erbyn <i>Lloegr</i></div>
-      <div class="lit">Wales against England</div>
-      <ul class="ex">
-        <li lang="cy">Abertawe yn erbyn Caerdydd <span>Swansea v Cardiff</span></li>
-      </ul>
-    </div>
-    <div class="frame">
-      <div class="slots" lang="cy">Mae <i>Cymru</i> wedi <i>ennill</i></div>
-      <div class="lit">is Wales after winning (Wales have won)</div>
-      <ul class="ex">
-        <li lang="cy">Mae'r tîm wedi sgorio <span>the team has scored</span></li>
-        <li lang="cy">Mae'r gêm yn gyfartal <span>the game is level</span></li>
-      </ul>
-    </div>
-  </div>
+  </nav>
 
   <aside class="decoder" id="decoder">
     <h3>Heard something you can't find?</h3>
     <p>Change the first letter back:</p>
     <p lang="cy"><b>Gymru</b> <span class="arrow">→</span> <b>Cymru</b> &nbsp; (<b>g</b> becomes <b>c</b>)</p>
-    <p lang="cy"><b>gic</b> <span class="arrow">→</span> <b>cic</b> &nbsp; (<b>g</b> becomes <b>c</b>)</p>
-    <p lang="cy"><b>ôl</b> <span class="arrow">→</span> <b>gôl</b> &nbsp; (add <b>g</b>)</p>
+    <p lang="cy"><b>gerdyn</b> <span class="arrow">→</span> <b>cerdyn</b> &nbsp; (<b>g</b> becomes <b>c</b>)</p>
+    <p lang="cy"><b>Gaerdydd</b> <span class="arrow">→</span> <b>Caerdydd</b> &nbsp; (<b>g</b> becomes <b>c</b>)</p>
     <p lang="cy"><b>ddyfarnwr</b> <span class="arrow">→</span> <b>dyfarnwr</b> &nbsp; (<b>dd</b> becomes <b>d</b>)</p>
   </aside>
 </main>
