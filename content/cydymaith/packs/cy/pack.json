@@ -48,6 +48,8 @@
     "palette_red_yellow": "Coch a melyn",
     "palette_black_red_gold": "Du, coch ac aur",
     "palette_sepia": "Sepia",
+    "palette_sepia_safe": "Sepia, diogel",
+    "palette_sepia_high_contrast": "Sepia, cyferbyniad uchel",
     "palette_high_contrast": "Cyferbyniad uchel",
     "palette_red_green_safe": "Coch a gwyrdd, diogel",
     "palette_blue_yellow_safe": "Glas a melyn, diogel",
