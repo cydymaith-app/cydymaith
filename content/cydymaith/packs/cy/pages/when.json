@@ -170,15 +170,9 @@
         },
         "season": {
           "text": "Tymor"
-        },
-        "half-term": {
-          "text": "Hanner tymor"
-        },
-        "first-of-the-season": {
-          "text": "Cynta'r tymor"
         }
       },
-      "order": "the four seasons in the order of the year, then the word season and its phrases"
+      "order": "the four seasons in the order of the year, then the word season"
     },
     "before-after": {
       "title": "Cyn ac ar ôl",
