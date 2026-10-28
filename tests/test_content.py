@@ -222,8 +222,8 @@ class BuildTests(unittest.TestCase):
             # the app's own schemes first, then the framework's in its own order
             "standard": ["red-green", "yellow-green", "default", "blue-white-red", "green-white-red", "green-white-orange",
                          "red-yellow", "black-red-gold", "sepia"],
-            "high": ["yellow-green-high-contrast", "high-contrast"],
-            "safe": ["yellow-green-safe", "red-green-safe", "blue-yellow-safe", "monochrome"],
+            "high": ["yellow-green-high-contrast", "high-contrast", "sepia-high-contrast"],
+            "safe": ["yellow-green-safe", "red-green-safe", "blue-yellow-safe", "sepia-safe", "monochrome"],
         })
         for welsh, english in (("Safonol", "Standard"), ("Lliwiau diogel", "Safe colours"), ("Cyferbyniad uchel", "High contrast")):
             self.assertIn(f'lang="cy">{welsh}</span><span class="t" data-n="2">{english}</span>', page)
