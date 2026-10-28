@@ -22,7 +22,6 @@
       "icon": "earth",
       "pages": [
         "compass",
-        "geography",
         "landscape",
         "place-name-elements"
       ],

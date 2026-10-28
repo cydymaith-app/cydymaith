@@ -158,7 +158,6 @@ class RelatedTopicsTests(unittest.TestCase):
             {
                 "group-weather-forecast.html#topic-rain",
                 "group-weather-forecast.html#topic-snow-ice",
-                "group-weather-forecast.html#there-will-be",
                 "group-weather-forecast.html#topic-patterns",
             },
         )
@@ -378,18 +377,15 @@ class GeographyStandardTests(unittest.TestCase):
         return next(s["concepts"] for s in self.raw["pages"][slug]["sections"] if s["id"] == sid)
 
     def test_every_geography_section_states_its_order(self):
-        for slug in ("compass", "geography", "landscape", "place-name-elements"):
+        for slug in ("compass", "landscape", "place-name-elements"):
             for sid, section in self.raw["packs"]["cy"]["pages"][slug]["sections"].items():
                 self.assertTrue(section.get("order"), f"{slug}/{sid} has no order")
 
-    def test_a_town_is_only_ever_heard_after_in_where_the_first_letter_changes(self):
-        """2026-10-28: the lists of towns and countries went. A place is named inside a phrase that teaches a sound change."""
-        places = self.section("geography", "in-a-place")["concepts"]
-        self.assertEqual(places["in-cardiff"]["text"], "Yng Nghaerdydd")
-        self.assertIn("Caerdydd", places["in-cardiff"]["also"])
-        self.assertEqual(places["in-bangor"]["text"], "Ym Mangor")
-        self.assertIn("Tyddewi", places["in-st-davids"]["also"])
-        self.assertEqual(places["in-swansea"]["text"], "Yn Abertawe")
+    def test_there_is_no_place_names_page_because_a_list_of_places_can_never_be_complete(self):
+        """Removed on 2026-10-28: the towns heard after yn and the landmarks. Landmarks joined Landscape; no list of places is kept."""
+        self.assertNotIn("geography", self.raw["pages"])
+        self.assertNotIn("geography", self.raw["packs"]["cy"]["pages"])
+        self.assertNotIn("geography", next(g for g in self.raw["structure"]["groups"] if g["id"] == "geography")["pages"])
 
     def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
         regions = {
@@ -419,7 +415,6 @@ class GeographyStandardTests(unittest.TestCase):
         self.assertEqual(wales[:2], ["in-north-wales", "in-north-east-wales"])
         self.assertEqual(wales[-2:], ["across-wales", "across-the-whole-country"])
         self.assertIn("in-south-west-wales", wales)
-        self.assertNotIn("regions", self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
 
     def test_every_compass_direction_is_the_first_key_word_so_it_keeps_its_colour(self):
         for code in ("cy", "en"):
@@ -429,15 +424,15 @@ class GeographyStandardTests(unittest.TestCase):
                         continue
                     self.assertIsNotNone(c["keys"][0], (code, cid))
 
-    def test_the_named_places_are_landmarks_on_place_names(self):
-        landmarks = self.section("geography", "named")
+    def test_the_landmarks_are_a_section_of_landscape(self):
+        landmarks = self.section("landscape", "named")
         self.assertEqual(landmarks["title"], "Tirnodau")
         self.assertIn("on-anglesey", landmarks["concepts"])
-        self.assertNotIn("named", self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
+        self.assertEqual(landmarks.get("order"), "the mountains first, then the island and the peninsula")
 
     def test_no_geography_key_word_is_a_function_word(self):
         function_words = {"o'r", "dros", "ar hyd", "ledled", "from", "over", "along", "across"}
-        for slug in ("compass", "geography", "landscape"):
+        for slug in ("compass", "landscape"):
             for code in ("cy", "en"):
                 for section in self.raw["packs"][code]["pages"][slug]["sections"].values():
                     for cid, concept in section["concepts"].items():
@@ -469,11 +464,10 @@ class KeyWordTests(unittest.TestCase):
         plain = {cid for slug in self.WEATHER for cid, c in self.concepts("cy", slug) if "keys" not in c}
         self.assertFalse({"its-sunny", "rain-in-the-north", "a-cold-northerly"} & plain)
 
-    GEOGRAPHY = ("compass", "geography", "landscape", "place-name-elements")
+    GEOGRAPHY = ("compass", "landscape", "place-name-elements")
     MARKED = {
         "compass": {"from-which-way", "which-part", "parts-of-wales"},
-        "geography": {"named", "in-a-place"},
-        "landscape": {"coast", "inland"},
+        "landscape": {"coast", "inland", "named"},
         "place-name-elements": set(),
     }
 
@@ -603,18 +597,18 @@ class UploadTwelveTests(unittest.TestCase):
         """No gazetteers (rule 7 in docs/PHILOSOPHY.md): a place is named inside a phrase, never as a row of its own.
         The place-name elements are the exception, since they teach how names are built."""
         for slug, page in self.raw["packs"]["cy"]["pages"].items():
-            if slug not in ("geography", "landscape"):  # the compass holds directions, the elements teach how names are built
+            if slug != "landscape":  # the compass holds directions, the elements teach how names are built
                 continue
             for sid, section in page["sections"].items():
                 for cid, concept in section["concepts"].items():
                     words = concept.get("text", "").split()
                     self.assertGreater(len(words), 1 if not concept.get("text", "").startswith("Y ") else 2, f"{slug}/{sid}/{cid}: {concept.get('text')!r} is one bare name")
-        for sid in ("places", "forecast-map", "uk", "rivers"):
-            self.assertNotIn(sid, self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
+        for sid in ("places", "forecast-map", "uk", "rivers", "in-a-place"):
+            self.assertNotIn(sid, self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
 
     def test_a_river_is_named_in_a_phrase_and_never_listed_on_its_own(self):
         """There are too many rivers in Wales to list, so one is only ever part of a phrase (2026-10-28)."""
-        self.assertNotIn("rivers", self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
+        self.assertNotIn("rivers", self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
         welsh = {
             c.get("text", "")
             for slug in ("rain", "landscape")

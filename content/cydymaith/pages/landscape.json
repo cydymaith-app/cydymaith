@@ -27,6 +27,15 @@
         "on-high-ground",
         "over-the-mountains"
       ]
+    },
+    {
+      "id": "named",
+      "concepts": [
+        "over-snowdonia",
+        "in-the-brecon-beacons",
+        "on-anglesey",
+        "on-the-llyn-peninsula"
+      ]
     }
   ]
 }
