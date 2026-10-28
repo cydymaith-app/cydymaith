@@ -2,75 +2,6 @@
   "title": "Place names",
   "source": "draft",
   "sections": {
-    "regions": {
-      "title": "Regions of Wales",
-      "concepts": {
-        "in-north-wales": {
-          "text": "In north Wales",
-          "keys": [
-            "north",
-            null,
-            "Wales"
-          ]
-        },
-        "in-north-east-wales": {
-          "text": "In north-east Wales",
-          "keys": [
-            "north-east",
-            null,
-            "Wales"
-          ]
-        },
-        "in-north-west-wales": {
-          "text": "In north-west Wales",
-          "keys": [
-            null,
-            "north-west",
-            "Wales"
-          ]
-        },
-        "in-mid-wales": {
-          "text": "In mid Wales",
-          "keys": [
-            null,
-            "mid",
-            "Wales"
-          ]
-        },
-        "in-south-wales": {
-          "text": "In south Wales",
-          "keys": [
-            "south",
-            null,
-            "Wales"
-          ]
-        },
-        "in-south-east-wales": {
-          "text": "In south-east Wales",
-          "keys": [
-            "south-east",
-            null,
-            "Wales"
-          ]
-        },
-        "in-west-wales": {
-          "text": "In west Wales",
-          "keys": [
-            null,
-            "west",
-            "Wales"
-          ]
-        },
-        "across-wales": {
-          "text": "Across Wales",
-          "keys": [
-            null,
-            null,
-            "Wales"
-          ]
-        }
-      }
-    },
     "places": {
       "title": "Towns and cities",
       "concepts": {
@@ -94,6 +25,39 @@
         },
         "wrexham": {
           "text": "Wrexham"
+        }
+      }
+    },
+    "named": {
+      "title": "Landmarks",
+      "concepts": {
+        "over-snowdonia": {
+          "text": "Over Snowdonia",
+          "keys": [
+            null,
+            "Snowdonia"
+          ]
+        },
+        "in-the-brecon-beacons": {
+          "text": "In the Brecon Beacons",
+          "keys": [
+            null,
+            "Brecon Beacons"
+          ]
+        },
+        "on-anglesey": {
+          "text": "On Anglesey",
+          "keys": [
+            null,
+            null,
+            "Anglesey"
+          ]
+        },
+        "on-the-llyn-peninsula": {
+          "text": "On the Llŷn Peninsula",
+          "keys": [
+            "Llŷn Peninsula"
+          ]
         }
       }
     },
@@ -122,5 +86,5 @@
       }
     }
   },
-  "lede": "The regions of Wales, its towns and cities, and the countries beyond, as a forecast names them."
+  "lede": "The towns and cities of Wales, its landmarks, and the countries beyond, as a forecast names them."
 }

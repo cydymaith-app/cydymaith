@@ -1,6 +1,6 @@
 {
   "title": "Landscape",
-  "lede": "Coast and sea, valleys, hills and named places, as a forecast says them.",
+  "lede": "Coast and sea, valleys and hills, as a forecast says them.",
   "source": "draft",
   "sections": {
     "coast": {
@@ -76,39 +76,6 @@
           "text": "Over the mountains",
           "keys": [
             "mountains"
-          ]
-        }
-      }
-    },
-    "named": {
-      "title": "Named places",
-      "concepts": {
-        "over-snowdonia": {
-          "text": "Over Snowdonia",
-          "keys": [
-            null,
-            "Snowdonia"
-          ]
-        },
-        "in-the-brecon-beacons": {
-          "text": "In the Brecon Beacons",
-          "keys": [
-            null,
-            "Brecon Beacons"
-          ]
-        },
-        "on-anglesey": {
-          "text": "On Anglesey",
-          "keys": [
-            null,
-            null,
-            "Anglesey"
-          ]
-        },
-        "on-the-llyn-peninsula": {
-          "text": "On the Llŷn Peninsula",
-          "keys": [
-            "Llŷn Peninsula"
           ]
         }
       }

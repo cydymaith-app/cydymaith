@@ -5,19 +5,6 @@
   ],
   "sections": [
     {
-      "id": "regions",
-      "concepts": [
-        "in-north-wales",
-        "in-north-east-wales",
-        "in-north-west-wales",
-        "in-mid-wales",
-        "in-south-wales",
-        "in-south-east-wales",
-        "in-west-wales",
-        "across-wales"
-      ]
-    },
-    {
       "id": "places",
       "concepts": [
         "swansea",
@@ -27,6 +14,15 @@
         "holyhead",
         "newport",
         "wrexham"
+      ]
+    },
+    {
+      "id": "named",
+      "concepts": [
+        "over-snowdonia",
+        "in-the-brecon-beacons",
+        "on-anglesey",
+        "on-the-llyn-peninsula"
       ]
     },
     {

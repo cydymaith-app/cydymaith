@@ -1,6 +1,6 @@
 {
   "title": "Compass",
-  "lede": "The compass points, and the directions a forecast gives.",
+  "lede": "The compass points, then each one as a forecast uses it: from which way, in which part, and in which part of Wales.",
   "source": "draft",
   "sections": {
     "points": {
@@ -32,8 +32,8 @@
         }
       }
     },
-    "from": {
-      "title": "From which way",
+    "north-and-east": {
+      "title": "North and east",
       "concepts": {
         "from-the-north": {
           "text": "From the north",
@@ -42,6 +42,20 @@
           ],
           "also": [
             "northerly"
+          ]
+        },
+        "in-the-north": {
+          "text": "In the north",
+          "keys": [
+            "north"
+          ]
+        },
+        "in-north-wales": {
+          "text": "In north Wales",
+          "keys": [
+            "north",
+            null,
+            "Wales"
           ]
         },
         "from-the-north-east": {
@@ -53,6 +67,14 @@
             "north-easterly"
           ]
         },
+        "in-north-east-wales": {
+          "text": "In north-east Wales",
+          "keys": [
+            "north-east",
+            null,
+            "Wales"
+          ]
+        },
         "from-the-east": {
           "text": "From the east",
           "keys": [
@@ -60,6 +82,12 @@
           ],
           "also": [
             "easterly"
+          ]
+        },
+        "in-the-east": {
+          "text": "In the east",
+          "keys": [
+            "east"
           ]
         },
         "from-the-south-east": {
@@ -71,6 +99,19 @@
             "south-easterly"
           ]
         },
+        "in-south-east-wales": {
+          "text": "In south-east Wales",
+          "keys": [
+            "south-east",
+            null,
+            "Wales"
+          ]
+        }
+      }
+    },
+    "south-and-west": {
+      "title": "South and west",
+      "concepts": {
         "from-the-south": {
           "text": "From the south",
           "keys": [
@@ -78,6 +119,28 @@
           ],
           "also": [
             "southerly"
+          ]
+        },
+        "in-the-south": {
+          "text": "In the south",
+          "keys": [
+            "south"
+          ]
+        },
+        "further-south": {
+          "text": "Further south",
+          "keys": [
+            "south",
+            null,
+            "Further"
+          ]
+        },
+        "in-south-wales": {
+          "text": "In south Wales",
+          "keys": [
+            "south",
+            null,
+            "Wales"
           ]
         },
         "from-the-south-west": {
@@ -99,6 +162,21 @@
             "westerly"
           ]
         },
+        "in-the-west": {
+          "text": "In the west",
+          "keys": [
+            null,
+            "west"
+          ]
+        },
+        "in-west-wales": {
+          "text": "In west Wales",
+          "keys": [
+            null,
+            "west",
+            "Wales"
+          ]
+        },
         "from-the-north-west": {
           "text": "From the north-west",
           "keys": [
@@ -108,43 +186,34 @@
           "also": [
             "north-westerly"
           ]
+        },
+        "in-north-west-wales": {
+          "text": "In north-west Wales",
+          "keys": [
+            null,
+            "north-west",
+            "Wales"
+          ]
         }
       }
     },
-    "directions": {
-      "title": "Areas",
+    "all-of-wales": {
+      "title": "The middle and all of it",
       "concepts": {
-        "in-the-north": {
-          "text": "In the north",
-          "keys": [
-            "north"
-          ]
-        },
-        "in-the-east": {
-          "text": "In the east",
-          "keys": [
-            "east"
-          ]
-        },
-        "in-the-south": {
-          "text": "In the south",
-          "keys": [
-            "south"
-          ]
-        },
-        "in-the-west": {
-          "text": "In the west",
+        "in-mid-wales": {
+          "text": "In mid Wales",
           "keys": [
             null,
-            "west"
+            "mid",
+            "Wales"
           ]
         },
-        "further-south": {
-          "text": "Further south",
+        "across-wales": {
+          "text": "Across Wales",
           "keys": [
-            "south",
             null,
-            "Further"
+            null,
+            "Wales"
           ]
         },
         "across-the-whole-country": {

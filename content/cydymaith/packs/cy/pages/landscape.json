@@ -92,48 +92,6 @@
         }
       },
       "order": "inland, then low to high"
-    },
-    "named": {
-      "title": "Lleoedd penodol",
-      "concepts": {
-        "over-snowdonia": {
-          "text": "Dros Eryri",
-          "keys": [
-            null,
-            "Eryri"
-          ]
-        },
-        "in-the-brecon-beacons": {
-          "text": "Ym Mannau Brycheiniog",
-          "keys": [
-            null,
-            "Mannau Brycheiniog"
-          ],
-          "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
-        },
-        "on-anglesey": {
-          "text": "Ar Ynys Môn",
-          "keys": [
-            null,
-            null,
-            "Ynys Môn"
-          ],
-          "also": [
-            "Ynys Môn"
-          ]
-        },
-        "on-the-llyn-peninsula": {
-          "text": "Ym Mhen Llŷn",
-          "keys": [
-            "Mhen Llŷn"
-          ],
-          "also": [
-            "Pen Llŷn",
-            "Llŷn"
-          ]
-        }
-      },
-      "order": "the mountains first, then the island and the peninsula"
     }
   }
 }

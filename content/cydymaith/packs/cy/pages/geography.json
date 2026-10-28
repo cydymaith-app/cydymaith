@@ -2,102 +2,6 @@
   "title": "Enwau lleoedd",
   "source": "draft",
   "sections": {
-    "regions": {
-      "title": "Rhannau o Gymru",
-      "intro": "After {{yn}} (in) the first letter changes: {{gogledd}} becomes {{ngogledd}}, {{canolbarth}} becomes {{nghanolbarth}}, {{gorllewin}} becomes {{ngorllewin}} and {{de}} becomes {{ne}}. {{yn}} itself becomes {{yng}} before those sounds. The plain name of each region is listed as another way it is heard.",
-      "concepts": {
-        "in-north-wales": {
-          "text": "Yng ngogledd Cymru",
-          "keys": [
-            "ngogledd",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "Gogledd Cymru"
-          ]
-        },
-        "in-north-east-wales": {
-          "text": "Yng ngogledd-ddwyrain Cymru",
-          "keys": [
-            "ngogledd-ddwyrain",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "Gogledd-ddwyrain Cymru"
-          ]
-        },
-        "in-north-west-wales": {
-          "text": "Yng ngogledd-orllewin Cymru",
-          "keys": [
-            null,
-            "ngogledd-orllewin",
-            "Cymru"
-          ],
-          "also": [
-            "Gogledd-orllewin Cymru"
-          ]
-        },
-        "in-mid-wales": {
-          "text": "Yng nghanolbarth Cymru",
-          "keys": [
-            null,
-            "nghanolbarth",
-            "Cymru"
-          ],
-          "also": [
-            "Canolbarth Cymru"
-          ]
-        },
-        "in-south-wales": {
-          "text": "Yn ne Cymru",
-          "keys": [
-            "ne",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "De Cymru"
-          ]
-        },
-        "in-south-east-wales": {
-          "text": "Yn ne-ddwyrain Cymru",
-          "keys": [
-            "ne-ddwyrain",
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "De-ddwyrain Cymru"
-          ]
-        },
-        "in-west-wales": {
-          "text": "Yng ngorllewin Cymru",
-          "keys": [
-            null,
-            "ngorllewin",
-            "Cymru"
-          ],
-          "also": [
-            "Gorllewin Cymru"
-          ]
-        },
-        "across-wales": {
-          "text": "Ledled Cymru",
-          "keys": [
-            null,
-            null,
-            "Cymru"
-          ],
-          "also": [
-            "Yng Nghymru",
-            "Nghymru"
-          ]
-        }
-      },
-      "order": "the north, then mid, south and west, then all of Wales"
-    },
     "places": {
       "title": "Trefi a dinasoedd",
       "concepts": {
@@ -140,6 +44,48 @@
         }
       },
       "order": "alphabetical in Welsh"
+    },
+    "named": {
+      "title": "Tirnodau",
+      "concepts": {
+        "over-snowdonia": {
+          "text": "Dros Eryri",
+          "keys": [
+            null,
+            "Eryri"
+          ]
+        },
+        "in-the-brecon-beacons": {
+          "text": "Ym Mannau Brycheiniog",
+          "keys": [
+            null,
+            "Mannau Brycheiniog"
+          ],
+          "note": "{{yn}} becomes {{ym}} before {{Mannau}}"
+        },
+        "on-anglesey": {
+          "text": "Ar Ynys Môn",
+          "keys": [
+            null,
+            null,
+            "Ynys Môn"
+          ],
+          "also": [
+            "Ynys Môn"
+          ]
+        },
+        "on-the-llyn-peninsula": {
+          "text": "Ym Mhen Llŷn",
+          "keys": [
+            "Mhen Llŷn"
+          ],
+          "also": [
+            "Pen Llŷn",
+            "Llŷn"
+          ]
+        }
+      },
+      "order": "the mountains first, then the island and the peninsula"
     },
     "uk": {
       "title": "Y tu hwnt i Gymru",

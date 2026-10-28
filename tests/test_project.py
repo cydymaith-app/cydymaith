@@ -133,7 +133,7 @@ class RelatedTopicsTests(unittest.TestCase):
     def test_the_weather_topics_that_mention_places_open_the_landscape_page(self):
         for slug in ("rain", "snow-ice"):
             self.assertEqual(self.tiles(slug), ["group-geography.html#topic-landscape"], slug)
-        self.assertEqual(self.tiles("patterns"), ["group-geography.html#topic-landscape", "group-geography.html#regions", "when.html"])
+        self.assertEqual(self.tiles("patterns"), ["group-geography.html#topic-landscape", "group-geography.html#topic-compass", "when.html"])
 
     def test_landscape_and_the_regions_link_back_to_the_weather(self):
         """Pages of the one Geography page are an accordion apart, so only the links out to the weather make tiles."""
@@ -199,7 +199,7 @@ class GradingTests(unittest.TestCase):
         """north = gogledd comes first; in the north, on the coast, in the valleys follow."""
         points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
-        self.assertGreater(self.sections[("compass", "directions")]["level"], points)
+        self.assertGreater(self.sections[("compass", "north-and-east")]["level"], points)
         self.assertGreater(self.sections[("landscape", "inland")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
@@ -337,7 +337,12 @@ class GeographyStandardTests(unittest.TestCase):
         self.assertIn("Nghasnewydd", places["newport"]["also"])
 
     def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
-        regions = self.section("geography", "regions")["concepts"]
+        regions = {
+            cid: c
+            for sid in ("north-and-east", "south-and-west", "all-of-wales")
+            for cid, c in self.section("compass", sid)["concepts"].items()
+            if cid.endswith("-wales")
+        }
         self.assertEqual(len(regions), 8)
         self.assertEqual(regions["in-north-wales"]["text"], "Yng ngogledd Cymru")
         self.assertIn("Gogledd Cymru", regions["in-north-wales"]["also"])
@@ -348,6 +353,20 @@ class GeographyStandardTests(unittest.TestCase):
         self.assertNotIn("landscape", self.raw["packs"]["cy"]["pages"]["place-name-elements"]["sections"])
         for slug in ("rain", "snow-ice", "patterns"):
             self.assertIn("landscape", self.raw["pages"][slug]["related"], slug)
+
+    def test_the_compass_gives_each_point_as_a_family_from_in_and_in_wales_round_from_the_north(self):
+        """2026-10-28: From which way, Areas and Regions of Wales became one family per point, so the forms sit together."""
+        north = list(self.section("compass", "north-and-east")["concepts"])
+        self.assertEqual(north[:3], ["from-the-north", "in-the-north", "in-north-wales"])
+        south = list(self.section("compass", "south-and-west")["concepts"])
+        self.assertEqual(south[:4], ["from-the-south", "in-the-south", "further-south", "in-south-wales"])
+        self.assertNotIn("regions", self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
+
+    def test_the_named_places_are_landmarks_on_place_names(self):
+        landmarks = self.section("geography", "named")
+        self.assertEqual(landmarks["title"], "Tirnodau")
+        self.assertIn("on-anglesey", landmarks["concepts"])
+        self.assertNotIn("named", self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
 
     def test_no_geography_key_word_is_a_function_word(self):
         function_words = {"o'r", "dros", "ar hyd", "ledled", "from", "over", "along", "across"}
@@ -385,9 +404,9 @@ class KeyWordTests(unittest.TestCase):
 
     GEOGRAPHY = ("compass", "geography", "landscape", "place-name-elements")
     MARKED = {
-        "compass": {"from", "directions"},
-        "geography": {"regions", "uk"},
-        "landscape": {"coast", "inland", "named"},
+        "compass": {"north-and-east", "south-and-west", "all-of-wales"},
+        "geography": {"named", "uk"},
+        "landscape": {"coast", "inland"},
         "place-name-elements": set(),
     }
 
