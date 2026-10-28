@@ -105,6 +105,18 @@
     "seasons": {
       "title": "Seasons",
       "concepts": {
+        "spring": {
+          "text": "Spring"
+        },
+        "summer": {
+          "text": "Summer"
+        },
+        "autumn": {
+          "text": "Autumn"
+        },
+        "winter": {
+          "text": "Winter"
+        },
         "season": {
           "text": "Season"
         },

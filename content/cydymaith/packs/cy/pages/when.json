@@ -144,6 +144,30 @@
     "seasons": {
       "title": "Tymhorau",
       "concepts": {
+        "spring": {
+          "text": "Gwanwyn",
+          "also": [
+            "y gwanwyn"
+          ]
+        },
+        "summer": {
+          "text": "Haf",
+          "also": [
+            "yr haf"
+          ]
+        },
+        "autumn": {
+          "text": "Hydref",
+          "also": [
+            "yr hydref"
+          ]
+        },
+        "winter": {
+          "text": "Gaeaf",
+          "also": [
+            "y gaeaf"
+          ]
+        },
         "season": {
           "text": "Tymor"
         },
@@ -154,7 +178,7 @@
           "text": "Cynta'r tymor"
         }
       },
-      "order": "the season, then the half-term, then the first of the season"
+      "order": "the four seasons in the order of the year, then the word season and its phrases"
     },
     "before-after": {
       "title": "Cyn ac ar ôl",

@@ -581,3 +581,95 @@ The presenters' names and the photo credits (*Llun: …*).
 
 1. *Y gorllewin fydd ym gweld* (16): is *ym* a typo for *yn*?
 2. *Werth cadw golwg* (9): is it *Mae'n werth cadw golwg*, with the start dropped on screen?
+
+## 11. Upload 13 (S4C, 28 October 2026; 37 photos in two parts)
+
+*Y Dyddiau Nesaf*, the Heno, Dros Nos, Dydd Mercher, Dydd Iau, Dydd Gwener and Dydd Sadwrn (Calan Gaeaf) maps, and the city tables, ending with a handback to the studio. A calm spell under high pressure, with cold air from the north and a front from the west. Subtitles and on-screen text. Nothing here is in the content yet. Placement is a suggestion, and every phrase is a draft for a fluent speaker. The raw words per photo are in the memory file `broadcast-words-to-collect.md`.
+
+Checked against the content on 28 October 2026: most of the weather is already there, so the gains are the connecting words and a few whole phrases.
+
+### New
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Gwyntog (*yn wyntog*) | windy | Sky and visibility, next to *Sychach ac yn wyntog*; also in a pair with *braf* (*braf ond gwyntog*) |
+| Diwrnod braf ond gwyntog | a fine but windy day | Sky, look |
+| Cawodydd gwasgaredig | scattered showers | Rain, pairs with *Ambell gawod* |
+| I'r mwyafrif | for most | How it's said, extent (next to *Mewn mannau*) |
+| I rai (*i rai ohonom ni*) | for some (of us) | How it's said, extent |
+| Y gweddill ohonom ni | the rest of us | How it's said, extent (*gweddill* is on Time and date) |
+| Digon cymylog | fairly cloudy | Sky, pairs with *Digon o heulwen* |
+| Digonedd o heulwen | plenty of sunshine | Sky |
+| Llif aer | air flow | Change and movement |
+| Aer oer | cold air | Change and movement, or Temperature |
+| Newid cyfeiriad | to change direction | Change and movement |
+| O dan ddylanwad gwasgedd uchel | under the influence of high pressure | Change and movement, Pressure (*dylanwad* is new; *gwasgedd uchel* is there) |
+| Yn gostwng (*tymheredd yn gostwng*) | falling | Temperature, pairs with *yn codi* |
+| Cymhedrol (*gwyntoedd yn gymhedrol*) | moderate | Wind strength (see question 5) |
+| Aros yn sych | to stay dry | Change and movement, other verbs (next to *parhau*) |
+| Sych a chlir | dry and clear | Sky; *clir* alone is new, *clirio* is there |
+| Nos Fercher | Wednesday night | Time and date; the soft *Fercher* is the form heard |
+| Calan Gaeaf (heard *Galan Gaeaf*) | Halloween | Time and date, with the festivals |
+| Diwedd yr wythnos | the end of the week | Time and date, next to *Gweddill yr wythnos* |
+| Unwaith eto | once again | How it's said, linking words |
+| Yn hytrach | rather, instead | How it's said, linking words |
+| Ar hyn o bryd | at the moment | Time and date |
+| Canol nos | midnight, the middle of the night | Time and date, next to *Hanner nos* (see question 6) |
+| Oriau man y bore | the small hours of the morning | Time and date |
+| Fan hyn a fan draw | here and there | How it's said, extent (heard in both parts) |
+| Falch i ddweud | glad to say | How it's said (see question 7) |
+| Rhyw 15C | about 15C | Temperature, units (*rhyw* is on Around a figure) |
+
+### Form
+
+| Welsh | English | On the row |
+|---|---|---|
+| Wyntog | windy, softened after *yn* | *Gwyntog* |
+| Gwyntoedd | winds | *Gwynt* (the plural is already heard on other rows) |
+| Gymhedrol | moderate, softened after *yn* | *Cymhedrol* |
+| Chlir | clear, with the aspirate mutation after *a* | *Clir* |
+| Fercher | Wednesday, softened after *nos* | *Nos Fercher* |
+| Galan Gaeaf | Halloween, softened after *dros* | *Calan Gaeaf* |
+| Ddylanwad | influence, softened after *dan* | *Dylanwad* |
+| Gydag | with, before a vowel | *Gyda* |
+| Bore dydd Iau | Thursday morning | next to *Bore fory*, *Dydd Iau* |
+
+### Already in the content (Have)
+
+*Cyfnodau braf*, *cyfnodau o law* and *cyfnodau sych*, *ambell gawod* (the form *gawod* is on it), *glaw trwm*, *yn drwm*, *niwlog yn y bore*, *yn symud o gyfeiriad y gorllewin* and *o gyfeiriad*, *o'r gorllewin*, *ar y ffordd* (*Rhagor o law ar y ffordd*), *parhau*, *hefyd*, *storm* and *stormydd*, *rhybuddion*, *gwasgedd uchel* and *gwasgedd isel*, *ffrynt*, *sychach* and *brafiach* (*Troi'n sychach ac yn brafiach*), *oerach*, *teimlo*, *ar ei isaf* and *ar ei uchaf*, *erbyn* and its phrases, *gweddill yr wythnos*, *y dyddiau nesaf*, *yn cymylu*, *dros nos*, *heno*, *fory*, the days *Dydd Mercher*, *Dydd Iau*, *Dydd Gwener* and *Dydd Sadwrn*, *heulwen*, *prynhawn*, *bore*, *gwyntoedd cryfion*, *awel gymedrol*, *rhyw*, *yn bosib*, *mwy o* (*mwy o dywydd garw*), *tymheredd*, *yn gyson*.
+
+Heard again, already collected: *ambell gawod yn bosib fan hyn a fan draw* (the phrase is in both parts of this upload and in upload 12), the *Isel* and *Uchel* map labels, *yn y bore*.
+
+### Patterns (shelved with the sentence patterns)
+
+- *Fory bydd y glaw yn parhau i fod yn drwm yn y gogledd*: the time put first, then *bydd* (the same shape as the Putting the place first card). *Parhau i fod yn* is the continuing frame, heard again in *yn parhau i fod o dan ddylanwad gwasgedd uchel* and *yn parhau i fod yn gymhedrol*.
+- *Mi fydd yn fore digon cymylog i'r mwyafrif ohonom ni*: *mi fydd yn* with a time of day, then *i'r mwyafrif ohonom ni* (for most of us).
+- *Tymheredd ar ei uchaf 16C a'r gwynt yn gymhedrol*: *tymheredd ar ei uchaf / isaf* with a figure and the unit *C*; the same frame heard six times.
+- *Bydd nos Fercher yn sych a chlir unwaith eto*, *Bore dydd Iau mi fydd hi'n braf unwaith eto*: time of day, then the weather, then *unwaith eto*.
+- *Erbyn …, mi fydd yn sychach a brafiach*, *Erbyn dydd Gwener, mwy o dywydd braf*: *erbyn* with a time, then a comparative or *mwy o*.
+- *Mi fydd y cawodydd yn drwm i rai ohonom ni*, *mi fydd yn aros yn sych i'r gweddill ohonom ni*: for some of us / for the rest of us.
+- *Dw i yn falch i ddweud does dim storm na rhybuddion*: glad to say there is no storm nor warnings (*does dim … na*).
+- *Yn hytrach, mi fydd y tywydd yn newid i fod …*: the weather will change to be …
+
+### Places (for the Geography review)
+
+The map and table labels are *Prestatyn*, *Llanrwst*, *Wrecsam*, *Aberystwyth*, *Aberteifi*, *Aberhonddu*, *Llanelli*, *Porth*, *Caerdydd*, *Betws-y-Coed*, *Arthog*, *Doc Penfro* and *Dolwyddelan*. None goes into the content as a list (no gazetteers). *Doc Penfro*, *Dolwyddelan* and *Arthog* are new to the collection. Where a place helps, it appears inside a phrase.
+
+### Units and numbers (for the units page)
+
+- *7C*, *15C*, *16C*, written with the unit letter *C* after the figure, as on the caption, and *rhyw 15C* (about 15C). The map squares show the temperature as a bare number, and the circles the wind speed as a number with no unit on screen, as before.
+- Temperatures this time: 7 on the cold night, 13 to 16 by day. Wind speeds in the circles: 4 to 19.
+
+### Left out
+
+The presenters' names, the second presenter at the studio desk, the S4C Tywydd handle, and the backdrops.
+
+### Questions for a fluent speaker
+
+1. *Dros y dyddiau nesaf, mwy o gyfnodau braf sydd dan y rhagolygon* (the caption reads *syd dyn y rhagolygon*): is it *sydd dan y rhagolygon*? The words between *sydd* and *y rhagolygon* are uncertain.
+2. *Erbyn ganol prynhawn* (Friday table): is *ganol* right after *erbyn*, or a typo for *canol*? (*Erbyn* does not usually soften the next word.)
+3. The *Dydd Sadwrn / Calan Gaeaf* table carries the caption *Erbyn dydd Gwener, mwy o dywydd braf*. Is the caption a card behind the heading, or does it mean something else?
+4. The heading *Cawdodydd i rai* is on screen: is it a typo for *Cawodydd i rai*? (It is not in the content.)
+5. *Cymhedrol* (*gwyntoedd yn gymhedrol*): is this the spelling for moderate here, or *cymedrol* (the content has *Awel gymedrol*)? One spelling should be used across the pages.
+6. *Canol nos* (*ambell gawod posib … canol nos*): the content has *Hanner nos*. Are they the same time, or is *canol nos* "in the middle of the night"?
+7. *Dw i yn falch i ddweud*: is *falch i ddweud* or *falch o ddweud* the usual form?
