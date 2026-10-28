@@ -616,7 +616,7 @@ class UploadTwelveTests(unittest.TestCase):
             for s in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
             for c in s["concepts"].values()
         }
-        for phrase in ("Rhybudd llifogydd ar Afon Tywi", "Afon Clwyd yn uchel yn Rhuddlan", "Yn Nyffryn Conwy", "Ar hyd Aber Hafren"):
+        for phrase in ("Rhybudd llifogydd ar Afon Tywi", "Afon Clwyd yn uchel yn Rhuddlan", "Yn Nyffryn Conwy", "Ar hyd Môr Hafren"):
             self.assertIn(phrase, welsh)
         for slug, page in self.raw["packs"]["cy"]["pages"].items():
             for s in page["sections"].values():

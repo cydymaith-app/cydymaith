@@ -51,12 +51,15 @@
           ]
         },
         "along-the-severn-estuary": {
-          "text": "Ar hyd Aber Hafren",
+          "text": "Ar hyd Môr Hafren",
           "keys": [
             null,
-            "Aber Hafren"
+            "Môr Hafren"
           ],
-          "note": "{{aber}} is an estuary or river mouth; {{Hafren}} is the Severn"
+          "note": "{{Môr Hafren}} is the official Welsh name of the Severn Estuary (JNCC, Severn Estuary / Môr Hafren); {{Hafren}} is the Severn",
+          "also": [
+            "Aber Hafren"
+          ]
         }
       },
       "order": "the coast, then the shore, then the sea"
