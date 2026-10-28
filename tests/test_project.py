@@ -382,16 +382,14 @@ class GeographyStandardTests(unittest.TestCase):
             for sid, section in self.raw["packs"]["cy"]["pages"][slug]["sections"].items():
                 self.assertTrue(section.get("order"), f"{slug}/{sid} has no order")
 
-    def test_the_towns_are_in_alphabetical_order_in_welsh(self):
-        towns = [self.section("geography", "places")["concepts"][cid]["text"] for cid in self.skeleton("geography", "places")]
-        self.assertEqual(towns, sorted(towns, key=self.welsh_order))
-        self.assertEqual(self.section("geography", "places")["order"], "alphabetical in Welsh")
-
-    def test_a_town_heard_after_in_or_to_is_found_by_the_form_it_takes(self):
-        places = self.section("geography", "places")["concepts"]
-        self.assertIn("Nghaerdydd", places["cardiff"]["also"])
-        self.assertIn("Fangor", places["bangor"]["also"])
-        self.assertIn("Nghasnewydd", places["newport"]["also"])
+    def test_a_town_is_only_ever_heard_after_in_where_the_first_letter_changes(self):
+        """2026-10-28: the lists of towns and countries went. A place is named inside a phrase that teaches a sound change."""
+        places = self.section("geography", "in-a-place")["concepts"]
+        self.assertEqual(places["in-cardiff"]["text"], "Yng Nghaerdydd")
+        self.assertIn("Caerdydd", places["in-cardiff"]["also"])
+        self.assertEqual(places["in-bangor"]["text"], "Ym Mangor")
+        self.assertIn("Tyddewi", places["in-st-davids"]["also"])
+        self.assertEqual(places["in-swansea"]["text"], "Yn Abertawe")
 
     def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
         regions = {
@@ -474,7 +472,7 @@ class KeyWordTests(unittest.TestCase):
     GEOGRAPHY = ("compass", "geography", "landscape", "place-name-elements")
     MARKED = {
         "compass": {"from-which-way", "which-part", "parts-of-wales"},
-        "geography": {"named", "uk"},
+        "geography": {"named", "in-a-place"},
         "landscape": {"coast", "inland"},
         "place-name-elements": set(),
     }
@@ -601,11 +599,18 @@ class UploadTwelveTests(unittest.TestCase):
         self.assertEqual(ids[ids.index("there-will-be") + 1], "place-first")
         self.assertNotIn("status", next(s for s in self.raw["pages"]["patterns"]["sections"] if s["id"] == "place-first"))
 
-    def test_the_forecast_map_holds_its_towns_north_to_south_and_cardiff_stays_in_towns_and_cities(self):
-        welsh = self.raw["packs"]["cy"]["pages"]["geography"]["sections"]
-        names = [welsh["forecast-map"]["concepts"][c]["text"] for c in self.concepts("geography", "forecast-map")]
-        self.assertEqual(names, ["Llannerch-y-medd", "Sychdyn", "Y Bala", "Llangurig", "Aberhonddu", "Hwlffordd"])
-        self.assertIn("cardiff", self.concepts("geography", "places"))
+    def test_no_card_is_a_list_of_place_names(self):
+        """No gazetteers (rule 7 in docs/PHILOSOPHY.md): a place is named inside a phrase, never as a row of its own.
+        The place-name elements are the exception, since they teach how names are built."""
+        for slug, page in self.raw["packs"]["cy"]["pages"].items():
+            if slug not in ("geography", "landscape"):  # the compass holds directions, the elements teach how names are built
+                continue
+            for sid, section in page["sections"].items():
+                for cid, concept in section["concepts"].items():
+                    words = concept.get("text", "").split()
+                    self.assertGreater(len(words), 1 if not concept.get("text", "").startswith("Y ") else 2, f"{slug}/{sid}/{cid}: {concept.get('text')!r} is one bare name")
+        for sid in ("places", "forecast-map", "uk", "rivers"):
+            self.assertNotIn(sid, self.raw["packs"]["cy"]["pages"]["geography"]["sections"])
 
     def test_a_river_is_named_in_a_phrase_and_never_listed_on_its_own(self):
         """There are too many rivers in Wales to list, so one is only ever part of a phrase (2026-10-28)."""

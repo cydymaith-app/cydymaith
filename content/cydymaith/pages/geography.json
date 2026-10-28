@@ -5,30 +5,17 @@
   ],
   "sections": [
     {
-      "id": "places",
+      "id": "in-a-place",
       "concepts": [
-        "swansea",
-        "aberystwyth",
-        "bangor",
-        "cardiff",
-        "carmarthen",
-        "holyhead",
-        "newport",
-        "kidwelly",
-        "dinas-powys",
-        "rhuddlan",
-        "wrexham"
-      ]
-    },
-    {
-      "id": "forecast-map",
-      "concepts": [
-        "llannerch-y-medd",
-        "sychdyn",
-        "bala",
-        "llangurig",
-        "brecon",
-        "haverfordwest"
+        "in-cardiff",
+        "in-newport",
+        "in-holyhead",
+        "in-bangor",
+        "in-st-davids",
+        "in-pwllheli",
+        "in-swansea",
+        "in-aberystwyth",
+        "in-wrexham"
       ]
     },
     {
@@ -38,16 +25,6 @@
         "in-the-brecon-beacons",
         "on-anglesey",
         "on-the-llyn-peninsula"
-      ]
-    },
-    {
-      "id": "uk",
-      "concepts": [
-        "the-united-kingdom",
-        "england",
-        "scotland",
-        "northern-ireland",
-        "ireland"
       ]
     }
   ]

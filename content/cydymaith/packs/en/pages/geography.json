@@ -2,64 +2,62 @@
   "title": "Place names",
   "source": "draft",
   "sections": {
-    "places": {
-      "title": "Towns and cities",
+    "in-a-place": {
+      "title": "In a place",
       "concepts": {
-        "swansea": {
-          "text": "Swansea"
+        "in-cardiff": {
+          "text": "In Cardiff",
+          "keys": [
+            "Cardiff"
+          ]
         },
-        "aberystwyth": {
-          "text": "Aberystwyth"
+        "in-newport": {
+          "text": "In Newport",
+          "keys": [
+            "Newport"
+          ]
         },
-        "bangor": {
-          "text": "Bangor"
+        "in-holyhead": {
+          "text": "In Holyhead",
+          "keys": [
+            "Holyhead"
+          ]
         },
-        "cardiff": {
-          "text": "Cardiff"
+        "in-bangor": {
+          "text": "In Bangor",
+          "keys": [
+            "Bangor"
+          ]
         },
-        "holyhead": {
-          "text": "Holyhead"
+        "in-st-davids": {
+          "text": "In St Davids",
+          "keys": [
+            "St Davids"
+          ]
         },
-        "newport": {
-          "text": "Newport"
+        "in-pwllheli": {
+          "text": "In Pwllheli",
+          "keys": [
+            "Pwllheli"
+          ]
         },
-        "wrexham": {
-          "text": "Wrexham"
+        "in-swansea": {
+          "text": "In Swansea",
+          "keys": [
+            "Swansea"
+          ]
         },
-        "carmarthen": {
-          "text": "Carmarthen"
+        "in-aberystwyth": {
+          "text": "In Aberystwyth",
+          "keys": [
+            "Aberystwyth"
+          ]
         },
-        "kidwelly": {
-          "text": "Kidwelly"
-        },
-        "dinas-powys": {
-          "text": "Dinas Powys"
-        },
-        "rhuddlan": {
-          "text": "Rhuddlan"
-        }
-      }
-    },
-    "forecast-map": {
-      "title": "On the forecast map",
-      "concepts": {
-        "llannerch-y-medd": {
-          "text": "Llannerch-y-medd"
-        },
-        "sychdyn": {
-          "text": "Soughton"
-        },
-        "bala": {
-          "text": "Bala"
-        },
-        "llangurig": {
-          "text": "Llangurig"
-        },
-        "brecon": {
-          "text": "Brecon"
-        },
-        "haverfordwest": {
-          "text": "Haverfordwest"
+        "in-wrexham": {
+          "text": "In Wrexham",
+          "keys": [
+            "Wrexham"
+          ]
         }
       }
     },
@@ -93,30 +91,6 @@
           "keys": [
             "Llŷn Peninsula"
           ]
-        }
-      }
-    },
-    "uk": {
-      "title": "Beyond Wales",
-      "concepts": {
-        "the-united-kingdom": {
-          "text": "The United Kingdom"
-        },
-        "england": {
-          "text": "England"
-        },
-        "scotland": {
-          "text": "Scotland"
-        },
-        "northern-ireland": {
-          "text": "Northern Ireland",
-          "keys": [
-            "Northern",
-            "Ireland"
-          ]
-        },
-        "ireland": {
-          "text": "Ireland"
         }
       }
     }

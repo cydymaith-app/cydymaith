@@ -2,104 +2,90 @@
   "title": "Enwau lleoedd",
   "source": "draft",
   "sections": {
-    "places": {
-      "title": "Trefi a dinasoedd",
+    "in-a-place": {
+      "title": "Yn …",
+      "order": "the sounds that change first (c, b, t, p), then the names that do not",
+      "intro": "After {{yn}} (in) the first letter of a place name changes, as with the parts of Wales on the Compass: {{Caerdydd}} becomes {{Nghaerdydd}}. The plain name is listed as another way it is heard.",
       "concepts": {
-        "swansea": {
-          "text": "Abertawe"
-        },
-        "aberystwyth": {
-          "text": "Aberystwyth"
-        },
-        "bangor": {
-          "text": "Bangor",
+        "in-cardiff": {
+          "text": "Yng Nghaerdydd",
+          "keys": [
+            "Nghaerdydd"
+          ],
           "also": [
-            "Mangor",
-            "Fangor"
+            "Caerdydd"
+          ],
+          "note": "{{c}} becomes {{ngh}} after {{yn}}, and {{yn}} becomes {{yng}}"
+        },
+        "in-newport": {
+          "text": "Yng Nghasnewydd",
+          "keys": [
+            "Nghasnewydd"
+          ],
+          "also": [
+            "Casnewydd"
           ]
         },
-        "cardiff": {
-          "text": "Caerdydd",
+        "in-holyhead": {
+          "text": "Yng Nghaergybi",
+          "keys": [
+            "Nghaergybi"
+          ],
           "also": [
-            "Nghaerdydd",
-            "Gaerdydd"
+            "Caergybi"
           ]
         },
-        "holyhead": {
-          "text": "Caergybi",
+        "in-bangor": {
+          "text": "Ym Mangor",
+          "keys": [
+            "Mangor"
+          ],
           "also": [
-            "Nghaergybi",
-            "Gaergybi"
+            "Bangor"
+          ],
+          "note": "{{b}} becomes {{m}} after {{yn}}, and {{yn}} becomes {{ym}}"
+        },
+        "in-st-davids": {
+          "text": "Yn Nhyddewi",
+          "keys": [
+            "Nhyddewi"
+          ],
+          "also": [
+            "Tyddewi"
+          ],
+          "note": "{{t}} becomes {{nh}} after {{yn}}"
+        },
+        "in-pwllheli": {
+          "text": "Ym Mhwllheli",
+          "keys": [
+            "Mhwllheli"
+          ],
+          "also": [
+            "Pwllheli"
+          ],
+          "note": "{{p}} becomes {{mh}} after {{yn}}, and {{yn}} becomes {{ym}}"
+        },
+        "in-swansea": {
+          "text": "Yn Abertawe",
+          "keys": [
+            "Abertawe"
+          ],
+          "note": "a vowel does not change, so {{yn}} stays {{yn}}"
+        },
+        "in-aberystwyth": {
+          "text": "Yn Aberystwyth",
+          "keys": [
+            "Aberystwyth"
           ]
         },
-        "newport": {
-          "text": "Casnewydd",
-          "also": [
-            "Nghasnewydd",
-            "Gasnewydd"
-          ]
-        },
-        "wrexham": {
-          "text": "Wrecsam"
-        },
-        "carmarthen": {
-          "text": "Caerfyrddin",
-          "also": [
-            "Nghaerfyrddin",
-            "Gaerfyrddin"
-          ]
-        },
-        "kidwelly": {
-          "text": "Cydweli",
-          "also": [
-            "Nghydweli",
-            "Gydweli",
-            "ardal Cydweli"
-          ]
-        },
-        "dinas-powys": {
-          "text": "Dinas Powys",
-          "also": [
-            "Ninas Powys",
-            "Ddinas Powys"
-          ]
-        },
-        "rhuddlan": {
-          "text": "Rhuddlan"
+        "in-wrexham": {
+          "text": "Yn Wrecsam",
+          "keys": [
+            "Wrecsam"
+          ],
+          "note": "{{w}} does not change after {{yn}}"
         }
-      },
-      "order": "alphabetical in Welsh"
-    },
-    "forecast-map": {
-      "title": "Ar fap y tywydd",
-      "concepts": {
-        "llannerch-y-medd": {
-          "text": "Llannerch-y-medd",
-          "also": [
-            "Lannerch-y-medd"
-          ]
-        },
-        "sychdyn": {
-          "text": "Sychdyn"
-        },
-        "bala": {
-          "text": "Y Bala"
-        },
-        "llangurig": {
-          "text": "Llangurig",
-          "also": [
-            "Langurig"
-          ]
-        },
-        "brecon": {
-          "text": "Aberhonddu"
-        },
-        "haverfordwest": {
-          "text": "Hwlffordd"
-        }
-      },
-      "intro": "The towns the S4C forecast map labels every night. The seventh, {{Caerdydd}}, is under Towns and cities.",
-      "order": "north to south, as on the map"
+      }
     },
     "named": {
       "title": "Tirnodau",
@@ -142,40 +128,6 @@
         }
       },
       "order": "the mountains first, then the island and the peninsula"
-    },
-    "uk": {
-      "title": "Y tu hwnt i Gymru",
-      "concepts": {
-        "the-united-kingdom": {
-          "text": "Y Deyrnas Unedig"
-        },
-        "england": {
-          "text": "Lloegr",
-          "also": [
-            "Loegr"
-          ]
-        },
-        "scotland": {
-          "text": "Yr Alban",
-          "also": [
-            "Alban"
-          ]
-        },
-        "northern-ireland": {
-          "text": "Gogledd Iwerddon",
-          "keys": [
-            "Gogledd",
-            "Iwerddon"
-          ],
-          "also": [
-            "Ngogledd Iwerddon"
-          ]
-        },
-        "ireland": {
-          "text": "Iwerddon"
-        }
-      },
-      "order": "the United Kingdom, then its other nations, then Ireland"
     }
   }
 }
