@@ -8,13 +8,15 @@
         "mild-on-the-whole",
         "feeling-fresh-in-the-wind",
         "colder-than-yesterday",
-        "another-cold-night"
+        "another-cold-night",
+        "temperatures-a-little-lower-tomorrow-than-today"
       ]
     },
     {
       "id": "humidity",
       "concepts": [
         "it-should-turn-drier",
+        "drier-tomorrow-night",
         "damp-and-grey",
         "close-humid-weather",
         "high-humidity-in-the-afternoon"

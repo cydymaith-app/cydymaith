@@ -68,6 +68,42 @@
             "60 miles per hour",
             "coast"
           ]
+        },
+        "wind-is-the-main-thing-tonight": {
+          "text": "Wind is the main thing tonight",
+          "keys": [
+            "Wind",
+            "tonight"
+          ]
+        },
+        "the-worst-of-the-wind-overnight": {
+          "text": "The worst of the wind overnight",
+          "keys": [
+            "worst",
+            "wind",
+            "overnight"
+          ]
+        },
+        "the-wind-gusting-around-40-mph": {
+          "text": "The wind gusting around 40 mph",
+          "keys": [
+            "gusting",
+            "around"
+          ]
+        },
+        "a-gust-of-65-mph-is-possible": {
+          "text": "A gust of 65 mph is possible",
+          "keys": [
+            "gust",
+            "possible"
+          ]
+        },
+        "widely-up-to-50-mph": {
+          "text": "Widely up to 50 mph",
+          "keys": [
+            "Widely",
+            "up to"
+          ]
         }
       }
     },
@@ -166,6 +202,13 @@
             "rough weather",
             "Met Office",
             "warning"
+          ]
+        },
+        "there-are-warnings-in-force": {
+          "text": "There are warnings in force",
+          "keys": [
+            "warnings",
+            "in force"
           ]
         }
       }

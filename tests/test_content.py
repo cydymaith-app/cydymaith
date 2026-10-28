@@ -180,7 +180,7 @@ class BuildTests(unittest.TestCase):
 
     def test_the_weather_tiles_follow_what_a_forecast_talks_about_in_the_order_it_runs(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "patterns"])
+        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"])
 
     def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_everyday_and_a_related_page_of_how_its_said(self):
         """Time and place was split on 2026-10-27: the compass went to Geography (one page), Time and date to Everyday."""
@@ -198,13 +198,14 @@ class BuildTests(unittest.TestCase):
         self.assertIn("Amser a dyddiad", self.built["when.html"])
         self.assertIn("Time and date", self.built["when.html"])
 
-    def test_pressure_opens_change_and_movement_which_is_a_held_page_and_the_forecast_card_is_gone(self):
-        """The forecast card was dropped on 2026-10-27; its pressure went to Change and movement, its warnings to the cards."""
+    def test_pressure_opens_change_and_movement_which_is_released_and_the_forecast_card_is_gone(self):
+        """The forecast card was dropped on 2026-10-27; its pressure went to Change and movement, its warnings to the cards.
+        Change and movement was released on 2026-10-28, with the fronts and isobars of upload 12, before its review."""
         self.assertFalse((PROJECT / "pages" / "warnings.json").exists())
         change = json.loads((PROJECT / "pages" / "change.json").read_text(encoding="utf-8"))
         self.assertEqual([s["id"] for s in change["sections"]], ["pressure", "moving", "which-way", "changing", "other-verbs"])
-        self.assertTrue(all(s.get("status") == "development" for s in change["sections"]), "the page stays held until reviewed")
-        self.assertNotIn("change.html", self.built)
+        self.assertTrue(all("status" not in s for s in change["sections"]), "released")
+        self.assertIn('id="topic-change"', self.built["group-weather-forecast.html"])
         patterns = json.loads((PROJECT / "pages" / "patterns.json").read_text(encoding="utf-8"))
         ids = [s["id"] for s in patterns["sections"]]
         self.assertFalse({"moving", "verbs", "pressure"} & set(ids), "these moved off How it's said")
@@ -320,7 +321,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 2, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 3, "geography": 3, "landscape": 2, "patterns": 6, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 3, "when": 4, "compass": 3, "geography": 5, "landscape": 2, "patterns": 7, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -334,7 +335,7 @@ class BuildTests(unittest.TestCase):
         for slug in self.site.slugs:
             self.assertNotIn("in-a-sentence", [s["id"] for s in self.site.sections(slug)], slug)
         self.assertEqual([s["id"] for s in self.site.sections("patterns")],
-                         ["it-is", "doing", "it-will-be", "there-will-be", "wind-from", "extent"])
+                         ["it-is", "doing", "it-will-be", "there-will-be", "place-first", "wind-from", "extent"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
         slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "compass", "patterns", "talk")
@@ -347,10 +348,11 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(geography["layout"], "one-page")
         self.assertEqual(geography["pages"], ["compass", "geography", "landscape", "place-name-elements"])
         skeleton = self.site.skel["geography"]
-        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "named", "uk"])
+        self.assertEqual([s["id"] for s in skeleton["sections"]], ["places", "forecast-map", "rivers", "named", "uk"])
         self.assertTrue(all("status" not in s for s in skeleton["sections"]), "Geography is no longer held back")
         # 2026-10-28: the regions went to the Compass, and the named places came from Landscape as Landmarks
-        self.assertEqual(self.site.count_entries("geography"), 16)
+        # and upload 12 added four towns, the six other towns on the forecast map and two rivers
+        self.assertEqual(self.site.count_entries("geography"), 28)
         self.assertEqual([s["id"] for s in self.site.skel["landscape"]["sections"]], ["coast", "inland"])
         self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "north-and-east", "south-and-west", "all-of-wales"])
 

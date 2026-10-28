@@ -232,6 +232,47 @@
       },
       "order": "sky, rain, snow, frost, wind, then temperature"
     },
+    "place-first": {
+      "title": "Rhoi'r lle yn gyntaf",
+      "concepts": {
+        "the-west-will-see-the-worst": {
+          "text": "Y gorllewin fydd yn gweld y gwaetha",
+          "keys": [
+            "gorllewin",
+            "gwaetha"
+          ]
+        },
+        "overnight-will-see-the-worst-of-the-wind": {
+          "text": "Dros nos fydd yn gweld y gwaetha o'r gwynt",
+          "keys": [
+            "Dros nos",
+            "gwaetha",
+            "gwynt"
+          ]
+        },
+        "the-north-had-the-best-of-the-sunshine": {
+          "text": "Y gogledd welodd orau'r heulwen heddiw",
+          "keys": [
+            "gogledd",
+            "orau'r",
+            "heulwen"
+          ],
+          "note": "{{gorau}} softens to {{orau}} after {{welodd}}",
+          "also": [
+            "gorau'r heulwen"
+          ]
+        },
+        "high-pressure-starting-to-take-over": {
+          "text": "Gwasgedd uchel sy'n dechrau rheoli",
+          "keys": [
+            "Gwasgedd uchel",
+            "rheoli"
+          ]
+        }
+      },
+      "intro": "Welsh puts what matters first, then {{fydd}} (will), {{sy'n}} (that is) or {{welodd}} (saw): {{Y gorllewin fydd yn gweld …}} is \"it's the west that will see …\".",
+      "order": "where, then when, then what was seen, then what is in charge"
+    },
     "wind-from": {
       "title": "Enwi'r gwynt",
       "concepts": {
@@ -295,6 +336,9 @@
           "also": [
             "llefydd"
           ]
+        },
+        "widely": {
+          "text": "Yn eang"
         }
       },
       "order": "the whole, most of it, then places and areas"
@@ -339,6 +383,9 @@
         },
         "other": {
           "text": "Eraill"
+        },
+        "all-the": {
+          "text": "Yr holl"
         }
       }
     },
@@ -382,6 +429,15 @@
             "hefo",
             "efo"
           ]
+        },
+        "although": {
+          "text": "Er bod",
+          "also": [
+            "er mae"
+          ]
+        },
+        "because": {
+          "text": "Achos"
         }
       }
     },
@@ -394,6 +450,15 @@
         },
         "middle": {
           "text": "Canol"
+        },
+        "by-now": {
+          "text": "Erbyn hyn"
+        },
+        "already": {
+          "text": "Yn barod"
+        },
+        "to-come": {
+          "text": "I ddod"
         }
       }
     },
@@ -437,7 +502,20 @@
           "text": "Ysgafnach"
         },
         "than": {
-          "text": "Nag"
+          "text": "Nag",
+          "also": [
+            "na"
+          ]
+        },
+        "lower": {
+          "text": "Is"
+        },
+        "finer": {
+          "text": "Brafiach"
+        },
+        "more-so": {
+          "text": "Yn fwy",
+          "note": "{{mwy}} softens to {{fwy}} after {{yn}}: {{yn fwy sefydlog}}, more settled"
         }
       },
       "order": "more, then less, then than"

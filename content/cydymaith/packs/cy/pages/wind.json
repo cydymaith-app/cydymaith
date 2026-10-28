@@ -77,6 +77,49 @@
             "60 milltir yr awr",
             "arfordir"
           ]
+        },
+        "wind-is-the-main-thing-tonight": {
+          "text": "Gwyntoedd yw'r prif beth heno",
+          "keys": [
+            "Gwyntoedd",
+            "heno"
+          ]
+        },
+        "the-worst-of-the-wind-overnight": {
+          "text": "Y gwaetha o'r gwynt dros nos",
+          "keys": [
+            "gwaetha",
+            "gwynt",
+            "dros nos"
+          ],
+          "note": "{{gwaetha}} is how {{gwaethaf}} (worst) is said",
+          "also": [
+            "gwaethaf"
+          ]
+        },
+        "the-wind-gusting-around-40-mph": {
+          "text": "Y gwynt yn hyrddio o gwmpas 40 milltir yr awr",
+          "keys": [
+            "hyrddio",
+            "o gwmpas"
+          ]
+        },
+        "a-gust-of-65-mph-is-possible": {
+          "text": "Hyrddiad o 65 milltir yr awr yn bosib",
+          "keys": [
+            "Hyrddiad",
+            "yn bosib"
+          ],
+          "also": [
+            "hyrddiad o 65mya"
+          ]
+        },
+        "widely-up-to-50-mph": {
+          "text": "Yn eang hyd at 50 milltir yr awr",
+          "keys": [
+            "eang",
+            "hyd at"
+          ]
         }
       },
       "order": "lightest to strongest, then gusts and speeds"
@@ -165,7 +208,10 @@
             "Mewn grym",
             "dri o'r gloch y bore"
           ],
-          "note": "{{tan}} softens {{tri}} to {{dri}}"
+          "note": "{{tan}} softens {{tri}} to {{dri}}",
+          "also": [
+            "tan dri o'r gloch bore fory"
+          ]
         },
         "an-amber-wind-warning": {
           "text": "Rhybudd ambr am wynt",
@@ -181,6 +227,17 @@
             "dywydd garw",
             "Swyddfa Dywydd",
             "rhybuddio"
+          ]
+        },
+        "there-are-warnings-in-force": {
+          "text": "Mae yna rybuddion mewn grym",
+          "keys": [
+            "rybuddion",
+            "mewn grym"
+          ],
+          "note": "{{rhybuddion}} softens to {{rybuddion}} after {{mae yna}}",
+          "also": [
+            "rhybuddion mewn grym"
           ]
         }
       },

@@ -1,7 +1,8 @@
 {
   "icon": "rain",
   "related": [
-    "landscape"
+    "landscape",
+    "geography#rivers"
   ],
   "sections": [
     {
@@ -14,7 +15,20 @@
         "possibly-heavy-at-times",
         "heavy-rain-and-strong-wind",
         "a-yellow-warning-for-rain",
-        "a-risk-of-flooding"
+        "a-risk-of-rain",
+        "the-odd-shower-may-linger"
+      ]
+    },
+    {
+      "id": "flooding",
+      "concepts": [
+        "a-risk-of-flooding",
+        "a-flood-warning",
+        "river-levels-are-high",
+        "after-all-that-rain",
+        "some-have-already-seen-flooding",
+        "the-warnings-can-change-all-the-time",
+        "keep-an-eye-on-the-natural-resources-wales-website"
       ]
     },
     {
@@ -23,7 +37,9 @@
         "a-chance-of-thunder-and-lightning",
         "the-odd-thunderstorm",
         "more-rough-weather-over-the-next-few-hours",
-        "two-storms-in-one-weekend"
+        "two-storms-in-one-weekend",
+        "more-rough-weather-to-come",
+        "the-storms-have-cleared-the-country-by-now"
       ]
     }
   ]

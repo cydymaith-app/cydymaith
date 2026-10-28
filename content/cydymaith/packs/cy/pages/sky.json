@@ -71,6 +71,48 @@
           "also": [
             "gymylog i ddechrau"
           ]
+        },
+        "a-cloudy-day-on-the-whole": {
+          "text": "Wedi bod yn ddiwrnod cymylog ar y cyfan",
+          "keys": [
+            "cymylog",
+            "ddiwrnod"
+          ],
+          "note": "{{diwrnod}} softens to {{ddiwrnod}} after {{yn}}"
+        },
+        "sunshine-and-showers": {
+          "text": "Haul a chawodydd",
+          "keys": [
+            "Haul",
+            "chawodydd"
+          ],
+          "note": "{{cawodydd}} becomes {{chawodydd}} after {{a}} (and)"
+        },
+        "sunshine-and-the-odd-shower": {
+          "text": "Haul ac ambell gawod",
+          "keys": [
+            "Haul",
+            "gawod"
+          ],
+          "note": "{{cawod}} softens to {{gawod}} after {{ambell}}"
+        },
+        "some-fine-spells-later-in-the-day": {
+          "text": "Rhai cyfnodau braf yn hwyrach yn y dydd",
+          "keys": [
+            "braf",
+            "hwyrach"
+          ]
+        },
+        "dry-for-a-while-overnight": {
+          "text": "Sych am gyfnod dros nos",
+          "keys": [
+            "Sych",
+            "dros nos"
+          ],
+          "note": "{{cyfnod}} softens to {{gyfnod}} after {{am}}",
+          "also": [
+            "mi fydd hi'n sych am gyfnod"
+          ]
         }
       },
       "order": "sunniest to cloudiest"
@@ -108,6 +150,13 @@
             "clirio",
             "niwl",
             "canol y bore"
+          ]
+        },
+        "foggy-in-the-morning": {
+          "text": "Niwlog yn y bore",
+          "keys": [
+            "Niwlog",
+            "bore"
           ]
         }
       },
@@ -148,6 +197,16 @@
           "keys": [
             "ganol yr wythnos",
             "Ansefydlog"
+          ]
+        },
+        "more-settled-by-wednesday": {
+          "text": "Mwy sefydlog erbyn dydd Mercher",
+          "keys": [
+            "sefydlog",
+            "dydd Mercher"
+          ],
+          "also": [
+            "yn fwy sefydlog erbyn dydd Mercher"
           ]
         }
       },

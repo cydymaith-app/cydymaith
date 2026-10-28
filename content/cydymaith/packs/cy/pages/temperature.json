@@ -43,6 +43,15 @@
             "arall",
             "Noson"
           ]
+        },
+        "temperatures-a-little-lower-tomorrow-than-today": {
+          "text": "Tymhereddau bach yn is yfory na heddiw",
+          "keys": [
+            "Tymhereddau",
+            "yn is",
+            "heddiw"
+          ],
+          "note": "{{bach}} (a little) before {{yn is}} (lower); {{na}} (than) before a consonant, {{nag}} before a vowel"
         }
       },
       "order": "warmest to coldest"
@@ -58,7 +67,8 @@
             "sychach"
           ],
           "also": [
-            "ddylai hi droi'n sychach"
+            "ddylai hi droi'n sychach",
+            "mi fydd hi'n troi'n sychach"
           ]
         },
         "damp-and-grey": {
@@ -84,6 +94,13 @@
             null,
             "prynhawn"
           ]
+        },
+        "drier-tomorrow-night": {
+          "text": "Nos yfory yn sychach",
+          "keys": [
+            "Nos yfory",
+            "sychach"
+          ]
         }
       },
       "order": "dry to muggy"
@@ -98,7 +115,10 @@
             "tymheredd",
             "prynhawn"
           ],
-          "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
+          "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}",
+          "also": [
+            "a'r tymheredd yn 16 gradd ar ei uchaf"
+          ]
         },
         "a-high-of-16-degrees": {
           "text": "Uchafbwynt o 16 gradd",

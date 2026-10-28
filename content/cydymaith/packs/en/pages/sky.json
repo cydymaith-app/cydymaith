@@ -66,6 +66,41 @@
           "keys": [
             "Cloudy"
           ]
+        },
+        "a-cloudy-day-on-the-whole": {
+          "text": "It has been a cloudy day on the whole",
+          "keys": [
+            "cloudy",
+            "day"
+          ]
+        },
+        "sunshine-and-showers": {
+          "text": "Sunshine and showers",
+          "keys": [
+            "Sunshine",
+            "showers"
+          ]
+        },
+        "sunshine-and-the-odd-shower": {
+          "text": "Sunshine and the odd shower",
+          "keys": [
+            "Sunshine",
+            "shower"
+          ]
+        },
+        "some-fine-spells-later-in-the-day": {
+          "text": "Some fine spells later in the day",
+          "keys": [
+            "fine",
+            "later"
+          ]
+        },
+        "dry-for-a-while-overnight": {
+          "text": "Dry for a while overnight",
+          "keys": [
+            "Dry",
+            "overnight"
+          ]
         }
       }
     },
@@ -102,6 +137,13 @@
             "clearing",
             "fog",
             "mid-morning"
+          ]
+        },
+        "foggy-in-the-morning": {
+          "text": "Foggy in the morning",
+          "keys": [
+            "Foggy",
+            "morning"
           ]
         }
       }
@@ -141,6 +183,13 @@
           "keys": [
             "mid-week",
             "Unsettled"
+          ]
+        },
+        "more-settled-by-wednesday": {
+          "text": "More settled by Wednesday",
+          "keys": [
+            "settled",
+            "Wednesday"
           ]
         }
       }

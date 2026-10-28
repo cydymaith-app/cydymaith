@@ -44,6 +44,14 @@
             "Another",
             "night"
           ]
+        },
+        "temperatures-a-little-lower-tomorrow-than-today": {
+          "text": "Temperatures a little lower tomorrow than today",
+          "keys": [
+            "Temperatures",
+            "lower",
+            "today"
+          ]
         }
       }
     },
@@ -80,6 +88,13 @@
             "High humidity",
             null,
             "afternoon"
+          ]
+        },
+        "drier-tomorrow-night": {
+          "text": "Drier tomorrow night",
+          "keys": [
+            "tomorrow night",
+            "Drier"
           ]
         }
       }

@@ -137,7 +137,8 @@ class RelatedTopicsTests(unittest.TestCase):
             {
                 "group-geography.html#topic-landscape",  # from Rain, Snow and ice and How it's said
                 "group-geography.html#points",  # from Wind
-                "group-geography.html#topic-compass",  # the group's own link, and from How it's said
+                "group-geography.html#topic-compass",  # the group's own link
+                "group-geography.html#rivers",  # from Rain, for the flooding, and from How it's said
                 "when.html",  # from How it's said, as a related page
             },
         )
@@ -564,3 +565,61 @@ class ContrastStartTests(unittest.TestCase):
         help_en = json.loads((ROOT / "framework" / "phrasebook" / "help" / "en.json").read_text(encoding="utf-8"))
         self.assertIn("more contrast", " ".join(help_en["features"]["colour-schemes"]["body"]))
         self.assertIn("cyferbyniad", " ".join(raw["packs"]["cy"]["help"]["features"]["colour-schemes"]["body"]))
+
+
+class UploadTwelveTests(unittest.TestCase):
+    """The phrases of upload 12 (27 October 2026): flooding, the place-first pattern, the forecast map and rivers."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def ids(self, slug):
+        return [s["id"] for s in self.raw["pages"][slug]["sections"]]
+
+    def concepts(self, slug, sid):
+        return next(s for s in self.raw["pages"][slug]["sections"] if s["id"] == sid)["concepts"]
+
+    def test_rain_has_a_flooding_card_between_rain_and_thunder_and_the_risk_of_flooding_moved_there(self):
+        self.assertEqual(self.ids("rain"), ["rain", "flooding", "storms"])
+        self.assertEqual(self.concepts("rain", "flooding")[0], "a-risk-of-flooding")
+        self.assertNotIn("a-risk-of-flooding", self.concepts("rain", "rain"))
+        self.assertIn("geography#rivers", self.raw["pages"]["rain"]["related"])
+
+    def test_how_its_said_puts_the_place_first_after_there_will_be(self):
+        ids = self.ids("patterns")
+        self.assertEqual(ids[ids.index("there-will-be") + 1], "place-first")
+        self.assertNotIn("status", next(s for s in self.raw["pages"]["patterns"]["sections"] if s["id"] == "place-first"))
+
+    def test_the_forecast_map_holds_its_towns_north_to_south_and_cardiff_stays_in_towns_and_cities(self):
+        welsh = self.raw["packs"]["cy"]["pages"]["geography"]["sections"]
+        names = [welsh["forecast-map"]["concepts"][c]["text"] for c in self.concepts("geography", "forecast-map")]
+        self.assertEqual(names, ["Llannerch-y-medd", "Sychdyn", "Y Bala", "Llangurig", "Aberhonddu", "Hwlffordd"])
+        self.assertIn("cardiff", self.concepts("geography", "places"))
+
+    def test_the_rivers_are_the_ones_heard(self):
+        welsh = self.raw["packs"]["cy"]["pages"]["geography"]["sections"]["rivers"]["concepts"]
+        self.assertEqual(sorted(c["text"] for c in welsh.values()), ["Afon Clwyd", "Afon Tywi"])
+
+    def test_every_new_weather_row_marks_its_key_words_in_both_languages(self):
+        new = {
+            "sky": ["a-cloudy-day-on-the-whole", "sunshine-and-showers", "foggy-in-the-morning", "more-settled-by-wednesday"],
+            "rain": ["a-risk-of-rain", "river-levels-are-high", "some-have-already-seen-flooding"],
+            "wind": ["the-worst-of-the-wind-overnight", "there-are-warnings-in-force"],
+            "change": ["a-front-bringing-more-rain", "the-isobars-closing-up", "a-band-of-heavy-rain-moving-east"],
+            "patterns": ["the-west-will-see-the-worst", "the-north-had-the-best-of-the-sunshine"],
+        }
+        for slug, cids in new.items():
+            for code in ("cy", "en"):
+                found = {
+                    cid: c
+                    for s in self.raw["packs"][code]["pages"][slug]["sections"].values()
+                    for cid, c in s["concepts"].items()
+                }
+                for cid in cids:
+                    self.assertTrue(found[cid].get("keys"), (slug, code, cid))
+
+    def test_no_storm_is_named(self):
+        for code in ("cy", "en"):
+            for slug in ("sky", "rain", "wind", "change", "patterns"):
+                self.assertNotRegex(json.dumps(self.raw["packs"][code]["pages"][slug], ensure_ascii=False), r"Storm [A-Z]")

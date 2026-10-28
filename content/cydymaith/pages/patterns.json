@@ -55,6 +55,15 @@
       ]
     },
     {
+      "id": "place-first",
+      "concepts": [
+        "the-west-will-see-the-worst",
+        "overnight-will-see-the-worst-of-the-wind",
+        "the-north-had-the-best-of-the-sunshine",
+        "high-pressure-starting-to-take-over"
+      ]
+    },
+    {
       "id": "wind-from",
       "concepts": [
         "a-south-westerly-wind",
@@ -71,7 +80,8 @@
         "mainly",
         "in-places",
         "areas",
-        "localities"
+        "localities",
+        "widely"
       ]
     },
     {
@@ -87,7 +97,8 @@
         "a-lot-of",
         "more",
         "some",
-        "other"
+        "other",
+        "all-the"
       ]
     },
     {
@@ -112,7 +123,9 @@
         "so",
         "like-as",
         "once-again",
-        "with"
+        "with",
+        "although",
+        "because"
       ]
     },
     {
@@ -120,7 +133,10 @@
       "status": "development",
       "concepts": [
         "later-on",
-        "middle"
+        "middle",
+        "by-now",
+        "already",
+        "to-come"
       ]
     },
     {
@@ -146,8 +162,11 @@
       "status": "development",
       "concepts": [
         "higher",
+        "lower",
         "lighter",
-        "than"
+        "finer",
+        "than",
+        "more-so"
       ]
     }
   ]

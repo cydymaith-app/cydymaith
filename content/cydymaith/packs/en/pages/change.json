@@ -38,6 +38,20 @@
             "Low pressure",
             "rain"
           ]
+        },
+        "a-front-bringing-more-rain": {
+          "text": "A front bringing more rain",
+          "keys": [
+            "front",
+            "rain"
+          ]
+        },
+        "the-isobars-closing-up": {
+          "text": "The isobars on the map closing up",
+          "keys": [
+            "isobars",
+            "closing up"
+          ]
         }
       }
     },
@@ -97,6 +111,13 @@
             null,
             "Leaving",
             "overnight"
+          ]
+        },
+        "a-band-of-heavy-rain-moving-east": {
+          "text": "A band of heavy rain moving east",
+          "keys": [
+            "heavy rain",
+            "east"
           ]
         }
       }
@@ -226,6 +247,20 @@
           "keys": [
             "settle",
             "little"
+          ]
+        },
+        "clearing-on-the-whole-after-midnight": {
+          "text": "Clearing on the whole after midnight",
+          "keys": [
+            "Clearing",
+            "midnight"
+          ]
+        },
+        "turning-drier-and-finer-during-the-day": {
+          "text": "Turning drier and finer during the day",
+          "keys": [
+            "drier",
+            "finer"
           ]
         }
       }
