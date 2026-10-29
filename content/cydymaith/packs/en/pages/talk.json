@@ -3,46 +3,93 @@
   "lede": "Asking about the weather, and the small talk that goes with it.",
   "source": "draft",
   "sections": {
-    "asking": {
-      "title": "Asking",
+    "asking-and-chatting": {
+      "title": "Asking and chatting",
       "concepts": {
         "whats-the-weather-like": {
-          "text": "What's the weather like?"
-        },
-        "whats-the-forecast": {
-          "text": "What's the forecast?"
+          "text": "What's the weather like?",
+          "keys": [
+            null,
+            "weather"
+          ]
         },
         "whats-the-temperature": {
-          "text": "What's the temperature?"
+          "text": "What's the temperature?",
+          "keys": [
+            null,
+            "temperature"
+          ]
         },
         "whats-the-weather-like-in-north-wales": {
-          "text": "What's the weather like in north Wales?"
+          "text": "What's the weather like in north Wales?",
+          "keys": [
+            "Wales",
+            "weather",
+            "north"
+          ]
+        },
+        "whats-the-forecast": {
+          "text": "What's the forecast?",
+          "keys": [
+            null,
+            null,
+            "forecast"
+          ]
         },
         "will-it-rain-tomorrow": {
-          "text": "Will it rain tomorrow?"
+          "text": "Will it rain tomorrow?",
+          "keys": [
+            null,
+            "rain",
+            "tomorrow"
+          ]
         },
         "will-it-be-cold-tonight": {
-          "text": "Will it be cold tonight?"
+          "text": "Will it be cold tonight?",
+          "keys": [
+            "cold",
+            "tonight"
+          ]
         },
         "do-i-need-an-umbrella": {
-          "text": "Do I need an umbrella?"
+          "text": "Do I need an umbrella?",
+          "keys": [
+            "need",
+            null,
+            "umbrella"
+          ]
         },
         "do-i-need-a-coat": {
-          "text": "Do I need a coat?"
-        }
-      }
-    },
-    "small-talk": {
-      "title": "Small talk",
-      "concepts": {
+          "text": "Do I need a coat?",
+          "keys": [
+            "need",
+            null,
+            "coat"
+          ]
+        },
         "lovely-weather-isnt-it": {
-          "text": "Lovely weather, isn't it?"
+          "text": "Lovely weather, isn't it?",
+          "keys": [
+            null,
+            "weather",
+            "Lovely"
+          ]
         },
         "dreadful-weather-isnt-it": {
-          "text": "Dreadful weather, isn't it?"
+          "text": "Dreadful weather, isn't it?",
+          "keys": [
+            null,
+            "weather",
+            "Dreadful"
+          ]
         },
         "its-been-very-wet": {
-          "text": "It's been very wet"
+          "text": "It's been very wet",
+          "keys": [
+            null,
+            "wet",
+            "very"
+          ]
         }
       }
     }

@@ -2,48 +2,96 @@
   "title": "Sôn am y tywydd",
   "source": "draft",
   "sections": {
-    "asking": {
-      "title": "Gofyn",
+    "asking-and-chatting": {
+      "title": "Gofyn a sgwrsio",
       "concepts": {
         "whats-the-weather-like": {
-          "text": "Sut mae'r tywydd?"
-        },
-        "whats-the-forecast": {
-          "text": "Beth yw'r rhagolygon?"
+          "text": "Sut mae'r tywydd?",
+          "keys": [
+            null,
+            "tywydd"
+          ]
         },
         "whats-the-temperature": {
-          "text": "Beth yw'r tymheredd?"
+          "text": "Beth yw'r tymheredd?",
+          "keys": [
+            null,
+            "tymheredd"
+          ]
         },
         "whats-the-weather-like-in-north-wales": {
-          "text": "Sut mae'r tywydd yng ngogledd Cymru?"
+          "text": "Sut mae'r tywydd yng ngogledd Cymru?",
+          "keys": [
+            "Cymru",
+            "tywydd",
+            "ngogledd"
+          ]
+        },
+        "whats-the-forecast": {
+          "text": "Beth yw'r rhagolygon?",
+          "keys": [
+            null,
+            null,
+            "rhagolygon"
+          ]
         },
         "will-it-rain-tomorrow": {
-          "text": "A fydd hi'n bwrw glaw yfory?"
+          "text": "A fydd hi'n bwrw glaw yfory?",
+          "keys": [
+            null,
+            "bwrw glaw",
+            "yfory"
+          ]
         },
         "will-it-be-cold-tonight": {
-          "text": "A fydd hi'n oer heno?"
+          "text": "A fydd hi'n oer heno?",
+          "keys": [
+            "oer",
+            "heno"
+          ]
         },
         "do-i-need-an-umbrella": {
-          "text": "Oes angen ymbarél arna i?"
+          "text": "Oes angen ymbarél arna i?",
+          "keys": [
+            "angen",
+            null,
+            "ymbarél"
+          ]
         },
         "do-i-need-a-coat": {
-          "text": "Oes angen côt arna i?"
-        }
-      }
-    },
-    "small-talk": {
-      "title": "Sgwrs fach",
-      "concepts": {
+          "text": "Oes angen côt arna i?",
+          "keys": [
+            "angen",
+            null,
+            "côt"
+          ]
+        },
         "lovely-weather-isnt-it": {
-          "text": "Tywydd braf, ynte?"
+          "text": "Tywydd braf, ynte?",
+          "keys": [
+            null,
+            "Tywydd",
+            "braf"
+          ]
         },
         "dreadful-weather-isnt-it": {
-          "text": "Tywydd ofnadwy, ynte?"
+          "text": "Tywydd ofnadwy, ynte?",
+          "keys": [
+            null,
+            "Tywydd",
+            "ofnadwy"
+          ]
         },
         "its-been-very-wet": {
-          "text": "Mae hi wedi bod yn wlyb iawn"
+          "text": "Mae hi wedi bod yn wlyb iawn",
+          "keys": [
+            null,
+            "wlyb",
+            "iawn"
+          ]
         }
-      }
+      },
+      "order": "how it is now, what is coming, what to wear, then remarks about it"
     }
   }
 }

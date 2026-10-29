@@ -181,14 +181,15 @@ class BuildTests(unittest.TestCase):
 
     def test_the_weather_tiles_follow_what_a_forecast_talks_about_in_the_order_it_runs(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"])
+        # Talking about the weather joined the weather group on 2026-10-29: it is speaking, so it comes last
+        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk"])
 
     def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_everyday_and_a_related_page_of_how_its_said(self):
         """Time and place was split on 2026-10-27: the compass went to Geography (one page), Time and date to Everyday."""
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         everyday = next(g for g in self.site.groups if g["id"] == "everyday")
         self.assertNotIn("time-and-place", [g["id"] for g in self.site.groups])
-        self.assertEqual(everyday["pages"], ["talk", "when", "food-drink"])
+        self.assertEqual(everyday["pages"], ["when", "food-drink"])
         self.assertEqual(weather["links"], ["compass"])
         page = self.built["group-weather-forecast.html"]
         tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
@@ -322,7 +323,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "when": 4, "compass": 3, "landscape": 3, "patterns": 7, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "when": 4, "compass": 3, "landscape": 3, "talk": 1, "patterns": 7, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 

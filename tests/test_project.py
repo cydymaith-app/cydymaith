@@ -302,6 +302,47 @@ class YellowGreenPaletteTests(unittest.TestCase):
                     self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
 
 
+class TalkingAboutTheWeatherTests(unittest.TestCase):
+    """Small talk was too small for a card, so on 2026-10-29 it joined Asking as one card, and the page moved into the weather group."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def test_the_page_is_one_card_of_asking_and_chatting_in_the_weather_group(self):
+        groups = {g["id"]: g for g in self.raw["structure"]["groups"]}
+        self.assertEqual(groups["weather-forecast"]["pages"][-1], "talk")
+        self.assertNotIn("talk", groups["everyday"]["pages"])
+        sections = self.raw["pages"]["talk"]["sections"]
+        self.assertEqual([s["id"] for s in sections], ["asking-and-chatting"])
+        self.assertEqual(len(sections[0]["concepts"]), 11, "every word kept")
+        cy = self.raw["packs"]["cy"]["pages"]["talk"]["sections"]["asking-and-chatting"]
+        en = self.raw["packs"]["en"]["pages"]["talk"]["sections"]["asking-and-chatting"]
+        self.assertEqual((cy["title"], en["title"]), ("Gofyn a sgwrsio", "Asking and chatting"))
+        self.assertTrue(cy["order"])
+
+    def test_every_row_marks_its_key_words_in_both_languages_the_same_way(self):
+        cy = self.raw["packs"]["cy"]["pages"]["talk"]["sections"]["asking-and-chatting"]["concepts"]
+        en = self.raw["packs"]["en"]["pages"]["talk"]["sections"]["asking-and-chatting"]["concepts"]
+        for cid, row in cy.items():
+            self.assertTrue(any(row["keys"]), cid)
+            self.assertEqual([k is None for k in row["keys"]], [k is None for k in en[cid]["keys"]], cid)
+
+    def test_a_word_keeps_the_colour_it_has_on_the_weather_pages(self):
+        slot = {}
+        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"):
+            for sec in self.raw["packs"]["en"]["pages"][slug]["sections"].values():
+                for c in sec["concepts"].values():
+                    for n, key in enumerate(c.get("keys", [])):
+                        if key is not None:
+                            slot.setdefault(key.casefold(), n)
+        talk = self.raw["packs"]["en"]["pages"]["talk"]["sections"]["asking-and-chatting"]["concepts"]
+        for cid, row in talk.items():
+            for n, key in enumerate(row["keys"]):
+                if key is not None and key.casefold() in slot:
+                    self.assertEqual(n, slot[key.casefold()], f"{cid}: {key}")
+
+
 class NoDoubleEntriesTests(unittest.TestCase):
     """A row says a thing once. A note is commentary, written once in the Welsh pack; the same note in the English pack as well
     showed twice under the row (found on the Snow card, 2026-10-29)."""
@@ -399,7 +440,7 @@ class SportScaffoldTests(unittest.TestCase):
         self.assertNotIn("sport", self.raw["pages"], "the placeholder page is gone")
 
     def test_numbers_is_an_everyday_page_for_the_scores_and_the_forecast(self):
-        self.assertEqual(self.groups["everyday"]["pages"], ["talk", "when", "numbers", "food-drink"])
+        self.assertEqual(self.groups["everyday"]["pages"], ["when", "numbers", "food-drink"])
         self.assertIn("numbers", self.raw["pages"]["results"]["related"])
 
     def test_every_section_is_held_back_and_states_its_order(self):

@@ -32,11 +32,10 @@ class ChannelTests(unittest.TestCase):
         cls.tmp = pathlib.Path(tempfile.mkdtemp())
         cls.data = cls.tmp / "project"
         shutil.copytree(PROJECT, cls.data)
-        # Hold back the snow section of snow-ice, and every section of food-drink and talk (the whole Everyday group).
+        # Hold back the snow section of snow-ice, and every section of the Everyday pages (the whole Everyday group).
         edit_json(cls.data / "pages" / "snow-ice.json", lambda d: next(
             s for s in d["sections"] if s["id"] == "snow").update(status="development"))
         edit_json(cls.data / "pages" / "food-drink.json", lambda d: d["sections"][0].update(status="development"))
-        edit_json(cls.data / "pages" / "talk.json", lambda d: [s.update(status="development") for s in d["sections"]])
         edit_json(cls.data / "pages" / "when.json", lambda d: [s.update(status="development") for s in d["sections"]])  # Time and date joined Everyday on 2026-10-27
         cls.release = cls.tmp / "release"
         cls.development = cls.tmp / "development"
