@@ -5,7 +5,9 @@
       "id": "hot-cold",
       "concepts": [
         "warm-for-the-time-of-year",
+        "the-temperature-higher",
         "mild-on-the-whole",
+        "continuing-milder",
         "feeling-fresh-in-the-wind",
         "colder-than-yesterday",
         "another-cold-night",
@@ -31,6 +33,17 @@
         "at-its-lowest-between-6-and-9-degrees",
         "the-temperature-falling-fast-in-the-evening",
         "a-few-degrees-below-freezing"
+      ]
+    },
+    {
+      "id": "figures",
+      "concepts": [
+        "about-15-degrees-celsius-at-the-highest",
+        "about-11-to-12-degrees-celsius",
+        "between-13-and-16-degrees-celsius",
+        "the-temperature-falling",
+        "the-temperature-falling-to-8-degrees-celsius",
+        "double-figures-along-the-coasts"
       ]
     }
   ]

@@ -14,6 +14,24 @@
           ],
           "note": "{{rheoli}}: to control, to dominate"
         },
+        "high-pressure-influencing-the-weather": {
+          "text": "High pressure continuing to influence the weather",
+          "keys": [
+            "High pressure",
+            "weather",
+            "influence"
+          ],
+          "note": "{{dylanwadu ar}}: to influence; {{dylanwadu}} softens to {{ddylanwadu}} after {{i}}"
+        },
+        "under-the-influence-of-high-pressure": {
+          "text": "Under the influence of high pressure",
+          "keys": [
+            "high pressure",
+            null,
+            "influence"
+          ],
+          "note": "{{dylanwad}} softens to {{ddylanwad}} after {{dan}}"
+        },
         "a-ridge-of-high-pressure-moving-in": {
           "text": "A ridge of high pressure moving in",
           "keys": [
@@ -45,6 +63,15 @@
             "front",
             "rain"
           ]
+        },
+        "a-series-of-fronts-spreading-over-wales": {
+          "text": "A series of fronts spread over Wales",
+          "keys": [
+            "fronts",
+            "spread",
+            "series"
+          ],
+          "note": "{{'di}} is the spoken short form of {{wedi}}; {{Cymru}} softens to {{Gymru}} after {{dros}}"
         },
         "the-isobars-closing-up": {
           "text": "The isobars on the map closing up",

@@ -13,6 +13,14 @@
             "Warm"
           ]
         },
+        "the-temperature-higher": {
+          "text": "The temperature higher",
+          "keys": [
+            null,
+            "temperature",
+            "higher"
+          ]
+        },
         "mild-on-the-whole": {
           "text": "Mild on the whole",
           "keys": [
@@ -20,6 +28,15 @@
             "Mild",
             "on the whole"
           ]
+        },
+        "continuing-milder": {
+          "text": "Continuing to be milder",
+          "keys": [
+            "continuing",
+            null,
+            "milder"
+          ],
+          "note": "{{mwynach}} (milder) is the comparative of {{mwyn}}; {{i fod}} (to be) follows {{parhau}}"
         },
         "feeling-fresh-in-the-wind": {
           "text": "Feeling fresh in the wind",
@@ -152,6 +169,61 @@
             "below freezing"
           ],
           "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
+        }
+      }
+    },
+    "figures": {
+      "title": "Figures and falling",
+      "concepts": {
+        "about-15-degrees-celsius-at-the-highest": {
+          "text": "About 15 degrees Celsius at the highest",
+          "keys": [
+            "highest",
+            "About",
+            "15 degrees Celsius"
+          ],
+          "note": "on screen the unit is written {{C}} after the figure; the presenter says the number and then {{gradd Celsius}}"
+        },
+        "about-11-to-12-degrees-celsius": {
+          "text": "About 11 to 12 degrees Celsius",
+          "keys": [
+            null,
+            "About",
+            "11 to 12 degrees Celsius"
+          ]
+        },
+        "between-13-and-16-degrees-celsius": {
+          "text": "Between 13 and 16 degrees Celsius",
+          "keys": [
+            "Between",
+            null,
+            "13 and 16 degrees Celsius"
+          ]
+        },
+        "the-temperature-falling": {
+          "text": "The temperature falling",
+          "keys": [
+            null,
+            "temperature",
+            "falling"
+          ]
+        },
+        "the-temperature-falling-to-8-degrees-celsius": {
+          "text": "The temperature falling to 8 degrees Celsius",
+          "keys": [
+            "8 degrees Celsius",
+            "temperature",
+            "falling"
+          ]
+        },
+        "double-figures-along-the-coasts": {
+          "text": "Double figures along the coasts",
+          "keys": [
+            null,
+            "coasts",
+            "Double figures"
+          ],
+          "note": "{{ffigurau dwbl}} is two figures: ten or more"
         }
       }
     }

@@ -302,6 +302,44 @@ class YellowGreenPaletteTests(unittest.TestCase):
                     self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
 
 
+class TemperatureAndPressureTests(unittest.TestCase):
+    """Uploads 13 and 14 (2026-10-29): the temperature said in full, falling and double figures, and the pressure that influences the weather."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def rows(self, slug, sid, code="cy"):
+        return self.raw["packs"][code]["pages"][slug]["sections"][sid]["concepts"]
+
+    def test_a_temperature_is_written_in_full_and_found_by_the_form_on_screen(self):
+        rows = self.rows("temperature", "figures")
+        self.assertEqual(rows["about-15-degrees-celsius-at-the-highest"]["text"], "Rhyw 15 gradd Celsius ar ei uchaf")
+        self.assertIn("rhyw 15C", rows["about-15-degrees-celsius-at-the-highest"]["also"])
+        self.assertIn("rhwng 13C ac 16C", rows["between-13-and-16-degrees-celsius"]["also"])
+        self.assertIn("yn disgyn i 8C", rows["the-temperature-falling-to-8-degrees-celsius"]["also"])
+        for row in rows.values():
+            self.assertNotRegex(row["text"], r"\dC", "the text is the spoken form, never the caption form")
+
+    def test_the_pressure_card_has_the_influence_and_the_map_labels_are_forms(self):
+        rows = self.rows("change", "pressure")
+        self.assertIn("under-the-influence-of-high-pressure", rows)
+        self.assertEqual(rows["high-pressure-influencing-the-weather"]["text"], "Gwasgedd uchel yn parhau i ddylanwadu ar y tywydd")
+        self.assertIn("Uchel", rows["high-pressure-in-charge"]["also"])
+        self.assertIn("Isel", rows["an-area-of-intense-low-pressure"]["also"])
+        self.assertEqual(rows["a-series-of-fronts-spreading-over-wales"]["text"], "Cyfres o ffryntiau wedi lledu dros Gymru")
+
+    def test_a_word_keeps_its_colour_on_the_new_rows_as_on_the_old_ones(self):
+        colour = {}
+        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"):
+            for sec in self.raw["packs"]["en"]["pages"][slug]["sections"].values():
+                for c in sec["concepts"].values():
+                    for n, key in enumerate(c.get("keys", [])):
+                        if key is not None and key.casefold() in ("high pressure", "temperature", "falling", "highest", "front", "fronts"):
+                            colour.setdefault(key.casefold().rstrip("s"), set()).add(n)
+        self.assertEqual({k: v for k, v in colour.items() if len(v) > 1}, {})
+
+
 class SportScaffoldTests(unittest.TestCase):
     """The Sport group is shaped like the weather (2026-10-27): one page of topics, every section with a stated order, and all of it
     held back until the words heard on air replace the seed rows (docs/SPORT-WORDS.md)."""

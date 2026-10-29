@@ -588,6 +588,10 @@ The presenters' names and the photo credits (*Llun: …*).
 
 Checked against the content on 28 October 2026: most of the weather is already there, so the gains are the connecting words and a few whole phrases.
 
+### Placed (29 October 2026)
+
+*Yn gostwng*, *yn uwch* and *yn fwynach* were placed with the temperature phrases of upload 14: see section 12.
+
 ### New
 
 | Welsh | English | Suggested home |
@@ -660,6 +664,8 @@ The map and table labels are *Prestatyn*, *Llanrwst*, *Wrecsam*, *Aberystwyth*, 
 - *7C*, *15C*, *16C*, written with the unit letter *C* after the figure, as on the caption, and *rhyw 15C* (about 15C). The map squares show the temperature as a bare number, and the circles the wind speed as a number with no unit on screen, as before.
 - Temperatures this time: 7 on the cold night, 13 to 16 by day. Wind speeds in the circles: 4 to 19.
 
+- **Said in full (told by the user, 29 October 2026):** the on-screen *7C*, *15C*, *16C* and *rhyw 15C* are spoken as *<number> gradd Celsius*, not as a letter (the user wrote *grad celciws*); see the units item in TODO.
+
 ### Left out
 
 The presenters' names, the second presenter at the studio desk, the S4C Tywydd handle, and the backdrops.
@@ -673,3 +679,98 @@ The presenters' names, the second presenter at the studio desk, the S4C Tywydd h
 5. *Cymhedrol* (*gwyntoedd yn gymhedrol*): is this the spelling for moderate here, or *cymedrol* (the content has *Awel gymedrol*)? One spelling should be used across the pages.
 6. *Canol nos* (*ambell gawod posib … canol nos*): the content has *Hanner nos*. Are they the same time, or is *canol nos* "in the middle of the night"?
 7. *Dw i yn falch i ddweud*: is *falch i ddweud* or *falch o ddweud* the usual form?
+
+## 12. Upload 14 (S4C, 29 October 2026; 23 photos)
+
+A Wednesday forecast: a series of fronts clearing, high pressure settling in over Ireland and building over the weekend, light winds from the south, a cloudy grey day turning settled and milder, a dry night with pockets of fog in the east, and fine spells to Friday. The Dydd Mercher pressure maps, the Heno and Dros Nos maps, the Dydd Iau and Dydd Gwener maps, and a handback to the studio. Subtitles and on-screen text. Nothing here is in the content yet. Placement is a suggestion, and every phrase is a draft for a fluent speaker. The raw words per photo are in the memory file `broadcast-words-to-collect.md`. The subtitles are typed live, so they carry typos and drop the circumflex (*Llyn* and *Mon* for *Llŷn* and *Môn*); those are not queries, and the content keeps the correct spellings.
+
+Checked against the content on 29 October 2026. About half of it is already there. The gains are the comparison phrases (*na'r cyfartaledd*), *cyfnodau clir*, *pocedi o niwl*, and the "going to turn" frame. Many phrases were also heard in upload 13 (section 11); they are marked *again*.
+
+### Placed (29 October 2026)
+
+The temperature and pressure phrases of uploads 13 and 14 were turned into forecast phrases and added to the content. Everything else below stays a suggestion.
+
+- **Temperature, Hot and cold:** *Y tymheredd yn uwch*, *Yn parhau i fod yn fwynach*.
+- **Temperature, a new card, Figures and falling** (*Ffigurau a gostwng*): *Rhyw 15 gradd Celsius ar ei uchaf*, *Rhyw 11 i 12 gradd Celsius*, *Rhwng 13 ac 16 gradd Celsius*, *Y tymheredd yn gostwng*, *Y tymheredd yn disgyn i 8 gradd Celsius*, *Ffigurau dwbl ar hyd yr arfordiroedd*. The row is written as the presenter says it (*<number> gradd Celsius*); the caption form (*15C*, *rhwng 13C ac 16C*, *yn disgyn i 8C*) is an "also heard as" form so a search for it finds the row. The numbers are digits, as on the other rows (*16 gradd*).
+- **Change and movement, Pressure:** *Gwasgedd uchel yn parhau i ddylanwadu ar y tywydd* (with the weekend sentence as a form), *O dan ddylanwad gwasgedd uchel*, *Cyfres o ffryntiau wedi lledu dros Gymru*; the map labels *Uchel* and *Isel* are forms on the high- and low-pressure rows.
+- **Not placed:** *na'r cyfartaledd arferol* and *na'r cyfartaledd ar gyfer adeg yma'r flwyddyn*, because the start of the sentence (above or below the average) was off screen; the Welsh for a figure said in full (*un deg chwech*) is not spelled out, as the cards use digits.
+
+### New
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Cyfnodau clir (*gyda chyfnodau clir*) | clear spells | Sky, pairs with *Cyfnodau braf* |
+| Pocedi o niwl | pockets of fog | Sky, Fog and mist |
+| Yn enwedig ar hyd dyffrynnoedd y dwyrain | especially along the valleys of the east | Sky, Fog and mist, or How it's said, extent (*yn enwedig* is new) |
+| Cyfres o ffryntiau | a series of fronts | Change and movement, Pressure (*ffrynt* is there; *ffryntiau* is the plural) |
+| Yn uwch (*y tymheredd yn uwch*) | higher | Temperature, pairs with *Tymhereddau bach yn is yfory* |
+| Mwynach (*yn parhau i fod yn fwynach*) | milder | Temperature, next to *Mwyn ar y cyfan* |
+| Uwch na'r cyfartaledd arferol (*na'r cyfartaledd*) | above the usual average | Temperature, next to *Cynnes am yr adeg o'r flwyddyn* |
+| Na'r cyfartaledd ar gyfer adeg yma'r flwyddyn | than the average for this time of year | Temperature (*ar gyfer adeg* is new) |
+| Cwpl o gawodydd (*dal cwpl o gawodydd*) | a couple of showers | Rain, pairs with *Ambell gawod* |
+| Yn disgyn i 8C | falling to 8C | Temperature, pairs with *yn gostwng* (upload 13) |
+| Ffigurau dwbl | double figures | Temperature |
+| Peth cyntaf bore dydd Iau | first thing on Thursday morning | Time and date |
+| Mynd i droi'n fwy sefydlog (*Mae'n mynd i droi'n*) | going to turn more settled | Change and movement, changing (*mynd i* is new as a future frame) |
+| Dylanwadu (ar) (*yn parhau i ddylanwadu ar y tywydd*) | to influence | Change and movement (*dylanwad* was new in upload 13) |
+| Sir Benfro (*cwpl o gawodydd yn Sir Benfro*) | Pembrokeshire | Landscape, Landmarks (a county, named inside a phrase) |
+| Rhwng 13C ac 16C | between 13C and 16C | Temperature, units (*rhwng … a …* is on Around a figure) |
+| Rhyw 11 i 12C | about 11 to 12C | Temperature, units |
+
+### Form
+
+| Welsh | English | On the row |
+|---|---|---|
+| Ffryntiau | fronts | *Ffrynt* |
+| Heddi | today, colloquial and southern | *Heddiw* |
+| 'di (*sydd 'di lledu*) | has (short for *wedi*) | *Wedi* |
+| Ddylanwadu | to influence, softened after *i* | *Dylanwadu* |
+| Ostegu | to subside, softened after *i* | *Gostegu* |
+| Chyfnodau | spells, with the aspirate mutation after *gyda* | *Cyfnodau* |
+| Glir | clear, softened after the feminine *awyr* | *Awyr glir* (the row *Awyr glir dros nos* is there) |
+| Arfordiroedd | coasts (plural of *arfordir*) | *Arfordir* |
+| Gwyntoedd ysgafn | light winds | *Gwynt ysgafn* |
+| Yn cyrraedd ni | reaching us | *Yn ein cyrraedd ni* (upload 13) |
+
+### Already in the content (Have)
+
+*Llwydaidd*, *ar y cyfan*, *lledu*, *clirio*, *sefydlog* (*Mwy sefydlog erbyn dydd Mercher*), *mwyn* (*Mwyn ar y cyfan*), *cyfnodau braf*, *gostegu* (*Y gwynt yn gostegu erbyn iddi wawrio*), *niwl*, *awyr glir*, *tua'r dwyrain*, *Pen Llŷn* and *Ynys Môn* (Landmarks), *dros y penwythnos*, *adeg o'r flwyddyn* (*Cynnes am yr adeg o'r flwyddyn*), *rhwng … a …*, *rhyw*, *ar y ffordd*, *o'r de*, *y dyddiau nesaf*, *sych*, *tymheredd*, *troi'n*, *yn parhau*, *cymylog*, *achos*, *Dydd Mercher*, *Dydd Iau*, *Dydd Gwener*, *Heno*, *Dros Nos*.
+
+Heard again (also in upload 13, section 11): *digon cymylog*, *i'r mwyafrif*, *gwasgedd uchel yn dylanwadu*, *o dan ddylanwad gwasgedd uchel*, *bore dydd Iau*, *yn gostwng* and *yn disgyn*, *sych gyda chyfnodau braf*, *mwy o'r tywydd* (*mwy o dywydd braf* there), *rhyw … C*, *tymheredd … ar ei uchaf*.
+
+### Patterns (shelved with the sentence patterns)
+
+- *Mae'n mynd i droi'n fwy sefydlog a'r tymheredd yn uwch*: *mynd i* with *troi'n*, then *a'r tymheredd yn* with a comparative (*uwch*, *fwynach*).
+- *Gwyntoedd ysgafn yn cyrraedd ni o'r de felly'n parhau i fod yn fwynach*: the wind from a direction, *felly* (so), then *parhau i fod yn* with a comparative.
+- *Dros y penwythnos gwasgedd uchel yn parhau i ddylanwadu ar y tywydd*: the time put first, then the weather system, then *yn parhau i* with a verb (the same frame as *Fory bydd y glaw yn parhau i fod yn drwm*, upload 13).
+- *Cymru dros nos, dal cwpl o gawodydd ond i'r mwyafrif bydd hi'n sych gyda chyfnodau clir*: the place and time, a *dal* clause for the exceptions, then *ond i'r mwyafrif bydd hi'n …* (but for most it will be …). *I'r mwyafrif* is the unit.
+- *Gwynt yn parhau i ostegu sy'n golygu pocedi o niwl*: *sy'n golygu* (which means) joins a cause to its result.
+- *Cwpl o gawodydd yn Sir Benfro, Pen Llŷn ac Ynys Môn*: a list of places inside a phrase, joined by *ac* (no gazetteers: the places are never a row on their own).
+- *Y tymheredd yn disgyn i 8C … ond ffigurau dwbl i chi ar hyd yr arfordiroedd*: *i chi* (to you) with *ond … ar hyd yr arfordiroedd* for the contrast.
+- *Cyfres o ffryntiau sydd 'di lledu dros Gymru*: *sydd 'di* (which has) with a verb of movement.
+- *Dydd Gwener, mwy o'r tywydd hyn sydd ar y ffordd*: a day, then *mwy o'r tywydd hyn* (more of this weather), then *sydd ar y ffordd*.
+
+### Places (for the Geography review)
+
+The map and table labels are *Caernarfon*, *Wrecsam*, *Harlech*, *Y Drenewydd*, *Aberystwyth*, *Aberporth*, *Llanwrtyd*, *Tyddewi*, *Y Fenni*, *Abertawe*, *Caerdydd* and *Y Rhyl*. All are already in the *Places (Geography)* list of `TODO.md` or noted in earlier uploads. None goes into the content as a list (no gazetteers). *Sir Benfro* appears in a phrase, so it is a candidate for a *Landmarks* row inside a phrase, like the others.
+
+### Units and numbers (for the units page)
+
+- *8C*, *11 i 12C*, *13C ac 16C*, with the unit letter after the figure, as on the captions; *rhyw 11 i 12C*.
+- The maps show night temperatures as numbers in squares (yellow warmer, green colder: 8 to 11 overnight, 13 to 16 on Thursday) and wind speeds as numbers in circles, with no unit on screen (4 to 12), as before.
+
+- **Said in full (told by the user, 29 October 2026):** *8C*, *11 i 12C* and *13C ac 16C* are spoken as *<number> gradd Celsius* (for example *wyth gradd Celsius*), not as a letter; see the units item in TODO.
+
+### Left out
+
+The presenters' names (the first presenter is a man, the handback a woman), the S4C Tywydd handle, the poppy, and the backdrops.
+
+### Questions for a fluent speaker
+
+1. *Gwyntoedd ysgafn yn tynnu am rhwng 13C ac 16C* (Friday table): the caption reads *yn tynnu am rhwng*, which is unclear. Is *tynnu* a typo (perhaps *yn* then *tymheredd*), or an idiom?
+2. *Bydd rhain yn clirio*: is *rhain* a typo for *rhai* (some)?
+3. *Yn cyrraedd ni* (this upload) against *yn ein cyrraedd ni* (upload 13): are both said, and which is more usual?
+4. *Na'r cyfartaledd ar gyfer adeg yma'r flwyddyn*: is *adeg yma'r flwyddyn* shortened from *adeg yma o'r flwyddyn*, and is it the standard phrase (the content has *Cynnes am yr adeg o'r flwyddyn*)?
+5. *Ffigurau dwbl i chi*: is *ffigurau dwbl* the usual way to say ten or more?
+6. *Cwpl o gawodydd*: *cwpl* is colloquial for *pâr*, or is it *cwpwl*? The caption shows *cwpl*.
+7. *Heddi* and *'di*: both are colloquial (south Wales). Should they be marked with a regional variety, like *llefrith* and *llaeth*?

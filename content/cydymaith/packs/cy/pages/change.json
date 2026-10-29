@@ -13,7 +13,33 @@
           ],
           "note": "{{rheoli}}: to control, to dominate",
           "also": [
-            "gwasgedd uchel yn dechrau rheoli"
+            "gwasgedd uchel yn dechrau rheoli",
+            "Uchel"
+          ]
+        },
+        "high-pressure-influencing-the-weather": {
+          "text": "Gwasgedd uchel yn parhau i ddylanwadu ar y tywydd",
+          "keys": [
+            "Gwasgedd uchel",
+            "tywydd",
+            "ddylanwadu"
+          ],
+          "note": "{{dylanwadu ar}}: to influence; {{dylanwadu}} softens to {{ddylanwadu}} after {{i}}",
+          "also": [
+            "gwasgedd uchel yn dylanwadu",
+            "dros y penwythnos gwasgedd uchel yn parhau i ddylanwadu ar y tywydd"
+          ]
+        },
+        "under-the-influence-of-high-pressure": {
+          "text": "O dan ddylanwad gwasgedd uchel",
+          "keys": [
+            "gwasgedd uchel",
+            null,
+            "ddylanwad"
+          ],
+          "note": "{{dylanwad}} softens to {{ddylanwad}} after {{dan}}",
+          "also": [
+            "yn parhau i fod o dan ddylanwad gwasgedd uchel"
           ]
         },
         "a-ridge-of-high-pressure-moving-in": {
@@ -34,7 +60,8 @@
           ],
           "note": "{{dwys}} means intense, deep",
           "also": [
-            "ardal o wasgedd isel"
+            "ardal o wasgedd isel",
+            "Isel"
           ]
         },
         "low-pressure-bringing-rain": {
@@ -52,6 +79,18 @@
           ],
           "note": "{{glaw}} softens to {{law}} after {{o}}"
         },
+        "a-series-of-fronts-spreading-over-wales": {
+          "text": "Cyfres o ffryntiau wedi lledu dros Gymru",
+          "keys": [
+            "ffryntiau",
+            "lledu",
+            "Cyfres"
+          ],
+          "note": "{{'di}} is the spoken short form of {{wedi}}; {{Cymru}} softens to {{Gymru}} after {{dros}}",
+          "also": [
+            "cyfres o ffryntiau sydd 'di lledu dros Gymru"
+          ]
+        },
         "the-isobars-closing-up": {
           "text": "Yr isobariau ar y map yn agosáu",
           "keys": [
@@ -64,7 +103,7 @@
           ]
         }
       },
-      "order": "high, then low"
+      "order": "high, then low, then fronts and isobars"
     },
     "moving": {
       "title": "Y tywydd yn symud",

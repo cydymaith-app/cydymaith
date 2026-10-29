@@ -12,12 +12,35 @@
             "Cynnes"
           ]
         },
+        "the-temperature-higher": {
+          "text": "Y tymheredd yn uwch",
+          "keys": [
+            null,
+            "tymheredd",
+            "uwch"
+          ],
+          "also": [
+            "a'r tymheredd yn uwch"
+          ]
+        },
         "mild-on-the-whole": {
           "text": "Mwyn ar y cyfan",
           "keys": [
             null,
             "Mwyn",
             "ar y cyfan"
+          ]
+        },
+        "continuing-milder": {
+          "text": "Yn parhau i fod yn fwynach",
+          "keys": [
+            "parhau",
+            null,
+            "fwynach"
+          ],
+          "note": "{{mwynach}} (milder) is the comparative of {{mwyn}}; {{i fod}} (to be) follows {{parhau}}",
+          "also": [
+            "parhau i fod yn fwynach"
           ]
         },
         "feeling-fresh-in-the-wind": {
@@ -164,6 +187,82 @@
         }
       },
       "order": "highs, then lows"
+    },
+    "figures": {
+      "title": "Ffigurau a gostwng",
+      "concepts": {
+        "about-15-degrees-celsius-at-the-highest": {
+          "text": "Rhyw 15 gradd Celsius ar ei uchaf",
+          "keys": [
+            "uchaf",
+            "Rhyw",
+            "15 gradd Celsius"
+          ],
+          "note": "on screen the unit is written {{C}} after the figure; the presenter says the number and then {{gradd Celsius}}",
+          "also": [
+            "rhyw 15C",
+            "y tymheredd ar ei uchaf rhyw 15C"
+          ]
+        },
+        "about-11-to-12-degrees-celsius": {
+          "text": "Rhyw 11 i 12 gradd Celsius",
+          "keys": [
+            null,
+            "Rhyw",
+            "11 i 12 gradd Celsius"
+          ],
+          "also": [
+            "rhyw 11 i 12C"
+          ]
+        },
+        "between-13-and-16-degrees-celsius": {
+          "text": "Rhwng 13 ac 16 gradd Celsius",
+          "keys": [
+            "Rhwng",
+            null,
+            "13 ac 16 gradd Celsius"
+          ],
+          "also": [
+            "rhwng 13C ac 16C"
+          ]
+        },
+        "the-temperature-falling": {
+          "text": "Y tymheredd yn gostwng",
+          "keys": [
+            null,
+            "tymheredd",
+            "gostwng"
+          ],
+          "also": [
+            "tymheredd yn gostwng"
+          ]
+        },
+        "the-temperature-falling-to-8-degrees-celsius": {
+          "text": "Y tymheredd yn disgyn i 8 gradd Celsius",
+          "keys": [
+            "8 gradd Celsius",
+            "tymheredd",
+            "disgyn"
+          ],
+          "also": [
+            "yn disgyn i 8C",
+            "lle bydd y tymheredd yn disgyn i 8C"
+          ]
+        },
+        "double-figures-along-the-coasts": {
+          "text": "Ffigurau dwbl ar hyd yr arfordiroedd",
+          "keys": [
+            null,
+            "arfordiroedd",
+            "Ffigurau dwbl"
+          ],
+          "note": "{{ffigurau dwbl}} is two figures: ten or more",
+          "also": [
+            "ffigurau dwbl i chi ar hyd yr arfordiroedd"
+          ]
+        }
+      },
+      "order": "about a figure, between two figures, then falling, then double figures"
     }
   }
 }
