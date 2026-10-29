@@ -70,6 +70,18 @@
             "min nos"
           ]
         },
+        "colder-inland": {
+          "text": "Oerach yn y mewndiroedd",
+          "keys": [
+            null,
+            "mewndiroedd",
+            "Oerach"
+          ],
+          "also": [
+            "mewndiroedd",
+            "yn y mewndiroedd"
+          ]
+        },
         "another-cold-night": {
           "text": "Noson oer arall",
           "keys": [

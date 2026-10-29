@@ -172,6 +172,17 @@
             "fel y Clwyd fa'ma yn Rhuddlan"
           ],
           "note": "a river is often named with {{y}} alone: {{y Clwyd}}"
+        },
+        "flooding-in-the-vale-of-clwyd": {
+          "text": "Llifogydd yn Nyffryn Clwyd",
+          "keys": [
+            "Llifogydd",
+            "Nyffryn Clwyd"
+          ],
+          "also": [
+            "Dyffryn Clwyd",
+            "Yn Nyffryn Clwyd"
+          ]
         }
       },
       "order": "the warning, then the rivers, then what has happened, then where to look"
@@ -210,6 +221,27 @@
             "storm"
           ],
           "note": "{{dwy}} is two before a feminine noun"
+        },
+        "big-waves-along-the-shores": {
+          "text": "Tonnau mawr ar hyd y glannau",
+          "keys": [
+            "tonnau",
+            "glannau"
+          ],
+          "also": [
+            "ar hyd y glannau"
+          ]
+        },
+        "rough-weather-along-the-severn-estuary": {
+          "text": "Tywydd garw ar hyd Môr Hafren",
+          "keys": [
+            "garw",
+            "Môr Hafren"
+          ],
+          "also": [
+            "Aber Hafren",
+            "ar hyd Môr Hafren"
+          ]
         },
         "more-rough-weather-to-come": {
           "text": "Mwy o dywydd garw i ddod",

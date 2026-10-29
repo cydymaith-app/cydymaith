@@ -1,8 +1,5 @@
 {
   "icon": "rain",
-  "related": [
-    "landscape"
-  ],
   "sections": [
     {
       "id": "rain",
@@ -30,7 +27,8 @@
         "after-all-that-rain",
         "some-have-already-seen-flooding",
         "the-warnings-can-change-all-the-time",
-        "keep-an-eye-on-the-natural-resources-wales-website"
+        "keep-an-eye-on-the-natural-resources-wales-website",
+        "flooding-in-the-vale-of-clwyd"
       ]
     },
     {
@@ -40,6 +38,8 @@
         "the-odd-thunderstorm",
         "more-rough-weather-over-the-next-few-hours",
         "two-storms-in-one-weekend",
+        "big-waves-along-the-shores",
+        "rough-weather-along-the-severn-estuary",
         "more-rough-weather-to-come",
         "the-storms-have-cleared-the-country-by-now"
       ]

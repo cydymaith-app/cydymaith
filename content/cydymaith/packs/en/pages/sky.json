@@ -121,6 +121,13 @@
             "Mist"
           ]
         },
+        "fog-in-the-conwy-valley": {
+          "text": "Fog in the Conwy valley",
+          "keys": [
+            "Conwy valley",
+            "Fog"
+          ]
+        },
         "poor-visibility-on-some-roads": {
           "text": "Poor visibility on some roads",
           "keys": [

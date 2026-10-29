@@ -136,6 +136,17 @@
           ],
           "note": "{{tarth}} is mist; {{niwl}} is fog"
         },
+        "fog-in-the-conwy-valley": {
+          "text": "Niwl yn Nyffryn Conwy",
+          "keys": [
+            "Nyffryn Conwy",
+            "Niwl"
+          ],
+          "also": [
+            "Dyffryn Conwy",
+            "Yn Nyffryn Conwy"
+          ]
+        },
         "poor-visibility-on-some-roads": {
           "text": "Gwelededd gwael ar rai ffyrdd",
           "keys": [

@@ -210,6 +210,30 @@
             "Ar draws"
           ]
         },
+        "showers-reaching-cardigan-bay": {
+          "text": "Cawodydd yn cyrraedd Bae Ceredigion",
+          "keys": [
+            null,
+            "Cawodydd",
+            "Bae Ceredigion"
+          ],
+          "also": [
+            "Ym Mae Ceredigion",
+            "Mae Ceredigion"
+          ]
+        },
+        "rain-crossing-the-irish-sea": {
+          "text": "Glaw yn croesi Môr Iwerddon",
+          "keys": [
+            "croesi",
+            "Glaw",
+            "Môr Iwerddon"
+          ],
+          "also": [
+            "Dros Fôr Iwerddon",
+            "Fôr Iwerddon"
+          ]
+        },
         "over-towards-the-north-east": {
           "text": "Draw tuag at y gogledd-ddwyrain",
           "keys": [

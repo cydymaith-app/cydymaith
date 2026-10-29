@@ -13,6 +13,17 @@
             "Cawodydd eira"
           ]
         },
+        "snow-over-snowdonia": {
+          "text": "Eira dros Eryri",
+          "keys": [
+            null,
+            "Eira",
+            "Eryri"
+          ],
+          "also": [
+            "Dros Eryri"
+          ]
+        },
         "sleet-on-lower-ground": {
           "text": "Eirlaw ar dir is",
           "keys": [
@@ -59,6 +70,17 @@
             "Rhew caled",
             null,
             "mannau"
+          ]
+        },
+        "frost-in-the-brecon-beacons": {
+          "text": "Rhew ym Mannau Brycheiniog",
+          "keys": [
+            "Rhew",
+            "Mannau Brycheiniog"
+          ],
+          "also": [
+            "Ym Mannau Brycheiniog",
+            "Bannau Brycheiniog"
           ]
         },
         "hoar-frost-on-the-fields": {

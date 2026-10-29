@@ -23,7 +23,6 @@
       "icon": "earth",
       "pages": [
         "compass",
-        "landscape",
         "place-name-elements"
       ],
       "layout": "one-page"

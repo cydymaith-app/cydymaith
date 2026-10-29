@@ -136,7 +136,6 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertEqual(
             set(tiles),
             {
-                "group-geography.html#topic-landscape",  # from Rain, Snow and ice and How it's said
                 "group-geography.html#points",  # from Wind
                 "group-geography.html#topic-compass",  # the group's own link
             },
@@ -155,18 +154,14 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertEqual(len(tiles), len(set(tiles)))
         self.assertEqual(
             set(tiles),
-            {
-                "group-weather-forecast.html#topic-rain",
-                "group-weather-forecast.html#topic-snow-ice",
-                "group-weather-forecast.html#topic-patterns",
-            },
+            {"group-weather-forecast.html#topic-patterns"},  # from the Compass; Landscape, which linked to Rain and Snow and ice, is gone
         )
 
     def test_the_tile_is_named_for_the_section_in_welsh_and_english(self):
         row = self.row(self.WEATHER)
         self.assertIn("Pynciau cysylltiedig", row)
         self.assertIn("Related topics", row)
-        self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
+        self.assertIn('<span class="l1" lang="cy">Cwmpawd</span><span class="l2">Compass</span>', row)
 
 
     def test_every_section_a_tile_lands_on_is_on_the_page_it_opens(self):
@@ -210,7 +205,7 @@ class GradingTests(unittest.TestCase):
         points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
         self.assertGreater(self.sections[("compass", "which-part")]["level"], points)
-        self.assertGreater(self.sections[("landscape", "inland")]["level"], points)
+        self.assertGreater(self.sections[("compass", "from-which-way")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
         self.assertEqual(self.pages["patterns"]["level"], 3)
@@ -299,7 +294,7 @@ class TimeAndDateSpreadTests(unittest.TestCase):
     """The Time and date page was dropped from Everyday on 2026-10-29. Its words went into the forecast phrases, so a learner finds
     each one where it is used; nothing it held may be lost."""
 
-    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk", "landscape", "compass")
+    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk", "compass")
     WORDS = [
         "Yr oriau nesaf", "Heddiw", "Heno", "Yfory", "Bore fory", "Nos yfory", "Yn hwyrach", "Y dyddiau nesaf", "Yr wythnos hon",
         "Gweddill yr wythnos", "Y penwythnos", "Yr wythnos nesaf", "Bore", "Prynhawn", "Min nos", "Nos", "Hanner nos", "Oriau mân",
@@ -536,7 +531,7 @@ class GeographyStandardTests(unittest.TestCase):
         return next(s["concepts"] for s in self.raw["pages"][slug]["sections"] if s["id"] == sid)
 
     def test_every_geography_section_states_its_order(self):
-        for slug in ("compass", "landscape", "place-name-elements"):
+        for slug in ("compass", "place-name-elements"):
             for sid, section in self.raw["packs"]["cy"]["pages"][slug]["sections"].items():
                 self.assertTrue(section.get("order"), f"{slug}/{sid} has no order")
 
@@ -558,11 +553,23 @@ class GeographyStandardTests(unittest.TestCase):
         self.assertIn("Gogledd Cymru", regions["in-north-wales"]["also"])
         self.assertIn("Yng Nghymru", regions["across-wales"]["also"])
 
-    def test_landscape_is_its_own_page_and_the_place_name_elements_hold_only_names_to_read(self):
-        self.assertEqual(self.raw["packs"]["en"]["pages"]["landscape"]["title"], "Landscape")
-        self.assertNotIn("landscape", self.raw["packs"]["cy"]["pages"]["place-name-elements"]["sections"])
-        for slug in ("rain", "snow-ice", "patterns"):
-            self.assertIn("landscape", self.raw["pages"][slug]["related"], slug)
+    def test_landscape_is_spread_into_the_weather_phrases_and_the_page_is_gone(self):
+        """2026-10-29: the place words are inside forecast phrases, so Landscape was dropped and nothing links to it."""
+        self.assertNotIn("landscape", self.raw["pages"])
+        self.assertNotIn("landscape", self.raw["packs"]["cy"]["pages"])
+        for slug, page in self.raw["pages"].items():
+            self.assertNotIn("landscape", page.get("related", []), slug)
+        texts = [
+            unicodedata.normalize("NFC", t).casefold()
+            for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk")
+            for sec in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
+            for c in sec["concepts"].values()
+            for t in [c.get("text", ""), *c.get("also", [])]
+        ]
+        for word in ("arfordir", "arfordirol", "ardaloedd", "glannau", "Ceredigion", "Môr Iwerddon", "Môr Hafren", "mewndiroedd", "cymoedd",
+                     "bryniau", "dir uchel", "mynyddoedd", "Dyffryn Conwy", "Dyffryn Clwyd", "Eryri", "Bannau Brycheiniog", "Ynys Môn", "Pen Llŷn"):
+            found = re.compile(r"(?<![\w'])" + re.escape(unicodedata.normalize("NFC", word).casefold()) + r"(?!\w)")
+            self.assertTrue(any(found.search(t) for t in texts), f"{word} is in no weather phrase")
 
     def test_the_compass_has_one_card_for_each_way_a_forecast_uses_a_direction(self):
         """2026-10-28: the cards were by kind, not by point: which way it comes from, which part, and which part of Wales."""
@@ -583,15 +590,9 @@ class GeographyStandardTests(unittest.TestCase):
                         continue
                     self.assertIsNotNone(c["keys"][0], (code, cid))
 
-    def test_the_landmarks_are_a_section_of_landscape(self):
-        landmarks = self.section("landscape", "named")
-        self.assertEqual(landmarks["title"], "Tirnodau")
-        self.assertIn("on-anglesey", landmarks["concepts"])
-        self.assertEqual(landmarks.get("order"), "the mountains first, then the island and the peninsula")
-
     def test_no_geography_key_word_is_a_function_word(self):
         function_words = {"o'r", "dros", "ar hyd", "ledled", "from", "over", "along", "across"}
-        for slug in ("compass", "landscape"):
+        for slug in ("compass",):
             for code in ("cy", "en"):
                 for section in self.raw["packs"][code]["pages"][slug]["sections"].values():
                     for cid, concept in section["concepts"].items():
@@ -623,10 +624,9 @@ class KeyWordTests(unittest.TestCase):
         plain = {cid for slug in self.WEATHER for cid, c in self.concepts("cy", slug) if "keys" not in c}
         self.assertFalse({"its-sunny", "rain-in-the-north", "a-cold-northerly"} & plain)
 
-    GEOGRAPHY = ("compass", "landscape", "place-name-elements")
+    GEOGRAPHY = ("compass", "place-name-elements")
     MARKED = {
         "compass": {"from-which-way", "which-part", "parts-of-wales"},
-        "landscape": {"coast", "inland", "named"},
         "place-name-elements": set(),
     }
 
@@ -752,29 +752,32 @@ class UploadTwelveTests(unittest.TestCase):
         self.assertEqual(ids[ids.index("there-will-be") + 1], "place-first")
         self.assertNotIn("status", next(s for s in self.raw["pages"]["patterns"]["sections"] if s["id"] == "place-first"))
 
+    PLACE_PHRASES = [
+        ("patterns", "extent", "in-coastal-areas"), ("patterns", "extent", "showers-in-pembrokeshire-llyn-and-anglesey"),
+        ("rain", "storms", "big-waves-along-the-shores"), ("rain", "storms", "rough-weather-along-the-severn-estuary"),
+        ("change", "which-way", "showers-reaching-cardigan-bay"), ("change", "which-way", "rain-crossing-the-irish-sea"),
+        ("temperature", "hot-cold", "colder-inland"), ("sky", "fog", "fog-in-the-conwy-valley"), ("rain", "flooding", "flooding-in-the-vale-of-clwyd"),
+        ("snow-ice", "snow", "snow-over-snowdonia"), ("snow-ice", "frost-ice", "frost-in-the-brecon-beacons"),
+    ]
+
     def test_no_card_is_a_list_of_place_names(self):
         """No gazetteers (rule 7 in docs/PHILOSOPHY.md): a place is named inside a phrase, never as a row of its own.
         The place-name elements are the exception, since they teach how names are built."""
-        for slug, page in self.raw["packs"]["cy"]["pages"].items():
-            if slug != "landscape":  # the compass holds directions, the elements teach how names are built
-                continue
-            for sid, section in page["sections"].items():
-                for cid, concept in section["concepts"].items():
-                    words = concept.get("text", "").split()
-                    self.assertGreater(len(words), 1 if not concept.get("text", "").startswith("Y ") else 2, f"{slug}/{sid}/{cid}: {concept.get('text')!r} is one bare name")
-        for sid in ("places", "forecast-map", "uk", "rivers", "in-a-place"):
-            self.assertNotIn(sid, self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
+        for slug, sid, cid in self.PLACE_PHRASES:
+            text = self.raw["packs"]["cy"]["pages"][slug]["sections"][sid]["concepts"][cid]["text"]
+            self.assertGreater(len(text.split()), 2, f"{slug}/{sid}/{cid}: {text!r} is too short to be a phrase")
+        for page in ("geography", "landscape"):
+            self.assertNotIn(page, self.raw["packs"]["cy"]["pages"])
 
     def test_a_river_is_named_in_a_phrase_and_never_listed_on_its_own(self):
         """There are too many rivers in Wales to list, so one is only ever part of a phrase (2026-10-28)."""
-        self.assertNotIn("rivers", self.raw["packs"]["cy"]["pages"]["landscape"]["sections"])
         welsh = {
             c.get("text", "")
-            for slug in ("rain", "landscape")
+            for slug in ("rain", "sky")
             for s in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
             for c in s["concepts"].values()
         }
-        for phrase in ("Rhybudd llifogydd ar Afon Tywi", "Afon Clwyd yn uchel yn Rhuddlan", "Yn Nyffryn Conwy", "Ar hyd Môr Hafren"):
+        for phrase in ("Rhybudd llifogydd ar Afon Tywi", "Afon Clwyd yn uchel yn Rhuddlan", "Niwl yn Nyffryn Conwy", "Tywydd garw ar hyd Môr Hafren"):
             self.assertIn(phrase, welsh)
         for slug, page in self.raw["packs"]["cy"]["pages"].items():
             for s in page["sections"].values():

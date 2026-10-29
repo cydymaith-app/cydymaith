@@ -44,7 +44,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone. Geography lowered
 # on 2026-10-28, by decision: no lists of place names (rule 7 in docs/PHILOSOPHY.md).
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 34, "talk": 11, "landscape": 14, "place-name-elements": 50}
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 34, "talk": 11, "place-name-elements": 50}
 
 
 class Page(HTMLParser):
@@ -323,7 +323,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "compass": 3, "landscape": 3, "talk": 1, "patterns": 9, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "compass": 3, "talk": 1, "patterns": 9, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -343,16 +343,16 @@ class BuildTests(unittest.TestCase):
         slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "compass", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
-    def test_geography_is_one_page_of_compass_landscape_and_the_place_name_elements(self):
-        """Merged on 2026-10-27: Regions of Wales joined the place names. Later that day Landscape, a page of forecast phrases,
-        was split from the place-name elements, which are for reading names and signs."""
+    def test_geography_is_one_page_of_the_compass_and_the_place_name_elements(self):
+        """Landscape, a page of forecast phrases, was split from the place-name elements on 2026-10-27, and spread into the weather
+        phrases on 2026-10-29, so Geography is the compass and the elements for reading names and signs."""
         geography = next(g for g in self.site.groups if g["id"] == "geography")
         self.assertEqual(geography["layout"], "one-page")
-        self.assertEqual(geography["pages"], ["compass", "landscape", "place-name-elements"])
+        self.assertEqual(geography["pages"], ["compass", "place-name-elements"])
         self.assertNotIn("geography", self.site.skel, "the Place names page was removed on 2026-10-28: no list of places is kept")
         # 2026-10-28: the regions went to the Compass, and the named places came from Landscape as Landmarks
         # and on 2026-10-28 the lists of towns and countries went (no gazetteers); a pattern card of nine phrases took their place
-        self.assertEqual([s["id"] for s in self.site.skel["landscape"]["sections"]], ["coast", "inland", "named"])
+        self.assertNotIn("landscape", self.site.skel)
         self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "which-part", "parts-of-wales"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):

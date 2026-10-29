@@ -61,6 +61,14 @@
             "Colder"
           ]
         },
+        "colder-inland": {
+          "text": "Colder inland",
+          "keys": [
+            null,
+            "inland",
+            "Colder"
+          ]
+        },
         "another-cold-night": {
           "text": "Another cold night",
           "keys": [

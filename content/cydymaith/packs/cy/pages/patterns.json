@@ -322,6 +322,17 @@
         "areas": {
           "text": "Ardaloedd"
         },
+        "in-coastal-areas": {
+          "text": "Mewn ardaloedd arfordirol",
+          "keys": [
+            null,
+            "ardaloedd",
+            "arfordirol"
+          ],
+          "also": [
+            "rhannau arfordirol"
+          ]
+        },
         "on-the-whole": {
           "text": "Ar y cyfan"
         },
@@ -342,6 +353,22 @@
         },
         "widely": {
           "text": "Yn eang"
+        },
+        "showers-in-pembrokeshire-llyn-and-anglesey": {
+          "text": "Cwpl o gawodydd yn Sir Benfro, Pen Llŷn ac Ynys Môn",
+          "keys": [
+            "Ynys Môn",
+            "Sir Benfro",
+            "Pen Llŷn"
+          ],
+          "also": [
+            "Sir Benfro",
+            "Pen Llŷn",
+            "Ym Mhen Llŷn",
+            "Llŷn",
+            "Ynys Môn",
+            "Ar Ynys Môn"
+          ]
         }
       },
       "order": "the whole, most of it, then places and areas"

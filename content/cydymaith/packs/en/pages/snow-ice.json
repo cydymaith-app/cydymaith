@@ -14,6 +14,14 @@
             "Snow showers"
           ]
         },
+        "snow-over-snowdonia": {
+          "text": "Snow over Snowdonia",
+          "keys": [
+            null,
+            "Snow",
+            "Snowdonia"
+          ]
+        },
         "sleet-on-lower-ground": {
           "text": "Sleet on lower ground",
           "keys": [
@@ -57,6 +65,13 @@
             "hard frost",
             null,
             "places"
+          ]
+        },
+        "frost-in-the-brecon-beacons": {
+          "text": "Frost in the Brecon Beacons",
+          "keys": [
+            "Frost",
+            "Brecon Beacons"
           ]
         },
         "hoar-frost-on-the-fields": {

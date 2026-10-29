@@ -148,6 +148,13 @@
             "River Clwyd",
             "high"
           ]
+        },
+        "flooding-in-the-vale-of-clwyd": {
+          "text": "Flooding in the Vale of Clwyd",
+          "keys": [
+            "Flooding",
+            "Vale of Clwyd"
+          ]
         }
       }
     },
@@ -183,6 +190,20 @@
             "Two",
             "weekend",
             "storms"
+          ]
+        },
+        "big-waves-along-the-shores": {
+          "text": "Big waves along the shores",
+          "keys": [
+            "waves",
+            "shores"
+          ]
+        },
+        "rough-weather-along-the-severn-estuary": {
+          "text": "Rough weather along the Severn estuary",
+          "keys": [
+            "Rough",
+            "Severn estuary"
           ]
         },
         "more-rough-weather-to-come": {

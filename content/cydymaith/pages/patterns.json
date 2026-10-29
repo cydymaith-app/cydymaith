@@ -1,7 +1,6 @@
 {
   "icon": "chat",
   "related": [
-    "landscape",
     "compass"
   ],
   "sections": [
@@ -79,8 +78,10 @@
         "mainly",
         "in-places",
         "areas",
+        "in-coastal-areas",
         "localities",
-        "widely"
+        "widely",
+        "showers-in-pembrokeshire-llyn-and-anglesey"
       ]
     },
     {

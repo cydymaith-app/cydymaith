@@ -306,6 +306,14 @@
         "areas": {
           "text": "Areas"
         },
+        "in-coastal-areas": {
+          "text": "In coastal areas",
+          "keys": [
+            null,
+            "areas",
+            "coastal"
+          ]
+        },
         "on-the-whole": {
           "text": "On the whole"
         },
@@ -320,6 +328,14 @@
         },
         "widely": {
           "text": "Widely"
+        },
+        "showers-in-pembrokeshire-llyn-and-anglesey": {
+          "text": "A couple of showers in Pembrokeshire, the Llŷn peninsula and Anglesey",
+          "keys": [
+            "Anglesey",
+            "Pembrokeshire",
+            "Llŷn peninsula"
+          ]
         }
       }
     },

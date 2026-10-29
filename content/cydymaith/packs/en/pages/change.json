@@ -170,6 +170,22 @@
             "Across"
           ]
         },
+        "showers-reaching-cardigan-bay": {
+          "text": "Showers reaching Cardigan Bay",
+          "keys": [
+            null,
+            "Showers",
+            "Cardigan Bay"
+          ]
+        },
+        "rain-crossing-the-irish-sea": {
+          "text": "Rain crossing the Irish Sea",
+          "keys": [
+            "crossing",
+            "Rain",
+            "Irish Sea"
+          ]
+        },
         "over-towards-the-north-east": {
           "text": "Over towards the north-east",
           "keys": [
