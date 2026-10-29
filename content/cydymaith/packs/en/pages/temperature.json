@@ -53,6 +53,14 @@
             "Colder"
           ]
         },
+        "colder-in-the-evening": {
+          "text": "Colder in the evening",
+          "keys": [
+            null,
+            "evening",
+            "Colder"
+          ]
+        },
         "another-cold-night": {
           "text": "Another cold night",
           "keys": [

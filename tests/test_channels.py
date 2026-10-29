@@ -36,7 +36,6 @@ class ChannelTests(unittest.TestCase):
         edit_json(cls.data / "pages" / "snow-ice.json", lambda d: next(
             s for s in d["sections"] if s["id"] == "snow").update(status="development"))
         edit_json(cls.data / "pages" / "food-drink.json", lambda d: d["sections"][0].update(status="development"))
-        edit_json(cls.data / "pages" / "when.json", lambda d: [s.update(status="development") for s in d["sections"]])  # Time and date joined Everyday on 2026-10-27
         cls.release = cls.tmp / "release"
         cls.development = cls.tmp / "development"
         phrasebook.build(cls.release, project_dir=cls.data)

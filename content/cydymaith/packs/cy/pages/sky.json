@@ -185,6 +185,28 @@
             "sefydlog"
           ]
         },
+        "fine-weather-over-the-next-few-days": {
+          "text": "Tywydd braf dros y dyddiau nesaf",
+          "keys": [
+            "braf",
+            "Tywydd",
+            "dyddiau nesaf"
+          ],
+          "also": [
+            "y dyddiau nesaf"
+          ]
+        },
+        "fine-spells-this-week": {
+          "text": "Cyfnodau braf yr wythnos hon",
+          "keys": [
+            null,
+            "wythnos hon",
+            "Cyfnodau braf"
+          ],
+          "also": [
+            "yr wythnos hon"
+          ]
+        },
         "changeable-over-the-weekend": {
           "text": "Tywydd cyfnewidiol dros y penwythnos",
           "keys": [
@@ -207,6 +229,17 @@
           ],
           "also": [
             "yn fwy sefydlog erbyn dydd Mercher"
+          ]
+        },
+        "unsettled-weather-next-week": {
+          "text": "Tywydd ansefydlog yr wythnos nesaf",
+          "keys": [
+            "wythnos nesaf",
+            "Tywydd",
+            "ansefydlog"
+          ],
+          "also": [
+            "yr wythnos nesaf"
           ]
         }
       },

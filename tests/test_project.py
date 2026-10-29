@@ -8,6 +8,7 @@ import pathlib
 import re
 import sys
 import tempfile
+import unicodedata
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -138,7 +139,6 @@ class RelatedTopicsTests(unittest.TestCase):
                 "group-geography.html#topic-landscape",  # from Rain, Snow and ice and How it's said
                 "group-geography.html#points",  # from Wind
                 "group-geography.html#topic-compass",  # the group's own link
-                "when.html",  # from How it's said, as a related page
             },
         )
         self.assertEqual(self.pages[self.WEATHER].count('<section class="related"'), 1)
@@ -168,10 +168,6 @@ class RelatedTopicsTests(unittest.TestCase):
         self.assertIn("Related topics", row)
         self.assertIn('<span class="l1" lang="cy">Tirwedd</span><span class="l2">Landscape</span>', row)
 
-    def test_how_its_said_opens_time_and_date_as_a_related_page(self):
-        """The tile was on The forecast until that card was dropped on 2026-10-27."""
-        self.assertIn("when.html", self.tiles(self.WEATHER))
-        self.assertIn('<span class="l1" lang="cy">Amser a dyddiad</span><span class="l2">Time and date</span>', self.row(self.WEATHER))
 
     def test_every_section_a_tile_lands_on_is_on_the_page_it_opens(self):
         for name, page in self.pages.items():
@@ -223,9 +219,6 @@ class GradingTests(unittest.TestCase):
         self.assertEqual(self.sections[("patterns", "it-will-be")]["level"], 3)
         self.assertLess(self.pages["place-name-elements"]["level"], self.pages["patterns"]["level"])
 
-    def test_the_days_are_set_by_hand_because_two_written_words_are_one_beginner_item(self):
-        days = self.sections[("when", "days")]
-        self.assertEqual((days["level"], days["computed"], days["by_hand"]), (1, 2, True))
 
     def test_the_rule_does_the_work_and_hand_set_levels_stay_few(self):
         by_hand = [k for k, s in self.sections.items() if s["by_hand"]] + [k for k, p in self.pages.items() if p["by_hand"]]
@@ -300,6 +293,52 @@ class YellowGreenPaletteTests(unittest.TestCase):
             for variant, colours in palettes.resolve(self.raw[pid]).items():
                 for key in palettes.KEYS_OF_WORDS:
                     self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
+
+
+class TimeAndDateSpreadTests(unittest.TestCase):
+    """The Time and date page was dropped from Everyday on 2026-10-29. Its words went into the forecast phrases, so a learner finds
+    each one where it is used; nothing it held may be lost."""
+
+    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk", "landscape", "compass")
+    WORDS = [
+        "Yr oriau nesaf", "Heddiw", "Heno", "Yfory", "Bore fory", "Nos yfory", "Yn hwyrach", "Y dyddiau nesaf", "Yr wythnos hon",
+        "Gweddill yr wythnos", "Y penwythnos", "Yr wythnos nesaf", "Bore", "Prynhawn", "Min nos", "Nos", "Hanner nos", "Oriau mân",
+        "Dros nos", "Drwy'r dydd", "Diwrnod", "Yn ystod", "Am gyfnod", "Cyn", "Erbyn", "Tan", "Ar ôl",
+        "Dydd Llun", "Dydd Mawrth", "Dydd Mercher", "Dydd Iau", "Dydd Gwener", "Dydd Sadwrn", "Dydd Sul",
+        "Gwanwyn", "Haf", "Hydref", "Gaeaf", "Tymor",
+    ]
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+        cls.texts = [
+            unicodedata.normalize("NFC", t).casefold()
+            for slug in cls.WEATHER
+            for sec in cls.raw["packs"]["cy"]["pages"][slug]["sections"].values()
+            for c in sec["concepts"].values()
+            for t in [c.get("text", ""), *c.get("also", [])]
+        ]
+
+    def test_the_page_is_gone_and_nothing_links_to_it(self):
+        self.assertNotIn("when", self.raw["pages"])
+        self.assertNotIn("when", self.raw["packs"]["cy"]["pages"])
+        for slug, page in self.raw["pages"].items():
+            self.assertNotIn("when", page.get("related", []), slug)
+        for group in self.raw["structure"]["groups"]:
+            self.assertNotIn("when", group["pages"])
+
+    def test_every_time_and_date_word_is_found_inside_a_weather_phrase(self):
+        for word in self.WORDS:
+            found = re.compile(r"(?<![\w'])" + re.escape(unicodedata.normalize("NFC", word).casefold()) + r"(?!\w)")
+            self.assertTrue(any(found.search(t) for t in self.texts), f"{word} is in no weather phrase")
+
+    def test_the_days_and_seasons_are_phrases_and_each_day_keeps_its_plain_form(self):
+        days = self.raw["packs"]["cy"]["pages"]["patterns"]["sections"]["days"]["concepts"]
+        self.assertEqual(len(days), 7)
+        for name in ("Llun", "Mawrth", "Mercher", "Iau", "Gwener", "Sadwrn", "Sul"):
+            self.assertTrue(any(name in c["text"] and f"dydd {name}" in " ".join([c["text"], *c.get("also", [])]) for c in days.values()), name)
+        for row in [*days.values(), *self.raw["packs"]["cy"]["pages"]["patterns"]["sections"]["seasons"]["concepts"].values()]:
+            self.assertGreater(len(row["text"].split()), 1, f"{row['text']} is a single word, not a phrase")
 
 
 class TalkingAboutTheWeatherTests(unittest.TestCase):
@@ -440,7 +479,7 @@ class SportScaffoldTests(unittest.TestCase):
         self.assertNotIn("sport", self.raw["pages"], "the placeholder page is gone")
 
     def test_numbers_is_an_everyday_page_for_the_scores_and_the_forecast(self):
-        self.assertEqual(self.groups["everyday"]["pages"], ["when", "numbers", "food-drink"])
+        self.assertEqual(self.groups["everyday"]["pages"], ["numbers", "food-drink"])
         self.assertIn("numbers", self.raw["pages"]["results"]["related"])
 
     def test_every_section_is_held_back_and_states_its_order(self):

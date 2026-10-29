@@ -180,6 +180,9 @@
           "keys": [
             "ddydd Sadwrn",
             "cawodydd"
+          ],
+          "also": [
+            "dydd Sadwrn"
           ]
         },
         "rain-in-the-north": {
@@ -342,6 +345,160 @@
         }
       },
       "order": "the whole, most of it, then places and areas"
+    },
+    "days": {
+      "title": "Dyddiau'r wythnos",
+      "concepts": {
+        "dry-on-monday": {
+          "text": "Sych ddydd Llun",
+          "keys": [
+            null,
+            "Sych",
+            "ddydd Llun"
+          ],
+          "also": [
+            "dydd Llun"
+          ]
+        },
+        "cloudy-on-tuesday": {
+          "text": "Cymylog ddydd Mawrth",
+          "keys": [
+            "Cymylog",
+            null,
+            "ddydd Mawrth"
+          ],
+          "also": [
+            "dydd Mawrth"
+          ]
+        },
+        "showers-on-wednesday": {
+          "text": "Cawodydd ddydd Mercher",
+          "keys": [
+            "ddydd Mercher",
+            "Cawodydd"
+          ],
+          "also": [
+            "dydd Mercher"
+          ]
+        },
+        "fog-on-thursday-morning": {
+          "text": "Niwl bore dydd Iau",
+          "keys": [
+            "bore dydd Iau",
+            "Niwl"
+          ],
+          "also": [
+            "dydd Iau",
+            "ddydd Iau"
+          ]
+        },
+        "more-fine-weather-by-friday": {
+          "text": "Mwy o dywydd braf erbyn dydd Gwener",
+          "keys": [
+            null,
+            "dywydd braf",
+            "dydd Gwener"
+          ],
+          "also": [
+            "dydd Gwener",
+            "ddydd Gwener"
+          ]
+        },
+        "windy-on-saturday": {
+          "text": "Gwyntog ddydd Sadwrn",
+          "keys": [
+            "ddydd Sadwrn",
+            "Gwyntog"
+          ],
+          "also": [
+            "dydd Sadwrn"
+          ]
+        },
+        "sunny-on-sunday": {
+          "text": "Heulog ddydd Sul",
+          "keys": [
+            "Heulog",
+            "ddydd Sul"
+          ],
+          "also": [
+            "dydd Sul"
+          ]
+        }
+      },
+      "order": "Monday to Sunday"
+    },
+    "seasons": {
+      "title": "Tymhorau",
+      "concepts": {
+        "spring-showers": {
+          "text": "Cawodydd y gwanwyn",
+          "keys": [
+            "gwanwyn",
+            "Cawodydd"
+          ],
+          "also": [
+            "gwanwyn",
+            "y gwanwyn"
+          ]
+        },
+        "fine-summer-weather": {
+          "text": "Tywydd braf yr haf",
+          "keys": [
+            "braf",
+            "Tywydd",
+            "haf"
+          ],
+          "also": [
+            "haf",
+            "yr haf"
+          ]
+        },
+        "autumn-fog": {
+          "text": "Niwl yr hydref",
+          "keys": [
+            "hydref",
+            "Niwl"
+          ],
+          "also": [
+            "hydref",
+            "yr hydref"
+          ]
+        },
+        "winter-frost": {
+          "text": "Rhew'r gaeaf",
+          "keys": [
+            "Rhew",
+            "gaeaf"
+          ],
+          "also": [
+            "gaeaf",
+            "y gaeaf"
+          ]
+        },
+        "showers-over-halloween": {
+          "text": "Cawodydd dros Galan Gaeaf",
+          "keys": [
+            null,
+            "Cawodydd",
+            "Galan Gaeaf"
+          ],
+          "also": [
+            "Calan Gaeaf",
+            "dros Calan Gaeaf"
+          ]
+        },
+        "warm-for-the-season": {
+          "text": "Cynnes am y tymor",
+          "keys": [
+            "tymor",
+            "Cynnes"
+          ],
+          "also": [
+            "tymor"
+          ]
+        }
+      },
+      "order": "the four seasons in the order of the year, Halloween, then the season itself"
     },
     "amount": {
       "title": "Faint",

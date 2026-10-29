@@ -1,8 +1,5 @@
 {
   "icon": "chat",
-  "related": [
-    "when"
-  ],
   "sections": [
     {
       "id": "who-scored",

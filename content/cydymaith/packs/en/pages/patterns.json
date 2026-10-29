@@ -323,6 +323,112 @@
         }
       }
     },
+    "days": {
+      "title": "Days of the week",
+      "concepts": {
+        "dry-on-monday": {
+          "text": "Dry on Monday",
+          "keys": [
+            null,
+            "Dry",
+            "Monday"
+          ]
+        },
+        "cloudy-on-tuesday": {
+          "text": "Cloudy on Tuesday",
+          "keys": [
+            "Cloudy",
+            null,
+            "Tuesday"
+          ]
+        },
+        "showers-on-wednesday": {
+          "text": "Showers on Wednesday",
+          "keys": [
+            "Wednesday",
+            "Showers"
+          ]
+        },
+        "fog-on-thursday-morning": {
+          "text": "Fog on Thursday morning",
+          "keys": [
+            "Thursday morning",
+            "Fog"
+          ]
+        },
+        "more-fine-weather-by-friday": {
+          "text": "More fine weather by Friday",
+          "keys": [
+            null,
+            "fine weather",
+            "Friday"
+          ]
+        },
+        "windy-on-saturday": {
+          "text": "Windy on Saturday",
+          "keys": [
+            "Saturday",
+            "Windy"
+          ]
+        },
+        "sunny-on-sunday": {
+          "text": "Sunny on Sunday",
+          "keys": [
+            "Sunny",
+            "Sunday"
+          ]
+        }
+      }
+    },
+    "seasons": {
+      "title": "Seasons",
+      "concepts": {
+        "spring-showers": {
+          "text": "Spring showers",
+          "keys": [
+            "Spring",
+            "showers"
+          ]
+        },
+        "fine-summer-weather": {
+          "text": "Fine summer weather",
+          "keys": [
+            "Fine",
+            "weather",
+            "summer"
+          ]
+        },
+        "autumn-fog": {
+          "text": "Autumn fog",
+          "keys": [
+            "Autumn",
+            "fog"
+          ]
+        },
+        "winter-frost": {
+          "text": "Winter frost",
+          "keys": [
+            "frost",
+            "Winter"
+          ]
+        },
+        "showers-over-halloween": {
+          "text": "Showers over Halloween",
+          "keys": [
+            null,
+            "Showers",
+            "Halloween"
+          ]
+        },
+        "warm-for-the-season": {
+          "text": "Warm for the season",
+          "keys": [
+            "season",
+            "Warm"
+          ]
+        }
+      }
+    },
     "amount": {
       "title": "How much",
       "concepts": {

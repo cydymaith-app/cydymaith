@@ -59,6 +59,17 @@
             "Oerach"
           ]
         },
+        "colder-in-the-evening": {
+          "text": "Oerach min nos",
+          "keys": [
+            null,
+            "min nos",
+            "Oerach"
+          ],
+          "also": [
+            "min nos"
+          ]
+        },
         "another-cold-night": {
           "text": "Noson oer arall",
           "keys": [

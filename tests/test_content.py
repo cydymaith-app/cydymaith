@@ -44,7 +44,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone. Geography lowered
 # on 2026-10-28, by decision: no lists of place names (rule 7 in docs/PHILOSOPHY.md).
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "when": 24, "compass": 30, "patterns": 34, "talk": 11, "landscape": 14, "place-name-elements": 50}
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 34, "talk": 11, "landscape": 14, "place-name-elements": 50}
 
 
 class Page(HTMLParser):
@@ -184,21 +184,21 @@ class BuildTests(unittest.TestCase):
         # Talking about the weather joined the weather group on 2026-10-29: it is speaking, so it comes last
         self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk"])
 
-    def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_everyday_and_a_related_page_of_how_its_said(self):
-        """Time and place was split on 2026-10-27: the compass went to Geography (one page), Time and date to Everyday."""
+    def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_spread_into_the_weather_phrases(self):
+        """Time and place was split on 2026-10-27: the compass went to Geography (one page). The Time and date page went on 2026-10-29:
+        its words are inside the forecast phrases, so it was dropped from Everyday and nothing links to it."""
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         everyday = next(g for g in self.site.groups if g["id"] == "everyday")
         self.assertNotIn("time-and-place", [g["id"] for g in self.site.groups])
-        self.assertEqual(everyday["pages"], ["when", "food-drink"])
+        self.assertEqual(everyday["pages"], ["food-drink"])
         self.assertEqual(weather["links"], ["compass"])
         page = self.built["group-weather-forecast.html"]
         tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
-        self.assertIn('href="when.html" data-related', tiles, "Time and date is reached from How it's said, as a related page in the row at the bottom")
+        self.assertNotIn("when.html", tiles)
         self.assertIn('href="group-geography.html#topic-compass"', tiles)
-        self.assertIn('href="when.html"', self.built["group-everyday.html"])
         self.assertNotIn("data-related", topic_html(self.site, self.built, "patterns"), "the related row is one, at the bottom of the page")
-        self.assertIn("Amser a dyddiad", self.built["when.html"])
-        self.assertIn("Time and date", self.built["when.html"])
+        self.assertNotIn("when.html", self.built)
+        self.assertNotIn("when", self.site.skel)
 
     def test_pressure_opens_change_and_movement_which_is_released_and_the_forecast_card_is_gone(self):
         """The forecast card was dropped on 2026-10-27; its pressure went to Change and movement, its warnings to the cards.
@@ -323,7 +323,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "when": 4, "compass": 3, "landscape": 3, "talk": 1, "patterns": 7, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "compass": 3, "landscape": 3, "talk": 1, "patterns": 9, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -337,10 +337,10 @@ class BuildTests(unittest.TestCase):
         for slug in self.site.slugs:
             self.assertNotIn("in-a-sentence", [s["id"] for s in self.site.sections(slug)], slug)
         self.assertEqual([s["id"] for s in self.site.sections("patterns")],
-                         ["it-is", "doing", "it-will-be", "there-will-be", "place-first", "wind-from", "extent"])
+                         ["it-is", "doing", "it-will-be", "there-will-be", "place-first", "wind-from", "extent", "days", "seasons"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "when", "compass", "patterns", "talk")
+        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "compass", "patterns", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
     def test_geography_is_one_page_of_compass_landscape_and_the_place_name_elements(self):
@@ -451,9 +451,9 @@ class StructureValidationTests(RejectsBase):
 
     def test_duplicate_section_id(self):
         def mutate(r):
-            secs = r["pages"]["when"]["sections"]  # a tiles group: one-page groups have their own message
+            secs = r["pages"]["compass"]["sections"]  # on a one-page group the message says the one page holds the section twice
             secs[1]["id"] = secs[0]["id"]
-        self.check_rejects(mutate, "repeated")
+        self.check_rejects(mutate, "twice")
 
     def test_repeated_concept_on_a_page(self):
         def mutate(r):

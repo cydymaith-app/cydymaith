@@ -35,7 +35,7 @@ The paths are unmodified. The only change is a one-line comment added at the top
 | `snow` | Snow and ice |
 | `windy` | Wind |
 | `temperature` | Temperature |
-| `calendar` | Time and date |
+| `calendar` | Time and date (the page was dropped on 2026-10-29; the icon is kept for a later use) |
 | `compass` | Compass |
 | `chat` | Talking about the weather, and How it's said |
 | `earth` | The Geography group |

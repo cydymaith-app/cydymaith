@@ -2,8 +2,7 @@
   "icon": "chat",
   "related": [
     "landscape",
-    "compass",
-    "when"
+    "compass"
   ],
   "sections": [
     {
@@ -82,6 +81,29 @@
         "areas",
         "localities",
         "widely"
+      ]
+    },
+    {
+      "id": "days",
+      "concepts": [
+        "dry-on-monday",
+        "cloudy-on-tuesday",
+        "showers-on-wednesday",
+        "fog-on-thursday-morning",
+        "more-fine-weather-by-friday",
+        "windy-on-saturday",
+        "sunny-on-sunday"
+      ]
+    },
+    {
+      "id": "seasons",
+      "concepts": [
+        "spring-showers",
+        "fine-summer-weather",
+        "autumn-fog",
+        "winter-frost",
+        "showers-over-halloween",
+        "warm-for-the-season"
       ]
     },
     {

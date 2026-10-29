@@ -35,9 +35,12 @@
         "plenty-of-blue-sky",
         "a-dull-grey-day",
         "settled-for-a-while",
+        "fine-weather-over-the-next-few-days",
+        "fine-spells-this-week",
         "changeable-over-the-weekend",
         "unsettled-from-mid-week-onwards",
-        "more-settled-by-wednesday"
+        "more-settled-by-wednesday",
+        "unsettled-weather-next-week"
       ]
     }
   ]

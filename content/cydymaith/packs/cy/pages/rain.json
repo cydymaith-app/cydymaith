@@ -47,6 +47,18 @@
             "o bosibl"
           ]
         },
+        "heavy-rain-by-the-small-hours": {
+          "text": "Glaw trwm erbyn oriau mân y bore",
+          "keys": [
+            "Glaw trwm",
+            null,
+            "oriau mân y bore"
+          ],
+          "also": [
+            "oriau mân",
+            "oriau man y bore"
+          ]
+        },
         "heavy-rain-and-strong-wind": {
           "text": "Glaw trwm a gwynt cryf",
           "keys": [

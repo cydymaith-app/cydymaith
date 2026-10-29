@@ -41,6 +41,14 @@
             "heavy"
           ]
         },
+        "heavy-rain-by-the-small-hours": {
+          "text": "Heavy rain by the small hours of the morning",
+          "keys": [
+            "Heavy rain",
+            null,
+            "small hours"
+          ]
+        },
         "heavy-rain-and-strong-wind": {
           "text": "Heavy rain and strong wind",
           "keys": [

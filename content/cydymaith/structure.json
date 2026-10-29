@@ -32,7 +32,6 @@
       "id": "everyday",
       "icon": "restaurant",
       "pages": [
-        "when",
         "numbers",
         "food-drink"
       ]
