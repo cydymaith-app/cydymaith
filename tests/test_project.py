@@ -302,6 +302,47 @@ class YellowGreenPaletteTests(unittest.TestCase):
                     self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
 
 
+class NoDoubleEntriesTests(unittest.TestCase):
+    """A row says a thing once. A note is commentary, written once in the Welsh pack; the same note in the English pack as well
+    showed twice under the row (found on the Snow card, 2026-10-29)."""
+
+    @classmethod
+    def setUpClass(cls):
+        raw = select(content.read(PROJECT))
+        _, edition = content.pick_edition(raw)
+        cls.raw = raw
+        cls.pages = phrasebook.Site(raw, edition).render_all()
+
+    @staticmethod
+    def plain(html):
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", html)).strip()
+
+    def test_no_row_has_a_note_in_both_packs(self):
+        both = []
+        for slug, page in self.raw["packs"]["cy"]["pages"].items():
+            for sid, section in page["sections"].items():
+                other = self.raw["packs"]["en"]["pages"].get(slug, {}).get("sections", {}).get(sid, {}).get("concepts", {})
+                both += [f"{slug}/{sid}/{cid}" for cid, c in section["concepts"].items() if c.get("note") and other.get(cid, {}).get("note")]
+        self.assertEqual(both, [], "a note belongs in one pack only (the Welsh one, where {{ }} marks the Welsh words)")
+
+    def test_no_row_on_any_card_shows_the_same_note_twice(self):
+        twice = []
+        for name, page in self.pages.items():
+            for row in re.findall(r'<tr id="([^"]+)">(.*?)</tr>', page, flags=re.S):
+                notes = [self.plain(n) for n in re.findall(r'<small class="note">(.*?)</small>', row[1], flags=re.S)]
+                if len(notes) != len(set(notes)):
+                    twice.append(f"{name}#{row[0]}")
+        self.assertEqual(twice, [], "a row shows a note twice")
+
+    def test_no_card_lists_the_same_phrase_twice(self):
+        twice = []
+        for slug, page in self.raw["packs"]["cy"]["pages"].items():
+            for sid, section in page["sections"].items():
+                texts = [c.get("text") for c in section["concepts"].values() if c.get("text")]
+                twice += [f"{slug}/{sid}: {t}" for t in set(texts) if texts.count(t) > 1]
+        self.assertEqual(twice, [], "a card has the same Welsh twice")
+
+
 class TemperatureAndPressureTests(unittest.TestCase):
     """Uploads 13 and 14 (2026-10-29): the temperature said in full, falling and double figures, and the pressure that influences the weather."""
 

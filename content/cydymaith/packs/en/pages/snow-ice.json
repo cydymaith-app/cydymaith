@@ -28,8 +28,7 @@
             null,
             "shower",
             "hail"
-          ],
-          "note": "{{cenllysg}} is hail; it softens to {{genllysg}} after {{o}}"
+          ]
         },
         "snow-settling-overnight": {
           "text": "Snow settling overnight",
@@ -37,8 +36,7 @@
             "settling",
             "Snow",
             "overnight"
-          ],
-          "note": "{{setlo}}: to settle, to lie; to be confirmed"
+          ]
         },
         "a-yellow-warning-for-snow": {
           "text": "A yellow warning for snow",
@@ -67,8 +65,7 @@
             null,
             "Hoar frost",
             "fields"
-          ],
-          "note": "{{barrug}}: hoar frost, rime; to be confirmed"
+          ]
         },
         "icy-roads-in-the-morning": {
           "text": "Icy roads in the morning",

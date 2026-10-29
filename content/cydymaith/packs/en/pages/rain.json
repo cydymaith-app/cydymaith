@@ -33,8 +33,7 @@
           "keys": [
             "heavy",
             "rain"
-          ],
-          "note": "{{glaw}} softens to {{law}} after {{o}}"
+          ]
         },
         "possibly-heavy-at-times": {
           "text": "Possibly heavy at times",
@@ -55,8 +54,7 @@
             "yellow",
             "rain",
             "warning"
-          ],
-          "note": "{{am}} softens {{glaw}} to {{law}}"
+          ]
         },
         "a-risk-of-rain": {
           "text": "There is a risk of rain",
@@ -83,8 +81,7 @@
             "flooding",
             null,
             "risk"
-          ],
-          "note": "{{llifogydd}} softens to {{lifogydd}} after {{o}}"
+          ]
         },
         "a-flood-warning": {
           "text": "A flood warning",
@@ -178,8 +175,7 @@
             "Two",
             "weekend",
             "storms"
-          ],
-          "note": "{{dwy}} is two before a feminine noun"
+          ]
         },
         "more-rough-weather-to-come": {
           "text": "More rough weather to come",

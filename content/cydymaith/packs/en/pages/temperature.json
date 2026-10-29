@@ -35,8 +35,7 @@
             "continuing",
             null,
             "milder"
-          ],
-          "note": "{{mwynach}} (milder) is the comparative of {{mwyn}}; {{i fod}} (to be) follows {{parhau}}"
+          ]
         },
         "feeling-fresh-in-the-wind": {
           "text": "Feeling fresh in the wind",
@@ -125,8 +124,7 @@
             "highest",
             "Temperatures",
             "afternoon"
-          ],
-          "note": "{{ar ei}} means at its; the same pattern gives {{ar ei isaf}}"
+          ]
         },
         "a-high-of-16-degrees": {
           "text": "A high of 16 degrees",
@@ -134,8 +132,7 @@
             "16 degrees",
             null,
             "high"
-          ],
-          "note": "after a number the noun stays singular: {{gradd}}"
+          ]
         },
         "as-high-as-13-degrees-in-the-south": {
           "text": "As high as 13 degrees in the south",
@@ -167,8 +164,7 @@
             "few degrees",
             null,
             "below freezing"
-          ],
-          "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
+          ]
         }
       }
     },
@@ -181,8 +177,7 @@
             "highest",
             "About",
             "15 degrees Celsius"
-          ],
-          "note": "on screen the unit is written {{C}} after the figure; the presenter says the number and then {{gradd Celsius}}"
+          ]
         },
         "about-11-to-12-degrees-celsius": {
           "text": "About 11 to 12 degrees Celsius",
@@ -222,8 +217,7 @@
             null,
             "coasts",
             "Double figures"
-          ],
-          "note": "{{ffigurau dwbl}} is two figures: ten or more"
+          ]
         }
       }
     }

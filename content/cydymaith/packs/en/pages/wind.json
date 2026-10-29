@@ -50,8 +50,7 @@
             "wind",
             "strongest",
             "overnight"
-          ],
-          "note": "{{ar ei}} means at its; the same pattern as {{ar ei uchaf}}"
+          ]
         },
         "gusts-of-up-to-70-mph": {
           "text": "Gusts of up to 70 miles per hour",
@@ -59,8 +58,7 @@
             null,
             "70 miles per hour",
             "Gusts"
-          ],
-          "note": "on screen {{milltir yr awr}} is {{mya}}: {{70mya}}"
+          ]
         },
         "about-60-mph-on-the-coast": {
           "text": "About 60 miles per hour on the coast",
@@ -131,8 +129,7 @@
             null,
             "easterly wind",
             "biting"
-          ],
-          "note": "{{main}} means thin; of a wind, keen or biting"
+          ]
         },
         "mild-southerly-winds": {
           "text": "Mild southerly winds",
@@ -155,8 +152,7 @@
             null,
             "Turning",
             "north-westerly"
-          ],
-          "note": "after {{troi'n}} (turning) {{gogledd}} softens to {{ogledd}}"
+          ]
         }
       }
     },
@@ -169,8 +165,7 @@
             "yellow",
             "Met Office",
             "warning"
-          ],
-          "note": "{{am}} softens {{gwynt}} to {{wynt}}"
+          ]
         },
         "the-warning-comes-into-force-at-six-this-evening": {
           "text": "The warning comes into force at six this evening",
@@ -185,8 +180,7 @@
           "keys": [
             "In force",
             "three in the morning"
-          ],
-          "note": "{{tan}} softens {{tri}} to {{dri}}"
+          ]
         },
         "an-amber-wind-warning": {
           "text": "An amber warning for wind",

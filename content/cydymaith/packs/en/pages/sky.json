@@ -58,8 +58,7 @@
             "Sunny",
             null,
             "clouding"
-          ],
-          "note": "{{cymylu}}: to cloud over"
+          ]
         },
         "cloudy-at-first": {
           "text": "Cloudy at first",
@@ -120,8 +119,7 @@
           "keys": [
             "valleys",
             "Mist"
-          ],
-          "note": "{{tarth}} is mist; {{niwl}} is fog"
+          ]
         },
         "poor-visibility-on-some-roads": {
           "text": "Poor visibility on some roads",

@@ -11,8 +11,7 @@
           "keys": [
             "High pressure",
             "in charge"
-          ],
-          "note": "{{rheoli}}: to control, to dominate"
+          ]
         },
         "high-pressure-influencing-the-weather": {
           "text": "High pressure continuing to influence the weather",
@@ -20,8 +19,7 @@
             "High pressure",
             "weather",
             "influence"
-          ],
-          "note": "{{dylanwadu ar}}: to influence; {{dylanwadu}} softens to {{ddylanwadu}} after {{i}}"
+          ]
         },
         "under-the-influence-of-high-pressure": {
           "text": "Under the influence of high pressure",
@@ -29,8 +27,7 @@
             "high pressure",
             null,
             "influence"
-          ],
-          "note": "{{dylanwad}} softens to {{ddylanwad}} after {{dan}}"
+          ]
         },
         "a-ridge-of-high-pressure-moving-in": {
           "text": "A ridge of high pressure moving in",
@@ -38,8 +35,7 @@
             "high pressure",
             "moving in",
             "ridge"
-          ],
-          "note": "{{cefnlen}} is a ridge; the meaning is to be confirmed"
+          ]
         },
         "an-area-of-intense-low-pressure": {
           "text": "An area of intense low pressure",
@@ -47,8 +43,7 @@
             "low pressure",
             "area",
             "intense"
-          ],
-          "note": "{{dwys}} means intense, deep"
+          ]
         },
         "low-pressure-bringing-rain": {
           "text": "Low pressure bringing rain",
@@ -70,8 +65,7 @@
             "fronts",
             "spread",
             "series"
-          ],
-          "note": "{{'di}} is the spoken short form of {{wedi}}; {{Cymru}} softens to {{Gymru}} after {{dros}}"
+          ]
         },
         "the-isobars-closing-up": {
           "text": "The isobars on the map closing up",
@@ -189,16 +183,14 @@
             "way",
             "rain",
             "More"
-          ],
-          "note": "{{ar y ffordd}} could also be on the road; to be confirmed"
+          ]
         },
         "in-the-west-of-the-country": {
           "text": "In the west of the country",
           "keys": [
             "west",
             "country"
-          ],
-          "note": "after {{yn}} (in) {{gorllewin}} becomes {{ngorllewin}}"
+          ]
         }
       }
     },
@@ -242,8 +234,7 @@
             "wind",
             "easing",
             "dawn"
-          ],
-          "note": "{{gostegu}}: to ease; {{gwawrio}}: to dawn"
+          ]
         },
         "calming-down-overnight": {
           "text": "Calming down overnight",
