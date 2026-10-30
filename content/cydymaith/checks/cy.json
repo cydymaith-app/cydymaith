@@ -2,6 +2,1906 @@
   "sources": {
     "king-mwd": "Modern Welsh Dictionary: a guide to the living language, ed. Gareth King, Oxford University Press (ISBN 978-0-19-922874-4), the user's own copy"
   },
-  "words": {},
-  "entries": {}
+  "words": {
+    "awr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "band": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bedwar": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "benfro": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "beth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "betws": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "blaen": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "boeth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bont": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "braf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "brycheiniog": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bryn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bum": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bwlch": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "bwrw": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "caer": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "caerdydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cais": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "calan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "canolwr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cant": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "capten": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cartref": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "castell": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "chi": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "chi'n": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "chwe": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "chwech": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "clirio": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "clirio'r": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "croes": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "croesi": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "croeso": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cryf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cryfhau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cryfion": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cwm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cwpan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cymru": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cymylog": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "cyntaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "côt": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dach": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dda": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddechrau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddeg": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddim": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddoe": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddu": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ddydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "de": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "de-ddwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "de-ddwyreiniol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "de-orllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "de-orllewinol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dechrau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "deg": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "digon": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dim": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dir": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dod": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "draws": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dref": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "drwm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "du": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dwys": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dyddiau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "dywydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "edrych": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "efo": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "eglwys": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "egwyl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ei": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "eira": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "eraill": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "erbyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "eryri": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fa'ma": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fawr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "felly": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ffordd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "foel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fory": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fwy": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fwyaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "fydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gaeaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gaer": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gaerdydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gais": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "galan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gallen": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gallu": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gallwn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gartref": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "glas": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "glaw": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "glir": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gloch": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "goch": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogledd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogledd-ddwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogledd-ddwyreiniol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogledd-orllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogledd-orllewinol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gogleddol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "goliau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gornel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "goron": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gradd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "graig": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gweilch": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gweld": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gwener": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gwlad": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gwych": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gwyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gwynt": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gêm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gôl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "gôl-geidwad": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "haf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hafren": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hanner": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "haul": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "heddiw": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hefo": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hefyd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hen": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "heulog": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hi": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hi'n": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "holl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hon": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hydref": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "hyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "isaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "isel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "lan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "las": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "lawn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "le": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llaeth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llefrith": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "lloegr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llun": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llys": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "llŷn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "maes": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "map": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mawr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mawrth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "melyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "milltir": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "moel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mor": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "munud": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mya": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mynd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mynydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mynyddoedd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "mân": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "môn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "môr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nant": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "naturiol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ne": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ne-ddwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ne-orllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nesaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "newid": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "newydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "newyddion": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nghaerdydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nghymru": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ngogledd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ngogledd-ddwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ngogledd-orllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ngorllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ni": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ni'n": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "niwl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "niwlog": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nos": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "noson": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "noswaith": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nwyrain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "nyffryn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "o": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "o'r": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "oddi": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "oer": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "oerach": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "oes": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ofnadwy": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ogledd-orllewinol": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "olaf": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "orllewin": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "os": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "parhau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pedair": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pedwar": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pellach": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pen": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pencampwriaeth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "peniad": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "penwythnos": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "perygl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "plas": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pont": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "porth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "postyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pump": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pwll": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "pwynt": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhagolygon": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhai": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhannau": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rheoli": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rheolwr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhewi": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhos": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhuddlan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhybudd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhyd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "rhyw": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sadwrn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "saith": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "scarlets": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "setlo": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sgorio": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sir": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "smotyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "stadiwm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "stormydd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sul": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sut": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "swyddfa": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sych": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "sychach": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tair": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tan": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "taro": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "teimlo'n": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "teithio": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "teithwyr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "traeth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tre": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tref": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tri": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "troi'n": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "trosedd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "trosiad": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "trwm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tua": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tyddyn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tymheredd": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tymor": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tîm": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "tŷ": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "uchel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ugain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "weld": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "wlad": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "wlyb": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "y": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yfory": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yma": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ymlaen": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yn": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yna": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yng": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ynys": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yr": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "yw'r": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "â": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "â'r": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    },
+    "ôl": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30"
+    }
+  },
+  "entries": {
+    "place-name-elements/settlements/church-site": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "928a3ca798"
+    },
+    "place-name-elements/settlements/chapel": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "4369539155"
+    },
+    "place-name-elements/settlements/prayer-house": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "d99d5c84c4"
+    },
+    "place-name-elements/settlements/castle": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "588925f5bb"
+    },
+    "place-name-elements/settlements/fort": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "3a7d8978df"
+    },
+    "place-name-elements/settlements/mansion": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "a8ad2cc364"
+    },
+    "place-name-elements/water/river-mouth": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "329ed817c5"
+    },
+    "place-name-elements/water/river": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "772616fb51"
+    },
+    "place-name-elements/water/brook": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "144ab0e5d9"
+    },
+    "place-name-elements/water/spring": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "496cb48ab6"
+    },
+    "place-name-elements/water/lake": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "122c819e85"
+    },
+    "place-name-elements/water/pool": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "65b1050b80"
+    },
+    "place-name-elements/water/island": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "491d90e02c"
+    },
+    "place-name-elements/water/bank-shore": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "cd15116336"
+    },
+    "place-name-elements/hills/mountain": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "00bf14b062"
+    },
+    "place-name-elements/hills/hill": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "58631451f8"
+    },
+    "place-name-elements/hills/pass": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "74daf2fb04"
+    },
+    "place-name-elements/hills/head-top": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "31a841af7b"
+    },
+    "place-name-elements/land/valley": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "de1995372b"
+    },
+    "place-name-elements/land/open-field": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "08aee8a68e"
+    },
+    "place-name-elements/land/moor": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "aa6362f8d7"
+    },
+    "place-name-elements/land/wood": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "6b2b5abbe8"
+    },
+    "place-name-elements/ways/bridge": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "78f657f0c7"
+    },
+    "place-name-elements/ways/ford": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "031ff8e268"
+    },
+    "place-name-elements/ways/gate-harbour": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "ef12cf7fb3"
+    },
+    "place-name-elements/describing/below": {
+      "source": "king-mwd",
+      "result": "ok",
+      "by": "Gareth",
+      "date": "2026-10-30",
+      "hash": "35ca8cf12f"
+    }
+  }
 }
