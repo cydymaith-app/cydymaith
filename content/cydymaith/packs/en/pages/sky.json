@@ -176,22 +176,6 @@
             "Settled"
           ]
         },
-        "fine-weather-over-the-next-few-days": {
-          "text": "Fine weather over the next few days",
-          "keys": [
-            "Fine",
-            "weather",
-            "next few days"
-          ]
-        },
-        "fine-spells-this-week": {
-          "text": "Fine spells this week",
-          "keys": [
-            null,
-            "this week",
-            "Fine spells"
-          ]
-        },
         "changeable-over-the-weekend": {
           "text": "Changeable weather over the weekend",
           "keys": [
@@ -211,14 +195,6 @@
           "keys": [
             "settled",
             "Wednesday"
-          ]
-        },
-        "unsettled-weather-next-week": {
-          "text": "Unsettled weather next week",
-          "keys": [
-            "next week",
-            "weather",
-            "Unsettled"
           ]
         }
       }

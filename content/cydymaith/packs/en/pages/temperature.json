@@ -181,11 +181,27 @@
             null,
             "below freezing"
           ]
+        },
+        "the-temperature-falling": {
+          "text": "The temperature falling",
+          "keys": [
+            null,
+            "temperature",
+            "falling"
+          ]
+        },
+        "the-temperature-falling-to-8-degrees-celsius": {
+          "text": "The temperature falling to 8 degrees Celsius",
+          "keys": [
+            "8 degrees Celsius",
+            "temperature",
+            "falling"
+          ]
         }
       }
     },
     "figures": {
-      "title": "Figures and falling",
+      "title": "Figures",
       "concepts": {
         "about-15-degrees-celsius-at-the-highest": {
           "text": "About 15 degrees Celsius at the highest",
@@ -209,22 +225,6 @@
             "Between",
             null,
             "13 and 16 degrees Celsius"
-          ]
-        },
-        "the-temperature-falling": {
-          "text": "The temperature falling",
-          "keys": [
-            null,
-            "temperature",
-            "falling"
-          ]
-        },
-        "the-temperature-falling-to-8-degrees-celsius": {
-          "text": "The temperature falling to 8 degrees Celsius",
-          "keys": [
-            "8 degrees Celsius",
-            "temperature",
-            "falling"
           ]
         },
         "double-figures-along-the-coasts": {

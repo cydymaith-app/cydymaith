@@ -1,0 +1,28 @@
+{
+  "icon": "earth",
+  "sections": [
+    {
+      "id": "sea",
+      "concepts": [
+        "big-waves-along-the-shores",
+        "rough-weather-along-the-severn-estuary",
+        "high-tide-at-about-half-past-nine",
+        "coinciding-with-high-tide",
+        "waves-causing-a-bit-of-a-mess"
+      ]
+    },
+    {
+      "id": "damage-and-travel",
+      "concepts": [
+        "the-wind-causing-damage",
+        "trees-falling",
+        "a-power-cut",
+        "affecting-the-roads",
+        "disruption-for-travellers",
+        "travel-difficult-on-some-roads",
+        "public-transport-being-affected",
+        "if-you-venture-out-take-care"
+      ]
+    }
+  ]
+}

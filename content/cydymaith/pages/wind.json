@@ -12,14 +12,20 @@
         "the-wind-strengthening",
         "drier-and-windy",
         "strong-winds-on-the-coast",
+        "wind-is-the-main-thing-tonight",
         "the-wind-at-its-strongest-overnight",
+        "the-worst-of-the-wind-overnight"
+      ]
+    },
+    {
+      "id": "gusts",
+      "concepts": [
         "gusts-of-up-to-70-mph",
         "about-60-mph-on-the-coast",
-        "wind-is-the-main-thing-tonight",
-        "the-worst-of-the-wind-overnight",
         "the-wind-gusting-around-40-mph",
         "a-gust-of-65-mph-is-possible",
-        "widely-up-to-50-mph"
+        "widely-up-to-50-mph",
+        "we-saw-gusts-of-84-mph"
       ]
     },
     {
@@ -30,7 +36,11 @@
         "a-biting-easterly",
         "mild-southerly-winds",
         "a-fresh-westerly",
-        "turning-north-westerly"
+        "turning-north-westerly",
+        "a-south-westerly-wind",
+        "wind-from-the-north",
+        "wind-from-the-east",
+        "winds-from-the-south-east"
       ]
     },
     {

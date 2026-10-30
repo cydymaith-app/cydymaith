@@ -16,10 +16,7 @@
           "text": "Yn yr hanner cyntaf"
         },
         "at-half-time": {
-          "text": "Ar hanner amser",
-          "also": [
-            "Hanner amser"
-          ]
+          "text": "Ar hanner amser"
         },
         "in-the-second-half": {
           "text": "Yn yr ail hanner"
@@ -95,10 +92,7 @@
           ]
         },
         "he-was-offside": {
-          "text": "Roedd e'n camsefyll",
-          "also": [
-            "camsefyll"
-          ]
+          "text": "Roedd e'n camsefyll"
         },
         "a-yellow-card-for-the-captain": {
           "text": "Cerdyn melyn i'r capten",

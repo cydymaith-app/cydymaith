@@ -46,6 +46,13 @@
             "gwynt cryf"
           ]
         },
+        "wind-is-the-main-thing-tonight": {
+          "text": "Gwyntoedd yw'r prif beth heno",
+          "keys": [
+            "Gwyntoedd",
+            "heno"
+          ]
+        },
         "the-wind-at-its-strongest-overnight": {
           "text": "Y gwynt ar ei gryfaf dros nos",
           "keys": [
@@ -58,6 +65,24 @@
             "ar ei gryfa'"
           ]
         },
+        "the-worst-of-the-wind-overnight": {
+          "text": "Y gwaetha o'r gwynt dros nos",
+          "keys": [
+            "gwaetha",
+            "gwynt",
+            "dros nos"
+          ],
+          "note": "{{gwaetha}} is how {{gwaethaf}} (worst) is said",
+          "also": [
+            "gwaethaf"
+          ]
+        }
+      },
+      "order": "lightest to strongest, then the worst of it"
+    },
+    "gusts": {
+      "title": "Hyrddiadau a chyflymder",
+      "concepts": {
         "gusts-of-up-to-70-mph": {
           "text": "Hyrddiadau hyd at 70 milltir yr awr",
           "keys": [
@@ -76,25 +101,6 @@
           "keys": [
             "60 milltir yr awr",
             "arfordir"
-          ]
-        },
-        "wind-is-the-main-thing-tonight": {
-          "text": "Gwyntoedd yw'r prif beth heno",
-          "keys": [
-            "Gwyntoedd",
-            "heno"
-          ]
-        },
-        "the-worst-of-the-wind-overnight": {
-          "text": "Y gwaetha o'r gwynt dros nos",
-          "keys": [
-            "gwaetha",
-            "gwynt",
-            "dros nos"
-          ],
-          "note": "{{gwaetha}} is how {{gwaethaf}} (worst) is said",
-          "also": [
-            "gwaethaf"
           ]
         },
         "the-wind-gusting-around-40-mph": {
@@ -120,9 +126,17 @@
             "eang",
             "hyd at"
           ]
+        },
+        "we-saw-gusts-of-84-mph": {
+          "text": "Mi welon ni hyrddiadau o 84 milltir yr awr",
+          "keys": [
+            "84 milltir yr awr",
+            "welon",
+            "hyrddiadau"
+          ]
         }
       },
-      "order": "lightest to strongest, then gusts and speeds"
+      "order": "gusts of rising force, then the speeds, then what was seen"
     },
     "wind-direction": {
       "title": "Cyfeiriad y gwynt",
@@ -175,9 +189,40 @@
             "ogledd-orllewinol"
           ],
           "note": "after {{troi'n}} (turning) {{gogledd}} softens to {{ogledd}}"
+        },
+        "a-south-westerly-wind": {
+          "text": "Gwynt de-orllewinol",
+          "keys": [
+            "Gwynt",
+            null,
+            "de-orllewinol"
+          ]
+        },
+        "wind-from-the-north": {
+          "text": "Gwynt o'r gogledd",
+          "keys": [
+            "Gwynt",
+            null,
+            "gogledd"
+          ]
+        },
+        "wind-from-the-east": {
+          "text": "Gwynt o'r dwyrain",
+          "keys": [
+            "Gwynt",
+            null,
+            "dwyrain"
+          ]
+        },
+        "winds-from-the-south-east": {
+          "text": "Gwyntoedd o'r de-ddwyrain",
+          "keys": [
+            "Gwyntoedd",
+            "de-ddwyrain"
+          ]
         }
       },
-      "order": "round the compass from the north"
+      "order": "round the compass from the north, then the wind named by its direction, then where it comes from"
     },
     "warnings": {
       "title": "Rhybuddion",

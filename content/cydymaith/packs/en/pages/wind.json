@@ -44,6 +44,13 @@
             "Strong winds"
           ]
         },
+        "wind-is-the-main-thing-tonight": {
+          "text": "Wind is the main thing tonight",
+          "keys": [
+            "Wind",
+            "tonight"
+          ]
+        },
         "the-wind-at-its-strongest-overnight": {
           "text": "The wind at its strongest overnight",
           "keys": [
@@ -52,6 +59,19 @@
             "overnight"
           ]
         },
+        "the-worst-of-the-wind-overnight": {
+          "text": "The worst of the wind overnight",
+          "keys": [
+            "worst",
+            "wind",
+            "overnight"
+          ]
+        }
+      }
+    },
+    "gusts": {
+      "title": "Gusts and speeds",
+      "concepts": {
         "gusts-of-up-to-70-mph": {
           "text": "Gusts of up to 70 miles per hour",
           "keys": [
@@ -65,21 +85,6 @@
           "keys": [
             "60 miles per hour",
             "coast"
-          ]
-        },
-        "wind-is-the-main-thing-tonight": {
-          "text": "Wind is the main thing tonight",
-          "keys": [
-            "Wind",
-            "tonight"
-          ]
-        },
-        "the-worst-of-the-wind-overnight": {
-          "text": "The worst of the wind overnight",
-          "keys": [
-            "worst",
-            "wind",
-            "overnight"
           ]
         },
         "the-wind-gusting-around-40-mph": {
@@ -101,6 +106,14 @@
           "keys": [
             "Widely",
             "up to"
+          ]
+        },
+        "we-saw-gusts-of-84-mph": {
+          "text": "We saw gusts of 84 miles per hour",
+          "keys": [
+            "84 miles per hour",
+            "saw",
+            "gusts"
           ]
         }
       }
@@ -152,6 +165,37 @@
             null,
             "Turning",
             "north-westerly"
+          ]
+        },
+        "a-south-westerly-wind": {
+          "text": "A south-westerly wind",
+          "keys": [
+            "wind",
+            null,
+            "south-westerly"
+          ]
+        },
+        "wind-from-the-north": {
+          "text": "Wind from the north",
+          "keys": [
+            "Wind",
+            null,
+            "north"
+          ]
+        },
+        "wind-from-the-east": {
+          "text": "Wind from the east",
+          "keys": [
+            "Wind",
+            null,
+            "east"
+          ]
+        },
+        "winds-from-the-south-east": {
+          "text": "Winds from the south-east",
+          "keys": [
+            "Winds",
+            "south-east"
           ]
         }
       }

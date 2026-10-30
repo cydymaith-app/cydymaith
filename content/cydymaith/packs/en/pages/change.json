@@ -213,14 +213,6 @@
     "changing": {
       "title": "Weather changing",
       "concepts": {
-        "changing-by-the-weekend": {
-          "text": "Changing by the weekend",
-          "keys": [
-            null,
-            "weekend",
-            "Changing"
-          ]
-        },
         "turning-more-unsettled": {
           "text": "Turning more unsettled",
           "keys": [
@@ -299,8 +291,53 @@
         }
       }
     },
-    "other-verbs": {
-      "title": "Other verbs",
+    "outlook": {
+      "title": "The days ahead",
+      "concepts": {
+        "fine-weather-over-the-next-few-days": {
+          "text": "Fine weather over the next few days",
+          "keys": [
+            "Fine",
+            "weather",
+            "next few days"
+          ]
+        },
+        "fine-spells-this-week": {
+          "text": "Fine spells this week",
+          "keys": [
+            null,
+            "this week",
+            "Fine spells"
+          ]
+        },
+        "the-rest-of-the-week-looks-dry": {
+          "text": "The rest of the week looks dry",
+          "keys": [
+            null,
+            "dry",
+            "rest of the week"
+          ]
+        },
+        "changing-by-the-weekend": {
+          "text": "Changing by the weekend",
+          "keys": [
+            null,
+            "weekend",
+            "Changing"
+          ]
+        },
+        "unsettled-weather-next-week": {
+          "text": "Unsettled weather next week",
+          "keys": [
+            "next week",
+            "weather",
+            "Unsettled"
+          ]
+        }
+      }
+    },
+    "expecting-and-continuing": {
+      "title": "Expecting and continuing",
       "concepts": {
         "strong-winds-are-expected": {
           "text": "Strong winds are expected",
@@ -326,41 +363,10 @@
             "Varying"
           ]
         },
-        "coinciding-with-high-tide": {
-          "text": "Coinciding with high tide",
-          "keys": [
-            "coinciding",
-            null,
-            "high tide"
-          ]
-        },
         "we-could-see": {
           "text": "We could see …",
           "keys": [
             "see"
-          ]
-        },
-        "we-saw-gusts-of-84-mph": {
-          "text": "We saw gusts of 84 miles per hour",
-          "keys": [
-            "84 miles per hour",
-            "saw",
-            "gusts"
-          ]
-        },
-        "the-rest-of-the-week-looks-dry": {
-          "text": "The rest of the week looks dry",
-          "keys": [
-            null,
-            "dry",
-            "rest of the week"
-          ]
-        },
-        "affecting-the-roads": {
-          "text": "Affecting the roads",
-          "keys": [
-            "Affecting",
-            "roads"
           ]
         }
       }

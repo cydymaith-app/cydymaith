@@ -13,8 +13,7 @@
           ],
           "note": "{{rheoli}}: to control, to dominate",
           "also": [
-            "gwasgedd uchel yn dechrau rheoli",
-            "Uchel"
+            "gwasgedd uchel yn dechrau rheoli"
           ]
         },
         "high-pressure-influencing-the-weather": {
@@ -58,11 +57,7 @@
             "Ardal",
             "dwys"
           ],
-          "note": "{{dwys}} means intense, deep",
-          "also": [
-            "ardal o wasgedd isel",
-            "Isel"
-          ]
+          "note": "{{dwys}} means intense, deep"
         },
         "low-pressure-bringing-rain": {
           "text": "Gwasgedd isel yn dod â glaw",
@@ -264,14 +259,6 @@
     "changing": {
       "title": "Y tywydd yn newid",
       "concepts": {
-        "changing-by-the-weekend": {
-          "text": "Yn newid erbyn y penwythnos",
-          "keys": [
-            null,
-            "penwythnos",
-            "newid"
-          ]
-        },
         "turning-more-unsettled": {
           "text": "Yn troi'n fwy ansefydlog",
           "keys": [
@@ -352,8 +339,54 @@
       },
       "order": "changing, stronger, weaker, then the sky"
     },
-    "other-verbs": {
-      "title": "Berfau eraill",
+    "outlook": {
+      "title": "Y dyddiau i ddod",
+      "concepts": {
+        "fine-weather-over-the-next-few-days": {
+          "text": "Tywydd braf dros y dyddiau nesaf",
+          "keys": [
+            "braf",
+            "Tywydd",
+            "dyddiau nesaf"
+          ]
+        },
+        "fine-spells-this-week": {
+          "text": "Cyfnodau braf yr wythnos hon",
+          "keys": [
+            null,
+            "wythnos hon",
+            "Cyfnodau braf"
+          ]
+        },
+        "the-rest-of-the-week-looks-dry": {
+          "text": "Mae gweddill yr wythnos yn edrych yn sych",
+          "keys": [
+            null,
+            "sych",
+            "gweddill yr wythnos"
+          ]
+        },
+        "changing-by-the-weekend": {
+          "text": "Yn newid erbyn y penwythnos",
+          "keys": [
+            null,
+            "penwythnos",
+            "newid"
+          ]
+        },
+        "unsettled-weather-next-week": {
+          "text": "Tywydd ansefydlog yr wythnos nesaf",
+          "keys": [
+            "wythnos nesaf",
+            "Tywydd",
+            "ansefydlog"
+          ]
+        }
+      },
+      "order": "the next few days, this week, the weekend, then next week"
+    },
+    "expecting-and-continuing": {
+      "title": "Disgwyl a pharhau",
       "concepts": {
         "strong-winds-are-expected": {
           "text": "Mae disgwyl gwyntoedd cryfion",
@@ -382,17 +415,6 @@
             "amrywio"
           ]
         },
-        "coinciding-with-high-tide": {
-          "text": "Yn cyd-fynd â'r llanw uchel",
-          "keys": [
-            "cyd-fynd",
-            null,
-            "llanw uchel"
-          ],
-          "also": [
-            "cyd-fynd hefo"
-          ]
-        },
         "we-could-see": {
           "text": "Gallen ni weld …",
           "keys": [
@@ -401,32 +423,9 @@
           "also": [
             "gallwn ni weld"
           ]
-        },
-        "we-saw-gusts-of-84-mph": {
-          "text": "Mi welon ni hyrddiadau o 84 milltir yr awr",
-          "keys": [
-            "84 milltir yr awr",
-            "welon",
-            "hyrddiadau"
-          ]
-        },
-        "the-rest-of-the-week-looks-dry": {
-          "text": "Mae gweddill yr wythnos yn edrych yn sych",
-          "keys": [
-            null,
-            "sych",
-            "gweddill yr wythnos"
-          ]
-        },
-        "affecting-the-roads": {
-          "text": "Yn effeithio ar y ffyrdd",
-          "keys": [
-            "effeithio",
-            "ffyrdd"
-          ]
         }
       },
-      "order": "expecting and continuing, then seeing and affecting"
+      "order": "expecting, then continuing, then what we could see"
     }
   }
 }

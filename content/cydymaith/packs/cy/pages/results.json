@@ -13,10 +13,7 @@
           "text": "Ennill o ddeg pwynt"
         },
         "a-draw-one-each": {
-          "text": "Gêm gyfartal, un yr un",
-          "also": [
-            "gyfartal"
-          ]
+          "text": "Gêm gyfartal, un yr un"
         },
         "lost-narrowly": {
           "text": "Colli o drwch blewyn"
@@ -49,10 +46,7 @@
           "text": "Cymru yn erbyn Lloegr"
         },
         "at-home-in-cardiff": {
-          "text": "Gartref yng Nghaerdydd",
-          "also": [
-            "Nghaerdydd"
-          ]
+          "text": "Gartref yng Nghaerdydd"
         },
         "away-from-home": {
           "text": "Oddi cartref"

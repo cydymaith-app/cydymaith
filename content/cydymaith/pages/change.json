@@ -44,7 +44,6 @@
     {
       "id": "changing",
       "concepts": [
-        "changing-by-the-weekend",
         "turning-more-unsettled",
         "showers-developing-in-the-afternoon",
         "showers-getting-heavier",
@@ -58,16 +57,22 @@
       ]
     },
     {
-      "id": "other-verbs",
+      "id": "outlook",
+      "concepts": [
+        "fine-weather-over-the-next-few-days",
+        "fine-spells-this-week",
+        "the-rest-of-the-week-looks-dry",
+        "changing-by-the-weekend",
+        "unsettled-weather-next-week"
+      ]
+    },
+    {
+      "id": "expecting-and-continuing",
       "concepts": [
         "strong-winds-are-expected",
         "the-rain-will-continue-all-day",
         "varying-from-place-to-place",
-        "coinciding-with-high-tide",
-        "we-could-see",
-        "we-saw-gusts-of-84-mph",
-        "the-rest-of-the-week-looks-dry",
-        "affecting-the-roads"
+        "we-could-see"
       ]
     }
   ]

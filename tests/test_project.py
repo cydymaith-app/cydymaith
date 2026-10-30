@@ -290,11 +290,65 @@ class YellowGreenPaletteTests(unittest.TestCase):
                     self.assertGreaterEqual(colour.distance(colours["accent"], colours[key]), palettes.SEPARATION, (pid, variant, key))
 
 
+class WeatherTreeTests(unittest.TestCase):
+    """The weather tree after the content-tree review of 2026-10-29: Impacts is a page, the days ahead are one card, wind direction
+    has one home, and How it's said keeps the sentence frames while the glue has its own page."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+        cls.cy = cls.raw["packs"]["cy"]["pages"]
+
+    def ids(self, slug):
+        return [s["id"] for s in self.raw["pages"][slug]["sections"]]
+
+    def test_the_weather_pages_run_phenomena_then_change_then_impacts_then_the_patterns_and_the_talk(self):
+        weather = next(g for g in self.raw["structure"]["groups"] if g["id"] == "weather-forecast")
+        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue", "talk"])
+
+    def test_how_its_said_holds_the_frames_and_the_glue_page_holds_the_word_groups(self):
+        self.assertEqual(self.ids("patterns"), ["it-is", "doing", "it-will-be", "there-will-be", "place-first"])
+        self.assertEqual(self.ids("glue"), ["extent", "days", "seasons", "amount", "around-figure", "linking", "time-words", "opening-closing", "introducing", "comparing"])
+        self.assertEqual(self.cy["glue"]["title"], "Faint, amser a chyswllt")
+
+    def test_wind_direction_has_one_home_in_the_wind_page(self):
+        self.assertEqual(self.ids("wind"), ["wind", "gusts", "wind-direction", "warnings"])
+        direction = self.cy["wind"]["sections"]["wind-direction"]["concepts"]
+        self.assertEqual(len(direction), 10)
+        self.assertIn("a-south-westerly-wind", direction)
+        self.assertNotIn("wind-from", self.cy["patterns"]["sections"])
+
+    def test_the_days_ahead_are_one_card_on_change_and_movement(self):
+        self.assertEqual(self.ids("change"), ["pressure", "moving", "which-way", "changing", "outlook", "expecting-and-continuing"])
+        outlook = self.cy["change"]["sections"]["outlook"]
+        self.assertEqual((outlook["title"], len(outlook["concepts"])), ("Y dyddiau i ddod", 5))
+        for cid in ("fine-weather-over-the-next-few-days", "unsettled-weather-next-week", "changing-by-the-weekend"):
+            self.assertIn(cid, outlook["concepts"])
+        self.assertNotIn("other-verbs", self.cy["change"]["sections"])
+
+    def test_impacts_is_a_page_of_the_sea_and_damage_and_travel_and_warnings_stay_on_wind(self):
+        self.assertEqual(self.ids("impacts"), ["sea", "damage-and-travel"])
+        self.assertEqual(self.cy["impacts"]["title"], "Effeithiau")
+        self.assertIn("coinciding-with-high-tide", self.cy["impacts"]["sections"]["sea"]["concepts"])
+        self.assertIn("affecting-the-roads", self.cy["impacts"]["sections"]["damage-and-travel"]["concepts"])
+        self.assertIn("warnings", self.ids("wind"))
+        self.assertNotIn("impacts", [g["id"] for g in self.raw["structure"]["groups"]])
+
+    def test_a_falling_temperature_sits_with_the_limits(self):
+        limits = self.cy["temperature"]["sections"]["limits"]
+        self.assertIn("the-temperature-falling", limits["concepts"])
+        self.assertEqual(limits["order"], "highs, then lows, then falling")
+        self.assertEqual(self.cy["temperature"]["sections"]["figures"]["title"], "Ffigurau")
+
+    def test_sport_links_to_the_numbers_and_the_day_phrases(self):
+        self.assertEqual(self.raw["pages"]["results"]["related"], ["numbers", "glue#days"])
+
+
 class TimeAndDateSpreadTests(unittest.TestCase):
     """The Time and date page was dropped from Everyday on 2026-10-29. Its words went into the forecast phrases, so a learner finds
     each one where it is used; nothing it held may be lost."""
 
-    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk", "compass")
+    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue", "talk", "compass")
     WORDS = [
         "Yr oriau nesaf", "Heddiw", "Heno", "Yfory", "Bore fory", "Nos yfory", "Yn hwyrach", "Y dyddiau nesaf", "Yr wythnos hon",
         "Gweddill yr wythnos", "Y penwythnos", "Yr wythnos nesaf", "Bore", "Prynhawn", "Min nos", "Nos", "Hanner nos", "Oriau mân",
@@ -328,11 +382,11 @@ class TimeAndDateSpreadTests(unittest.TestCase):
             self.assertTrue(any(found.search(t) for t in self.texts), f"{word} is in no weather phrase")
 
     def test_the_days_and_seasons_are_phrases_and_each_day_keeps_its_plain_form(self):
-        days = self.raw["packs"]["cy"]["pages"]["patterns"]["sections"]["days"]["concepts"]
+        days = self.raw["packs"]["cy"]["pages"]["glue"]["sections"]["days"]["concepts"]
         self.assertEqual(len(days), 7)
         for name in ("Llun", "Mawrth", "Mercher", "Iau", "Gwener", "Sadwrn", "Sul"):
             self.assertTrue(any(name in c["text"] and f"dydd {name}" in " ".join([c["text"], *c.get("also", [])]) for c in days.values()), name)
-        for row in [*days.values(), *self.raw["packs"]["cy"]["pages"]["patterns"]["sections"]["seasons"]["concepts"].values()]:
+        for row in [*days.values(), *self.raw["packs"]["cy"]["pages"]["glue"]["sections"]["seasons"]["concepts"].values()]:
             self.assertGreater(len(row["text"].split()), 1, f"{row['text']} is a single word, not a phrase")
 
 
@@ -364,7 +418,7 @@ class TalkingAboutTheWeatherTests(unittest.TestCase):
 
     def test_a_word_keeps_the_colour_it_has_on_the_weather_pages(self):
         slot = {}
-        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"):
+        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue"):
             for sec in self.raw["packs"]["en"]["pages"][slug]["sections"].values():
                 for c in sec["concepts"].values():
                     for n, key in enumerate(c.get("keys", [])):
@@ -409,6 +463,19 @@ class NoDoubleEntriesTests(unittest.TestCase):
                     twice.append(f"{name}#{row[0]}")
         self.assertEqual(twice, [], "a row shows a note twice")
 
+    def test_no_also_heard_form_repeats_a_word_of_its_own_phrase(self):
+        """Search already finds any word inside a phrase, so a chip that is a part of its own row is clutter (found on 2026-10-29)."""
+        repeats = []
+        for slug, page in self.raw["packs"]["cy"]["pages"].items():
+            for sid, section in page["sections"].items():
+                for cid, c in section["concepts"].items():
+                    text = unicodedata.normalize("NFC", c.get("text", "")).casefold()
+                    for form in c.get("also", []):
+                        found = re.compile(r"(?<![\w'])" + re.escape(unicodedata.normalize("NFC", form).casefold()) + r"(?!\w)")
+                        if found.search(text):
+                            repeats.append(f"{slug}/{sid}/{cid}: {form}")
+        self.assertEqual(repeats, [], "an also-heard-as form is a part of its own phrase")
+
     def test_no_card_lists_the_same_phrase_twice(self):
         twice = []
         for slug, page in self.raw["packs"]["cy"]["pages"].items():
@@ -429,7 +496,7 @@ class TemperatureAndPressureTests(unittest.TestCase):
         return self.raw["packs"][code]["pages"][slug]["sections"][sid]["concepts"]
 
     def test_a_temperature_is_written_in_full_and_found_by_the_form_on_screen(self):
-        rows = self.rows("temperature", "figures")
+        rows = {**self.rows("temperature", "figures"), **self.rows("temperature", "limits")}
         self.assertEqual(rows["about-15-degrees-celsius-at-the-highest"]["text"], "Rhyw 15 gradd Celsius ar ei uchaf")
         self.assertIn("rhyw 15C", rows["about-15-degrees-celsius-at-the-highest"]["also"])
         self.assertIn("rhwng 13C ac 16C", rows["between-13-and-16-degrees-celsius"]["also"])
@@ -437,17 +504,15 @@ class TemperatureAndPressureTests(unittest.TestCase):
         for row in rows.values():
             self.assertNotRegex(row["text"], r"\dC", "the text is the spoken form, never the caption form")
 
-    def test_the_pressure_card_has_the_influence_and_the_map_labels_are_forms(self):
+    def test_the_pressure_card_has_the_influence_and_the_series_of_fronts(self):
         rows = self.rows("change", "pressure")
         self.assertIn("under-the-influence-of-high-pressure", rows)
         self.assertEqual(rows["high-pressure-influencing-the-weather"]["text"], "Gwasgedd uchel yn parhau i ddylanwadu ar y tywydd")
-        self.assertIn("Uchel", rows["high-pressure-in-charge"]["also"])
-        self.assertIn("Isel", rows["an-area-of-intense-low-pressure"]["also"])
         self.assertEqual(rows["a-series-of-fronts-spreading-over-wales"]["text"], "Cyfres o ffryntiau wedi lledu dros Gymru")
 
     def test_a_word_keeps_its_colour_on_the_new_rows_as_on_the_old_ones(self):
         colour = {}
-        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns"):
+        for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue"):
             for sec in self.raw["packs"]["en"]["pages"][slug]["sections"].values():
                 for c in sec["concepts"].values():
                     for n, key in enumerate(c.get("keys", [])):
@@ -561,7 +626,7 @@ class GeographyStandardTests(unittest.TestCase):
             self.assertNotIn("landscape", page.get("related", []), slug)
         texts = [
             unicodedata.normalize("NFC", t).casefold()
-            for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk")
+            for slug in ("sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue", "talk")
             for sec in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
             for c in sec["concepts"].values()
             for t in [c.get("text", ""), *c.get("also", [])]
@@ -603,7 +668,7 @@ class GeographyStandardTests(unittest.TestCase):
 class KeyWordTests(unittest.TestCase):
     """The weather pages mark the words that match across Welsh and English, so the eye can pair them."""
 
-    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns")
+    WEATHER = ("sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue")
 
     @classmethod
     def setUpClass(cls):
@@ -753,8 +818,8 @@ class UploadTwelveTests(unittest.TestCase):
         self.assertNotIn("status", next(s for s in self.raw["pages"]["patterns"]["sections"] if s["id"] == "place-first"))
 
     PLACE_PHRASES = [
-        ("patterns", "extent", "in-coastal-areas"), ("patterns", "extent", "showers-in-pembrokeshire-llyn-and-anglesey"),
-        ("rain", "storms", "big-waves-along-the-shores"), ("rain", "storms", "rough-weather-along-the-severn-estuary"),
+        ("glue", "extent", "in-coastal-areas"), ("glue", "extent", "showers-in-pembrokeshire-llyn-and-anglesey"),
+        ("impacts", "sea", "big-waves-along-the-shores"), ("impacts", "sea", "rough-weather-along-the-severn-estuary"),
         ("change", "which-way", "showers-reaching-cardigan-bay"), ("change", "which-way", "rain-crossing-the-irish-sea"),
         ("temperature", "hot-cold", "colder-inland"), ("sky", "fog", "fog-in-the-conwy-valley"), ("rain", "flooding", "flooding-in-the-vale-of-clwyd"),
         ("snow-ice", "snow", "snow-over-snowdonia"), ("snow-ice", "frost-ice", "frost-in-the-brecon-beacons"),
@@ -773,7 +838,7 @@ class UploadTwelveTests(unittest.TestCase):
         """There are too many rivers in Wales to list, so one is only ever part of a phrase (2026-10-28)."""
         welsh = {
             c.get("text", "")
-            for slug in ("rain", "sky")
+            for slug in ("rain", "sky", "impacts")
             for s in self.raw["packs"]["cy"]["pages"][slug]["sections"].values()
             for c in s["concepts"].values()
         }

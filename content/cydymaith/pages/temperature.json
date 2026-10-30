@@ -34,7 +34,9 @@
         "as-high-as-13-degrees-in-the-south",
         "at-its-lowest-between-6-and-9-degrees",
         "the-temperature-falling-fast-in-the-evening",
-        "a-few-degrees-below-freezing"
+        "a-few-degrees-below-freezing",
+        "the-temperature-falling",
+        "the-temperature-falling-to-8-degrees-celsius"
       ]
     },
     {
@@ -43,8 +45,6 @@
         "about-15-degrees-celsius-at-the-highest",
         "about-11-to-12-degrees-celsius",
         "between-13-and-16-degrees-celsius",
-        "the-temperature-falling",
-        "the-temperature-falling-to-8-degrees-celsius",
         "double-figures-along-the-coasts"
       ]
     }

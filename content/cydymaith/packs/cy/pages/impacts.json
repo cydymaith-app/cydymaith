@@ -1,0 +1,132 @@
+{
+  "title": "Effeithiau",
+  "source": "draft",
+  "sections": {
+    "sea": {
+      "title": "Y môr",
+      "concepts": {
+        "big-waves-along-the-shores": {
+          "text": "Tonnau mawr ar hyd y glannau",
+          "keys": [
+            "tonnau",
+            "glannau"
+          ]
+        },
+        "rough-weather-along-the-severn-estuary": {
+          "text": "Tywydd garw ar hyd Môr Hafren",
+          "keys": [
+            "garw",
+            "Môr Hafren"
+          ],
+          "also": [
+            "Aber Hafren"
+          ]
+        },
+        "high-tide-at-about-half-past-nine": {
+          "text": "Llanw uchel tua hanner awr wedi naw",
+          "keys": [
+            "hanner awr wedi naw",
+            null,
+            "llanw uchel"
+          ]
+        },
+        "coinciding-with-high-tide": {
+          "text": "Yn cyd-fynd â'r llanw uchel",
+          "keys": [
+            "cyd-fynd",
+            null,
+            "llanw uchel"
+          ],
+          "also": [
+            "cyd-fynd hefo"
+          ]
+        },
+        "waves-causing-a-bit-of-a-mess": {
+          "text": "Tonnau yn achosi peth llanast",
+          "keys": [
+            "Tonnau",
+            "llanast",
+            "achosi"
+          ]
+        }
+      },
+      "order": "waves and rough seas, then the tide, then what the sea does"
+    },
+    "damage-and-travel": {
+      "title": "Difrod a theithio",
+      "concepts": {
+        "the-wind-causing-damage": {
+          "text": "Y gwynt yn achosi difrod",
+          "keys": [
+            "gwynt",
+            "difrod",
+            "achosi"
+          ]
+        },
+        "trees-falling": {
+          "text": "Coed yn cwympo",
+          "keys": [
+            "Coed",
+            null,
+            "cwympo"
+          ]
+        },
+        "a-power-cut": {
+          "text": "Toriad yn y cyflenwad trydan",
+          "keys": [
+            "trydan",
+            null,
+            "Toriad"
+          ]
+        },
+        "affecting-the-roads": {
+          "text": "Yn effeithio ar y ffyrdd",
+          "keys": [
+            "effeithio",
+            "ffyrdd"
+          ]
+        },
+        "disruption-for-travellers": {
+          "text": "Trafferthion i deithwyr",
+          "keys": [
+            "deithwyr",
+            null,
+            "Trafferthion"
+          ],
+          "also": [
+            "drafferthion",
+            "teithwyr"
+          ]
+        },
+        "travel-difficult-on-some-roads": {
+          "text": "Teithio yn anodd ar rai ffyrdd",
+          "keys": [
+            "anodd",
+            "ffyrdd",
+            "Teithio"
+          ]
+        },
+        "public-transport-being-affected": {
+          "text": "Trafnidiaeth gyhoeddus yn cael ei heffeithio",
+          "keys": [
+            null,
+            "Trafnidiaeth gyhoeddus",
+            "heffeithio"
+          ],
+          "note": "{{trafnidiaeth}} is feminine, so {{ei}} (its) puts an {{h}} before the vowel: {{heffeithio}}",
+          "also": [
+            "yn cael ei effeithio"
+          ]
+        },
+        "if-you-venture-out-take-care": {
+          "text": "Os 'dach chi'n mentro allan, cymerwch ofal",
+          "keys": [
+            "ofal",
+            "mentro allan"
+          ]
+        }
+      },
+      "order": "damage, then the roads and travel, then what to do"
+    }
+  }
+}

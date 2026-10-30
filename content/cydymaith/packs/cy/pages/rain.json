@@ -55,7 +55,6 @@
             "oriau mân y bore"
           ],
           "also": [
-            "oriau mân",
             "oriau man y bore"
           ]
         },
@@ -180,8 +179,7 @@
             "Nyffryn Clwyd"
           ],
           "also": [
-            "Dyffryn Clwyd",
-            "Yn Nyffryn Clwyd"
+            "Dyffryn Clwyd"
           ]
         }
       },
@@ -221,27 +219,6 @@
             "storm"
           ],
           "note": "{{dwy}} is two before a feminine noun"
-        },
-        "big-waves-along-the-shores": {
-          "text": "Tonnau mawr ar hyd y glannau",
-          "keys": [
-            "tonnau",
-            "glannau"
-          ],
-          "also": [
-            "ar hyd y glannau"
-          ]
-        },
-        "rough-weather-along-the-severn-estuary": {
-          "text": "Tywydd garw ar hyd Môr Hafren",
-          "keys": [
-            "garw",
-            "Môr Hafren"
-          ],
-          "also": [
-            "Aber Hafren",
-            "ar hyd Môr Hafren"
-          ]
         },
         "more-rough-weather-to-come": {
           "text": "Mwy o dywydd garw i ddod",

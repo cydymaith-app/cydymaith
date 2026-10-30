@@ -44,7 +44,7 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone. Geography lowered
 # on 2026-10-28, by decision: no lists of place names (rule 7 in docs/PHILOSOPHY.md).
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 34, "talk": 11, "place-name-elements": 50}
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 32, "glue": 22, "impacts": 13, "talk": 11, "place-name-elements": 50}
 
 
 class Page(HTMLParser):
@@ -182,7 +182,7 @@ class BuildTests(unittest.TestCase):
     def test_the_weather_tiles_follow_what_a_forecast_talks_about_in_the_order_it_runs(self):
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
         # Talking about the weather joined the weather group on 2026-10-29: it is speaking, so it comes last
-        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "patterns", "talk"])
+        self.assertEqual(weather["pages"], ["sky", "rain", "snow-ice", "wind", "temperature", "change", "impacts", "patterns", "glue", "talk"])
 
     def test_time_and_place_is_split_up_the_compass_is_geography_and_time_and_date_is_spread_into_the_weather_phrases(self):
         """Time and place was split on 2026-10-27: the compass went to Geography (one page). The Time and date page went on 2026-10-29:
@@ -205,7 +205,7 @@ class BuildTests(unittest.TestCase):
         Change and movement was released on 2026-10-28, with the fronts and isobars of upload 12, before its review."""
         self.assertFalse((PROJECT / "pages" / "warnings.json").exists())
         change = json.loads((PROJECT / "pages" / "change.json").read_text(encoding="utf-8"))
-        self.assertEqual([s["id"] for s in change["sections"]], ["pressure", "moving", "which-way", "changing", "other-verbs"])
+        self.assertEqual([s["id"] for s in change["sections"]], ["pressure", "moving", "which-way", "changing", "outlook", "expecting-and-continuing"])
         self.assertTrue(all("status" not in s for s in change["sections"]), "released")
         self.assertIn('id="topic-change"', self.built["group-weather-forecast.html"])
         patterns = json.loads((PROJECT / "pages" / "patterns.json").read_text(encoding="utf-8"))
@@ -323,7 +323,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 3, "temperature": 4, "compass": 3, "talk": 1, "patterns": 9, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 4, "temperature": 4, "compass": 3, "talk": 1, "patterns": 5, "glue": 3, "impacts": 2, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -337,10 +337,11 @@ class BuildTests(unittest.TestCase):
         for slug in self.site.slugs:
             self.assertNotIn("in-a-sentence", [s["id"] for s in self.site.sections(slug)], slug)
         self.assertEqual([s["id"] for s in self.site.sections("patterns")],
-                         ["it-is", "doing", "it-will-be", "there-will-be", "place-first", "wind-from", "extent", "days", "seasons"])
+                         ["it-is", "doing", "it-will-be", "there-will-be", "place-first"])
+        self.assertEqual([s["id"] for s in self.site.sections("glue")][:3], ["extent", "days", "seasons"])
 
     def test_the_weather_group_holds_every_word_it_held_before_the_regrouping(self):
-        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "compass", "patterns", "talk")
+        slugs = ("sky", "rain", "snow-ice", "wind", "temperature", "compass", "change", "impacts", "patterns", "glue", "talk")
         self.assertGreaterEqual(sum(self.site.count_entries(s) for s in slugs), 170)  # words only ever get added
 
     def test_geography_is_one_page_of_the_compass_and_the_place_name_elements(self):

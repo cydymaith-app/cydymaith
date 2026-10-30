@@ -11,7 +11,9 @@
         "wind",
         "temperature",
         "change",
+        "impacts",
         "patterns",
+        "glue",
         "talk"
       ],
       "links": [

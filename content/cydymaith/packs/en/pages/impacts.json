@@ -1,0 +1,117 @@
+{
+  "title": "Impacts",
+  "source": "draft",
+  "sections": {
+    "sea": {
+      "title": "The sea",
+      "concepts": {
+        "big-waves-along-the-shores": {
+          "text": "Big waves along the shores",
+          "keys": [
+            "waves",
+            "shores"
+          ]
+        },
+        "rough-weather-along-the-severn-estuary": {
+          "text": "Rough weather along the Severn estuary",
+          "keys": [
+            "Rough",
+            "Severn estuary"
+          ]
+        },
+        "high-tide-at-about-half-past-nine": {
+          "text": "High tide at about half past nine",
+          "keys": [
+            "half past nine",
+            null,
+            "High tide"
+          ]
+        },
+        "coinciding-with-high-tide": {
+          "text": "Coinciding with high tide",
+          "keys": [
+            "coinciding",
+            null,
+            "high tide"
+          ]
+        },
+        "waves-causing-a-bit-of-a-mess": {
+          "text": "Waves causing a bit of a mess",
+          "keys": [
+            "Waves",
+            "mess",
+            "causing"
+          ]
+        }
+      }
+    },
+    "damage-and-travel": {
+      "title": "Damage and travel",
+      "concepts": {
+        "the-wind-causing-damage": {
+          "text": "The wind causing damage",
+          "keys": [
+            "wind",
+            "damage",
+            "causing"
+          ]
+        },
+        "trees-falling": {
+          "text": "Trees falling",
+          "keys": [
+            "Trees",
+            null,
+            "falling"
+          ]
+        },
+        "a-power-cut": {
+          "text": "A power cut",
+          "keys": [
+            "power",
+            null,
+            "cut"
+          ]
+        },
+        "affecting-the-roads": {
+          "text": "Affecting the roads",
+          "keys": [
+            "Affecting",
+            "roads"
+          ]
+        },
+        "disruption-for-travellers": {
+          "text": "Disruption for travellers",
+          "keys": [
+            "travellers",
+            null,
+            "Disruption"
+          ]
+        },
+        "travel-difficult-on-some-roads": {
+          "text": "Travel difficult on some roads",
+          "keys": [
+            "difficult",
+            "roads",
+            "Travel"
+          ]
+        },
+        "public-transport-being-affected": {
+          "text": "Public transport being affected",
+          "keys": [
+            null,
+            "Public transport",
+            "affected"
+          ]
+        },
+        "if-you-venture-out-take-care": {
+          "text": "If you venture out, take care",
+          "keys": [
+            "care",
+            "venture out"
+          ]
+        }
+      }
+    }
+  },
+  "lede": "What the weather does: the sea and the tide, damage, and travel."
+}

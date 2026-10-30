@@ -38,10 +38,7 @@
             null,
             "fwynach"
           ],
-          "note": "{{mwynach}} (milder) is the comparative of {{mwyn}}; {{i fod}} (to be) follows {{parhau}}",
-          "also": [
-            "parhau i fod yn fwynach"
-          ]
+          "note": "{{mwynach}} (milder) is the comparative of {{mwyn}}; {{i fod}} (to be) follows {{parhau}}"
         },
         "feeling-fresh-in-the-wind": {
           "text": "Teimlo'n ffres yn y gwynt",
@@ -65,9 +62,6 @@
             null,
             "min nos",
             "Oerach"
-          ],
-          "also": [
-            "min nos"
           ]
         },
         "colder-inland": {
@@ -76,10 +70,6 @@
             null,
             "mewndiroedd",
             "Oerach"
-          ],
-          "also": [
-            "mewndiroedd",
-            "yn y mewndiroedd"
           ]
         },
         "another-cold-night": {
@@ -207,12 +197,32 @@
             "islaw'r rhewbwynt"
           ],
           "note": "{{ychydig}} softens {{graddau}} to {{raddau}}"
+        },
+        "the-temperature-falling": {
+          "text": "Y tymheredd yn gostwng",
+          "keys": [
+            null,
+            "tymheredd",
+            "gostwng"
+          ]
+        },
+        "the-temperature-falling-to-8-degrees-celsius": {
+          "text": "Y tymheredd yn disgyn i 8 gradd Celsius",
+          "keys": [
+            "8 gradd Celsius",
+            "tymheredd",
+            "disgyn"
+          ],
+          "also": [
+            "yn disgyn i 8C",
+            "lle bydd y tymheredd yn disgyn i 8C"
+          ]
         }
       },
-      "order": "highs, then lows"
+      "order": "highs, then lows, then falling"
     },
     "figures": {
-      "title": "Ffigurau a gostwng",
+      "title": "Ffigurau",
       "concepts": {
         "about-15-degrees-celsius-at-the-highest": {
           "text": "Rhyw 15 gradd Celsius ar ei uchaf",
@@ -249,29 +259,6 @@
             "rhwng 13C ac 16C"
           ]
         },
-        "the-temperature-falling": {
-          "text": "Y tymheredd yn gostwng",
-          "keys": [
-            null,
-            "tymheredd",
-            "gostwng"
-          ],
-          "also": [
-            "tymheredd yn gostwng"
-          ]
-        },
-        "the-temperature-falling-to-8-degrees-celsius": {
-          "text": "Y tymheredd yn disgyn i 8 gradd Celsius",
-          "keys": [
-            "8 gradd Celsius",
-            "tymheredd",
-            "disgyn"
-          ],
-          "also": [
-            "yn disgyn i 8C",
-            "lle bydd y tymheredd yn disgyn i 8C"
-          ]
-        },
         "double-figures-along-the-coasts": {
           "text": "Ffigurau dwbl ar hyd yr arfordiroedd",
           "keys": [
@@ -285,7 +272,7 @@
           ]
         }
       },
-      "order": "about a figure, between two figures, then falling, then double figures"
+      "order": "about a figure, between two figures, then double figures"
     }
   }
 }
