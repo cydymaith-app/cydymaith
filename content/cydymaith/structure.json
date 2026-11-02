@@ -68,6 +68,7 @@
   "backdrop": {
     "name": "dragon",
     "window": 300,
+    "step": 60,
     "route": [
       [232, 95],
       [700, 95]
