@@ -66,7 +66,10 @@
     }
   ],
   "backdrop_tints": {
-    "dragon": "red",
+    "dragon": {
+      "lines": "grey",
+      "body": "red"
+    },
     "wales": "green"
   },
   "backdrop": {

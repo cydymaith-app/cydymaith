@@ -417,15 +417,21 @@ class BuildTests(unittest.TestCase):
             self.assertEqual('class="backdrop"' in text, name == "group-geography.html", name)
             self.assertEqual('class="backdrop route"' in text, name != "group-geography.html", name)
 
-    def test_the_dragon_is_drawn_in_red_and_the_wales_map_in_green(self):
+    def test_the_filled_dragon_is_on_every_page_but_geography_and_the_map_on_geography_alone(self):
+        for name, text in self.built.items():
+            on_geography = name == "group-geography.html"
+            self.assertEqual('data-body="red"' in text, not on_geography, name)
+            self.assertEqual('data-tint="green"' in text, on_geography, name)
+
+    def test_the_dragon_is_drawn_in_grey_lines_over_a_red_body_and_the_wales_map_in_green(self):
         self.assertIn('class="backdrop route" style="', self.built["index.html"])
-        self.assertIn('data-tint="red"', self.built["index.html"])
+        self.assertIn('data-tint="grey" data-body="red"', self.built["index.html"])  # grey lines over a red body
         self.assertIn('data-tint="green"', self.built["group-geography.html"])
         self.assertNotIn('data-tint="green"', self.built["index.html"])
 
     def test_the_dragon_is_a_tinted_body_under_its_lines_like_the_flag(self):
         page = self.built["index.html"]
-        body = page.index('<g fill="currentColor" stroke="none" opacity=".55">')  # the flag's red shapes, at a lighter shade
+        body = page.index('<g fill="currentColor" stroke="none" opacity=".8">')  # the flag's red shapes, a little lighter than the lines
         lines = page.index('<g fill="none" stroke="currentColor"')
         self.assertLess(body, lines, "the body is drawn first, so the lines are over it")
 
