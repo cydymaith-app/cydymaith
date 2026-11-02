@@ -423,6 +423,12 @@ class BuildTests(unittest.TestCase):
         self.assertIn('data-tint="green"', self.built["group-geography.html"])
         self.assertNotIn('data-tint="green"', self.built["index.html"])
 
+    def test_the_dragon_is_a_tinted_body_under_its_lines_like_the_flag(self):
+        page = self.built["index.html"]
+        body = page.index('<g fill="currentColor" stroke="none" opacity=".55">')  # the flag's red shapes, at a lighter shade
+        lines = page.index('<g fill="none" stroke="currentColor"')
+        self.assertLess(body, lines, "the body is drawn first, so the lines are over it")
+
     def test_the_home_page_is_at_the_dragons_head(self):
         self.assertIn('<main id="main" data-place="232 95">', self.built["index.html"])
 
