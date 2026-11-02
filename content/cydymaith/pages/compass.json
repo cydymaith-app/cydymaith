@@ -32,16 +32,6 @@
       ]
     },
     {
-      "id": "which-part",
-      "concepts": [
-        "in-the-north",
-        "in-the-east",
-        "in-the-south",
-        "in-the-west",
-        "further-south"
-      ]
-    },
-    {
       "id": "parts-of-wales",
       "concepts": [
         "in-north-wales",

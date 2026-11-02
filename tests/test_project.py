@@ -204,7 +204,6 @@ class GradingTests(unittest.TestCase):
         """north = gogledd comes first; in the north, on the coast, in the valleys follow."""
         points = self.sections[("compass", "points")]["level"]
         self.assertEqual(points, 1)
-        self.assertGreater(self.sections[("compass", "which-part")]["level"], points)
         self.assertGreater(self.sections[("compass", "from-which-way")]["level"], points)
 
     def test_sentences_are_the_most_advanced_and_single_words_the_simplest(self):
@@ -609,7 +608,7 @@ class GeographyStandardTests(unittest.TestCase):
     def test_a_region_is_one_row_heard_after_in_and_the_plain_name_is_another_way_it_is_heard(self):
         regions = {
             cid: c
-            for sid in ("from-which-way", "which-part", "parts-of-wales")
+            for sid in ("from-which-way", "parts-of-wales")
             for cid, c in self.section("compass", sid)["concepts"].items()
             if cid.endswith("-wales")
         }
@@ -637,11 +636,10 @@ class GeographyStandardTests(unittest.TestCase):
             self.assertTrue(any(found.search(t) for t in texts), f"{word} is in no weather phrase")
 
     def test_the_compass_has_one_card_for_each_way_a_forecast_uses_a_direction(self):
-        """2026-10-28: the cards were by kind, not by point: which way it comes from, which part, and which part of Wales."""
+        """2026-10-28: the cards were by kind, not by point: which way it comes from, and which part of Wales. A third card, Which part (in the north, in the east, further south), was dropped on 2026-11-02 as redundant with the parts of Wales."""
         from_ = list(self.section("compass", "from-which-way")["concepts"])
         self.assertEqual(from_, [f"from-the-{d}" for d in ("north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west")])
-        self.assertEqual(list(self.section("compass", "which-part")["concepts"])[:4],
-                         ["in-the-north", "in-the-east", "in-the-south", "in-the-west"])
+        self.assertNotIn("which-part", [s["id"] for s in self.raw["pages"]["compass"]["sections"]])
         wales = list(self.section("compass", "parts-of-wales")["concepts"])
         self.assertEqual(wales[:2], ["in-north-wales", "in-north-east-wales"])
         self.assertEqual(wales[-2:], ["across-wales", "across-the-whole-country"])
@@ -649,7 +647,7 @@ class GeographyStandardTests(unittest.TestCase):
 
     def test_every_compass_direction_is_the_first_key_word_so_it_keeps_its_colour(self):
         for code in ("cy", "en"):
-            for sid in ("from-which-way", "which-part", "parts-of-wales"):
+            for sid in ("from-which-way", "parts-of-wales"):
                 for cid, c in self.raw["packs"][code]["pages"]["compass"]["sections"][sid]["concepts"].items():
                     if cid.startswith(("across", "further")):
                         continue
@@ -691,7 +689,7 @@ class KeyWordTests(unittest.TestCase):
 
     GEOGRAPHY = ("compass", "place-name-elements")
     MARKED = {
-        "compass": {"from-which-way", "which-part", "parts-of-wales"},
+        "compass": {"from-which-way", "parts-of-wales"},
         "place-name-elements": set(),
     }
 

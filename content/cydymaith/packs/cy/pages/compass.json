@@ -128,44 +128,6 @@
       },
       "order": "round the compass from the north"
     },
-    "which-part": {
-      "title": "Ym mha ran",
-      "concepts": {
-        "in-the-north": {
-          "text": "Yn y gogledd",
-          "keys": [
-            "gogledd"
-          ]
-        },
-        "in-the-east": {
-          "text": "Yn y dwyrain",
-          "keys": [
-            "dwyrain"
-          ]
-        },
-        "in-the-south": {
-          "text": "Yn y de",
-          "keys": [
-            "de"
-          ]
-        },
-        "in-the-west": {
-          "text": "Yn y gorllewin",
-          "keys": [
-            "gorllewin"
-          ]
-        },
-        "further-south": {
-          "text": "Ymhellach i'r de",
-          "keys": [
-            "de",
-            null,
-            "Ymhellach"
-          ]
-        }
-      },
-      "order": "the four directions, then further south"
-    },
     "parts-of-wales": {
       "title": "Rhannau o Gymru",
       "concepts": {

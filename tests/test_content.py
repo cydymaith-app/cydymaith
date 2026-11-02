@@ -43,8 +43,9 @@ class build:  # noqa: N801  a namespace, so the tests read as they did before th
 
 # Entry counts when the site was first restructured. Content may grow, never shrink by accident. Lowered on 2026-10-27, by decision:
 # the weather cards hold forecast phrases in place of single words, and The forecast card (warnings) is gone. Geography lowered
-# on 2026-10-28, by decision: no lists of place names (rule 7 in docs/PHILOSOPHY.md).
-ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 30, "patterns": 32, "glue": 22, "impacts": 13, "talk": 11, "place-name-elements": 50}
+# on 2026-10-28, by decision: no lists of place names (rule 7 in docs/PHILOSOPHY.md), and again on 2026-11-02 for the Compass, by decision:
+# the Which part card (five rows) was redundant with the parts of Wales.
+ENTRY_FLOOR = {"sky": 17, "rain": 12, "snow-ice": 9, "wind": 18, "temperature": 13, "compass": 26, "patterns": 32, "glue": 22, "impacts": 13, "talk": 11, "place-name-elements": 50}
 
 
 class Page(HTMLParser):
@@ -323,7 +324,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 4, "temperature": 4, "compass": 3, "talk": 1, "patterns": 5, "glue": 3, "impacts": 2, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 4, "temperature": 4, "compass": 2, "talk": 1, "patterns": 5, "glue": 3, "impacts": 2, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -354,7 +355,7 @@ class BuildTests(unittest.TestCase):
         # 2026-10-28: the regions went to the Compass, and the named places came from Landscape as Landmarks
         # and on 2026-10-28 the lists of towns and countries went (no gazetteers); a pattern card of nine phrases took their place
         self.assertNotIn("landscape", self.site.skel)
-        self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "which-part", "parts-of-wales"])
+        self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "parts-of-wales"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
         self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])

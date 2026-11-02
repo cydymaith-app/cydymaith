@@ -1,6 +1,6 @@
 {
   "title": "Compass",
-  "lede": "The compass points, then how a forecast uses them: which way the weather comes from, which part of the country, and which part of Wales.",
+  "lede": "The compass points, then how a forecast uses them: which way the weather comes from, and which part of Wales.",
   "source": "draft",
   "sections": {
     "points": {
@@ -105,43 +105,6 @@
           ],
           "also": [
             "north-westerly"
-          ]
-        }
-      }
-    },
-    "which-part": {
-      "title": "Which part",
-      "concepts": {
-        "in-the-north": {
-          "text": "In the north",
-          "keys": [
-            "north"
-          ]
-        },
-        "in-the-east": {
-          "text": "In the east",
-          "keys": [
-            "east"
-          ]
-        },
-        "in-the-south": {
-          "text": "In the south",
-          "keys": [
-            "south"
-          ]
-        },
-        "in-the-west": {
-          "text": "In the west",
-          "keys": [
-            "west"
-          ]
-        },
-        "further-south": {
-          "text": "Further south",
-          "keys": [
-            "south",
-            null,
-            "Further"
           ]
         }
       }
