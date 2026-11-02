@@ -220,6 +220,61 @@ class GradingTests(unittest.TestCase):
         self.assertLessEqual(len(by_hand), 5, f"each one needs a reason: {by_hand}")
 
 
+WELSH_ALPHABET = ["a", "b", "c", "ch", "d", "dd", "e", "f", "ff", "g", "ng", "h", "i", "j", "l", "ll", "m", "n", "o", "p", "ph", "r", "rh", "s", "t", "th", "u", "w", "y"]
+
+
+def welsh_key(word):
+    """A word's place in the Welsh alphabet, where ch, dd, ff, ng, ll, ph, rh and th are letters of their own and a circumflex or other
+    mark makes no difference."""
+    plain = "".join(c for c in unicodedata.normalize("NFD", word.lower()) if not unicodedata.combining(c))
+    key, i = [], 0
+    while i < len(plain):
+        letter = plain[i : i + 2] if plain[i : i + 2] in WELSH_ALPHABET else plain[i]
+        key.append(WELSH_ALPHABET.index(letter) if letter in WELSH_ALPHABET else -1)
+        i += len(letter)
+    return key
+
+
+class OrderOfACardTests(unittest.TestCase):
+    """Every card (section) has one stated order, and where it says alphabetical, its rows are in the Welsh alphabet (see the content-tree
+    skill, *Ordering a new card*). Put the rule in the stated order, so that this check holds it."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.raw = content.read(PROJECT)
+
+    def sections(self):
+        for slug, page in self.raw["pages"].items():
+            for section in page["sections"]:
+                yield slug, section, self.raw["packs"]["cy"]["pages"].get(slug, {}).get("sections", {}).get(section["id"], {})
+
+    def test_the_welsh_alphabet_puts_its_digraphs_after_their_first_letter(self):
+        words = ["tŷ", "tyddyn", "ffynnon", "ffordd", "dwyrain", "dŵr", "llan", "lle", "cwm", "chwith", "caer", "mynydd", "rhos", "pwll", "porth"]
+        self.assertEqual(
+            sorted(words, key=welsh_key),
+            ["caer", "cwm", "chwith", "dŵr", "dwyrain", "ffordd", "ffynnon", "llan", "lle", "mynydd", "porth", "pwll", "rhos", "tŷ", "tyddyn"],
+        )
+
+    def test_a_card_that_says_it_is_alphabetical_has_its_rows_in_the_welsh_alphabet(self):
+        said = 0
+        for slug, section, pack in self.sections():
+            if "alphabetical" not in pack.get("order", ""):
+                continue
+            said += 1
+            texts = [pack["concepts"][cid]["text"] for cid in section["concepts"] if cid in pack["concepts"]]
+            self.assertEqual(texts, sorted(texts, key=welsh_key), f"{slug}/{section['id']}")
+        self.assertGreater(said, 0)
+
+    def test_the_cards_of_the_place_name_elements_are_alphabetical_and_so_are_their_titles(self):
+        sections = list(self.sections())
+        place = [(section, pack) for slug, section, pack in sections if slug == "place-name-elements"]
+        self.assertEqual(len(place), 6)
+        for section, pack in place:
+            self.assertIn("alphabetical", pack["order"], section["id"])
+        titles = [pack["title"] for section, pack in place]
+        self.assertEqual(titles, sorted(titles, key=welsh_key))
+
+
 class OnePageWeatherTests(unittest.TestCase):
     """The weather forecast is one page: each of its topics is an accordion, shut until opened, in the written order, and the
     topics have no pages of their own (the owner's design pivot of 2026-10-26: too many separate pages under weather)."""

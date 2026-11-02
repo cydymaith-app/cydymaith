@@ -4,27 +4,12 @@
   "sections": {
     "settlements": {
       "title": "Aneddiadau ac adeiladau",
-      "order": "church places, then forts and courts, then mansions, then homes",
+      "order": "alphabetical, in the Welsh alphabet",
       "intro": "In a place name the elements are joined together, and the first letter of the second word often changes. Each element is shown here in its basic form, with the changed forms you meet in names listed beside it.",
       "concepts": {
-        "church-site": {
-          "text": "llan",
-          "note": "as in {{Llanelwy}} and {{Llanelli}}; often followed by the name of a saint"
-        },
-        "church": {
-          "text": "eglwys"
-        },
-        "chapel": {
-          "text": "capel",
-          "note": "as in {{Capel Curig}}"
-        },
         "prayer-house": {
           "text": "betws",
           "note": "as in {{Betws-y-coed}}"
-        },
-        "castle": {
-          "text": "castell",
-          "note": "as in {{Castell-nedd}}; shortened to {{cas}} in {{Casnewydd}}"
         },
         "fort": {
           "text": "caer",
@@ -32,6 +17,21 @@
           "also": [
             "gaer"
           ]
+        },
+        "chapel": {
+          "text": "capel",
+          "note": "as in {{Capel Curig}}"
+        },
+        "castle": {
+          "text": "castell",
+          "note": "as in {{Castell-nedd}}; shortened to {{cas}} in {{Casnewydd}}"
+        },
+        "church": {
+          "text": "eglwys"
+        },
+        "church-site": {
+          "text": "llan",
+          "note": "as in {{Llanelwy}} and {{Llanelli}}; often followed by the name of a saint"
         },
         "court-hall": {
           "text": "llys",
@@ -57,68 +57,24 @@
         }
       }
     },
-    "water": {
-      "title": "Dŵr",
-      "order": "running water, still water, then the coast",
-      "concepts": {
-        "river-mouth": {
-          "text": "aber",
-          "note": "as in {{Aberystwyth}}, {{Abertawe}} and {{Aberteifi}}; the river's name follows"
-        },
-        "river": {
-          "text": "afon",
-          "note": "as in {{Afon Conwy}}"
-        },
-        "brook": {
-          "text": "nant",
-          "note": "as in {{Nant Ffrancon}}"
-        },
-        "spring": {
-          "text": "ffynnon",
-          "note": "as in {{Ffynnon Taf}}"
-        },
-        "lake": {
-          "text": "llyn",
-          "note": "as in {{Llyn Tegid}}"
-        },
-        "pool": {
-          "text": "pwll",
-          "note": "as in {{Pwllheli}}"
-        },
-        "island": {
-          "text": "ynys",
-          "note": "as in {{Ynys Môn}} (Anglesey)"
-        },
-        "bank-shore": {
-          "text": "glan",
-          "also": [
-            "lan"
-          ],
-          "note": "as in {{glan y môr}} (the seashore), {{glan llyn}} (the lakeside) and {{glan yr afon}} (the riverside); in place names often with hyphens, as {{Glan-y-môr}}"
-        },
-        "beach": {
-          "text": "traeth"
-        }
-      }
-    },
     "hills": {
       "title": "Bryniau a chreigiau",
-      "order": "the mountain down to the hillside, then the pass, then the head or top",
+      "order": "alphabetical, in the Welsh alphabet",
       "concepts": {
-        "mountain": {
-          "text": "mynydd",
-          "note": "as in {{Mynydd Du}}"
-        },
-        "bare-hill": {
-          "text": "moel",
-          "note": "as in {{Moel Famau}}",
-          "also": [
-            "foel"
-          ]
+        "hillside": {
+          "text": "allt"
         },
         "hill": {
           "text": "bryn",
           "note": "as in {{Bryn Mawr}}"
+        },
+        "pass": {
+          "text": "bwlch",
+          "note": "as in {{Bwlch y Groes}}"
+        },
+        "cairn": {
+          "text": "carn",
+          "note": "as in {{Carn Ingli}}"
         },
         "crag": {
           "text": "craig",
@@ -127,16 +83,16 @@
             "graig"
           ]
         },
-        "cairn": {
-          "text": "carn",
-          "note": "as in {{Carn Ingli}}"
+        "bare-hill": {
+          "text": "moel",
+          "note": "as in {{Moel Famau}}",
+          "also": [
+            "foel"
+          ]
         },
-        "hillside": {
-          "text": "allt"
-        },
-        "pass": {
-          "text": "bwlch",
-          "note": "as in {{Bwlch y Groes}}"
+        "mountain": {
+          "text": "mynydd",
+          "note": "as in {{Mynydd Du}}"
         },
         "head-top": {
           "text": "pen",
@@ -146,18 +102,18 @@
     },
     "land": {
       "title": "Cymoedd a chaeau",
-      "order": "the valley, then open and enclosed land, then the wood",
+      "order": "alphabetical, in the Welsh alphabet",
       "concepts": {
+        "enclosed-field": {
+          "text": "cae"
+        },
+        "wood": {
+          "text": "coed",
+          "note": "as in {{Betws-y-coed}}"
+        },
         "valley": {
           "text": "cwm",
           "note": "as in {{Cwmbrân}}"
-        },
-        "open-field": {
-          "text": "maes",
-          "note": "as in {{Maesteg}}"
-        },
-        "enclosed-field": {
-          "text": "cae"
         },
         "moorland": {
           "text": "gwaun",
@@ -166,19 +122,63 @@
             "waun"
           ]
         },
+        "open-field": {
+          "text": "maes",
+          "note": "as in {{Maesteg}}"
+        },
         "moor": {
           "text": "rhos",
           "note": "as in {{Rhosneigr}}"
+        }
+      }
+    },
+    "water": {
+      "title": "Dŵr",
+      "order": "alphabetical, in the Welsh alphabet",
+      "concepts": {
+        "river-mouth": {
+          "text": "aber",
+          "note": "as in {{Aberystwyth}}, {{Abertawe}} and {{Aberteifi}}; the river's name follows"
         },
-        "wood": {
-          "text": "coed",
-          "note": "as in {{Betws-y-coed}}"
+        "river": {
+          "text": "afon",
+          "note": "as in {{Afon Conwy}}"
+        },
+        "spring": {
+          "text": "ffynnon",
+          "note": "as in {{Ffynnon Taf}}"
+        },
+        "bank-shore": {
+          "text": "glan",
+          "also": [
+            "lan"
+          ],
+          "note": "as in {{glan y môr}} (the seashore), {{glan llyn}} (the lakeside) and {{glan yr afon}} (the riverside); in place names often with hyphens, as {{Glan-y-môr}}"
+        },
+        "lake": {
+          "text": "llyn",
+          "note": "as in {{Llyn Tegid}}"
+        },
+        "brook": {
+          "text": "nant",
+          "note": "as in {{Nant Ffrancon}}"
+        },
+        "pool": {
+          "text": "pwll",
+          "note": "as in {{Pwllheli}}"
+        },
+        "beach": {
+          "text": "traeth"
+        },
+        "island": {
+          "text": "ynys",
+          "note": "as in {{Ynys Môn}} (Anglesey)"
         }
       }
     },
     "ways": {
       "title": "Ffyrdd a chroesfannau",
-      "order": "roads, then crossings, then the gate",
+      "order": "alphabetical, in the Welsh alphabet",
       "concepts": {
         "road": {
           "text": "ffordd",
@@ -195,30 +195,24 @@
             "bont"
           ]
         },
-        "ford": {
-          "text": "rhyd",
-          "note": "as in {{Rhydaman}}"
-        },
         "gate-harbour": {
           "text": "porth",
           "note": "as in {{Porthmadog}} and {{Aberporth}}"
+        },
+        "ford": {
+          "text": "rhyd",
+          "note": "as in {{Rhydaman}}"
         }
       }
     },
     "describing": {
       "title": "Geiriau disgrifio",
-      "order": "size, colour, age, then position",
+      "order": "alphabetical, in the Welsh alphabet",
       "box": {
         "title": "Why the spelling changes",
         "body": "After a feminine noun an adjective softens: {{coch}} becomes {{goch}}, {{bach}} becomes {{fach}} and {{mawr}} becomes {{fawr}}. After {{y}} (the) a feminine noun softens too: {{pont}} becomes {{bont}} and {{craig}} becomes {{graig}}. {{ll}} and {{rh}} do not soften after {{y}}."
       },
       "concepts": {
-        "big": {
-          "text": "mawr",
-          "also": [
-            "fawr"
-          ]
-        },
         "small": {
           "text": "bach",
           "also": [
@@ -237,33 +231,39 @@
             "ddu"
           ]
         },
-        "white": {
-          "text": "gwyn",
-          "also": [
-            "wyn"
-          ]
-        },
         "blue-green": {
           "text": "glas",
           "also": [
             "las"
           ]
         },
-        "new": {
-          "text": "newydd"
+        "white": {
+          "text": "gwyn",
+          "also": [
+            "wyn"
+          ]
         },
         "old": {
           "text": "hen"
         },
-        "upper": {
-          "text": "uchaf"
-        },
         "lower": {
           "text": "isaf"
+        },
+        "big": {
+          "text": "mawr",
+          "also": [
+            "fawr"
+          ]
+        },
+        "new": {
+          "text": "newydd"
         },
         "below": {
           "text": "tan",
           "note": "as in {{Tanygrisiau}}, 'below the steps', from the stepped cliffs above the village"
+        },
+        "upper": {
+          "text": "uchaf"
         }
       }
     }

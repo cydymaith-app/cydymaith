@@ -17,23 +17,23 @@
     "settlements": {
       "title": "Settlements and buildings",
       "concepts": {
-        "church-site": {
-          "text": "Church site, parish"
+        "prayer-house": {
+          "text": "Prayer house, chapel"
         },
-        "church": {
-          "text": "Church (building)"
+        "fort": {
+          "text": "Fort, fortress"
         },
         "chapel": {
           "text": "Chapel"
         },
-        "prayer-house": {
-          "text": "Prayer house, chapel"
-        },
         "castle": {
           "text": "Castle"
         },
-        "fort": {
-          "text": "Fort, fortress"
+        "church": {
+          "text": "Church (building)"
+        },
+        "church-site": {
+          "text": "Church site, parish"
         },
         "court-hall": {
           "text": "Court, hall"
@@ -52,61 +52,29 @@
         }
       }
     },
-    "water": {
-      "title": "Water",
-      "concepts": {
-        "river-mouth": {
-          "text": "River mouth, confluence"
-        },
-        "river": {
-          "text": "River"
-        },
-        "brook": {
-          "text": "Stream, brook"
-        },
-        "spring": {
-          "text": "Spring, well"
-        },
-        "lake": {
-          "text": "Lake"
-        },
-        "pool": {
-          "text": "Pool"
-        },
-        "island": {
-          "text": "Island"
-        },
-        "bank-shore": {
-          "text": "Bank, shore"
-        },
-        "beach": {
-          "text": "Beach"
-        }
-      }
-    },
     "hills": {
       "title": "Hills and rock",
       "concepts": {
-        "mountain": {
-          "text": "Mountain"
-        },
-        "bare-hill": {
-          "text": "Bare rounded hill"
+        "hillside": {
+          "text": "Hillside, wooded slope"
         },
         "hill": {
           "text": "Hill"
         },
-        "crag": {
-          "text": "Rock, crag"
+        "pass": {
+          "text": "Pass, gap"
         },
         "cairn": {
           "text": "Cairn, rocky outcrop"
         },
-        "hillside": {
-          "text": "Hillside, wooded slope"
+        "crag": {
+          "text": "Rock, crag"
         },
-        "pass": {
-          "text": "Pass, gap"
+        "bare-hill": {
+          "text": "Bare rounded hill"
+        },
+        "mountain": {
+          "text": "Mountain"
         },
         "head-top": {
           "text": "Head, top, end"
@@ -116,23 +84,55 @@
     "land": {
       "title": "Valleys and fields",
       "concepts": {
-        "valley": {
-          "text": "Valley"
-        },
-        "open-field": {
-          "text": "Open field, plain"
-        },
         "enclosed-field": {
           "text": "Enclosed field"
+        },
+        "wood": {
+          "text": "Trees, wood"
+        },
+        "valley": {
+          "text": "Valley"
         },
         "moorland": {
           "text": "Moorland, mountain pasture"
         },
+        "open-field": {
+          "text": "Open field, plain"
+        },
         "moor": {
           "text": "Moor"
+        }
+      }
+    },
+    "water": {
+      "title": "Water",
+      "concepts": {
+        "river-mouth": {
+          "text": "River mouth, confluence"
         },
-        "wood": {
-          "text": "Trees, wood"
+        "river": {
+          "text": "River"
+        },
+        "spring": {
+          "text": "Spring, well"
+        },
+        "bank-shore": {
+          "text": "Bank, shore"
+        },
+        "lake": {
+          "text": "Lake"
+        },
+        "brook": {
+          "text": "Stream, brook"
+        },
+        "pool": {
+          "text": "Pool"
+        },
+        "beach": {
+          "text": "Beach"
+        },
+        "island": {
+          "text": "Island"
         }
       }
     },
@@ -148,20 +148,17 @@
         "bridge": {
           "text": "Bridge"
         },
-        "ford": {
-          "text": "Ford"
-        },
         "gate-harbour": {
           "text": "Gate, harbour, port"
+        },
+        "ford": {
+          "text": "Ford"
         }
       }
     },
     "describing": {
       "title": "Describing words",
       "concepts": {
-        "big": {
-          "text": "Big, large"
-        },
         "small": {
           "text": "Small, little"
         },
@@ -171,26 +168,29 @@
         "black": {
           "text": "Black"
         },
-        "white": {
-          "text": "White"
-        },
         "blue-green": {
           "text": "Blue, green"
         },
-        "new": {
-          "text": "New"
+        "white": {
+          "text": "White"
         },
         "old": {
           "text": "Old"
         },
-        "upper": {
-          "text": "Upper"
-        },
         "lower": {
           "text": "Lower"
         },
+        "big": {
+          "text": "Big, large"
+        },
+        "new": {
+          "text": "New"
+        },
         "below": {
           "text": "Below, under"
+        },
+        "upper": {
+          "text": "Upper"
         }
       }
     }

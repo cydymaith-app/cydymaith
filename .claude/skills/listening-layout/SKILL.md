@@ -36,7 +36,7 @@ Rate each item **ok / weak / broken**, with file and line evidence.
 1. **Direction.** Is the heard language the first, bold, scanning column? A listener scans the language they heard, not the one they know.
 2. **Heard forms findable.** Are mutated, plural, contracted and colloquial forms present as `text` or `forms` so search and the eye can find them? Or only in notes and intros, which search ignores?
 3. **One decoder, not copies.** Is a grammar explanation written once and linked, or pasted onto several pages? Do its examples match the page it sits on?
-4. **Order principle.** Sections follow the broadcast's running order. Within a section there is one visible principle: an intensity scale, a time sequence, compass order, or alphabetical order in the heard language. Arbitrary order is **broken**.
+4. **Order principle.** Sections follow the broadcast's running order. Within a section there is one visible principle: an intensity scale, a time sequence, compass order, or alphabetical order in the heard language. Arbitrary order is **broken**. When a card is added, choose the principle and give the reason, or ask the developer: see *Ordering a card* in the `content-tree` skill.
 5. **Section size.** About 8 to 10 rows at most. Longer lists are split or alphabetised.
 6. **Word families together.** Noun, plural, adjective and verb of one root are adjacent, or in one row.
 7. **Sentences decomposable.** Sentences are taught as frames with slots that point to the vocabulary, glossed literally enough to segment the heard language. Whole fixed sentences that will never be heard verbatim are low value.

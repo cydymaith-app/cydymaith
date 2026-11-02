@@ -4,12 +4,12 @@
     {
       "id": "settlements",
       "concepts": [
-        "church-site",
-        "church",
-        "chapel",
         "prayer-house",
-        "castle",
         "fort",
+        "chapel",
+        "castle",
+        "church",
+        "church-site",
         "court-hall",
         "mansion",
         "homestead",
@@ -18,41 +18,41 @@
       ]
     },
     {
-      "id": "water",
-      "concepts": [
-        "river-mouth",
-        "river",
-        "brook",
-        "spring",
-        "lake",
-        "pool",
-        "island",
-        "bank-shore",
-        "beach"
-      ]
-    },
-    {
       "id": "hills",
       "concepts": [
-        "mountain",
-        "bare-hill",
-        "hill",
-        "crag",
-        "cairn",
         "hillside",
+        "hill",
         "pass",
+        "cairn",
+        "crag",
+        "bare-hill",
+        "mountain",
         "head-top"
       ]
     },
     {
       "id": "land",
       "concepts": [
-        "valley",
-        "open-field",
         "enclosed-field",
+        "wood",
+        "valley",
         "moorland",
-        "moor",
-        "wood"
+        "open-field",
+        "moor"
+      ]
+    },
+    {
+      "id": "water",
+      "concepts": [
+        "river-mouth",
+        "river",
+        "spring",
+        "bank-shore",
+        "lake",
+        "brook",
+        "pool",
+        "beach",
+        "island"
       ]
     },
     {
@@ -61,24 +61,24 @@
         "road",
         "street",
         "bridge",
-        "ford",
-        "gate-harbour"
+        "gate-harbour",
+        "ford"
       ]
     },
     {
       "id": "describing",
       "concepts": [
-        "big",
         "small",
         "red",
         "black",
-        "white",
         "blue-green",
-        "new",
+        "white",
         "old",
-        "upper",
         "lower",
-        "below"
+        "big",
+        "new",
+        "below",
+        "upper"
       ]
     }
   ]

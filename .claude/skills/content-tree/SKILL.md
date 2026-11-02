@@ -35,7 +35,7 @@ Rate each item **ok / weak / broken**, with file links.
 6. **A home for the glue.** There is a branch for the words that hold a broadcast together: connectives, extent ("in places", "on the whole"), change verbs (clearing, spreading). Without a home, they never get added.
 7. **Balance.** Twiglets of about 4 to 10 leaves. Pages of 2 to 4 twiglets. Fewer than 4 leaves: merge. More than 10: split, or order it so it can be scanned.
 8. **Depth earns its taps.** A group with one page, or a page with one section, adds a layer that carries no choice: flatten it. **Exception: deliberate placeholders.** Held-back groups (`status: development`) and the Everyday > Food and drink page (one word, `milk`, kept to show where sections will go and to demonstrate the `llefrith`/`llaeth` regional split) are scaffolding. Mention them at most as "placeholder, not yet filled" and never propose flattening them.
-9. **Sibling order.** Each level has one stated order: the running order of the broadcast, a scale, time or compass. The most-used and orienting branches come first.
+9. **Sibling order.** Each level has one stated order: the running order of the broadcast, a scale, time or compass, or, where none of those fits, the alphabet. The most-used and orienting branches come first. A card's rows follow *Ordering a card*, below: a card with no stated order, or whose rows do not follow the order it states, is **broken**.
 10. **No gazetteers.** A section whose rows are bare names (towns, rivers, mountains, counties, countries) is **broken**, however useful it looks: the app teaches phrases, not what places exist (rule 7 in `docs/PHILOSOPHY.md`). Propose the heard phrase around each name instead (*Yn Nyffryn Conwy*, *Ar hyd Môr Hafren*), or drop it. Place-name elements (*aber*, *llan*, *glan*) are not a gazetteer and stay.
 11. **Ids are stable and honest.** Concept ids match their glosses. Section ids name the topic, not the content kind. Slugs match page titles closely enough to recognise.
 
@@ -59,6 +59,22 @@ Check every proposal against these, and split the plan into content changes and 
 - **`"status": "development"`** holds a page or section back from the release. Use it for new branches while they are drafted.
 - **Both packs move together.** Every concept id in `pages/` has an entry in `en` and `cy`, and every new title has both languages.
 - **The framework stays language-neutral.** No Welsh and no language names in `framework/`.
+
+## Ordering a card
+
+Every card (a section of a page) states one order, shown as *Order: …* above its rows (`order` in the pack, written in the commentary language). **When a card is added, or its rows are changed, the order is decided and the reason is given.** The order the words arrived in is not an order.
+
+1. **Ask what the reader does with the card.** Scans along a scale, follows a sequence, finds their place on a map, or looks a word up.
+2. **Take the first principle that fits:**
+   - **Scale**: intensity, size or amount, in one direction, such as light to heavy or calm to extreme.
+   - **Time**: the order things happen in or are said in (now, then, later).
+   - **Space**: round the compass from the north, north to south, coast to hills.
+   - **Running order**: the order a broadcast says it, such as a lead-in, the detail, then the sign-off.
+   - **Alphabetical, in the heard language**: the fallback, for a card that is a reference to look things up in and has no other order, such as the place-name elements. For Welsh use the Welsh alphabet, where *ch, dd, ff, ng, ll, ph, rh, th* are letters of their own after *c, d, f, g, l, p, r, t* and a circumflex makes no difference (*tŷ* before *tyddyn*; *llan* before *lle*). The rows are sorted in the page skeleton, so every language pair shows them in the same order, and the cards of a page are sorted by their Welsh titles in the same way.
+   - A **theme grouping** (churches, then forts, then houses) is not an order unless the card says so; it is a reason to split the card, each with an order of its own.
+3. **Give the rationale** in your reply and in the commit message, in one line: *"Ordered by scale, light to heavy, because the reader compares strengths; time did not fit, since no row says when."* Name the principle you rejected if a reader could expect it. Write the principle on the card (`order`, for example `alphabetical, in the Welsh alphabet`).
+4. **Ask the developer instead of deciding** when two principles fit and would give different orders (a scale and a sequence), when the card mixes kinds so that no one principle covers it, when the developer has ordered a similar card differently, or when the only principle left is alphabetical but a real relationship between the rows would then be hidden. Use the question tool, show the two orders side by side for a few rows, and say which you would pick and why.
+5. **Check it.** `OrderOfACardTests` in `tests/test_project.py` holds every card whose `order` says alphabetical. Where a card's principle can be checked (a scale with a ranking, a compass), add a test as well.
 
 ## Grading: beginner to advanced
 

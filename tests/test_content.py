@@ -358,7 +358,7 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([s["id"] for s in self.site.skel["compass"]["sections"]], ["points", "from-which-way", "parts-of-wales"])
 
     def test_the_place_name_elements_are_found_by_the_forms_they_take_in_names(self):
-        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "water", "hills", "land", "ways", "describing"])
+        self.assertEqual([s["id"] for s in self.site.sections("place-name-elements")], ["settlements", "hills", "land", "water", "ways", "describing"])
         dictionary = json.loads((self.out / "dictionary.json").read_text(encoding="utf-8"))
         bridge = next(e for e in dictionary["entries"] if e["concept"] == "bridge")
         self.assertEqual([t["text"] for t in bridge["terms"]["cy"]], ["pont"])
