@@ -23,9 +23,11 @@ One page for the group, like the weather and sport. The draft phrases below are 
 | Public services (`services`) | Health, Schools and councils |
 | Money and work (`economy`) | Prices and rates, Jobs and firms |
 | Farming and tourism (`rural`) | Farming, Tourism |
-| Crime and courts (`courts`) | Police, In court |
+| Crime and courts (a subsection of the news section, not a page) | Police, In court |
 | Emergencies (`incidents`) | Called out, Injured and missing |
 | How it's said (`news-patterns`) | Who said it, What comes next, Opening and closing |
+
+**Crime is a subsection of the news section** (2026-11-02). Its phrases are gathered here, and Upload 2 is held for it. Nothing is written into the app's news page until that synthesis.
 
 ## Seed phrases (drafts, not heard yet)
 
@@ -166,3 +168,32 @@ Notes for synthesis:
 - *protestio'r bore 'ma* is *protestio y bore 'ma* run together, the time phrase after the verb-noun.
 - *39 wythnos* is spoken in full; keep the caption form as "also heard as".
 - Possible new section on Public services: *Staff ysgol* (school staff), covering pay, terms and holidays.
+
+### Upload 2: an arrest after a death (*Newyddion S4C*, 2026-11-02)
+
+Fifteen photos of one story, one of them without a caption. (The last five photos ran over into the next story and are not collected.) A 61-year-old man questioned on suspicion of murder after a death: the studio lead-in, then a reporter live at the scene and the police statement. Held for synthesis into the **Crime** subsection under the news section (see Proposed pages). Phrases in the order heard.
+
+| Heard | Draft English | Held for |
+|---|---|---|
+| Mae dyn **61 oed** **yn cael ei holi** **ar amheuaeth o** **lofruddiaeth**… *(then)* …**yng Nghaergybi** | A 61-year-old man is **being questioned** **on suspicion of** **murder**… in Holyhead | Crime; figure as spoken |
+| Cafodd **gwasanaethau brys** eu **galw** i'r **digwyddiad** **yn oriau man y bore** 'ma | **Emergency services** were **called** to the **incident** **in the small hours** this morning | Crime; *oriau man y bore* is already on the Rain page |
+| Mae [reporter] **yng Nghaergybi** **heno** | [Reporter] is **in Holyhead** **tonight** | Crime; the name is not kept |
+| **Ychydig** ydyn ni **yn ei wybod** am y digwyddiad | **Little** is **known** about the incident | Crime |
+| Roedd **argyfwng meddygol** yn **oriau man y bore** yng Nghaergybi | There was a **medical emergency** in the **small hours** in Holyhead | Crime |
+| **Cyhoeddodd** yr **heddlu** wedyn bod dyn 61 **wedi ei arestio** **ar amheuaeth o** **lofruddio** | **Police announced** afterwards that a man, 61, **had been arrested** **on suspicion of** **murder** | Crime |
+| Cafodd ei **ddisgrifio** **fel** **digwyddiad ynysig** | It was **described** **as** an **isolated incident** | Crime |
+| Mae'r **heddlu** **yn parhau** yma | The **police** **remain** here | Crime |
+| Mae **galwad am** **fwy o wybodaeth** | There is a **call for** **more information** | Crime (next to *apelio am wybodaeth*) |
+| Daw'r **farwolaeth** **bythefnos** **ar ôl** **llofruddiaeth** arall… | The **death** comes **a fortnight** **after** another **murder**… | Crime; *Daw… ar ôl* as in the seed *Daw hyn wedi i…* |
+| Mae'r **farwolaeth** arall **mewn amser mor fyr**… *(then)* …**yn fraw i drigolion** Caergybi | The other **death** **in such a short time**… **is a shock to residents** of Holyhead | Crime |
+| **Yn fyw** *(banner)* | **Live** | Crime; banner at the top of a live report |
+
+Notes for synthesis:
+
+- **Two forms of the same word in one bulletin.** The lead-in has *llofruddiaeth* (the noun) after *ar amheuaeth o*, and the report has *llofruddio* (the verb-noun) after the same words. Both are real, so keep one row and give the other as "also heard as". The seed has *llofruddiaeth*.
+- **A place takes its mutation.** *Caergybi* is bare after *trigolion* but *yng Nghaergybi* after *yn*. Teach it from the heard phrase, not from a list (rule 7). The notes would be "{{Caergybi}} becomes {{Nghaergybi}} after {{yng}}".
+- **A time word takes the soft mutation.** *Pythefnos* is *bythefnos* when it says when, as in *bythefnos ar ôl*. Note it in the weather style.
+- **Figures as spoken.** *61 oed* is written in figures in the caption. The spoken form was not in the photos, so the draft must not guess it. Keep the caption form as "also heard as" until the spoken form is checked.
+- **Names not kept:** the reporter. *Caergybi* stays only inside its phrases.
+- **Typos:** none raised. Captions are typed live.
+- **Already in the content:** *yn oriau man y bore* (Rain), *parhau* (Rain, Change, Temperature). Everything else here is new to the Welsh pack.
