@@ -58,11 +58,14 @@ The paths are unmodified. The only change is a one-line comment added at the top
 
 ## Backdrops in use
 
-Faded drawings behind a group's page, kept in `content/cydymaith/backdrops/` and named with `backdrop` on a group in `structure.json`. Decoration only.
+Faded drawings behind the pages, kept in `content/cydymaith/backdrops/` and named with `backdrop` on a group in `structure.json`, or at its top for the drawing behind every other page. Decoration only.
 
 | Backdrop | Used by | Licence | Source |
 |---|---|---|---|
 | `wales` | The Geography group's page (Compass and Place-name elements) | Open Government Licence v3.0 | Office for National Statistics, *Countries (December 2025) Boundaries UK BGC* (item `c8bea35f51054f0c95aa876f66fe027c` on ArcGIS Online) |
+| `dragon` | Every other page: the home page on the head, then along the body to the tail, page by page | Public domain | The red dragon of `File:Flag_of_Wales.svg`, Wikimedia Commons |
+
+- The dragon is the flag's own shapes as black lines: each red shape's outline, with the parts a later shape covers in the flag taken out (so the claws and teeth are not doubled), and the flag's detail lines. Coordinates are rounded to two decimals; about 17 KB. Made 2026-11-02. No credit is required; it is recorded here.
 
 - Only Wales was taken from the dataset. The outline was flattened with a cosine-of-latitude scale, simplified, and small islets under a threshold dropped, which brings it to about 11 KB. Licence read on 2026-11-02 on the ONS page *Licences* (`ons.gov.uk/methodology/geography/licences`).
 - The ONS asks for this statement wherever the material is used: *Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025.* It is in the edition's `credits`, shown on the Sources page under *Pictures and data*, and in a comment at the top of the SVG.

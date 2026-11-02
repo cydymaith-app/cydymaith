@@ -411,9 +411,13 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('class="rose"', geography)
         self.assertIn('id="points"', geography)
 
-    def test_only_the_geography_group_has_the_wales_outline(self):
+    def test_only_the_geography_group_has_the_wales_outline_and_every_other_page_the_dragon(self):
         for name, text in self.built.items():
             self.assertEqual('class="backdrop"' in text, name == "group-geography.html", name)
+            self.assertEqual('class="backdrop route"' in text, name != "group-geography.html", name)
+
+    def test_the_home_page_is_at_the_dragons_head(self):
+        self.assertIn('<main id="main" data-place="232 95">', self.built["index.html"])
 
     def test_the_document_language_is_the_interface_language(self):
         for text in self.built.values():
