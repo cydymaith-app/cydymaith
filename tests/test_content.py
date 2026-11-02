@@ -417,6 +417,12 @@ class BuildTests(unittest.TestCase):
             self.assertEqual('class="backdrop"' in text, name == "group-geography.html", name)
             self.assertEqual('class="backdrop route"' in text, name != "group-geography.html", name)
 
+    def test_the_dragon_is_drawn_in_red_and_the_wales_map_in_green(self):
+        self.assertIn('class="backdrop route" style="', self.built["index.html"])
+        self.assertIn('data-tint="red"', self.built["index.html"])
+        self.assertIn('data-tint="green"', self.built["group-geography.html"])
+        self.assertNotIn('data-tint="green"', self.built["index.html"])
+
     def test_the_home_page_is_at_the_dragons_head(self):
         self.assertIn('<main id="main" data-place="232 95">', self.built["index.html"])
 
