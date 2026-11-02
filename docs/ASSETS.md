@@ -63,7 +63,7 @@ Faded drawings behind the pages, kept in `content/cydymaith/backdrops/` and name
 | Backdrop | Used by | Licence | Source |
 |---|---|---|---|
 | `wales` | The Geography group's page (Compass and Place-name elements) | Open Government Licence v3.0 | Office for National Statistics, *Countries (December 2025) Boundaries UK BGC* (item `c8bea35f51054f0c95aa876f66fe027c` on ArcGIS Online) |
-| `dragon` | Every other page: the home page on the head, then along the body to the tail, page by page | Public domain | The red dragon of `File:Flag_of_Wales.svg`, Wikimedia Commons |
+| `dragon` | Every other page: the home page on the head, then along the body to the tail, page by page | Public domain | The red dragon of `File:Flag_of_Wales.svg` (Wikipedia and Wikimedia Commons; `en.wikipedia.org/wiki/Flag_of_Wales`) |
 
 - The dragon is the flag's own shapes as black lines: each red shape's outline, with the parts a later shape covers in the flag taken out (so the claws and teeth are not doubled), and the flag's detail lines. Coordinates are rounded to two decimals; about 17 KB. Made 2026-11-02. No credit is required; it is recorded here.
 
