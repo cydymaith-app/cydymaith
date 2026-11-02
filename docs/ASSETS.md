@@ -56,6 +56,19 @@ The paths are unmodified. The only change is a one-line comment added at the top
 - Icons are decorative beside their labels, so they are hidden from screen readers.
 - **Not yet checked: BBC GEL icon sets.** The BBC's Global Experience Language ([BBC GEL iconography](https://www.bbc.co.uk/gel/features/iconography#licensing)) has alternative icon sets that are free for non-commercial use only. Under the policy above, a non-commercial licence is not accepted, so none of them may be used unless the BBC grants other terms. The page could not be fetched while writing this note, so the wording was not verified.
 
+## Backdrops in use
+
+Faded drawings behind a group's page, kept in `content/cydymaith/backdrops/` and named with `backdrop` on a group in `structure.json`. Decoration only.
+
+| Backdrop | Used by | Licence | Source |
+|---|---|---|---|
+| `wales` | The Geography group's page (Compass and Place-name elements) | Open Government Licence v3.0 | Office for National Statistics, *Countries (December 2025) Boundaries UK BGC* (item `c8bea35f51054f0c95aa876f66fe027c` on ArcGIS Online) |
+
+- Only Wales was taken from the dataset. The outline was flattened with a cosine-of-latitude scale, simplified, and small islets under a threshold dropped, which brings it to about 11 KB. Licence read on 2026-11-02 on the ONS page *Licences* (`ons.gov.uk/methodology/geography/licences`).
+- The ONS asks for this statement wherever the material is used: *Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025.* It is in the edition's `credits`, shown on the Sources page under *Pictures and data*, and in a comment at the top of the SVG.
+- The outline carries no place names, so it is not a gazetteer (`PHILOSOPHY.md`, rule 7). It is inlined in the page and makes no request.
+- Re-check the licence and the dataset's year before each release.
+
 ## Colour palettes in use
 
 | Palette | Where it came from | Licence |

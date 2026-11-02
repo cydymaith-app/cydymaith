@@ -315,6 +315,14 @@
       ]
     }
   },
+  "credits": [
+    {
+      "title": "Outline of Wales behind the Compass page: Countries (December 2025) Boundaries UK BGC, Office for National Statistics",
+      "url": "https://www.arcgis.com/home/item.html?id=c8bea35f51054f0c95aa876f66fe027c",
+      "licence": "OGL-3.0",
+      "statement": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2025."
+    }
+  ],
   "home": {
     "headline": {
       "en": "Everyday phrases, Welsh to English",

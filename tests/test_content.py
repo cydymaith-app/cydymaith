@@ -323,7 +323,7 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<th scope="row" class="l1" lang="cy"><span class="key" data-k="2">Glaw mân</span> yma ac acw</th>', topic_html(self.site, self.built, "rain"))
 
     def test_every_section_states_its_order(self):
-        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 4, "temperature": 4, "compass": 3, "talk": 1, "patterns": 5, "glue": 3, "impacts": 2, "place-name-elements": 6}
+        shown = {"sky": 3, "rain": 3, "snow-ice": 2, "wind": 4, "temperature": 4, "compass": 4, "talk": 1, "patterns": 5, "glue": 3, "impacts": 2, "place-name-elements": 6}
         for slug, count in shown.items():
             self.assertEqual(topic_html(self.site, self.built, slug).count('<p class="order">'), count, slug)
 
@@ -406,9 +406,14 @@ class BuildTests(unittest.TestCase):
             for span in Page(text).cy:
                 self.assertTrue(span["text"].strip(), f"{name}: empty Welsh span")
 
-    def test_the_compass_page_has_its_figure(self):
-        self.assertIn('class="rose"', self.built["group-geography.html"])
-        self.assertIn("Compass rose labelled in English and Welsh", self.built["group-geography.html"])
+    def test_the_compass_lists_its_points_with_no_figure(self):
+        geography = self.built["group-geography.html"]
+        self.assertNotIn('class="rose"', geography)
+        self.assertIn('id="points"', geography)
+
+    def test_only_the_geography_group_has_the_wales_outline(self):
+        for name, text in self.built.items():
+            self.assertEqual('class="backdrop"' in text, name == "group-geography.html", name)
 
     def test_the_document_language_is_the_interface_language(self):
         for text in self.built.values():
@@ -467,6 +472,7 @@ class StructureValidationTests(RejectsBase):
 
     def test_figure_needs_its_concepts(self):
         def mutate(r):
+            r["pages"]["compass"]["figure"] = "compass-rose"  # the project's compass has none
             r["pages"]["compass"]["sections"][0]["concepts"].remove("north")
         self.check_rejects(mutate, "needs concepts north")
 
@@ -770,11 +776,6 @@ class AddingALanguageTests(unittest.TestCase):
         self.assertIn('lang="gd"', compass)
         self.assertIn("gd:north", compass)
         self.assertNotIn("sky.html", compass)
-
-    def test_the_figure_is_skipped_when_the_pair_lacks_its_concepts(self):
-        out = self.tmp / "out2"
-        build.build(out, data_dir=self.data, edition="test")
-        self.assertNotIn('class="rose"', (out / "group-geography.html").read_text(encoding="utf-8"))
 
     def test_the_pair_can_be_swapped_without_touching_data(self):
         raw = self.raw()

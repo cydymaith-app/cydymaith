@@ -23,6 +23,7 @@
     {
       "id": "geography",
       "icon": "earth",
+      "backdrop": "wales",
       "pages": [
         "compass",
         "place-name-elements"

@@ -139,6 +139,7 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
   - Translations are added as the app is built, in English and Welsh. The Welsh group title "Technoleg" is a first draft and needs review.
   - Remove the `status` when the section is ready to publish, after the translations are reviewed.
   - From the framework notes: begin with app development as this app is developed, and keep it updated with findings.
+- [ ] **Shelved (2026-11-02): map of Wales that highlights place-name elements.** The person pans a map; names in view are matched against the place-name elements (*llan*, *rhos*, *aber*) and their meanings shown in a bottom panel. Shelved for two reasons: (1) live OpenStreetMap tiles or queries are third-party requests that reveal a visit, which breaks the no-tracking promise and rule 1; (2) the private alternative, a self-hosted Wales extract, is too large a download. May return as a related feature or an optional plugin.
 
 ## 3. Framework
 

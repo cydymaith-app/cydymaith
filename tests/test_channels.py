@@ -96,6 +96,7 @@ class ChannelTests(unittest.TestCase):
     def test_a_figure_cannot_lose_its_concepts_to_a_held_back_section(self):
         data = self.tmp / "figure-project"
         shutil.copytree(PROJECT, data)
+        edit_json(data / "pages" / "compass.json", lambda d: d.update(figure="compass-rose"))  # the project's compass has none
         edit_json(data / "pages" / "compass.json", lambda d: d["sections"][0].update(status="development"))
         with self.assertRaises(content.ContentError):
             phrasebook.build(self.tmp / "figure-out", project_dir=data)
