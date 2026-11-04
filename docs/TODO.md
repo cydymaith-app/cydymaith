@@ -93,6 +93,7 @@ Work top to bottom. Tick items off in the commit that completes them. This is th
   - [ ] **Phase 3, fill Football then Rugby** from the collection: phrases as heard, "also heard as" forms, key words, about 5 to 8 rows a section. Then Results, Teams and competitions, How it's said and Numbers (phase 4).
   - [ ] **Phase 5, release** each section once a fluent speaker has checked it. Cricket and athletics wait until then.
 - [ ] Culture, music and poetry topics. Vocabulary and phrases only, not lyrics or poems.
+  - **Possible category alongside culture: Heritage (*Treftadaeth*).** Marked 2026-11-04, nothing collected yet. Decide later whether it is its own group or a part of culture; the same rules apply (phrases heard, no lists of places, rule 7).
   - From the framework notes: events such as *nos galan gaeaf*, and what the *Mari Lwyd* is; traditional songs and their meanings, for example *Calon Lân*. Check this against the rule above: vocabulary and phrases only, so a song's words would need to be public domain before they are quoted.
 - [ ] **Add a second language** when you have material. A right-to-left or non-Latin language would test the framework hardest. Each non-Latin script needs an open-licence font subset, which affects offline size.
 
