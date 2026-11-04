@@ -314,7 +314,7 @@
     "help-icons": {
       "title": "Gofyn am nodwedd",
       "body": [
-        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail, lle mae gan y wefan gyfeiriad ar gyfer adroddiadau. Mae togl ar frig y ffenestr yn newid rhwng y ddwy iaith, ac mae'r x bach yn ei chau."
+        "Dewiswch eicon i agor taflen fach. Mae Beth yw hwn? yn dod gyntaf ac yn dangos y cymorth ar gyfer y nodwedd honno mewn ffenestr y gallwch ei chau; mae'r un geiriau yn y llyfr cymorth. Mae Adrodd am broblem yn dod yn ail a Chyfrannu yn drydydd, lle mae gan y wefan gyfeiriad. Mae togl ar frig y ffenestr yn newid rhwng y ddwy iaith, ac mae'r x bach yn ei chau."
       ],
       "keys": "Tabiwch at eicon, yna pwyswch Enter. Mae Escape yn cau'r ffenestr.",
       "touch": "Tapiwch eicon, yna Beth yw hwn?. Tapiwch yr x, neu y tu allan i'r ffenestr, i'w chau."
@@ -326,6 +326,15 @@
       ],
       "keys": "Tabiwch at Agor e-bost neu Copïo, yna pwyswch Enter.",
       "touch": "Tapiwch Agor e-bost neu Copïo."
+    },
+    "contribute": {
+      "title": "Cyfrannu",
+      "body": [
+        "Mae Cyfrannu ar gyfer gair, ymadrodd neu gywiriad yr hoffech ei weld yn yr ap. Mae blwch ar gyfer pob iaith o'r pâr; llenwch un neu'r ddau. Mae'n dangos i chi'r e-bost y byddai'n ei ysgrifennu, gyda'r un ychydig linellau a ychwanegir gan yr ap (byth mwy na 256 o nodau), cyn i unrhyw beth adael eich dyfais. Mae Agor e-bost yn agor eich ap post eich hun ac mae Copïo yn copïo'r testun; nid yw'r ap byth yn anfon dim ei hun.",
+        "Ni chaiff awgrym ei ychwanegu nes ei fod wedi'i adolygu. Os caiff ei adolygu a'i ychwanegu at yr ap, caiff ei ryddhau o dan drwydded MIT gyda gweddill y gwaith."
+      ],
+      "keys": "Tabiwch at Cyfrannu, yna pwyswch Enter.",
+      "touch": "Tapiwch eicon, yna Cyfrannu."
     }
   }
 }

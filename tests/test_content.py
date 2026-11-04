@@ -1136,7 +1136,7 @@ class HelpBookTests(unittest.TestCase):
     def test_chapter_seven_is_shown_and_offers_the_report(self):
         site = build.Site(self.raw, build.pick_edition(self.raw)[1])
         page = site.render_all()["help-using-help.html"]
-        for anchor in ("help-button", "help-icons", "report-a-problem"):
+        for anchor in ("help-button", "help-icons", "report-a-problem", "contribute"):
             self.assertIn(f'id="{anchor}" data-feature="{anchor}"', page)
 
     def test_the_welsh_names_the_controls_as_the_welsh_interface_does(self):

@@ -93,7 +93,10 @@
     "help_open_email": "Agor e-bost",
     "help_copy": "Copïo",
     "help_copied": "Copïwyd.",
-    "help_copy_failed": "Methwyd copïo. Dewiswch y testun a'i gopïo eich hun."
+    "help_copy_failed": "Methwyd copïo. Dewiswch y testun a'i gopïo eich hun.",
+    "help_contribute": "Cyfrannu",
+    "help_contribute_lede": "Awgrymwch air, ymadrodd neu gywiriad, mewn un iaith neu'r ddwy. Dyma'r e-bost a fydd yn cael ei ysgrifennu: nid yw'r ap yn anfon dim, rydych yn ei anfon o'ch ap post eich hun.",
+    "help_contribute_licence": "Ni chaiff awgrym ei ychwanegu nes ei fod wedi'i adolygu. Os caiff ei adolygu a'i ychwanegu at yr ap, caiff ei ryddhau o dan drwydded MIT gyda gweddill y gwaith."
   },
   "groups": {
     "weather-forecast": "Rhagolygon y tywydd",

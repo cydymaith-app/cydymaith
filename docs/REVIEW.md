@@ -117,3 +117,12 @@ Entries where the author is least certain:
 | talk | | | |
 
 - Sport > Teams and competitions, new card `Cyrff` (organisations): `Undeb Rygbi Cymru`, `Cymdeithas Bêl-droed Cymru`, `FIFA`, `UEFA`. Draft from memory; check the card title and how each is said on air.
+
+## Contribute (help sheet, 2026-11-04)
+
+| Where | English | Welsh as written | Question |
+|---|---|---|---|
+| Help sheet, `help_contribute` | Contribute | `Cyfrannu` | Is `Cyfrannu` the usual button word? |
+| `help_contribute_lede` | Suggest a word, a phrase or a correction, in one language or both. … | `Awgrymwch air, ymadrodd neu gywiriad, mewn un iaith neu'r ddwy. …` | Natural? |
+| `help_contribute_licence` | A suggestion is not added until it has been reviewed. If it is reviewed and added to the app, it is released under the MIT licence with the rest of the work. | `Ni chaiff awgrym ei ychwanegu nes ei fod wedi'i adolygu. Os caiff ei adolygu a'i ychwanegu at yr ap, caiff ei ryddhau o dan drwydded MIT gyda gweddill y gwaith.` | Is `caiff ei ryddhau` right for "is released", and `trwydded MIT` for "MIT licence"? |
+| Help book, `contribute` (chapter Using help) | Contributing | `Cyfrannu` and its two paragraphs in `help.json` | A fluent speaker reads the whole entry. |
