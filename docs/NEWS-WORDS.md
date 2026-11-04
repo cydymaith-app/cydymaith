@@ -197,3 +197,37 @@ Notes for synthesis:
 - **Names not kept:** the reporter. *Caergybi* stays only inside its phrases.
 - **Typos:** none raised. Captions are typed live.
 - **Already in the content:** *yn oriau man y bore* (Rain), *parhau* (Rain, Change, Temperature). Everything else here is new to the Welsh pack.
+
+### Upload 3: a shop and post office to close in Bangor (*Newyddion S4C*, 2026-11-04)
+
+Twenty caption photos of one vox-pop report, four speakers in turn (a young man in a cap, an older woman, an older man in a hat, a young man in a club top), with a title card and shots of the Post Office sign and the high street. The story: a shop and its post office counter closing, and what that means for people in the town. Colloquial, spoken Welsh with English words mixed in. Phrases in the order heard.
+
+| Heard | Draft English | Likely home |
+|---|---|---|
+| **Siop … a Swyddfa'r Post** **am gau** **ym Mangor** *(title card)* | The shop and the Post Office **to close** **in Bangor** | Public services or Money and work; *am gau* as a headline |
+| …**i fynd â stwff a phethau** i Nain, / mae Nain **yn gyrru llythyrau** a phethau | …to take stuff and things to Nain; Nain sends letters and things | Everyday speech; *Do i fynd â* (I come to take) |
+| **So** rili **upsetting** rili **bod o'n gorfod cau** | So really upsetting, really, that it has to close | Opinion phrases; *bod o'n gorfod cau* |
+| **Wneith o gael effaith fawr** *(caption: Wneiff)* | It will **have a big effect** | Public services; *cael effaith* |
+| …**achos fydden nhw i gyd** **yn gorfod mynd i'r dre** / **neu rywle arall** **rŵan** jyst i fynd i'r post office | …because they would all **have to go to town** **or somewhere else** **now** just to go to the post office | How it's said (*achos*, *yn gorfod*); *rhywle arall* |
+| **Fydda i yn arfer mynd** i'r **swyddfa bost** | I **used to go** to the **post office** | Opinion phrases; *arfer* + verb-noun |
+| …**achos dw i'n postio** a **gwneud gwahanol bethau** | …because I post and **do various things** | Everyday speech |
+| **Ond mae'n biti** **bod hi'n cau** | **But it's a pity** **that it's closing** | Opinion phrases |
+| **O mae'n siomedig iawn** | **Oh, it's very disappointing** | Opinion phrases |
+| …**ond pobl hŷn** **sy'n dibynnu ar** y swyddfa bost | …but **older people** **who depend on** the post office | Public services; *dibynnu ar* |
+| **Dim fi** ond pobl eraill | **Not me**, but other people | Opinion phrases |
+| **Dydy o ddim yn ddelfrydol**, **ti angen** y post office **i wneud pethau** | It's **not ideal**, **you need** the post office **to do things** | Opinion phrases |
+| **Posib felly** **mae o'n handi** **efo** pethau fel Vinted, neu **werthu pethau** | **Possibly so**, **it's handy** **with** things like Vinted, or **selling things** | Money and work; borrowed words, brand not kept |
+| A **posib** pethau **yn haws** **na** **gorfod** eu gwneud **trwy ddefnyddio** computer **a bellach** *(caption: a belly 'de)* | And possibly things **easier than** **having to** do them **by using** a computer and so on | Money and work |
+| **Mae person i berson yn well** **na** pethau technoleg **weithiau**, **ydy**? | **Person to person is better** **than** technology things **sometimes**, **isn't it**? | Opinion phrases; tag question |
+
+Notes for synthesis:
+
+- **Where the Welsh differs from the caption.** The captions are typed live, in speech spelling (*gorrod*, *Wneiff*, *rŵan*, *dre*, *pobol*, *belly 'de*). The "Heard" column gives my draft standard form beside it, and it must be checked by a fluent speaker before any row is written into the app. The draft forms are guesses, not heard.
+- **Mutations in the headline and speech.** *cau* becomes *gau* after *am*; *Bangor* becomes *Mangor* after *ym*; *bydden* is *fydden* after *achos*; *ffeithiau*-type soft mutations follow *wneith*. Teach them from the heard phrase, not a list (rule 7). The notes would be "{{Bangor}} becomes {{Mangor}} after {{ym}}".
+- **Borrowed English words stay in the speech:** *upsetting*, *post office*, *Vinted*, *computer*. They are heard as they are said. Decide whether to keep any as a row (*post office* beside *swyddfa bost*, as both are heard) or to leave them out; brands (*Vinted*) are left out.
+- **Two words for the same place:** *swyddfa bost* (the caption, three speakers) and *post office* (two speakers). Keep one row, with the other as "also heard as".
+- **Opinion phrases form a new kind of row:** *mae'n biti bod…*, *mae'n siomedig iawn*, *dydy o ddim yn ddelfrydol*, *dim ond pobl eraill*. They are what people say in a vox pop. A candidate home is a new card under How it's said, *What people say* (reactions), ordered by strength of feeling, from mild to strong, since all of them state a feeling.
+- **Names not kept:** the speakers (none shown), the shop's name on the title card, and *Nain* is a family word, not a name; keep *Nain* only if a family-words card ever exists.
+- **Place:** *Bangor* stays only inside its phrase (*ym Mangor*).
+- **Typos:** none raised. Captions are typed live.
+- **Already in the content:** *yn gorfod*-type forms and *hefyd* are heard in the weather pages; check *gorfod*, *achos* and *neu* against the content before synthesis. *swyddfa* (office) was heard in *Swyddfa Dywydd* on the weather pages.
