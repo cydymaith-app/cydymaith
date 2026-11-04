@@ -217,13 +217,13 @@ Twenty caption photos of one vox-pop report, four speakers in turn (a young man 
 | **Dim fi** ond pobl eraill | **Not me**, but other people | Opinion phrases |
 | **Dydy o ddim yn ddelfrydol**, **ti angen** y post office **i wneud pethau** | It's **not ideal**, **you need** the post office **to do things** | Opinion phrases |
 | **Posib felly** **mae o'n handi** **efo** pethau fel Vinted, neu **werthu pethau** | **Possibly so**, **it's handy** **with** things like Vinted, or **selling things** | Money and work; borrowed words, brand not kept |
-| A **posib** pethau **yn haws** **na** **gorfod** eu gwneud **trwy ddefnyddio** computer **a bellach** *(caption: a belly 'de)* | And possibly things **easier than** **having to** do them **by using** a computer and so on | Money and work |
+| A **posib** pethau **yn haws** **na** **gorfod** eu gwneud **trwy ddefnyddio** computer **a fel'na 'de** *(caption: a belly 'de)* | And possibly things **easier than** **having to** do them **by using** a computer and that kind of thing | Money and work |
 | **Mae person i berson yn well** **na** pethau technoleg **weithiau**, **ydy**? | **Person to person is better** **than** technology things **sometimes**, **isn't it**? | Opinion phrases; tag question |
 
 Notes for synthesis:
 
 - **Where the Welsh differs from the caption.** The captions are typed live, in speech spelling (*gorrod*, *Wneiff*, *rŵan*, *dre*, *pobol*, *belly 'de*). The "Heard" column gives my draft standard form beside it, and it must be checked by a fluent speaker before any row is written into the app. The draft forms are guesses, not heard.
-- **Mutations in the headline and speech.** *cau* becomes *gau* after *am*; *Bangor* becomes *Mangor* after *ym*; *bydden* is *fydden* after *achos*; *ffeithiau*-type soft mutations follow *wneith*. Teach them from the heard phrase, not a list (rule 7). The notes would be "{{Bangor}} becomes {{Mangor}} after {{ym}}".
+- **Mutations in the headline and speech.** *cau* becomes *gau* after *am*; *Bangor* becomes *Mangor* after *ym*; *bydden* is *fydden* after *achos*. Teach them from the heard phrase, not a list (rule 7). The notes would be "{{Bangor}} becomes {{Mangor}} after {{ym}}".
 - **Borrowed English words stay in the speech:** *upsetting*, *post office*, *Vinted*, *computer*. They are heard as they are said. Decide whether to keep any as a row (*post office* beside *swyddfa bost*, as both are heard) or to leave them out; brands (*Vinted*) are left out.
 - **Two words for the same place:** *swyddfa bost* (the caption, three speakers) and *post office* (two speakers). Keep one row, with the other as "also heard as".
 - **Opinion phrases form a new kind of row:** *mae'n biti bod…*, *mae'n siomedig iawn*, *dydy o ddim yn ddelfrydol*, *dim ond pobl eraill*. They are what people say in a vox pop. A candidate home is a new card under How it's said, *What people say* (reactions), ordered by strength of feeling, from mild to strong, since all of them state a feeling.
