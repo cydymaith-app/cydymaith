@@ -236,7 +236,7 @@
       "order": "sky, rain, snow, frost, wind, then temperature"
     },
     "place-first": {
-      "title": "Rhoi'r lle yn gyntaf",
+      "title": "Rhoi'r prif beth yn gyntaf",
       "concepts": {
         "the-west-will-see-the-worst": {
           "text": "Y gorllewin fydd yn gweld y gwaetha",
@@ -274,7 +274,7 @@
         }
       },
       "intro": "Welsh puts what matters first, then {{fydd}} (will), {{sy'n}} (that is) or {{welodd}} (saw): {{Y gorllewin fydd yn gweld …}} is \"it's the west that will see …\".",
-      "order": "where, then when, then what was seen, then what is in charge"
+      "order": "where, then when, then what is in charge"
     }
   }
 }

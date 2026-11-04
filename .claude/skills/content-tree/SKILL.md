@@ -74,7 +74,8 @@ Every card (a section of a page) states one order, shown as *Order: …* above i
    - A **theme grouping** (churches, then forts, then houses) is not an order unless the card says so; it is a reason to split the card, each with an order of its own.
 3. **Give the rationale** in your reply and in the commit message, in one line: *"Ordered by scale, light to heavy, because the reader compares strengths; time did not fit, since no row says when."* Name the principle you rejected if a reader could expect it. Write the principle on the card (`order`, for example `alphabetical, in the Welsh alphabet`).
 4. **Ask the developer instead of deciding** when two principles fit and would give different orders (a scale and a sequence), when the card mixes kinds so that no one principle covers it, when the developer has ordered a similar card differently, or when the only principle left is alphabetical but a real relationship between the rows would then be hidden. Use the question tool, show the two orders side by side for a few rows, and say which you would pick and why.
-5. **Check it.** `OrderOfACardTests` in `tests/test_project.py` holds every card whose `order` says alphabetical. Where a card's principle can be checked (a scale with a ranking, a compass), add a test as well.
+5. **Check the top against the rows.** Run the `card-check` skill: the title, order, intro and box must be true of every row, in sequence.
+6. **Check it.** `OrderOfACardTests` in `tests/test_project.py` holds every card whose `order` says alphabetical. Where a card's principle can be checked (a scale with a ranking, a compass), add a test as well.
 
 ## Grading: beginner to advanced
 
@@ -102,6 +103,7 @@ An end topic can link to other topics as a row of tiles (`"related": ["where#lan
 
 - New or changed Welsh (titles included) is a draft: add a line to `docs/REVIEW.md`.
 - Keep every leaf. A reorganisation moves, merges or splits; it never silently drops a word. Count leaves before and after.
+- Run `card-check` on each page or card that moved or changed.
 - Check the build: `python build.py dist`, then `python -m unittest discover -s tests -v`, then rerun `tree_report.py` and confirm the warnings it raised are gone.
 - If content moved or was added, run `python build.py --grades` and check the levels of what changed (see *Grading*).
 - Tick `docs/TODO.md` in the commit that completes an item.

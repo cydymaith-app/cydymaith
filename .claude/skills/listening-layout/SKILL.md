@@ -43,6 +43,7 @@ Rate each item **ok / weak / broken**, with file and line evidence.
 8. **Coverage of what is actually said.** Connectives, verbs of change, time and place prepositions, the presenter's opening and closing, common colloquial forms. Listening content is kept apart from speaking content (asking questions, small talk).
 9. **Gloss accuracy and uniqueness.** Each gloss matches its own entry. No two different entries share one gloss. Concept ids match their glosses.
 10. **Legibility.** Anything needed to match a sound is in normal-sized text, not a small note.
+11. **The top keeps its promises.** Each card's title, stated order, intro and box are true of every row. **Run the `card-check` skill** (`python .claude/skills/card-check/card_report.py --page <slug>`) **whenever a page or card is added or modified**, and rate this item from its findings.
 
 ## Step 3: Propose the listen-first format
 
@@ -84,6 +85,7 @@ Stop there. Do not edit content until the user approves the plan.
 - **New or changed Welsh is a draft.** Mark its source `draft`, add a line to `docs/REVIEW.md`, and say plainly which items are uncertain. Never present new Welsh as reviewed.
 - **Keep packs in step.** Every concept id in `pages/*.json` has an entry in both `en` and `cy` packs.
 - **Keep the framework neutral.** Mutation tables, frames and examples live in content, never in `framework/`.
+- **Run `card-check`** on every page or card added or changed, and fix what it finds.
 - **Check the build:** `python build.py dist`, then `python -m unittest discover -s tests -v`.
 - **Tick `docs/TODO.md`** in the commit that completes an item.
 - British spelling.

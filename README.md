@@ -84,7 +84,7 @@ The Welsh comes first in each row (above the English), because it is the languag
 - `"status": "development"` (on a section): holds it back from the release. The new words on the How it's said page wait there until a fluent speaker has checked them.
 - `about_page` (in the edition): the standalone About page, `about.html`, in each language it is written in. A toggle at the top right switches language with no script, an information icon above the settings gear links to it from every page, and it ends with links to How to use the app and Sources (the one place they are linked from, so the home page and Settings do not repeat them; an edition with no About page keeps them there instead).
 
-The `listening-layout` and `content-tree` skills in `.claude/skills/` review a topic's layout and the shape of the tree.
+The `listening-layout`, `content-tree` and `card-check` skills in `.claude/skills/` review a topic's layout and the shape of the tree.
 
 ## Regional forms
 
