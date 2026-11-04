@@ -115,3 +115,5 @@ Entries where the author is least certain:
 | where | | | |
 | patterns | | | |
 | talk | | | |
+
+- Sport > Teams and competitions, new card `Cyrff` (organisations): `Undeb Rygbi Cymru`, `Cymdeithas Bêl-droed Cymru`, `FIFA`, `UEFA`. Draft from memory; check the card title and how each is said on air.

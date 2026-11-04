@@ -23,6 +23,23 @@
         }
       }
     },
+    "organisations": {
+      "title": "Organisations",
+      "concepts": {
+        "the-wru": {
+          "text": "The Welsh Rugby Union"
+        },
+        "the-faw": {
+          "text": "The Football Association of Wales"
+        },
+        "fifa": {
+          "text": "FIFA"
+        },
+        "uefa": {
+          "text": "UEFA"
+        }
+      }
+    },
     "competitions-list": {
       "title": "Competitions",
       "concepts": {

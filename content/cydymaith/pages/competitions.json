@@ -13,6 +13,16 @@
       ]
     },
     {
+      "id": "organisations",
+      "status": "development",
+      "concepts": [
+        "the-wru",
+        "the-faw",
+        "fifa",
+        "uefa"
+      ]
+    },
+    {
       "id": "competitions-list",
       "status": "development",
       "concepts": [

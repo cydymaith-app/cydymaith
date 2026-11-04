@@ -23,6 +23,24 @@
         }
       }
     },
+    "organisations": {
+      "title": "Cyrff",
+      "order": "Wales, football then rugby, then the world and Europe",
+      "concepts": {
+        "the-wru": {
+          "text": "Undeb Rygbi Cymru"
+        },
+        "the-faw": {
+          "text": "Cymdeithas Bêl-droed Cymru"
+        },
+        "fifa": {
+          "text": "FIFA"
+        },
+        "uefa": {
+          "text": "UEFA"
+        }
+      }
+    },
     "competitions-list": {
       "title": "Cystadlaethau",
       "order": "football, then rugby",

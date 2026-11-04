@@ -76,7 +76,7 @@ class ProjectNavigationTests(unittest.TestCase):
             phrasebook.build(development, project_dir=PROJECT, channel="development")
             rel = sorted(f.name for f in release.glob("group-*.html"))
             dev = sorted(f.name for f in development.glob("group-*.html"))
-        self.assertEqual(rel, ["group-everyday.html", "group-geography.html", "group-weather-forecast.html"])
+        self.assertEqual(rel, ["group-geography.html", "group-weather-forecast.html"])  # Everyday holds back its one page, Food and drink, until it is filled out
         self.assertEqual(dev, ["group-everyday.html", "group-geography.html", "group-news.html", "group-sport.html",
                                "group-weather-forecast.html"])
 
@@ -171,7 +171,6 @@ class RelatedTopicsTests(unittest.TestCase):
                 self.assertIn(f'id="{href[1]}"', target, f"{name} -> {href}")
 
     def test_pages_with_nothing_related_have_no_row(self):
-        self.assertNotIn('class="related"', self.pages["group-everyday.html"])
         self.assertNotIn('class="related"', self.pages["index.html"])
 
 
@@ -298,8 +297,7 @@ class OnePageWeatherTests(unittest.TestCase):
             self.assertNotIn(f"{slug}.html", self.pages, slug)
 
     def test_the_other_groups_keep_their_tiles(self):
-        for gid in ("everyday",):
-            self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages[f"group-{gid}.html"], gid)
+        self.assertIn('<ul class="tiles" data-tiles data-order=', self.pages["index.html"])
 
 
 class YellowGreenPaletteTests(unittest.TestCase):

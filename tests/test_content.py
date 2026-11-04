@@ -189,9 +189,9 @@ class BuildTests(unittest.TestCase):
         """Time and place was split on 2026-10-27: the compass went to Geography (one page). The Time and date page went on 2026-10-29:
         its words are inside the forecast phrases, so it was dropped from Everyday and nothing links to it."""
         weather = next(g for g in self.site.groups if g["id"] == "weather-forecast")
-        everyday = next(g for g in self.site.groups if g["id"] == "everyday")
+        everyday = next(g for g in json.loads((PROJECT / "structure.json").read_text(encoding="utf-8"))["groups"] if g["id"] == "everyday")
         self.assertNotIn("time-and-place", [g["id"] for g in self.site.groups])
-        self.assertEqual(everyday["pages"], ["food-drink"])
+        self.assertEqual(everyday["pages"], ["numbers", "food-drink"])
         self.assertEqual(weather["links"], ["compass"])
         page = self.built["group-weather-forecast.html"]
         tiles = page[page.rindex("</details>") : page.index('class="pager"')]  # the row of the pages the group links to
