@@ -45,6 +45,11 @@ jobs:
     if: github.ref == 'refs/heads/main'
     needs: test
     runs-on: ubuntu-latest
+    # One Pages deployment at a time. A push that lands while another deploys waits its turn (GitHub keeps only the newest waiting)
+    # and never cuts a deployment off half way. Two overlapping deploys is what failed the run for 4137d5a on 2026-11-04.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     permissions:
       pages: write
       id-token: write
