@@ -774,3 +774,47 @@ The presenters' names (the first presenter is a man, the handback a woman), the 
 5. *Ffigurau dwbl i chi*: is *ffigurau dwbl* the usual way to say ten or more?
 6. *Cwpl o gawodydd*: *cwpl* is colloquial for *pâr*, or is it *cwpwl*? The caption shows *cwpl*.
 7. *Heddi* and *'di*: both are colloquial (south Wales). Should they be marked with a regional variety, like *llefrith* and *llaeth*?
+
+## 13. Upload 17 (S4C, early November 2026; 2 images)
+
+Two short pieces: a *Y Dyddiau Nesaf* slide (autumn oak, a presenter on the right) and a map of the UK and Ireland with wind streaks, from the S4C Tywydd social feed (cold air in the north, mild in the south, snow just possible between). Nothing here is in the content yet. Placement is a suggestion, and every phrase is a draft for a fluent speaker. The words are on-screen text, so there is no subtitle lag to allow for.
+
+### New
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Ansefydlog | unsettled | Change and movement, next to *Yn troi'n fwy ansefydlog* (*sefydlog* is there; this is the bare slide word, the opposite of *Sych a sefydlog*) |
+| Yn gwella yfory | improving tomorrow | Change and movement, changing (*gwella* is new; *yfory* is there) |
+| Tymheredd yn gostwng | temperature falling | Temperature, *Ffigurau a gostwng* (the row *Y tymheredd yn gostwng* is there; this is the slide form without *y*) |
+| Aer oer | cold air | Temperature, or Wind (*aer* is new as a word; *llif aer* and *aer oer* were heard in upload 13) |
+| Aer mwyn | mild air | Temperature, pairs with *Aer oer* (*mwyn* is in *Gwyntoedd deheuol mwyn*) |
+| Eira'n bosib (*eira yn bosib*) | snow possible | Snow and ice (*eira* and *yn bosib* are there; the contraction *'n* after a vowel is the point) |
+
+### Form
+
+| Welsh | English | On the row |
+|---|---|---|
+| Eira'n | snow, with *yn* shortened to *'n* after a vowel | *Eira* |
+| Yn gwella | improving | *Gwella* |
+
+### Already in the content (Have)
+
+*Y Dyddiau Nesaf* (the title bar), *tymheredd*, *gostwng*, *yfory*, *mwyn*, *eira*, *posib*.
+
+### Patterns (shelved with the sentence patterns)
+
+- A map with a label for each zone: *Aer oer* (north), *Eira'n bosib* (the boundary), *Aer mwyn* (south). The three labels read as one picture: a cold north, a mild south, snow where they meet. This suits a figure on the Temperature or Snow and ice page, not rows.
+- The slide list is three short statements with no verb: *Ansefydlog*, *Yn gwella yfory*, *Tymheredd yn gostwng*. The noun phrase with no *mae* is how a caption is written.
+
+### Places
+
+None (the map names no place).
+
+### Left out
+
+The presenter, the S4C Tywydd handle, the Instagram interface, and the backdrop.
+
+### Questions for a fluent speaker
+
+1. *Eira'n bosib*: is *eira yn bosib* said with the contraction, and is *bosib* the usual spoken form (against *posibl*)?
+2. *Aer mwyn*: is *aer mwyn* the usual way to say mild air, or *aer cynnes*?
