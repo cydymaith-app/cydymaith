@@ -165,3 +165,37 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 2. *Colli 3-1*: how is the score said aloud (*tri un*, *tri i un*)?
 3. *Gwaelod y grŵp*: is *grŵp* the usual word for a qualifying group, and is *ymgyrch* the usual word for the qualifying campaign?
 4. *Gydag un gêm yn weddill*: confirm the form of *yn weddill*.
+
+### Upload 6 (football, clubs: a manager sacked and a replacement tipped; written text)
+
+Names of people and clubs are not kept as vocabulary. The league is named only inside a phrase.
+
+**Phrases**
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Mae [rheolwr] wedi cael ei ddiswyddo | The manager has been sacked | Football, The players, or How it's said (*diswyddo* new; the passive *wedi cael ei* + verb-noun, soft mutation after *ei*: *diswyddo* becomes *ddiswyddo*) |
+| Ar ôl llai na chwe mis | after less than six months | Results and tables, or Time and date (*llai na* new, less than; *chwe* is the form of *chwech* before a noun; *mis* new) |
+| Fel rheolwr parhaol | as permanent manager | Teams and competitions, Teams (*rheolwr* is on Football, The players; *parhaol* new; *fel* held from the forecast words) |
+| Gyda'r clwb yn agos at waelod tabl Uwch Gynghrair Lloegr | with the club close to the bottom of the English Premier League table | Results and tables, The table (*clwb* new; *yn agos at* new, close to; *gwaelod* held from upload 5, *waelod* soft-mutated after *at*; *tabl* is on Results and tables (*Ar frig y tabl*); compare *Ar waelod y gynghrair*, which is in content) |
+| Uwch Gynghrair Lloegr | the English Premier League | Teams and competitions, Competitions (the league named in a phrase; *Yr Uwch Gynghrair* is on Competitions; *cynghrair*, soft-mutated to *gynghrair* after *uwch*) |
+| Rheolwr tîm cenedlaethol yr Unol Daleithiau | the manager of the United States national team | Teams and competitions, Teams (*tîm cenedlaethol* new, the national team; *tîm Cymru* is in content; *yr Unol Daleithiau*, the United States, a country named in a phrase) |
+| Yw'r ffefryn i gymryd yr awenau | is the favourite to take the reins | Football, The players, or How it's said (*ffefryn* new; *cymryd yr awenau*, literally "to take the reins", a set phrase meaning to take charge, new; *gymryd* soft-mutated after *i*) |
+| Yn Old Trafford | at Old Trafford | Teams and competitions (the ground named in a phrase, English name unchanged) |
+
+**Form**
+- *Wedi cael ei ddiswyddo*: the passive with the soft mutation after *ei* (his). This is the same *cael ei* passive as the news upload 4 (*Cafodd … ei gwrthod*).
+- *Chwe mis*: *chwe* is the form before a noun; *chwech* stands alone.
+- *Gymryd*: soft mutation of *cymryd* after *i*.
+- *Waelod*: soft mutation of *gwaelod* after *at*.
+
+**Pattern**
+- A club's headline: the event (*wedi cael ei ddiswyddo*), *ar ôl* with the time, *gyda'r clwb* and the consequence. Same shape as upload 5, so one row on How it's said, Opening and closing can serve both.
+
+**Left out**
+- The emoji, the poster's account name, and every person and club name (a manager is a name, not vocabulary).
+
+**Questions for a fluent speaker**
+1. *Cymryd yr awenau*: confirm the idiom, and whether *awenau* is the usual plural.
+2. *Uwch Gynghrair Lloegr*: is it always capitalised as a name?
+3. *Gwaelod tabl* and *gwaelod y gynghrair*: are both used for the foot of a league table?
