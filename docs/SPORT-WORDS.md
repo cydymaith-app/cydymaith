@@ -104,3 +104,34 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 1. *Am y tro cyntaf ers 73 o flynyddoedd* against *am y tro cyntaf mewn 73 o flynyddoedd*: are both usual?
 2. *Cymru yn curo* as a past-tense headline: is it normal in written Welsh, or only in news and social posts?
 3. *Bnawn*: is this spelling used, or only *b'nawn*?
+
+### Upload 4 (a fourth social post, the same fixture, before the match: a player's quote; written text)
+
+**Phrases**
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Mae llawer o bethau ni'n gallu gwneud yn well | There are many things we can do better | How it's said, How it stands, or Rugby, The match (*llawer o* held; *pethau* held in its colloquial form *pethe'n*; *ni'n gallu gwneud* new, colloquial *gallu*; *yn well* new as a comparison) |
+| Canolwr Cymru | Wales centre | Rugby, The backs (*canolwr* new, the centre; the title comes before the player's name, which is not kept) |
+| Yn cydnabod | acknowledging, admitting | How it's said (*cydnabod* new) |
+| Bod angen i Gymru wella eu perfformiad | that Wales need to improve their performance | How it's said (*bod angen i* new; *perfformiad* new, the noun; *perfformio* held from upload 1) |
+| Wrth i Seland Newydd ymweld â Chaerdydd | as New Zealand visit Cardiff | Rugby, The match (*wrth i* held from upload 1; *ymweld â* new, to visit; *â* takes the aspirate mutation, *Caerdydd* becoming *Chaerdydd*) |
+| Ddydd Sadwrn | on Saturday | Time and date (*ddydd* soft-mutated as a time phrase; in content as day names) |
+
+**Form**
+- *Chaerdydd*: aspirate mutation of *Caerdydd* after *â* (with). A good mutation-decoder example: the city is named only inside a phrase.
+- *Ddydd Sadwrn*: soft mutation of *dydd*.
+
+**Typos and gaps in the post**
+- *angen i Gymru well ar eu perfformiad*: the verb looks incomplete, perhaps *wella* with *ar* wrongly added. Read as *gwella* (to improve) for the draft, and check before using. Do not raise the slip again if it recurs; written posts carry typos too.
+
+**Same-topic notes**
+- This post is a preview of the same fixture: the match was on the Saturday, and the earlier uploads are the match and its result. The tense changes with it (*wrth i … ymweld*, *mae angen*).
+
+**Left out**
+- The emoji, the poster's account name and the player's name.
+
+**Questions for a fluent speaker**
+1. *Mae llawer o bethau ni'n gallu gwneud yn well*: is the missing *y* (*y gallwn ni wneud*, "that we can do") normally dropped like this in speech?
+2. *Bod angen i Gymru wella eu perfformiad*: confirm the word is *wella*, and that *bod angen i* is the usual frame.
+3. *Canolwr*: is it the usual word for a centre, with *mewnwr* and others on the Rugby page's list?
