@@ -210,12 +210,12 @@ Same fixture as uploads 1 to 4 (a preview, with last week's result as background
 |---|---|---|
 | Mae [chwaraewr] yn dychwelyd i dîm Cymru | [A player] is returning to the Wales team | Rugby, The match, or Teams and competitions, Teams (*dychwelyd* new; *tîm Cymru* is on Competitions; the present tense with *yn* for a near future, "is returning") |
 | Ar gyfer y gêm yn erbyn Seland Newydd | for the game against New Zealand | Results and tables, Fixtures (*ar gyfer* held from the forecast words; *yn erbyn* held from upload 1) |
-| Ym Mhencampwriaeth y Cenhedloedd | in the Nations Championship | Teams and competitions, Competitions (*pencampwriaeth* new, championship; *y Cenhedloedd*, the nations; named inside a phrase; *ym Mhencampwriaeth*, nasal mutation after *yn*, see Form) |
+| Ym Mhencampwriaeth y Cenhedloedd | in the Nations Championship | Teams and competitions, Competitions (*pencampwriaeth* is on Competitions as *Pencampwriaeth y Chwe Gwlad*; *y Cenhedloedd*, the nations, new; named inside a phrase; *ym Mhencampwriaeth*, nasal mutation after *yn*, see Form) |
 | Ddydd Sadwrn | on Saturday | Time and date (held from upload 4) |
 | Fe wnaeth Cymru guro Japan 28 - 21 | Wales beat Japan 28 - 21 | Results and tables, Scores (*fe wnaeth* + subject + soft-mutated verb-noun, the past tense with *gwneud*, new as a frame; *guro*, soft-mutated *curo* after the subject; *curo* held from upload 2; the score follows directly) |
 | O flaen torf o 52,000 | in front of a crowd of 52,000 | Rugby, The match (*o flaen* new, in front of; *torf* new, a crowd; *o 52,000*, *o* after a collective noun; the figure is as written, the spoken form is not known) |
 | Yn Stadiwm Principality | at the Principality Stadium | Held from upload 1 |
-| Yr wythnos diwethaf | last week | Time and date (*wythnos* is in content as *Yr wythnos nesaf*-type phrases, check; *diwethaf* new) |
+| Yr wythnos diwethaf | last week | Time and date (*wythnos* is in content, check the form; *diwethaf* new) |
 
 **Form**
 - *Ym Mhencampwriaeth*: nasal mutation of *pencampwriaeth* after *yn* (*yn* becomes *ym* before the *mh*). The same mutation as *yng ngorllewin y wlad* in the forecast words. A good example for the mutation decoder.
@@ -232,4 +232,4 @@ Same fixture as uploads 1 to 4 (a preview, with last week's result as background
 1. *Mae … yn dychwelyd*: present for a near-future announcement, or would *bydd … yn dychwelyd* be more usual?
 2. *Fe wnaeth Cymru guro Japan* against *Mae Cymru wedi curo Seland Newydd* (upload 2): are both used for a past result, and does the choice change with time (last week, this week)?
 3. *Pencampwriaeth y Cenhedloedd*: the usual Welsh name for a Nations Championship, and always capitalised?
-4. *O flaen torf o 52,000*: how is 52,000 said (*dau a hanner deg mil*? *hanner can mil a dwy fil*)?
+4. *O flaen torf o 52,000*: how is 52,000 said aloud?
