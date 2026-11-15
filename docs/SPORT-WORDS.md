@@ -76,3 +76,31 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 2. *Dros y Crysau Duon*: is *dros* the usual preposition for a win over a team, or *yn erbyn*, or *ar*?
 3. *Pwy fase'n meddwl?*: is *fase'n* usual, or *fyddai'n* in a written post?
 4. *Crysau Duon*: is it always capitalised as a name?
+
+### Upload 3 (a third social post, the same match, linking to an S4C news article; written text)
+
+**Phrases**
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Buddugoliaeth o'r diwedd! | A win at last! | How it's said, Opening and closing (*o'r diwedd* new; *buddugoliaeth* held from upload 2) |
+| Cymru yn curo Seland Newydd | Wales beating New Zealand | Results and tables, Scores (the present participle as a headline: *yn curo* with no *mae*; *curo* held from upload 2) |
+| Am y tro cyntaf ers 73 o flynyddoedd | for the first time in 73 years | Results and tables, Scores (*am y tro cyntaf* new; *ers* new, since; *blynyddoedd* is the plural of *blwyddyn*; *73 o flynyddoedd*, *o* after a number) |
+| Mewn gêm anhygoel | in an incredible game | Rugby, The match (*anhygoel* held from upload 1; *mewn gêm*, with *gêm* unmutated after *mewn*) |
+| Bnawn Sadwrn | on Saturday afternoon | Time and date (colloquial *prynhawn*, here *bnawn*; upload 1 had *b'nawn*, upload 2 had *brynhawn*) |
+
+**Form**
+- *Ers 73 o flynyddoedd*: *ers* takes a period of time. *Blynyddoedd* is the plural used after a number with *o* (*73 o flynyddoedd*), where the singular *blwyddyn* would be used after a number in other styles.
+- *Yn curo* as a headline: the present participle stands for the past ("Wales beat"), as English headlines use the present.
+
+**Same-topic notes**
+- The three posts give three forms of "Saturday afternoon" (*b'nawn*, *brynhawn*, *bnawn*). The first and third are colloquial; the second is the full soft-mutated form.
+- The link is to an S4C news article (the address is not kept). The headline in its address reads *Cymru'n curo Seland Newydd am y tro cyntaf mewn 73 o flynyddoedd*, where the post says *ers*: both are heard for "in 73 years".
+
+**Left out**
+- The emoji, the poster's account name and the article address.
+
+**Questions for a fluent speaker**
+1. *Am y tro cyntaf ers 73 o flynyddoedd* against *am y tro cyntaf mewn 73 o flynyddoedd*: are both usual?
+2. *Cymru yn curo* as a past-tense headline: is it normal in written Welsh, or only in news and social posts?
+3. *Bnawn*: is this spelling used, or only *b'nawn*?
