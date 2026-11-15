@@ -112,7 +112,7 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 | Welsh | English | Suggested home |
 |---|---|---|
 | Mae llawer o bethau ni'n gallu gwneud yn well | There are many things we can do better | How it's said, How it stands, or Rugby, The match (*llawer o* held; *pethau* held in its colloquial form *pethe'n*; *ni'n gallu gwneud* new, colloquial *gallu*; *yn well* new as a comparison) |
-| Canolwr Cymru | Wales centre | Rugby, The backs (*canolwr* new, the centre; the title comes before the player's name, which is not kept) |
+| Canolwr Cymru | Wales centre | Rugby, The backs (*canolwr*, the centre, is already on the Rugby page; the title comes before the player's name, which is not kept) |
 | Yn cydnabod | acknowledging, admitting | How it's said (*cydnabod* new) |
 | Bod angen i Gymru wella eu perfformiad | that Wales need to improve their performance | How it's said (*bod angen i* new; *perfformiad* new, the noun; *perfformio* held from upload 1) |
 | Wrth i Seland Newydd ymweld â Chaerdydd | as New Zealand visit Cardiff | Rugby, The match (*wrth i* held from upload 1; *ymweld â* new, to visit; *â* takes the aspirate mutation, *Caerdydd* becoming *Chaerdydd*) |
@@ -134,4 +134,3 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 **Questions for a fluent speaker**
 1. *Mae llawer o bethau ni'n gallu gwneud yn well*: is the missing *y* (*y gallwn ni wneud*, "that we can do") normally dropped like this in speech?
 2. *Bod angen i Gymru wella eu perfformiad*: confirm the word is *wella*, and that *bod angen i* is the usual frame.
-3. *Canolwr*: is it the usual word for a centre, with *mewnwr* and others on the Rugby page's list?
