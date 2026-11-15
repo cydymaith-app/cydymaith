@@ -134,3 +134,34 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 **Questions for a fluent speaker**
 1. *Mae llawer o bethau ni'n gallu gwneud yn well*: is the missing *y* (*y gallwn ni wneud*, "that we can do") normally dropped like this in speech?
 2. *Bod angen i Gymru wella eu perfformiad*: confirm the word is *wella*, and that *bod angen i* is the usual frame.
+
+### Upload 5 (football, international: a result post; written text)
+
+**Phrases**
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Siom i Gymru | Disappointment for Wales | How it's said, Opening and closing, or Results and tables, Scores (*siom* new; *i* "for") |
+| Ar ôl colli 3-1 | after losing 3-1 | Results and tables, Scores (*ar ôl* held as a phrase from the forecast words; *colli* new, to lose; the score is said as figures, check how it is read) |
+| Gyda thîm Bellamy | with Bellamy's team | Teams and competitions, Teams (*gyda* with the aspirate mutation, *tîm* becoming *thîm*; *tîm* [person's name]: the manager's name stays out of the app) |
+| Yn gorffen ar waelod y grŵp | finishing at the bottom of the group | Results and tables, The table (*gorffen* new; *gwaelod* new, with *waelod* soft-mutated after *ar*; *grŵp* new) |
+| Gydag un gêm yn weddill | with one game remaining | Results and tables, Fixtures (*yn weddill* new, remaining; *gweddill* held from the forecast words) |
+| O'r ymgyrch | of the campaign | Teams and competitions, Competitions (*ymgyrch* new, a campaign or qualifying run) |
+
+**Form**
+- *Thîm*: aspirate mutation of *tîm* after *gyda* (with). *Gydag* is used before a vowel, as in *gydag un gêm*; *gyda* before a consonant, as in *gyda thîm*.
+- *Waelod*: soft mutation of *gwaelod* after *ar*.
+- *Weddill* (here *yn weddill*): soft mutation of *gweddill* after *yn* (in a predicate, "remaining").
+- *Colli 3-1*: the score follows the verb-noun directly, with no preposition.
+
+**Pattern**
+- A match report in one line: the feeling, then *ar ôl* with the result, then *gyda* and the consequence. This shape is worth a row on How it's said, Opening and closing.
+
+**Left out**
+- The emoji, the poster's account name and the manager's name (a person's name, not vocabulary).
+
+**Questions for a fluent speaker**
+1. *Siom i Gymru*: is *siom* the usual noun here, or *siomedigaeth*?
+2. *Colli 3-1*: how is the score said aloud (*tri un*, *tri i un*)?
+3. *Gwaelod y grŵp*: is *grŵp* the usual word for a qualifying group, and is *ymgyrch* the usual word for the qualifying campaign?
+4. *Gydag un gêm yn weddill*: confirm the form of *yn weddill*.
