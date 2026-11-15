@@ -48,3 +48,31 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 1. *Am wefreiddiol!*: is *Am* + a soft-mutated adjective a normal exclamation, and is *gwefreiddiol* ("thrilling") the word usually used?
 2. *Wrth i'r ymwelwyr berfformio*: is this the natural way to say "as the visitors performed"?
 3. *B'nawn*: is *b'nawn Sadwrn* usual in speech and in writing, or only on social media?
+
+### Upload 2 (a second social post, the same match: the reaction to the win; written text)
+
+**Phrases**
+
+| Welsh | English | Suggested home |
+|---|---|---|
+| Mae Cymru wedi curo Seland Newydd | Wales have beaten New Zealand | How it's said, Who scored / How it stands (*curo* new; pairs with *Mae Cymru wedi ennill*, which is in `sport-patterns`) |
+| Pwy fase'n meddwl? | Who would have thought? | How it's said, Opening and closing (a reaction; *fase'n* is colloquial for *byddai'n*, the conditional, *pwy* + *meddwl*; *meddwl* new) |
+| Yr ymateb | the reaction | How it's said (*ymateb* new) |
+| Wedi buddugoliaeth hanesyddol Cymru | after Wales's historic victory | Results and tables, Scores (*buddugoliaeth* new; *hanesyddol* new; *wedi* + noun is "after") |
+| Dros y Crysau Duon | over the All Blacks | Teams and competitions, Teams (*Crysau Duon*, literally "Black Shirts", is the Welsh name for the All Blacks; *dros* here is "over, against" a team) |
+| O 35-28 | by 35 to 28 | Results and tables, Scores (compare *Ennill o ddeg pwynt*, which is in content; here *o* + the score) |
+| Brynhawn Sadwrn | on Saturday afternoon | Time and date (the time phrase is soft-mutated, no *yn*; *prynhawn* is in content; upload 1 had *b'nawn*) |
+
+**Form**
+- *Brynhawn*: soft mutation of *prynhawn*, as a time phrase with no preposition.
+- *Fase'n*: colloquial and southern, for *byddai'n*.
+- *Crysau Duon*: the adjective follows a plural noun and is not changed (*duon*, the plural of *du*, agrees with *crysau*). *Crysau* is a plural of *crys*; both are in everyday clothing words if present, check.
+
+**Left out**
+- The emoji and the poster's account name.
+
+**Questions for a fluent speaker**
+1. *Mae Cymru wedi curo …* against *Mae Cymru wedi ennill …*: is *curo* the usual verb for beating a named team?
+2. *Dros y Crysau Duon*: is *dros* the usual preposition for a win over a team, or *yn erbyn*, or *ar*?
+3. *Pwy fase'n meddwl?*: is *fase'n* usual, or *fyddai'n* in a written post?
+4. *Crysau Duon*: is it always capitalised as a name?
