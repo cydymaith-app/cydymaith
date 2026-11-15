@@ -331,6 +331,32 @@ Notes for upload 6:
 - **Names not kept:** the presenter and the health board's name. *Llanidloes* and *Powys* stay only inside their phrases (rule 7).
 - **Typos:** none raised.
 
+### Upload 7: a ban on a Senedd member and a threatened vote of no confidence (*Newyddion S4C*, written article text, 2026-11-15)
+
+Written text, so the spelling is reliable. Three sentences: the threat, the ban, the reaction. Held for synthesis into Politics (*The Senedd*). The story is a dispute over a member's remark; the words are kept as heard, and the claim itself is not made into a row (see the notes).
+
+| Heard | Draft English | Likely home |
+|---|---|---|
+| Mae [party] **yn bygwth** **galw pleidlais o ddiffyg hyder** **yn Llywydd y Senedd** | [A party] **is threatening** **to call a vote of no confidence** **in the Presiding Officer of the Senedd** | Politics, The Senedd and the budget, or Votes and elections; *bygwth*, *diffyg hyder*, *Llywydd* new |
+| …**os na chaiff** **gwaharddiad** **ar un o'u haelodau** **rhag siarad** **yn y Siambr** **ei godi** | …**if** **a ban** **on one of their members** **from speaking** **in the Chamber** **is not lifted** | Politics; *os na chaiff … ei godi* is the passive with a condition; *gwaharddiad*, *rhag*, *Siambr*, *codi* (to lift) new |
+| **Cafodd** … **ei wahardd** **ddydd Mawrth** | … **was banned** **on Tuesday** | Politics; *gwahardd* new; the passive (*cafodd … ei*) held from upload 4 |
+| **Ar ôl iddo honni** **bod** … **yn cael eu disodli** | **After he claimed** **that** … **were being replaced** | Politics; *honni* new; *ar ôl iddo* (after he …, with the person built into *i*) new; *disodli* new |
+| **Dyma ymateb** **aelod arall o'r blaid** | **Here is the reaction** **of another member of the party** | How it's said (*Dyma* introduces a clip; *ymateb* held from the sport uploads); *aelod* new, *arall* new |
+| **i'w sylwadau** | **to his comments** | Politics (*sylwadau* new; *i'w*, to his) |
+| **mewn cyfweliad** **gyda Phrif Ohebydd Newyddion S4C** | **in an interview** **with S4C News's Chief Correspondent** | News (*cyfweliad* new; *prif ohebydd* new; the post is a title, the name after it is not kept) |
+| **AS** | **MS** (Member of the Senedd) | Politics; *AS*, written after a name, is *Aelod o'r Senedd* |
+
+Notes for synthesis:
+
+- **Mutations in the heard phrases.** *Os na chaiff* has the aspirate mutation after *na* (*cael* to *chaiff*). *Un o'u haelodau* has *haelodau* after *'u* (their), the h-prefix before a vowel. *Cafodd ei wahardd* has the soft mutation after *ei* (his). *Gyda Phrif Ohebydd* has the aspirate mutation after *gyda*. *Ddydd Mawrth* is the soft-mutated time phrase. *Pobl wyn* (white people) has *gwyn* softened after the feminine *pobl*.
+- **The claim is not a row.** *Honni bod pobl … yn cael eu disodli* reports a contested political claim. Keep *honni* (to claim, allege) and *Ar ôl iddo honni bod …* as a frame, not the claim, and use a neutral object in any example. This follows the attribution rows (*Yn ôl …*, decision under *What people say*).
+- **A new attribution family.** *Honni* (to claim) sits with *Yn ôl* (according to) in the card ordered by how much weight the claim carries: *Yn ôl yr heddlu* (a statement), *Yn ôl Reform UK* (a party's view), *honni* (a claim made by one person, reported). This is a suggestion for the *Who says it* card, to confirm.
+- **Party names only inside a phrase** (decision 1): the party named in the post stays out of any list.
+- **Names not kept:** the two members, the correspondent, the party names as headings.
+- **Frame: a threat with a condition.** *Mae X yn bygwth Y os na chaiff Z ei Passive-verb.* One phrase to learn the *os na chaiff … ei …* conditional passive from; the order of a card would be the order the three sentences came.
+- **Already in the content:** none of the new words were found in the Welsh pack. *Llywydd* and *Senedd*: check before synthesis.
+- **Typos:** none raised.
+
 ## Provisional categorisation of the news uploads (uploads 1 to 6, 2026-11-04)
 
 **Store and categorise only.** The news pages are not to be built until a lot more is collected (the developer, 2026-11-04). This section sorts what has been heard into likely homes so later uploads can be added beside it. The page count, card titles and orders are proposals to revisit, not decisions.
