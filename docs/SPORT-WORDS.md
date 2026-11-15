@@ -142,7 +142,7 @@ The post is written, so its spelling is reliable (circumflexes and all). Raw tex
 | Welsh | English | Suggested home |
 |---|---|---|
 | Siom i Gymru | Disappointment for Wales | How it's said, Opening and closing, or Results and tables, Scores (*siom* new; *i* "for") |
-| Ar ôl colli 3-1 | after losing 3-1 | Results and tables, Scores (*ar ôl* held as a phrase from the forecast words; *colli* new, to lose; the score is said as figures, check how it is read) |
+| Ar ôl colli 3-1 | after losing 3-1 | Results and tables, Scores (*ar ôl* held as a phrase from the forecast words; *colli*, to lose, is on Results and tables (*Colli o drwch blewyn*); the score is said as figures, check how it is read) |
 | Gyda thîm Bellamy | with Bellamy's team | Teams and competitions, Teams (*gyda* with the aspirate mutation, *tîm* becoming *thîm*; *tîm* [person's name]: the manager's name stays out of the app) |
 | Yn gorffen ar waelod y grŵp | finishing at the bottom of the group | Results and tables, The table (*gorffen* new; *gwaelod* new, with *waelod* soft-mutated after *ar*; *grŵp* new) |
 | Gydag un gêm yn weddill | with one game remaining | Results and tables, Fixtures (*yn weddill* new, remaining; *gweddill* held from the forecast words) |
